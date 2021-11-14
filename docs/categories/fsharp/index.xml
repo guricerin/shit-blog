@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>FSharp on グリのクソブログ</title>
+    <link>/categories/fsharp/</link>
+    <description>Recent content in FSharp on グリのクソブログ</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-JP</language>
+    <lastBuildDate>Sat, 13 Nov 2021 22:00:33 +0900</lastBuildDate>
+    
+	<atom:link href="/categories/fsharp/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>『コンパイラ ー 原理と構造』をF#に翻訳した</title>
+      <link>/post/2021-11-13-compiler-text-fs/</link>
+      <pubDate>Sat, 13 Nov 2021 22:00:33 +0900</pubDate>
+      
+      <guid>/post/2021-11-13-compiler-text-fs/</guid>
+      <description>&lt;p&gt;型推論などの実装を学べるらしいと聞いたので購入。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
