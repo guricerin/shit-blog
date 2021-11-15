@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>ABC016 C:友達の友達 - グリのクソブログ</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+		<meta property="og:title" content="ABC016 C:友達の友達" />
+<meta property="og:description" content="" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://guricerin.github.io/shit-blog/post/2019/03/20190314-compro/" />
+<meta property="article:published_time" content="2019-03-14T15:54:37+09:00" />
+<meta property="article:modified_time" content="2019-03-14T15:54:37+09:00" />
+
+		<meta itemprop="name" content="ABC016 C:友達の友達">
+<meta itemprop="description" content="">
+<meta itemprop="datePublished" content="2019-03-14T15:54:37&#43;09:00" />
+<meta itemprop="dateModified" content="2019-03-14T15:54:37&#43;09:00" />
+<meta itemprop="wordCount" content="504">
+
+
+
+<meta itemprop="keywords" content="" />
+		<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="ABC016 C:友達の友達"/>
+<meta name="twitter:description" content=""/>
+
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+
+	<link rel="stylesheet" href="https://guricerin.github.io/shit-blog/css/style.css">
+	<link rel="stylesheet" href="https://guricerin.github.io/shit-blog/css/custom.css">
+
+	<link rel="shortcut icon" href="https://guricerin.github.io/shit-blog/favicon.ico">
+		
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container header__container">
+		
+	<div class="logo logo--mixed">
+		<a class="logo__link" href="https://guricerin.github.io/shit-blog/" title="グリのクソブログ" rel="home">
+			<div class="logo__item logo__imagebox">
+					<img class="logo__img" src="https://guricerin.github.io/shit-blog/img/icon.jpg">
+				</div><div class="logo__item logo__text">
+					<div class="logo__title">グリのクソブログ</div>
+					<div class="logo__tagline">主にB&#39;z</div>
+				</div>
+		</a>
+	</div>
+		
+<nav class="menu">
+	<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
+		<span class="menu__btn-title" tabindex="-1">Menu</span>
+	</button>
+	<ul class="menu__list">
+		<li class="menu__item">
+			<a class="menu__link" href="https://guricerin.github.io/shit-blog/archives">
+				
+				<span class="menu__text">ARCHIVE</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="https://guricerin.github.io/shit-blog/feed.xml">
+				
+				<span class="menu__text">RSS</span>
+				
+			</a>
+		</li>
+	</ul>
+</nav>
+
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">ABC016 C:友達の友達</h1>
+			<div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2019-03-14T15:54:37&#43;09:00">2019-03-14</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="https://guricerin.github.io/shit-blog/categories/%E7%AB%B6%E6%8A%80%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0/" rel="category">競技プログラミング</a>
+	</span>
+</div></div>
+		</header>
+		<div class="content post__content clearfix">
+			<p><a href="https://atcoder.jp/contests/abc016/tasks/abc016_3">https://atcoder.jp/contests/abc016/tasks/abc016_3</a></p>
+<p>最初は隣接行列を使って解いた。ただし、節点同士が直接繋がっているかいないかという情報しかもたせていない。距離をもたせるなんて発想はなかった。思いついたとして、コードに落とし込めたかは怪しいところだ。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp"><span style="color:#66d9ef">signed</span> <span style="color:#a6e22e">main</span>() {
+    <span style="color:#66d9ef">int</span> n, m; cin <span style="color:#f92672">&gt;&gt;</span> n <span style="color:#f92672">&gt;&gt;</span> m;
+    <span style="color:#66d9ef">int</span> graph[<span style="color:#ae81ff">10</span>][<span style="color:#ae81ff">10</span>] <span style="color:#f92672">=</span> { <span style="color:#ae81ff">0</span> };
+    <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">int</span> i <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; i <span style="color:#f92672">&lt;</span> m; i<span style="color:#f92672">++</span>) {
+        <span style="color:#66d9ef">int</span> a, b; cin <span style="color:#f92672">&gt;&gt;</span> a <span style="color:#f92672">&gt;&gt;</span> b;
+        a<span style="color:#f92672">--</span>, b<span style="color:#f92672">--</span>;
+        graph[a][b] <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>; graph[b][a] <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>;
+    }
+ 
+    <span style="color:#66d9ef">int</span> used[<span style="color:#ae81ff">10</span>] <span style="color:#f92672">=</span> { <span style="color:#ae81ff">0</span> };
+    <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">int</span> i <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; i <span style="color:#f92672">&lt;</span> n; i<span style="color:#f92672">++</span>) {
+        memset(used, <span style="color:#ae81ff">0</span>, <span style="color:#66d9ef">sizeof</span>(used));
+        <span style="color:#66d9ef">int</span> ans <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+        <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">int</span> j <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; j <span style="color:#f92672">&lt;</span> n; j<span style="color:#f92672">++</span>) {
+            <span style="color:#66d9ef">if</span> (i <span style="color:#f92672">==</span> j) <span style="color:#66d9ef">continue</span>;
+            <span style="color:#75715e">// iとjが友人なら、jの友人(iの友人の友人)を探索
+</span><span style="color:#75715e"></span>            <span style="color:#66d9ef">if</span> (graph[i][j]) {
+                <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">int</span> k <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; k <span style="color:#f92672">&lt;</span> n; k<span style="color:#f92672">++</span>) {
+                    <span style="color:#66d9ef">if</span> (j <span style="color:#f92672">==</span> k <span style="color:#f92672">||</span> i <span style="color:#f92672">==</span> k) <span style="color:#66d9ef">continue</span>;
+                    <span style="color:#75715e">// iとkが直接の友人ではなく、kをまだ数えていない
+</span><span style="color:#75715e"></span>                    <span style="color:#66d9ef">if</span> (graph[j][k]  <span style="color:#f92672">&amp;&amp;</span> graph[i][k] <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span> <span style="color:#f92672">&amp;&amp;</span> <span style="color:#f92672">!</span>used[k]) {
+                        ans<span style="color:#f92672">++</span>;
+                        used[k] <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>;
+                    }
+                }
+            }
+        }
+        cout <span style="color:#f92672">&lt;&lt;</span> ans <span style="color:#f92672">&lt;&lt;</span> endl;
+    }
+}
+</code></pre></div><p>うーむ、見辛い。バグりやすそうな実装だ。実際、テストケースがなかなか通らなくてデバッグに苦労した。<br>
+公式解説を見ると、ワーシャル・フロイド法を使えばいいとのこと。いい機会だ。今までのように概要だけサーっと流すのではなく、実際に自分が使うことを考えてコードに落としこむことにした。</p>
+<p>まあ実のところはネット上のあらゆる場所からパクりながら書いたわけだが。</p>
+<p>ワーシャル・フロイド法そのものに関する解説は、以下の記事が非常にわかりやすい。</p>
+<p><a href="http://doriven.hatenablog.com/entry/2013/12/23/044921">http://doriven.hatenablog.com/entry/2013/12/23/044921</a></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Edge</span> {
+<span style="color:#66d9ef">private</span><span style="color:#f92672">:</span>
+    <span style="color:#66d9ef">int</span> m_from, m_to, m_cost;
+ 
+<span style="color:#66d9ef">public</span><span style="color:#f92672">:</span>
+    Edge(<span style="color:#66d9ef">int</span> f, <span style="color:#66d9ef">int</span> t, <span style="color:#66d9ef">int</span> c) <span style="color:#f92672">:</span>
+        m_from(f), m_to(t), m_cost(c) {}
+ 
+    <span style="color:#66d9ef">int</span> <span style="color:#a6e22e">from</span>() <span style="color:#66d9ef">const</span> { <span style="color:#66d9ef">return</span> m_from; }
+
+    <span style="color:#66d9ef">int</span> <span style="color:#a6e22e">to</span>() <span style="color:#66d9ef">const</span> { <span style="color:#66d9ef">return</span> m_to; }
+
+    <span style="color:#66d9ef">int</span> <span style="color:#a6e22e">cost</span>() <span style="color:#66d9ef">const</span> { <span style="color:#66d9ef">return</span> m_cost; }
+ 
+    Edge<span style="color:#f92672">&amp;</span> <span style="color:#66d9ef">operator</span><span style="color:#f92672">=</span>(<span style="color:#66d9ef">const</span> <span style="color:#66d9ef">int</span> x) {
+        m_cost <span style="color:#f92672">=</span> x;
+        <span style="color:#66d9ef">return</span> <span style="color:#f92672">*</span><span style="color:#66d9ef">this</span>;
+    }
+};
+ 
+<span style="color:#66d9ef">using</span> Edges <span style="color:#f92672">=</span> vector<span style="color:#f92672">&lt;</span>Edge<span style="color:#f92672">&gt;</span>;
+<span style="color:#66d9ef">using</span> Graph <span style="color:#f92672">=</span> vector<span style="color:#f92672">&lt;</span>Edges<span style="color:#f92672">&gt;</span>;
+ 
+<span style="color:#75715e">// 全点間最短路を求める。到達できない要素にはinfが格納されている前提。
+</span><span style="color:#75715e"></span><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">warshall_floyd</span>(Graph<span style="color:#f92672">&amp;</span> graph, <span style="color:#66d9ef">const</span> <span style="color:#66d9ef">int</span> inf) {
+    <span style="color:#66d9ef">const</span> <span style="color:#66d9ef">int</span> v <span style="color:#f92672">=</span> graph.size();
+    <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">int</span> k <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; k <span style="color:#f92672">&lt;</span> v; k<span style="color:#f92672">++</span>) {
+        <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">int</span> i <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; i <span style="color:#f92672">&lt;</span> v; i<span style="color:#f92672">++</span>) {
+            <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">int</span> j <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; j <span style="color:#f92672">&lt;</span> v; j<span style="color:#f92672">++</span>) {
+                <span style="color:#75715e">//if (i == j || i == k || j == k) continue; // 自分と同じノードに対する距離に0を格納していたらこの処理は不要。
+</span><span style="color:#75715e"></span>                <span style="color:#66d9ef">if</span> (graph[i][k].cost() <span style="color:#f92672">==</span> inf <span style="color:#f92672">||</span> graph[k][j].cost() <span style="color:#f92672">==</span> inf) <span style="color:#66d9ef">continue</span>;
+                graph[i][j] <span style="color:#f92672">=</span> min(graph[i][j].cost(), graph[i][k].cost() <span style="color:#f92672">+</span> graph[k][j].cost());
+            }
+        }
+    }
+}
+ 
+<span style="color:#75715e">// 隣接行列を生成
+</span><span style="color:#75715e"></span>Graph <span style="color:#a6e22e">gen_graph</span>(<span style="color:#66d9ef">const</span> <span style="color:#66d9ef">int</span> n, <span style="color:#66d9ef">const</span> <span style="color:#66d9ef">int</span> inf) {
+    Graph g(n);
+    <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">int</span> i <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; i <span style="color:#f92672">&lt;</span> n; i<span style="color:#f92672">++</span>) {
+        <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">int</span> j <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; j <span style="color:#f92672">&lt;</span> n; j<span style="color:#f92672">++</span>) {
+            <span style="color:#75715e">// 最初はすべてのノードが繋がっていないとする。
+</span><span style="color:#75715e"></span>            <span style="color:#75715e">// 自分自身に対する距離は0、繋がっていないノードへの距離はinf
+</span><span style="color:#75715e"></span>            <span style="color:#66d9ef">int</span> cost <span style="color:#f92672">=</span> (i <span style="color:#f92672">==</span> j) <span style="color:#f92672">?</span> <span style="color:#ae81ff">0</span> <span style="color:#f92672">:</span> inf;
+            g[i].push_back(Edge(i, j, cost));
+        }
+    }
+    <span style="color:#66d9ef">return</span> g;
+}
+
+<span style="color:#66d9ef">signed</span> <span style="color:#a6e22e">main</span>() {
+    <span style="color:#66d9ef">int</span> n, m; cin <span style="color:#f92672">&gt;&gt;</span> n <span style="color:#f92672">&gt;&gt;</span> m;
+    <span style="color:#66d9ef">auto</span> graph <span style="color:#f92672">=</span> gen_graph(n, INF);
+    <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">int</span> i <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; i <span style="color:#f92672">&lt;</span> m; i<span style="color:#f92672">++</span>) {
+        <span style="color:#66d9ef">int</span> a, b; cin <span style="color:#f92672">&gt;&gt;</span> a <span style="color:#f92672">&gt;&gt;</span> b; a<span style="color:#f92672">--</span>, b<span style="color:#f92672">--</span>;
+        graph[a][b] <span style="color:#f92672">=</span> graph[b][a] <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>;
+    }
+    warshall_floyd(graph, INF);
+ 
+    <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">int</span> i <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; i <span style="color:#f92672">&lt;</span> n; i<span style="color:#f92672">++</span>) {
+        <span style="color:#66d9ef">int</span> ans <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+        <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">int</span> j <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; j <span style="color:#f92672">&lt;</span> n; j<span style="color:#f92672">++</span>) {
+            <span style="color:#75715e">// 友人の友人 -&gt; 距離が2
+</span><span style="color:#75715e"></span>            <span style="color:#66d9ef">if</span> (graph[i][j].cost() <span style="color:#f92672">==</span> <span style="color:#ae81ff">2</span>) ans<span style="color:#f92672">++</span>;
+        }
+        cout <span style="color:#f92672">&lt;&lt;</span> ans <span style="color:#f92672">&lt;&lt;</span> endl;
+    }   
+}
+</code></pre></div><p>どのコードがどういう働きをしているかについて理解しやすくなった。<br>
+早解きがレート更新で重要な競プロにおいて、ここまでの実装はいささか大げさのような気がしなくもないが、おれのような雑魚はまず問題を解けるかどうかの方が重要だ。コードは見やすければ見やすいほど良い。</p>
+<p>ついでに、いつだかのコンテストで「B問題でワーシャル・フロイドが出やがった」と一部のtwitter界隈で話題になったアレを</p>
+<p><a href="https://guri6cerin.hatenablog.com/entry/2019/02/10/AtCoder_%E3%80%8C%E3%81%BF%E3%82%93%E3%81%AA%E3%81%AE%E3%83%97%E3%83%AD%E3%82%B3%E3%83%B3_2019%E3%80%8D">https://guri6cerin.hatenablog.com/entry/2019/02/10/AtCoder_%E3%80%8C%E3%81%BF%E3%82%93%E3%81%AA%E3%81%AE%E3%83%97%E3%83%AD%E3%82%B3%E3%83%B3_2019%E3%80%8D</a></p>
+<p>ワーシャル・フロイドで解いて見た。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp"><span style="color:#66d9ef">signed</span> <span style="color:#a6e22e">main</span>() {
+    <span style="color:#66d9ef">auto</span> graph <span style="color:#f92672">=</span> gen_graph(<span style="color:#ae81ff">4</span>, INF);
+    <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">int</span> i <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; i <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">3</span>; i<span style="color:#f92672">++</span>) {
+        <span style="color:#66d9ef">int</span> a, b; cin <span style="color:#f92672">&gt;&gt;</span> a <span style="color:#f92672">&gt;&gt;</span> b; a<span style="color:#f92672">--</span>, b<span style="color:#f92672">--</span>;
+        graph[a][b] <span style="color:#f92672">=</span> graph[b][a] <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>;
+    }
+    warshall_floyd(graph, INF);
+ 
+    <span style="color:#66d9ef">bool</span> ok <span style="color:#f92672">=</span> false;
+    <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">int</span> i <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; i <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">4</span>; i<span style="color:#f92672">++</span>) {
+        <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">int</span> j <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; j <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">4</span>; j<span style="color:#f92672">++</span>) {
+            <span style="color:#66d9ef">if</span> (graph[i][j].cost() <span style="color:#f92672">==</span> <span style="color:#ae81ff">3</span>) {
+                ok <span style="color:#f92672">=</span> true;
+            }
+        }
+    }
+    cout <span style="color:#f92672">&lt;&lt;</span> (ok <span style="color:#f92672">?</span> <span style="color:#e6db74">&#34;YES&#34;</span> <span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;NO&#34;</span>) <span style="color:#f92672">&lt;&lt;</span> endl;
+}
+</code></pre></div><p>・・・うん、まあこれこそオーバーキルというものだろう。早すぎた最適化というか。ちょっと違うか。</p>
+		</div>
+	</article>
+</main>
+
+
+<nav class="pager flex">
+	<div class="pager__item pager__item--prev">
+		<a class="pager__link" href="https://guricerin.github.io/shit-blog/post/2019/03/20190310-compro/" rel="prev">
+			<span class="pager__subtitle">«&thinsp;Previous</span>
+			<p class="pager__title">AtCoder 早稲田大学プログラミングコンテスト2019</p>
+		</a>
+	</div>
+	<div class="pager__item pager__item--next">
+		<a class="pager__link" href="https://guricerin.github.io/shit-blog/post/2019/03/20190315-compro/" rel="next">
+			<span class="pager__subtitle">Next&thinsp;»</span>
+			<p class="pager__title">ABC002 D:派閥</p>
+		</a>
+	</div>
+</nav>
+
+<section class="comments">
+	<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "https-guricerin-github-io-shit-blog" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+
+
+			</div>
+			
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2021 guricerin.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="https://guricerin.github.io/shit-blog/js/menu.js"></script>
+<script src="https://guricerin.github.io/shit-blog/js/custom.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js?config=TeX-AMS-MML_HTMLorMML" async></script>
+</body>
+</html>

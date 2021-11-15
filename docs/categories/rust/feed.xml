@@ -13,37 +13,37 @@
     
     <item>
       <title>『Rustで始めるネットワークプログラミング』読んだ</title>
-      <link>https://guricerin.github.io/shit-blog/post/20211108-rust-net/</link>
+      <link>https://guricerin.github.io/shit-blog/post/2021/11/20211108-rust-net/</link>
       <pubDate>Mon, 08 Nov 2021 09:12:07 +0900</pubDate>
       
-      <guid>https://guricerin.github.io/shit-blog/post/20211108-rust-net/</guid>
+      <guid>https://guricerin.github.io/shit-blog/post/2021/11/20211108-rust-net/</guid>
       <description>&lt;p&gt;ネットワークをもっと理解したかったし、500円と安かったので購入。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>『Rubyで作る奇妙なプログラミング言語』をRustで作った</title>
-      <link>https://guricerin.github.io/shit-blog/post/20210709-ruby-esolang-by-rust/</link>
+      <link>https://guricerin.github.io/shit-blog/post/2021/07/20210709-ruby-esolang-by-rust/</link>
       <pubDate>Fri, 09 Jul 2021 09:53:28 +0900</pubDate>
       
-      <guid>https://guricerin.github.io/shit-blog/post/20210709-ruby-esolang-by-rust/</guid>
+      <guid>https://guricerin.github.io/shit-blog/post/2021/07/20210709-ruby-esolang-by-rust/</guid>
       <description>&lt;p&gt;タイトル見て即購入。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Rustで『コンピュータシステムの理論と実装』を演習した</title>
-      <link>https://guricerin.github.io/shit-blog/post/20210103-nand2tetris-rust/</link>
+      <link>https://guricerin.github.io/shit-blog/post/2021/01/20210103-nand2tetris-rust/</link>
       <pubDate>Sun, 03 Jan 2021 10:23:28 +0900</pubDate>
       
-      <guid>https://guricerin.github.io/shit-blog/post/20210103-nand2tetris-rust/</guid>
+      <guid>https://guricerin.github.io/shit-blog/post/2021/01/20210103-nand2tetris-rust/</guid>
       <description>&lt;p&gt;n番煎じ。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Rustでbrainfuck方言生成器つくった</title>
-      <link>https://guricerin.github.io/shit-blog/post/20201123-bf-tool/</link>
+      <link>https://guricerin.github.io/shit-blog/post/2020/11/20201123-bf-tool/</link>
       <pubDate>Mon, 23 Nov 2020 08:15:39 +0900</pubDate>
       
-      <guid>https://guricerin.github.io/shit-blog/post/20201123-bf-tool/</guid>
+      <guid>https://guricerin.github.io/shit-blog/post/2020/11/20201123-bf-tool/</guid>
       <description></description>
     </item>
     

@@ -13,11 +13,41 @@
     
     <item>
       <title>『コンパイラ ー 原理と構造』をF#に翻訳した</title>
-      <link>https://guricerin.github.io/shit-blog/post/20211113-compiler-text-fs/</link>
+      <link>https://guricerin.github.io/shit-blog/post/2021/11/20211113-compiler-text-fs/</link>
       <pubDate>Sat, 13 Nov 2021 22:00:33 +0900</pubDate>
       
-      <guid>https://guricerin.github.io/shit-blog/post/20211113-compiler-text-fs/</guid>
+      <guid>https://guricerin.github.io/shit-blog/post/2021/11/20211113-compiler-text-fs/</guid>
       <description>&lt;p&gt;型推論などの実装を学べるらしいと聞いたので購入。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>F#で『アンダースタンディング コンピュテーション』をやる</title>
+      <link>https://guricerin.github.io/shit-blog/post/2020/03/20200327-understanding-computation-fs/</link>
+      <pubDate>Fri, 27 Mar 2020 14:49:10 +0900</pubDate>
+      
+      <guid>https://guricerin.github.io/shit-blog/post/2020/03/20200327-understanding-computation-fs/</guid>
+      <description>&lt;p&gt;リポジトリはこれ。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/guricerin/understanding-computation&#34;&gt;https://github.com/guricerin/understanding-computation&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>F#で『Write Yourself a Scheme in 48 Hours』をやる</title>
+      <link>https://guricerin.github.io/shit-blog/post/2020/02/20200218-scheme-fs/</link>
+      <pubDate>Tue, 18 Feb 2020 14:56:10 +0900</pubDate>
+      
+      <guid>https://guricerin.github.io/shit-blog/post/2020/02/20200218-scheme-fs/</guid>
+      <description>&lt;p&gt;リポジトリはこれ。&lt;br&gt;
+&lt;a href=&#34;https://github.com/guricerin/FSharp.Scheme&#34;&gt;https://github.com/guricerin/FSharp.Scheme&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>『プログラミングの基礎』をF#で解いた</title>
+      <link>https://guricerin.github.io/shit-blog/post/2019/08/20190810-basic-programming/</link>
+      <pubDate>Sat, 10 Aug 2019 15:06:54 +0900</pubDate>
+      
+      <guid>https://guricerin.github.io/shit-blog/post/2019/08/20190810-basic-programming/</guid>
+      <description>&lt;p&gt;リポジトリはこれ。&lt;br&gt;
+&lt;a href=&#34;https://github.com/guricerin/basic-of-programing&#34;&gt;https://github.com/guricerin/basic-of-programing&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>

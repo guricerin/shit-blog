@@ -13,111 +13,150 @@
     
     <item>
       <title>『コンパイラ ー 原理と構造』をF#に翻訳した</title>
-      <link>https://guricerin.github.io/shit-blog/post/20211113-compiler-text-fs/</link>
+      <link>https://guricerin.github.io/shit-blog/post/2021/11/20211113-compiler-text-fs/</link>
       <pubDate>Sat, 13 Nov 2021 22:00:33 +0900</pubDate>
       
-      <guid>https://guricerin.github.io/shit-blog/post/20211113-compiler-text-fs/</guid>
+      <guid>https://guricerin.github.io/shit-blog/post/2021/11/20211113-compiler-text-fs/</guid>
       <description>&lt;p&gt;型推論などの実装を学べるらしいと聞いたので購入。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>『Rustで始めるネットワークプログラミング』読んだ</title>
-      <link>https://guricerin.github.io/shit-blog/post/20211108-rust-net/</link>
+      <link>https://guricerin.github.io/shit-blog/post/2021/11/20211108-rust-net/</link>
       <pubDate>Mon, 08 Nov 2021 09:12:07 +0900</pubDate>
       
-      <guid>https://guricerin.github.io/shit-blog/post/20211108-rust-net/</guid>
+      <guid>https://guricerin.github.io/shit-blog/post/2021/11/20211108-rust-net/</guid>
       <description>&lt;p&gt;ネットワークをもっと理解したかったし、500円と安かったので購入。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>喫煙本数を監視しあうSNSをGoで作った</title>
-      <link>https://guricerin.github.io/shit-blog/post/20211023-sns/</link>
+      <link>https://guricerin.github.io/shit-blog/post/2021/10/20211023-sns/</link>
       <pubDate>Sat, 23 Oct 2021 23:36:02 +0900</pubDate>
       
-      <guid>https://guricerin.github.io/shit-blog/post/20211023-sns/</guid>
+      <guid>https://guricerin.github.io/shit-blog/post/2021/10/20211023-sns/</guid>
       <description>&lt;p&gt;Webアプリというにはだいぶ簡素。リポジトリはこれ。&lt;/p&gt;
 &lt;p&gt;&lt;a href=&#34;https://github.com/guricerin/stop-now-smoking&#34;&gt;https://github.com/guricerin/stop-now-smoking&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>『Clean Architecture 達人に学ぶソフトウェアの構造と設計』読んだ</title>
-      <link>https://guricerin.github.io/shit-blog/post/20210916-clean-arch/</link>
+      <link>https://guricerin.github.io/shit-blog/post/2021/09/20210916-clean-arch/</link>
       <pubDate>Thu, 16 Sep 2021 09:37:18 +0900</pubDate>
       
-      <guid>https://guricerin.github.io/shit-blog/post/20210916-clean-arch/</guid>
+      <guid>https://guricerin.github.io/shit-blog/post/2021/09/20210916-clean-arch/</guid>
       <description>&lt;p&gt;本の内容をまとめただけになったので、著作権的にまずい場合、まとめ部分を削除するかこの記事丸ごと削除します。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>『ふつうのLinuxプログラミング 第2版』読んだ</title>
-      <link>https://guricerin.github.io/shit-blog/post/20210906-std-linux/</link>
+      <link>https://guricerin.github.io/shit-blog/post/2021/09/20210906-std-linux/</link>
       <pubDate>Mon, 06 Sep 2021 09:44:38 +0900</pubDate>
       
-      <guid>https://guricerin.github.io/shit-blog/post/20210906-std-linux/</guid>
+      <guid>https://guricerin.github.io/shit-blog/post/2021/09/20210906-std-linux/</guid>
       <description>&lt;p&gt;Linuxのことなんもわかってないので購入。本書はC言語プログラムを書くことを通してLinuxの仕組みを大雑把に学ぶという感じ。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>『Rubyで作る奇妙なプログラミング言語』をRustで作った</title>
-      <link>https://guricerin.github.io/shit-blog/post/20210709-ruby-esolang-by-rust/</link>
+      <link>https://guricerin.github.io/shit-blog/post/2021/07/20210709-ruby-esolang-by-rust/</link>
       <pubDate>Fri, 09 Jul 2021 09:53:28 +0900</pubDate>
       
-      <guid>https://guricerin.github.io/shit-blog/post/20210709-ruby-esolang-by-rust/</guid>
+      <guid>https://guricerin.github.io/shit-blog/post/2021/07/20210709-ruby-esolang-by-rust/</guid>
       <description>&lt;p&gt;タイトル見て即購入。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>『Linuxで動かしながら学ぶTCP/IPネットワーク入門』読んだ</title>
-      <link>https://guricerin.github.io/shit-blog/post/20210626-linux-tcpip/</link>
+      <link>https://guricerin.github.io/shit-blog/post/2021/06/20210626-linux-tcpip/</link>
       <pubDate>Sat, 26 Jun 2021 09:57:13 +0900</pubDate>
       
-      <guid>https://guricerin.github.io/shit-blog/post/20210626-linux-tcpip/</guid>
+      <guid>https://guricerin.github.io/shit-blog/post/2021/06/20210626-linux-tcpip/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://guri6cerin.hatenablog.com/entry/2021/06/18/%E3%80%8E%E3%82%BC%E3%83%AD%E3%81%8B%E3%82%89%E3%81%AEOS%E8%87%AA%E4%BD%9C%E5%85%A5%E9%96%80%E3%80%8F%E5%86%99%E7%B5%8C%E3%81%97%E3%81%9F&#34;&gt;前回読んだ&lt;/a&gt;みかん本で解説されていない、かつ、よくわかっていない分野と言われてぱっと思いつくのは、最も身近な存在のネットワークである。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>『ゼロからのOS自作入門』写経した</title>
-      <link>https://guricerin.github.io/shit-blog/post/20210618-mikanos/</link>
+      <link>https://guricerin.github.io/shit-blog/post/2021/06/20210618-mikanos/</link>
       <pubDate>Fri, 18 Jun 2021 10:03:26 +0900</pubDate>
       
-      <guid>https://guricerin.github.io/shit-blog/post/20210618-mikanos/</guid>
+      <guid>https://guricerin.github.io/shit-blog/post/2021/06/20210618-mikanos/</guid>
       <description>&lt;p&gt;通称『みかん本』。やったことは&lt;a href=&#34;https://github.com/uchan-nos/mikanos&#34;&gt;このリポジトリ&lt;/a&gt;のコミットタグをはじめから辿ってひたすら写経しただけ。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Rustで『コンピュータシステムの理論と実装』を演習した</title>
-      <link>https://guricerin.github.io/shit-blog/post/20210103-nand2tetris-rust/</link>
+      <link>https://guricerin.github.io/shit-blog/post/2021/01/20210103-nand2tetris-rust/</link>
       <pubDate>Sun, 03 Jan 2021 10:23:28 +0900</pubDate>
       
-      <guid>https://guricerin.github.io/shit-blog/post/20210103-nand2tetris-rust/</guid>
+      <guid>https://guricerin.github.io/shit-blog/post/2021/01/20210103-nand2tetris-rust/</guid>
       <description>&lt;p&gt;n番煎じ。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>bashでコマンドライン引数を扱う</title>
-      <link>https://guricerin.github.io/shit-blog/post/20201126-bash-cmdline-arg/</link>
+      <link>https://guricerin.github.io/shit-blog/post/2020/11/20201126-bash-cmdline-arg/</link>
       <pubDate>Thu, 26 Nov 2020 11:23:55 +0900</pubDate>
       
-      <guid>https://guricerin.github.io/shit-blog/post/20201126-bash-cmdline-arg/</guid>
+      <guid>https://guricerin.github.io/shit-blog/post/2020/11/20201126-bash-cmdline-arg/</guid>
       <description></description>
     </item>
     
     <item>
       <title>brainfuck方言のB&#39;z言語を作った</title>
-      <link>https://guricerin.github.io/shit-blog/post/20201124-bz-lang/</link>
+      <link>https://guricerin.github.io/shit-blog/post/2020/11/20201124-bz-lang/</link>
       <pubDate>Tue, 24 Nov 2020 08:09:30 +0900</pubDate>
       
-      <guid>https://guricerin.github.io/shit-blog/post/20201124-bz-lang/</guid>
+      <guid>https://guricerin.github.io/shit-blog/post/2020/11/20201124-bz-lang/</guid>
       <description>&lt;p&gt;レビューさぼって何書いてんだおれは。&lt;/p&gt;</description>
     </item>
     
     <item>
       <title>Rustでbrainfuck方言生成器つくった</title>
-      <link>https://guricerin.github.io/shit-blog/post/20201123-bf-tool/</link>
+      <link>https://guricerin.github.io/shit-blog/post/2020/11/20201123-bf-tool/</link>
       <pubDate>Mon, 23 Nov 2020 08:15:39 +0900</pubDate>
       
-      <guid>https://guricerin.github.io/shit-blog/post/20201123-bf-tool/</guid>
+      <guid>https://guricerin.github.io/shit-blog/post/2020/11/20201123-bf-tool/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title>bashの定数・ローカル変数宣言</title>
+      <link>https://guricerin.github.io/shit-blog/post/2020/09/20200930-bash-local-var/</link>
+      <pubDate>Wed, 30 Sep 2020 14:18:15 +0900</pubDate>
+      
+      <guid>https://guricerin.github.io/shit-blog/post/2020/09/20200930-bash-local-var/</guid>
+      <description>&lt;p&gt;つい先日知った機能。これには驚いた。こんな初歩的なことも知らなかったのはなぜだろう。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>F#で『アンダースタンディング コンピュテーション』をやる</title>
+      <link>https://guricerin.github.io/shit-blog/post/2020/03/20200327-understanding-computation-fs/</link>
+      <pubDate>Fri, 27 Mar 2020 14:49:10 +0900</pubDate>
+      
+      <guid>https://guricerin.github.io/shit-blog/post/2020/03/20200327-understanding-computation-fs/</guid>
+      <description>&lt;p&gt;リポジトリはこれ。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/guricerin/understanding-computation&#34;&gt;https://github.com/guricerin/understanding-computation&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>F#で『Write Yourself a Scheme in 48 Hours』をやる</title>
+      <link>https://guricerin.github.io/shit-blog/post/2020/02/20200218-scheme-fs/</link>
+      <pubDate>Tue, 18 Feb 2020 14:56:10 +0900</pubDate>
+      
+      <guid>https://guricerin.github.io/shit-blog/post/2020/02/20200218-scheme-fs/</guid>
+      <description>&lt;p&gt;リポジトリはこれ。&lt;br&gt;
+&lt;a href=&#34;https://github.com/guricerin/FSharp.Scheme&#34;&gt;https://github.com/guricerin/FSharp.Scheme&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>『プログラミングの基礎』をF#で解いた</title>
+      <link>https://guricerin.github.io/shit-blog/post/2019/08/20190810-basic-programming/</link>
+      <pubDate>Sat, 10 Aug 2019 15:06:54 +0900</pubDate>
+      
+      <guid>https://guricerin.github.io/shit-blog/post/2019/08/20190810-basic-programming/</guid>
+      <description>&lt;p&gt;リポジトリはこれ。&lt;br&gt;
+&lt;a href=&#34;https://github.com/guricerin/basic-of-programing&#34;&gt;https://github.com/guricerin/basic-of-programing&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     
   </channel>

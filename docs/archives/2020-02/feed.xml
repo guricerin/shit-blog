@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>2020-02 on グリのクソブログ</title>
+    <link>https://guricerin.github.io/shit-blog/archives/2020-02/</link>
+    <description>Recent content in 2020-02 on グリのクソブログ</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-JP</language>
+    <lastBuildDate>Tue, 18 Feb 2020 14:56:10 +0900</lastBuildDate>
+    
+	<atom:link href="https://guricerin.github.io/shit-blog/archives/2020-02/feed.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>F#で『Write Yourself a Scheme in 48 Hours』をやる</title>
+      <link>https://guricerin.github.io/shit-blog/post/2020/02/20200218-scheme-fs/</link>
+      <pubDate>Tue, 18 Feb 2020 14:56:10 +0900</pubDate>
+      
+      <guid>https://guricerin.github.io/shit-blog/post/2020/02/20200218-scheme-fs/</guid>
+      <description>&lt;p&gt;リポジトリはこれ。&lt;br&gt;
+&lt;a href=&#34;https://github.com/guricerin/FSharp.Scheme&#34;&gt;https://github.com/guricerin/FSharp.Scheme&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

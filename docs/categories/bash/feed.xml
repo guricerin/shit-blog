@@ -13,11 +13,20 @@
     
     <item>
       <title>bashでコマンドライン引数を扱う</title>
-      <link>https://guricerin.github.io/shit-blog/post/20201126-bash-cmdline-arg/</link>
+      <link>https://guricerin.github.io/shit-blog/post/2020/11/20201126-bash-cmdline-arg/</link>
       <pubDate>Thu, 26 Nov 2020 11:23:55 +0900</pubDate>
       
-      <guid>https://guricerin.github.io/shit-blog/post/20201126-bash-cmdline-arg/</guid>
+      <guid>https://guricerin.github.io/shit-blog/post/2020/11/20201126-bash-cmdline-arg/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title>bashの定数・ローカル変数宣言</title>
+      <link>https://guricerin.github.io/shit-blog/post/2020/09/20200930-bash-local-var/</link>
+      <pubDate>Wed, 30 Sep 2020 14:18:15 +0900</pubDate>
+      
+      <guid>https://guricerin.github.io/shit-blog/post/2020/09/20200930-bash-local-var/</guid>
+      <description>&lt;p&gt;つい先日知った機能。これには驚いた。こんな初歩的なことも知らなかったのはなぜだろう。&lt;/p&gt;</description>
     </item>
     
   </channel>
