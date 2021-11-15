@@ -21,6 +21,15 @@
     </item>
     
     <item>
+      <title>『Rustで始めるネットワークプログラミング』読んだ</title>
+      <link>https://guricerin.github.io/shit-blog/post/20211108-rust-net/</link>
+      <pubDate>Mon, 08 Nov 2021 09:12:07 +0900</pubDate>
+      
+      <guid>https://guricerin.github.io/shit-blog/post/20211108-rust-net/</guid>
+      <description>&lt;p&gt;ネットワークをもっと理解したかったし、500円と安かったので購入。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>喫煙本数を監視しあうSNSをGoで作った</title>
       <link>https://guricerin.github.io/shit-blog/post/20211023-sns/</link>
       <pubDate>Sat, 23 Oct 2021 23:36:02 +0900</pubDate>
@@ -112,6 +121,24 @@
     </item>
     
     <item>
+      <title>XORの性質</title>
+      <link>https://guricerin.github.io/shit-blog/post/20201130-xor/</link>
+      <pubDate>Mon, 30 Nov 2020 11:21:22 +0900</pubDate>
+      
+      <guid>https://guricerin.github.io/shit-blog/post/20201130-xor/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>bashでコマンドライン引数を扱う</title>
+      <link>https://guricerin.github.io/shit-blog/post/20201126-bash-cmdline-arg/</link>
+      <pubDate>Thu, 26 Nov 2020 11:23:55 +0900</pubDate>
+      
+      <guid>https://guricerin.github.io/shit-blog/post/20201126-bash-cmdline-arg/</guid>
+      <description></description>
+    </item>
+    
+    <item>
       <title>brainfuck方言のB&#39;z言語を作った</title>
       <link>https://guricerin.github.io/shit-blog/post/20201124-bz-lang/</link>
       <pubDate>Tue, 24 Nov 2020 08:09:30 +0900</pubDate>
@@ -127,6 +154,25 @@
       
       <guid>https://guricerin.github.io/shit-blog/post/20201123-bf-tool/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title>Windows環境で便利なツール</title>
+      <link>https://guricerin.github.io/shit-blog/post/20201001-windows-tool/</link>
+      <pubDate>Thu, 01 Oct 2020 11:29:20 +0900</pubDate>
+      
+      <guid>https://guricerin.github.io/shit-blog/post/20201001-windows-tool/</guid>
+      <description>&lt;p&gt;自分用メモ。完全にn番煎じ。いまのところフリーのソフトだけ。&lt;br&gt;
+他にも良いのが見つかれば追記していく予定。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>bashの定数・ローカル変数宣言</title>
+      <link>https://guricerin.github.io/shit-blog/post/20200930-bash-local-var/</link>
+      <pubDate>Wed, 30 Sep 2020 14:18:15 +0900</pubDate>
+      
+      <guid>https://guricerin.github.io/shit-blog/post/20200930-bash-local-var/</guid>
+      <description>&lt;p&gt;つい先日知った機能。これには驚いた。こんな初歩的なことも知らなかったのはなぜだろう。&lt;/p&gt;</description>
     </item>
     
     <item>

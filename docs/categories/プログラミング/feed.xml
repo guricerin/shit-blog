@@ -21,6 +21,15 @@
     </item>
     
     <item>
+      <title>『Rustで始めるネットワークプログラミング』読んだ</title>
+      <link>https://guricerin.github.io/shit-blog/post/20211108-rust-net/</link>
+      <pubDate>Mon, 08 Nov 2021 09:12:07 +0900</pubDate>
+      
+      <guid>https://guricerin.github.io/shit-blog/post/20211108-rust-net/</guid>
+      <description>&lt;p&gt;ネットワークをもっと理解したかったし、500円と安かったので購入。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>喫煙本数を監視しあうSNSをGoで作った</title>
       <link>https://guricerin.github.io/shit-blog/post/20211023-sns/</link>
       <pubDate>Sat, 23 Oct 2021 23:36:02 +0900</pubDate>
@@ -82,6 +91,15 @@
       
       <guid>https://guricerin.github.io/shit-blog/post/20210103-nand2tetris-rust/</guid>
       <description>&lt;p&gt;n番煎じ。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>bashでコマンドライン引数を扱う</title>
+      <link>https://guricerin.github.io/shit-blog/post/20201126-bash-cmdline-arg/</link>
+      <pubDate>Thu, 26 Nov 2020 11:23:55 +0900</pubDate>
+      
+      <guid>https://guricerin.github.io/shit-blog/post/20201126-bash-cmdline-arg/</guid>
+      <description></description>
     </item>
     
     <item>

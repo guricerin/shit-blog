@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>2020-09 on グリのクソブログ</title>
+    <link>https://guricerin.github.io/shit-blog/archives/2020-09/</link>
+    <description>Recent content in 2020-09 on グリのクソブログ</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-JP</language>
+    <lastBuildDate>Wed, 30 Sep 2020 14:18:15 +0900</lastBuildDate>
+    
+	<atom:link href="https://guricerin.github.io/shit-blog/archives/2020-09/feed.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>bashの定数・ローカル変数宣言</title>
+      <link>https://guricerin.github.io/shit-blog/post/20200930-bash-local-var/</link>
+      <pubDate>Wed, 30 Sep 2020 14:18:15 +0900</pubDate>
+      
+      <guid>https://guricerin.github.io/shit-blog/post/20200930-bash-local-var/</guid>
+      <description>&lt;p&gt;つい先日知った機能。これには驚いた。こんな初歩的なことも知らなかったのはなぜだろう。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>WindowsのpwshからsshでWSL2に接続</title>
+      <link>https://guricerin.github.io/shit-blog/post/20200914-windows-to-wsl2-ssh/</link>
+      <pubDate>Tue, 15 Sep 2020 10:28:44 +0900</pubDate>
+      
+      <guid>https://guricerin.github.io/shit-blog/post/20200914-windows-to-wsl2-ssh/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>『最短経路の本 レナのふしぎな数学の旅』メモ</title>
+      <link>https://guricerin.github.io/shit-blog/post/20200912-lena/</link>
+      <pubDate>Sat, 12 Sep 2020 10:33:28 +0900</pubDate>
+      
+      <guid>https://guricerin.github.io/shit-blog/post/20200912-lena/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>夏の終わり？</title>
+      <link>https://guricerin.github.io/shit-blog/post/20200902-summer-end/</link>
+      <pubDate>Wed, 02 Sep 2020 10:35:19 +0900</pubDate>
+      
+      <guid>https://guricerin.github.io/shit-blog/post/20200902-summer-end/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

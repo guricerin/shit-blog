@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>2021-07 on グリのクソブログ</title>
+    <link>https://guricerin.github.io/shit-blog/archives/2021-07/</link>
+    <description>Recent content in 2021-07 on グリのクソブログ</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-JP</language>
+    <lastBuildDate>Fri, 09 Jul 2021 09:53:28 +0900</lastBuildDate>
+    
+	<atom:link href="https://guricerin.github.io/shit-blog/archives/2021-07/feed.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>『Rubyで作る奇妙なプログラミング言語』をRustで作った</title>
+      <link>https://guricerin.github.io/shit-blog/post/20210709-ruby-esolang-by-rust/</link>
+      <pubDate>Fri, 09 Jul 2021 09:53:28 +0900</pubDate>
+      
+      <guid>https://guricerin.github.io/shit-blog/post/20210709-ruby-esolang-by-rust/</guid>
+      <description>&lt;p&gt;タイトル見て即購入。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>bash on グリのクソブログ</title>
+    <link>https://guricerin.github.io/shit-blog/categories/bash/</link>
+    <description>Recent content in bash on グリのクソブログ</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-JP</language>
+    <lastBuildDate>Thu, 26 Nov 2020 11:23:55 +0900</lastBuildDate>
+    
+	<atom:link href="https://guricerin.github.io/shit-blog/categories/bash/feed.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>bashでコマンドライン引数を扱う</title>
+      <link>https://guricerin.github.io/shit-blog/post/20201126-bash-cmdline-arg/</link>
+      <pubDate>Thu, 26 Nov 2020 11:23:55 +0900</pubDate>
+      
+      <guid>https://guricerin.github.io/shit-blog/post/20201126-bash-cmdline-arg/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

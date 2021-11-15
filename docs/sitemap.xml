@@ -3,6 +3,16 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://guricerin.github.io/shit-blog/archives/2021-11/</loc>
+    <lastmod>2021-11-13T22:00:33+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://guricerin.github.io/shit-blog/archives/</loc>
+    <lastmod>2021-11-13T22:00:33+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://guricerin.github.io/shit-blog/categories/</loc>
     <lastmod>2021-11-13T22:00:33+09:00</lastmod>
   </url>
@@ -38,6 +48,21 @@
   </url>
   
   <url>
+    <loc>https://guricerin.github.io/shit-blog/categories/rust/</loc>
+    <lastmod>2021-11-08T09:12:07+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://guricerin.github.io/shit-blog/post/20211108-rust-net/</loc>
+    <lastmod>2021-11-08T09:12:07+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://guricerin.github.io/shit-blog/archives/2021-10/</loc>
+    <lastmod>2021-10-23T23:36:02+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://guricerin.github.io/shit-blog/categories/go/</loc>
     <lastmod>2021-10-23T23:36:02+09:00</lastmod>
   </url>
@@ -45,6 +70,11 @@
   <url>
     <loc>https://guricerin.github.io/shit-blog/post/20211023-sns/</loc>
     <lastmod>2021-10-23T23:36:02+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://guricerin.github.io/shit-blog/archives/2021-09/</loc>
+    <lastmod>2021-09-23T22:44:32+09:00</lastmod>
   </url>
   
   <url>
@@ -93,13 +123,18 @@
   </url>
   
   <url>
-    <loc>https://guricerin.github.io/shit-blog/categories/rust/</loc>
+    <loc>https://guricerin.github.io/shit-blog/archives/2021-07/</loc>
     <lastmod>2021-07-09T09:53:28+09:00</lastmod>
   </url>
   
   <url>
     <loc>https://guricerin.github.io/shit-blog/post/20210709-ruby-esolang-by-rust/</loc>
     <lastmod>2021-07-09T09:53:28+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://guricerin.github.io/shit-blog/archives/2021-06/</loc>
+    <lastmod>2021-06-26T09:57:13+09:00</lastmod>
   </url>
   
   <url>
@@ -118,8 +153,38 @@
   </url>
   
   <url>
+    <loc>https://guricerin.github.io/shit-blog/archives/2021-01/</loc>
+    <lastmod>2021-01-03T10:23:28+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://guricerin.github.io/shit-blog/post/20210103-nand2tetris-rust/</loc>
     <lastmod>2021-01-03T10:23:28+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://guricerin.github.io/shit-blog/archives/2020-11/</loc>
+    <lastmod>2020-11-30T11:21:22+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://guricerin.github.io/shit-blog/post/20201130-xor/</loc>
+    <lastmod>2020-11-30T11:21:22+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://guricerin.github.io/shit-blog/categories/%E6%95%B0%E5%AD%A6/</loc>
+    <lastmod>2020-11-30T11:21:22+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://guricerin.github.io/shit-blog/categories/bash/</loc>
+    <lastmod>2020-11-26T11:23:55+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://guricerin.github.io/shit-blog/post/20201126-bash-cmdline-arg/</loc>
+    <lastmod>2020-11-26T11:23:55+09:00</lastmod>
   </url>
   
   <url>
@@ -138,8 +203,28 @@
   </url>
   
   <url>
+    <loc>https://guricerin.github.io/shit-blog/archives/2020-10/</loc>
+    <lastmod>2020-10-01T11:29:20+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://guricerin.github.io/shit-blog/categories/windows/</loc>
-    <lastmod>2020-09-15T10:28:44+09:00</lastmod>
+    <lastmod>2020-10-01T11:29:20+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://guricerin.github.io/shit-blog/post/20201001-windows-tool/</loc>
+    <lastmod>2020-10-01T11:29:20+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://guricerin.github.io/shit-blog/archives/2020-09/</loc>
+    <lastmod>2020-09-30T14:18:15+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://guricerin.github.io/shit-blog/post/20200930-bash-local-var/</loc>
+    <lastmod>2020-09-30T14:18:15+09:00</lastmod>
   </url>
   
   <url>
@@ -153,18 +238,23 @@
   </url>
   
   <url>
-    <loc>https://guricerin.github.io/shit-blog/categories/%E6%95%B0%E5%AD%A6/</loc>
-    <lastmod>2020-09-12T10:33:28+09:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://guricerin.github.io/shit-blog/post/20200902-summer-end/</loc>
     <lastmod>2020-09-02T10:35:19+09:00</lastmod>
   </url>
   
   <url>
+    <loc>https://guricerin.github.io/shit-blog/archives/2020-08/</loc>
+    <lastmod>2020-08-15T10:57:42+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://guricerin.github.io/shit-blog/post/20200815-singing-bird/</loc>
     <lastmod>2020-08-15T10:57:42+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://guricerin.github.io/shit-blog/archives/2017-10/</loc>
+    <lastmod>2017-10-09T23:45:54+09:00</lastmod>
   </url>
   
   <url>

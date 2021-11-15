@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>『Rustで始めるネットワークプログラミング』読んだ - グリのクソブログ</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+		<meta property="og:title" content="『Rustで始めるネットワークプログラミング』読んだ" />
+<meta property="og:description" content="ネットワークをもっと理解したかったし、500円と安かったので購入。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://guricerin.github.io/shit-blog/post/20211108-rust-net/" />
+<meta property="article:published_time" content="2021-11-08T09:12:07+09:00" />
+<meta property="article:modified_time" content="2021-11-08T09:12:07+09:00" />
+
+		<meta itemprop="name" content="『Rustで始めるネットワークプログラミング』読んだ">
+<meta itemprop="description" content="ネットワークをもっと理解したかったし、500円と安かったので購入。">
+<meta itemprop="datePublished" content="2021-11-08T09:12:07&#43;09:00" />
+<meta itemprop="dateModified" content="2021-11-08T09:12:07&#43;09:00" />
+<meta itemprop="wordCount" content="219">
+
+
+
+<meta itemprop="keywords" content="" />
+		<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="『Rustで始めるネットワークプログラミング』読んだ"/>
+<meta name="twitter:description" content="ネットワークをもっと理解したかったし、500円と安かったので購入。"/>
+
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+
+	<link rel="stylesheet" href="https://guricerin.github.io/shit-blog/css/style.css">
+	<link rel="stylesheet" href="https://guricerin.github.io/shit-blog/css/custom.css">
+
+	<link rel="shortcut icon" href="https://guricerin.github.io/shit-blog/favicon.ico">
+		
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container header__container">
+		
+	<div class="logo logo--mixed">
+		<a class="logo__link" href="https://guricerin.github.io/shit-blog/" title="グリのクソブログ" rel="home">
+			<div class="logo__item logo__imagebox">
+					<img class="logo__img" src="https://guricerin.github.io/shit-blog/img/icon.jpg">
+				</div><div class="logo__item logo__text">
+					<div class="logo__title">グリのクソブログ</div>
+					<div class="logo__tagline">主にB&#39;z</div>
+				</div>
+		</a>
+	</div>
+		
+<nav class="menu">
+	<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
+		<span class="menu__btn-title" tabindex="-1">Menu</span>
+	</button>
+	<ul class="menu__list">
+		<li class="menu__item">
+			<a class="menu__link" href="https://guricerin.github.io/shit-blog/archives">
+				
+				<span class="menu__text">ARCHIVE</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="https://guricerin.github.io/shit-blog/feed.xml">
+				
+				<span class="menu__text">RSS</span>
+				
+			</a>
+		</li>
+	</ul>
+</nav>
+
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">『Rustで始めるネットワークプログラミング』読んだ</h1>
+			<div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2021-11-08T09:12:07&#43;09:00">2021-11-08</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="https://guricerin.github.io/shit-blog/categories/%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0/" rel="category">プログラミング</a>, <a class="meta__link" href="https://guricerin.github.io/shit-blog/categories/rust/" rel="category">Rust</a>
+	</span>
+</div></div>
+		</header>
+		<div class="content post__content clearfix">
+			<p>ネットワークをもっと理解したかったし、500円と安かったので購入。</p>
+<p>紹介ページ : <a href="https://cha-shu00.hatenablog.com/entry/2019/06/12/231526">https://cha-shu00.hatenablog.com/entry/2019/06/12/231526</a></p>
+<p>環境はLinuxが想定されている。おれは1章と5章をWindows10で、2章から4章はWSL2のUbuntu 20.04で演習した。理由は後述する。</p>
+<h3 id="第1章-ようこそソケット通信の世界へ">第1章 ようこそソケット通信の世界へ</h3>
+<p>単純なechoサーバを、TCPとUDP両方のプロトコルで作成する。<br>
+サーバプログラムの動作確認に<code>telnet</code>または<code>nc</code>コマンドを使用する。Windowsの場合はどちらも<code>scoop</code>からインストール可能。まあクライアントプログラムも作成するので不要っちゃ不要。<br>
+インストールする場合は通信プロトコルを指定できる<code>netcat</code>のほうがいいかも。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">$ scoop install telnet <span style="color:#75715e"># or netcat</span>
+</code></pre></div><h3 id="第2章-通信を監視する">第2章 通信を監視する</h3>
+<p>指定したネットワークインターフェイスに流れるパケットをキャプチャし、標準出力に表示するプログラムを作成する。
+いきなり難度の高そうなプログラムを作らされるが、ネットワーク関連のクレートである<code>pnet</code>が強力なので案外コード量は少ない。</p>
+<p>データリンク層のフレーム -&gt; ネットワーク層のパケット -&gt; アプリケーション層のバイナリデータ といった具合に、各レイヤーにおけるデータからヘッダー部をむきむきしてペイロード部を順々に取り出していく実装となる。</p>
+<p>って、コンパイルエラーなるやないかーい。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">error: linking with <span style="color:#e6db74">`</span>link.exe<span style="color:#e6db74">`</span> failed: exit code: <span style="color:#ae81ff">1181</span>
+  |
+  <span style="color:#f92672">=</span> note: （長すぎるため省略）
+
+  <span style="color:#f92672">=</span> note: Non-UTF-8 output: LINK : fatal error LNK1181: <span style="color:#ae81ff">\x</span>93<span style="color:#ae81ff">\x</span>fc<span style="color:#ae81ff">\x</span>97<span style="color:#ae81ff">\x</span>cd<span style="color:#ae81ff">\x</span>83t<span style="color:#ae81ff">\x</span>83@<span style="color:#ae81ff">\x</span>83C<span style="color:#ae81ff">\x</span>83<span style="color:#ae81ff">\x</span>8b <span style="color:#ae81ff">\&#39;</span>Packet.lib<span style="color:#ae81ff">\&#39;</span> <span style="color:#ae81ff">\x</span>82<span style="color:#ae81ff">\x</span>f0<span style="color:#ae81ff">\x</span>8aJ<span style="color:#ae81ff">\x</span>82<span style="color:#ae81ff">\x</span>af<span style="color:#ae81ff">\x</span>82<span style="color:#ae81ff">\x</span>dc<span style="color:#ae81ff">\x</span>82<span style="color:#ae81ff">\x</span>b9<span style="color:#ae81ff">\x</span>82<span style="color:#ae81ff">\x</span>f1<span style="color:#ae81ff">\x</span>81B<span style="color:#ae81ff">\r\n</span>
+
+error: could not compile <span style="color:#e6db74">`</span>ch2-packet-capture<span style="color:#e6db74">`</span> due to previous error
+</code></pre></div><p>エラーがやたらと冗長だが、要は<code>Packet.lib</code>なるものが必要らしい。<br>
+これはWindows用のパケットキャプチャライブラリの<code>npcap</code>に同梱されている。以下のページより<code>Npcap SDK 1.11 (ZIP)</code>をダウンロード（バージョンは2021/11/05時点）。</p>
+<p><a href="https://nmap.org/npcap/">https://nmap.org/npcap/</a></p>
+<p>ダウンロードしたzipを展開し、その中の<code>Lib/x64/Packet.lib</code>をどっか適当なフォルダに突っ込み、さらにそのフォルダのパスを<code>LIB</code>環境変数に登録する。するとビルドが成功する。（まあ<a href="https://github.com/libpnet/libpnet/issues/332">このIssue</a>見て解決方法知ったんすが）。</p>
+<p>次にネットワークインターフェイスの名前を調べる。Linuxでは<code>ip addr</code>で取得できるが、WindowsのPowerShellでは<code>Get-NetAdapter</code>を&hellip;&hellip;使わない。以下のコードを<code>main.rs</code>に追加し、ネットワークインターフェイス名を列挙させる。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust">    <span style="color:#66d9ef">let</span> interfaces <span style="color:#f92672">=</span> datalink::interfaces();
+    <span style="color:#75715e">// ここから追加分
+</span><span style="color:#75715e"></span>    <span style="color:#66d9ef">for</span> iface <span style="color:#66d9ef">in</span> interfaces.iter() {
+        println<span style="color:#f92672">!</span>(<span style="color:#e6db74">&#34;{}&#34;</span>, iface);
+    }
+    <span style="color:#75715e">// 追加分ここまで
+</span></code></pre></div><p>実行結果は以下のようになる。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">$ cargo run <span style="color:#75715e"># Windowsではデータリンク層のパケット受信に管理者権限が必要ないのでこれでおk</span>
+<span style="color:#ae81ff">\D</span>evice<span style="color:#ae81ff">\N</span>PF_<span style="color:#f92672">{</span>hoge<span style="color:#f92672">}</span>: flags<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>
+      index: d
+      ether: xx:xx:xx:xx:xx:xx
+       inet: x.x.x.x/x
+<span style="color:#ae81ff">\D</span>evice<span style="color:#ae81ff">\N</span>PF_<span style="color:#f92672">{</span>fuga<span style="color:#f92672">}</span>: flags<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>
+      index: e
+      ether: yy:yy:yy:yy:yy:yy
+       inet: y.y.y.y/y
+~~~
+</code></pre></div><p><code>\Device\NPF_{}</code>の部分がWindowsにおけるネットワークインターフェイス名なので、インターネットに接続されてそうなものを<code>cargo run &quot;\Device\NPF_{}&quot;</code>とすることでパケットキャプチャ可能。</p>
+<p>ちなみに<code>Get-NetAdapter</code>の実行結果は以下のようになる。Rustコードの実行結果とぜんぜん違うやないか。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">$ Get-NetAdapter | % <span style="color:#f92672">{</span>$_.Name<span style="color:#f92672">}</span>
+イーサネット
+Wi-Fi
+VirtualBox Host-Only Network
+vEthernet <span style="color:#f92672">(</span>WSL<span style="color:#f92672">)</span>
+</code></pre></div><p>ここまでやって面倒くさくなったので、以後おとなしくWSL2にて動作させることにした。</p>
+<h3 id="第3章-手づくりパケットでポートスキャン">第3章 手づくりパケットでポートスキャン</h3>
+<p>待ち受け状態（リスニングソケットがバインドされている）ポートを特定するプログラムを作成する。<br>
+4種のポートスキャン手法を実装する。雑に言えばどの手法も相手になんらかのTCPパケットを送信するが、</p>
+<ul>
+<li>SYNスキャンの場合 : 相手のポートが開いていたらSYN+ACKが返ってくる</li>
+<li>それ以外のスキャンの場合 : 相手のポートが開いていたらパケットが返ってこない</li>
+</ul>
+<p>上記の判断材料でもってポートの開閉をチェックすることになる。</p>
+<h3 id="第4章-ノンブロッキングなwebサーバ">第4章 ノンブロッキングなWEBサーバ</h3>
+<p>その名の通りのサーバを作成する。<br>
+ノンブロッキングI/Oは、I/O処理が完了して__いない__ことをカーネルがプロセスにエラー通知する方式。似たようなものとして非同期I/Oもあるが、こちらはI/O処理を担当するプロセスorスレッドが処理を完了したときに要請元プロセスorスレッドに通知する方式。<br>
+これがどう違ってくるねんて話だが、前者はイベントループによるポーリング方式と組み合わせることでI/O処理完了を待機するシングルスレッドのままにすることが可能。対して、後者はマルチプロセスorマルチスレッド前提の運用となる。<br>
+ちなみにプロセスには独自のメモリ空間が割り当てられるのに対し、同じプロセス内のスレッドはメモリ空間を共有する。</p>
+<p>非同期I/Oでは、サーバのハードウェア性能に余裕があってもクライアントの同時接続数が1万台付近に達するとレスポンス性能が落ちるC10K問題が発生するらしい。原因は1リクエストにつき1プロセスorスレッドを割り当てるというぜいたくな方式なので、すぐにリソース上限が来るかららしい。<br>
+シングルプロセス・シングルスレッドたるノンブロッキングI/Oなら上記のようなことは起きないが、こっちはこっちでI/Oに時間がかかると全体のパフォーマンスに影響するらしい。まあ各リクエストは1つのイベントキューに突っ込まれて待機してるしな。</p>
+<p>Webサーバを作成したらホストOS（Windows）のブラウザからアクセスしてみてもいいし、以下のようにターミナルから脆弱性をつついてみてもいい。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">$ nc -C 127.0.0.1 <span style="color:#ae81ff">8080</span> <span style="color:#75715e"># -Cオプションは改行をCRLFに固定</span>
+GET /../Cargo.toml HTTP/1.1 <span style="color:#75715e"># 入力部分（ここではパストラバーサルを仕込んでいる）</span>
+HTTP/1.0 <span style="color:#ae81ff">200</span> OK
+Server: mio webserver
+
+<span style="color:#f92672">[</span>package<span style="color:#f92672">]</span>
+name <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;ch4-mio-webserver&#34;</span>
+version <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;0.1.0&#34;</span>
+edition <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;2021&#34;</span>
+
+<span style="color:#75715e"># See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html</span>
+
+<span style="color:#f92672">[</span>dependencies<span style="color:#f92672">]</span>
+anyhow <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;1.0.45&#34;</span>
+env_logger <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;0.9.0&#34;</span>
+log <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;0.4.14&#34;</span>
+mio <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;0.6.11&#34;</span>
+regex <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;1.5.4&#34;</span>
+</code></pre></div><h3 id="第5章-rfcから作るdhcpサーバ">第5章 RFCから作るDHCPサーバ</h3>
+<p>ネットワークに関連する仕様をまとめたドキュメントであるRFCを参照しながらDHCPサーバを作成する。DHCPサーバとはネットワーク内のホストにIPアドレスを付与するなど、ネットワーク設定を自動で行ってくれるサーバで、ルータがこれを兼任することが多い。<br>
+また、この章ではDHCPについて記述されている<a href="https://datatracker.ietf.org/doc/html/rfc2131">RFC2131</a>を実際に見ながら演習していく。</p>
+<p>DHCPパケットのフィールドの仕様を確認しながらビット列をいじいじする部分は、PLCにコマンドを送信するプログラムを業務で仕様書読みながら組んだことを思い出し懐かしい気持ちになった。</p>
+<p>ただ、WSL2のネットワークはホストOS側にはveth扱いとなっている。ルータの設定を変更しDHCP機能を停止してもWSLの面倒をみるDHCPサーバは他にいるので意味はない。なので結局この章ではWindowsで戻ってきた。<br>
+2章のときと同じくコンパイル時に<code>sqlite3.lib</code>がなくてどやされるので、やはりそれを同じようにパスに追加して実行した。</p>
+<h3 id="まとめ">まとめ</h3>
+<p>新たに学べた事項は以下の通り。厳密にはこの本以外の部分でわかったことも含めている。</p>
+<ul>
+<li><code>env_logger</code>クレートの使い方（いまさら？）。</li>
+<li><code>pnet</code>クレートの使い方。</li>
+<li>ノンブロッキングと非同期の違い。</li>
+<li>RFCを読む根性。</li>
+<li>DHCPの大雑把な仕様。</li>
+<li>RustでのDBライブラリの使い方。</li>
+<li>ICMP : IPの補佐的プロトコル。Pingなどネットワークの疎通確認に使われる。</li>
+</ul>
+<p><a href="https://guri6cerin.hatenablog.com/entry/2021/06/26/%E3%80%8ELinux%E3%81%A7%E5%8B%95%E3%81%8B%E3%81%97%E3%81%AA%E3%81%8C%E3%82%89%E5%AD%A6%E3%81%B6TCP/IP%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF%E5%85%A5%E9%96%80%E3%80%8F%E8%AA%AD">以前ネットワークについてそこそこ勉強した</a>はずだが、案の定、大半の内容が忘却の彼方に追いやられていた。それを今回のプログラム写経によって少しは取り戻せたように思う。</p>
+		</div>
+	</article>
+</main>
+
+
+<nav class="pager flex">
+	<div class="pager__item pager__item--prev">
+		<a class="pager__link" href="https://guricerin.github.io/shit-blog/post/20211023-sns/" rel="prev">
+			<span class="pager__subtitle">«&thinsp;Previous</span>
+			<p class="pager__title">喫煙本数を監視しあうSNSをGoで作った</p>
+		</a>
+	</div>
+	<div class="pager__item pager__item--next">
+		<a class="pager__link" href="https://guricerin.github.io/shit-blog/post/20211113-compiler-text-fs/" rel="next">
+			<span class="pager__subtitle">Next&thinsp;»</span>
+			<p class="pager__title">『コンパイラ ー 原理と構造』をF#に翻訳した</p>
+		</a>
+	</div>
+</nav>
+
+<section class="comments">
+	<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "https-guricerin-github-io-shit-blog" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+
+
+			</div>
+			
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2021 guricerin.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="https://guricerin.github.io/shit-blog/js/menu.js"></script>
+<script src="https://guricerin.github.io/shit-blog/js/custom.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js?config=TeX-AMS-MML_HTMLorMML" async></script>
+</body>
+</html>

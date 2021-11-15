@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>bashの定数・ローカル変数宣言 - グリのクソブログ</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+		<meta property="og:title" content="bashの定数・ローカル変数宣言" />
+<meta property="og:description" content="つい先日知った機能。これには驚いた。こんな初歩的なことも知らなかったのはなぜだろう。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://guricerin.github.io/shit-blog/post/20200930-bash-local-var/" />
+<meta property="article:published_time" content="2020-09-30T14:18:15+09:00" />
+<meta property="article:modified_time" content="2020-09-30T14:18:15+09:00" />
+
+		<meta itemprop="name" content="bashの定数・ローカル変数宣言">
+<meta itemprop="description" content="つい先日知った機能。これには驚いた。こんな初歩的なことも知らなかったのはなぜだろう。">
+<meta itemprop="datePublished" content="2020-09-30T14:18:15&#43;09:00" />
+<meta itemprop="dateModified" content="2020-09-30T14:18:15&#43;09:00" />
+<meta itemprop="wordCount" content="161">
+
+
+
+<meta itemprop="keywords" content="" />
+		<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="bashの定数・ローカル変数宣言"/>
+<meta name="twitter:description" content="つい先日知った機能。これには驚いた。こんな初歩的なことも知らなかったのはなぜだろう。"/>
+
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+
+	<link rel="stylesheet" href="https://guricerin.github.io/shit-blog/css/style.css">
+	<link rel="stylesheet" href="https://guricerin.github.io/shit-blog/css/custom.css">
+
+	<link rel="shortcut icon" href="https://guricerin.github.io/shit-blog/favicon.ico">
+		
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container header__container">
+		
+	<div class="logo logo--mixed">
+		<a class="logo__link" href="https://guricerin.github.io/shit-blog/" title="グリのクソブログ" rel="home">
+			<div class="logo__item logo__imagebox">
+					<img class="logo__img" src="https://guricerin.github.io/shit-blog/img/icon.jpg">
+				</div><div class="logo__item logo__text">
+					<div class="logo__title">グリのクソブログ</div>
+					<div class="logo__tagline">主にB&#39;z</div>
+				</div>
+		</a>
+	</div>
+		
+<nav class="menu">
+	<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
+		<span class="menu__btn-title" tabindex="-1">Menu</span>
+	</button>
+	<ul class="menu__list">
+		<li class="menu__item">
+			<a class="menu__link" href="https://guricerin.github.io/shit-blog/archives">
+				
+				<span class="menu__text">ARCHIVE</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="https://guricerin.github.io/shit-blog/feed.xml">
+				
+				<span class="menu__text">RSS</span>
+				
+			</a>
+		</li>
+	</ul>
+</nav>
+
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">bashの定数・ローカル変数宣言</h1>
+			<div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2020-09-30T14:18:15&#43;09:00">2020-09-30</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text">
+	</span>
+</div></div>
+		</header>
+		<div class="content post__content clearfix">
+			<p>つい先日知った機能。これには驚いた。こんな初歩的なことも知らなかったのはなぜだろう。</p>
+<p>単純におれが低脳だからというのもあるだろうが、もう少し考えてみる。基本的におれの学習方法はネット上のいろんなコードをパクりつつ覚えていくというものだから、オリジナルのコードを書いた人達も知らなかったことになる。</p>
+<p>もしかして、あまり知られていない機能なのだろうか。それともスクリプトごときに長ったらしい修飾子なんざわざわざつけたがらないとか？</p>
+<h4 id="グローバル定数">グローバル定数</h4>
+<p>変数宣言の際に readonly をつける。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#75715e">#!/bin/bash
+</span><span style="color:#75715e"></span>
+readonly hoge<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;HOGE&#34;</span>
+
+<span style="color:#66d9ef">function</span> fun<span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+    readonly fuga<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;FUGA&#34;</span>
+    echo <span style="color:#e6db74">${</span>hoge<span style="color:#e6db74">}</span>
+    echo <span style="color:#e6db74">${</span>fuga<span style="color:#e6db74">}</span>
+<span style="color:#f92672">}</span>
+
+fun
+echo <span style="color:#e6db74">${</span>fuga<span style="color:#e6db74">}</span>
+hoge<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;PIYO&#34;</span>
+</code></pre></div><p>実行結果:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">HOGE
+FUGA
+FUGA
+./sample.sh: line 13: hoge: readonly variable
+</code></pre></div><h4 id="ローカル変数">ローカル変数</h4>
+<p>変数宣言の際に local をつける。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#75715e">#!/bin/bash
+</span><span style="color:#75715e"></span>
+readonly hoge<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;this is constant global hoge&#34;</span>
+fuga<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;this is global fuga&#34;</span>
+
+<span style="color:#66d9ef">function</span> fun<span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+    local hoge<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;this is local hoge&#34;</span>
+    echo <span style="color:#e6db74">${</span>hoge<span style="color:#e6db74">}</span>
+    local fuga<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;this is local fuga&#34;</span>
+    echo <span style="color:#e6db74">${</span>fuga<span style="color:#e6db74">}</span>
+<span style="color:#f92672">}</span>
+
+echo <span style="color:#e6db74">${</span>hoge<span style="color:#e6db74">}</span>
+fun
+echo <span style="color:#e6db74">${</span>fuga<span style="color:#e6db74">}</span>
+</code></pre></div><p>実行結果:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">this is constant global hoge
+./sample.sh: line 7: local: hoge: readonly variable
+this is constant global hoge
+this is local fuga
+this is global fuga
+</code></pre></div><h4 id="ローカル定数">ローカル定数</h4>
+<p>変数宣言の際に local -r をつける。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh"><span style="color:#75715e">#!/bin/bash
+</span><span style="color:#75715e"></span>
+hoge<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;this is global hoge&#34;</span>
+
+<span style="color:#66d9ef">function</span> fun<span style="color:#f92672">()</span> <span style="color:#f92672">{</span>
+    local -r hoge<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;this is constant local hoge&#34;</span>
+    echo <span style="color:#e6db74">${</span>hoge<span style="color:#e6db74">}</span>
+    hoge<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;this is fuga&#34;</span>
+    echo <span style="color:#e6db74">${</span>hoge<span style="color:#e6db74">}</span>
+<span style="color:#f92672">}</span>
+
+echo <span style="color:#e6db74">${</span>hoge<span style="color:#e6db74">}</span>
+fun
+hoge<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;this is hoge called after fun&#34;</span>
+echo <span style="color:#e6db74">${</span>hoge<span style="color:#e6db74">}</span>
+</code></pre></div><p>実行結果:</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">this is global hoge
+this is constant local hoge
+./sample.sh: line 8: hoge: readonly variable
+this is hoge called after fun
+</code></pre></div><h4 id="まとめ">まとめ</h4>
+<p>シェルとはいえ可読性上がるので、定数宣言はバンバン使おう。</p>
+		</div>
+	</article>
+</main>
+
+
+<nav class="pager flex">
+	<div class="pager__item pager__item--prev">
+		<a class="pager__link" href="https://guricerin.github.io/shit-blog/post/20200914-windows-to-wsl2-ssh/" rel="prev">
+			<span class="pager__subtitle">«&thinsp;Previous</span>
+			<p class="pager__title">WindowsのpwshからsshでWSL2に接続</p>
+		</a>
+	</div>
+	<div class="pager__item pager__item--next">
+		<a class="pager__link" href="https://guricerin.github.io/shit-blog/post/20201001-windows-tool/" rel="next">
+			<span class="pager__subtitle">Next&thinsp;»</span>
+			<p class="pager__title">Windows環境で便利なツール</p>
+		</a>
+	</div>
+</nav>
+
+<section class="comments">
+	<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "https-guricerin-github-io-shit-blog" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+
+
+			</div>
+			
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2021 guricerin.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="https://guricerin.github.io/shit-blog/js/menu.js"></script>
+<script src="https://guricerin.github.io/shit-blog/js/custom.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js?config=TeX-AMS-MML_HTMLorMML" async></script>
+</body>
+</html>

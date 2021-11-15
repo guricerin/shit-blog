@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>2020-11 on グリのクソブログ</title>
+    <link>https://guricerin.github.io/shit-blog/archives/2020-11/</link>
+    <description>Recent content in 2020-11 on グリのクソブログ</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-JP</language>
+    <lastBuildDate>Mon, 30 Nov 2020 11:21:22 +0900</lastBuildDate>
+    
+	<atom:link href="https://guricerin.github.io/shit-blog/archives/2020-11/feed.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>XORの性質</title>
+      <link>https://guricerin.github.io/shit-blog/post/20201130-xor/</link>
+      <pubDate>Mon, 30 Nov 2020 11:21:22 +0900</pubDate>
+      
+      <guid>https://guricerin.github.io/shit-blog/post/20201130-xor/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>bashでコマンドライン引数を扱う</title>
+      <link>https://guricerin.github.io/shit-blog/post/20201126-bash-cmdline-arg/</link>
+      <pubDate>Thu, 26 Nov 2020 11:23:55 +0900</pubDate>
+      
+      <guid>https://guricerin.github.io/shit-blog/post/20201126-bash-cmdline-arg/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>brainfuck方言のB&#39;z言語を作った</title>
+      <link>https://guricerin.github.io/shit-blog/post/20201124-bz-lang/</link>
+      <pubDate>Tue, 24 Nov 2020 08:09:30 +0900</pubDate>
+      
+      <guid>https://guricerin.github.io/shit-blog/post/20201124-bz-lang/</guid>
+      <description>&lt;p&gt;レビューさぼって何書いてんだおれは。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Rustでbrainfuck方言生成器つくった</title>
+      <link>https://guricerin.github.io/shit-blog/post/20201123-bf-tool/</link>
+      <pubDate>Mon, 23 Nov 2020 08:15:39 +0900</pubDate>
+      
+      <guid>https://guricerin.github.io/shit-blog/post/20201123-bf-tool/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

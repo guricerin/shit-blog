@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>2021-10 on グリのクソブログ</title>
+    <link>https://guricerin.github.io/shit-blog/archives/2021-10/</link>
+    <description>Recent content in 2021-10 on グリのクソブログ</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-JP</language>
+    <lastBuildDate>Sat, 23 Oct 2021 23:36:02 +0900</lastBuildDate>
+    
+	<atom:link href="https://guricerin.github.io/shit-blog/archives/2021-10/feed.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>喫煙本数を監視しあうSNSをGoで作った</title>
+      <link>https://guricerin.github.io/shit-blog/post/20211023-sns/</link>
+      <pubDate>Sat, 23 Oct 2021 23:36:02 +0900</pubDate>
+      
+      <guid>https://guricerin.github.io/shit-blog/post/20211023-sns/</guid>
+      <description>&lt;p&gt;Webアプリというにはだいぶ簡素。リポジトリはこれ。&lt;/p&gt;
+&lt;p&gt;&lt;a href=&#34;https://github.com/guricerin/stop-now-smoking&#34;&gt;https://github.com/guricerin/stop-now-smoking&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -46,7 +46,29 @@
 				</div>
 		</a>
 	</div>
-		<div class="divider"></div>
+		
+<nav class="menu">
+	<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
+		<span class="menu__btn-title" tabindex="-1">Menu</span>
+	</button>
+	<ul class="menu__list">
+		<li class="menu__item">
+			<a class="menu__link" href="https://guricerin.github.io/shit-blog/archives">
+				
+				<span class="menu__text">ARCHIVE</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="https://guricerin.github.io/shit-blog/feed.xml">
+				
+				<span class="menu__text">RSS</span>
+				
+			</a>
+		</li>
+	</ul>
+</nav>
+
 	</div>
 </header>
 		<div class="wrapper flex">
@@ -181,24 +203,16 @@
 
 			</div>
 			
-<aside class="sidebar"><div class="widget-search widget">
-	<form class="widget-search__form" role="search" method="get" action="https://google.com/search">
-		<label>
-			<input class="widget-search__field" type="search" placeholder="SEARCH…" value="" name="q" aria-label="SEARCH…">
-		</label>
-		<input class="widget-search__submit" type="submit" value="Search">
-		<input type="hidden" name="sitesearch" value="https://guricerin.github.io/shit-blog/" />
-	</form>
-</div>
+<aside class="sidebar">
 <div class="widget-recent widget">
 	<h4 class="widget__title">Recent Posts</h4>
 	<div class="widget__content">
 		<ul class="widget__list">
 			<li class="widget__item"><a class="widget__link" href="https://guricerin.github.io/shit-blog/post/20211113-compiler-text-fs/">『コンパイラ ー 原理と構造』をF#に翻訳した</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://guricerin.github.io/shit-blog/post/20211108-rust-net/">『Rustで始めるネットワークプログラミング』読んだ</a></li>
 			<li class="widget__item"><a class="widget__link" href="https://guricerin.github.io/shit-blog/post/20211023-sns/">喫煙本数を監視しあうSNSをGoで作った</a></li>
 			<li class="widget__item"><a class="widget__link" href="https://guricerin.github.io/shit-blog/post/20210923-mukui/">勝手にレビュー40：凋叶棕の32thアルバム『報』</a></li>
 			<li class="widget__item"><a class="widget__link" href="https://guricerin.github.io/shit-blog/post/20210917-otaku/">オタク</a></li>
-			<li class="widget__item"><a class="widget__link" href="https://guricerin.github.io/shit-blog/post/20210916-clean-arch/">『Clean Architecture 達人に学ぶソフトウェアの構造と設計』読んだ</a></li>
 		</ul>
 	</div>
 </div>
@@ -206,6 +220,10 @@
 	<h4 class="widget__title">Categories</h4>
 	<div class="widget__content">
 		<ul class="widget__list">
+			<li class="widget__item">
+				<a class="widget__link" href="https://guricerin.github.io/shit-blog/categories/bash/">bash</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">1</span>
+				</li>
 			<li class="widget__item">
 				<a class="widget__link" href="https://guricerin.github.io/shit-blog/categories/bz/">B&#39;z</a>&nbsp;
 				<span class="widget__counter widget__counter--bubble">3</span>
@@ -220,11 +238,11 @@
 				</li>
 			<li class="widget__item">
 				<a class="widget__link" href="https://guricerin.github.io/shit-blog/categories/rust/">Rust</a>&nbsp;
-				<span class="widget__counter widget__counter--bubble">3</span>
+				<span class="widget__counter widget__counter--bubble">4</span>
 				</li>
 			<li class="widget__item">
 				<a class="widget__link" href="https://guricerin.github.io/shit-blog/categories/windows/">Windows</a>&nbsp;
-				<span class="widget__counter widget__counter--bubble">1</span>
+				<span class="widget__counter widget__counter--bubble">2</span>
 				</li>
 			<li class="widget__item">
 				<a class="widget__link" href="https://guricerin.github.io/shit-blog/categories/%E3%82%AF%E3%82%BD%E3%83%96%E3%83%AD%E3%82%B0/">クソブログ</a>&nbsp;
@@ -236,7 +254,7 @@
 				</li>
 			<li class="widget__item">
 				<a class="widget__link" href="https://guricerin.github.io/shit-blog/categories/%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0/">プログラミング</a>&nbsp;
-				<span class="widget__counter widget__counter--bubble">10</span>
+				<span class="widget__counter widget__counter--bubble">12</span>
 				</li>
 			<li class="widget__item">
 				<a class="widget__link" href="https://guricerin.github.io/shit-blog/categories/%E5%87%8B%E5%8F%B6%E6%A3%95/">凋叶棕</a>&nbsp;
@@ -244,7 +262,7 @@
 				</li>
 			<li class="widget__item">
 				<a class="widget__link" href="https://guricerin.github.io/shit-blog/categories/%E6%95%B0%E5%AD%A6/">数学</a>&nbsp;
-				<span class="widget__counter widget__counter--bubble">1</span>
+				<span class="widget__counter widget__counter--bubble">2</span>
 				</li>
 			<li class="widget__item">
 				<a class="widget__link" href="https://guricerin.github.io/shit-blog/categories/%E6%9B%B8%E7%89%A9/">書物</a>&nbsp;
@@ -280,6 +298,37 @@
 		
 	</div>
 </div>
+<div class="widget-archives widget">
+    <h4 class="widget__title">ARCHIVES</h4>
+    <div class="widget__content">
+        <ul>
+            
+            <li><a href="https://guricerin.github.io/shit-blog/archives/2021-11">2021-11 (2)</a></li>
+            
+            <li><a href="https://guricerin.github.io/shit-blog/archives/2021-10">2021-10 (1)</a></li>
+            
+            <li><a href="https://guricerin.github.io/shit-blog/archives/2021-09">2021-09 (5)</a></li>
+            
+            <li><a href="https://guricerin.github.io/shit-blog/archives/2021-07">2021-07 (1)</a></li>
+            
+            <li><a href="https://guricerin.github.io/shit-blog/archives/2021-06">2021-06 (2)</a></li>
+            
+            <li><a href="https://guricerin.github.io/shit-blog/archives/2021-01">2021-01 (1)</a></li>
+            
+            <li><a href="https://guricerin.github.io/shit-blog/archives/2020-11">2020-11 (4)</a></li>
+            
+            <li><a href="https://guricerin.github.io/shit-blog/archives/2020-10">2020-10 (1)</a></li>
+            
+            <li><a href="https://guricerin.github.io/shit-blog/archives/2020-09">2020-09 (4)</a></li>
+            
+            <li><a href="https://guricerin.github.io/shit-blog/archives/2020-08">2020-08 (1)</a></li>
+            
+            <li><a href="https://guricerin.github.io/shit-blog/archives/2017-10">2017-10 (1)</a></li>
+            
+        </ul>
+    </div>
+</div>
+
 </aside>
 		</div>
 		<footer class="footer">
