@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>数学 on グリのクソブログ</title>
+    <link>https://guricerin.github.io/shit-blog/categories/%E6%95%B0%E5%AD%A6/</link>
+    <description>Recent content in 数学 on グリのクソブログ</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-JP</language>
+    <lastBuildDate>Sat, 12 Sep 2020 10:33:28 +0900</lastBuildDate>
+    
+	<atom:link href="https://guricerin.github.io/shit-blog/categories/%E6%95%B0%E5%AD%A6/feed.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>『最短経路の本 レナのふしぎな数学の旅』メモ</title>
+      <link>https://guricerin.github.io/shit-blog/post/20200912-lena/</link>
+      <pubDate>Sat, 12 Sep 2020 10:33:28 +0900</pubDate>
+      
+      <guid>https://guricerin.github.io/shit-blog/post/20200912-lena/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

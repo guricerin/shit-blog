@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>書物 on グリのクソブログ</title>
+    <link>https://guricerin.github.io/shit-blog/categories/%E6%9B%B8%E7%89%A9/</link>
+    <description>Recent content in 書物 on グリのクソブログ</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-JP</language>
+    <lastBuildDate>Sat, 13 Nov 2021 22:00:33 +0900</lastBuildDate>
+    
+	<atom:link href="https://guricerin.github.io/shit-blog/categories/%E6%9B%B8%E7%89%A9/feed.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>『コンパイラ ー 原理と構造』をF#に翻訳した</title>
+      <link>https://guricerin.github.io/shit-blog/post/20211113-compiler-text-fs/</link>
+      <pubDate>Sat, 13 Nov 2021 22:00:33 +0900</pubDate>
+      
+      <guid>https://guricerin.github.io/shit-blog/post/20211113-compiler-text-fs/</guid>
+      <description>&lt;p&gt;型推論などの実装を学べるらしいと聞いたので購入。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>『Clean Architecture 達人に学ぶソフトウェアの構造と設計』読んだ</title>
+      <link>https://guricerin.github.io/shit-blog/post/20210916-clean-arch/</link>
+      <pubDate>Thu, 16 Sep 2021 09:37:18 +0900</pubDate>
+      
+      <guid>https://guricerin.github.io/shit-blog/post/20210916-clean-arch/</guid>
+      <description>&lt;p&gt;本の内容をまとめただけになったので、著作権的にまずい場合、まとめ部分を削除するかこの記事丸ごと削除します。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>『ふつうのLinuxプログラミング 第2版』読んだ</title>
+      <link>https://guricerin.github.io/shit-blog/post/20210906-std-linux/</link>
+      <pubDate>Mon, 06 Sep 2021 09:44:38 +0900</pubDate>
+      
+      <guid>https://guricerin.github.io/shit-blog/post/20210906-std-linux/</guid>
+      <description>&lt;p&gt;Linuxのことなんもわかってないので購入。本書はC言語プログラムを書くことを通してLinuxの仕組みを大雑把に学ぶという感じ。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>『ゼロからのOS自作入門』写経した</title>
+      <link>https://guricerin.github.io/shit-blog/post/20210618-mikanos/</link>
+      <pubDate>Fri, 18 Jun 2021 10:03:26 +0900</pubDate>
+      
+      <guid>https://guricerin.github.io/shit-blog/post/20210618-mikanos/</guid>
+      <description>&lt;p&gt;通称『みかん本』。やったことは&lt;a href=&#34;https://github.com/uchan-nos/mikanos&#34;&gt;このリポジトリ&lt;/a&gt;のコミットタグをはじめから辿ってひたすら写経しただけ。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Rustで『コンピュータシステムの理論と実装』を演習した</title>
+      <link>https://guricerin.github.io/shit-blog/post/20210103-nand2tetris-rust/</link>
+      <pubDate>Sun, 03 Jan 2021 10:23:28 +0900</pubDate>
+      
+      <guid>https://guricerin.github.io/shit-blog/post/20210103-nand2tetris-rust/</guid>
+      <description>&lt;p&gt;n番煎じ。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>『最短経路の本 レナのふしぎな数学の旅』メモ</title>
+      <link>https://guricerin.github.io/shit-blog/post/20200912-lena/</link>
+      <pubDate>Sat, 12 Sep 2020 10:33:28 +0900</pubDate>
+      
+      <guid>https://guricerin.github.io/shit-blog/post/20200912-lena/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

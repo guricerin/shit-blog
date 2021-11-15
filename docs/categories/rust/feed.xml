@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Rust on グリのクソブログ</title>
+    <link>https://guricerin.github.io/shit-blog/categories/rust/</link>
+    <description>Recent content in Rust on グリのクソブログ</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-JP</language>
+    <lastBuildDate>Fri, 09 Jul 2021 09:53:28 +0900</lastBuildDate>
+    
+	<atom:link href="https://guricerin.github.io/shit-blog/categories/rust/feed.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>『Rubyで作る奇妙なプログラミング言語』をRustで作った</title>
+      <link>https://guricerin.github.io/shit-blog/post/20210709-ruby-esolang-by-rust/</link>
+      <pubDate>Fri, 09 Jul 2021 09:53:28 +0900</pubDate>
+      
+      <guid>https://guricerin.github.io/shit-blog/post/20210709-ruby-esolang-by-rust/</guid>
+      <description>&lt;p&gt;タイトル見て即購入。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Rustで『コンピュータシステムの理論と実装』を演習した</title>
+      <link>https://guricerin.github.io/shit-blog/post/20210103-nand2tetris-rust/</link>
+      <pubDate>Sun, 03 Jan 2021 10:23:28 +0900</pubDate>
+      
+      <guid>https://guricerin.github.io/shit-blog/post/20210103-nand2tetris-rust/</guid>
+      <description>&lt;p&gt;n番煎じ。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>Rustでbrainfuck方言生成器つくった</title>
+      <link>https://guricerin.github.io/shit-blog/post/20201123-bf-tool/</link>
+      <pubDate>Mon, 23 Nov 2020 08:15:39 +0900</pubDate>
+      
+      <guid>https://guricerin.github.io/shit-blog/post/20201123-bf-tool/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

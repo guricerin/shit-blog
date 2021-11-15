@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on グリのクソブログ</title>
+    <link>https://guricerin.github.io/shit-blog/categories/</link>
+    <description>Recent content in Categories on グリのクソブログ</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-JP</language>
+    <lastBuildDate>Sat, 13 Nov 2021 22:00:33 +0900</lastBuildDate>
+    
+	<atom:link href="https://guricerin.github.io/shit-blog/categories/feed.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>FSharp</title>
+      <link>https://guricerin.github.io/shit-blog/categories/fsharp/</link>
+      <pubDate>Sat, 13 Nov 2021 22:00:33 +0900</pubDate>
+      
+      <guid>https://guricerin.github.io/shit-blog/categories/fsharp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>プログラミング</title>
+      <link>https://guricerin.github.io/shit-blog/categories/%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0/</link>
+      <pubDate>Sat, 13 Nov 2021 22:00:33 +0900</pubDate>
+      
+      <guid>https://guricerin.github.io/shit-blog/categories/%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>書物</title>
+      <link>https://guricerin.github.io/shit-blog/categories/%E6%9B%B8%E7%89%A9/</link>
+      <pubDate>Sat, 13 Nov 2021 22:00:33 +0900</pubDate>
+      
+      <guid>https://guricerin.github.io/shit-blog/categories/%E6%9B%B8%E7%89%A9/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Go</title>
+      <link>https://guricerin.github.io/shit-blog/categories/go/</link>
+      <pubDate>Sat, 23 Oct 2021 23:36:02 +0900</pubDate>
+      
+      <guid>https://guricerin.github.io/shit-blog/categories/go/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>凋叶棕</title>
+      <link>https://guricerin.github.io/shit-blog/categories/%E5%87%8B%E5%8F%B6%E6%A3%95/</link>
+      <pubDate>Thu, 23 Sep 2021 22:44:32 +0900</pubDate>
+      
+      <guid>https://guricerin.github.io/shit-blog/categories/%E5%87%8B%E5%8F%B6%E6%A3%95/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>東方</title>
+      <link>https://guricerin.github.io/shit-blog/categories/%E6%9D%B1%E6%96%B9/</link>
+      <pubDate>Thu, 23 Sep 2021 22:44:32 +0900</pubDate>
+      
+      <guid>https://guricerin.github.io/shit-blog/categories/%E6%9D%B1%E6%96%B9/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>音楽</title>
+      <link>https://guricerin.github.io/shit-blog/categories/%E9%9F%B3%E6%A5%BD/</link>
+      <pubDate>Thu, 23 Sep 2021 22:44:32 +0900</pubDate>
+      
+      <guid>https://guricerin.github.io/shit-blog/categories/%E9%9F%B3%E6%A5%BD/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>クソブログ</title>
+      <link>https://guricerin.github.io/shit-blog/categories/%E3%82%AF%E3%82%BD%E3%83%96%E3%83%AD%E3%82%B0/</link>
+      <pubDate>Fri, 17 Sep 2021 08:30:19 +0900</pubDate>
+      
+      <guid>https://guricerin.github.io/shit-blog/categories/%E3%82%AF%E3%82%BD%E3%83%96%E3%83%AD%E3%82%B0/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Rust</title>
+      <link>https://guricerin.github.io/shit-blog/categories/rust/</link>
+      <pubDate>Fri, 09 Jul 2021 09:53:28 +0900</pubDate>
+      
+      <guid>https://guricerin.github.io/shit-blog/categories/rust/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>ネットワーク</title>
+      <link>https://guricerin.github.io/shit-blog/categories/%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF/</link>
+      <pubDate>Sat, 26 Jun 2021 09:57:13 +0900</pubDate>
+      
+      <guid>https://guricerin.github.io/shit-blog/categories/%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>B&#39;z</title>
+      <link>https://guricerin.github.io/shit-blog/categories/bz/</link>
+      <pubDate>Tue, 24 Nov 2020 08:09:30 +0900</pubDate>
+      
+      <guid>https://guricerin.github.io/shit-blog/categories/bz/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Windows</title>
+      <link>https://guricerin.github.io/shit-blog/categories/windows/</link>
+      <pubDate>Tue, 15 Sep 2020 10:28:44 +0900</pubDate>
+      
+      <guid>https://guricerin.github.io/shit-blog/categories/windows/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>数学</title>
+      <link>https://guricerin.github.io/shit-blog/categories/%E6%95%B0%E5%AD%A6/</link>
+      <pubDate>Sat, 12 Sep 2020 10:33:28 +0900</pubDate>
+      
+      <guid>https://guricerin.github.io/shit-blog/categories/%E6%95%B0%E5%AD%A6/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

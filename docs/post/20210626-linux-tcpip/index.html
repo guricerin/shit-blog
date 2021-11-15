@@ -1,0 +1,540 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>『Linuxで動かしながら学ぶTCP/IPネットワーク入門』読んだ - グリのクソブログ</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+		<meta property="og:title" content="『Linuxで動かしながら学ぶTCP/IPネットワーク入門』読んだ" />
+<meta property="og:description" content="前回読んだみかん本で解説されていない、かつ、よくわかっていない分野と言われてぱっと思いつくのは、最も身近な存在のネットワークである。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://guricerin.github.io/shit-blog/post/20210626-linux-tcpip/" />
+<meta property="article:published_time" content="2021-06-26T09:57:13+09:00" />
+<meta property="article:modified_time" content="2021-06-26T09:57:13+09:00" />
+
+		<meta itemprop="name" content="『Linuxで動かしながら学ぶTCP/IPネットワーク入門』読んだ">
+<meta itemprop="description" content="前回読んだみかん本で解説されていない、かつ、よくわかっていない分野と言われてぱっと思いつくのは、最も身近な存在のネットワークである。">
+<meta itemprop="datePublished" content="2021-06-26T09:57:13&#43;09:00" />
+<meta itemprop="dateModified" content="2021-06-26T09:57:13&#43;09:00" />
+<meta itemprop="wordCount" content="371">
+
+
+
+<meta itemprop="keywords" content="" />
+		<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="『Linuxで動かしながら学ぶTCP/IPネットワーク入門』読んだ"/>
+<meta name="twitter:description" content="前回読んだみかん本で解説されていない、かつ、よくわかっていない分野と言われてぱっと思いつくのは、最も身近な存在のネットワークである。"/>
+
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+
+	<link rel="stylesheet" href="https://guricerin.github.io/shit-blog/css/style.css">
+	<link rel="stylesheet" href="https://guricerin.github.io/shit-blog/css/custom.css">
+
+	<link rel="shortcut icon" href="https://guricerin.github.io/shit-blog/favicon.ico">
+		
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container header__container">
+		
+	<div class="logo logo--mixed">
+		<a class="logo__link" href="https://guricerin.github.io/shit-blog/" title="グリのクソブログ" rel="home">
+			<div class="logo__item logo__imagebox">
+					<img class="logo__img" src="https://guricerin.github.io/shit-blog/img/icon.jpg">
+				</div><div class="logo__item logo__text">
+					<div class="logo__title">グリのクソブログ</div>
+					<div class="logo__tagline">主にB&#39;z</div>
+				</div>
+		</a>
+	</div>
+		<div class="divider"></div>
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">『Linuxで動かしながら学ぶTCP/IPネットワーク入門』読んだ</h1>
+			<div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2021-06-26T09:57:13&#43;09:00">2021-06-26</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="https://guricerin.github.io/shit-blog/categories/%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0/" rel="category">プログラミング</a>, <a class="meta__link" href="https://guricerin.github.io/shit-blog/categories/%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF/" rel="category">ネットワーク</a>
+	</span>
+</div></div>
+		</header>
+		<div class="content post__content clearfix">
+			<p><a href="https://guri6cerin.hatenablog.com/entry/2021/06/18/%E3%80%8E%E3%82%BC%E3%83%AD%E3%81%8B%E3%82%89%E3%81%AEOS%E8%87%AA%E4%BD%9C%E5%85%A5%E9%96%80%E3%80%8F%E5%86%99%E7%B5%8C%E3%81%97%E3%81%9F">前回読んだ</a>みかん本で解説されていない、かつ、よくわかっていない分野と言われてぱっと思いつくのは、最も身近な存在のネットワークである。</p>
+<p>Kindleセールだかなにかで600円だったし、内容も手を動かしながら学習する感じ（ていうかタイトル見ればわかる）なのでこれを購入してみた。</p>
+<p><a href="https://blog.amedama.jp/entry/linux-tcpip-book">https://blog.amedama.jp/entry/linux-tcpip-book</a></p>
+<p><code>tcpdump</code>、<code>ip</code>、<code>nc</code>などのコマンドを駆使していく。これらのコマンドの存在はまったく知らなかった。<br>
+環境としては、Vagrantで構築したUbuntu 20.04を使用する。以下、例のごとく雑なメモ。さらに、今回は読書録というよりも用語の箇条書き。</p>
+<hr>
+<h3 id="1章">1章</h3>
+<p>想定読者、注意事項等の記述なのでスキップ。</p>
+<hr>
+<h3 id="2章">2章</h3>
+<h4 id="osi参照モデル">OSI参照モデル</h4>
+<ul>
+<li>通信プロトコルを役割ごとに7つの階層に分けて定義
+<ul>
+<li>アプリケーション層（第7層）
+<ul>
+<li>HTTPなど</li>
+</ul>
+</li>
+<li>プレゼンテーション層（第6層）</li>
+<li>セッション層（第5層）</li>
+<li>トランスポート層（第4層）</li>
+<li>ネットワーク層（第3層）</li>
+<li>データリンク層（第2層）
+<ul>
+<li>ほとんどの場合イーサネット</li>
+</ul>
+</li>
+<li>物理層（第1層）
+<ul>
+<li>通信に流すビットの光や電気での表現方法など</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>あくまでモデルなので、各プロトコルの分類は参考程度に留める</li>
+</ul>
+<h4 id="ipinternet-protocol">IP（Internet Protocol）</h4>
+<ul>
+<li>ネットワーク層</li>
+<li>インターネットを構成するプロトコル（TCPとセット）</li>
+<li>パケットを運ぶプロトコル</li>
+</ul>
+<h4 id="パケット">パケット</h4>
+<ul>
+<li>IPでのデータの単位</li>
+<li>ヘッダーには送信元・送信先のIPアドレスなどが記載される</li>
+</ul>
+<h4 id="ipアドレス">IPアドレス</h4>
+<ul>
+<li>IPで通信する際に必要な識別子</li>
+<li>ex. 192.0.2.1</li>
+<li>グローバルIPアドレスはインターネット上で一意</li>
+<li>プライベートIPアドレスは1つのLAN内に限り通用する</li>
+<li>以下のアドレスはプライベートIPアドレスとして使えるように予約されている
+<ul>
+<li>10.0.0.0/8</li>
+<li>172.16.0.0/12</li>
+<li>192.168.0.0/16</li>
+</ul>
+</li>
+<li><code>ip address show</code>で確認</li>
+<li>必要に応じてネットワークインターフェースに付与される</li>
+<li>ネットワーク部（ネットワークアドレス）とホスト部（ホストアドレス）に分けられる</li>
+<li>ホスト部のビットがすべて0だとネットワークアドレスになるので、ホストアドレスとしては指定できない</li>
+<li>ホスト部のビットがすべて1だとブロードキャストアドレスになるので、ホストアドレスとしては指定できない</li>
+</ul>
+<h4 id="cidr表記classless-interdomain-routing">CIDR表記（Classless InterDomain Routing）</h4>
+<ul>
+<li>IPアドレス末尾に<code>/[&lt;数値&gt;]</code>という文字列で、アドレスをどのビットで区切るかを表す</li>
+<li>ex. 192.0.2.1/24
+<ul>
+<li>前半24ビット目までの<code>192.0.2</code>がネットワーク部、<code>1</code>がホスト部</li>
+</ul>
+</li>
+</ul>
+<h4 id="サブネットマスク">サブネットマスク</h4>
+<ul>
+<li>ネットワーク部だけを1に、ホスト部を0にした32ビット整数</li>
+<li>IPアドレスのビット列とAND演算したら、そのIPアドレスのネットワークアドレスを取得できる</li>
+</ul>
+<h4 id="ネットワークインターフェイス">ネットワークインターフェイス</h4>
+<ul>
+<li>NIC（ネットワークインターフェイスカード）や無線LANアダプタをソフトウェアから扱う上で抽象化した概念</li>
+</ul>
+<h4 id="ルータ">ルータ</h4>
+<ul>
+<li>パケットを目的地へ転送する機器</li>
+<li>別のルータorホストからのパケットを、次のルータorホストに送る</li>
+<li>その経路をルートと呼ぶ</li>
+<li><code>traceroute -n -I [&lt;IP Address&gt;]</code>でルートを確認</li>
+</ul>
+<h4 id="ルーティングテーブル">ルーティングテーブル</h4>
+<ul>
+<li>送信先IPアドレスに応じて、次にパケットを渡すべき相手を管理する</li>
+<li>インターネットに繋がる各ノード（コンピュータやルータ）が持っている</li>
+<li><code>ip route show</code>で確認
+<ul>
+<li>実行結果の1行分のデータをルーティングエントリと呼ぶ</li>
+</ul>
+</li>
+</ul>
+<h4 id="デフォルトルート">デフォルトルート</h4>
+<ul>
+<li>他の宛先に一致しないときに使用されるルーティングエントリ</li>
+<li><code>ip route add default via [&lt;IP Address&gt;]</code>で、指定IPアドレスに送信されるデフォルトルートを作成</li>
+</ul>
+<hr>
+<h3 id="3章">3章</h3>
+<h4 id="network-namespace">Network Namespace</h4>
+<ul>
+<li>ネットワーク的にシステムから独立した環境
+<ul>
+<li>ネットワークインターフェイスやルーティングテーブルなどもその環境独自のものとなる</li>
+</ul>
+</li>
+<li>コンテナ型仮想化技術を構成する要素のひとつ</li>
+<li><code>sudo ip netns add [&lt;name&gt;]</code>で作成</li>
+<li><code>ip netns list</code>で確認</li>
+<li><code>sudo ip netns exec [&lt;name&gt;] [&lt;command&gt;]</code>で指定した環境内でコマンドを実行</li>
+</ul>
+<h4 id="vethvirtual-ethernet-device">veth（Virtual Ethernet Device）</h4>
+<ul>
+<li>仮想的なネットワークインターフェイス</li>
+<li><code>sudo ip link add [&lt;name1&gt;] type veth peer name [&lt;name2&gt;]</code>で、<code>name1</code>、<code>name2</code>というvethを作成・接続</li>
+<li><code>sudo ip link set [&lt;veth name&gt;] netns [&lt;netns name&gt;]</code>で、システムからNetwork Namespaceに移す</li>
+</ul>
+<h4 id="ネットワークセグメント">ネットワークセグメント</h4>
+<ul>
+<li>同じセグメントに属するIPアドレス同士は、ルータがなくても通信可能
+<ul>
+<li>異なるセグメント同士をつなげるにはルータが必要</li>
+</ul>
+</li>
+<li>ネットワーク部が同じIPアドレスは、同じセグメントに属する</li>
+<li>セグメントを複数所持するNetwork Namespace内では、そのセグメント同士が接続される
+<ul>
+<li>ただし、そのNetwork Namespace内で<code>sysctl net.ipv4.ip_forward=1</code>を実行し、IPv4のルータとして動作させる必要あり</li>
+</ul>
+</li>
+</ul>
+<h4 id="スタティックルーティング静的経路制御">スタティックルーティング（静的経路制御）</h4>
+<ul>
+<li>人間が手動でノードにルーティングエントリを追加する方式</li>
+</ul>
+<h4 id="ダイナミックルーティング動的経路制御">ダイナミックルーティング（動的経路制御）</h4>
+<ul>
+<li>ルータ同士が自身の知っているルーティング情報を教え合う方式</li>
+</ul>
+<hr>
+<h3 id="4章">4章</h3>
+<h4 id="イーサネットethernet">イーサネット（Ethernet）</h4>
+<ul>
+<li>物理層（第1層）とデータリンク層（第2層）</li>
+<li>IPを含む上位層のプロトコルのデータを運ぶ</li>
+</ul>
+<h4 id="フレーム">フレーム</h4>
+<ul>
+<li>イーサネットにおいて送信するデータの単位</li>
+<li>1フレームで1パケットを運ぶ</li>
+<li>同じブロードキャストドメインにいるノードには、1つのフレームでパケットを運べる
+<ul>
+<li>一般的に、ブロードキャストドメインの範囲はネットワークセグメントと同じ</li>
+</ul>
+</li>
+<li>ルータはIPパケットを別のフレームに詰め替える役割を持つ</li>
+</ul>
+<h4 id="macアドレスmedia-access-control-addressハードウェアアドレス">MACアドレス（Media Access Control Address、ハードウェアアドレス）</h4>
+<ul>
+<li>フレームの送信元・送信先の区別に使われる識別子</li>
+<li>ex. 00:00:5E:00:53:01</li>
+<li>イーサネットのフレームを送受信するネットワーク機器ごとに付与される</li>
+<li>原則、同じMACアドレスは全世界で1つだけ</li>
+<li>上位24ビットはネットワーク機器製造のベンダーごとに割り振られ、下位24ビットはベンダー各自の機器の識別子が一意になるように割り振られる</li>
+<li><code>ip link show</code>で、各ネットワークインターフェイスのMACアドレスを確認</li>
+<li><code>ip link set dev [&lt;veth name&gt;] address [&lt;MAC Address&gt;]</code>で、vethにMACアドレスを付与
+<ul>
+<li>デフォルトのvethにはランダムなMACアドレスが付与されている</li>
+</ul>
+</li>
+<li>MACアドレスのブロードキャストアドレスは<code>ff:ff:ff:ff:ff:ff</code></li>
+</ul>
+<h4 id="arpaddress-resolution-protocol">ARP（Address Resolution Protocol）</h4>
+<ul>
+<li>IPv4において、IPアドレスに対応するMACアドレスを解決する
+<ul>
+<li>IPv6の場合はICMPv6を使う</li>
+</ul>
+</li>
+<li>MACアドレスのブロードキャストアドレスに送信先MACアドレスを問い合わせる仕組み</li>
+<li>IPパケットと同じく、イーサネットのフレームで運ばれる</li>
+</ul>
+<h4 id="ブリッジ">ブリッジ</h4>
+<ul>
+<li>フレームを転送する機器</li>
+<li>ネットワークインターフェイスの一種</li>
+<li>同じブロードキャストドメインに複数のネットワーク機器を繋げられる</li>
+<li>自身のどのポートにどのMACアドレスの機器が繋がっているかを管理</li>
+<li><code>ip link add dev [&lt;bridge name&gt;] type bridge</code>で、ブリッジを作成</li>
+<li><code>ip link set [&lt;veth name&gt;] master [&lt;bridge name&gt;]</code>で、vethをブリッジに接続</li>
+</ul>
+<h4 id="macアドレステーブル">MACアドレステーブル</h4>
+<ul>
+<li>ポートとMACアドレスの対応関係を記録する</li>
+<li><code>bridge fdb show</code>で確認</li>
+</ul>
+<h4 id="スイッチングハブ">スイッチングハブ</h4>
+<ul>
+<li>ブリッジの一種</li>
+<li>自身に繋がっているポートのMACアドレスを学習する</li>
+<li>宛先MACアドレスに該当するネットワークインターフェイスが接続されているポートにのみフレームを転送する</li>
+</ul>
+<h4 id="リピータハブ">リピータハブ</h4>
+<ul>
+<li>ブリッジっぽい機器</li>
+<li>データリンク層ではなく物理層で信号を転送する機器</li>
+<li>送信元以外のすべてのポートに信号をコピーする</li>
+</ul>
+<hr>
+<h3 id="5章">5章</h3>
+<h4 id="ポートポート番号">ポート（ポート番号）</h4>
+<ul>
+<li>16ビット正整数（[0, 65535]）の論理的な送受信口</li>
+<li>基本的に、他のアプリが通信で使用しているポートを別のアプリが使用することはできない</li>
+<li>サーバ側のアプリが使うポートは、アプリが通信する（トランスポート層より上位の）プロトコルによって決まる
+<ul>
+<li>ex. DNS（Domain Name Service）は53ポート</li>
+</ul>
+</li>
+<li>クライアント側のアプリが使うポートは、アプリからの指定がない、他のアプリが使用していない範囲でOSが自由に割り当てる
+<ul>
+<li>このときのポート番号をエフェメラルポート（Ephemeral Port）と呼ぶ</li>
+</ul>
+</li>
+<li>ネットワーク機器の物理的なケーブル差込口とは区別すること</li>
+</ul>
+<h4 id="well-known-port">Well Known Port</h4>
+<ul>
+<li>[0. 1023]のポート</li>
+</ul>
+<h4 id="テキストベース">テキストベース</h4>
+<ul>
+<li>トランスポート層より上位のプロトコルのうち、文字列として解釈できるビット列をやり取りするもの</li>
+</ul>
+<h4 id="バイナリベース">バイナリベース</h4>
+<ul>
+<li>トランスポート層より上位のプロトコルのうち、文字列として解釈できないビット列をやり取りするもの</li>
+</ul>
+<h4 id="udpuser-datagram-protocol">UDP（User Datagram Protocol）</h4>
+<ul>
+<li>トランスポート層</li>
+<li>通信しているアプリケーションの種類をポートで区別する</li>
+<li>データを送信するだけ
+<ul>
+<li>経路上でパケットが破棄されても関知しない</li>
+</ul>
+</li>
+</ul>
+<h4 id="tcptransimission-control-protocol">TCP（Transimission Control Protocol）</h4>
+<ul>
+<li>トランスポート層</li>
+<li>インターネットを構成するプロトコル（IPとセット）</li>
+<li>通信しているアプリケーションの種類をポートで区別する</li>
+<li>データが送信先に正確に届いたかを確かめながら通信する
+<ul>
+<li>TCPを使う上位層のプロトコルは、データの確実性について気にする必要がなくなる</li>
+</ul>
+</li>
+<li>TCPでのデータ単位をセグメントと呼ぶ
+<ul>
+<li>IPのネットワークセグメントとは関係なし</li>
+</ul>
+</li>
+</ul>
+<h4 id="スリーウェイハンドシェイクthree-way-handshake">スリーウェイハンドシェイク（three way handshake）</h4>
+<ul>
+<li>TCPで通信を開始するときに行う3つのセグメントのやり取り</li>
+<li>サーバ・クライアント間でこれからデータを送り合うことについてあらかじめ確認する</li>
+<li>これを完了することで、TCPのコネクションが確立する</li>
+</ul>
+<h4 id="コントロールビット">コントロールビット</h4>
+<ul>
+<li>TCPのヘッダに含まれるフィールド。フラグとして使用される</li>
+<li>SYN（Synchronize sequence numbers）
+<ul>
+<li>サーバ・クライアント間でシーケンス番号を同期させる</li>
+<li>セグメントの喪失やアウトオブオーダー（到着順序の入れ替わり）に対応できる</li>
+</ul>
+</li>
+<li>ACK（Acknowledgement field significant）
+<ul>
+<li>セグメント受信側が送信側に「確かにセグメントを受け取った」ことを知らせるためのフラグ</li>
+<li>ACKが返ってこない場合、送信側は同じセグメントを再び送信する（再送制御）</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="6章">6章</h3>
+<h4 id="httphypertext-transfer-protocol">HTTP（Hypertext Transfer Protocol）</h4>
+<ul>
+<li>アプリケーション層</li>
+<li>トランスポート層にTCPを用いるテキストベースのプロトコル</li>
+<li>主にWebブラウザがWebサーバと通信する際に使用される</li>
+<li>デフォルトではTCPの80番ポート</li>
+</ul>
+<h4 id="dnsdomain-name-system">DNS（Domain Name System）</h4>
+<ul>
+<li>アプリケーション層</li>
+<li>ドメイン名をIPアドレスに解決（名前解決）するバイナリベースのプロトコル</li>
+<li>名前解決はスタブリゾルバ（Stub Resolver）というプログラムが担当
+<ul>
+<li>OS内の<code>/etc/hosts</code>ファイルを参照したり、外部サーバに問い合わせる</li>
+</ul>
+</li>
+<li>デフォルトではUDPの53番ポート</li>
+<li>DNSが管理するデータをレコード（リソースレコード）と呼ぶ</li>
+</ul>
+<h4 id="ネームサーバ">ネームサーバ</h4>
+<ul>
+<li>フルサービスリゾルバ（Full Service Resolver）、キャッシュサーバ（Cache Server）とも</li>
+<li>スタブリゾルバが名前解決の際に問い合わせるDNSサーバ
+<ul>
+<li>DNSサーバのIPアドレスは<code>/etc/resolv.conf</code>に記載されている</li>
+</ul>
+</li>
+<li>冗長化による可用性確保のために、通常はプライマリサーバとセカンダリサーバの2つがある</li>
+</ul>
+<h4 id="dhcpdynamic-host-configuration-protocol">DHCP（Dynamic Host Configuration Protocol）</h4>
+<ul>
+<li>アプリケーション層</li>
+<li>コンピュータのネットワークを自動的に設定するバイナリベースのプロトコル
+<ul>
+<li>ネットワークインターフェイスへのIPアドレス付与、ルーティングテーブルの設定、DNSのネームサーバ、時刻同期に使うNTPサーバなど</li>
+</ul>
+</li>
+<li>デフォルトではUDPの67番ポート</li>
+<li>サーバ・クライアント方式
+<ul>
+<li>ネットワークの設定を配布するDHCPサーバ、設定を受け取るDHCPクライアント</li>
+<li>家庭やオフィスはデフォルトルートになるルータがDHCPサーバを兼任することが多い</li>
+</ul>
+</li>
+<li><code>dnsmasq</code>コマンドで、実行したコンピュータをDHCPサーバにできる</li>
+<li><code>dhclient</code>コマンドで、DHCPサーバに接続しているコンピュータのネットワークを自動設定可能</li>
+</ul>
+<hr>
+<h3 id="7章">7章</h3>
+<h4 id="natnetwork-address-translation">NAT（Network Address Translation）</h4>
+<ul>
+<li>パケットのヘッダにあるIPアドレスのフィールドを書き換えることで、グローバルIPアドレス・プライベートIPアドレス間の変換を行う仕組み</li>
+<li>一般的にはルータがNATを行う</li>
+<li>グローバルIPアドレスとプライベートIPアドレスを1:Nの関係で扱うために、トランスポート層のポート番号フィールドも書き換える
+<ul>
+<li>そのため厳密にはNAPT（Network Address Port Translation）</li>
+</ul>
+</li>
+<li>IPアドレス・ポート番号の書き換え前後の対応関係をセッションとして記録する</li>
+</ul>
+<h4 id="source-natsnat">Source NAT（SNAT）</h4>
+<ul>
+<li>NAT（NAPT）といえばだいたいこれのこと</li>
+<li>パケットヘッダのプライベートIPアドレスをグローバルIPアドレスに変換</li>
+<li><code>iptables -t nat</code>が、NATの設定に関するコマンド</li>
+</ul>
+<h4 id="destination-natdnat">Destination NAT（DNAT）</h4>
+<ul>
+<li>パケットヘッダのグローバルIPアドレスをプライベートIPアドレスに変換</li>
+<li>送信先のポート番号が特定の値になっているパケットのみを書き換えてLANに転送
+<ul>
+<li>インターネットからの通信を特定のポートに対して許可（「ポートを空ける」）</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="8章">8章</h3>
+<h4 id="ソケット">ソケット</h4>
+<ul>
+<li>ネットワークを抽象化したAPI（Application Programing Interface）</li>
+<li>おおむねシステムコールとしてOSに用意されている</li>
+<li><code>ss -tnlp</code>で、TCPで待受状態にあるソケットと、それを利用しているプロセス一覧を確認</li>
+</ul>
+<h4 id="エンディアンバイトオーダー">エンディアン（バイトオーダー）</h4>
+<ul>
+<li>ビット列をメモリなどにバイト単位で並べる際の順序</li>
+<li>ビッグエンディアン
+<ul>
+<li>メモリの基準となるアドレスから、そのまま順番に書き込む方式</li>
+<li>ex. 0x12345678 -&gt; 12 34 56 78</li>
+<li>TCP/IPではこちらを採用している</li>
+</ul>
+</li>
+<li>リトルエンディアン
+<ul>
+<li>メモリの基準となるアドレスから、順番を反対にして書き込む方式</li>
+<li>ex. 0x12345678 -&gt; 78 56 34 12</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h3 id="まとめ">まとめ</h3>
+<p>9章で紹介されている言葉がすごくいい。</p>
+<blockquote>
+<p>「特定の分野におけるプロフェッショナルとは、その分野でひととおりの失敗を経験した人のことをいう」。</p>
+</blockquote>
+<p>最近の記事の傾向からすると「基本情報の資格でも目指したほうが効率良いんじゃねえの」と突っ込まれるかもしれない。できればおれもそうしたいし参考書を2周ぐらいしたこともあるが、あれはだめだ。知識が身につく実感がまるでないのである。実際、ネットワーク用語の意味とか余裕で忘れていたし。<br>
+どこをどういたぶればコンピュータはバグるのか、手を動かして目で見るほうがいい。少なくともおれにはそっちのが合っている。補助輪なしのチャリを初めて操縦したとき、なんらかのテキスト情報を参照しただろうか。たぶんそれと似たような話だ。</p>
+		</div>
+	</article>
+</main>
+
+
+<nav class="pager flex">
+	<div class="pager__item pager__item--prev">
+		<a class="pager__link" href="https://guricerin.github.io/shit-blog/post/20210618-mikanos/" rel="prev">
+			<span class="pager__subtitle">«&thinsp;Previous</span>
+			<p class="pager__title">『ゼロからのOS自作入門』写経した</p>
+		</a>
+	</div>
+	<div class="pager__item pager__item--next">
+		<a class="pager__link" href="https://guricerin.github.io/shit-blog/post/20210709-ruby-esolang-by-rust/" rel="next">
+			<span class="pager__subtitle">Next&thinsp;»</span>
+			<p class="pager__title">『Rubyで作る奇妙なプログラミング言語』をRustで作った</p>
+		</a>
+	</div>
+</nav>
+
+<section class="comments">
+	<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "https-guricerin-github-io-shit-blog" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+
+
+			</div>
+			
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2021 guricerin.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="https://guricerin.github.io/shit-blog/js/menu.js"></script>
+<script src="https://guricerin.github.io/shit-blog/js/custom.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js?config=TeX-AMS-MML_HTMLorMML" async></script>
+</body>
+</html>

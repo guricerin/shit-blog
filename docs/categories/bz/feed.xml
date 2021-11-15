@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>B&#39;z on グリのクソブログ</title>
+    <link>https://guricerin.github.io/shit-blog/categories/bz/</link>
+    <description>Recent content in B&#39;z on グリのクソブログ</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-JP</language>
+    <lastBuildDate>Tue, 24 Nov 2020 08:09:30 +0900</lastBuildDate>
+    
+	<atom:link href="https://guricerin.github.io/shit-blog/categories/bz/feed.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>brainfuck方言のB&#39;z言語を作った</title>
+      <link>https://guricerin.github.io/shit-blog/post/20201124-bz-lang/</link>
+      <pubDate>Tue, 24 Nov 2020 08:09:30 +0900</pubDate>
+      
+      <guid>https://guricerin.github.io/shit-blog/post/20201124-bz-lang/</guid>
+      <description>&lt;p&gt;レビューさぼって何書いてんだおれは。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>勝手にレビュー39：稲葉浩志の5thアルバム『Singing Bird』</title>
+      <link>https://guricerin.github.io/shit-blog/post/20200815-singing-bird/</link>
+      <pubDate>Sat, 15 Aug 2020 10:57:42 +0900</pubDate>
+      
+      <guid>https://guricerin.github.io/shit-blog/post/20200815-singing-bird/</guid>
+      <description>&lt;p&gt;この時期のジョギングには、出かける直前に食塩をぶちまけた一杯の水を必ず飲むこと。クエン酸でも可。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>勝手にレビュー1：B&#39;zの1stアルバム『B&#39;z』</title>
+      <link>https://guricerin.github.io/shit-blog/post/20171009-bz/</link>
+      <pubDate>Mon, 09 Oct 2017 23:45:54 +0900</pubDate>
+      
+      <guid>https://guricerin.github.io/shit-blog/post/20171009-bz/</guid>
+      <description>&lt;p&gt;B&amp;rsquo;z大好きなので、&lt;del&gt;2chのアルバム全曲レビュースレをパクって&lt;/del&gt;上から目線で彼らのアルバムを批評していきます。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

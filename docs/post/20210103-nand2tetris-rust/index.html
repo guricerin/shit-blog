@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>Rustで『コンピュータシステムの理論と実装』を演習した - グリのクソブログ</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+		<meta property="og:title" content="Rustで『コンピュータシステムの理論と実装』を演習した" />
+<meta property="og:description" content="n番煎じ。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://guricerin.github.io/shit-blog/post/20210103-nand2tetris-rust/" />
+<meta property="article:published_time" content="2021-01-03T10:23:28+09:00" />
+<meta property="article:modified_time" content="2021-01-03T10:23:28+09:00" />
+
+		<meta itemprop="name" content="Rustで『コンピュータシステムの理論と実装』を演習した">
+<meta itemprop="description" content="n番煎じ。">
+<meta itemprop="datePublished" content="2021-01-03T10:23:28&#43;09:00" />
+<meta itemprop="dateModified" content="2021-01-03T10:23:28&#43;09:00" />
+<meta itemprop="wordCount" content="67">
+
+
+
+<meta itemprop="keywords" content="" />
+		<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Rustで『コンピュータシステムの理論と実装』を演習した"/>
+<meta name="twitter:description" content="n番煎じ。"/>
+
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+
+	<link rel="stylesheet" href="https://guricerin.github.io/shit-blog/css/style.css">
+	<link rel="stylesheet" href="https://guricerin.github.io/shit-blog/css/custom.css">
+
+	<link rel="shortcut icon" href="https://guricerin.github.io/shit-blog/favicon.ico">
+		
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container header__container">
+		
+	<div class="logo logo--mixed">
+		<a class="logo__link" href="https://guricerin.github.io/shit-blog/" title="グリのクソブログ" rel="home">
+			<div class="logo__item logo__imagebox">
+					<img class="logo__img" src="https://guricerin.github.io/shit-blog/img/icon.jpg">
+				</div><div class="logo__item logo__text">
+					<div class="logo__title">グリのクソブログ</div>
+					<div class="logo__tagline">主にB&#39;z</div>
+				</div>
+		</a>
+	</div>
+		<div class="divider"></div>
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">Rustで『コンピュータシステムの理論と実装』を演習した</h1>
+			<div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2021-01-03T10:23:28&#43;09:00">2021-01-03</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="https://guricerin.github.io/shit-blog/categories/%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0/" rel="category">プログラミング</a>, <a class="meta__link" href="https://guricerin.github.io/shit-blog/categories/%E6%9B%B8%E7%89%A9/" rel="category">書物</a>, <a class="meta__link" href="https://guricerin.github.io/shit-blog/categories/rust/" rel="category">Rust</a>
+	</span>
+</div></div>
+		</header>
+		<div class="content post__content clearfix">
+			<p>n番煎じ。</p>
+<p>演習問題回答のリポジトリはこれ。ライセンスは本書P.361の記載に則りGPLとしていますが、問題等ありましたらご指摘頂ければ幸いです。</p>
+<p><a href="https://github.com/guricerin/nand2tetris">https://github.com/guricerin/nand2tetris</a></p>
+<p>いわゆる『nand2tetris』と呼ばれる本。本書独自のHDL（ハードウェア記述言語）を用いて仮想的な回路を作成、回路から仮想的なハードウェアを構築、アセンブラの作成、独自のプログラミング言語処理系の作成と続き、最終的には仮想コンピュータ（以下、Hackコンピュータ）上で簡単なゲームの作成を目指す。</p>
+<p>低レイヤといえばRustな感じがあるのでRustで演習問題をこなしたが、実際にRustの出番があるのはアセンブラ作成の6章からで、それまでは本書独自のアセンブリなどを使ってせっせと問題を解く。なので別にRustにぴったりの題材というわけでもなく、むしろテキスト処理・言語処理が得意な言語を使うほうが楽に演習できるだろう。</p>
+<hr>
+<h2 id="1章">1章</h2>
+<p>ぶっちゃけるとこの記事を書き始めたのが7章に入ってからなので、1~6章に関してはメモが少ない。<br>
+HDLを書くことでHackコンピュータ上の回路を作成する章。はじめに用意されているのはNAND回路のみ。<br>
+マルチプレクサのあたりからいきなり難易度が跳ね上がる。これらが実質的にif文などの制御構文を担当することになるので、後の章で大活躍する。<br>
+問題が難しいのでプログラムに解かせる方法ないかなとあほなことを思いつきググってみたら、どうやらブール関数を簡略化するアルゴリズムがあるらしく、カルノー法やクワイン・マクラスキー法などの種類がある。結局これらを使うことはなかったが（なぜなら理解できなかったから）、頭の片隅にとどめておこうと思う。</p>
+<hr>
+<h2 id="2章">2章</h2>
+<p>ブール演算で２進数の計算を表現する章。前半は真理値表を自分で書いて照らし合わせていけば、そこまで難しくない。<br>
+山場はALU（算術論理回路）の設計となる。ノートが数ページに渡ってごちゃごちゃになり、右手が黒ずんでいた。こんな経験何年ぶりだ？<br>
+このあたりで公式ページのPDFをみることを覚えた。正直、本書よりヒント多い気がする。</p>
+<hr>
+<h2 id="3章">3章</h2>
+<p>メモリやレジスタの基盤となる順序回路を設計する。FlipFlop回路が用意されている。<br>
+HDLの文法がよくわからなくなって頭がこんがらがった記憶がある。</p>
+<hr>
+<h2 id="4章">4章</h2>
+<p>Hackアセンブリを手書きしてプログラムを作成する。<br>
+やってるときはウンウン唸ってたような気がするが、後の章を経た今になって見返すとずいぶんぬるく感じる。</p>
+<hr>
+<h2 id="5章">5章</h2>
+<p>Hackコンピュータのハードウェア設計を最後まで行う。CPU以外は流し作業のようなもの。<br>
+ALUのときみたく、やはりCPU設計のためにノートが真っ黒になった。</p>
+<hr>
+<h2 id="6章">6章</h2>
+<p>好きなプログラミング言語を使ってアセンブラを作る。ここからやっとRustの出番。<br>
+Hackコンピュータのアセンブリ仕様を把握しておく必要があるため、今までのページを頻繁に見返すことになる。</p>
+<hr>
+<h2 id="7章">7章</h2>
+<p>Jackコンパイラ作成に向けて、Jack中間言語（VM）をアセンブリに翻訳するソフトを構築する。<br>
+個人的に一番しんどかった章。中間言語は仮想マシン上のスタック操作を前提として書かれているため、アセンブリ側でスタックの動きをエミュレートしなければならない。<br>
+アセンブリ側で実際に見えているのはむき出しのメモリとレジスタだ。しかも格納されるデータが定数値なのかどこかのメモリアドレスなのか、こちらがすべて把握する必要がある。型付けされていないポインタと常に向き合う章と表現すれば、その凶悪さが伝わるだろうか。<br>
+また、スタックのプッシュをエミュレートするアセンブリを吐くコード、といった共通化できそうな部分は都度、関数としてまとめるなりしていかないと、あとでえらい目にあう。</p>
+<hr>
+<h2 id="8章">8章</h2>
+<p>7章の続き。サブルーチン呼び出しや制御構文を扱う。<br>
+スタックでどうやって関数呼び出しなどを管理するのか常々疑問に思いつつスルーしていたが、本章を読むことで少しは理解できた。<br>
+解説イラストが気合入っているせいか（というかまんま答えが書いているようなもの）、7章と比較すれば難しくない。あくまで比較すればだが。<br>
+ただ、おれのコードでラベルのつけかたが盛大にミスっていたので延々とバグらせてしまった。</p>
+<hr>
+<h2 id="9章">9章</h2>
+<p>Jack言語の仕様説明。演習はJackを使って自由にコードを書けというもの。<br>
+本書にもあるようにJackに精通する必要性は皆無なのでとばした。10, 11章での実装の際に見返すための章。</p>
+<hr>
+<h2 id="10章">10章</h2>
+<p>Jackコードを中間言語に翻訳するコンパイラを作成していく。<br>
+言語処理系といえば抽象構文木、抽象構文木といえば代数的データ型なので、Rustの選択が光る章（まあ代数的データ型のある言語ならぶっちゃけなんでもいい）。<br>
+F#でSchemeインタプリタを作ったことはあるが構文解析ライブラリの力に依存しているものなので、nand2tetrisの方針に則り今回は一から自作してみた。Lisp以外の言語実装がどれだけかったるいかが身にしみる章だった。<br>
+また、字句解析・構文解析の実装には『実践Rust入門』第9章が非常に参考になったことを付記しておく。<br>
+この章では、抽象構文木を同じく木構造であるXMLにダンプする機能までを実装する。ちなみに構文解析につきものの左再帰問題にはでくわさなかった。たぶんnand2tetris側が初心者に配慮したBNFを用意してくれたからかもしれない。</p>
+<hr>
+<h2 id="11章">11章</h2>
+<p>10章の続き。抽象構文木をJack中間言語に変換する。<br>
+抽象構文木に変換したJackコードの動きをスタックマシンによってエミュレートする。7章よりはましだが、やはりきつい作業だった。<br>
+おれが書いたパーサに、二項演算子であるべき<code>-</code>を単項演算子として解釈するというバグが埋まっており、10章のテストでは検知されなかったようなのではまりにはまってしまった。おかげで予想以上に時間のかかった章だった。</p>
+<hr>
+<h2 id="12章">12章</h2>
+<p>Jack言語を用いてHackコンピュータOSの機能を実装する。OSというよりは標準ライブラリ。<br>
+本書でもっとも競プロ要素の強い章。ちなみにおれの競プロ力は底辺中の底辺なので、辛く厳しい章だった。数学が得意な人間にとっては楽勝すぎて鼻くそほじれるだろうことを思うと涙がちょちょぎれる。<br>
+結局、他の人たちの実装をがっつりカンニングすることに。あれ、ということは7章よりむずいな。</p>
+<hr>
+<h2 id="この本で学べないこと">この本で学べないこと</h2>
+<p>本書でも言及されているが、ぱっと思いついたものであれば</p>
+<ul>
+<li>最適化（ハードウェア・ソフトウェア関わらず）</li>
+<li>ファイルシステム</li>
+<li>並行・並列処理</li>
+<li>通信、ネットワーク</li>
+<li>セキュリティ、暗号理論</li>
+<li>ラムダ計算</li>
+<li>ソフトウェア工学（設計や運用など）</li>
+</ul>
+<p>技術書としては一般的な厚さながらやたらと中身の濃い本書をやり遂げたとしても、まだまだ学ぶべきことは大量にある。</p>
+<hr>
+<h2 id="まとめ">まとめ</h2>
+<p>情報工学の教育をまともに受けていない身からすると大変ありがたかった本。<br>
+でももう一回演習したいかと聞かれれば、NOと言わざるを得ない。とろとろにとろけきった脳みそをしばらく休めたい。</p>
+		</div>
+	</article>
+</main>
+
+
+<nav class="pager flex">
+	<div class="pager__item pager__item--prev">
+		<a class="pager__link" href="https://guricerin.github.io/shit-blog/post/20201124-bz-lang/" rel="prev">
+			<span class="pager__subtitle">«&thinsp;Previous</span>
+			<p class="pager__title">brainfuck方言のB&#39;z言語を作った</p>
+		</a>
+	</div>
+	<div class="pager__item pager__item--next">
+		<a class="pager__link" href="https://guricerin.github.io/shit-blog/post/20210618-mikanos/" rel="next">
+			<span class="pager__subtitle">Next&thinsp;»</span>
+			<p class="pager__title">『ゼロからのOS自作入門』写経した</p>
+		</a>
+	</div>
+</nav>
+
+<section class="comments">
+	<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "https-guricerin-github-io-shit-blog" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+
+
+			</div>
+			
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2021 guricerin.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="https://guricerin.github.io/shit-blog/js/menu.js"></script>
+<script src="https://guricerin.github.io/shit-blog/js/custom.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js?config=TeX-AMS-MML_HTMLorMML" async></script>
+</body>
+</html>
