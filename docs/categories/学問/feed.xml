@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>学問 on グリのクソブログ</title>
+    <link>https://guricerin.github.io/shit-blog/categories/%E5%AD%A6%E5%95%8F/</link>
+    <description>Recent content in 学問 on グリのクソブログ</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-JP</language>
+    <lastBuildDate>Sat, 27 Jan 2018 21:26:44 +0900</lastBuildDate>
+    
+	<atom:link href="https://guricerin.github.io/shit-blog/categories/%E5%AD%A6%E5%95%8F/feed.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>政治学の偉人たち</title>
+      <link>https://guricerin.github.io/shit-blog/post/2018/01/27-politics/</link>
+      <pubDate>Sat, 27 Jan 2018 21:26:44 +0900</pubDate>
+      
+      <guid>https://guricerin.github.io/shit-blog/post/2018/01/27-politics/</guid>
+      <description>&lt;p&gt;政治学と情報工学。これらの単語チョイスには、SFオタクである貴様らの胸に何かしら熱いものが込み上げてくるのではないでしょうか。え、そんなことはない？そうすか。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>情報理論の偉人たち</title>
+      <link>https://guricerin.github.io/shit-blog/post/2018/01/23-infomatics/</link>
+      <pubDate>Tue, 23 Jan 2018 21:31:06 +0900</pubDate>
+      
+      <guid>https://guricerin.github.io/shit-blog/post/2018/01/23-infomatics/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

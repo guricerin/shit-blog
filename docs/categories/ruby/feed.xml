@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Ruby on グリのクソブログ</title>
+    <link>https://guricerin.github.io/shit-blog/categories/ruby/</link>
+    <description>Recent content in Ruby on グリのクソブログ</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja-JP</language>
+    <lastBuildDate>Fri, 01 Feb 2019 17:08:21 +0900</lastBuildDate>
+    
+	<atom:link href="https://guricerin.github.io/shit-blog/categories/ruby/feed.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Atcoder用ディレクトリ作成スクリプト（C&#43;&#43;/CMake）</title>
+      <link>https://guricerin.github.io/shit-blog/post/2019/01/01-compro/</link>
+      <pubDate>Fri, 01 Feb 2019 17:08:21 +0900</pubDate>
+      
+      <guid>https://guricerin.github.io/shit-blog/post/2019/01/01-compro/</guid>
+      <description>&lt;p&gt;を作成した。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>『RubyでつくるRuby』</title>
+      <link>https://guricerin.github.io/shit-blog/post/2018/12/02-ruby-by-ruby/</link>
+      <pubDate>Sun, 02 Dec 2018 20:35:07 +0900</pubDate>
+      
+      <guid>https://guricerin.github.io/shit-blog/post/2018/12/02-ruby-by-ruby/</guid>
+      <description>&lt;p&gt;「超ライトなsicp」という噂を聞いたので読んだ。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

@@ -173,5 +173,41 @@
       <description></description>
     </item>
     
+    <item>
+      <title>Ruby</title>
+      <link>https://guricerin.github.io/shit-blog/categories/ruby/</link>
+      <pubDate>Fri, 01 Feb 2019 17:08:21 +0900</pubDate>
+      
+      <guid>https://guricerin.github.io/shit-blog/categories/ruby/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Scheme</title>
+      <link>https://guricerin.github.io/shit-blog/categories/scheme/</link>
+      <pubDate>Thu, 13 Sep 2018 20:54:25 +0900</pubDate>
+      
+      <guid>https://guricerin.github.io/shit-blog/categories/scheme/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>漫画</title>
+      <link>https://guricerin.github.io/shit-blog/categories/%E6%BC%AB%E7%94%BB/</link>
+      <pubDate>Tue, 27 Feb 2018 21:16:04 +0900</pubDate>
+      
+      <guid>https://guricerin.github.io/shit-blog/categories/%E6%BC%AB%E7%94%BB/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>学問</title>
+      <link>https://guricerin.github.io/shit-blog/categories/%E5%AD%A6%E5%95%8F/</link>
+      <pubDate>Sat, 27 Jan 2018 21:26:44 +0900</pubDate>
+      
+      <guid>https://guricerin.github.io/shit-blog/categories/%E5%AD%A6%E5%95%8F/</guid>
+      <description></description>
+    </item>
+    
   </channel>
 </rss>

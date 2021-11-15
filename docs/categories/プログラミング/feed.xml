@@ -159,5 +159,32 @@
 &lt;a href=&#34;https://github.com/guricerin/basic-of-programing&#34;&gt;https://github.com/guricerin/basic-of-programing&lt;/a&gt;&lt;/p&gt;</description>
     </item>
     
+    <item>
+      <title>『RubyでつくるRuby』</title>
+      <link>https://guricerin.github.io/shit-blog/post/2018/12/02-ruby-by-ruby/</link>
+      <pubDate>Sun, 02 Dec 2018 20:35:07 +0900</pubDate>
+      
+      <guid>https://guricerin.github.io/shit-blog/post/2018/12/02-ruby-by-ruby/</guid>
+      <description>&lt;p&gt;「超ライトなsicp」という噂を聞いたので読んだ。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>『Scheme手習い』</title>
+      <link>https://guricerin.github.io/shit-blog/post/2018/09/16-scheme-practice/</link>
+      <pubDate>Thu, 13 Sep 2018 20:54:25 +0900</pubDate>
+      
+      <guid>https://guricerin.github.io/shit-blog/post/2018/09/16-scheme-practice/</guid>
+      <description>&lt;p&gt;『7つの言語 7つの世界』を見事に積読することに成功したが、どうしてもLispへの興味が衰えないので、『Scheme手習い』をだらだら読んでいた。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>コード設計</title>
+      <link>https://guricerin.github.io/shit-blog/post/2018/06/27-code-design/</link>
+      <pubDate>Wed, 27 Jun 2018 20:58:19 +0900</pubDate>
+      
+      <guid>https://guricerin.github.io/shit-blog/post/2018/06/27-code-design/</guid>
+      <description>&lt;p&gt;500行超え、1000行超えは朝飯前な関数・メソッドに眼球と脳みそがレイプされている今日この頃。&lt;/p&gt;</description>
+    </item>
+    
   </channel>
 </rss>
