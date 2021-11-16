@@ -21,12 +21,169 @@
     </item>
     
     <item>
+      <title>WebGoat-15: XXE</title>
+      <link>https://guricerin.github.io/shit-blog/post/2020/09/27-xxe/</link>
+      <pubDate>Sun, 27 Sep 2020 18:17:30 +0900</pubDate>
+      
+      <guid>https://guricerin.github.io/shit-blog/post/2020/09/27-xxe/</guid>
+      <description>&lt;p&gt;XXE (Xml eXternal Entity attack) とは、XMLの外部参照機能を悪用する攻撃。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>WebGoat-14: Insecure Login</title>
+      <link>https://guricerin.github.io/shit-blog/post/2020/09/26-insecure-login/</link>
+      <pubDate>Sat, 26 Sep 2020 18:17:30 +0900</pubDate>
+      
+      <guid>https://guricerin.github.io/shit-blog/post/2020/09/26-insecure-login/</guid>
+      <description>&lt;p&gt;機密データを送信する前に暗号化しましょうねという課題。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>WebGoat-13: Secure Passwords</title>
+      <link>https://guricerin.github.io/shit-blog/post/2020/09/25-secure-passwords/</link>
+      <pubDate>Fri, 25 Sep 2020 18:17:30 +0900</pubDate>
+      
+      <guid>https://guricerin.github.io/shit-blog/post/2020/09/25-secure-passwords/</guid>
+      <description>&lt;p&gt;堅牢なパスワードの生成と保管方法を学ぶ。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>WebGoat-12: Password reset</title>
+      <link>https://guricerin.github.io/shit-blog/post/2020/09/24-password-reset/</link>
+      <pubDate>Thu, 24 Sep 2020 18:17:30 +0900</pubDate>
+      
+      <guid>https://guricerin.github.io/shit-blog/post/2020/09/24-password-reset/</guid>
+      <description>&lt;p&gt;パスワードリセット機能の脆弱性について学ぶ。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>WebGoat-11: JWT tokens</title>
+      <link>https://guricerin.github.io/shit-blog/post/2020/09/23-jwt-tokens/</link>
+      <pubDate>Wed, 23 Sep 2020 18:17:30 +0900</pubDate>
+      
+      <guid>https://guricerin.github.io/shit-blog/post/2020/09/23-jwt-tokens/</guid>
+      <description>&lt;p&gt;JWT（Json Web Token）とは、JSONデータに電子署名や暗号化方式を格納したもの。これを使ってサーバとクライアントは認証しあうわけだが、やはりこれにも脆弱性が存在する。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>WebGoat-10: Authentication Bypasses</title>
+      <link>https://guricerin.github.io/shit-blog/post/2020/09/22-auth-bypasses/</link>
+      <pubDate>Tue, 22 Sep 2020 18:17:30 +0900</pubDate>
+      
+      <guid>https://guricerin.github.io/shit-blog/post/2020/09/22-auth-bypasses/</guid>
+      <description>&lt;p&gt;二段階認証にも脆弱性は存在する。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>WebGoat-9: Path traversal</title>
+      <link>https://guricerin.github.io/shit-blog/post/2020/09/21-path-traversal/</link>
+      <pubDate>Mon, 21 Sep 2020 18:17:30 +0900</pubDate>
+      
+      <guid>https://guricerin.github.io/shit-blog/post/2020/09/21-path-traversal/</guid>
+      <description>&lt;p&gt;&lt;code&gt;../&lt;/code&gt;はURLエンコーディングにおいては&lt;code&gt;%2e%2e%2f&lt;/code&gt;となる。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>WebGoat-8: SQL Injection (mitigation)</title>
+      <link>https://guricerin.github.io/shit-blog/post/2020/09/20-sql-injection-mitigration/</link>
+      <pubDate>Sun, 20 Sep 2020 18:17:30 +0900</pubDate>
+      
+      <guid>https://guricerin.github.io/shit-blog/post/2020/09/20-sql-injection-mitigration/</guid>
+      <description>&lt;p&gt;ストアド・プロシージャやパラメータ化クエリを学ぶ。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>WebGoat-7: SQL Injection (advanced)</title>
+      <link>https://guricerin.github.io/shit-blog/post/2020/09/19-sql-injection-advanced/</link>
+      <pubDate>Sat, 19 Sep 2020 18:17:30 +0900</pubDate>
+      
+      <guid>https://guricerin.github.io/shit-blog/post/2020/09/19-sql-injection-advanced/</guid>
+      <description>&lt;p&gt;ねむい。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>WebGoat-6: SQL Injection (intro)</title>
+      <link>https://guricerin.github.io/shit-blog/post/2020/09/18-sql-injection-intro/</link>
+      <pubDate>Fri, 18 Sep 2020 18:17:30 +0900</pubDate>
+      
+      <guid>https://guricerin.github.io/shit-blog/post/2020/09/18-sql-injection-intro/</guid>
+      <description>&lt;p&gt;SQLとSQLインジェクションの基本を学ぶレッスン。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>WebGoat-5: Crypto Basics</title>
+      <link>https://guricerin.github.io/shit-blog/post/2020/09/18-crypto-basics/</link>
+      <pubDate>Fri, 18 Sep 2020 18:16:30 +0900</pubDate>
+      
+      <guid>https://guricerin.github.io/shit-blog/post/2020/09/18-crypto-basics/</guid>
+      <description>&lt;p&gt;主要な暗号手法を学ぶレッスン。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>WebGoat-4: CIA Triad</title>
+      <link>https://guricerin.github.io/shit-blog/post/2020/09/16-cia-triad/</link>
+      <pubDate>Wed, 16 Sep 2020 18:16:30 +0900</pubDate>
+      
+      <guid>https://guricerin.github.io/shit-blog/post/2020/09/16-cia-triad/</guid>
+      <description>情報セキュリティを構成する三要素についての座学。演習問題は、基本情報の試験に出てきそうなマークシート形式。
+これもとくにメモしておくようなことはない。</description>
+    </item>
+    
+    <item>
+      <title>WebGoat-3: Developer Tools</title>
+      <link>https://guricerin.github.io/shit-blog/post/2020/09/16-webgoat-dev-tools/</link>
+      <pubDate>Wed, 16 Sep 2020 18:15:30 +0900</pubDate>
+      
+      <guid>https://guricerin.github.io/shit-blog/post/2020/09/16-webgoat-dev-tools/</guid>
+      <description>Chromeのデベロッパー・ツールの使い方を学ぶ回。
+コンソールからWebGoatのAPIを呼び出したり、POSTメソッドのリクエスト・ボディに格納されている値を取得してテキストボックスに打ち込む問題。
+とても簡単なので、これ以上書くことがない。</description>
+    </item>
+    
+    <item>
+      <title>WebGoat-2: HTTP Proxies</title>
+      <link>https://guricerin.github.io/shit-blog/post/2020/09/16-webgoat-http-proxies/</link>
+      <pubDate>Wed, 16 Sep 2020 18:14:30 +0900</pubDate>
+      
+      <guid>https://guricerin.github.io/shit-blog/post/2020/09/16-webgoat-http-proxies/</guid>
+      <description>&lt;p&gt;この演習は主にZAPの使い方を学ぶ感じ。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>WebGoat-1: HTTP Basics再び（ついでにdocker）</title>
+      <link>https://guricerin.github.io/shit-blog/post/2020/09/15-webgoat-httpbasic/</link>
+      <pubDate>Tue, 15 Sep 2020 18:14:30 +0900</pubDate>
+      
+      <guid>https://guricerin.github.io/shit-blog/post/2020/09/15-webgoat-httpbasic/</guid>
+      <description>&lt;p&gt;iOSアプリの開発案件が入ってきたのとどうせならWSL2入れたかったので仮想化プラットフォームを有効化したら、案の定VirtualBoxで仮想マシンが起動しなくなった。&lt;br&gt;
+なのでこの間セットアップしたOWASP BWAを捨て、dockerでWebGoatを立ち上げることにした。dockerなんもわからん。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
       <title>WindowsのpwshからsshでWSL2に接続</title>
       <link>https://guricerin.github.io/shit-blog/post/2020/09/20200914-windows-to-wsl2-ssh/</link>
       <pubDate>Tue, 15 Sep 2020 10:28:44 +0900</pubDate>
       
       <guid>https://guricerin.github.io/shit-blog/post/2020/09/20200914-windows-to-wsl2-ssh/</guid>
       <description></description>
+    </item>
+    
+    <item>
+      <title>OWASP BWA の WebGoat ~ Http Basic ~</title>
+      <link>https://guricerin.github.io/shit-blog/post/2020/09/13-webgoat-httpbasic/</link>
+      <pubDate>Sun, 13 Sep 2020 18:04:49 +0900</pubDate>
+      
+      <guid>https://guricerin.github.io/shit-blog/post/2020/09/13-webgoat-httpbasic/</guid>
+      <description>&lt;p&gt;前回立ち上げたOWASP BWAに搭載されているWebアプリのうち、WebGoatを使う。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>OWASP BWAのセットアップ</title>
+      <link>https://guricerin.github.io/shit-blog/post/2020/09/13-owasp-bwa-setup/</link>
+      <pubDate>Sun, 13 Sep 2020 17:59:52 +0900</pubDate>
+      
+      <guid>https://guricerin.github.io/shit-blog/post/2020/09/13-owasp-bwa-setup/</guid>
+      <description>&lt;p&gt;OWASP BWA（Broken Web Applications）は、脆弱性を抱えたWebアプリを取り揃えているUbuntuベースの仮想マシンイメージ。情報セキュリティの学習に用いられる。&lt;/p&gt;</description>
     </item>
     
     <item>

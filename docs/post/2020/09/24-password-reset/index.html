@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>WebGoat-12: Password reset - グリのクソブログ</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+		<meta property="og:title" content="WebGoat-12: Password reset" />
+<meta property="og:description" content="パスワードリセット機能の脆弱性について学ぶ。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://guricerin.github.io/shit-blog/post/2020/09/24-password-reset/" />
+<meta property="article:published_time" content="2020-09-24T18:17:30+09:00" />
+<meta property="article:modified_time" content="2020-09-24T18:17:30+09:00" />
+
+		<meta itemprop="name" content="WebGoat-12: Password reset">
+<meta itemprop="description" content="パスワードリセット機能の脆弱性について学ぶ。">
+<meta itemprop="datePublished" content="2020-09-24T18:17:30&#43;09:00" />
+<meta itemprop="dateModified" content="2020-09-24T18:17:30&#43;09:00" />
+<meta itemprop="wordCount" content="39">
+
+
+
+<meta itemprop="keywords" content="" />
+		<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="WebGoat-12: Password reset"/>
+<meta name="twitter:description" content="パスワードリセット機能の脆弱性について学ぶ。"/>
+
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+
+	<link rel="stylesheet" href="https://guricerin.github.io/shit-blog/css/style.css">
+	<link rel="stylesheet" href="https://guricerin.github.io/shit-blog/css/custom.css">
+
+	<link rel="shortcut icon" href="https://guricerin.github.io/shit-blog/favicon.ico">
+		
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container header__container">
+		
+	<div class="logo logo--mixed">
+		<a class="logo__link" href="https://guricerin.github.io/shit-blog/" title="グリのクソブログ" rel="home">
+			<div class="logo__item logo__imagebox">
+					<img class="logo__img" src="https://guricerin.github.io/shit-blog/img/icon.jpg">
+				</div><div class="logo__item logo__text">
+					<div class="logo__title">グリのクソブログ</div>
+					<div class="logo__tagline">主にB&#39;z</div>
+				</div>
+		</a>
+	</div>
+		
+<nav class="menu">
+	<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
+		<span class="menu__btn-title" tabindex="-1">Menu</span>
+	</button>
+	<ul class="menu__list">
+		<li class="menu__item">
+			<a class="menu__link" href="https://guricerin.github.io/shit-blog/archives">
+				
+				<span class="menu__text">ARCHIVE</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="https://guricerin.github.io/shit-blog/feed.xml">
+				
+				<span class="menu__text">RSS</span>
+				
+			</a>
+		</li>
+	</ul>
+</nav>
+
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">WebGoat-12: Password reset</h1>
+			<div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2020-09-24T18:17:30&#43;09:00">2020-09-24</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="https://guricerin.github.io/shit-blog/categories/%E6%83%85%E5%A0%B1%E3%82%BB%E3%82%AD%E3%83%A5%E3%83%AA%E3%83%86%E3%82%A3/" rel="category">情報セキュリティ</a>
+	</span>
+</div></div>
+		</header>
+		<div class="content post__content clearfix">
+			<p>パスワードリセット機能の脆弱性について学ぶ。</p>
+<h4 id="page-2">Page 2</h4>
+<p>webwolfを使う必要があるようなので、<a href="https://github.com/WebGoat/WebGoat/tree/develop/docker">公式のgithub</a>に従って新たにdockerイメージを導入。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">&gt; docker run -d -p 80:8888 -p 8080:8080 -p 9090:9090 -e TZ<span style="color:#f92672">=</span>Asia/Tokyo --name webgoatwolf webgoat/goatandwolf:latest 
+</code></pre></div><p><code>localhost:9090/WebWolf</code>にアクセスして、WebGoatのアカウント情報を入力。</p>
+<p><img src="./1.png" alt="a"></p>
+<p>WebGoatのほうに戻って、ひとまずおれが設定しているWebGoatのアカウントのユーザ名：<code>aaaaaa</code>に<code>@webgoat.org</code>を連結させて入力、パスワード：<code>111111</code>を入力してみるが、だめだった。<br>
+<code>Forgot your password?</code>をクリックし、<code>Continue</code>をクリックしたらメールが送られた。WebWolfのメールボックスから確認できるらしい。</p>
+<p><img src="./2.png" alt="a"></p>
+<p>こちらが件のメール。</p>
+<p><img src="./3.png" alt="a"></p>
+<p><strong>平文やないか</strong>。しかもこれ、サーバ側がユーザ名をそのままパスワードとして使いまわしているな？<br>
+これをWebGoatのログインページに入力して問題クリア。問題ごとの難易度の差がひでえ。</p>
+<h4 id="page-4">Page 4</h4>
+<p>パスワードリセット機能を使って他ユーザのパスワードを取得せよ、という問題。<code>あなたの好きな色は？</code>という秘密の質問に答えたらパスワードを取得できる。<br>
+とりあえずからいろんな色を総当りで入力してみると、<code>Tom</code>は<code>purple</code>が答えのようだ。</p>
+<p><img src="./4.png" alt="a"></p>
+<p>同じく<code>larry</code>は<code>yellow</code>で<code>admin</code>は<code>green</code>。人力での総当りだが、所要時間は5分もかかっていない。WebGoatにログインするたびに答えはランダムになるのかとかは検証していない。<br>
+探索空間が非常に狭いような質問はやめましょう。</p>
+<h4 id="page-5">Page 5</h4>
+<p>コンボボックスの項目を2つ選ぶだけ。要は「秘密の質問」にふさわしいもの（ユーザには覚えやすく、ハッカーには推測しづらい）なんてそうないということだ。</p>
+<h4 id="page-6">Page 6</h4>
+<p>わからん。</p>
+		</div>
+	</article>
+</main>
+
+
+<nav class="pager flex">
+	<div class="pager__item pager__item--prev">
+		<a class="pager__link" href="https://guricerin.github.io/shit-blog/post/2020/09/23-jwt-tokens/" rel="prev">
+			<span class="pager__subtitle">«&thinsp;Previous</span>
+			<p class="pager__title">WebGoat-11: JWT tokens</p>
+		</a>
+	</div>
+	<div class="pager__item pager__item--next">
+		<a class="pager__link" href="https://guricerin.github.io/shit-blog/post/2020/09/25-secure-passwords/" rel="next">
+			<span class="pager__subtitle">Next&thinsp;»</span>
+			<p class="pager__title">WebGoat-13: Secure Passwords</p>
+		</a>
+	</div>
+</nav>
+
+<section class="comments">
+	<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "https-guricerin-github-io-shit-blog" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+
+
+			</div>
+			
+
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2021 guricerin.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="https://guricerin.github.io/shit-blog/js/menu.js"></script>
+<script src="https://guricerin.github.io/shit-blog/js/custom.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js?config=TeX-AMS-MML_HTMLorMML" async></script>
+</body>
+</html>

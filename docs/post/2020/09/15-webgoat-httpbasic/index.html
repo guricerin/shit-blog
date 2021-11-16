@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>WebGoat-1: HTTP Basics再び（ついでにdocker） - グリのクソブログ</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+		<meta property="og:title" content="WebGoat-1: HTTP Basics再び（ついでにdocker）" />
+<meta property="og:description" content="iOSアプリの開発案件が入ってきたのとどうせならWSL2入れたかったので仮想化プラットフォームを有効化したら、案の定VirtualBoxで仮想マシンが起動しなくなった。
+なのでこの間セットアップしたOWASP BWAを捨て、dockerでWebGoatを立ち上げることにした。dockerなんもわからん。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://guricerin.github.io/shit-blog/post/2020/09/15-webgoat-httpbasic/" />
+<meta property="article:published_time" content="2020-09-15T18:14:30+09:00" />
+<meta property="article:modified_time" content="2020-09-15T18:14:30+09:00" />
+
+		<meta itemprop="name" content="WebGoat-1: HTTP Basics再び（ついでにdocker）">
+<meta itemprop="description" content="iOSアプリの開発案件が入ってきたのとどうせならWSL2入れたかったので仮想化プラットフォームを有効化したら、案の定VirtualBoxで仮想マシンが起動しなくなった。
+なのでこの間セットアップしたOWASP BWAを捨て、dockerでWebGoatを立ち上げることにした。dockerなんもわからん。">
+<meta itemprop="datePublished" content="2020-09-15T18:14:30&#43;09:00" />
+<meta itemprop="dateModified" content="2020-09-15T18:14:30&#43;09:00" />
+<meta itemprop="wordCount" content="86">
+
+
+
+<meta itemprop="keywords" content="" />
+		<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="WebGoat-1: HTTP Basics再び（ついでにdocker）"/>
+<meta name="twitter:description" content="iOSアプリの開発案件が入ってきたのとどうせならWSL2入れたかったので仮想化プラットフォームを有効化したら、案の定VirtualBoxで仮想マシンが起動しなくなった。
+なのでこの間セットアップしたOWASP BWAを捨て、dockerでWebGoatを立ち上げることにした。dockerなんもわからん。"/>
+
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+
+	<link rel="stylesheet" href="https://guricerin.github.io/shit-blog/css/style.css">
+	<link rel="stylesheet" href="https://guricerin.github.io/shit-blog/css/custom.css">
+
+	<link rel="shortcut icon" href="https://guricerin.github.io/shit-blog/favicon.ico">
+		
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container header__container">
+		
+	<div class="logo logo--mixed">
+		<a class="logo__link" href="https://guricerin.github.io/shit-blog/" title="グリのクソブログ" rel="home">
+			<div class="logo__item logo__imagebox">
+					<img class="logo__img" src="https://guricerin.github.io/shit-blog/img/icon.jpg">
+				</div><div class="logo__item logo__text">
+					<div class="logo__title">グリのクソブログ</div>
+					<div class="logo__tagline">主にB&#39;z</div>
+				</div>
+		</a>
+	</div>
+		
+<nav class="menu">
+	<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
+		<span class="menu__btn-title" tabindex="-1">Menu</span>
+	</button>
+	<ul class="menu__list">
+		<li class="menu__item">
+			<a class="menu__link" href="https://guricerin.github.io/shit-blog/archives">
+				
+				<span class="menu__text">ARCHIVE</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="https://guricerin.github.io/shit-blog/feed.xml">
+				
+				<span class="menu__text">RSS</span>
+				
+			</a>
+		</li>
+	</ul>
+</nav>
+
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">WebGoat-1: HTTP Basics再び（ついでにdocker）</h1>
+			<div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2020-09-15T18:14:30&#43;09:00">2020-09-15</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="https://guricerin.github.io/shit-blog/categories/%E6%83%85%E5%A0%B1%E3%82%BB%E3%82%AD%E3%83%A5%E3%83%AA%E3%83%86%E3%82%A3/" rel="category">情報セキュリティ</a>
+	</span>
+</div></div>
+		</header>
+		<div class="content post__content clearfix">
+			<p>iOSアプリの開発案件が入ってきたのとどうせならWSL2入れたかったので仮想化プラットフォームを有効化したら、案の定VirtualBoxで仮想マシンが起動しなくなった。<br>
+なのでこの間セットアップしたOWASP BWAを捨て、dockerでWebGoatを立ち上げることにした。dockerなんもわからん。</p>
+<h4 id="環境">環境</h4>
+<ul>
+<li>Windows10 2004</li>
+<li>docker desktop community 2.3.0.4 stable</li>
+<li>OWASP ZAP 2.9.0</li>
+</ul>
+<h4 id="コンテナ立ち上げ">コンテナ立ち上げ</h4>
+<p><a href="https://github.com/WebGoat/WebGoat">WebGoatのdockerイメージは公式で用意されているので</a>、ありがたく使わせていただく。</p>
+<ul>
+<li>下記のコマンドの意味
+<ul>
+<li><code>docker run</code>: 指定したイメージからコンテナを作成・起動。</li>
+<li><code>-d</code>: コンテナをバックグラウンドで起動。ちなみにコンテナの標準入出力をターミナルに繋げるのは<code>-it</code>オプション。</li>
+<li><code>-p 127.0.0.1:10080:8080</code>: ホストOSの10080ポートをコンテナの8080ポートにフォワード。</li>
+<li><code>--name</code>: 作成するコンテナに名前を付ける。</li>
+</ul>
+</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">&gt; docker run -d -p 127.0.0.1:10080:8080 --name webgoat webgoat/webgoat-8.0
+</code></pre></div><p>ブラウザで<code>http://localhost:10080/WebGoat</code>にアクセスしてみる。</p>
+<p><img src="./1.png" alt="a"></p>
+<p>なんかすげえモダンになっとる。適当にユーザを作成しておく。</p>
+<h4 id="owasp-zapの導入">OWASP ZAPの導入</h4>
+<p>この間はHTTP通信の解析にFiddlerを使用したが、WebGoatのページでやたらとOWASP ZAPを推してくるので下記からインストール。あとたしかJava8が必要だけど、ZAPを起動したときにJREがなければダウンロードページに飛ばしてくれる。</p>
+<p><a href="https://www.zaproxy.org/download/">https://www.zaproxy.org/download/</a></p>
+<p>OWASP ZAPはWebアプリの脆弱性診断ツールらしい。FiddlerのようなHTTP通信の解析はもちろん、ペネトレーションテストなども行えるとか。<br>
+ZAPを起動したらセッションの保持方法をどうするか聞いてくる。とりあえず「必要に応じて～」でいいだろう。</p>
+<p><img src="./2.png" alt="a"></p>
+<p>まずプロキシの設定を行う。ZAPはそもそもWebブラウザとWebサーバを介在するプロキシとしての機能がメインらしい。それでブラウザの代わりにサーバを攻撃したり通信を傍受したりできるのだと思う。<br>
+「ツール」タブの「オプション」を選択、「ローカル・プロキシ」で18080ポートを使用させる。</p>
+<p><img src="./3.png" alt="a"></p>
+<p><img src="./4.png" alt="a"></p>
+<p>Webブラウザ（今回はFireFox）の設定も変更する。FireFoxの場合、右上のハンバーガーメニューを開いて「オプション」を選択、下部の「ネットワーク設定」の「接続設定」をクリックし、プロキシで使用するポート番号を先ほどZAPで設定したものとそろえておく。</p>
+<p><img src="./5.png" alt="a"></p>
+<p><img src="./6.png" alt="a"></p>
+<p>これでFireFoxとインターネットの間をOWASP ZAPがとりもつこととなった。ZAPの画面で「Manual Explore」を選択。</p>
+<p><img src="./7.png" alt="a"></p>
+<p>URLを設定し、「Launch Browser」でFireFoxを立ち上げる。</p>
+<p><img src="./8.png" alt="a"></p>
+<p>するとセッション一覧が動き出し、通信内容を傍受している様子がわかる。</p>
+<p><img src="./9.png" alt="a"></p>
+<h4 id="再びhttp-basics">再びHTTP Basics</h4>
+<p>こないだと演習問題は変わらないように見える。入力した文字列を反転するサーバだ。</p>
+<p><img src="./10.png" alt="a"></p>
+<p>ただ前とは違って回答欄が二つある。メソッドはPOSTでいいとして、なんだ「magic number」って？</p>
+<p><img src="./11.png" alt="a"></p>
+<p>リクエストメッセージやレスポンスメッセージを見てもわからない。</p>
+<p><img src="./12.png" alt="a"></p>
+<p><img src="./13.png" alt="a"></p>
+<p>仕方ないのでとりあえずPOSTメソッドだけ回答。</p>
+<p><img src="./14.png" alt="a"></p>
+<p>で、このときのPOSTを補足してみると、</p>
+<p><img src="./15.png" alt="a"></p>
+<p><strong>書いとるし</strong>。送信するリクエストのパラメータにハードコーディングしているから「magic number」というわけか。<br>
+この数値を入力して演習終了。</p>
+<p><img src="./16.png" alt="a"></p>
+<p>一応、何回か試してみたが、このmagic numberは毎回違うものが設定されているようだ。たぶん乱数だろうが、前回とは違ってサーバ側のソースコードはWebアプリ内では公開されてないっぽい。<br>
+それにしても、今回はプロキシだのdockerだの目新しい概念に触れまくったおかげでおれのザコ脳みそがとろけそうだ。</p>
+<h4 id="後片付け">後片付け</h4>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">&gt; docker stop webgoat <span style="color:#75715e"># コンテナの停止</span>
+</code></pre></div><p>以下はコンテナを削除するが、これをやるとどこまで演習を進めたか自分で覚えなきゃいけないのでやってない。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">&gt; docker rm webgoat
+</code></pre></div><h4 id="再開">再開</h4>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">&gt; docker start webgoat
+</code></pre></div>
+		</div>
+	</article>
+</main>
+
+
+<nav class="pager flex">
+	<div class="pager__item pager__item--prev">
+		<a class="pager__link" href="https://guricerin.github.io/shit-blog/post/2020/09/20200914-windows-to-wsl2-ssh/" rel="prev">
+			<span class="pager__subtitle">«&thinsp;Previous</span>
+			<p class="pager__title">WindowsのpwshからsshでWSL2に接続</p>
+		</a>
+	</div>
+	<div class="pager__item pager__item--next">
+		<a class="pager__link" href="https://guricerin.github.io/shit-blog/post/2020/09/16-webgoat-http-proxies/" rel="next">
+			<span class="pager__subtitle">Next&thinsp;»</span>
+			<p class="pager__title">WebGoat-2: HTTP Proxies</p>
+		</a>
+	</div>
+</nav>
+
+<section class="comments">
+	<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "https-guricerin-github-io-shit-blog" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+
+
+			</div>
+			
+
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2021 guricerin.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="https://guricerin.github.io/shit-blog/js/menu.js"></script>
+<script src="https://guricerin.github.io/shit-blog/js/custom.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js?config=TeX-AMS-MML_HTMLorMML" async></script>
+</body>
+</html>

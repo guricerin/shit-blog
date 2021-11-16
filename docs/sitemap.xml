@@ -228,8 +228,98 @@
   </url>
   
   <url>
+    <loc>https://guricerin.github.io/shit-blog/post/2020/09/27-xxe/</loc>
+    <lastmod>2020-09-27T18:17:30+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://guricerin.github.io/shit-blog/categories/%E6%83%85%E5%A0%B1%E3%82%BB%E3%82%AD%E3%83%A5%E3%83%AA%E3%83%86%E3%82%A3/</loc>
+    <lastmod>2020-09-27T18:17:30+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://guricerin.github.io/shit-blog/post/2020/09/26-insecure-login/</loc>
+    <lastmod>2020-09-26T18:17:30+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://guricerin.github.io/shit-blog/post/2020/09/25-secure-passwords/</loc>
+    <lastmod>2020-09-25T18:17:30+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://guricerin.github.io/shit-blog/post/2020/09/24-password-reset/</loc>
+    <lastmod>2020-09-24T18:17:30+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://guricerin.github.io/shit-blog/post/2020/09/23-jwt-tokens/</loc>
+    <lastmod>2020-09-23T18:17:30+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://guricerin.github.io/shit-blog/post/2020/09/22-auth-bypasses/</loc>
+    <lastmod>2020-09-22T18:17:30+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://guricerin.github.io/shit-blog/post/2020/09/21-path-traversal/</loc>
+    <lastmod>2020-09-21T18:17:30+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://guricerin.github.io/shit-blog/post/2020/09/20-sql-injection-mitigration/</loc>
+    <lastmod>2020-09-20T18:17:30+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://guricerin.github.io/shit-blog/post/2020/09/19-sql-injection-advanced/</loc>
+    <lastmod>2020-09-19T18:17:30+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://guricerin.github.io/shit-blog/post/2020/09/18-sql-injection-intro/</loc>
+    <lastmod>2020-09-18T18:17:30+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://guricerin.github.io/shit-blog/post/2020/09/18-crypto-basics/</loc>
+    <lastmod>2020-09-18T18:16:30+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://guricerin.github.io/shit-blog/post/2020/09/16-cia-triad/</loc>
+    <lastmod>2020-09-16T18:16:30+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://guricerin.github.io/shit-blog/post/2020/09/16-webgoat-dev-tools/</loc>
+    <lastmod>2020-09-16T18:15:30+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://guricerin.github.io/shit-blog/post/2020/09/16-webgoat-http-proxies/</loc>
+    <lastmod>2020-09-16T18:14:30+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://guricerin.github.io/shit-blog/post/2020/09/15-webgoat-httpbasic/</loc>
+    <lastmod>2020-09-15T18:14:30+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://guricerin.github.io/shit-blog/post/2020/09/20200914-windows-to-wsl2-ssh/</loc>
     <lastmod>2020-09-15T10:28:44+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://guricerin.github.io/shit-blog/post/2020/09/13-webgoat-httpbasic/</loc>
+    <lastmod>2020-09-13T18:04:49+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://guricerin.github.io/shit-blog/post/2020/09/13-owasp-bwa-setup/</loc>
+    <lastmod>2020-09-13T17:59:52+09:00</lastmod>
   </url>
   
   <url>
