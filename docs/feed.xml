@@ -1083,5 +1083,16 @@ SCP財団とは、Secure（確保）、Contain（収容）、Protect（保護）
       <description>&lt;p&gt;B&amp;rsquo;z大好きなので、&lt;del&gt;2chのアルバム全曲レビュースレをパクって&lt;/del&gt;上から目線で彼らのアルバムを批評していきます。&lt;/p&gt;</description>
     </item>
     
+    <item>
+      <title>Privacy Policy</title>
+      <link>https://guricerin.github.io/shit-blog/privacy-policy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://guricerin.github.io/shit-blog/privacy-policy/</guid>
+      <description>アクセス解析ツールについて 当サイトでは、アクセス解析ツール「Google Analytics」を利用しています。「Google Analytics」はトラフィックデータの収集のために Cookie を使用しています。このトラフィックデータは匿名で収集されており、個人を特定するものではありません。
+Googleアナリティクスのデータ収集、処理の仕組みについては、「ユーザーがGoogleパートナーのサイトやアプリを使用する際のGoogleによるデータ使用」のページを参照下さい。
+この機能は Cookie を無効にすることで収集を拒否することができますので、ご利用のブラウザ設定をご確認のうえ、拒否設定を行ってください。ブラウザ用の Google Analyticsオプトアウトアドオンの利用についてはこちらを参照してください。</description>
+    </item>
+    
   </channel>
 </rss>
