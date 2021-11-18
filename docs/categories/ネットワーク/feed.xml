@@ -6,10 +6,19 @@
     <description>Recent content in ネットワーク on グリのクソブログ</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-JP</language>
-    <lastBuildDate>Sat, 26 Jun 2021 09:57:13 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 08 Nov 2021 09:12:07 +0900</lastBuildDate>
     
 	<atom:link href="https://guricerin.github.io/shit-blog/categories/%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF/feed.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>『Rustで始めるネットワークプログラミング』読んだ</title>
+      <link>https://guricerin.github.io/shit-blog/post/2021/11/20211108-rust-net/</link>
+      <pubDate>Mon, 08 Nov 2021 09:12:07 +0900</pubDate>
+      
+      <guid>https://guricerin.github.io/shit-blog/post/2021/11/20211108-rust-net/</guid>
+      <description>&lt;p&gt;ネットワークをもっと理解したかったし、500円と安かったので購入。&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>『Linuxで動かしながら学ぶTCP/IPネットワーク入門』読んだ</title>
