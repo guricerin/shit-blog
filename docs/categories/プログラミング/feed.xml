@@ -40,39 +40,12 @@
     </item>
     
     <item>
-      <title>『Clean Architecture 達人に学ぶソフトウェアの構造と設計』読んだ</title>
-      <link>https://guricerin.github.io/shit-blog/post/2021/09/20210916-clean-arch/</link>
-      <pubDate>Thu, 16 Sep 2021 09:37:18 +0900</pubDate>
-      
-      <guid>https://guricerin.github.io/shit-blog/post/2021/09/20210916-clean-arch/</guid>
-      <description>&lt;p&gt;本の内容をまとめただけになったので、著作権的にまずい場合、まとめ部分を削除するかこの記事丸ごと削除します。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>『ふつうのLinuxプログラミング 第2版』読んだ</title>
-      <link>https://guricerin.github.io/shit-blog/post/2021/09/20210906-std-linux/</link>
-      <pubDate>Mon, 06 Sep 2021 09:44:38 +0900</pubDate>
-      
-      <guid>https://guricerin.github.io/shit-blog/post/2021/09/20210906-std-linux/</guid>
-      <description>&lt;p&gt;Linuxのことなんもわかってないので購入。本書はC言語プログラムを書くことを通してLinuxの仕組みを大雑把に学ぶという感じ。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
       <title>『Rubyで作る奇妙なプログラミング言語』をRustで作った</title>
       <link>https://guricerin.github.io/shit-blog/post/2021/07/20210709-ruby-esolang-by-rust/</link>
       <pubDate>Fri, 09 Jul 2021 09:53:28 +0900</pubDate>
       
       <guid>https://guricerin.github.io/shit-blog/post/2021/07/20210709-ruby-esolang-by-rust/</guid>
       <description>&lt;p&gt;タイトル見て即購入。&lt;/p&gt;</description>
-    </item>
-    
-    <item>
-      <title>『Linuxで動かしながら学ぶTCP/IPネットワーク入門』読んだ</title>
-      <link>https://guricerin.github.io/shit-blog/post/2021/06/20210626-linux-tcpip/</link>
-      <pubDate>Sat, 26 Jun 2021 09:57:13 +0900</pubDate>
-      
-      <guid>https://guricerin.github.io/shit-blog/post/2021/06/20210626-linux-tcpip/</guid>
-      <description>&lt;p&gt;&lt;a href=&#34;https://guricerin.github.io/shit-blog/post/2021/06/20210618-mikanos/&#34;&gt;前回読んだ&lt;/a&gt;みかん本で解説されていない、かつ、よくわかっていない分野と言われてぱっと思いつくのは、最も身近な存在のネットワークである。&lt;/p&gt;</description>
     </item>
     
     <item>
