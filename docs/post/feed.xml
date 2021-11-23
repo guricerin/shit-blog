@@ -6,10 +6,20 @@
     <description>Recent content in Posts on グリのクソブログ</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja-JP</language>
-    <lastBuildDate>Sat, 13 Nov 2021 22:00:33 +0900</lastBuildDate>
+    <lastBuildDate>Thu, 18 Nov 2021 09:34:34 +0900</lastBuildDate>
     
 	<atom:link href="https://guricerin.github.io/shit-blog/post/feed.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>『インフラエンジニアの教科書2』読んだ</title>
+      <link>https://guricerin.github.io/shit-blog/post/draft/infra-engineer-text2/</link>
+      <pubDate>Thu, 18 Nov 2021 09:34:34 +0900</pubDate>
+      
+      <guid>https://guricerin.github.io/shit-blog/post/draft/infra-engineer-text2/</guid>
+      <description>&lt;p&gt;インフラなんも知らんので購入。&lt;br&gt;
+おれのインフラ経験といえば、VMware vSphereで管理された仮想サーバの1つにRedmineをセットアップしたりプラグインを適用した程度。&lt;/p&gt;</description>
+    </item>
     
     <item>
       <title>『コンパイラ ー 原理と構造』をF#に翻訳した</title>
