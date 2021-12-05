@@ -1,0 +1,1869 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>『インフラエンジニアの教科書2』の個人メモ - グリのクソブログ</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+		<meta property="og:title" content="『インフラエンジニアの教科書2』の個人メモ" />
+<meta property="og:description" content="インフラなんも知らんので購入。
+おれのインフラ経験といえば、VMware vSphereで管理された仮想サーバの1つに Redmine をセットアップしたりプラグインを適用した程度。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://guricerin.github.io/shit-blog/private-memo/infra-engineer-text2/" />
+<meta property="article:published_time" content="2021-11-18T09:31:34+09:00" />
+<meta property="article:modified_time" content="2021-11-18T09:31:34+09:00" />
+
+		<meta itemprop="name" content="『インフラエンジニアの教科書2』の個人メモ">
+<meta itemprop="description" content="インフラなんも知らんので購入。
+おれのインフラ経験といえば、VMware vSphereで管理された仮想サーバの1つに Redmine をセットアップしたりプラグインを適用した程度。">
+<meta itemprop="datePublished" content="2021-11-18T09:31:34&#43;09:00" />
+<meta itemprop="dateModified" content="2021-11-18T09:31:34&#43;09:00" />
+<meta itemprop="wordCount" content="1250">
+
+
+
+<meta itemprop="keywords" content="" />
+		<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="『インフラエンジニアの教科書2』の個人メモ"/>
+<meta name="twitter:description" content="インフラなんも知らんので購入。
+おれのインフラ経験といえば、VMware vSphereで管理された仮想サーバの1つに Redmine をセットアップしたりプラグインを適用した程度。"/>
+
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+
+	<link rel="stylesheet" href="https://guricerin.github.io/shit-blog/css/style.css">
+	<link rel="stylesheet" href="https://guricerin.github.io/shit-blog/css/custom.css">
+
+	<link rel="shortcut icon" href="https://guricerin.github.io/shit-blog/favicon.ico">
+		
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-109224463-2', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container header__container">
+		
+	<div class="logo logo--mixed">
+		<a class="logo__link" href="https://guricerin.github.io/shit-blog/" title="グリのクソブログ" rel="home">
+			<div class="logo__item logo__imagebox">
+					<img class="logo__img" src="https://guricerin.github.io/shit-blog/img/icon.jpg">
+				</div><div class="logo__item logo__text">
+					<div class="logo__title">グリのクソブログ</div>
+					<div class="logo__tagline">主にB&#39;z</div>
+				</div>
+		</a>
+	</div>
+		
+<nav class="menu">
+	<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
+		<span class="menu__btn-title" tabindex="-1">Menu</span>
+	</button>
+	<ul class="menu__list">
+		<li class="menu__item">
+			<a class="menu__link" href="https://guricerin.github.io/shit-blog/">
+				
+				<span class="menu__text">HOME</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="https://guricerin.github.io/shit-blog/privacy-policy">
+				
+				<span class="menu__text">PRIVACY POLICY</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="https://guricerin.github.io/shit-blog/feed.xml">
+				
+				<span class="menu__text">RSS</span>
+				
+			</a>
+		</li>
+	</ul>
+</nav>
+
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">『インフラエンジニアの教科書2』の個人メモ</h1>
+			<div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2021-11-18T09:31:34&#43;09:00">2021-11-18</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="https://guricerin.github.io/shit-blog/categories/%E6%9B%B8%E7%89%A9/" rel="category">書物</a>, <a class="meta__link" href="https://guricerin.github.io/shit-blog/categories/%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF/" rel="category">ネットワーク</a>, <a class="meta__link" href="https://guricerin.github.io/shit-blog/categories/it%E3%82%A4%E3%83%B3%E3%83%95%E3%83%A9/" rel="category">ITインフラ</a>
+	</span>
+</div></div>
+		</header>
+		<div class="content post__content clearfix">
+			<p>インフラなんも知らんので購入。<br>
+おれのインフラ経験といえば、<code>VMware vSphere</code>で管理された仮想サーバの1つに Redmine をセットアップしたりプラグインを適用した程度。</p>
+<p>以下からのメモは、おれが知らなかったことや曖昧だったことに限定している。本書には記載されていない内容も含む。</p>
+<h3 id="目次">目次</h3>
+<ol>
+<li><a href="#a0">プロトコル</a></li>
+<li><a href="#a1">OS</a></li>
+<li><a href="#a2">ネットワーク</a></li>
+<li><a href="#a3">データベース</a></li>
+<li><a href="#a4">WEBのサーバサイド開発言語</a></li>
+<li><a href="#a5">共通鍵暗号方式と公開鍵暗号方式</a></li>
+<li><a href="#a6">障害対策と障害対応</a></li>
+<li><a href="#a7">よく知られたセキュリティ攻撃</a></li>
+<li><a href="#a8">インターネットの運用と発展をつかさどる組織や団体</a></li>
+<li><a href="#a9">RFCの読み方と作られ方</a></li>
+<li><a href="#a10">世界規模のインターネットサービス運営</a></li>
+<li><a href="#a11">インフラエンジニアとして目指す方向</a></li>
+</ol>
+<hr>
+<p><a id="a0"></a></p>
+<h3 id="1章--プロトコル">1章 : プロトコル</h3>
+<h4 id="osi参照モデル">OSI参照モデル</h4>
+<ul>
+<li>アプリケーション層（第7層）
+<ul>
+<li>具体的な通信サービス。HTTPやFTPなど。</li>
+</ul>
+</li>
+<li>プレゼンテーション層（第6層）
+<ul>
+<li>データの表現方法。</li>
+</ul>
+</li>
+<li>セッション層（第5層）
+<ul>
+<li>通信プログラム間の通信の開始から終了までの手順。</li>
+</ul>
+</li>
+<li>トランスポート層（第4層）
+<ul>
+<li>ネットワークの端から端までの通信管理。エラー訂正や再送制御など。</li>
+</ul>
+</li>
+<li>ネットワーク層（第3層）
+<ul>
+<li>通信経路の選択（ルーティング）。データ中継。</li>
+</ul>
+</li>
+<li>データリンク層（第2層）
+<ul>
+<li>直接的に接続されている通信機器間の信号の受け渡し。</li>
+</ul>
+</li>
+<li>物理層（第1層）
+<ul>
+<li>コネクタのピン数、電気信号の変換など。</li>
+</ul>
+</li>
+</ul>
+<h4 id="コネクションとセッション">コネクションとセッション</h4>
+<ul>
+<li>コネクション
+<ul>
+<li>セッションでデータ転送を行うための論理的な回線。</li>
+</ul>
+</li>
+<li>セッション
+<ul>
+<li>L5 セッション層の機能。</li>
+<li>通信の開始から終了までを管理する1つの単位。</li>
+</ul>
+</li>
+</ul>
+<h4 id="ファイアウォールの動的ポートフィルタリング機能">ファイアウォールの動的ポートフィルタリング機能</h4>
+<ul>
+<li>クライアントからの通信を受けるポートを明示的に指定する際、サーバからの通信を流すポートをファイアウォールがよしなに一時的に許可する機能。</li>
+</ul>
+<hr>
+<p><a id="a1"></a></p>
+<h3 id="2章--os">2章 : OS</h3>
+<h4 id="プロセスの状態遷移">プロセスの状態遷移</h4>
+<ul>
+<li>休止中</li>
+<li>実行待ち
+<ul>
+<li>カーネルからのCPU割り当てをプロセスキューにて待機。</li>
+<li>実行中プロセスの入れ替えの際、コンテキストスイッチが発生。これはOSにとって負荷が高い処理。
+<ul>
+<li>コンテキストスイッチの重さについては、みかん本を読んでたらなんとなくわかる。</li>
+</ul>
+</li>
+<li>実行待ちプロセスを減らすことが応答速度の向上にとって重要。</li>
+</ul>
+</li>
+<li>実行中
+<ul>
+<li>この状態に遷移させるプロセス数は、コンピュータのCPUコアの数に依存。</li>
+</ul>
+</li>
+<li>ゾンビプロセス
+<ul>
+<li>親プロセスが<code>wait()</code>する or <code>SIGKILL</code>シグナルを送ることで消滅。</li>
+</ul>
+</li>
+</ul>
+<h4 id="スレッド">スレッド</h4>
+<ul>
+<li>「軽量プロセス」ともいう。</li>
+<li>プロセスキューにはプロセスとスレッドの区別なく入ってくる。</li>
+</ul>
+<h4 id="名前付きパイプ">名前付きパイプ</h4>
+<ul>
+<li>通常の無名パイプとは異なり、ファイルを通してプロセス間通信を行う。</li>
+<li>ファイル種別は<code>FIFO</code>。</li>
+<li>一方のプロセスは書き手としてオープンし、もう一方は読み手としてオープンする。</li>
+<li>プロセスが消滅しても残るので、手動で削除する必要あり。</li>
+</ul>
+<h4 id="スケジューラ">スケジューラ</h4>
+<ul>
+<li>プロセスキューの中から次に実行するプロセスを選ぶプログラム。</li>
+</ul>
+<h4 id="ディスパッチャー">ディスパッチャー</h4>
+<ul>
+<li>スケジューラが選んだプロセスに対し、どのCPUコアに割り当てるかを決めるプログラム。</li>
+</ul>
+<h4 id="スケジューリングアルゴリズム">スケジューリングアルゴリズム</h4>
+<ul>
+<li>参照 : <a href="http://www.f.ait.kyushu-u.ac.jp/~fukuda/HijyoukinH25/kitakyushu/5-6ProcessManagement.pdf">http://www.f.ait.kyushu-u.ac.jp/~fukuda/HijyoukinH25/kitakyushu/5-6ProcessManagement.pdf</a></li>
+<li>FIFO方式
+<ul>
+<li>最も単純。</li>
+</ul>
+</li>
+<li>最短ジョブ優先方式
+<ul>
+<li>実行時間の短い順に実行する。</li>
+</ul>
+</li>
+<li>固定優先度方式
+<ul>
+<li>プロセスに付与された優先度順に実行する。</li>
+</ul>
+</li>
+<li>ラウンドロビン
+<ul>
+<li>一定時間（タイムスライス）CPUを割り当てる。</li>
+<li>終了せずに時間を使い切れば、dequeueして再度enqueue。</li>
+</ul>
+</li>
+<li>多重キュースケジューリング
+<ul>
+<li>多段フィードバックキュー、多重レベル待ち列</li>
+<li>プロセスを複数のグループに分類できる場合に適する。
+<ul>
+<li>フォアグラウンド : 対話型</li>
+<li>バックグラウンド : バッチなど</li>
+</ul>
+</li>
+<li>グループ毎に異なるキューに突っ込む。それぞれのキューには優先度が設定される。</li>
+</ul>
+</li>
+</ul>
+<h4 id="アフィニティーaffinity">アフィニティー（Affinity）</h4>
+<ul>
+<li>ディスパッチャー任せのCPU割り当てを任意に制御すること。</li>
+<li>物理コアではなく、論理コア（論理プロセッサ）を指定。</li>
+<li><code>taskset</code>コマンドで制御。</li>
+</ul>
+<h4 id="ハイパースレッディング">ハイパースレッディング</h4>
+<ul>
+<li>CPUの実際の物理コアを、カーネルに対して複数の論理コアに見せかける技術。</li>
+</ul>
+<h4 id="ハードウェア割り込み">ハードウェア割り込み</h4>
+<ul>
+<li>デフォルトでは0番目のCPUコアのみで処理される。</li>
+<li><code>irqbalance</code>デーモンを起動することで、複数のCPUコアに分散される。
+<ul>
+<li>参照 : <a href="https://access.redhat.com/documentation/ja-jp/red_hat_enterprise_linux/6/html/performance_tuning_guide/sect-red_hat_enterprise_linux-performance_tuning_guide-tool_reference-irqbalance">https://access.redhat.com/documentation/ja-jp/red_hat_enterprise_linux/6/html/performance_tuning_guide/sect-red_hat_enterprise_linux-performance_tuning_guide-tool_reference-irqbalance</a></li>
+</ul>
+</li>
+</ul>
+<h4 id="メモリ管理ユニットmmu-memory-management-unit">メモリ管理ユニット（MMU, Memory Management Unit）</h4>
+<ul>
+<li>CPU内に組み込まれている機構。</li>
+<li>主な機能
+<ul>
+<li>仮想アドレス（論理アドレス）と物理アドレスのマッピング</li>
+<li>メモリ保護</li>
+<li>キャッシュ制御</li>
+<li>スワップ</li>
+<li>ページング</li>
+</ul>
+</li>
+</ul>
+<h4 id="非対称メモリアクセスnuma-non-uniform-memory-access">非対称メモリアクセス（NUMA, Non-Uniform Memory Access）</h4>
+<ul>
+<li>参照 : <a href="http://ja.manpages.org/numa/7">http://ja.manpages.org/numa/7</a></li>
+<li>メモリが複数のNUMAノード（CPUとメモリの対）に分割されているマルチプロセッサシステム。</li>
+<li>同一ノード内の物理アドレスへのアクセスは高速。異なるノードの物理アドレスへのアクセスは低速。</li>
+</ul>
+<h4 id="スワップの原因">スワップの原因</h4>
+<ul>
+<li>物理メモリ不足
+<ul>
+<li>対策 : メモリ増設。</li>
+</ul>
+</li>
+<li>フラグメンテーション
+<ul>
+<li>対策 : メモリを大量消費しているプロセスを終了させる。</li>
+<li>スワップ領域自体を解放するのはI/O負荷が高く時間もかかるので危険。</li>
+</ul>
+</li>
+</ul>
+<h4 id="inode">inode</h4>
+<ul>
+<li>参照 : <a href="https://wa3.i-3-i.info/word14802.html">https://wa3.i-3-i.info/word14802.html</a></li>
+<li>ファイルのメタデータを格納する。
+<ul>
+<li>メタデータはファイルそのものには含まれない。代わりにinode番号を含む。</li>
+</ul>
+</li>
+<li>プロセスはinode番号でファイルを識別する。</li>
+</ul>
+<h4 id="分散ファイルシステム">分散ファイルシステム</h4>
+<ul>
+<li>他のコンピュータのファイルシステムをネットワーク経由で利用可能にしたもの。</li>
+</ul>
+<h4 id="ディレクトリエントリ">ディレクトリエントリ</h4>
+<ul>
+<li>inode番号とファイル名を含む。</li>
+<li><code>ls -i</code>で確認可能。</li>
+</ul>
+<h4 id="インフラ屋として覚えておくこと">インフラ屋として覚えておくこと</h4>
+<ul>
+<li>空き物理メモリが足りなく見える。
+<ul>
+<li>キャッシュとして使われており実質的な空き容量は足りていることが多い。</li>
+</ul>
+</li>
+<li>プロセスがファイルをオープンしていると、元のファイルを削除しても実際は削除されない。オープンしているプロセスが消滅してから完全削除される。
+<ul>
+<li><code>lsof</code> : ファイルをオープンしているプロセスを特定。</li>
+</ul>
+</li>
+<li>ディスク容量に空きがあるのにファイルを新規生成できない場合は、inodeが枯渇している。
+<ul>
+<li>対策
+<ul>
+<li>他のファイルを削除する。</li>
+<li>inodeテーブルサイズを変更できるファイルシステムに限り、inodeテーブルを拡張。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>ログ出力でディスク容量を使い果たした。
+<ul>
+<li>既存のログファイルを他のパーティションにコピーし、``/dev/null`を元のログファイルに上書きすることで、プロセスを止めずにすむ。</li>
+</ul>
+</li>
+</ul>
+<hr>
+<p><a id="a2"></a></p>
+<h3 id="3章--ネットワーク">3章 : ネットワーク</h3>
+<h4 id="ネットワーク機器の役割">ネットワーク機器の役割</h4>
+<ul>
+<li>通信の「集約」と「切り替え（スイッチング）」</li>
+</ul>
+<h4 id="分岐ポイント">分岐ポイント</h4>
+<ul>
+<li>ネットワークの出入り口。</li>
+<li>ここにネットワーク機器を配置する。配置されたネットワーク機器が集約と切り替えを行う。</li>
+</ul>
+<h4 id="ルータ">ルータ</h4>
+<ul>
+<li>異なるネットワーク同士をつなぐネットワーク機器。</li>
+</ul>
+<h4 id="スイッチ">スイッチ</h4>
+<ul>
+<li>LANを構築する際に用いられるネットワーク機器。</li>
+<li>アプリケーション層 : L7スイッチ
+<ul>
+<li>ロードバランサー</li>
+<li>通信単位 : HTTPヘッダーが付与されたIPパケット</li>
+</ul>
+</li>
+<li>トランスポート層 : L4スイッチ
+<ul>
+<li>ロードバランサー</li>
+<li>通信単位 : IPパケット</li>
+<li>L4/L7スイッチ、ともにWEBサーバなどの負荷分散を行う。</li>
+</ul>
+</li>
+<li>ネットワーク層 : L3スイッチ
+<ul>
+<li>ルータ</li>
+<li>通信単位 : IPパケット</li>
+<li>送信元・送信先のIPアドレスを元に転送（ルーティング）する。</li>
+<li>ルーティングテーブル : ゲートウェイIPアドレスと物理ポートの対応表。</li>
+<li>ARPテーブル : IPv4アドレスとMACアドレスの対応表。</li>
+<li>ICMPv6テーブル : IPv6アドレスとMACアドレスの対応表。</li>
+<li><code>ip route</code></li>
+</ul>
+</li>
+<li>データリンク層 : L2スイッチ
+<ul>
+<li>ブリッジ、（家庭用では）スイッチングハブ</li>
+<li>同じネットワークアドレスに所属する機器を集約する。</li>
+<li>通信単位 : （イーサネット）フレーム</li>
+<li>送信元・送信先のMACアドレスを元に転送（フォワーディング）する。</li>
+<li>MACアドレステーブル : MACアドレスと物理ポートの対応表。</li>
+<li><code>bridge fdb</code></li>
+</ul>
+</li>
+<li>物理層 : L1スイッチ
+<ul>
+<li>リピータハブ</li>
+</ul>
+</li>
+</ul>
+<h4 id="ダイナミックルーティング">ダイナミックルーティング</h4>
+<ul>
+<li>IGP (Interior Gateway Protocol)
+<ul>
+<li>自分が管理するLAN内部のルータ同士で経路情報を教え合うプロトコル。</li>
+</ul>
+</li>
+<li>EGP (Exterior Gateway Protocol)
+<ul>
+<li>外部ASのルータと経路情報を交換し合うプロトコル。</li>
+<li>AS (Autonomous System)
+<ul>
+<li>インターネットにおける各管理ネットワーク単位（ノード）。</li>
+</ul>
+</li>
+<li>AS番号
+<ul>
+<li>ASの識別子。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="vlan-virtual-lan">VLAN (Virtual LAN)</h4>
+<ul>
+<li>スイッチ内を論理的に分割する機能。</li>
+<li>これがない場合
+<ul>
+<li>L2スイッチを1つのネットワークアドレスでしか利用できない。</li>
+</ul>
+</li>
+<li>ある場合
+<ul>
+<li>VLAN毎に異なるネットワークアドレスを利用可能。</li>
+</ul>
+</li>
+</ul>
+<h4 id="ポートvlan">ポートVLAN</h4>
+<ul>
+<li>1台のスイッチの物理ポート毎にVLAN番号を設定する方式。</li>
+<li>複数台のL2スイッチを1台のスイッチに集約可能。</li>
+<li>ただし、VLAN同士は異なるネットワークアドレスに属するのでVLANをまたいだ通信は不可能。</li>
+<li>小規模なネットワーク環境で使用される。</li>
+</ul>
+<h4 id="タグvlan">タグVLAN</h4>
+<ul>
+<li>複数台のスイッチにまたがってVLANを構築、各物理ポートに複数のVLANを指定可能な方式。</li>
+<li>L2スイッチにはトランクポートを指定し、そのトランクポートを通じてL3スイッチを介して他のL2スイッチとトランクリンクを連結。</li>
+<li>タグVLAN間の通信はトランクリンクを通じて行われる。</li>
+<li>各ラックに異なったVLANのサーバを混在可能。</li>
+<li>大規模なネットワーク環境で使用される。</li>
+</ul>
+<h4 id="ジャンボフレーム">ジャンボフレーム</h4>
+<ul>
+<li>イーサネットフレームの最大サイズは1518byte。</li>
+<li>これを大きくしたい。</li>
+<li>およそ9000byte前後。</li>
+<li>インターネット回線では使用不可。</li>
+<li>ジャンボフレームに対応していないNICがあるので、サーバ購入の際には注意。</li>
+</ul>
+<h4 id="nat-network-address-translation">NAT (Network Address Translation)</h4>
+<ul>
+<li>ルータがパケットを受け取ると、グローバルIPアドレス・プライベートIPアドレス間の変換を行う仕組み。</li>
+<li>利点
+<ul>
+<li>グローバルIPアドレスの節約。</li>
+<li>外部からサーバに直接アクセスさせない。</li>
+</ul>
+</li>
+<li>動的NAT
+<ul>
+<li>NATの際にIPアドレスプールの中から使われていないものを割り当てる。</li>
+</ul>
+</li>
+<li>静的NAT
+<ul>
+<li>送信先IPアドレスに対応したIPアドレスをあらかじめ登録しておく。</li>
+</ul>
+</li>
+<li>NAPT (Network Address Port Transiation) / IPマスカレード
+<ul>
+<li>グローバル・プライベートIPアドレスとポート番号間の変換を行う。</li>
+</ul>
+</li>
+</ul>
+<h4 id="acl-access-control-list">ACL (Access Control List)</h4>
+<ul>
+<li>スイッチを通過するパケットに対して通信を許可・拒否するルールが記載されたリスト。</li>
+</ul>
+<h4 id="sslオフロード">SSLオフロード</h4>
+<ul>
+<li>本来はWEBサーバで行うSSL通信の処理を、L4ロードバランサー側に集約して行う機能。
+<ul>
+<li>サーバ毎にSSL証明書をインストールしてソフトウェア設定を行うのは面倒。</li>
+<li>SSL処理はCPU負荷がかかる。</li>
+</ul>
+</li>
+<li>大規模システムの場合は各サーバで行うほうがいいときもある。
+<ul>
+<li>理由 :
+<ul>
+<li>L4ロードバランサーで高負荷になるとすべてのサービスに影響する。</li>
+<li>ロードバランサーは高価。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="フェイルオーバー">フェイルオーバー</h4>
+<ul>
+<li>冗長化されたシステムに於いて、アクティブ側のシステムに障害が発生した際に自動的にスタンバイ側（予備システム）がアクティブになる動作。</li>
+</ul>
+<h4 id="スイッチオーバー">スイッチオーバー</h4>
+<ul>
+<li>ファームウェアのアップデートなどの際に、手動でコマンド実行してスタンバイ側に切り替える操作。</li>
+</ul>
+<h4 id="インフラ屋として覚えておくこと-1">インフラ屋として覚えておくこと</h4>
+<ul>
+<li>ファームウェアのアップデートは、最新版を常に適用ではなく、バグフィックスが出てから適用。</li>
+<li>フェイルオーバーやスイッチオーバーを使う場合、スタンバイ側がアクティブに昇格するときにセッション、MACアドレステーブルなどネットワーク設定が
+<ul>
+<li>引き継がれるか。</li>
+<li>引き継がれるとして、漏らしはないか、どの程度の時間がかかるか。</li>
+<li>これらの見込みを調べておく。</li>
+</ul>
+</li>
+<li>ネットワーク機器で特に監視すべき項目
+<ul>
+<li>discard (packet loss)値
+<ul>
+<li>接続先機器側の問題</li>
+<li>ケーブル不良</li>
+<li>スイッチバッファが溢れた</li>
+<li>ネットワーク機器のCPU使用率が高い、キャッシュを使い果たすほどの大量のパケットが流入</li>
+</ul>
+</li>
+<li>unbindの発生 : ネットワーク機器のポートに接続されたインターフェイスが外れた状態
+<ul>
+<li>接続先サーバが堕ちている</li>
+<li>インターフェイスやケーブルの不良</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>ネットワークアドレスをどう分割して割り振るか。</li>
+<li>各ネットワークアドレスの大きさをどうするか。
+<ul>
+<li>大きい : ?</li>
+<li>小さい : ブロードキャスト通信が減る。</li>
+</ul>
+</li>
+<li>3種類のプライベートアドレスクラスをどう区別して使うか。
+<ul>
+<li>10.0.0.0/8</li>
+<li>172.16.0.0/12</li>
+<li>192.168.0.0/16</li>
+</ul>
+</li>
+</ul>
+<h4 id="トポロジー制約">トポロジー制約</h4>
+<ul>
+<li>様々な通信要件を持つサーバが置かれる環境ではネットワーク要件が複雑化。</li>
+<li>タグVLANなど、サーバのラック内配置の制限などに対するトポロジー制約を緩和させる仕組みを考慮。</li>
+</ul>
+<h4 id="ベンダー統一かマルチベンダーか">ベンダー統一かマルチベンダーか</h4>
+<ul>
+<li>小規模ネットワークならベンダー統一</li>
+<li>大規模ならマルチベンダー</li>
+</ul>
+<h4 id="ネットワーク機器の構造">ネットワーク機器の構造</h4>
+<ul>
+<li>普通のコンピュータと同じ。
+<ul>
+<li>CPU, メモリ, ストレージ, OS</li>
+</ul>
+</li>
+<li>サーバとの違い
+<ul>
+<li>UTPなどのポートが多い。</li>
+<li>高速なパケット通信のために専用のハードウェアやキャッシュメモリを搭載。</li>
+<li>ネットワーク処理に特化したソフトウェアを搭載。</li>
+</ul>
+</li>
+</ul>
+<h4 id="サーバをネットワーク機器のように使う">サーバをネットワーク機器のように使う</h4>
+<ul>
+<li>必要ポート数分のネットワークインターフェイスを積んで設定することで、L2, L3, L4スイッチなどのように使える。</li>
+<li>WEB系企業ではわりとよくある構成。</li>
+</ul>
+<hr>
+<p><a id="a3"></a></p>
+<h3 id="4章--データベース">4章 : データベース</h3>
+<h4 id="oracle-database">Oracle Database</h4>
+<ul>
+<li>マルチプラットフォーム</li>
+<li>大規模なエンタープライズ環境に向いている。</li>
+<li>高価。</li>
+<li>Windowsではマルチスレッド。それ以外はマルチプロセスで動作。</li>
+</ul>
+<h4 id="sql-server">SQL Server</h4>
+<ul>
+<li>Windows Server, Linux上で動作する。</li>
+<li>dotnetアプリと相性が良い。</li>
+<li>Oracleより安い商用データベースとしてエンタープライズ環境に向いている。</li>
+<li>マルチスレッドで動作。</li>
+</ul>
+<h4 id="ストレージエンジンデータベースエンジン">ストレージエンジン（データベースエンジン）</h4>
+<ul>
+<li>DBMSがデータベースからデータをCRUDするために利用する基盤となるソフトウェア。</li>
+</ul>
+<h4 id="mysql">MySQL</h4>
+<ul>
+<li>Oracle社のオープンソースRDBMS。</li>
+<li>主にLinux。</li>
+<li>デフォルトのストレージエンジンはInnoDB。
+<ul>
+<li>トランザクション分離レベル : REPEATABLE READ</li>
+<li>行ロックをサポート。</li>
+</ul>
+</li>
+<li>WEB系企業でよく使われる。</li>
+<li>MariaDBなど派生が多い。</li>
+<li>マルチスレッドで動作。</li>
+</ul>
+<h4 id="postgresql">PostgreSQL</h4>
+<ul>
+<li>オープンソースRDBMS。</li>
+<li>マルチプラットフォーム。</li>
+<li>追記型アーキテクチャ
+<ul>
+<li>物理削除は行わない。</li>
+<li>データ更新は、更新前のデータに論理削除フラグを立て、更新後の行を追加。</li>
+<li>これ以外のアーキテクチャでは、削除したデータはロールバック・セグメントという領域に退避。</li>
+</ul>
+</li>
+<li>早い時期からマルチバイト文字に対応していた。</li>
+<li>WEB系企業でよく使われる。</li>
+<li>マルチプロセスで動作。</li>
+</ul>
+<h1 id="heading"></h1>
+<ul>
+<li>大規模環境において、RDBMS毎の機能差や特性の違いが大きく出てくる。</li>
+<li>RDBMSの乗り換えは容易ではない。</li>
+</ul>
+<h4 id="dbの機能">DBの機能</h4>
+<ul>
+<li>トランザクション
+<ul>
+<li>信頼性のある（複数のSQLがまとまった）更新処理</li>
+</ul>
+</li>
+<li>コミット
+<ul>
+<li>更新処置の確定</li>
+</ul>
+</li>
+<li>ロールバック
+<ul>
+<li>更新処理の差し戻し</li>
+</ul>
+</li>
+</ul>
+<h4 id="トランザクションの特性">トランザクションの特性</h4>
+<ul>
+<li>Atomicity : 原子性
+<ul>
+<li>トランザクションにおいて、すべてが処理されるかまったく処理されないかのどちらか。</li>
+</ul>
+</li>
+<li>Consistency : 一貫性
+<ul>
+<li>トランザクションを処理する前の状態と後の状態でデータの整合性が取れていること。</li>
+</ul>
+</li>
+<li>Isolation : 分離性
+<ul>
+<li>トランザクションの処理途中の状態は、コミットされるまでは他のトランザクションから見えてはいけない。他のトランザクションから影響を受けてもいけない。</li>
+</ul>
+</li>
+<li>Durability : 永続性
+<ul>
+<li>トランザクションが終了した後の状態は、障害などが起きても変化はないこと。</li>
+</ul>
+</li>
+</ul>
+<h4 id="トランザクション分離レベル">トランザクション分離レベル</h4>
+<p>下に行くほど理想的だが、ロック待ちなどの理由で遅い。</p>
+<table>
+<thead>
+<tr>
+<th align="center">トランザクション分離レベル</th>
+<th align="center">ダーティリード</th>
+<th align="center">ファジーリード</th>
+<th align="center">ファントムリード</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">READ UNCOMMITED</td>
+<td align="center">発生する</td>
+<td align="center">発生する</td>
+<td align="center">発生する</td>
+</tr>
+<tr>
+<td align="center">READ COMMITED</td>
+<td align="center">抑止する</td>
+<td align="center">発生する</td>
+<td align="center">発生する</td>
+</tr>
+<tr>
+<td align="center">REPEATABLE READ</td>
+<td align="center">抑止する</td>
+<td align="center">抑止する</td>
+<td align="center">発生する</td>
+</tr>
+<tr>
+<td align="center">SERIALIZABLE</td>
+<td align="center">抑止する</td>
+<td align="center">抑止する</td>
+<td align="center">抑止する</td>
+</tr>
+</tbody>
+</table>
+<ul>
+<li>ダーティリード
+<ul>
+<li>別のトランザクションでコミットされていないデータが読み取れる。</li>
+</ul>
+</li>
+<li>ファジーリード（非再現リード、ノンリピータブルリード）
+<ul>
+<li>複数回読み込んだデータの結果が異なり、一貫性のあるデータが得られない。</li>
+<li>トランザクション開始後、他のトランザクションがupdateしたデータでトランザクション開始前の値が変わってしまうこと。</li>
+</ul>
+</li>
+<li>ファントムリード
+<ul>
+<li>別のトランザクションで挿入されたデータが見えることにより、一貫性がなくなる。</li>
+<li>トランザクション開始後、他のトランザクションがinsertしたデータが読めてしまうこと。</li>
+</ul>
+</li>
+</ul>
+<h4 id="ロック">ロック</h4>
+<ul>
+<li>排他制御の一種。</li>
+<li>更新処理を行う際はロックをかけ、1つのトランザクションが終わるまで他のトランザクションが行えないように待ち状態にする。</li>
+<li>行ロック : テーブル中の該当行にだけロックを掛ける。</li>
+<li>テーブルロック : テーブル全体にロックを掛ける。
+<ul>
+<li>RDBMSによってはテーブルロックしかサポートしていない。</li>
+</ul>
+</li>
+</ul>
+<h4 id="デッドロック">デッドロック</h4>
+<ul>
+<li>2つ以上の処理が互いに相手を待っていまい、どの処理も先に進めなくなっている状態。</li>
+<li>対策 : 複数あるロック対象をロックする順番を決める。</li>
+</ul>
+<h4 id="インデックス">インデックス</h4>
+<ul>
+<li>高速検索のために作成される、テーブル内の1つ以上のカラム。</li>
+<li>検索時間が O(log(N)) となる。</li>
+<li>フルスキャン : 検索時間が O(N)。</li>
+<li>インデックスがあると、データの追加・削除時にインデックスのメンテナンス処理が実行されるので更新処理が遅くなる。
+<ul>
+<li>それに、検索時にインデックスを活用しなかったらなんの意味もない。</li>
+<li>むやみに大量のインデックスを作成してはいけない。</li>
+</ul>
+</li>
+</ul>
+<h4 id="ストアドプロシージャ">ストアドプロシージャ</h4>
+<ul>
+<li>DBサーバ内にスクリプトを事前に定義しておき、サブルーチンのように使用可能にする機能。</li>
+<li>RDBMS間での互換性はまったくない。</li>
+<li>ロジックをDBに担当させるべきではないとし、これを使わない教義もあり。</li>
+</ul>
+<h4 id="コネクションプール">コネクションプール</h4>
+<ul>
+<li>アプリやミドルウェア側の機能。</li>
+<li>一度張られたDBセッションを他のSQLクエリにおいて使い回す。</li>
+<li>TCPコネクション、プロセス生成、DB認証による待ち時間を節約する。</li>
+</ul>
+<h4 id="ログ先行書き込みwal-write-ahead-logging">ログ先行書き込み（WAL, Write Ahead Logging）</h4>
+<ul>
+<li>更新処理の前に変更内容をログに記録し、その後に実データに反映する仕組み。</li>
+<li>反映途中にサーバダウンしても、次回のサーバ起動時にデータのロールフォワード（改めて処理を最後まで進める）かコミットされていないトランザクションのロールバックを自動or手動で行う。</li>
+</ul>
+<h4 id="チェックポイント">チェックポイント</h4>
+<ul>
+<li>メモリバッファ上のデータと実データファイルとで同期を取るときに発生するイベント処理。</li>
+<li>チェックポイントが実行されると、その時点がロールフォワードの始点となる。ダーティバッファが実データファイルに書き込まれる。</li>
+<li>ダーティバッファ : 実データに反映されていない、メモリバッファ上のデータ。</li>
+<li>メモリバッファのサイズはチューニング可能。
+<ul>
+<li>小さい : ディスクへの書き込み頻度が増える。</li>
+<li>大きい : チェックポイントが高負荷になる。</li>
+</ul>
+</li>
+</ul>
+<h4 id="スケールアウトサーバ台数を増やしてシステム性能を向上するための機能">スケールアウト（サーバ台数を増やしてシステム性能を向上する）ための機能</h4>
+<ul>
+<li>レプリケーション
+<ul>
+<li>マスターサーバ（更新処理を行う）からスレーブサーバ（レプリケーション先となる参照系処理を行う）に対してDBの更新情報を適時送信することで、リアルタイムにコピーする機能。</li>
+<li>シングルマスターでのレプリケーション
+<ul>
+<li>1台のマスターサーバのトランザクションログをリアルタイムに他のサーバに送る。</li>
+<li>MySQL</li>
+<li>Web系企業はこれが多い。</li>
+</ul>
+</li>
+<li>マルチマスターでのレプリケーション
+<ul>
+<li>複数のマスターサーバが、データの整合性を崩さないように相互にレプリケーションを行う。</li>
+<li>積極的に使わないほうがいい。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>シャーディング
+<ul>
+<li>データを特定ルールに則って複数サーバに分散させる機能。</li>
+<li>ユーザの反応を伺いながら運用するWebサービスなどでよく使われる。
+<ul>
+<li>とくにユーザ数が急激に増えた場合に、短期間で対応できるため有効。</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="ディスクioを少なくする">ディスクI/Oを少なくする</h4>
+<ul>
+<li>DBの仕組み
+<ul>
+<li>データがストレージ上に書き込まれている。</li>
+<li>検索の際は、ストレージから必要なデータをメモリに展開してCPU処理で目的のデータを検索する。</li>
+<li>ディスクI/Oがボトルネックになることが多い。</li>
+</ul>
+</li>
+<li>データキャッシュ機能
+<ul>
+<li>ストレージから読み込んだデータをメモリに残す。</li>
+</ul>
+</li>
+<li>パーティショニング
+<ul>
+<li>ユーザからは1つのテーブルに見せかけるが、実際は1つのテーブルをルールに従って分離する機能。</li>
+<li>ex. 月別にテーブルをパーティショニング。</li>
+</ul>
+</li>
+</ul>
+<h4 id="クラスタ構成">クラスタ構成</h4>
+<ul>
+<li>複数のコンピュータを連結し、ユーザや他のコンピュータに対して1台のコンピュータに見せかける構成。</li>
+</ul>
+<h4 id="ha構成-high-availability">HA構成 (High Availability)</h4>
+<ul>
+<li>高い可用性を持たせるクラスタ構成。</li>
+<li>アクティブ-スタンバイ構成
+<ul>
+<li>1台のアクティブサーバと、待機状態となる複数のスタンバイサーバの構成。</li>
+<li>フェイルオーバー
+<ul>
+<li>アクティブサーバがダウンするとスタンバイサーバのいすれか1台がアクティブに昇格にて機能が引き継がれる。</li>
+</ul>
+</li>
+<li>クラスタウェア
+<ul>
+<li>サーバなどの監視、フェイルオーバーを行うソフトウェア。</li>
+</ul>
+</li>
+<li>ハートビート
+<ul>
+<li>アクティブ-スタンバイ間で双方の生存確認を行うこと。応答が途絶えるとフェイルオーバーされる。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>アクティブ-アクティブ構成
+<ul>
+<li>クラスタ内のすべてのサーバがアクティブとして処理を実行する構成。</li>
+<li>分散キャッシュ、分散ロックなどがRDBMSの機能として求められる。</li>
+<li>障害が発生するノードが増えるたびに性能が落ちる。</li>
+</ul>
+</li>
+<li>スイッチオーバー
+<ul>
+<li>サーバメンテナンスなどでアクティブを停止させたい場合に使われる。</li>
+</ul>
+</li>
+</ul>
+<h4 id="インフラ屋として覚えておくこと-2">インフラ屋として覚えておくこと</h4>
+<ul>
+<li>重要なデータを格納するDBの日常監視は他のサーバよりも広範囲に日常監視すべき。
+<ul>
+<li>CPU使用率の急増
+<ul>
+<li>フルスキャンの可能性あり。</li>
+<li>対策 : インデックスの追加orSQL文の修正。</li>
+</ul>
+</li>
+<li>CPU使用率が変わらないのにディスクI/O負荷が急増したり応答速度が低下
+<ul>
+<li>ストレージにエラーが発生しているかも。</li>
+</ul>
+</li>
+<li>スロークエリー
+<ul>
+<li>質の悪いSQL。</li>
+<li>統計情報の変化により、SQL文の実行計画が変化した。確認が必要。</li>
+</ul>
+</li>
+<li>短期間に大量のSQLクエリが発行。
+<ul>
+<li>アプリ側の変化の可能性あり。</li>
+</ul>
+</li>
+<li>待ち状態のトランザクション増加。
+<ul>
+<li>デッドロックかも。トランザクション処理の修正が必要。</li>
+</ul>
+</li>
+<li>ディスク容量の不足。
+<ul>
+<li>ストレージの増設。</li>
+</ul>
+</li>
+<li>ネットワークトラフィックの増加とディスクI/Oパフォーマンス低下が組み合わさっている。
+<ul>
+<li>バックアップ処理が原因かも。バックアップ時間を変える。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>以上を検知するために監視すること
+<ul>
+<li>ハードウェアリソース使用率</li>
+<li>スロークエリー</li>
+<li>トランザクション数</li>
+<li>ログるべきこと
+<ul>
+<li>ログイン履歴</li>
+<li>データベース接続履歴</li>
+<li>SQL文実行履歴</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>ディスクI/O負荷対策
+<ul>
+<li>OSの階層をバイパスしてRDBMS自身が直接データをファイルから読み書きしてデータをメモリにキャッシュする機能を持たせる。</li>
+<li>ストレージとしてSSDを選択する。</li>
+</ul>
+</li>
+<li>MySQLマスターサーバのSPOF（単一障害点）の解消
+<ul>
+<li>マルチマスター構成
+<ul>
+<li>内部処理が複雑なため、あまり推奨できない。</li>
+</ul>
+</li>
+<li>マルチマスター構成（更新処理は1台のみで行う）
+<ul>
+<li>その1台が落ちたらアプリサーバやロードバランサーなどで、更新処理サーバを切り替える。</li>
+</ul>
+</li>
+<li>MHA for MySQL
+<ul>
+<li>マスター・スレーブ構成の場合にこのツールを使ってMySQLマスターをHA化することが可能。</li>
+</ul>
+</li>
+<li>MMM (Multi-Master Replication Manager for MySQL)
+<ul>
+<li>マルチマスター構成の場合に、MySQLマスターを自動的にフェイルオーバーさせることが可能。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>バックアップとリカバリ
+<ul>
+<li>リカバリには、バックアップデータと、バックアップ取得時点から障害発生直前までに出力されたすべてのWALログが必要。</li>
+<li>MySQLでリカバリに使うWALログはバイナリ。</li>
+</ul>
+</li>
+<li>RPO（Recovery Point Objectie, 目標復旧時点）
+<ul>
+<li>過去のどの時点までのデータを保証して復旧させるかという目標値。</li>
+</ul>
+</li>
+<li>RTO（Recovery Time Objectie, 目標復旧時間）
+<ul>
+<li>どれだけの時間で復旧させるかという目標値。</li>
+</ul>
+</li>
+<li>RDBMSのバージョンアップ
+<ul>
+<li>バージョンによって挙動が異なる場合がある。</li>
+<li>メジャーバージョンのアップデートをする際は、新規リリースと同じ程度の動作チェックを行うべき。</li>
+</ul>
+</li>
+<li>RDBMS起因ではない原因不明のパフォーマンス低下
+<ul>
+<li>ハードウェア故障はOSのシステムログ<code>/var/log/syslog</code>やRAIDコントローラーのログで確認。</li>
+<li>だいたいはストレージのエラー。</li>
+</ul>
+</li>
+</ul>
+<h4 id="その他">その他</h4>
+<ul>
+<li>リストア（復元）
+<ul>
+<li>バックアップファイルを復元すること。</li>
+</ul>
+</li>
+<li>リカバリ（復旧）
+<ul>
+<li>WALログを適用して、DBを障害発生直前の状態にすること。</li>
+</ul>
+</li>
+<li>クラウドにDBを載せていたらハードウェア情報を取得できないのがクラウド環境の最大の弱点。</li>
+<li>ストレージやRAIDコントローラーの修理交換は設定が引き継がれないことがあるので、交換後は確認せよ。</li>
+</ul>
+<hr>
+<p><a id="a4"></a></p>
+<h3 id="5章--webのサーバサイド開発言語">5章 : WEBのサーバサイド開発言語</h3>
+<h4 id="cgi方式">CGI方式</h4>
+<ul>
+<li>Webサーバがリクエストを受けるたびに、開発言語のプロセスを生成して処理する方式。</li>
+<li>プロセスの生成と解放を繰り返すので、パフォーマンスが低い。</li>
+</ul>
+<h4 id="fastcgi方式">FastCGI方式</h4>
+<ul>
+<li>一度実行されたプロセスを使い回すことでパフォーマンス向上を実現する方式。</li>
+<li>WebサーバがリクエストをFastCGIプロセスに転送し、FastCGIが開発言語プロセスを管理する。</li>
+</ul>
+<h4 id="apacheモジュール形式">Apacheモジュール形式</h4>
+<ul>
+<li>Apache Webサーバの一部として開発言語のインタプリタを常時起動させておく方式。</li>
+</ul>
+<h4 id="サーバゲートウェイ方式">サーバゲートウェイ方式</h4>
+<ul>
+<li>アプリ - フレームワーク - Webサーバ という構成において、フレームワークとWebサーバの間で共通のインターフェイスを配置する方式。</li>
+</ul>
+<hr>
+<p><a id="a5"></a></p>
+<h3 id="6章--共通鍵暗号方式と公開鍵暗号方式">6章 : 共通鍵暗号方式と公開鍵暗号方式</h3>
+<h4 id="公開鍵暗号方式">公開鍵暗号方式</h4>
+<ul>
+<li>計算量が重いので、大量のメッセージ送信には不向き。</li>
+</ul>
+<h4 id="ssl-secure-sockets-layer">SSL (Secure Sockets Layer)</h4>
+<ul>
+<li>WebブラウザとWebサーバの間での暗号化通信。</li>
+<li>公開鍵暗号方式を用いて共通鍵を安全に共有する。</li>
+<li>SSLサーバ証明書
+<ul>
+<li>サーバから提供される公開鍵が正規のものであることを証明する電子証明書。</li>
+<li>第三者機関の認証局（CA, Certification Authority）が発行。</li>
+<li>サーバの公開鍵、サーバ運営者の組織情報、CAの組織名、証明書の有効期限、公開鍵の暗号方式の種類、CAの電子署名などが含まれる。</li>
+</ul>
+</li>
+</ul>
+<h4 id="tls-transport-layer-security">TLS (Transport Layer Security)</h4>
+<ul>
+<li>SSLの仕様を拡張したもの。</li>
+<li>多くのWebブラウザではSSL, TLSの両方を使用可能。</li>
+<li>SSLに脆弱性が発見されたので、現在はTLSが使用されている。</li>
+</ul>
+<h4 id="ssl通信">SSL通信</h4>
+<ul>
+<li>SSL/TLS通信とも。</li>
+</ul>
+<h4 id="暗号スイートcipher-suite">暗号スイート（Cipher suite）</h4>
+<ul>
+<li>SSL通信における暗号方式やハッシュ関数の組み合わせ。</li>
+<li>どの暗号スイートが選ばれるかはハンドシェイクプロトコルによってクライアントとサーバの双方が利用可能な暗号アルゴリズムの中から、SSL/TLSのバージョンによって決定される。</li>
+</ul>
+<h4 id="csr-certificate-signing-request">CSR (Certificate Signing Request)</h4>
+<ul>
+<li>証明書署名要求</li>
+<li>SSLサーバ証明書を申し込むために申請者からCAへ送られるファイル。</li>
+<li>これを発行する際は公開鍵と秘密鍵の生成が必要。</li>
+</ul>
+<h4 id="rsa暗号">RSA暗号</h4>
+<ul>
+<li>桁数の大きい素因数分解問題が困難であることが安全性の根拠。</li>
+<li>TLS1.3から使用不可。</li>
+</ul>
+<h4 id="ecc暗号楕円曲線暗号-elliptic-curve-cryptography">ECC暗号（楕円曲線暗号, Elliptic Curve Cryptography）</h4>
+<ul>
+<li>楕円曲線を利用した暗号方式の総称。</li>
+<li>RSA暗号に比べて、同程度の強度の安全性をより短い鍵長で実現可能。</li>
+</ul>
+<h4 id="ワイルドカード証明書">ワイルドカード証明書</h4>
+<ul>
+<li>一般的なSSL証明書ではドメイン名別にSSLサーバ証明書を発行する。</li>
+<li>ワイルドカード証明書は、証明書1枚で複数のドメイン名に対応可能。</li>
+<li>社内システムなど限定されたユーザ向けにSSLサーバ証明書を使いたい時に有効。</li>
+</ul>
+<h4 id="ev-sslサーバ証明書extended-validation">EV SSLサーバ証明書（Extended Validation）</h4>
+<ul>
+<li>厳格に審査を行って発行されたSSLサーバ証明書。</li>
+<li>アドレスバーが緑色になる。</li>
+</ul>
+<h4 id="ca認証局">CA（認証局）</h4>
+<ul>
+<li>役割
+<ul>
+<li>Webサーバの運営元から申請されるCSRを審査し、問題なければSSLサーバ証明書を発行。</li>
+<li>WebブラウザのユーザからのSSLサーバ証明書の確認要請に対して応答を行う。</li>
+</ul>
+</li>
+<li>CAとして活動できる条件
+<ul>
+<li>WebTrust for CAという米国公認会計士協会とカナダ勅許会計士協会が監査する、機関の審査にパスする。</li>
+<li>Webブラウザ開発元によって、CAのルート証明書がWebブラウザに組み込まれる。</li>
+</ul>
+</li>
+</ul>
+<h4 id="中間ca証明書">中間CA証明書</h4>
+<ul>
+<li>これも一緒にインストールする必要のあるSSLサーバ証明書が増えてきた。</li>
+<li>ルート証明書とSSLサーバ証明書の間にこれを挟むことで3段階の証明パスになり、安全性が増える。</li>
+</ul>
+<h4 id="クロスルート証明書">クロスルート証明書</h4>
+<ul>
+<li>通常のルート証明書に加え、クロスルート用の中間CA証明書を用意することで別のルート証明書にも接続可能とする仕組み。</li>
+</ul>
+<h4 id="lets-encrypt">Let&rsquo;s Encrypt</h4>
+<ul>
+<li>アメリカの非営利団体 ISRG (Internet Security Research Group) が開始した、無料で利用可能なSSLサーバ証明書発行サイト。</li>
+</ul>
+<hr>
+<p><a id="a6"></a></p>
+<h3 id="7章--障害対策と障害対応">7章 : 障害対策と障害対応</h3>
+<h4 id="障害対応の心構え">障害対応の心構え</h4>
+<ul>
+<li>スピード</li>
+<li>原因分析力</li>
+<li>情報収集力</li>
+</ul>
+<h4 id="スピード">スピード</h4>
+<p>以下をそれぞれ20秒以内で調べられるようコマンド力を鍛えろ。</p>
+<ul>
+<li>メモリ使用量・搭載量
+<ul>
+<li><code>free</code></li>
+<li><code>free h</code> : 人間にわかりやすい</li>
+</ul>
+</li>
+<li>パーティションごとのディスク使用量・空き容量
+<ul>
+<li><code>df -h</code></li>
+</ul>
+</li>
+<li>使われているCPUの種類、全体でのコア数
+<ul>
+<li><code>cat /proc/cpuinfo | grep -e &quot;model name&quot; -e &quot;cores&quot;</code></li>
+</ul>
+</li>
+<li>ディスクのRAID構成
+<ul>
+<li>LSI RAID Controllerを搭載している多くのベンダーのサーバの場合
+<ul>
+<li><code>MegaCli -LDInfo -Lall -aall | grep RAID</code></li>
+</ul>
+</li>
+<li>日本HP者サーバの場合
+<ul>
+<li><code>hpssacli ctrl all show config</code></li>
+</ul>
+</li>
+</ul>
+</li>
+<li>CPU使用率の高さ
+<ul>
+<li><code>w</code></li>
+<li><code>top -d 1</code></li>
+</ul>
+</li>
+<li>現在のディスクアクセス率の高さ
+<ul>
+<li><code>iostat 1</code></li>
+</ul>
+</li>
+<li>現在張られているTCPコネクションの数
+<ul>
+<li><code>netstat -an | grep &quot;ESTABLISHED&quot; | wc -l</code></li>
+</ul>
+</li>
+<li>現在サーバにログインしているアカウント
+<ul>
+<li><code>last | grep &quot;still logged in</code></li>
+</ul>
+</li>
+<li>サーバが起動してからの経過時間
+<ul>
+<li><code>uptime</code></li>
+</ul>
+</li>
+<li>Apacheやnginxなど、なんのWebサーバソフトウェアが動いているか
+<ul>
+<li><code>netstat -lnp | grep &quot;80&quot;</code></li>
+<li><code>ps -ef | grep [プロセスID]</code></li>
+</ul>
+</li>
+<li>DBと連携しているWebサーバの場合、接続しているDBサーバソフトウェアの種類
+<ul>
+<li><code>netstat -an | grep &quot;ESTABLISHED</code></li>
+<li>接続している先のポート番号で判断
+<ul>
+<li>ex. 3306 -&gt; MySQL</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>メモリ/ハードディスク/電源ユニットが故障していると仮定して、その証拠をどうやって調べる？
+<ul>
+<li><code>dmmsg</code></li>
+<li><code>more /var/log/messages</code></li>
+</ul>
+</li>
+<li>サーバにUSBが接続されているか？
+<ul>
+<li><code>dmesg</code></li>
+<li><code>parted -l</code></li>
+<li><code>lsusb</code></li>
+</ul>
+</li>
+<li>ネットワーク機器とサーバのネットワークインターフェイスは何Gbpsで接続されているか？
+<ul>
+<li><code>ethtool eth0 | grep &quot;Speed&quot;</code></li>
+</ul>
+</li>
+<li>問題が起きたら
+<ul>
+<li>すぐに障害箇所を特定。</li>
+<li>必要に応じて開発者に連絡がとれるようにする。
+<ul>
+<li>以下の資料を準備すると便利。
+<ul>
+<li>システム構成図</li>
+<li>開発者や緊急連絡先リストの整備</li>
+<li>障害時の対応マニュアル</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="原因分析力">原因分析力</h4>
+<p>原因分析につながる基礎力</p>
+<ul>
+<li>ハードウェアの知識
+<ul>
+<li>CPU、メモリ、ネットワーク、ストレージなど</li>
+</ul>
+</li>
+<li>OSの起動プロセス
+<ol>
+<li>BIOS/UEFI</li>
+<li>マスターブート</li>
+<li>ブートレコード</li>
+<li>カーネルイメージのメモリへの取り込み</li>
+<li>カーネル起動</li>
+<li>initプロセス起動</li>
+<li>サービスやデーモンの起動など</li>
+</ol>
+</li>
+<li>ミドルウェアの理解
+<ul>
+<li>機能概要</li>
+<li>競合ソフトウェアとの違い</li>
+<li>採用されているアルゴリズム、技術的特徴など</li>
+</ul>
+</li>
+<li>ログ
+<ul>
+<li>どんなログがOS上のどこに記載されるか</li>
+</ul>
+</li>
+<li>冗長化機能の理解
+<ul>
+<li>特定ノード障害時の挙動</li>
+<li>採用されているアルゴリズム、技術的特徴など</li>
+</ul>
+</li>
+<li>RDBMSの理解
+<ul>
+<li>障害発生時の対応方法</li>
+<li>採用されているアルゴリズム、技術的特徴など</li>
+</ul>
+</li>
+</ul>
+<h4 id="情報収集力">情報収集力</h4>
+<p>インフラエンジニアにとって有用な情報源</p>
+<ul>
+<li>ハードウェアベンダーの技術支援情報</li>
+<li>ハードウェアベンダーのファームウェアアップデート情報</li>
+<li>OSカーネルのアップデート情報</li>
+<li>ミドルウェアのアップデート情報</li>
+<li>セキュリティポータルサイトの脆弱性情報</li>
+</ul>
+<hr>
+<p><a id="a7"></a></p>
+<h3 id="8章--よく知られたセキュリティ攻撃">8章 : よく知られたセキュリティ攻撃</h3>
+<h4 id="ポートスキャン">ポートスキャン</h4>
+<ul>
+<li>クライアントからサーバ or ロードバランサーに対してTCP or UDPの広範囲のポートにリクエストを送り、どのポートでどんなサービス用デーモンが待ち受けている（Listen）かを探し出す。</li>
+<li>理由 : 脆弱性のあるサーバソフトウェアが使われているポートを見つけるため。</li>
+<li>TCP
+<ul>
+<li>特定ポートにSYNパケットを送信。</li>
+<li>開放ポート : ACK + SYNパケットが返ってくる。</li>
+<li>非開放ポート : ACK + RSTパケットが返ってくる。</li>
+</ul>
+</li>
+<li>UDP
+<ul>
+<li>特定ポートにUDPパケットを送信。</li>
+<li>開放ポート : 返答がない。</li>
+<li>非開放ポート : 「ICMPポート未到達」メッセージが返ってくる。</li>
+</ul>
+</li>
+<li>対策
+<ul>
+<li>不必要なポートを閉じる。</li>
+<li>開放ポートには脆弱性のない最新バージョンのソフトウェアを用いる。</li>
+<li>レスポンスにはソフトウェアのバージョン情報など余計な情報を含めない。</li>
+<li>ポートスキャン検知ソリューションを用いる。</li>
+<li>自分で定期的にポートスキャンして確認する。</li>
+</ul>
+</li>
+</ul>
+<h4 id="バックドアトロイの木馬">バックドア（トロイの木馬）</h4>
+<ul>
+<li>攻撃対象のコンピュータに対して不正なプログラムを仕込み、それ経由で不正アクセスする。</li>
+<li>普通のソフトウェアに見せかけてインストールさせたり、添付ファイルを誤って実行させてインストールさせる。</li>
+<li>これを仕掛けられたら、他のコンピュータに攻撃させられたりもする。</li>
+<li>対策
+<ul>
+<li>統合セキュリティソフトをインストールする。</li>
+<li>出所不明なソフトウェアを実行しない。</li>
+<li>ウィルスなどに感染しているコンピュータと接続しない。</li>
+</ul>
+</li>
+</ul>
+<h4 id="ブルートフォースアタックbrute-force-attack">ブルートフォースアタック（Brute Force Attack）</h4>
+<ul>
+<li>パスワード総当り。</li>
+<li>対策
+<ul>
+<li>英大文字小文字記号を組み合わせた長いパスワードを用いる。</li>
+<li>定期的にパスワードを変更する。
+<ul>
+<li>todo : これって駄目なんじゃなかったっけ？</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h4 id="ソーシャルハッキング">ソーシャルハッキング</h4>
+<ul>
+<li>機密情報を知っている人間に聞き出す、ゴミ捨て場をあさる、書類を盗み見る。</li>
+<li>対策
+<ul>
+<li>セキュリティ意識を高める。</li>
+</ul>
+</li>
+</ul>
+<h4 id="dos攻撃denial-of-services-atack">DoS攻撃（Denial of Services atack）</h4>
+<ul>
+<li>ネットワーク上のコンピュータから特定のサーバに接続要求を行うことで、サーバの応答を遅くしたりダウンさせる。</li>
+<li>対策
+<ul>
+<li>接続元が限られるので、その接続元からの通信のみを遮断するようファイアウォールやネットワーク機器で設定。</li>
+</ul>
+</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th align="center">種類</th>
+<th align="center">概要</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">mail bomb</td>
+<td align="center">巨大なメールや大量のメールを送信し、メールサーバのディスクやCPU資源、ネットワーク帯域をつぶす。</td>
+</tr>
+<tr>
+<td align="center">finger</td>
+<td align="center"><code>finger</code>コマンドで引数の状態によって相手を停止させる。</td>
+</tr>
+<tr>
+<td align="center">SYN flood</td>
+<td align="center">プロトコルスタックを使用した攻撃の原型。防御策は<code>SYN cookies</code>。</td>
+</tr>
+<tr>
+<td align="center">Ping of Death</td>
+<td align="center">TCP/IPプロトコルスタックの実装のバグに対する攻撃。</td>
+</tr>
+<tr>
+<td align="center">ping flood</td>
+<td align="center"><code>ping</code>コマンドで引数の状態によって相手を停止させる。</td>
+</tr>
+<tr>
+<td align="center">OOB</td>
+<td align="center">ポート139に対し、<code>Out of Band</code>データを送り相手を停止させる。</td>
+</tr>
+<tr>
+<td align="center">Land/Latierra</td>
+<td align="center">SYNパケットを送信し相手を無限ループに陥らせる。</td>
+</tr>
+<tr>
+<td align="center">TearDrop/Bonk/Boink</td>
+<td align="center">フラグメントパケット処理の実装によって相手を停止させる。</td>
+</tr>
+<tr>
+<td align="center">Octopus</td>
+<td align="center">相手に対し多くのコネクションをターゲットサーバに張り運用をできないようにする。</td>
+</tr>
+<tr>
+<td align="center">SSPING/Jolt</td>
+<td align="center">ICMPパケットの仕様を利用した攻撃。</td>
+</tr>
+<tr>
+<td align="center">UDP Storm</td>
+<td align="center">echoサービスの問題点を利用した攻撃。</td>
+</tr>
+</tbody>
+</table>
+<h4 id="プロトコルスタック">プロトコルスタック</h4>
+<ul>
+<li>ネットワークのプロトコル階層。とくにその実装のことを指す場合が多い。</li>
+</ul>
+<h4 id="ddos攻撃distributed-denial-of-services-attack">DDoS攻撃（Distributed Denial of Services attack）</h4>
+<ul>
+<li>ネットワーク上の大量のコンピュータから一斉に特定のサーバに接続要求を行うことで、サーバダウンさせたり攻撃先ネットワーク回線を満杯にする。</li>
+<li>対策は容易ではない
+<ul>
+<li>クラウドサーバの場合、従量課金額がとんでもないことになるので、事前にクラウド業者にDDoS攻撃を受けた場合の費用請求ポリシーを確認しておく。</li>
+<li>攻撃パターンを分析して、可能な限り攻撃元からの通信を遮断。</li>
+<li>自分が利用しているISPや攻撃元ISPと相談。</li>
+</ul>
+</li>
+</ul>
+<h4 id="mta-message-transfer-agent">MTA (Message Transfer Agent)</h4>
+<ul>
+<li>メールを転送・配送するサーバ。メールのリレーサーバ。</li>
+<li>インフラ規模が大きい環境でよく使用される。</li>
+<li>オープンリレー
+<ul>
+<li>設定をミスることで、組織外のネットワークから送信されたメールをも転送してしまう。</li>
+<li>スパムメールを送信する踏み台として利用される。</li>
+</ul>
+</li>
+</ul>
+<h4 id="dnsオープンリゾルバ">DNSオープンリゾルバ</h4>
+<ul>
+<li>DNSフルリゾルバサーバは自身の組織内でのみ使用されるのが正常。</li>
+<li>これが外部からも使える状態。</li>
+<li>権威サーバ
+<ul>
+<li>外部に公開していい。</li>
+<li>外部ユーザが自社サービスを利用するために、自身の組織が管理するドメイン名とIPアドレスとの対応を外部に提供する。</li>
+<li>名前解決できなくても、外部DNSに再帰的に問い合わせをしない。</li>
+</ul>
+</li>
+<li>フルリゾルバサーバ
+<ul>
+<li>外部に公開してはいけない。</li>
+<li>自身の組織内で利用するために、内部DNSが持っていない情報に対して問い合わせがあれば、外部DNSに再帰的に問い合わせして回答を返す。</li>
+</ul>
+</li>
+<li>DNS amp (増幅) 攻撃
+<ul>
+<li>攻撃対象DNSサーバに対して攻撃データを増幅させてDNS問い合わせを行う。</li>
+<li>オープンリゾルバに対して、わざと大きい応答を返すような攻撃用のTXTレコードをキャッシュさせ、次に送信元アドレスを偽ったDNS問い合わせを行う。
+<ul>
+<li>するとオープンリゾルバが踏み台にされ、増幅されたパケットサイズのリクエストが攻撃対象サーバに届く。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li>DNSキャッシュポイゾニング攻撃
+<ul>
+<li>フルリゾルバサーバに偽のDNS問い合わせと応答を行うことでキャッシュさせ、後からそのDNS問い合わせを行うユーザに対して偽った情報で応答することで、ユーザを偽サイトに誘導する。</li>
+</ul>
+</li>
+</ul>
+<h4 id="バッファオーバーフロー攻撃">バッファオーバーフロー攻撃</h4>
+<ul>
+<li>バッファ領域として確保された領域以上のサイズのデータが送り込まれること。</li>
+<li>任意コードを仕込まれる。</li>
+</ul>
+<h4 id="クロスサイトスクリプティングxss攻撃">クロスサイトスクリプティング（XSS）攻撃</h4>
+<ul>
+<li>Webページを介して任意のJavaScriptコードを不正注入する。</li>
+<li>対策
+<ul>
+<li>テキストフォームなどから送信された文字列データをエスケープする。</li>
+</ul>
+</li>
+<li>これを受けた場合、サーバのサクセスログにXSS特有のログが現れる。</li>
+</ul>
+<h4 id="sqlインジェクション攻撃">SQLインジェクション攻撃</h4>
+<ul>
+<li>Webページを介して任意のSQL文を不正注入する。</li>
+<li>対策
+<ul>
+<li>XSSと同じ。</li>
+</ul>
+</li>
+</ul>
+<hr>
+<p><a id="a8"></a></p>
+<h3 id="9章--インターネットの運用と発展をつかさどる組織や団体">9章 : インターネットの運用と発展をつかさどる組織や団体</h3>
+<h4 id="isocinternet-society-インターネット協会">ISOC（Internet Society, インターネット協会）</h4>
+<ul>
+<li>1992年設立。国際的な非営利組織。</li>
+<li>インターネット技術やシステムに関する標準化について議論。</li>
+<li>下位団体はインターネット標準化を担う団体が中心。それらのボス的存在。</li>
+</ul>
+<h4 id="iabinternet-architecture-board">IAB（Internet Architecture Board）</h4>
+<ul>
+<li>インターネットのアーキテクチャ全般について責任を負う。</li>
+<li>IETFやIRTFの上位組織。</li>
+<li>役割
+<ul>
+<li>IESGの追認。</li>
+<li>通信プロトコル、アーキテクチャの監督。</li>
+<li>標準化プロセスの監督と苦情窓口。</li>
+<li>RFCの編集・出版。</li>
+<li>ICANNと共同でIANAによる各種インターネットリソースの割り当ての監督。</li>
+<li>ISOCへの助言。</li>
+</ul>
+</li>
+</ul>
+<h4 id="ietf-internet-engineering-task-force">IETF (Internet Engineering Task Force)</h4>
+<ul>
+<li>RFCを制定するタスクフォース。</li>
+</ul>
+<h4 id="iesg-internet-engineering-steering-group">IESG (Internet Engineering Steering Group)</h4>
+<ul>
+<li>IETFの活動と標準化プロセスの、技術的な側面について責任を負う。</li>
+</ul>
+<h4 id="irtf-internet-research-task-force">IRTF (Internet Research Task Force)</h4>
+<ul>
+<li>長期的始点でインターネットに関する将来の革新的な技術に対して検討するタスクフォース。</li>
+</ul>
+<h4 id="irsg-internet-research-steering-group">IRSG (Internet Research Steering Group)</h4>
+<ul>
+<li>IRTFの活動と標準化プロセスの、技術的な側面について責任を負う。</li>
+</ul>
+<h4 id="icann-internet-corporation-for-assigned-names-and-numbers">ICANN (Internet Corporation for Assigned Names and Numbers)</h4>
+<ul>
+<li>1998年設立。</li>
+<li>インターネットのIPアドレスやドメイン名などの書くリソースを全世界的に管轄する。</li>
+<li>DNSルートサーバシステムの運用。</li>
+<li>これらの技術的業務に関連するポリシー策定の調整。</li>
+<li>IANA
+<ul>
+<li>元は別組織だったが、ICANNにおける機能名となる。</li>
+<li>以下を管理。
+<ul>
+<li>ドメイン名</li>
+<li>IPアドレス</li>
+<li>自律システム（AS）番号</li>
+<li>プロトコルのポート番号、パラメータ番号</li>
+</ul>
+</li>
+<li>IPアドレスとAS番号は、地域別に委任された各組織が独立して割り当てと管理を行う。</li>
+</ul>
+</li>
+</ul>
+<hr>
+<p><a id="a9"></a></p>
+<h3 id="10章--rfcの読み方と作られ方">10章 : RFCの読み方と作られ方</h3>
+<h4 id="rfc-request-for-comments">RFC (Request for Comments)</h4>
+<ul>
+<li>インターネットに関する技術仕様や要件、標準化過程の文章、ジョークなど。</li>
+<li>1969年頃に考案される。</li>
+<li>標準化とはいえ強制力は緩い。</li>
+<li>カテゴリ
+<ul>
+<li>Standards Track : 標準化過程にある
+<ul>
+<li>Proposed Standard (PS) : 標準への提唱</li>
+<li>Draft Standard (DS) : 標準への草稿</li>
+<li>Internet Standard (STD) : インターネット標準</li>
+</ul>
+</li>
+<li>Experimental : 実験的内容</li>
+<li>Historic : 歴史的内容。現在は使われていない。</li>
+<li>Infomational : インターネット全体に広く公知することが望ましい情報。</li>
+<li>Best Current Practice (BCP) : 現状で最良の慣行</li>
+</ul>
+</li>
+</ul>
+<h4 id="rfcの検索">RFCの検索</h4>
+<ul>
+<li>RFCエディター（http://www.rfc-editor.org/）からの検索がわかりやすい。</li>
+</ul>
+<h4 id="rfc文書の構成">RFC文書の構成</h4>
+<ul>
+<li><code>Request for Comments: %d</code>
+<ul>
+<li>RFCの何番か。</li>
+</ul>
+</li>
+<li><code>STD: %d</code>
+<ul>
+<li>これを付与されていたらインターネット標準。</li>
+</ul>
+</li>
+<li><code>Category: %s</code>
+<ul>
+<li>RFCのカテゴリ。</li>
+</ul>
+</li>
+<li><code>Updates: %d</code>
+<ul>
+<li>RFC%dを更新して作成されている。</li>
+<li>これを記載しているRFCの前に%dを読む必要あり。</li>
+</ul>
+</li>
+<li><code>Obsoletes: %d</code>
+<ul>
+<li>このRFCによってRFC%dは無効化されたことを意味する。</li>
+</ul>
+</li>
+</ul>
+<hr>
+<p><a id="a10"></a></p>
+<h3 id="11章--世界規模のインターネットサービス運営">11章 : 世界規模のインターネットサービス運営</h3>
+<h4 id="レイテンシー">レイテンシー</h4>
+<ul>
+<li>ネットワーク距離が物理的に遠いことによる遅延。</li>
+<li>RTT（ラウンドトリップ時間）のことを指す。
+<ul>
+<li>送信して応答が返ってくるまでの時間。</li>
+<li>単位 : ms</li>
+</ul>
+</li>
+<li>物理的な距離が遠いほど、途中経路でホップ数（経由するルータの数）が多いほどレイテンシーは大きくなる。</li>
+<li>通信途中に1箇所でもボトルネックがあると、そこが全体のボトルネックとなってしまう。</li>
+</ul>
+<h4 id="tcpウィンドウサイズ">TCPウィンドウサイズ</h4>
+<ul>
+<li>パケット受信用バッファのサイズ。</li>
+<li>Windowsでは<code>RWIN</code>という。</li>
+<li>RTTが大きい場合にこれを適切に大きくすると、スループットが上がって通信が速くなる可能性がある。</li>
+<li>ウィンドウ制御
+<ul>
+<li>通常のTCPではパケットを送って相手のACKを待ってから次のパケットを送るので効率が悪い。</li>
+<li>受信側にTCPウィンドウサイズを用意し、送信側が複数のパケットを連続的に送信し、受信側はまとめて1つのACKを返すようにし、伝送効率を高める。</li>
+</ul>
+</li>
+<li>3ウェイハンドシェイクの際に共有される。</li>
+<li>大きくしすぎるデメリットは、一部のパケット送信に失敗すればすべて最初からやり直しになること。
+<ul>
+<li>途中経路の通信品質が悪いと、むしろ遅くなる。</li>
+</ul>
+</li>
+<li>変更するにはOSカーネルパラメータ設定が必要。</li>
+</ul>
+<h4 id="データを圧縮して送信">データを圧縮して送信</h4>
+<ul>
+<li>テキストデータの場合にそれなりに有効。</li>
+<li>画像や動画などすでに圧縮された状態のバイナリデータの場合、圧縮率が低い。</li>
+<li>送信元で圧縮する時間、受信側で解凍する時間を考慮する必要あり。</li>
+<li>方法の例
+<ul>
+<li>WAN高速化装置を使う。</li>
+<li>Apacheの<code>mode_deflate</code>を使う。</li>
+<li>送信のたびにWebサーバが圧縮するのではなく、事前に圧縮されたファイルを配置する。</li>
+</ul>
+</li>
+</ul>
+<h4 id="pop-point-of-presence">POP (Point of Presence)</h4>
+<ul>
+<li>最寄りの接続拠点。</li>
+<li>ユーザがネットワーク距離の近いPOPにアクセスすることで、RTTを小さくする。</li>
+<li>自社が各地のデータセンターと契約してサーバを立ててPOPを構築する代わりに、クラウド業者の各拠点を使ってPOPを構築する方法もある。
+<ul>
+<li>あるいはその両方を混在（クラウド業者がサービスを行っていない地域に自社でPOPを構築）。</li>
+</ul>
+</li>
+</ul>
+<h4 id="cdn-contents-delivery-network">CDN (Contents Delivery Network)</h4>
+<ul>
+<li>Webコンテンツをインターネット経由で配信するために最適化されたネットワーク。</li>
+<li>CDN業者は世界中にPOPを配置し、それぞれにキャッシュサーバを置いている。
+<ul>
+<li>自社サーバにユーザをアクセスさせる代わりに、最寄りのサーバからコンテンツを入手させる。</li>
+</ul>
+</li>
+<li>IPエニーキャスト
+<ul>
+<li>エニーキャストアドレス（同じIPアドレス）が割り当てられた複数拠点にあるサーバから、ネットワーク距離の近いサーバに接続させる仕組み。</li>
+</ul>
+</li>
+<li>その構成上、DDoS攻撃に耐性あり。</li>
+</ul>
+<h4 id="企画や開発側での工夫">企画や開発側での工夫</h4>
+<ul>
+<li>無駄なデータ転送をしない。</li>
+<li>データをまとめて送る。
+<ul>
+<li>ログイン時に後で必要になるデータをまとめて読み込むなど。</li>
+</ul>
+</li>
+<li>ユーザが気づかないタイミングでデータ送受信を行う。</li>
+</ul>
+<h4 id="グローバルサービスでのデータ保存">グローバルサービスでのデータ保存</h4>
+<ul>
+<li>1箇所にデータを集約する構成
+<ul>
+<li>シンプル。</li>
+<li>ストレージから距離のある地域ほどレイテンシーの影響を受けてしまう。</li>
+</ul>
+</li>
+<li>複数拠点ごとにデータ保存する構成
+<ul>
+<li>各拠点間でのデータ同期を考慮しないと問題となる。</li>
+<li>各拠点にインデックスだけ即時同期する方法
+<ul>
+<li>同期するデータ量が少ないので、最新データがアップされたという情報だけはユーザにすぐに伝えられる。</li>
+</ul>
+</li>
+<li>各拠点でデータを溜めておき、後で同期する方法
+<ul>
+<li>違う地域のデータ入手には時間がかかる。</li>
+</ul>
+</li>
+<li>いっそ各拠点でデータを溜めて他拠点と同期しない方法</li>
+</ul>
+</li>
+<li>同じタイミングで同じデータが異なる拠点で更新された場合の対応
+<ul>
+<li>クラウドファイルサーバのようなサービスの場合、競合ファイルを両方残しておき、ユーザに対応を委ねる場合が多い。</li>
+</ul>
+</li>
+<li>ユーザの属する地域の決定
+<ul>
+<li>IPアドレスで判断</li>
+<li>ハードウェアの言語設定で判断</li>
+<li>ユーザに選択させる</li>
+</ul>
+</li>
+</ul>
+<h4 id="itインフラポリシーの統一">ITインフラポリシーの統一</h4>
+<ul>
+<li>OSの言語 : English</li>
+<li>キーボード : 多国籍企業ではUS統一が無難</li>
+<li>共通パスワード : どの国のキーボード配置でも問題ないように特殊記号を厳選しておく</li>
+<li>海外出張は電源変換プラグを準備しておく。</li>
+<li>政治情勢や自然災害の問題ありの場合、出張はキャンセルするのが無難。</li>
+</ul>
+<hr>
+<p><a id="a11"></a></p>
+<h3 id="12章--インフラエンジニアとして目指す方向">12章 : インフラエンジニアとして目指す方向</h3>
+<ul>
+<li>バランスのいい設計・構築・運用経験を積むべし。</li>
+<li>原理原則を理解するべし。</li>
+<li>直ちに手を動かすべし。</li>
+<li>知らない用語に出会ったらすぐ調べるべし。</li>
+</ul>
+		</div>
+	</article>
+</main>
+
+
+<nav class="pager flex">
+	<div class="pager__item pager__item--prev">
+		<a class="pager__link" href="https://guricerin.github.io/shit-blog/private-memo/20210916-clean-arch/" rel="prev">
+			<span class="pager__subtitle">«&thinsp;Previous</span>
+			<p class="pager__title">『Clean Architecture 達人に学ぶソフトウェアの構造と設計』個人メモ</p>
+		</a>
+	</div>
+	<div class="pager__item pager__item--next">
+		<a class="pager__link" href="https://guricerin.github.io/shit-blog/private-memo/20211123-wasbook/" rel="next">
+			<span class="pager__subtitle">Next&thinsp;»</span>
+			<p class="pager__title">『体系的に学ぶ 安全なWebアプリケーションの作り方 第2版』個人メモ</p>
+		</a>
+	</div>
+</nav>
+
+<section class="comments">
+	<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "https-guricerin-github-io-shit-blog" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+
+
+			</div>
+			
+
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2021 guricerin.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="https://guricerin.github.io/shit-blog/js/menu.js"></script>
+<script src="https://guricerin.github.io/shit-blog/js/custom.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js?config=TeX-AMS-MML_HTMLorMML" async></script>
+</body>
+</html>

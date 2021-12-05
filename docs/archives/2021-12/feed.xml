@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>2021-12 on グリのクソブログ</title>
+    <link>https://guricerin.github.io/shit-blog/archives/2021-12/</link>
+    <description>Recent content in 2021-12 on グリのクソブログ</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Sun, 05 Dec 2021 16:10:50 +0900</lastBuildDate>
+    
+	<atom:link href="https://guricerin.github.io/shit-blog/archives/2021-12/feed.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>『体系的に学ぶ 安全なWebアプリケーションの作り方 第2版』読んだ</title>
+      <link>https://guricerin.github.io/shit-blog/post/2021/12/05-wasbook/</link>
+      <pubDate>Sun, 05 Dec 2021 16:10:50 +0900</pubDate>
+      
+      <guid>https://guricerin.github.io/shit-blog/post/2021/12/05-wasbook/</guid>
+      <description>&lt;p&gt;セキュリティなんも知らんので購入。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>

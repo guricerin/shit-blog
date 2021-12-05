@@ -5,14 +5,51 @@
     <link>https://guricerin.github.io/shit-blog/private-memo/</link>
     <description>Recent content in Private-memos on グリのクソブログ</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>ja-JP</language>
-    <lastBuildDate>Sat, 26 Jun 2021 09:57:13 +0900</lastBuildDate>
+    <language>ja</language>
+    <lastBuildDate>Tue, 23 Nov 2021 18:53:50 +0900</lastBuildDate>
     
 	<atom:link href="https://guricerin.github.io/shit-blog/private-memo/feed.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>『Linuxで動かしながら学ぶTCP/IPネットワーク入門』読んだ</title>
+      <title>『体系的に学ぶ 安全なWebアプリケーションの作り方 第2版』個人メモ</title>
+      <link>https://guricerin.github.io/shit-blog/private-memo/20211123-wasbook/</link>
+      <pubDate>Tue, 23 Nov 2021 18:53:50 +0900</pubDate>
+      
+      <guid>https://guricerin.github.io/shit-blog/private-memo/20211123-wasbook/</guid>
+      <description>&lt;p&gt;セキュリティなんも知らんので購入。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>『インフラエンジニアの教科書2』の個人メモ</title>
+      <link>https://guricerin.github.io/shit-blog/private-memo/infra-engineer-text2/</link>
+      <pubDate>Thu, 18 Nov 2021 09:31:34 +0900</pubDate>
+      
+      <guid>https://guricerin.github.io/shit-blog/private-memo/infra-engineer-text2/</guid>
+      <description>&lt;p&gt;インフラなんも知らんので購入。&lt;br&gt;
+おれのインフラ経験といえば、&lt;code&gt;VMware vSphere&lt;/code&gt;で管理された仮想サーバの1つに Redmine をセットアップしたりプラグインを適用した程度。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>『Clean Architecture 達人に学ぶソフトウェアの構造と設計』個人メモ</title>
+      <link>https://guricerin.github.io/shit-blog/private-memo/20210916-clean-arch/</link>
+      <pubDate>Thu, 16 Sep 2021 09:37:18 +0900</pubDate>
+      
+      <guid>https://guricerin.github.io/shit-blog/private-memo/20210916-clean-arch/</guid>
+      <description>&lt;p&gt;本の内容をまとめただけになったので、著作権的にまずい場合、まとめ部分を削除するかこの記事丸ごと削除します。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>『ふつうのLinuxプログラミング 第2版』個人メモ</title>
+      <link>https://guricerin.github.io/shit-blog/private-memo/20210906-std-linux/</link>
+      <pubDate>Mon, 06 Sep 2021 09:44:38 +0900</pubDate>
+      
+      <guid>https://guricerin.github.io/shit-blog/private-memo/20210906-std-linux/</guid>
+      <description>&lt;p&gt;Linuxのことなんもわかってないので購入。本書はC言語プログラムを書くことを通してLinuxの仕組みを大雑把に学ぶという感じ。&lt;/p&gt;</description>
+    </item>
+    
+    <item>
+      <title>『Linuxで動かしながら学ぶTCP/IPネットワーク入門』個人メモ</title>
       <link>https://guricerin.github.io/shit-blog/private-memo/20210626-linux-tcpip/</link>
       <pubDate>Sat, 26 Jun 2021 09:57:13 +0900</pubDate>
       

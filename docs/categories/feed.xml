@@ -6,10 +6,28 @@
     <description>Recent content in Categories on グリのクソブログ</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Tue, 23 Nov 2021 07:34:34 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 05 Dec 2021 16:10:50 +0900</lastBuildDate>
     
 	<atom:link href="https://guricerin.github.io/shit-blog/categories/feed.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>情報セキュリティ</title>
+      <link>https://guricerin.github.io/shit-blog/categories/%E6%83%85%E5%A0%B1%E3%82%BB%E3%82%AD%E3%83%A5%E3%83%AA%E3%83%86%E3%82%A3/</link>
+      <pubDate>Sun, 05 Dec 2021 16:10:50 +0900</pubDate>
+      
+      <guid>https://guricerin.github.io/shit-blog/categories/%E6%83%85%E5%A0%B1%E3%82%BB%E3%82%AD%E3%83%A5%E3%83%AA%E3%83%86%E3%82%A3/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>書物</title>
+      <link>https://guricerin.github.io/shit-blog/categories/%E6%9B%B8%E7%89%A9/</link>
+      <pubDate>Sun, 05 Dec 2021 16:10:50 +0900</pubDate>
+      
+      <guid>https://guricerin.github.io/shit-blog/categories/%E6%9B%B8%E7%89%A9/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>ITインフラ</title>
@@ -26,15 +44,6 @@
       <pubDate>Tue, 23 Nov 2021 07:34:34 +0900</pubDate>
       
       <guid>https://guricerin.github.io/shit-blog/categories/%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>書物</title>
-      <link>https://guricerin.github.io/shit-blog/categories/%E6%9B%B8%E7%89%A9/</link>
-      <pubDate>Tue, 23 Nov 2021 07:34:34 +0900</pubDate>
-      
-      <guid>https://guricerin.github.io/shit-blog/categories/%E6%9B%B8%E7%89%A9/</guid>
       <description></description>
     </item>
     
@@ -152,15 +161,6 @@
       <pubDate>Thu, 01 Oct 2020 11:29:20 +0900</pubDate>
       
       <guid>https://guricerin.github.io/shit-blog/categories/windows/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>情報セキュリティ</title>
-      <link>https://guricerin.github.io/shit-blog/categories/%E6%83%85%E5%A0%B1%E3%82%BB%E3%82%AD%E3%83%A5%E3%83%AA%E3%83%86%E3%82%A3/</link>
-      <pubDate>Sun, 27 Sep 2020 18:17:30 +0900</pubDate>
-      
-      <guid>https://guricerin.github.io/shit-blog/categories/%E6%83%85%E5%A0%B1%E3%82%BB%E3%82%AD%E3%83%A5%E3%83%AA%E3%83%86%E3%82%A3/</guid>
       <description></description>
     </item>
     
