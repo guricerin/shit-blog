@@ -26,7 +26,7 @@
 
 (function disableDisqusAds(document) {
     console.error('bababab');
-    for (let elm of document.querySelectorAll('#dsq*')) {
+    for (let elm of document.querySelectorAll("[id^='dsq']")) {
         console.error(elm);
         if (elm.hasAttribute('sandbox')) {
             console.error("display none");
