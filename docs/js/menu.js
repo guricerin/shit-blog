@@ -23,14 +23,3 @@
         menu.addEventListener('transitionend', removeMenuTransition, false);
     }
 }(document, window));
-
-(function disableDisqusAds(document) {
-    console.error('afafaf');
-    for (let elm of document.querySelectorAll("[id^='dsq']")) {
-        console.error(elm);
-        if (elm.hasAttribute('sandbox')) {
-            console.error("display none");
-            elm.style.display = 'none';
-        }
-    }
-}(document));
