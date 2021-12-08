@@ -26,7 +26,9 @@
 
 (function disableDisqusAds(document) {
     for (let elm of document.querySelectorAll('dsq-*')) {
+        console.log(elm);
         if (elm.hasAttribute('sandbox')) {
+            console.log("display none");
             elm.style.display = 'none';
         }
     }
