@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>『ゼロからはじめるLinuxサーバー構築・運用ガイド』読んだ - グリのクソブログ</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+		<meta property="og:title" content="『ゼロからはじめるLinuxサーバー構築・運用ガイド』読んだ" />
+<meta property="og:description" content="インフラ運用なんも知らんしKindleのセールで半額だったから購入。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://guricerin.github.io/shit-blog/post/2021/12/08-operation-linux-server/" />
+<meta property="article:published_time" content="2021-12-08T12:21:38+09:00" />
+<meta property="article:modified_time" content="2021-12-08T12:21:38+09:00" />
+
+		<meta itemprop="name" content="『ゼロからはじめるLinuxサーバー構築・運用ガイド』読んだ">
+<meta itemprop="description" content="インフラ運用なんも知らんしKindleのセールで半額だったから購入。">
+<meta itemprop="datePublished" content="2021-12-08T12:21:38&#43;09:00" />
+<meta itemprop="dateModified" content="2021-12-08T12:21:38&#43;09:00" />
+<meta itemprop="wordCount" content="385">
+
+
+
+<meta itemprop="keywords" content="" />
+		<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="『ゼロからはじめるLinuxサーバー構築・運用ガイド』読んだ"/>
+<meta name="twitter:description" content="インフラ運用なんも知らんしKindleのセールで半額だったから購入。"/>
+
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+
+	<link rel="stylesheet" href="https://guricerin.github.io/shit-blog/css/style.css">
+	<link rel="stylesheet" href="https://guricerin.github.io/shit-blog/css/custom.css">
+
+	<link rel="shortcut icon" href="https://guricerin.github.io/shit-blog/favicon.ico">
+		
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-109224463-2', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container header__container">
+		
+	<div class="logo logo--mixed">
+		<a class="logo__link" href="https://guricerin.github.io/shit-blog/" title="グリのクソブログ" rel="home">
+			<div class="logo__item logo__imagebox">
+					<img class="logo__img" src="https://guricerin.github.io/shit-blog/img/icon.jpg">
+				</div><div class="logo__item logo__text">
+					<div class="logo__title">グリのクソブログ</div>
+					<div class="logo__tagline">主にB&#39;z</div>
+				</div>
+		</a>
+	</div>
+		
+<nav class="menu">
+	<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
+		<span class="menu__btn-title" tabindex="-1">Menu</span>
+	</button>
+	<ul class="menu__list">
+		<li class="menu__item">
+			<a class="menu__link" href="https://guricerin.github.io/shit-blog/">
+				
+				<span class="menu__text">HOME</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="https://guricerin.github.io/shit-blog/privacy-policy">
+				
+				<span class="menu__text">PRIVACY POLICY</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="https://guricerin.github.io/shit-blog/feed.xml">
+				
+				<span class="menu__text">RSS</span>
+				
+			</a>
+		</li>
+	</ul>
+</nav>
+
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+	<article class="post">
+		<header class="post__header">
+			<h1 class="post__title">『ゼロからはじめるLinuxサーバー構築・運用ガイド』読んだ</h1>
+			<div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2021-12-08T12:21:38&#43;09:00">2021-12-08</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="https://guricerin.github.io/shit-blog/categories/it%E3%82%A4%E3%83%B3%E3%83%95%E3%83%A9/" rel="category">ITインフラ</a>, <a class="meta__link" href="https://guricerin.github.io/shit-blog/categories/%E6%9B%B8%E7%89%A9/" rel="category">書物</a>
+	</span>
+</div></div>
+		</header>
+		
+<div class="post__toc toc">
+	<div class="toc__title">Page content</div>
+	<div class="toc__menu">
+		<nav id="TableOfContents">
+  <ul>
+    <li><a href="#第1章-linuxって何">第1章 Linuxって何</a></li>
+    <li><a href="#第2章-仮想サーバーを用意しよう">第2章 仮想サーバーを用意しよう</a>
+      <ul>
+        <li><a href="#学習環境を用意しよう">学習環境を用意しよう</a></li>
+        <li><a href="#centos-7のインストール">CentOS 7のインストール</a></li>
+      </ul>
+    </li>
+    <li><a href="#第3章-基本的なコマンドを覚えよう">第3章 基本的なコマンドを覚えよう</a></li>
+    <li><a href="#第4章-ネットワークの基本と設定">第4章 ネットワークの基本と設定</a></li>
+    <li><a href="#第5章-サーバーを構築しよう">第5章 サーバーを構築しよう</a></li>
+    <li><a href="#第6章-webページをアップしよう">第6章 Webページをアップしよう</a>
+      <ul>
+        <li><a href="#apacheの基本">Apacheの基本</a></li>
+      </ul>
+    </li>
+    <li><a href="#第7章-lampサーバーを作ってみよう">第7章 LAMPサーバーを作ってみよう</a>
+      <ul>
+        <li><a href="#必要なソフトウェアのインストール">必要なソフトウェアのインストール</a></li>
+      </ul>
+    </li>
+    <li><a href="#第8章-セキュリティのポイントを押さえよう">第8章 セキュリティのポイントを押さえよう</a>
+      <ul>
+        <li><a href="#セキュリティ対策の基本">セキュリティ対策の基本</a></li>
+      </ul>
+    </li>
+    <li><a href="#第9章-dockerを使ってみよう">第9章 Dockerを使ってみよう</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#雑な感想">雑な感想</a></li>
+  </ul>
+</nav>
+	</div>
+</div><div class="content post__content clearfix">
+			<p>インフラ運用なんも知らんしKindleのセールで半額だったから購入。</p>
+<p>本書は、さくらインターネットのVPSサービス上にWebサーバとDBサーバの構成で、WordPressサイトの構築・運用の方法を解説する。<br>
+WordPress自体にそれほど興味はないが、インフラド素人向けの丁寧そうな雰囲気を醸し出しているので興味が湧いた。</p>
+<p>以下に記述するのは、おれが知らなかったことや本書発刊当時（2016年）と状況が変わって本書通りの操作ではうまくいかない部分のメモ。</p>
+<hr>
+<h2 id="第1章-linuxって何">第1章 Linuxって何</h2>
+<ul>
+<li>BIND : DNSサーバ。</li>
+<li>Samba : Windowsのファイルサーバ機能機能などを実現し、LinuxサーバをWindowsサーバの代替として使用可能にする。</li>
+<li>Squid : プロキシサーバ。</li>
+<li>VPS : Virtual Priate Server。物理サーバ上の仮想化ソフトウェアで管理された仮想サーバ。</li>
+</ul>
+<hr>
+<h2 id="第2章-仮想サーバーを用意しよう">第2章 仮想サーバーを用意しよう</h2>
+<h3 id="学習環境を用意しよう">学習環境を用意しよう</h3>
+<h4 id="vpsに申し込み">VPSに申し込み</h4>
+<ul>
+<li>さくらのVPSでサーバーを新規作成する際、ブラウザがFireFoxだとクレカのセキュリティコードを正しく認識してくれないので、Edgeから登録。</li>
+<li>以後、さくらのコントロールパネルはEdgeからアクセスすることにする。</li>
+<li>2021/12現在、CentOS 7が標準で用意されているのでそれを選択。</li>
+</ul>
+<h4 id="us配列の場合">US配列の場合</h4>
+<ul>
+<li>さくらのコントロールパネルにて<code>サーバー</code> -&gt; <code>サーバー情報</code> -&gt; <code>コンソール設定</code>のコンソールキー配列を<code>en-us</code>に変更しておく。</li>
+</ul>
+<h3 id="centos-7のインストール">CentOS 7のインストール</h3>
+<h4 id="ユーザ追加">ユーザ追加</h4>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ useradd -d /home/centuser -s /bin/bash centuser
+$ passwd centuser <span style="color:#75715e"># 対話形式でパスワードを入力</span>
+</code></pre></div><h4 id="sshの準備">SSHの準備</h4>
+<p>おれはviの初歩的な操作は可能だが、nanoはなんも知らんのでインストールしていない。</p>
+<h4 id="selinuxとファイヤウォールの変更">SELinuxとファイヤウォールの変更</h4>
+<p><code>firewalld</code>がデーモンとして有効化されていないので設定してから再読み込み。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ systemctl start firewalld
+$ systemctl enable firewalld
+$ systemctl is-enabled firewalld <span style="color:#75715e"># 確認</span>
+$ firewall-cmd --reload
+</code></pre></div><h4 id="sshクライアントの準備">SSHクライアントの準備</h4>
+<p>さくらのコントロールパネルで10022ポートを解放させる。</p>
+<ul>
+<li><code>サーバー</code> -&gt; <code>グローバルネットワーク</code> -&gt; <code>パケットフィルターを設定</code> -&gt; <code>接続可能ポートを追加</code>
+<ul>
+<li><code>フィルターの種類</code> : <code>カスタム</code></li>
+<li><code>プロトコル</code> : <code>TCP</code></li>
+<li><code>ポート番号</code> : <code>10022</code></li>
+<li><code>許可する送信元IPアドレス</code> : <code>全て許可</code></li>
+</ul>
+</li>
+</ul>
+<p>centuserに<code>sudo</code>実行権を付与。パスワードは毎回入力させる。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ visudo
+</code></pre></div><pre><code># /etc/sudoers
+centuser ALL=(ALL) PASSWD: ALL
+</code></pre><p>Windows側で公開鍵・秘密鍵作成。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ ssh-keygen ecdsa
+$ cd .ssh
+$ scp -P <span style="color:#ae81ff">10022</span> id_ecdsa.pub centuser@&lt;IP_ADDRESS&gt;:.
+</code></pre></div><p>centos側の準備。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ su centuser
+$ cd $HOME
+$ mkdir .ssh <span style="color:#f92672">&amp;&amp;</span> touch authorized_keys
+$ sudo chmod <span style="color:#ae81ff">700</span> .ssh
+$ sudo chmod <span style="color:#ae81ff">600</span> .ssh/authorized_keys
+$ cat ../id_ecdsa.pub &gt;&gt; .ssh/authorized_keys
+</code></pre></div><p>Windows側からssh接続。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ ssh -p <span style="color:#ae81ff">10022</span> -i .<span style="color:#ae81ff">\i</span>d_ecdsa centuser@&lt;IP_ADDRESS&gt;
+</code></pre></div><hr>
+<h2 id="第3章-基本的なコマンドを覚えよう">第3章 基本的なコマンドを覚えよう</h2>
+<ul>
+<li><code>ls</code>にもワイルドカードなどのメタ文字が使える。</li>
+<li>アーカイブファイル : 複数のファイルを一つにまとめたファイル。ディレクトリを圧縮する際の前準備。</li>
+<li><code>tar</code>の使い方（いまさら？）。
+<ul>
+<li>オプション
+<ul>
+<li><code>-c</code> : アーカイブを作成</li>
+<li><code>-x</code> : アーカイブを展開</li>
+<li><code>-f &lt;PATH&gt;</code> : アーカイブファイルを指定</li>
+<li><code>-z</code> : gzip</li>
+<li><code>-j</code> : bzip2</li>
+<li><code>-J</code> : xz</li>
+<li><code>-t</code> : アーカイブの内容を表示</li>
+<li><code>-v</code> : 詳細を表示</li>
+</ul>
+</li>
+<li><code>tar -cvf &lt;DST&gt; &lt;SRC&gt;</code> : SRCディレクトリをDSTファイルにアーカイブ化。</li>
+<li><code>tar -czvf &lt;DST&gt; &lt;SRC&gt;</code> : SRCディレクトリをアーカイブ化するとともにDSTファイルに圧縮（圧縮方式はgzip）。</li>
+<li><code>tar -zxvf &lt;SRC&gt;</code> : SRC圧縮ファイルをカレントディレクトリに展開。</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="第4章-ネットワークの基本と設定">第4章 ネットワークの基本と設定</h2>
+<p>知らんかったのは<code>NetworkManager</code>とその付属品<code>nmcli</code>ぐらい。これらを試そうにも変な設定しちゃったらsshが繋がらなくなるので、下手に実演できない。</p>
+<hr>
+<h2 id="第5章-サーバーを構築しよう">第5章 サーバーを構築しよう</h2>
+<ul>
+<li><code>su</code>コマンドで<code>-</code>オプションがないと、変更元のユーザの環境変数を引き継いでしまう（変更先の環境変数にはいくつかを除いて切り替わらない）ので、<code>-</code>をつけるのを推奨。</li>
+<li><code>yum-cron</code> : yumコマンドを自動化するデーモン。</li>
+<li><code>uptime</code> : 右端3つの数値がCPUコア数を上回ればシステムに負荷がかかっていることを示す。</li>
+<li>デーモンとサービスの違い
+<ul>
+<li>デーモン : 主にUnix系OSでの呼び名。</li>
+<li>サービス : 主にWindowsでの呼び名。</li>
+</ul>
+</li>
+<li><code>crontab</code>
+<ul>
+<li>オプション
+<ul>
+<li><code>-e</code> : スケジュール設定を編集。</li>
+<li><code>-l</code> : スケジュール設定を表示。</li>
+<li><code>-r</code> : すべてのスケジュール設定を削除。</li>
+</ul>
+</li>
+<li>書式 : <code>分 時 日 月 曜日 実行コマンド</code>
+<ul>
+<li><code>実行コマンド</code>以外をすべて<code>*</code>にしたら1分毎に実行される。</li>
+</ul>
+</li>
+<li>指定したコマンドは、crontabを実行したユーザの権限を受け継ぐ。</li>
+</ul>
+</li>
+<li>NTP (Network Time Protocol)
+<ul>
+<li>インターネット経由で時刻を正確に同期させるプロトコル。</li>
+</ul>
+</li>
+<li><code>chronyd</code> : NTPを使うデーモン。</li>
+</ul>
+<hr>
+<h2 id="第6章-webページをアップしよう">第6章 Webページをアップしよう</h2>
+<h3 id="apacheの基本">Apacheの基本</h3>
+<ul>
+<li>ドキュメントルート以下は、ファイルの書き込みにrootユーザ権限が必要。</li>
+<li><code>httpd -t</code> : Apacheの設定ファイルに構文エラーがないかチェックする。</li>
+<li>sshの10022ポートと同じように、さくらのコントロールパネルで80ポートを開放する。
+<ul>
+<li><code>サーバー</code> -&gt; <code>グローバルネットワーク</code> -&gt; <code>パケットフィルターを設定</code> -&gt; <code>接続可能ポートを追加</code></li>
+<li><code>フィルターの種類</code> : <code>Web</code></li>
+<li><code>プロトコル</code> : <code>TCP</code></li>
+<li><code>ポート番号</code> : <code>80/443</code></li>
+<li><code>許可する送信元IPアドレス</code> : <code>全て許可</code></li>
+</ul>
+</li>
+<li><code>systemctl</code>
+<ul>
+<li><code>systemctl reload</code> : 設定ファイル再読み込み。</li>
+<li><code>systemctl restart</code> : デーモンを再起動。</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="第7章-lampサーバーを作ってみよう">第7章 LAMPサーバーを作ってみよう</h2>
+<h3 id="必要なソフトウェアのインストール">必要なソフトウェアのインストール</h3>
+<p>PHPのバージョンが5.4.16なので、インストールするWordPressのバージョンもそれに合わせる。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ curl -LO http://ja.wordpress.org/wordpress-5.1.11-ja.tar.gz
+</code></pre></div><hr>
+<h2 id="第8章-セキュリティのポイントを押さえよう">第8章 セキュリティのポイントを押さえよう</h2>
+<h3 id="セキュリティ対策の基本">セキュリティ対策の基本</h3>
+<ul>
+<li><code>netstat -ltu</code> : 開いているTCP/UDPポートを表示。
+<ul>
+<li>オプション
+<ul>
+<li><code>-l</code> : listenしているポートのみ表示。</li>
+<li><code>-t</code> : TCPを表示。</li>
+<li><code>-u</code> : UDPを表示。</li>
+<li><code>-n</code> : ポートやホストを数値で表示。</li>
+<li><code>-p</code> : ポートを開いているプロセスを表示。</li>
+<li><code>-4</code> : IPv4のみ表示。</li>
+<li><code>-6</code> : IPv6のみ表示。</li>
+</ul>
+</li>
+</ul>
+</li>
+<li><code>ss</code> : netstatの後継。</li>
+<li><code>/etc/ssh/sshd_config</code>の推奨設定
+<ul>
+<li><code>AllowUsers &lt;ユーザ名&gt;</code> : 接続を許可するユーザをホワイトリスト形式で指定。</li>
+</ul>
+</li>
+<li><code>last</code> : ログイン履歴を表示。</li>
+<li><code>lastlog</code> : ユーザ毎の最終ログインを表示。</li>
+<li><code>/etc/logrotate.conf</code> : ログファイルのバックアップ設定ファイル。
+<ul>
+<li>デフォルトでは週に一回バックアップがとられる。</li>
+<li><code>rotate 52</code> : ログファイルのバックアップファイルが約1年間分保存される。</li>
+</ul>
+</li>
+</ul>
+<hr>
+<h2 id="第9章-dockerを使ってみよう">第9章 Dockerを使ってみよう</h2>
+<p>P.219のDockerfileはそのままでは<code>RUN yum -y install httpd</code>の部分で失敗する。CentOS 6がEOLを迎え、yumのリポジトリが死んでいるため。<br>
+以下のように編集し、リポジトリURLを変更する。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-dockerfile" data-lang="dockerfile"><span style="color:#66d9ef">FROM</span><span style="color:#e6db74"> centos:6</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">MAINTAINER</span><span style="color:#e6db74"> testimage &lt;centuser@sakura&gt;</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">RUN</span> sed -i -e <span style="color:#e6db74">&#34;s/^mirrorlist=http:\/\/mirrorlist.centos.org/#mirrorlist=http:\/\/mirrorlist.centos.org/g&#34;</span> /etc/yum.repos.d/CentOS-Base.repo <span style="color:#ae81ff">\ </span> <span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span>    <span style="color:#f92672">&amp;&amp;</span> sed -i -e <span style="color:#e6db74">&#34;s/^#baseurl=http:\/\/mirror.centos.org/baseurl=http:\/\/vault.centos.org/g&#34;</span> /etc/yum.repos.d/CentOS-Base.repo<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">RUN</span> yum -y install httpd<span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">EXPOSE</span><span style="color:#e6db74"> 80</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010">
+</span><span style="color:#960050;background-color:#1e0010"></span><span style="color:#66d9ef">CMD</span> /etc/init.d/httpd start <span style="color:#f92672">&amp;&amp;</span> bash<span style="color:#960050;background-color:#1e0010">
+</span></code></pre></div><p>また、このイメージからコンテナを起動する前に、80ポートを使用しているホストOSのhttpdを停止させておく。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ sudo systemctl stop httpd
+</code></pre></div><h5 id="参考">参考</h5>
+<ul>
+<li><a href="https://zenn.dev/tantan_tanuki/articles/be42cae9b2b3fa">https://zenn.dev/tantan_tanuki/articles/be42cae9b2b3fa</a></li>
+</ul>
+<hr>
+<h2 id="雑な感想">雑な感想</h2>
+<ul>
+<li>おれにとって本書は難易度が低すぎた。思っていたよりもあっさりとした解説で終了しちまった感じ。</li>
+<li>たぶんLinuxに入門したての人に最も適している。</li>
+<li>まあこんなこと書いといて、本書に記載されているコマンドやテクニックのうちのほとんどを三日後には忘れてるだろうが。</li>
+</ul>
+		</div>
+	</article>
+</main>
+
+
+<nav class="pager flex">
+	<div class="pager__item pager__item--prev">
+		<a class="pager__link" href="https://guricerin.github.io/shit-blog/post/2021/12/05-wasbook/" rel="prev">
+			<span class="pager__subtitle">«&thinsp;Previous</span>
+			<p class="pager__title">『体系的に学ぶ 安全なWebアプリケーションの作り方 第2版』読んだ</p>
+		</a>
+	</div>
+</nav>
+
+<section class="comments">
+	<div id="disqus_thread"></div>
+<script type="application/javascript">
+    var disqus_config = function () {
+    
+    
+    
+    };
+    (function() {
+        if (["localhost", "127.0.0.1"].indexOf(window.location.hostname) != -1) {
+            document.getElementById('disqus_thread').innerHTML = 'Disqus comments not available by default when the website is previewed locally.';
+            return;
+        }
+        var d = document, s = d.createElement('script'); s.async = true;
+        s.src = '//' + "https-guricerin-github-io-shit-blog" + '.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+    })();
+</script>
+<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+<a href="https://disqus.com" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</section>
+
+
+			</div>
+			
+
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2021 guricerin.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="https://guricerin.github.io/shit-blog/js/menu.js"></script>
+<script src="https://guricerin.github.io/shit-blog/js/custom.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js?config=TeX-AMS-MML_HTMLorMML" async></script>
+</body>
+</html>
