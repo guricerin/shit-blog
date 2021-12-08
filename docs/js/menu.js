@@ -25,10 +25,11 @@
 }(document, window));
 
 (function disableDisqusAds(document) {
+    console.error('hahahaha');
     for (let elm of document.querySelectorAll('dsq-*')) {
-        console.log(elm);
+        console.error(elm);
         if (elm.hasAttribute('sandbox')) {
-            console.log("display none");
+            console.error("display none");
             elm.style.display = 'none';
         }
     }
