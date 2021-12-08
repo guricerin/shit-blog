@@ -25,7 +25,7 @@
 }(document, window));
 
 (function disableDisqusAds(document) {
-    console.error('bababab');
+    console.error('afafaf');
     for (let elm of document.querySelectorAll("[id^='dsq']")) {
         console.error(elm);
         if (elm.hasAttribute('sandbox')) {
