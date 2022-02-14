@@ -100,17 +100,17 @@ if (!doNotTrack) {
 			<div class="primary">
 			
 <main class="main" role="main">
-	<article class="post">
-		<header class="post__header">
-			<h1 class="post__title">『Scheme手習い』</h1>
-			<div class="post__meta meta">
+    <article class="post">
+        <header class="post__header">
+            <h1 class="post__title">『Scheme手習い』</h1>
+            <div class="post__meta meta">
 <div class="meta__item-datetime meta__item">
 	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2018-09-13T20:54:25&#43;09:00">2018-09-13</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="https://guricerin.github.io/shit-blog/categories/scheme/" rel="category">Scheme</a>, <a class="meta__link" href="https://guricerin.github.io/shit-blog/categories/%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0/" rel="category">プログラミング</a>, <a class="meta__link" href="https://guricerin.github.io/shit-blog/categories/%E6%9B%B8%E7%89%A9/" rel="category">書物</a>
 	</span>
 </div></div>
-		</header>
-		<div class="content post__content clearfix">
-			<p>『7つの言語 7つの世界』を見事に積読することに成功したが、どうしてもLispへの興味が衰えないので、『Scheme手習い』をだらだら読んでいた。</p>
+        </header>
+        <div class="content post__content clearfix">
+            <p>『7つの言語 7つの世界』を見事に積読することに成功したが、どうしてもLispへの興味が衰えないので、『Scheme手習い』をだらだら読んでいた。</p>
 <p>内容は、Schemeを通じてひたすら再帰の考え方を身につけさせる、というもの。ただし、再帰以外にも、ラムダ計算やらSchemeインタプリタをScheme上で実装するなんて話題も出てくる。</p>
 <p>順当に読み進めていけば詰まるようなことはないが、継続やYコンビネータといった概念が出てくるようになる第8章の後半以降から、難易度が一気に跳ね上がる。そしてもちろん、おれはこれらの概念を理解できていない。こんなんでこの先大丈夫か。</p>
 <p>以下のコードは、色んな章で使いまわされる関数をまとめたもの。ちなみに処理系はGaucheを使用している。これらのコードをbase.scmファイルとして保存し、同じディレクトリ下の別の.scmファイルの先頭に (use base) とでも書いとけばいいはず。</p>
@@ -206,8 +206,8 @@ if (!doNotTrack) {
 
 (<span style="color:#a6e22e">provide</span> <span style="color:#e6db74">&#34;base&#34;</span>)
 </code></pre></div>
-		</div>
-	</article>
+        </div>
+    </article>
 </main>
 
 
@@ -226,6 +226,9 @@ if (!doNotTrack) {
 	</div>
 </nav>
 
+<script src="https://utteranc.es/client.js" repo="guricerin/shit-blog" issue-term="pathname" label="[By Utterances]"
+    theme="github-light" crossorigin="anonymous" async>
+    </script>
 
 			</div>
 			
@@ -235,7 +238,7 @@ if (!doNotTrack) {
 	<div class="container footer__container flex">
 		
 		<div class="footer__copyright">
-			&copy; 2021 guricerin.
+			&copy; 2022 guricerin.
 			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
 		</div>
 	</div>
