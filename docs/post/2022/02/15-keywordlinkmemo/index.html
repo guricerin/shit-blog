@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title>自動キーワードリンク機能付きのメモアプリを作った - グリのクソブログ</title>
+	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
+	<meta name="description" content="">
+		<meta property="og:title" content="自動キーワードリンク機能付きのメモアプリを作った" />
+<meta property="og:description" content="類似アプリが（たぶん）なかったので自作。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://guricerin.github.io/shit-blog/post/2022/02/15-keywordlinkmemo/" />
+<meta property="article:published_time" content="2022-02-15T18:13:20+09:00" />
+<meta property="article:modified_time" content="2022-02-15T18:13:20+09:00" />
+
+		<meta itemprop="name" content="自動キーワードリンク機能付きのメモアプリを作った">
+<meta itemprop="description" content="類似アプリが（たぶん）なかったので自作。">
+<meta itemprop="datePublished" content="2022-02-15T18:13:20&#43;09:00" />
+<meta itemprop="dateModified" content="2022-02-15T18:13:20&#43;09:00" />
+<meta itemprop="wordCount" content="11">
+
+
+
+<meta itemprop="keywords" content="" />
+		<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="自動キーワードリンク機能付きのメモアプリを作った"/>
+<meta name="twitter:description" content="類似アプリが（たぶん）なかったので自作。"/>
+
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link rel="dns-prefetch" href="//fonts.googleapis.com">
+	<link rel="dns-prefetch" href="//fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+
+	<link rel="stylesheet" href="https://guricerin.github.io/shit-blog/css/style.css">
+	<link rel="stylesheet" href="https://guricerin.github.io/shit-blog/css/custom.css">
+
+	<link rel="shortcut icon" href="https://guricerin.github.io/shit-blog/favicon.ico">
+		
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-109224463-2', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+</head>
+<body class="body">
+	<div class="container container--outer">
+		<header class="header">
+	<div class="container header__container">
+		
+	<div class="logo logo--mixed">
+		<a class="logo__link" href="https://guricerin.github.io/shit-blog/" title="グリのクソブログ" rel="home">
+			<div class="logo__item logo__imagebox">
+					<img class="logo__img" src="https://guricerin.github.io/shit-blog/img/icon.jpg">
+				</div><div class="logo__item logo__text">
+					<div class="logo__title">グリのクソブログ</div>
+					<div class="logo__tagline">主にB&#39;z</div>
+				</div>
+		</a>
+	</div>
+		
+<nav class="menu">
+	<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
+		<span class="menu__btn-title" tabindex="-1">Menu</span>
+	</button>
+	<ul class="menu__list">
+		<li class="menu__item">
+			<a class="menu__link" href="https://guricerin.github.io/shit-blog/">
+				
+				<span class="menu__text">HOME</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="https://guricerin.github.io/shit-blog/privacy-policy">
+				
+				<span class="menu__text">PRIVACY POLICY</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="https://guricerin.github.io/shit-blog/feed.xml">
+				
+				<span class="menu__text">RSS</span>
+				
+			</a>
+		</li>
+	</ul>
+</nav>
+
+	</div>
+</header>
+		<div class="wrapper flex">
+			<div class="primary">
+			
+<main class="main" role="main">
+    <article class="post">
+        <header class="post__header">
+            <h1 class="post__title">自動キーワードリンク機能付きのメモアプリを作った</h1>
+            <div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2022-02-15T18:13:20&#43;09:00">2022-02-15</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="https://guricerin.github.io/shit-blog/categories/%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0/" rel="category">プログラミング</a>, <a class="meta__link" href="https://guricerin.github.io/shit-blog/categories/csharp/" rel="category">CSharp</a>
+	</span>
+</div></div>
+        </header>
+        <div class="content post__content clearfix">
+            <p>類似アプリが（たぶん）なかったので自作。</p>
+<p>リポジトリは<a href="https://github.com/guricerin/KeywordLinkMemo">ここ</a>。<br>
+言語はC#、GUIフレームワークはWPF。C#を触るのは1年以上ぶり。</p>
+<p>目指したのはニコニコ大百科やはてなキーワードなどのデスクトップアプリ版といった感じ。</p>
+<p>以下のGIFは本アプリの動作デモ。デザインがクソダサなのには目をつむってほしい。</p>
+<p><img src="./demo.gif" alt="demo"></p>
+<p>想定される使用用途は、登場人物がやたら多い小説やネフェイスト系の探索RPGなどの情報整理。ていうかそういうアプリが欲しいから作った。</p>
+<p>先述のニコニコ大百科などでは、キーワードの抽出にはtrie木とその応用であるAho Corasick法というアルゴリズムを用いるらしい。よくわからないのでここらへんはライブラリに頼った。</p>
+<p>ひとつ注意すべき点があり、現状ではテキストの前方から貪欲にキーワードを抽出するという仕組みになっている。<br>
+例えば<a href="http://chasen.org/~taku/blog/archives/2006/01/autolink.html">このページ</a>の例で言えば、抽出されるのは「いう」と「かきく」であり、「きくけこさし」と「いう」ではない。<br>
+どうやら動的計画法によって最長キーワード優先一致にできるようなので、気が向いたら改善に挑戦してみる。え、おれがDP？&hellip;&hellip;まあなんとかならなくないことはないかもしれない。</p>
+        </div>
+    </article>
+</main>
+
+
+<nav class="pager flex">
+	<div class="pager__item pager__item--prev">
+		<a class="pager__link" href="https://guricerin.github.io/shit-blog/post/2021/12/08-operation-linux-server/" rel="prev">
+			<span class="pager__subtitle">«&thinsp;Previous</span>
+			<p class="pager__title">『ゼロからはじめるLinuxサーバー構築・運用ガイド』読んだ</p>
+		</a>
+	</div>
+</nav>
+
+<script src="https://utteranc.es/client.js" repo="guricerin/shit-blog" issue-term="pathname" label="[By Utterances]"
+    theme="github-light" crossorigin="anonymous" async>
+    </script>
+
+			</div>
+			
+
+		</div>
+		<footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2022 guricerin.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+</footer>
+	</div>
+<script async defer src="https://guricerin.github.io/shit-blog/js/menu.js"></script>
+<script src="https://guricerin.github.io/shit-blog/js/custom.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js?config=TeX-AMS-MML_HTMLorMML" async></script>
+</body>
+</html>
