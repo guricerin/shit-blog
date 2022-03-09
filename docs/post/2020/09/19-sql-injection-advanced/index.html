@@ -1,20 +1,22 @@
 <!DOCTYPE html>
 <html class="no-js" lang="en">
+
 <head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>WebGoat-7: SQL Injection (advanced) - グリのクソブログ</title>
-	<script>(function(d,e){d[e]=d[e].replace("no-js","js");})(document.documentElement,"className");</script>
-	<meta name="description" content="">
-		<meta property="og:title" content="WebGoat-7: SQL Injection (advanced)" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>WebGoat-7: SQL Injection (advanced) - グリのクソブログ</title>
+  <script>(function (d, e) { d[e] = d[e].replace("no-js", "js"); })(document.documentElement, "className");</script>
+  <meta name="description"
+    content="">
+  <meta property="og:title" content="WebGoat-7: SQL Injection (advanced)" />
 <meta property="og:description" content="ねむい。" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://guricerin.github.io/shit-blog/post/2020/09/19-sql-injection-advanced/" />
 <meta property="article:published_time" content="2020-09-19T18:17:30+09:00" />
 <meta property="article:modified_time" content="2020-09-19T18:17:30+09:00" />
 
-		<meta itemprop="name" content="WebGoat-7: SQL Injection (advanced)">
+  <meta itemprop="name" content="WebGoat-7: SQL Injection (advanced)">
 <meta itemprop="description" content="ねむい。">
 <meta itemprop="datePublished" content="2020-09-19T18:17:30&#43;09:00" />
 <meta itemprop="dateModified" content="2020-09-19T18:17:30&#43;09:00" />
@@ -23,20 +25,20 @@
 
 
 <meta itemprop="keywords" content="" />
-		<meta name="twitter:card" content="summary"/>
+  <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="WebGoat-7: SQL Injection (advanced)"/>
 <meta name="twitter:description" content="ねむい。"/>
 
-	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-	<link rel="dns-prefetch" href="//fonts.googleapis.com">
-	<link rel="dns-prefetch" href="//fonts.gstatic.com">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="dns-prefetch" href="//fonts.googleapis.com">
+  <link rel="dns-prefetch" href="//fonts.gstatic.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700" >
 
-	<link rel="stylesheet" href="https://guricerin.github.io/shit-blog/css/style.css">
-	<link rel="stylesheet" href="https://guricerin.github.io/shit-blog/css/custom.css">
+  <link rel="stylesheet" href="https://guricerin.github.io/shit-blog/css/style.css">
+  <link rel="stylesheet" href="https://guricerin.github.io/shit-blog/css/custom.css">
 
-	<link rel="shortcut icon" href="https://guricerin.github.io/shit-blog/favicon.ico">
-		
+  <link rel="shortcut icon" href="https://guricerin.github.io/shit-blog/%20favicon.ico">
+  
 <script type="application/javascript">
 var doNotTrack = false;
 if (!doNotTrack) {
@@ -48,10 +50,13 @@ if (!doNotTrack) {
 </script>
 <script async src='https://www.google-analytics.com/analytics.js'></script>
 
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <link rel="stylesheet" href="https://guricerin.github.io/shit-blog/css/share.css">
 </head>
+
 <body class="body">
-	<div class="container container--outer">
-		<header class="header">
+  <div class="container container--outer">
+    <header class="header">
 	<div class="container header__container">
 		
 	<div class="logo logo--mixed">
@@ -96,9 +101,9 @@ if (!doNotTrack) {
 
 	</div>
 </header>
-		<div class="wrapper flex">
-			<div class="primary">
-			
+    <div class="wrapper flex">
+      <div class="primary">
+        
 <main class="main" role="main">
     <article class="post">
         <header class="post__header">
@@ -130,6 +135,35 @@ if (!doNotTrack) {
     </article>
 </main>
 
+<hr/>
+<div class="sns-share">
+    <ul>
+        <li>
+            <a class="sns-share-btn sns-share-btn-fb"
+                href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fguricerin.github.io%2fshit-blog%2fpost%2f2020%2f09%2f19-sql-injection-advanced%2f&t=WebGoat-7%3a%20SQL%20Injection%20%28advanced%29 - グリのクソブログ" target="_blank"
+                title="Facebook" rel="nofollow"><i class="fab fa-facebook-f"></i></a>
+        </li>
+        <li>
+            <a class="sns-share-btn sns-share-btn-tw"
+                href="https://twitter.com/intent/tweet?url=https%3a%2f%2fguricerin.github.io%2fshit-blog%2fpost%2f2020%2f09%2f19-sql-injection-advanced%2f&text=WebGoat-7%3a%20SQL%20Injection%20%28advanced%29 - グリのクソブログ" target="_blank"
+                title="Twitter" rel="nofollow"><i class="fab fa-twitter"></i></a>
+        </li>
+        
+        <li>
+            <a class="sns-share-btn sns-share-btn-hb"
+                href="https://b.hatena.ne.jp/add?mode=confirm&url=https%3a%2f%2fguricerin.github.io%2fshit-blog%2fpost%2f2020%2f09%2f19-sql-injection-advanced%2f&title=WebGoat-7%3a%20SQL%20Injection%20%28advanced%29 - グリのクソブログ" target="_blank"
+                title="hatena" rel="nofollow">B!</a>
+        </li>
+        <li>
+            <a class="sns-share-btn sns-share-btn-po"
+                href="https://getpocket.com/edit?url=https%3a%2f%2fguricerin.github.io%2fshit-blog%2fpost%2f2020%2f09%2f19-sql-injection-advanced%2f&title=WebGoat-7%3a%20SQL%20Injection%20%28advanced%29 - グリのクソブログ" target="_blank" title="pocket"
+                rel="nofollow"><i class="fab fa-get-pocket"></i></a>
+        </li>
+    </ul>
+</div>
+
+
+
 
 <nav class="pager flex">
 	<div class="pager__item pager__item--prev">
@@ -150,11 +184,11 @@ if (!doNotTrack) {
     theme="github-light" crossorigin="anonymous" async>
     </script>
 
-			</div>
-			
+      </div>
+      
 
-		</div>
-		<footer class="footer">
+    </div>
+    <footer class="footer">
 	<div class="container footer__container flex">
 		
 		<div class="footer__copyright">
@@ -163,9 +197,10 @@ if (!doNotTrack) {
 		</div>
 	</div>
 </footer>
-	</div>
-<script async defer src="https://guricerin.github.io/shit-blog/js/menu.js"></script>
-<script src="https://guricerin.github.io/shit-blog/js/custom.js"></script>
+  </div>
+  <script async defer src="https://guricerin.github.io/shit-blog/%20js/menu.js"></script>
+  <script src="https://guricerin.github.io/shit-blog/js/custom.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js?config=TeX-AMS-MML_HTMLorMML" async></script>
 </body>
+
 </html>
