@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Go &#43; Mint &#43; GCPでTwitterクローンを開発した - グリのクソブログ</title>
+  <script>(function (d, e) { d[e] = d[e].replace("no-js", "js"); })(document.documentElement, "className");</script>
+  <meta name="description"
+    content="">
+  <meta property="og:title" content="Go &#43; Mint &#43; GCPでTwitterクローンを開発した" />
+<meta property="og:description" content="以前 @chokudai 氏が以下のことをつぶやいていた。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://guricerin.github.io/shit-blog/post/2022/03/24-grumbler/" />
+<meta property="article:published_time" content="2022-03-24T00:11:35+09:00" />
+<meta property="article:modified_time" content="2022-03-24T00:11:35+09:00" />
+
+  <meta itemprop="name" content="Go &#43; Mint &#43; GCPでTwitterクローンを開発した">
+<meta itemprop="description" content="以前 @chokudai 氏が以下のことをつぶやいていた。">
+<meta itemprop="datePublished" content="2022-03-24T00:11:35&#43;09:00" />
+<meta itemprop="dateModified" content="2022-03-24T00:11:35&#43;09:00" />
+<meta itemprop="wordCount" content="192">
+
+
+
+<meta itemprop="keywords" content="" />
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Go &#43; Mint &#43; GCPでTwitterクローンを開発した"/>
+<meta name="twitter:description" content="以前 @chokudai 氏が以下のことをつぶやいていた。"/>
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="dns-prefetch" href="//fonts.googleapis.com">
+  <link rel="dns-prefetch" href="//fonts.gstatic.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700" >
+
+  <link rel="stylesheet" href="https://guricerin.github.io/shit-blog/css/style.css">
+  <link rel="stylesheet" href="https://guricerin.github.io/shit-blog/css/custom.css">
+
+  <link rel="shortcut icon" href="https://guricerin.github.io/shit-blog/%20favicon.ico">
+  
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-109224463-2', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <link rel="stylesheet" href="https://guricerin.github.io/shit-blog/css/share.css">
+</head>
+
+<body class="body">
+  <div class="container container--outer">
+    <header class="header">
+	<div class="container header__container">
+		
+	<div class="logo logo--mixed">
+		<a class="logo__link" href="https://guricerin.github.io/shit-blog/" title="グリのクソブログ" rel="home">
+			<div class="logo__item logo__imagebox">
+					<img class="logo__img" src="https://guricerin.github.io/shit-blog/img/icon.jpg">
+				</div><div class="logo__item logo__text">
+					<div class="logo__title">グリのクソブログ</div>
+					<div class="logo__tagline">主にB&#39;z</div>
+				</div>
+		</a>
+	</div>
+		
+<nav class="menu">
+	<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
+		<span class="menu__btn-title" tabindex="-1">Menu</span>
+	</button>
+	<ul class="menu__list">
+		<li class="menu__item">
+			<a class="menu__link" href="https://guricerin.github.io/shit-blog/">
+				
+				<span class="menu__text">HOME</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="https://guricerin.github.io/shit-blog/privacy-policy">
+				
+				<span class="menu__text">PRIVACY POLICY</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="https://guricerin.github.io/shit-blog/feed.xml">
+				
+				<span class="menu__text">RSS</span>
+				
+			</a>
+		</li>
+	</ul>
+</nav>
+
+	</div>
+</header>
+    <div class="wrapper flex">
+      <div class="primary">
+        
+<main class="main" role="main">
+    <article class="post">
+        <header class="post__header">
+            <h1 class="post__title">Go &#43; Mint &#43; GCPでTwitterクローンを開発した</h1>
+            <div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2022-03-24T00:11:35&#43;09:00">2022-03-24</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="https://guricerin.github.io/shit-blog/categories/%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0/" rel="category">プログラミング</a>, <a class="meta__link" href="https://guricerin.github.io/shit-blog/categories/go/" rel="category">Go</a>, <a class="meta__link" href="https://guricerin.github.io/shit-blog/categories/mint/" rel="category">Mint</a>
+	</span>
+</div></div>
+        </header>
+        
+<div class="post__toc toc">
+	<div class="toc__title">Page content</div>
+	<div class="toc__menu">
+		<nav id="TableOfContents">
+  <ul>
+    <li><a href="#開発したwebアプリの概要">開発したWebアプリの概要</a>
+      <ul>
+        <li><a href="#全体構成図">全体構成図</a></li>
+        <li><a href="#バックエンド">バックエンド</a></li>
+        <li><a href="#フロントエンド">フロントエンド</a></li>
+        <li><a href="#データベース">データベース</a></li>
+      </ul>
+    </li>
+    <li><a href="#インフラ">インフラ</a>
+      <ul>
+        <li><a href="#gcp">GCP</a></li>
+        <li><a href="#ssl対応">SSL対応</a></li>
+      </ul>
+    </li>
+    <li><a href="#反省点">反省点</a></li>
+  </ul>
+</nav>
+	</div>
+</div><div class="content post__content clearfix">
+            <p>以前 <a href="https://twitter.com/chokudai">@chokudai</a> 氏が以下のことをつぶやいていた。</p>
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">「未経験ですがWebエンジニアになりたいです！」って言ってる人には、「とりあえずAWS上で動くミニTwitterみたいなの作るといいよ！」って伝えてる。一人でミニTwitter作れる人、Webで必要な知識一通り揃ってるのかな、と一応言えるかなあと思っていて、個人的に安心感があるのよね。</p>&mdash; chokudai(高橋 直大)🍆@AtCoder社長 (@chokudai) <a href="https://twitter.com/chokudai/status/1420653065598685184?ref_src=twsrc%5Etfw">July 29, 2021</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+<br/>
+<p>前職では主にWindowsデスクトップアプリを開発していたが、Web系企業に就職したいと思い挑戦してみた、</p>
+<p>ここでいきなり宣伝しますが、プログラミングやゲームをしてたらいつの間にかニート期間が1年を超えたので、そろそろ就業したいと考えています。</p>
+<ul>
+<li>志望職種 : バックエンドエンジニア</li>
+<li>希望する雇用条件 : 週5・8時間のフルタイム、フルリモート
+<ul>
+<li>勤務先が大阪府またはその近隣府県の場合、月に2, 3回程度の出社なら可能です。</li>
+</ul>
+</li>
+<li>ポートフォリオページ : <a href="https://guricerin.github.io/portfolio/">https://guricerin.github.io/portfolio/</a></li>
+</ul>
+<p>現在の私のスキルセットでは無理があるでしょうが、将来的にはシステムに横断的に関われそうなSREにも挑戦したいと思っています。<br>
+私という人材に興味を抱いた方がいらっしゃれば、Twitterなどでお気軽にご連絡いただければと思います。どうぞよろしくお願いいたします。m(´･_･`)m</p>
+<p>以下、本題。</p>
+<hr>
+<h2 id="開発したwebアプリの概要">開発したWebアプリの概要</h2>
+<p>名前は「Grumbler」。</p>
+<ul>
+<li>公開サイト : <a href="https://grumbler.icu/">https://grumbler.icu/</a></li>
+<li>リポジトリ : <a href="https://github.com/guricerin/grumbler">https://github.com/guricerin/grumbler</a></li>
+</ul>
+<h3 id="全体構成図">全体構成図</h3>
+<p><img src="architecture.drawio.svg" alt="a"></p>
+<p>drawioで作った。本当はDockerアイコンを載せたいけど、ファイル保存するとなぜか消失する。</p>
+<h3 id="バックエンド">バックエンド</h3>
+<p>言語はGo。フレームワークは無難にGin。これらの選定理由は最近のWeb系企業でよく使用されているらしいから。</p>
+<p>ツイート、リツイート、リプライ、ブックマーク、フォロー、検索など一通りの機能は実装している。引用リプライやDM、ブロック、ミュート、画像アップロード機能はない。<br>
+遅延読み込み？などは一切やってないので、仮にツイートが10万件とかになるとタイムライン表示がめっちゃ遅くなりそう。</p>
+<p>JSONを受け取ってJSONを返せばええんやろ、というものすごい雑なイメージで構築した。<br>
+セキュリティについては徳丸本を読み返しながら気をつけたつもりだけど、漏れがありそうでビビってる。</p>
+<h3 id="フロントエンド">フロントエンド</h3>
+<p>言語はMint。SPA用のJavaScriptを吐く。ググるときは「mintlang」で検索したほうがいい。</p>
+<p><a href="https://www.mint-lang.com/">Mintの公式ページ</a></p>
+<p>Crystal製の静的型付け言語。代数的データ型あり、F#でおなじみのパイプラインあり、Elmでは死ぬほど面倒だったルーティングが言語機能として組み込まれていたりとよりどりみどり。<br>
+フロントエンドにはあまり興味がない、というよりはおれのデザインセンスが壊滅的 &amp; 動的型付け言語が苦手。コンパイラに怒鳴られながらじゃないとコード書けない。<br>
+フロントエンドエンジニアになるつもりもないので、言語はおもしろそうでドマイナーなものを選んで好き勝手した。<br>
+手触りとしては、Elmよりはゆるく書け、JavaScriptほどはちゃめちゃではない感じ。HTML生成部分はほぼJSX記法。<br>
+具体的なコードの書き方やお作法なんかは<a href="https://www.mint-lang.com/guide">公式ガイド</a>と<a href="https://github.com/mint-lang/mint-realworld">Mint版RealWorld</a>からパクれば大体なんとかなる（参考にできるようなプロジェクトがこれらくらいしかないともいう）。</p>
+<p>CSSフレームワークはBulmaを採用した。<a href="https://bulma.io/documentation/">公式ドキュメント</a>と<a href="https://mubaidr.js.org/bulma-fluent">Bulma Fluent</a>をパクるだけでいい感じの見た目になるので、デザイン弱者には大変ありがたい。特に後者。<br>
+ちなみに以前、Tailwindにも手を出してみたことがあったが、CSSなんもわかってなかったら修羅の道だった。</p>
+<h3 id="データベース">データベース</h3>
+<p>MySQLを選定。とくに深い理由はない。<br>
+PostgreSQLなどとの違いもよくわかっていない。SQLの書き方が微妙に違うなあという程度のレベル。</p>
+<hr>
+<h2 id="インフラ">インフラ</h2>
+<h3 id="gcp">GCP</h3>
+<p>AWSは以前使用したことがあるものの、チュートリアルしかしないうちに無料期間が終了したため、今回はGCPにデプロイすることにした。<br>
+Azureについてだが、軽く調べた限りではAWSやGCPに比べて無料期間が短いっぽいので採用を見送った。</p>
+<p>デプロイとはいえ、開発時に用いていたDockerファイルをほぼそのまま流用して、GCE上でコンテナを動かしている。本番環境にDockerを使うのはサーバ初心者の勉強としてはどうなんだとは思いつつ楽なやり方に頼った。ちなみにKubernetesはよく知らない。</p>
+<p>GCEの構築は参考リンクに従ってビクつきながら行った。無料枠のマシンタイプが<code>f1-micro</code>から<code>e2-micro</code>に変更されている点に注意。</p>
+<h4 id="参考リンク">参考リンク</h4>
+<ul>
+<li><a href="https://scrapbox.io/neet/GCP%E3%81%A7%E7%84%A1%E6%96%99%E3%81%A7%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC%E3%82%92%E3%81%A4%E3%81%8F%E3%82%8D%E3%81%86%E5%9B%9E">https://scrapbox.io/neet/GCP%E3%81%A7%E7%84%A1%E6%96%99%E3%81%A7%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC%E3%82%92%E3%81%A4%E3%81%8F%E3%82%8D%E3%81%86%E5%9B%9E</a></li>
+<li><a href="https://qiita.com/Brutus/items/22dfd31a681b67837a74">https://qiita.com/Brutus/items/22dfd31a681b67837a74</a></li>
+</ul>
+<h3 id="ssl対応">SSL対応</h3>
+<p>WebサーバをSSL化するにはドメインが必須なんて初めて知ったよ、はっはっは。<br>
+厳密にはドメインがなくても通信自体は暗号化できるが、サーバの身元が正当なCAによって保証されなくなるという感じらしい。</p>
+<p>というわけで人生で初めてドメインを取得した。レジストラの候補はちょいと調べて3つ出てきたが、結局Google様に頼ることにした。</p>
+<ul>
+<li>お名前.com : 格安だが、ここ数年のネット上での悪評が凄まじいのでやめといた。</li>
+<li>Freenom : 無料。詐欺サイトとのこと。
+<ul>
+<li><a href="https://gigazine.net/news/20210726-free-domain-website-scam/">https://gigazine.net/news/20210726-free-domain-website-scam/</a></li>
+</ul>
+</li>
+<li>Google Domains : 最安で1540円/年（税込み）。貧乏人にはこれでも少しきついが、まあええか。</li>
+</ul>
+<p>ドメインとIPアドレス対応付け手順は以下のような感じ。だいぶ適当だけど。</p>
+<ul>
+<li><code>Google Domains</code>でドメインを購入。</li>
+<li>左メニューの<code>DNS</code> -&gt; <code>カスタムレコード</code>。</li>
+<li><code>Aレコード</code>作る。購入したドメインと、GCEに割り当てた静的外部IPアドレスを紐付け。</li>
+</ul>
+<p>CAには証明書を無料で発行してくれる<a href="https://letsencrypt.org/ja/">Let&rsquo;s Encrypt</a>を選んだ。<br>
+んで、実際に発行するためには、Let&rsquo;s Encryptが推奨する<a href="https://certbot.eff.org/">Certbot</a>というツールをサーバに導入する。<br>
+やり方は<a href="https://certbot.eff.org/instructions?ws=nginx&amp;os=debianbuster">ここ</a>を参照。このページではDebian 10を想定しているが、GCEのOSにはうっかりDebian 11を選んでしまっていた。まあたいした違いはないだろう。たぶん。</p>
+<p>まず<code>snapd</code>をインストール。<a href="https://snapcraft.io/docs/installing-snap-on-debian">こちら</a>を参照。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo apt install snapd
+</code></pre></div><p>Certbotをインストールし、<code>certbot</code>コマンドを使用可能にする。ちなみに、GCEには古いCertbotは入っていなかった。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo snap install --classic certbot
+sudo ln -s /snap/bin/certbot /usr/bin/certbot
+</code></pre></div><p>Certbotを実行。いくつか質問に答えたら自動でWebサーバをSSL対応してくれた。<code>/etc/nginx/sites-available/default</code>を編集してくれたっぽい。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">sudo certbot --nginx
+</code></pre></div><p><img src="./https.png" alt="https"></p>
+<p>あとは<code>git clone</code>でコードをもってきて、dockerで立ち上げて、<code>https://grumbler.icu</code>に接続されたらnginxのリバースプロキシ機能でGCE上の<code>localhost</code>に振り分けるようにする。<br>
+<code>/etc/nginx/sites-available/default</code>を以下のように編集。<code>+</code>は追加行、<code>-</code>は削除行。<br>
+nginxの<code>proxy_pass</code>の書き方でつまづいた部分があったが、<a href="https://www.xmisao.com/2014/05/09/nginx-proxy-pass.html">このページ</a>を見て解決。</p>
+<pre><code>server {
+    root /var/www/html;
+    index index.html index.htm index.nginx-debian.html;
+    server_name grumbler.icu # managed by Certbot
+
+    + proxy_set_header Host $host;
+    + proxy_set_header X-Real-IP $remote_addr;
+    + proxy_set_header X-Forwarded-Host $host;
+    + proxy_set_header X-Forwarded-Server $host;
+    + proxy_set_header X-Forwarded-For $proxy_add_x_forwarded_for;
+    + proxy_set_header X-Forwarded-Proto $scheme;
+    + proxy_hide_header `Access-Control-Allow-Origin`;
+
+    + location /api/ {
+    +     proxy_pass http://localhost:8080;
+    + }
+
+    + location / {
+    -     try_files $uri $uri/ =404;
+    +     proxy_pass http://localhost:3000;
+    + }
+
+    # 以下省略
+}
+</code></pre><p>最後に自前の環境設定ファイルをちょいと弄って完成。<br>
+いけてんね。通信が思ったより遅いけど。</p>
+<p><img src="./home.png" alt="home"></p>
+<hr>
+<h2 id="反省点">反省点</h2>
+<p>テストコード全然書けてない。由々しき問題である。やり方を説明してくれる本でも買うか。<a href="https://shop.ohmsha.co.jp/shopdetail/000000004967/">『テスト駆動開発』</a>が定番なのだろうか？</p>
+        </div>
+    </article>
+</main>
+
+<br/>
+<div class="sns-share">
+    <ul>
+        <li>
+            <a class="sns-share-btn sns-share-btn-fb"
+                href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fguricerin.github.io%2fshit-blog%2fpost%2f2022%2f03%2f24-grumbler%2f&t=Go%20%2b%20Mint%20%2b%20GCP%e3%81%a7Twitter%e3%82%af%e3%83%ad%e3%83%bc%e3%83%b3%e3%82%92%e9%96%8b%e7%99%ba%e3%81%97%e3%81%9f - グリのクソブログ" target="_blank"
+                title="Facebook" rel="nofollow"><i class="fab fa-facebook-f"></i></a>
+        </li>
+        <li>
+            <a class="sns-share-btn sns-share-btn-tw"
+                href="https://twitter.com/intent/tweet?url=https%3a%2f%2fguricerin.github.io%2fshit-blog%2fpost%2f2022%2f03%2f24-grumbler%2f&text=Go%20%2b%20Mint%20%2b%20GCP%e3%81%a7Twitter%e3%82%af%e3%83%ad%e3%83%bc%e3%83%b3%e3%82%92%e9%96%8b%e7%99%ba%e3%81%97%e3%81%9f - グリのクソブログ" target="_blank"
+                title="Twitter" rel="nofollow"><i class="fab fa-twitter"></i></a>
+        </li>
+        
+        <li>
+            <a class="sns-share-btn sns-share-btn-hb"
+                href="https://b.hatena.ne.jp/add?mode=confirm&url=https%3a%2f%2fguricerin.github.io%2fshit-blog%2fpost%2f2022%2f03%2f24-grumbler%2f&title=Go%20%2b%20Mint%20%2b%20GCP%e3%81%a7Twitter%e3%82%af%e3%83%ad%e3%83%bc%e3%83%b3%e3%82%92%e9%96%8b%e7%99%ba%e3%81%97%e3%81%9f - グリのクソブログ" target="_blank"
+                title="hatena" rel="nofollow">B!</a>
+        </li>
+        <li>
+            <a class="sns-share-btn sns-share-btn-po"
+                href="https://getpocket.com/edit?url=https%3a%2f%2fguricerin.github.io%2fshit-blog%2fpost%2f2022%2f03%2f24-grumbler%2f&title=Go%20%2b%20Mint%20%2b%20GCP%e3%81%a7Twitter%e3%82%af%e3%83%ad%e3%83%bc%e3%83%b3%e3%82%92%e9%96%8b%e7%99%ba%e3%81%97%e3%81%9f - グリのクソブログ" target="_blank" title="pocket"
+                rel="nofollow"><i class="fab fa-get-pocket"></i></a>
+        </li>
+    </ul>
+</div>
+
+
+
+
+<nav class="pager flex">
+	<div class="pager__item pager__item--prev">
+		<a class="pager__link" href="https://guricerin.github.io/shit-blog/post/2022/02/15-keywordlinkmemo/" rel="prev">
+			<span class="pager__subtitle">«&thinsp;Previous</span>
+			<p class="pager__title">自動キーワードリンク機能付きのメモアプリを作った</p>
+		</a>
+	</div>
+</nav>
+
+
+<script src="https://utteranc.es/client.js" repo="guricerin/shit-blog" issue-term="pathname" label="[By Utterances]"
+    theme="github-light" crossorigin="anonymous" async>
+    </script>
+
+
+      </div>
+      
+
+    </div>
+    <footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2022 guricerin.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+</footer>
+  </div>
+  <script async defer src="https://guricerin.github.io/shit-blog/%20js/menu.js"></script>
+  <script src="https://guricerin.github.io/shit-blog/js/custom.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js?config=TeX-AMS-MML_HTMLorMML" async></script>
+</body>
+
+</html>
