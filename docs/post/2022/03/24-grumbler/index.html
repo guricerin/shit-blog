@@ -20,7 +20,7 @@
 <meta itemprop="description" content="以前 @chokudai 氏が以下のことをつぶやいていた。">
 <meta itemprop="datePublished" content="2022-03-24T00:11:35&#43;09:00" />
 <meta itemprop="dateModified" content="2022-03-24T00:11:35&#43;09:00" />
-<meta itemprop="wordCount" content="192">
+<meta itemprop="wordCount" content="202">
 
 
 
@@ -110,7 +110,7 @@ if (!doNotTrack) {
             <h1 class="post__title">Go &#43; Mint &#43; GCPでTwitterクローンを開発した</h1>
             <div class="post__meta meta">
 <div class="meta__item-datetime meta__item">
-	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2022-03-24T00:11:35&#43;09:00">2022-03-24</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="https://guricerin.github.io/shit-blog/categories/%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0/" rel="category">プログラミング</a>, <a class="meta__link" href="https://guricerin.github.io/shit-blog/categories/go/" rel="category">Go</a>, <a class="meta__link" href="https://guricerin.github.io/shit-blog/categories/mint/" rel="category">Mint</a>
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2022-03-24T00:11:35&#43;09:00">2022-03-24</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="https://guricerin.github.io/shit-blog/categories/%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0/" rel="category">プログラミング</a>, <a class="meta__link" href="https://guricerin.github.io/shit-blog/categories/go/" rel="category">Go</a>, <a class="meta__link" href="https://guricerin.github.io/shit-blog/categories/mint/" rel="category">Mint</a>, <a class="meta__link" href="https://guricerin.github.io/shit-blog/categories/gcp/" rel="category">GCP</a>
 	</span>
 </div></div>
         </header>
@@ -174,6 +174,14 @@ if (!doNotTrack) {
 遅延読み込み？などは一切やってないので、仮にツイートが10万件とかになるとタイムライン表示がめっちゃ遅くなりそう。</p>
 <p>JSONを受け取ってJSONを返せばええんやろ、というものすごい雑なイメージで構築した。<br>
 セキュリティについては徳丸本を読み返しながら気をつけたつもりだけど、漏れがありそうでビビってる。</p>
+<p>Dockerの書き方については参考リンクにあたった。「alpineは避けたほうがいい」だの「マルチステージビルド」だの知らないことだらけだった。<br>
+マルチステージビルドについては公式ドキュメントよりもサイボウズが公開している講義資料のほうがわかりやすい。</p>
+<h4 id="参考リンク">参考リンク</h4>
+<ul>
+<li><a href="https://blog.inductor.me/entry/alpine-not-recommended">軽量Dockerイメージに安易にAlpineを使うのはやめたほうがいいという話</a></li>
+<li><a href="https://speakerdeck.com/cybozuinsideout/docker2020">2021年のエンジニア新人研修の講義資料を公開しました - 講義資料 - Docker</a></li>
+<li><a href="https://matsuand.github.io/docs.docker.jp.onthefly/develop/develop-images/multistage-build/">マルチステージビルドの利用</a></li>
+</ul>
 <h3 id="フロントエンド">フロントエンド</h3>
 <p>言語はMint。SPA用のJavaScriptを吐く。ググるときは「mintlang」で検索したほうがいい。</p>
 <p><a href="https://www.mint-lang.com/">Mintの公式ページ</a></p>
@@ -194,7 +202,7 @@ PostgreSQLなどとの違いもよくわかっていない。SQLの書き方が�
 Azureについてだが、軽く調べた限りではAWSやGCPに比べて無料期間が短いっぽいので採用を見送った。</p>
 <p>デプロイとはいえ、開発時に用いていたDockerファイルをほぼそのまま流用して、GCE上でコンテナを動かしている。本番環境にDockerを使うのはサーバ初心者の勉強としてはどうなんだとは思いつつ楽なやり方に頼った。ちなみにKubernetesはよく知らない。</p>
 <p>GCEの構築は参考リンクに従ってビクつきながら行った。無料枠のマシンタイプが<code>f1-micro</code>から<code>e2-micro</code>に変更されている点に注意。</p>
-<h4 id="参考リンク">参考リンク</h4>
+<h4 id="参考リンク-1">参考リンク</h4>
 <ul>
 <li><a href="https://scrapbox.io/neet/GCP%E3%81%A7%E7%84%A1%E6%96%99%E3%81%A7%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC%E3%82%92%E3%81%A4%E3%81%8F%E3%82%8D%E3%81%86%E5%9B%9E">https://scrapbox.io/neet/GCP%E3%81%A7%E7%84%A1%E6%96%99%E3%81%A7%E3%82%B5%E3%83%BC%E3%83%90%E3%83%BC%E3%82%92%E3%81%A4%E3%81%8F%E3%82%8D%E3%81%86%E5%9B%9E</a></li>
 <li><a href="https://qiita.com/Brutus/items/22dfd31a681b67837a74">https://qiita.com/Brutus/items/22dfd31a681b67837a74</a></li>
