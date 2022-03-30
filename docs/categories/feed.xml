@@ -6,10 +6,37 @@
     <description>Recent content in Categories on グリのクソブログ</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Thu, 24 Mar 2022 00:11:35 +0900</lastBuildDate>
+    <lastBuildDate>Wed, 30 Mar 2022 00:37:32 +0900</lastBuildDate>
     
 	<atom:link href="https://guricerin.github.io/shit-blog/categories/feed.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Rust</title>
+      <link>https://guricerin.github.io/shit-blog/categories/rust/</link>
+      <pubDate>Wed, 30 Mar 2022 00:37:32 +0900</pubDate>
+      
+      <guid>https://guricerin.github.io/shit-blog/categories/rust/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>プログラミング</title>
+      <link>https://guricerin.github.io/shit-blog/categories/%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0/</link>
+      <pubDate>Wed, 30 Mar 2022 00:37:32 +0900</pubDate>
+      
+      <guid>https://guricerin.github.io/shit-blog/categories/%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>書物</title>
+      <link>https://guricerin.github.io/shit-blog/categories/%E6%9B%B8%E7%89%A9/</link>
+      <pubDate>Wed, 30 Mar 2022 00:37:32 +0900</pubDate>
+      
+      <guid>https://guricerin.github.io/shit-blog/categories/%E6%9B%B8%E7%89%A9/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>GCP</title>
@@ -39,15 +66,6 @@
     </item>
     
     <item>
-      <title>プログラミング</title>
-      <link>https://guricerin.github.io/shit-blog/categories/%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0/</link>
-      <pubDate>Thu, 24 Mar 2022 00:11:35 +0900</pubDate>
-      
-      <guid>https://guricerin.github.io/shit-blog/categories/%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>CSharp</title>
       <link>https://guricerin.github.io/shit-blog/categories/csharp/</link>
       <pubDate>Tue, 15 Feb 2022 09:53:20 +0900</pubDate>
@@ -62,15 +80,6 @@
       <pubDate>Wed, 08 Dec 2021 12:21:38 +0900</pubDate>
       
       <guid>https://guricerin.github.io/shit-blog/categories/it%E3%82%A4%E3%83%B3%E3%83%95%E3%83%A9/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>書物</title>
-      <link>https://guricerin.github.io/shit-blog/categories/%E6%9B%B8%E7%89%A9/</link>
-      <pubDate>Wed, 08 Dec 2021 12:21:38 +0900</pubDate>
-      
-      <guid>https://guricerin.github.io/shit-blog/categories/%E6%9B%B8%E7%89%A9/</guid>
       <description></description>
     </item>
     
@@ -98,15 +107,6 @@
       <pubDate>Sat, 13 Nov 2021 22:00:33 +0900</pubDate>
       
       <guid>https://guricerin.github.io/shit-blog/categories/fsharp/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>Rust</title>
-      <link>https://guricerin.github.io/shit-blog/categories/rust/</link>
-      <pubDate>Mon, 08 Nov 2021 09:12:07 +0900</pubDate>
-      
-      <guid>https://guricerin.github.io/shit-blog/categories/rust/</guid>
       <description></description>
     </item>
     
