@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TypeScript on グリのクソブログ</title>
+    <link>https://guricerin.github.io/shit-blog/categories/typescript/</link>
+    <description>Recent content in TypeScript on グリのクソブログ</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Sun, 11 Sep 2022 13:12:55 +0900</lastBuildDate>
+    
+	<atom:link href="https://guricerin.github.io/shit-blog/categories/typescript/feed.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Deno(v1.25.0)でMake a Lispした</title>
+      <link>https://guricerin.github.io/shit-blog/post/2022/09/11/mal/</link>
+      <pubDate>Sun, 11 Sep 2022 13:12:55 +0900</pubDate>
+      
+      <guid>https://guricerin.github.io/shit-blog/post/2022/09/11/mal/</guid>
+      <description>&lt;p&gt;過去2回ぐらい挫折していた&lt;a href=&#34;https://github.com/kanaka/mal&#34;&gt;Make a Lisp&lt;/a&gt;をカンニングも辞さない勢いでやりきった。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
