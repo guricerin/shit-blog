@@ -6,10 +6,28 @@
     <description>Recent content in Categories on グリのクソブログ</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Sat, 30 Jul 2022 05:23:07 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 11 Sep 2022 13:12:55 +0900</lastBuildDate>
     
 	<atom:link href="https://guricerin.github.io/shit-blog/categories/feed.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Lisp</title>
+      <link>https://guricerin.github.io/shit-blog/categories/lisp/</link>
+      <pubDate>Sun, 11 Sep 2022 13:12:55 +0900</pubDate>
+      
+      <guid>https://guricerin.github.io/shit-blog/categories/lisp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>プログラミング</title>
+      <link>https://guricerin.github.io/shit-blog/categories/%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0/</link>
+      <pubDate>Sun, 11 Sep 2022 13:12:55 +0900</pubDate>
+      
+      <guid>https://guricerin.github.io/shit-blog/categories/%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>クソブログ</title>
@@ -26,15 +44,6 @@
       <pubDate>Wed, 30 Mar 2022 00:37:32 +0900</pubDate>
       
       <guid>https://guricerin.github.io/shit-blog/categories/rust/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>プログラミング</title>
-      <link>https://guricerin.github.io/shit-blog/categories/%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0/</link>
-      <pubDate>Wed, 30 Mar 2022 00:37:32 +0900</pubDate>
-      
-      <guid>https://guricerin.github.io/shit-blog/categories/%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0/</guid>
       <description></description>
     </item>
     
