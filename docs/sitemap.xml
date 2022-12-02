@@ -3,32 +3,47 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://guricerin.github.io/shit-blog/archives/2022-12/</loc>
+    <lastmod>2022-12-02T00:00:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://guricerin.github.io/shit-blog/archives/</loc>
+    <lastmod>2022-12-02T00:00:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://guricerin.github.io/shit-blog/categories/</loc>
+    <lastmod>2022-12-02T00:00:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://guricerin.github.io/shit-blog/post/2022/12/02_google-domains-and-gh-pages/</loc>
+    <lastmod>2022-12-02T00:00:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://guricerin.github.io/shit-blog/post/</loc>
+    <lastmod>2022-12-02T00:00:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://guricerin.github.io/shit-blog/</loc>
+    <lastmod>2022-12-02T00:00:00+09:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://guricerin.github.io/shit-blog/categories/%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF/</loc>
+    <lastmod>2022-12-02T00:00:00+09:00</lastmod>
+  </url>
+  
+  <url>
     <loc>https://guricerin.github.io/shit-blog/archives/2022-10/</loc>
     <lastmod>2022-10-31T13:25:29+09:00</lastmod>
   </url>
   
   <url>
-    <loc>https://guricerin.github.io/shit-blog/archives/</loc>
-    <lastmod>2022-10-31T13:25:29+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://guricerin.github.io/shit-blog/categories/</loc>
-    <lastmod>2022-10-31T13:25:29+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://guricerin.github.io/shit-blog/post/</loc>
-    <lastmod>2022-10-31T13:25:29+09:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://guricerin.github.io/shit-blog/post/2022/10/31_zakuzakuactors/</loc>
-    <lastmod>2022-10-31T13:25:29+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://guricerin.github.io/shit-blog/</loc>
     <lastmod>2022-10-31T13:25:29+09:00</lastmod>
   </url>
   
@@ -169,11 +184,6 @@
   
   <url>
     <loc>https://guricerin.github.io/shit-blog/post/2021/11/23-infra-engineer-text2/</loc>
-    <lastmod>2021-11-23T07:34:34+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://guricerin.github.io/shit-blog/categories/%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF/</loc>
     <lastmod>2021-11-23T07:34:34+09:00</lastmod>
   </url>
   

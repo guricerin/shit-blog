@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Google Domainsで取得したドメインをGitHub Pagesでホストしたサイトに割り当てる - グリのクソブログ</title>
+  <script>(function (d, e) { d[e] = d[e].replace("no-js", "js"); })(document.documentElement, "className");</script>
+  <meta name="description"
+    content="">
+  <meta property="og:title" content="Google Domainsで取得したドメインをGitHub Pagesでホストしたサイトに割り当てる" />
+<meta property="og:description" content="はじめに
+この記事は SENSYN Robotics Advent Calendar 2022 2日目の記事です。" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://guricerin.github.io/shit-blog/post/2022/12/02_google-domains-and-gh-pages/" />
+<meta property="article:published_time" content="2022-12-02T00:00:00+09:00" />
+<meta property="article:modified_time" content="2022-12-02T00:00:00+09:00" />
+
+  <meta itemprop="name" content="Google Domainsで取得したドメインをGitHub Pagesでホストしたサイトに割り当てる">
+<meta itemprop="description" content="はじめに
+この記事は SENSYN Robotics Advent Calendar 2022 2日目の記事です。">
+<meta itemprop="datePublished" content="2022-12-02T00:00:00&#43;09:00" />
+<meta itemprop="dateModified" content="2022-12-02T00:00:00&#43;09:00" />
+<meta itemprop="wordCount" content="173">
+
+
+
+<meta itemprop="keywords" content="" />
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Google Domainsで取得したドメインをGitHub Pagesでホストしたサイトに割り当てる"/>
+<meta name="twitter:description" content="はじめに
+この記事は SENSYN Robotics Advent Calendar 2022 2日目の記事です。"/>
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="dns-prefetch" href="//fonts.googleapis.com">
+  <link rel="dns-prefetch" href="//fonts.gstatic.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700" >
+
+  <link rel="stylesheet" href="https://guricerin.github.io/shit-blog/css/style.css">
+  <link rel="stylesheet" href="https://guricerin.github.io/shit-blog/css/custom.css">
+
+  <link rel="shortcut icon" href="https://guricerin.github.io/shit-blog/%20favicon.ico">
+  
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-109224463-2', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <link rel="stylesheet" href="https://guricerin.github.io/shit-blog/css/share.css">
+</head>
+
+<body class="body">
+  <div class="container container--outer">
+    <header class="header">
+	<div class="container header__container">
+		
+	<div class="logo logo--mixed">
+		<a class="logo__link" href="https://guricerin.github.io/shit-blog/" title="グリのクソブログ" rel="home">
+			<div class="logo__item logo__imagebox">
+					<img class="logo__img" src="https://guricerin.github.io/shit-blog/img/icon.jpg">
+				</div><div class="logo__item logo__text">
+					<div class="logo__title">グリのクソブログ</div>
+					<div class="logo__tagline">主にB&#39;z</div>
+				</div>
+		</a>
+	</div>
+		
+<nav class="menu">
+	<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
+		<span class="menu__btn-title" tabindex="-1">Menu</span>
+	</button>
+	<ul class="menu__list">
+		<li class="menu__item">
+			<a class="menu__link" href="https://guricerin.github.io/shit-blog/">
+				
+				<span class="menu__text">HOME</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="https://guricerin.github.io/shit-blog/privacy-policy">
+				
+				<span class="menu__text">PRIVACY POLICY</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="https://guricerin.github.io/shit-blog/feed.xml">
+				
+				<span class="menu__text">RSS</span>
+				
+			</a>
+		</li>
+	</ul>
+</nav>
+
+	</div>
+</header>
+    <div class="wrapper flex">
+      <div class="primary">
+        
+<main class="main" role="main">
+    <article class="post">
+        <header class="post__header">
+            <h1 class="post__title">Google Domainsで取得したドメインをGitHub Pagesでホストしたサイトに割り当てる</h1>
+            <div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2022-12-02T00:00:00&#43;09:00">2022-12-02</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="https://guricerin.github.io/shit-blog/categories/%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF/" rel="category">ネットワーク</a>
+	</span>
+</div></div>
+        </header>
+        
+<div class="post__toc toc">
+	<div class="toc__title">Page content</div>
+	<div class="toc__menu">
+		<nav id="TableOfContents">
+  <ul>
+    <li>
+      <ul>
+        <li><a href="#はじめに">はじめに</a></li>
+        <li><a href="#ドメインを購入">ドメインを購入</a></li>
+        <li><a href="#ドメイン割り当て">ドメイン割り当て</a></li>
+        <li><a href="#おわり">おわり</a></li>
+        <li><a href="#おまけ">おまけ</a></li>
+      </ul>
+    </li>
+  </ul>
+</nav>
+	</div>
+</div><div class="content post__content clearfix">
+            <h3 id="はじめに">はじめに</h3>
+<p>この記事は <a href="https://qiita.com/advent-calendar/2022/sensyn-robotics">SENSYN Robotics Advent Calendar 2022</a> 2日目の記事です。</p>
+<p>タイトル通りのことをやります。</p>
+<p>ホストしているリポジトリが<code>{username}.github.io</code>でもそうでない場合でも手順は変わりません。<br>
+またホストしているリポジトリが<code>foo</code>と<code>bar</code>など複数あったとして、<code>foo</code>リポジトリに独自ドメインを割り当てても<code>bar</code>には今まで通りのURL（<code>{username}.github.io/bar</code>）でアクセスできます。</p>
+<hr>
+<h3 id="ドメインを購入">ドメインを購入</h3>
+<p>Googleアカウントが必要です。ここでは<code>foo.com</code>ドメインを購入したとします。</p>
+<ul>
+<li>Google Domains: <a href="https://domains.google">https://domains.google</a></li>
+</ul>
+<hr>
+<h3 id="ドメイン割り当て">ドメイン割り当て</h3>
+<p>以下のページにアクセスし、左メニューの<code>マイドメイン</code>から<code>foo.com</code>を選択します。</p>
+<ul>
+<li><a href="https://domains.google.com/registrar/">https://domains.google.com/registrar/</a></li>
+</ul>
+<p>左メニューの<code>DNS</code>を選択し、カスタムリソースレコードの設定を行います。</p>
+<p>ここからApexドメイン（<code>foo.com</code>）を割り当てるか、サブドメイン（<code>bar.foo.com</code>）を割り当てるかで分岐します。お好みのほうをどうぞ。</p>
+<h4 id="apexドメインの場合">Apexドメインの場合</h4>
+<p>まず<code>github.io</code>のIPアドレスを調べます。</p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-bash" data-lang="bash">$ dig github.io
+
+; &lt;&lt;&gt;&gt; DiG 9.16.1-Ubuntu &lt;&lt;&gt;&gt; github.io
+;; global options: +cmd
+;; Got answer:
+;; -&gt;&gt;HEADER<span style="color:#e6db74">&lt;&lt;- opco</span>de: QUERY, status: NOERROR, id: <span style="color:#ae81ff">45149</span>
+;; flags: qr rd ad; QUERY: 1, ANSWER: 4, AUTHORITY: 0, ADDITIONAL: <span style="color:#ae81ff">0</span>
+;; WARNING: recursion requested but not available
+
+;; QUESTION SECTION:
+;github.io.                     IN      A
+
+;; ANSWER SECTION:
+github.io.              <span style="color:#ae81ff">0</span>       IN      A       185.199.109.153
+github.io.              <span style="color:#ae81ff">0</span>       IN      A       185.199.110.153
+github.io.              <span style="color:#ae81ff">0</span>       IN      A       185.199.111.153
+github.io.              <span style="color:#ae81ff">0</span>       IN      A       185.199.108.153
+
+;; Query time: <span style="color:#ae81ff">180</span> msec
+;; SERVER: 172.18.176.1#53<span style="color:#f92672">(</span>172.18.176.1<span style="color:#f92672">)</span>
+;; WHEN: Fri Nov <span style="color:#ae81ff">25</span> 21:03:26 JST <span style="color:#ae81ff">2022</span>
+;; MSG SIZE  rcvd: <span style="color:#ae81ff">100</span>
+</code></pre></div><p><code>ANSER SECTION</code>に出力されているIPアドレスをすべて控えておきます。</p>
+<p>Google Domainsのページに戻り、カスタムレコードの入力項目を以下のように設定します。</p>
+<ul>
+<li>ホスト名 : （無記入）</li>
+<li>タイプ : <code>A</code></li>
+<li>TTL : （そのままでOK）</li>
+<li>データ : （先程のIPアドレスすべて）</li>
+</ul>
+<p>ホストしているGitHubリポジトリのページに行き、<code>Settings</code> -&gt; <code>Pages</code>から<code>Custom domain</code>のフォームに<code>foo.com</code>と入力します。<br>
+この際、GitHub Pages公開対象のブランチのディレクトリ以下に、入力したドメインが記載された<code>CNAME</code>ファイルが自動作成されます。</p>
+<pre><code>foo.com
+</code></pre><h4 id="サブドメインの場合">サブドメインの場合</h4>
+<p>ここではサブドメインを<code>bar</code>としています。お好みの英数字文字列をどうぞ。<br>
+Apexドメインの場合とは違い、IPアドレスを調べる必要はありません。<br>
+カスタムレコードの入力項目を以下のように設定します。</p>
+<ul>
+<li>ホスト名 : <code>bar</code>
+<ul>
+<li>サブドメイン名だけでOK。</li>
+</ul>
+</li>
+<li>タイプ : <code>CNAME</code></li>
+<li>TTL : （そのままでOK）</li>
+<li>データ : <code>{username}.github.io</code></li>
+</ul>
+<p>ホストしているGitHubリポジトリのページに行き、<code>Settings</code> -&gt; <code>Pages</code>から<code>Custom domain</code>のフォームに<code>bar.foo.com</code>と入力します。<br>
+この際、GitHub Pages公開対象のブランチのディレクトリ以下に、入力したドメインが記載された<code>CNAME</code>ファイルが自動作成されます。</p>
+<pre><code>bar.foo.com
+</code></pre><hr>
+<h3 id="おわり">おわり</h3>
+<p>数時間以内には割り当てたドメインであなたのサイトにアクセスできるでしょう。</p>
+<hr>
+<h3 id="おまけ">おまけ</h3>
+<p>GitHub Pagesデプロイの自動化には、<a href="https://github.com/peaceiris/actions-gh-pages">peaceiris/actions-gh-pages</a>が便利です。<br>
+使い方は<a href="https://github.com/peaceiris/actions-gh-pages#getting-started">Getting started</a>を見ればだいたいわかります（注意 : <code>CNAME</code>ファイルがデプロイ先のディレクトリに含まれるようにしましょう。）</p>
+        </div>
+    </article>
+</main>
+
+<br/>
+<div class="sns-share">
+    <ul>
+        <li>
+            <a class="sns-share-btn sns-share-btn-fb"
+                href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fguricerin.github.io%2fshit-blog%2fpost%2f2022%2f12%2f02_google-domains-and-gh-pages%2f&t=Google%20Domains%e3%81%a7%e5%8f%96%e5%be%97%e3%81%97%e3%81%9f%e3%83%89%e3%83%a1%e3%82%a4%e3%83%b3%e3%82%92GitHub%20Pages%e3%81%a7%e3%83%9b%e3%82%b9%e3%83%88%e3%81%97%e3%81%9f%e3%82%b5%e3%82%a4%e3%83%88%e3%81%ab%e5%89%b2%e3%82%8a%e5%bd%93%e3%81%a6%e3%82%8b - グリのクソブログ" target="_blank"
+                title="Facebook" rel="nofollow"><i class="fab fa-facebook-f"></i></a>
+        </li>
+        <li>
+            <a class="sns-share-btn sns-share-btn-tw"
+                href="https://twitter.com/intent/tweet?url=https%3a%2f%2fguricerin.github.io%2fshit-blog%2fpost%2f2022%2f12%2f02_google-domains-and-gh-pages%2f&text=Google%20Domains%e3%81%a7%e5%8f%96%e5%be%97%e3%81%97%e3%81%9f%e3%83%89%e3%83%a1%e3%82%a4%e3%83%b3%e3%82%92GitHub%20Pages%e3%81%a7%e3%83%9b%e3%82%b9%e3%83%88%e3%81%97%e3%81%9f%e3%82%b5%e3%82%a4%e3%83%88%e3%81%ab%e5%89%b2%e3%82%8a%e5%bd%93%e3%81%a6%e3%82%8b - グリのクソブログ" target="_blank"
+                title="Twitter" rel="nofollow"><i class="fab fa-twitter"></i></a>
+        </li>
+        
+        <li>
+            <a class="sns-share-btn sns-share-btn-hb"
+                href="https://b.hatena.ne.jp/add?mode=confirm&url=https%3a%2f%2fguricerin.github.io%2fshit-blog%2fpost%2f2022%2f12%2f02_google-domains-and-gh-pages%2f&title=Google%20Domains%e3%81%a7%e5%8f%96%e5%be%97%e3%81%97%e3%81%9f%e3%83%89%e3%83%a1%e3%82%a4%e3%83%b3%e3%82%92GitHub%20Pages%e3%81%a7%e3%83%9b%e3%82%b9%e3%83%88%e3%81%97%e3%81%9f%e3%82%b5%e3%82%a4%e3%83%88%e3%81%ab%e5%89%b2%e3%82%8a%e5%bd%93%e3%81%a6%e3%82%8b - グリのクソブログ" target="_blank"
+                title="hatena" rel="nofollow">B!</a>
+        </li>
+        <li>
+            <a class="sns-share-btn sns-share-btn-po"
+                href="https://getpocket.com/edit?url=https%3a%2f%2fguricerin.github.io%2fshit-blog%2fpost%2f2022%2f12%2f02_google-domains-and-gh-pages%2f&title=Google%20Domains%e3%81%a7%e5%8f%96%e5%be%97%e3%81%97%e3%81%9f%e3%83%89%e3%83%a1%e3%82%a4%e3%83%b3%e3%82%92GitHub%20Pages%e3%81%a7%e3%83%9b%e3%82%b9%e3%83%88%e3%81%97%e3%81%9f%e3%82%b5%e3%82%a4%e3%83%88%e3%81%ab%e5%89%b2%e3%82%8a%e5%bd%93%e3%81%a6%e3%82%8b - グリのクソブログ" target="_blank" title="pocket"
+                rel="nofollow"><i class="fab fa-get-pocket"></i></a>
+        </li>
+    </ul>
+</div>
+
+
+
+
+<nav class="pager flex">
+	<div class="pager__item pager__item--prev">
+		<a class="pager__link" href="https://guricerin.github.io/shit-blog/post/2022/10/31_zakuzakuactors/" rel="prev">
+			<span class="pager__subtitle">«&thinsp;Previous</span>
+			<p class="pager__title">ざくざくアクターズ Ver1.82 クリア</p>
+		</a>
+	</div>
+</nav>
+
+
+<script src="https://utteranc.es/client.js" repo="guricerin/shit-blog" issue-term="pathname" label="[By Utterances]"
+    theme="github-light" crossorigin="anonymous" async>
+    </script>
+
+
+      </div>
+      
+
+    </div>
+    <footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2022 guricerin.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+</footer>
+  </div>
+  <script async defer src="https://guricerin.github.io/shit-blog/%20js/menu.js"></script>
+  <script src="https://guricerin.github.io/shit-blog/js/custom.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js?config=TeX-AMS-MML_HTMLorMML" async></script>
+</body>
+
+</html>

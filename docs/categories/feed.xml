@@ -6,10 +6,19 @@
     <description>Recent content in Categories on グリのクソブログ</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Mon, 31 Oct 2022 13:25:29 +0900</lastBuildDate>
+    <lastBuildDate>Fri, 02 Dec 2022 00:00:00 +0900</lastBuildDate>
     
 	<atom:link href="https://guricerin.github.io/shit-blog/categories/feed.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>ネットワーク</title>
+      <link>https://guricerin.github.io/shit-blog/categories/%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF/</link>
+      <pubDate>Fri, 02 Dec 2022 00:00:00 +0900</pubDate>
+      
+      <guid>https://guricerin.github.io/shit-blog/categories/%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF/</guid>
+      <description></description>
+    </item>
     
     <item>
       <title>ゲーム</title>
@@ -125,15 +134,6 @@
       <pubDate>Sun, 05 Dec 2021 16:10:50 +0900</pubDate>
       
       <guid>https://guricerin.github.io/shit-blog/categories/%E6%83%85%E5%A0%B1%E3%82%BB%E3%82%AD%E3%83%A5%E3%83%AA%E3%83%86%E3%82%A3/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>ネットワーク</title>
-      <link>https://guricerin.github.io/shit-blog/categories/%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF/</link>
-      <pubDate>Tue, 23 Nov 2021 07:34:34 +0900</pubDate>
-      
-      <guid>https://guricerin.github.io/shit-blog/categories/%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF/</guid>
       <description></description>
     </item>
     

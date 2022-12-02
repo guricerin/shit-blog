@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>2022-12 on グリのクソブログ</title>
+    <link>https://guricerin.github.io/shit-blog/archives/2022-12/</link>
+    <description>Recent content in 2022-12 on グリのクソブログ</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>ja</language>
+    <lastBuildDate>Fri, 02 Dec 2022 00:00:00 +0900</lastBuildDate>
+    
+	<atom:link href="https://guricerin.github.io/shit-blog/archives/2022-12/feed.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Google Domainsで取得したドメインをGitHub Pagesでホストしたサイトに割り当てる</title>
+      <link>https://guricerin.github.io/shit-blog/post/2022/12/02_google-domains-and-gh-pages/</link>
+      <pubDate>Fri, 02 Dec 2022 00:00:00 +0900</pubDate>
+      
+      <guid>https://guricerin.github.io/shit-blog/post/2022/12/02_google-domains-and-gh-pages/</guid>
+      <description>&lt;h3 id=&#34;はじめに&#34;&gt;はじめに&lt;/h3&gt;
+&lt;p&gt;この記事は &lt;a href=&#34;https://qiita.com/advent-calendar/2022/sensyn-robotics&#34;&gt;SENSYN Robotics Advent Calendar 2022&lt;/a&gt; 2日目の記事です。&lt;/p&gt;</description>
+    </item>
+    
+  </channel>
+</rss>
