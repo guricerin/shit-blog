@@ -6,11 +6,7 @@
     <description>Recent content in 2020-09 on グリのクソブログ</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Wed, 30 Sep 2020 14:18:15 +0900</lastBuildDate>
-    
-	<atom:link href="https://guricerin.github.io/shit-blog/archives/2020-09/feed.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Wed, 30 Sep 2020 14:18:15 +0900</lastBuildDate><atom:link href="https://guricerin.github.io/shit-blog/archives/2020-09/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>bashの定数・ローカル変数宣言</title>
       <link>https://guricerin.github.io/shit-blog/post/2020/09/20200930-bash-local-var/</link>

@@ -6,11 +6,7 @@
     <description>Recent content in bash on グリのクソブログ</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Thu, 26 Nov 2020 11:23:55 +0900</lastBuildDate>
-    
-	<atom:link href="https://guricerin.github.io/shit-blog/categories/bash/feed.xml" rel="self" type="application/rss+xml" />
-    
-    
+    <lastBuildDate>Thu, 26 Nov 2020 11:23:55 +0900</lastBuildDate><atom:link href="https://guricerin.github.io/shit-blog/categories/bash/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>bashでコマンドライン引数を扱う</title>
       <link>https://guricerin.github.io/shit-blog/post/2020/11/20201126-bash-cmdline-arg/</link>

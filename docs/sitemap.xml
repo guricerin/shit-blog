@@ -1,1003 +1,609 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
-  
   <url>
+    <loc>https://guricerin.github.io/shit-blog/archives/2023-05/</loc>
+    <lastmod>2023-05-13T00:02:29+09:00</lastmod>
+  </url><url>
+    <loc>https://guricerin.github.io/shit-blog/archives/</loc>
+    <lastmod>2023-05-13T00:02:29+09:00</lastmod>
+  </url><url>
+    <loc>https://guricerin.github.io/shit-blog/categories/</loc>
+    <lastmod>2023-05-13T00:02:29+09:00</lastmod>
+  </url><url>
+    <loc>https://guricerin.github.io/shit-blog/post/</loc>
+    <lastmod>2023-05-13T00:02:29+09:00</lastmod>
+  </url><url>
+    <loc>https://guricerin.github.io/shit-blog/post/2023/05/13_annoying-text/</loc>
+    <lastmod>2023-05-13T00:02:29+09:00</lastmod>
+  </url><url>
+    <loc>https://guricerin.github.io/shit-blog/categories/%E3%82%AF%E3%82%BD%E3%83%96%E3%83%AD%E3%82%B0/</loc>
+    <lastmod>2023-05-13T00:02:29+09:00</lastmod>
+  </url><url>
+    <loc>https://guricerin.github.io/shit-blog/</loc>
+    <lastmod>2023-05-13T00:02:29+09:00</lastmod>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/archives/2022-12/</loc>
     <lastmod>2022-12-02T00:00:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://guricerin.github.io/shit-blog/archives/</loc>
-    <lastmod>2022-12-02T00:00:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://guricerin.github.io/shit-blog/categories/</loc>
-    <lastmod>2022-12-02T00:00:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/post/2022/12/02_google-domains-and-gh-pages/</loc>
     <lastmod>2022-12-02T00:00:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://guricerin.github.io/shit-blog/post/</loc>
-    <lastmod>2022-12-02T00:00:00+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://guricerin.github.io/shit-blog/</loc>
-    <lastmod>2022-12-02T00:00:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/categories/%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF/</loc>
     <lastmod>2022-12-02T00:00:00+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/archives/2022-10/</loc>
     <lastmod>2022-10-31T13:25:29+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://guricerin.github.io/shit-blog/post/2022/10/31_zakuzakuactors/</loc>
-    <lastmod>2022-10-31T13:25:29+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/categories/%E3%82%B2%E3%83%BC%E3%83%A0/</loc>
     <lastmod>2022-10-31T13:25:29+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>https://guricerin.github.io/shit-blog/post/2022/10/31_zakuzakuactors/</loc>
+    <lastmod>2022-10-31T13:25:29+09:00</lastmod>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/archives/2022-09/</loc>
     <lastmod>2022-09-11T13:12:55+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/post/2022/09/11/mal/</loc>
     <lastmod>2022-09-11T13:12:55+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/categories/lisp/</loc>
     <lastmod>2022-09-11T13:12:55+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/categories/typescript/</loc>
     <lastmod>2022-09-11T13:12:55+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/categories/%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0/</loc>
     <lastmod>2022-09-11T13:12:55+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://guricerin.github.io/shit-blog/archives/2022-07/</loc>
-    <lastmod>2022-07-30T05:23:07+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/post/2022/07/30_low-class/</loc>
     <lastmod>2022-07-30T05:23:07+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://guricerin.github.io/shit-blog/categories/%E3%82%AF%E3%82%BD%E3%83%96%E3%83%AD%E3%82%B0/</loc>
+  </url><url>
+    <loc>https://guricerin.github.io/shit-blog/archives/2022-07/</loc>
     <lastmod>2022-07-30T05:23:07+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/post/2022/07/13_quit-neet/</loc>
     <lastmod>2022-07-13T19:31:03+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://guricerin.github.io/shit-blog/archives/2022-03/</loc>
-    <lastmod>2022-03-30T00:37:32+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://guricerin.github.io/shit-blog/categories/rust/</loc>
-    <lastmod>2022-03-30T00:37:32+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/post/2022/03/30-tdd-rs/</loc>
     <lastmod>2022-03-30T00:37:32+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>https://guricerin.github.io/shit-blog/archives/2022-03/</loc>
+    <lastmod>2022-03-30T00:37:32+09:00</lastmod>
+  </url><url>
+    <loc>https://guricerin.github.io/shit-blog/categories/rust/</loc>
+    <lastmod>2022-03-30T00:37:32+09:00</lastmod>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/categories/%E6%9B%B8%E7%89%A9/</loc>
     <lastmod>2022-03-30T00:37:32+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/categories/gcp/</loc>
     <lastmod>2022-03-24T00:11:35+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/categories/go/</loc>
     <lastmod>2022-03-24T00:11:35+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/post/2022/03/24-grumbler/</loc>
     <lastmod>2022-03-24T00:11:35+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/categories/mint/</loc>
     <lastmod>2022-03-24T00:11:35+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/archives/2022-02/</loc>
     <lastmod>2022-02-15T09:53:20+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/categories/csharp/</loc>
     <lastmod>2022-02-15T09:53:20+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/post/2022/02/15-keywordlinkmemo/</loc>
     <lastmod>2022-02-15T09:53:20+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://guricerin.github.io/shit-blog/archives/2021-12/</loc>
-    <lastmod>2021-12-08T12:21:38+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://guricerin.github.io/shit-blog/categories/it%E3%82%A4%E3%83%B3%E3%83%95%E3%83%A9/</loc>
-    <lastmod>2021-12-08T12:21:38+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/post/2021/12/08-operation-linux-server/</loc>
     <lastmod>2021-12-08T12:21:38+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>https://guricerin.github.io/shit-blog/archives/2021-12/</loc>
+    <lastmod>2021-12-08T12:21:38+09:00</lastmod>
+  </url><url>
+    <loc>https://guricerin.github.io/shit-blog/categories/it%E3%82%A4%E3%83%B3%E3%83%95%E3%83%A9/</loc>
+    <lastmod>2021-12-08T12:21:38+09:00</lastmod>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/post/2021/12/05-wasbook/</loc>
     <lastmod>2021-12-05T16:10:50+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/categories/%E6%83%85%E5%A0%B1%E3%82%BB%E3%82%AD%E3%83%A5%E3%83%AA%E3%83%86%E3%82%A3/</loc>
     <lastmod>2021-12-05T16:10:50+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://guricerin.github.io/shit-blog/archives/2021-11/</loc>
-    <lastmod>2021-11-23T07:34:34+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/post/2021/11/23-infra-engineer-text2/</loc>
     <lastmod>2021-11-23T07:34:34+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://guricerin.github.io/shit-blog/categories/fsharp/</loc>
-    <lastmod>2021-11-13T22:00:33+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>https://guricerin.github.io/shit-blog/archives/2021-11/</loc>
+    <lastmod>2021-11-23T07:34:34+09:00</lastmod>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/post/2021/11/20211113-compiler-text-fs/</loc>
     <lastmod>2021-11-13T22:00:33+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>https://guricerin.github.io/shit-blog/categories/fsharp/</loc>
+    <lastmod>2021-11-13T22:00:33+09:00</lastmod>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/post/2021/11/20211108-rust-net/</loc>
     <lastmod>2021-11-08T09:12:07+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/archives/2021-10/</loc>
     <lastmod>2021-10-23T23:36:02+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/post/2021/10/20211023-sns/</loc>
     <lastmod>2021-10-23T23:36:02+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/post/2021/10/20211011-freegame/</loc>
     <lastmod>2021-10-11T09:15:50+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/archives/2021-09/</loc>
     <lastmod>2021-09-23T22:44:32+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/categories/%E5%87%8B%E5%8F%B6%E6%A3%95/</loc>
     <lastmod>2021-09-23T22:44:32+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/post/2021/09/20210923-mukui/</loc>
     <lastmod>2021-09-23T22:44:32+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/categories/%E6%9D%B1%E6%96%B9/</loc>
     <lastmod>2021-09-23T22:44:32+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/categories/%E9%9F%B3%E6%A5%BD/</loc>
     <lastmod>2021-09-23T22:44:32+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/post/2021/09/20210917-otaku/</loc>
     <lastmod>2021-09-17T08:30:19+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/post/2021/09/16-clean-arch/</loc>
     <lastmod>2021-09-16T09:37:18+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/post/2021/09/06-std-linux/</loc>
     <lastmod>2021-09-06T09:44:38+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/post/2021/09/20210905-beauty/</loc>
     <lastmod>2021-09-05T09:48:56+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://guricerin.github.io/shit-blog/archives/2021-07/</loc>
-    <lastmod>2021-07-09T09:53:28+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/post/2021/07/20210709-ruby-esolang-by-rust/</loc>
     <lastmod>2021-07-09T09:53:28+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://guricerin.github.io/shit-blog/archives/2021-06/</loc>
-    <lastmod>2021-06-26T09:57:13+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>https://guricerin.github.io/shit-blog/archives/2021-07/</loc>
+    <lastmod>2021-07-09T09:53:28+09:00</lastmod>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/post/2021/06/26-linux-tcpip/</loc>
     <lastmod>2021-06-26T09:57:13+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>https://guricerin.github.io/shit-blog/archives/2021-06/</loc>
+    <lastmod>2021-06-26T09:57:13+09:00</lastmod>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/post/2021/06/20210618-mikanos/</loc>
     <lastmod>2021-06-18T10:03:26+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/archives/2021-01/</loc>
     <lastmod>2021-01-03T10:23:28+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/post/2021/01/20210103-nand2tetris-rust/</loc>
     <lastmod>2021-01-03T10:23:28+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/archives/2020-11/</loc>
     <lastmod>2020-11-30T11:21:22+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/post/2020/11/20201130-xor/</loc>
     <lastmod>2020-11-30T11:21:22+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/categories/%E6%95%B0%E5%AD%A6/</loc>
     <lastmod>2020-11-30T11:21:22+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/categories/bash/</loc>
     <lastmod>2020-11-26T11:23:55+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/post/2020/11/20201126-bash-cmdline-arg/</loc>
     <lastmod>2020-11-26T11:23:55+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/categories/bz/</loc>
     <lastmod>2020-11-24T08:09:30+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/post/2020/11/20201124-bz-lang/</loc>
     <lastmod>2020-11-24T08:09:30+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/post/2020/11/20201123-bf-tool/</loc>
     <lastmod>2020-11-23T08:15:39+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/archives/2020-10/</loc>
     <lastmod>2020-10-01T11:29:20+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/categories/windows/</loc>
     <lastmod>2020-10-01T11:29:20+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/post/2020/10/20201001-windows-tool/</loc>
     <lastmod>2020-10-01T11:29:20+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/archives/2020-09/</loc>
     <lastmod>2020-09-30T14:18:15+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/post/2020/09/20200930-bash-local-var/</loc>
     <lastmod>2020-09-30T14:18:15+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/post/2020/09/27-xxe/</loc>
     <lastmod>2020-09-27T18:17:30+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/post/2020/09/26-insecure-login/</loc>
     <lastmod>2020-09-26T18:17:30+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/post/2020/09/25-secure-passwords/</loc>
     <lastmod>2020-09-25T18:17:30+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/post/2020/09/24-password-reset/</loc>
     <lastmod>2020-09-24T18:17:30+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/post/2020/09/23-jwt-tokens/</loc>
     <lastmod>2020-09-23T18:17:30+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/post/2020/09/22-auth-bypasses/</loc>
     <lastmod>2020-09-22T18:17:30+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/post/2020/09/21-path-traversal/</loc>
     <lastmod>2020-09-21T18:17:30+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/post/2020/09/20-sql-injection-mitigration/</loc>
     <lastmod>2020-09-20T18:17:30+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/post/2020/09/19-sql-injection-advanced/</loc>
     <lastmod>2020-09-19T18:17:30+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/post/2020/09/18-sql-injection-intro/</loc>
     <lastmod>2020-09-18T18:17:30+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/post/2020/09/18-crypto-basics/</loc>
     <lastmod>2020-09-18T18:16:30+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/post/2020/09/16-cia-triad/</loc>
     <lastmod>2020-09-16T18:16:30+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/post/2020/09/16-webgoat-dev-tools/</loc>
     <lastmod>2020-09-16T18:15:30+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/post/2020/09/16-webgoat-http-proxies/</loc>
     <lastmod>2020-09-16T18:14:30+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/post/2020/09/15-webgoat-httpbasic/</loc>
     <lastmod>2020-09-15T18:14:30+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/post/2020/09/20200914-windows-to-wsl2-ssh/</loc>
     <lastmod>2020-09-15T10:28:44+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/post/2020/09/13-webgoat-httpbasic/</loc>
     <lastmod>2020-09-13T18:04:49+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/post/2020/09/13-owasp-bwa-setup/</loc>
     <lastmod>2020-09-13T17:59:52+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/post/2020/09/20200912-lena/</loc>
     <lastmod>2020-09-12T10:33:28+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/post/2020/09/20200902-summer-end/</loc>
     <lastmod>2020-09-02T10:35:19+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/archives/2020-08/</loc>
     <lastmod>2020-08-15T10:57:42+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/post/2020/08/20200815-singing-bird/</loc>
     <lastmod>2020-08-15T10:57:42+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/post/2020/08/20200810-cmon/</loc>
     <lastmod>2020-08-10T14:22:58+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/archives/2020-05/</loc>
     <lastmod>2020-05-28T14:39:33+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/post/2020/05/20200528-refrain/</loc>
     <lastmod>2020-05-28T14:39:33+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/archives/2020-03/</loc>
     <lastmod>2020-03-28T14:42:42+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/post/2020/03/20200328-okay/</loc>
     <lastmod>2020-03-28T14:42:42+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/post/2020/03/20200327-understanding-computation-fs/</loc>
     <lastmod>2020-03-27T14:49:10+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/archives/2020-02/</loc>
     <lastmod>2020-02-18T14:56:10+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/post/2020/02/20200218-scheme-fs/</loc>
     <lastmod>2020-02-18T14:56:10+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/archives/2019-12/</loc>
     <lastmod>2019-12-18T15:00:42+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/categories/%E5%B0%8F%E8%AA%AC/</loc>
     <lastmod>2019-12-18T15:00:42+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/post/2019/12/20191221-toho-kanbayashi/</loc>
     <lastmod>2019-12-18T15:00:42+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/categories/%E7%A5%9E%E6%9E%97%E9%95%B7%E5%B9%B3/</loc>
     <lastmod>2019-12-18T15:00:42+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://guricerin.github.io/shit-blog/archives/2019-08/</loc>
-    <lastmod>2019-08-10T15:06:54+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/post/2019/08/20190810-basic-programming/</loc>
     <lastmod>2019-08-10T15:06:54+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>https://guricerin.github.io/shit-blog/archives/2019-08/</loc>
+    <lastmod>2019-08-10T15:06:54+09:00</lastmod>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/archives/2019-03/</loc>
     <lastmod>2019-03-25T15:18:41+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/post/2019/03/20190325-compro/</loc>
     <lastmod>2019-03-25T15:18:41+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/categories/%E7%AB%B6%E6%8A%80%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0/</loc>
     <lastmod>2019-03-25T15:18:41+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/post/2019/03/20190324-compro/</loc>
     <lastmod>2019-03-24T15:23:12+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/post/2019/03/20190321-compro/</loc>
     <lastmod>2019-03-21T15:30:50+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/post/2019/03/20190320-compro/</loc>
     <lastmod>2019-03-20T15:32:41+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/post/2019/03/20190318-compro/</loc>
     <lastmod>2019-03-18T15:35:43+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/post/2019/03/20190317-compro/</loc>
     <lastmod>2019-03-17T15:37:30+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/post/2019/03/20190317-compro-2/</loc>
     <lastmod>2019-03-17T15:27:30+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/post/2019/03/20190316-compro-3/</loc>
     <lastmod>2019-03-16T15:53:10+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/post/2019/03/20190316-compro-2/</loc>
     <lastmod>2019-03-16T15:43:10+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/post/2019/03/20190316-compro/</loc>
     <lastmod>2019-03-16T15:23:10+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/post/2019/03/20190315-compro/</loc>
     <lastmod>2019-03-15T15:54:37+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/post/2019/03/20190314-compro/</loc>
     <lastmod>2019-03-14T15:54:37+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/post/2019/03/20190310-compro/</loc>
     <lastmod>2019-03-10T15:54:37+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/post/2019/03/20190309-compro/</loc>
     <lastmod>2019-03-09T15:54:37+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/post/2019/03/20190309-compro-2/</loc>
     <lastmod>2019-03-09T15:24:37+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/post/2019/03/20190308-compro/</loc>
     <lastmod>2019-03-08T15:24:37+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/post/2019/03/20190306-compro/</loc>
     <lastmod>2019-03-06T15:24:37+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/post/2019/03/20190305-compro/</loc>
     <lastmod>2019-03-05T15:24:37+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/post/2019/03/20190303-compro/</loc>
     <lastmod>2019-03-03T15:24:37+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/archives/2019-02/</loc>
     <lastmod>2019-02-24T17:08:21+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/post/2019/02/24-compro/</loc>
     <lastmod>2019-02-24T17:08:21+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/post/2019/02/16-compro/</loc>
     <lastmod>2019-02-16T17:08:21+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/post/2019/02/12-hadou/</loc>
     <lastmod>2019-02-12T17:35:20+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/post/2019/02/10-compro/</loc>
     <lastmod>2019-02-10T17:08:21+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/post/2019/02/03-magic/</loc>
     <lastmod>2019-02-03T17:35:20+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/archives/2019-01/</loc>
     <lastmod>2019-02-01T17:08:21+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/post/2019/01/01-compro/</loc>
     <lastmod>2019-02-01T17:08:21+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/categories/ruby/</loc>
     <lastmod>2019-02-01T17:08:21+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/post/2019/01/13-compro/</loc>
     <lastmod>2019-01-13T17:08:21+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/post/2019/01/03-metori/</loc>
     <lastmod>2019-01-03T20:08:05+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/archives/2018-12/</loc>
     <lastmod>2018-12-23T20:31:22+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/post/2018/12/23-compro/</loc>
     <lastmod>2018-12-23T20:31:22+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/post/2018/12/02-ruby-by-ruby/</loc>
     <lastmod>2018-12-02T20:35:07+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/archives/2018-11/</loc>
     <lastmod>2018-11-25T20:08:05+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/post/2018/11/25-manima/</loc>
     <lastmod>2018-11-25T20:08:05+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://guricerin.github.io/shit-blog/archives/2018-09/</loc>
-    <lastmod>2018-09-13T20:54:25+09:00</lastmod>
-  </url>
-  
-  <url>
-    <loc>https://guricerin.github.io/shit-blog/categories/scheme/</loc>
-    <lastmod>2018-09-13T20:54:25+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/post/2018/09/16-scheme-practice/</loc>
     <lastmod>2018-09-13T20:54:25+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
+    <loc>https://guricerin.github.io/shit-blog/archives/2018-09/</loc>
+    <lastmod>2018-09-13T20:54:25+09:00</lastmod>
+  </url><url>
+    <loc>https://guricerin.github.io/shit-blog/categories/scheme/</loc>
+    <lastmod>2018-09-13T20:54:25+09:00</lastmod>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/archives/2018-06/</loc>
     <lastmod>2018-06-24T21:04:57+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/post/2018/06/24-action/</loc>
     <lastmod>2018-06-24T21:04:57+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/archives/2018-05/</loc>
     <lastmod>2018-05-13T21:04:57+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/post/2018/05/13-monster/</loc>
     <lastmod>2018-05-13T21:04:57+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/archives/2018-02/</loc>
     <lastmod>2018-02-27T21:16:04+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/post/2018/02/27-fav-comic/</loc>
     <lastmod>2018-02-27T21:16:04+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/categories/%E6%BC%AB%E7%94%BB/</loc>
     <lastmod>2018-02-27T21:16:04+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/archives/2018-01/</loc>
     <lastmod>2018-01-30T21:23:41+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/post/2018/01/30-mutekan-bz/</loc>
     <lastmod>2018-01-30T21:23:41+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/categories/%E5%AD%A6%E5%95%8F/</loc>
     <lastmod>2018-01-27T21:26:44+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/post/2018/01/27-politics/</loc>
     <lastmod>2018-01-27T21:26:44+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/post/2018/01/23-infomatics/</loc>
     <lastmod>2018-01-23T21:31:06+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/post/2018/01/13-linux/</loc>
     <lastmod>2018-01-13T21:32:54+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/archives/2017-12/</loc>
     <lastmod>2017-12-18T05:50:38+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/post/2017/12/18-circle/</loc>
     <lastmod>2017-12-18T05:50:38+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/post/2017/12/06-sci-fi/</loc>
     <lastmod>2017-12-06T06:08:14+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/categories/%E6%9A%81records/</loc>
     <lastmod>2017-12-06T06:08:14+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/post/2017/12/02-peace-of-mind/</loc>
     <lastmod>2017-12-02T05:50:38+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/archives/2017-11/</loc>
     <lastmod>2017-11-29T05:50:38+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/post/2017/11/29-the-hit-parade/</loc>
     <lastmod>2017-11-29T05:50:38+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/post/2017/11/26-big-machine/</loc>
     <lastmod>2017-11-26T05:50:38+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/post/2017/11/24-ki/</loc>
     <lastmod>2017-11-24T05:50:38+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/post/2017/11/22-structure/</loc>
     <lastmod>2017-11-22T07:31:09+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/post/2017/11/20-shian/</loc>
     <lastmod>2017-11-20T05:50:38+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/post/2017/11/17-green/</loc>
     <lastmod>2017-11-17T05:50:38+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/post/2017/11/11-eleven/</loc>
     <lastmod>2017-11-11T05:50:38+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/post/2017/11/07-mixture/</loc>
     <lastmod>2017-11-07T05:50:38+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/post/2017/11/05-brotherhood/</loc>
     <lastmod>2017-11-05T05:50:38+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/post/2017/11/04-tokumade/</loc>
     <lastmod>2017-11-04T05:50:38+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/post/2017/11/03-treasure/</loc>
     <lastmod>2017-11-03T09:24:57+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/post/2017/11/02-pleasure/</loc>
     <lastmod>2017-11-02T09:24:57+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/archives/2017-10/</loc>
     <lastmod>2017-10-29T23:45:54+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/categories/%E4%B8%83%E5%B0%BE%E9%A6%99/</loc>
     <lastmod>2017-10-29T23:45:54+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/post/2017/10/29-nanao/</loc>
     <lastmod>2017-10-29T23:45:54+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/post/2017/10/28-survive/</loc>
     <lastmod>2017-10-28T23:45:54+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/post/2017/10/26-maguma/</loc>
     <lastmod>2017-10-26T23:45:54+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/post/2017/10/24-friends2/</loc>
     <lastmod>2017-10-24T23:45:54+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/post/2017/10/23-loose/</loc>
     <lastmod>2017-10-23T23:45:54+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/post/2017/10/22-the-7th-blues/</loc>
     <lastmod>2017-10-22T23:45:54+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/post/2017/10/21-friends/</loc>
     <lastmod>2017-10-21T23:45:54+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/post/2017/10/20-run/</loc>
     <lastmod>2017-10-20T23:45:54+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/post/2017/10/18-in-the-life/</loc>
     <lastmod>2017-10-18T23:45:54+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/post/2017/10/16-mars/</loc>
     <lastmod>2017-10-16T23:45:54+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/post/2017/10/15-risky/</loc>
     <lastmod>2017-10-15T23:45:54+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/post/2017/10/14-wicked-beat/</loc>
     <lastmod>2017-10-14T23:45:54+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/post/2017/10/13-break-through/</loc>
     <lastmod>2017-10-13T23:45:54+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/post/2017/10/12-tori/</loc>
     <lastmod>2017-10-12T23:45:54+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/post/2017/10/11-bad-communication/</loc>
     <lastmod>2017-10-11T23:45:54+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/post/2017/10/10-off-the-lock/</loc>
     <lastmod>2017-10-10T23:45:54+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/post/2017/10/09-bz/</loc>
     <lastmod>2017-10-09T23:45:54+09:00</lastmod>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/privacy-policy/</loc>
-  </url>
-  
-  <url>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/tags/</loc>
   </url>
-  
 </urlset>

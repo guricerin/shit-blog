@@ -12,18 +12,14 @@
   <meta property="og:title" content="『Rustで始めるネットワークプログラミング』読んだ" />
 <meta property="og:description" content="ネットワークをもっと理解したかったし、500円と安かったので購入。" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://guricerin.github.io/shit-blog/post/2021/11/20211108-rust-net/" />
+<meta property="og:url" content="https://guricerin.github.io/shit-blog/post/2021/11/20211108-rust-net/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2021-11-08T09:12:07+09:00" />
 <meta property="article:modified_time" content="2021-11-08T09:12:07+09:00" />
 
   <meta itemprop="name" content="『Rustで始めるネットワークプログラミング』読んだ">
-<meta itemprop="description" content="ネットワークをもっと理解したかったし、500円と安かったので購入。">
-<meta itemprop="datePublished" content="2021-11-08T09:12:07&#43;09:00" />
-<meta itemprop="dateModified" content="2021-11-08T09:12:07&#43;09:00" />
+<meta itemprop="description" content="ネットワークをもっと理解したかったし、500円と安かったので購入。"><meta itemprop="datePublished" content="2021-11-08T09:12:07+09:00" />
+<meta itemprop="dateModified" content="2021-11-08T09:12:07+09:00" />
 <meta itemprop="wordCount" content="221">
-
-
-
 <meta itemprop="keywords" content="" />
   <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="『Rustで始めるネットワークプログラミング』読んだ"/>
@@ -122,49 +118,49 @@ if (!doNotTrack) {
 <p>単純なechoサーバを、TCPとUDP両方のプロトコルで作成する。<br>
 サーバプログラムの動作確認に<code>telnet</code>または<code>nc</code>コマンドを使用する。Windowsの場合はどちらも<code>scoop</code>からインストール可能。まあクライアントプログラムも作成するので不要っちゃ不要。<br>
 インストールする場合は通信プロトコルを指定できる<code>netcat</code>のほうがいいかも。</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">$ scoop install telnet <span style="color:#75715e"># or netcat</span>
-</code></pre></div><h3 id="第2章-通信を監視する">第2章 通信を監視する</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>$ scoop install telnet <span style="color:#75715e"># or netcat</span>
+</span></span></code></pre></div><h3 id="第2章-通信を監視する">第2章 通信を監視する</h3>
 <p>指定したネットワークインターフェイスに流れるパケットをキャプチャし、標準出力に表示するプログラムを作成する。
 いきなり難度の高そうなプログラムを作らされるが、ネットワーク関連のクレートである<code>pnet</code>が強力なので案外コード量は少ない。</p>
 <p>データリンク層のフレーム -&gt; ネットワーク層のパケット -&gt; アプリケーション層のバイナリデータ といった具合に、各レイヤーにおけるデータからヘッダー部をむきむきしてペイロード部を順々に取り出していく実装となる。</p>
 <p>って、コンパイルエラーなるやないかーい。</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">error: linking with <span style="color:#e6db74">`</span>link.exe<span style="color:#e6db74">`</span> failed: exit code: <span style="color:#ae81ff">1181</span>
-  |
-  <span style="color:#f92672">=</span> note: （長すぎるため省略）
-
-  <span style="color:#f92672">=</span> note: Non-UTF-8 output: LINK : fatal error LNK1181: <span style="color:#ae81ff">\x</span>93<span style="color:#ae81ff">\x</span>fc<span style="color:#ae81ff">\x</span>97<span style="color:#ae81ff">\x</span>cd<span style="color:#ae81ff">\x</span>83t<span style="color:#ae81ff">\x</span>83@<span style="color:#ae81ff">\x</span>83C<span style="color:#ae81ff">\x</span>83<span style="color:#ae81ff">\x</span>8b <span style="color:#ae81ff">\&#39;</span>Packet.lib<span style="color:#ae81ff">\&#39;</span> <span style="color:#ae81ff">\x</span>82<span style="color:#ae81ff">\x</span>f0<span style="color:#ae81ff">\x</span>8aJ<span style="color:#ae81ff">\x</span>82<span style="color:#ae81ff">\x</span>af<span style="color:#ae81ff">\x</span>82<span style="color:#ae81ff">\x</span>dc<span style="color:#ae81ff">\x</span>82<span style="color:#ae81ff">\x</span>b9<span style="color:#ae81ff">\x</span>82<span style="color:#ae81ff">\x</span>f1<span style="color:#ae81ff">\x</span>81B<span style="color:#ae81ff">\r\n</span>
-
-error: could not compile <span style="color:#e6db74">`</span>ch2-packet-capture<span style="color:#e6db74">`</span> due to previous error
-</code></pre></div><p>エラーがやたらと冗長だが、要は<code>Packet.lib</code>なるものが必要らしい。<br>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>error: linking with <span style="color:#e6db74">`</span>link.exe<span style="color:#e6db74">`</span> failed: exit code: <span style="color:#ae81ff">1181</span>
+</span></span><span style="display:flex;"><span>  |
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">=</span> note: （長すぎるため省略）
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#f92672">=</span> note: Non-UTF-8 output: LINK : fatal error LNK1181: <span style="color:#ae81ff">\x</span>93<span style="color:#ae81ff">\x</span>fc<span style="color:#ae81ff">\x</span>97<span style="color:#ae81ff">\x</span>cd<span style="color:#ae81ff">\x</span>83t<span style="color:#ae81ff">\x</span>83@<span style="color:#ae81ff">\x</span>83C<span style="color:#ae81ff">\x</span>83<span style="color:#ae81ff">\x</span>8b <span style="color:#ae81ff">\&#39;</span>Packet.lib<span style="color:#ae81ff">\&#39;</span> <span style="color:#ae81ff">\x</span>82<span style="color:#ae81ff">\x</span>f0<span style="color:#ae81ff">\x</span>8aJ<span style="color:#ae81ff">\x</span>82<span style="color:#ae81ff">\x</span>af<span style="color:#ae81ff">\x</span>82<span style="color:#ae81ff">\x</span>dc<span style="color:#ae81ff">\x</span>82<span style="color:#ae81ff">\x</span>b9<span style="color:#ae81ff">\x</span>82<span style="color:#ae81ff">\x</span>f1<span style="color:#ae81ff">\x</span>81B<span style="color:#ae81ff">\r\n</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>error: could not compile <span style="color:#e6db74">`</span>ch2-packet-capture<span style="color:#e6db74">`</span> due to previous error
+</span></span></code></pre></div><p>エラーがやたらと冗長だが、要は<code>Packet.lib</code>なるものが必要らしい。<br>
 これはWindows用のパケットキャプチャライブラリの<code>npcap</code>に同梱されている。以下のページより<code>Npcap SDK 1.11 (ZIP)</code>をダウンロード（バージョンは2021/11/05時点）。</p>
 <p><a href="https://nmap.org/npcap/">https://nmap.org/npcap/</a></p>
 <p>ダウンロードしたzipを展開し、その中の<code>Lib/x64/Packet.lib</code>をどっか適当なフォルダに突っ込み、さらにそのフォルダのパスを<code>LIB</code>環境変数に登録する。するとビルドが成功する。（まあ<a href="https://github.com/libpnet/libpnet/issues/332">このIssue</a>見て解決方法知ったんすが）。</p>
 <p>次にネットワークインターフェイスの名前を調べる。Linuxでは<code>ip addr</code>で取得できるが、WindowsのPowerShellでは<code>Get-NetAdapter</code>を&hellip;&hellip;使わない。以下のコードを<code>main.rs</code>に追加し、ネットワークインターフェイス名を列挙させる。</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-rust" data-lang="rust">    <span style="color:#66d9ef">let</span> interfaces <span style="color:#f92672">=</span> datalink::interfaces();
-    <span style="color:#75715e">// ここから追加分
-</span><span style="color:#75715e"></span>    <span style="color:#66d9ef">for</span> iface <span style="color:#66d9ef">in</span> interfaces.iter() {
-        println<span style="color:#f92672">!</span>(<span style="color:#e6db74">&#34;{}&#34;</span>, iface);
-    }
-    <span style="color:#75715e">// 追加分ここまで
-</span></code></pre></div><p>実行結果は以下のようになる。</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">$ cargo run <span style="color:#75715e"># Windowsではデータリンク層のパケット受信に管理者権限が必要ないのでこれでおk</span>
-<span style="color:#ae81ff">\D</span>evice<span style="color:#ae81ff">\N</span>PF_<span style="color:#f92672">{</span>hoge<span style="color:#f92672">}</span>: flags<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>
-      index: d
-      ether: xx:xx:xx:xx:xx:xx
-       inet: x.x.x.x/x
-<span style="color:#ae81ff">\D</span>evice<span style="color:#ae81ff">\N</span>PF_<span style="color:#f92672">{</span>fuga<span style="color:#f92672">}</span>: flags<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>
-      index: e
-      ether: yy:yy:yy:yy:yy:yy
-       inet: y.y.y.y/y
-~~~
-</code></pre></div><p><code>\Device\NPF_{}</code>の部分がWindowsにおけるネットワークインターフェイス名なので、インターネットに接続されてそうなものを<code>cargo run &quot;\Device\NPF_{}&quot;</code>とすることでパケットキャプチャ可能。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-rust" data-lang="rust"><span style="display:flex;"><span>    <span style="color:#66d9ef">let</span> interfaces <span style="color:#f92672">=</span> datalink::interfaces();
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// ここから追加分
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">for</span> iface <span style="color:#66d9ef">in</span> interfaces.iter() {
+</span></span><span style="display:flex;"><span>        println!(<span style="color:#e6db74">&#34;</span><span style="color:#e6db74">{}</span><span style="color:#e6db74">&#34;</span>, iface);
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    <span style="color:#75715e">// 追加分ここまで
+</span></span></span></code></pre></div><p>実行結果は以下のようになる。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>$ cargo run <span style="color:#75715e"># Windowsではデータリンク層のパケット受信に管理者権限が必要ないのでこれでおk</span>
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">\D</span>evice<span style="color:#ae81ff">\N</span>PF_<span style="color:#f92672">{</span>hoge<span style="color:#f92672">}</span>: flags<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>      index: d
+</span></span><span style="display:flex;"><span>      ether: xx:xx:xx:xx:xx:xx
+</span></span><span style="display:flex;"><span>       inet: x.x.x.x/x
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">\D</span>evice<span style="color:#ae81ff">\N</span>PF_<span style="color:#f92672">{</span>fuga<span style="color:#f92672">}</span>: flags<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>      index: e
+</span></span><span style="display:flex;"><span>      ether: yy:yy:yy:yy:yy:yy
+</span></span><span style="display:flex;"><span>       inet: y.y.y.y/y
+</span></span><span style="display:flex;"><span>~~~
+</span></span></code></pre></div><p><code>\Device\NPF_{}</code>の部分がWindowsにおけるネットワークインターフェイス名なので、インターネットに接続されてそうなものを<code>cargo run &quot;\Device\NPF_{}&quot;</code>とすることでパケットキャプチャ可能。</p>
 <p>ちなみに<code>Get-NetAdapter</code>の実行結果は以下のようになる。Rustコードの実行結果とぜんぜん違うやないか。</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">$ Get-NetAdapter | % <span style="color:#f92672">{</span>$_.Name<span style="color:#f92672">}</span>
-イーサネット
-Wi-Fi
-VirtualBox Host-Only Network
-vEthernet <span style="color:#f92672">(</span>WSL<span style="color:#f92672">)</span>
-</code></pre></div><p>ここまでやって面倒くさくなったので、以後おとなしくWSL2にて動作させることにした。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>$ Get-NetAdapter | % <span style="color:#f92672">{</span>$_.Name<span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>イーサネット
+</span></span><span style="display:flex;"><span>Wi-Fi
+</span></span><span style="display:flex;"><span>VirtualBox Host-Only Network
+</span></span><span style="display:flex;"><span>vEthernet <span style="color:#f92672">(</span>WSL<span style="color:#f92672">)</span>
+</span></span></code></pre></div><p>ここまでやって面倒くさくなったので、以後おとなしくWSL2にて動作させることにした。</p>
 <h3 id="第3章-手づくりパケットでポートスキャン">第3章 手づくりパケットでポートスキャン</h3>
 <p>待ち受け状態（リスニングソケットがバインドされている）ポートを特定するプログラムを作成する。<br>
 4種のポートスキャン手法を実装する。雑に言えばどの手法も相手になんらかのTCPパケットを送信するが、</p>
@@ -181,25 +177,25 @@ vEthernet <span style="color:#f92672">(</span>WSL<span style="color:#f92672">)</
 <p>非同期I/Oでは、サーバのハードウェア性能に余裕があってもクライアントの同時接続数が1万台付近に達するとレスポンス性能が落ちるC10K問題が発生するらしい。原因は1リクエストにつき1プロセスorスレッドを割り当てるというぜいたくな方式なので、すぐにリソース上限が来るかららしい。<br>
 シングルプロセス・シングルスレッドたるノンブロッキングI/Oなら上記のようなことは起きないが、こっちはこっちでI/Oに時間がかかると全体のパフォーマンスに影響するらしい。まあ各リクエストは1つのイベントキューに突っ込まれて待機してるしな。</p>
 <p>Webサーバを作成したらホストOS（Windows）のブラウザからアクセスしてみてもいいし、以下のようにターミナルから脆弱性をつついてみてもいい。</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">$ nc -C 127.0.0.1 <span style="color:#ae81ff">8080</span> <span style="color:#75715e"># -Cオプションは改行をCRLFに固定</span>
-GET /../Cargo.toml HTTP/1.1 <span style="color:#75715e"># 入力部分（ここではパストラバーサルを仕込んでいる）</span>
-HTTP/1.0 <span style="color:#ae81ff">200</span> OK
-Server: mio webserver
-
-<span style="color:#f92672">[</span>package<span style="color:#f92672">]</span>
-name <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;ch4-mio-webserver&#34;</span>
-version <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;0.1.0&#34;</span>
-edition <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;2021&#34;</span>
-
-<span style="color:#75715e"># See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html</span>
-
-<span style="color:#f92672">[</span>dependencies<span style="color:#f92672">]</span>
-anyhow <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;1.0.45&#34;</span>
-env_logger <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;0.9.0&#34;</span>
-log <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;0.4.14&#34;</span>
-mio <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;0.6.11&#34;</span>
-regex <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;1.5.4&#34;</span>
-</code></pre></div><h3 id="第5章-rfcから作るdhcpサーバ">第5章 RFCから作るDHCPサーバ</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>$ nc -C 127.0.0.1 <span style="color:#ae81ff">8080</span> <span style="color:#75715e"># -Cオプションは改行をCRLFに固定</span>
+</span></span><span style="display:flex;"><span>GET /../Cargo.toml HTTP/1.1 <span style="color:#75715e"># 入力部分（ここではパストラバーサルを仕込んでいる）</span>
+</span></span><span style="display:flex;"><span>HTTP/1.0 <span style="color:#ae81ff">200</span> OK
+</span></span><span style="display:flex;"><span>Server: mio webserver
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">[</span>package<span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span>name <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;ch4-mio-webserver&#34;</span>
+</span></span><span style="display:flex;"><span>version <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;0.1.0&#34;</span>
+</span></span><span style="display:flex;"><span>edition <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;2021&#34;</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">[</span>dependencies<span style="color:#f92672">]</span>
+</span></span><span style="display:flex;"><span>anyhow <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;1.0.45&#34;</span>
+</span></span><span style="display:flex;"><span>env_logger <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;0.9.0&#34;</span>
+</span></span><span style="display:flex;"><span>log <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;0.4.14&#34;</span>
+</span></span><span style="display:flex;"><span>mio <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;0.6.11&#34;</span>
+</span></span><span style="display:flex;"><span>regex <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;1.5.4&#34;</span>
+</span></span></code></pre></div><h3 id="第5章-rfcから作るdhcpサーバ">第5章 RFCから作るDHCPサーバ</h3>
 <p>ネットワークに関連する仕様をまとめたドキュメントであるRFCを参照しながらDHCPサーバを作成する。DHCPサーバとはネットワーク内のホストにIPアドレスを付与するなど、ネットワーク設定を自動で行ってくれるサーバで、ルータがこれを兼任することが多い。<br>
 また、この章ではDHCPについて記述されている<a href="https://datatracker.ietf.org/doc/html/rfc2131">RFC2131</a>を実際に見ながら演習していく。</p>
 <p>DHCPパケットのフィールドの仕様を確認しながらビット列をいじいじする部分は、PLCにコマンドを送信するプログラムを業務で仕様書読みながら組んだことを思い出し懐かしい気持ちになった。</p>
@@ -273,14 +269,252 @@ regex <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;1.5.
 
 
       </div>
-      
+      <aside class="sidebar">
+<div class="widget-recent widget">
+	<h4 class="widget__title">Recent Posts</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="https://guricerin.github.io/shit-blog/post/2023/05/13_annoying-text/">うるさい文字列</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://guricerin.github.io/shit-blog/post/2022/12/02_google-domains-and-gh-pages/">Google Domainsで取得したドメインをGitHub Pagesでホストしたサイトに割り当てる</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://guricerin.github.io/shit-blog/post/2022/10/31_zakuzakuactors/">ざくざくアクターズ Ver1.82 クリア</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://guricerin.github.io/shit-blog/post/2022/09/11/mal/">Deno(v1.25.0)でMake a Lispした</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://guricerin.github.io/shit-blog/post/2022/07/30_low-class/">「昔はやんちゃでした」とかいう人</a></li>
+		</ul>
+	</div>
+</div>
+<div class="widget-categories widget">
+	<h4 class="widget__title">Categories</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item">
+				<a class="widget__link" href="https://guricerin.github.io/shit-blog/categories/bash/">bash</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">2</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="https://guricerin.github.io/shit-blog/categories/bz/">B&#39;z</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">38</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="https://guricerin.github.io/shit-blog/categories/csharp/">CSharp</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">1</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="https://guricerin.github.io/shit-blog/categories/fsharp/">FSharp</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">4</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="https://guricerin.github.io/shit-blog/categories/gcp/">GCP</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">1</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="https://guricerin.github.io/shit-blog/categories/go/">Go</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">2</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="https://guricerin.github.io/shit-blog/categories/it%E3%82%A4%E3%83%B3%E3%83%95%E3%83%A9/">ITインフラ</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">2</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="https://guricerin.github.io/shit-blog/categories/lisp/">Lisp</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">1</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="https://guricerin.github.io/shit-blog/categories/mint/">Mint</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">1</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="https://guricerin.github.io/shit-blog/categories/ruby/">Ruby</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">2</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="https://guricerin.github.io/shit-blog/categories/rust/">Rust</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">5</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="https://guricerin.github.io/shit-blog/categories/scheme/">Scheme</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">1</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="https://guricerin.github.io/shit-blog/categories/typescript/">TypeScript</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">1</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="https://guricerin.github.io/shit-blog/categories/windows/">Windows</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">2</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="https://guricerin.github.io/shit-blog/categories/%E3%82%AF%E3%82%BD%E3%83%96%E3%83%AD%E3%82%B0/">クソブログ</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">11</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="https://guricerin.github.io/shit-blog/categories/%E3%82%B2%E3%83%BC%E3%83%A0/">ゲーム</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">3</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="https://guricerin.github.io/shit-blog/categories/%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF/">ネットワーク</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">5</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="https://guricerin.github.io/shit-blog/categories/%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0/">プログラミング</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">22</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="https://guricerin.github.io/shit-blog/categories/%E4%B8%83%E5%B0%BE%E9%A6%99/">七尾香</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">1</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="https://guricerin.github.io/shit-blog/categories/%E5%87%8B%E5%8F%B6%E6%A3%95/">凋叶棕</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">3</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="https://guricerin.github.io/shit-blog/categories/%E5%AD%A6%E5%95%8F/">学問</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">2</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="https://guricerin.github.io/shit-blog/categories/%E5%B0%8F%E8%AA%AC/">小説</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">1</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="https://guricerin.github.io/shit-blog/categories/%E6%83%85%E5%A0%B1%E3%82%BB%E3%82%AD%E3%83%A5%E3%83%AA%E3%83%86%E3%82%A3/">情報セキュリティ</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">18</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="https://guricerin.github.io/shit-blog/categories/%E6%95%B0%E5%AD%A6/">数学</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">2</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="https://guricerin.github.io/shit-blog/categories/%E6%9A%81records/">暁Records</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">1</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="https://guricerin.github.io/shit-blog/categories/%E6%9B%B8%E7%89%A9/">書物</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">16</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="https://guricerin.github.io/shit-blog/categories/%E6%9D%B1%E6%96%B9/">東方</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">5</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="https://guricerin.github.io/shit-blog/categories/%E6%BC%AB%E7%94%BB/">漫画</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">2</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="https://guricerin.github.io/shit-blog/categories/%E7%A5%9E%E6%9E%97%E9%95%B7%E5%B9%B3/">神林長平</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">2</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="https://guricerin.github.io/shit-blog/categories/%E7%AB%B6%E6%8A%80%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0/">競技プログラミング</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">25</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="https://guricerin.github.io/shit-blog/categories/%E9%9F%B3%E6%A5%BD/">音楽</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">40</span>
+				</li>
+		</ul>
+	</div>
+</div>
+<div class="widget-archives widget">
+    <h4 class="widget__title">ARCHIVES</h4>
+    <div class="widget__content">
+        <ul>
+            
+            <li><a href="https://guricerin.github.io/shit-blog/archives/2023-05">2023-05 (1)</a></li>
+            
+            <li><a href="https://guricerin.github.io/shit-blog/archives/2022-12">2022-12 (1)</a></li>
+            
+            <li><a href="https://guricerin.github.io/shit-blog/archives/2022-10">2022-10 (1)</a></li>
+            
+            <li><a href="https://guricerin.github.io/shit-blog/archives/2022-09">2022-09 (1)</a></li>
+            
+            <li><a href="https://guricerin.github.io/shit-blog/archives/2022-07">2022-07 (2)</a></li>
+            
+            <li><a href="https://guricerin.github.io/shit-blog/archives/2022-03">2022-03 (2)</a></li>
+            
+            <li><a href="https://guricerin.github.io/shit-blog/archives/2022-02">2022-02 (1)</a></li>
+            
+            <li><a href="https://guricerin.github.io/shit-blog/archives/2021-12">2021-12 (2)</a></li>
+            
+            <li><a href="https://guricerin.github.io/shit-blog/archives/2021-11">2021-11 (3)</a></li>
+            
+            <li><a href="https://guricerin.github.io/shit-blog/archives/2021-10">2021-10 (2)</a></li>
+            
+            <li><a href="https://guricerin.github.io/shit-blog/archives/2021-09">2021-09 (5)</a></li>
+            
+            <li><a href="https://guricerin.github.io/shit-blog/archives/2021-07">2021-07 (1)</a></li>
+            
+            <li><a href="https://guricerin.github.io/shit-blog/archives/2021-06">2021-06 (2)</a></li>
+            
+            <li><a href="https://guricerin.github.io/shit-blog/archives/2021-01">2021-01 (1)</a></li>
+            
+            <li><a href="https://guricerin.github.io/shit-blog/archives/2020-11">2020-11 (4)</a></li>
+            
+            <li><a href="https://guricerin.github.io/shit-blog/archives/2020-10">2020-10 (1)</a></li>
+            
+            <li><a href="https://guricerin.github.io/shit-blog/archives/2020-09">2020-09 (21)</a></li>
+            
+            <li><a href="https://guricerin.github.io/shit-blog/archives/2020-08">2020-08 (2)</a></li>
+            
+            <li><a href="https://guricerin.github.io/shit-blog/archives/2020-05">2020-05 (1)</a></li>
+            
+            <li><a href="https://guricerin.github.io/shit-blog/archives/2020-03">2020-03 (2)</a></li>
+            
+            <li><a href="https://guricerin.github.io/shit-blog/archives/2020-02">2020-02 (1)</a></li>
+            
+            <li><a href="https://guricerin.github.io/shit-blog/archives/2019-12">2019-12 (1)</a></li>
+            
+            <li><a href="https://guricerin.github.io/shit-blog/archives/2019-08">2019-08 (1)</a></li>
+            
+            <li><a href="https://guricerin.github.io/shit-blog/archives/2019-03">2019-03 (19)</a></li>
+            
+            <li><a href="https://guricerin.github.io/shit-blog/archives/2019-02">2019-02 (5)</a></li>
+            
+            <li><a href="https://guricerin.github.io/shit-blog/archives/2019-01">2019-01 (3)</a></li>
+            
+            <li><a href="https://guricerin.github.io/shit-blog/archives/2018-12">2018-12 (2)</a></li>
+            
+            <li><a href="https://guricerin.github.io/shit-blog/archives/2018-11">2018-11 (1)</a></li>
+            
+            <li><a href="https://guricerin.github.io/shit-blog/archives/2018-09">2018-09 (1)</a></li>
+            
+            <li><a href="https://guricerin.github.io/shit-blog/archives/2018-06">2018-06 (1)</a></li>
+            
+            <li><a href="https://guricerin.github.io/shit-blog/archives/2018-05">2018-05 (1)</a></li>
+            
+            <li><a href="https://guricerin.github.io/shit-blog/archives/2018-02">2018-02 (1)</a></li>
+            
+            <li><a href="https://guricerin.github.io/shit-blog/archives/2018-01">2018-01 (4)</a></li>
+            
+            <li><a href="https://guricerin.github.io/shit-blog/archives/2017-12">2017-12 (3)</a></li>
+            
+            <li><a href="https://guricerin.github.io/shit-blog/archives/2017-11">2017-11 (12)</a></li>
+            
+            <li><a href="https://guricerin.github.io/shit-blog/archives/2017-10">2017-10 (17)</a></li>
+            
+        </ul>
+    </div>
+</div>
+
+<div class="widget-social widget">
+	<h4 class="widget-social__title widget__title">Social</h4>
+	<div class="widget-social__content widget__content">
+		<div class="widget-social__item widget__item">
+			<a class="widget-social__link widget__link btn" title="GitHub" rel="noopener noreferrer" href="https://github.com/guricerin" target="_blank">
+				<svg class="widget-social__link-icon icon icon-github" width="24" height="24" viewBox="0 0 384 374"><path d="m192 0c-106.1 0-192 85.8-192 191.7 0 84.7 55 156.6 131.3 181.9 9.6 1.8 13.1-4.2 13.1-9.2 0-4.6-.2-16.6-.3-32.6-53.4 11.6-64.7-25.7-64.7-25.7-8.7-22.1-21.3-28-21.3-28-17.4-11.9 1.3-11.6 1.3-11.6 19.3 1.4 29.4 19.8 29.4 19.8 17.1 29.3 44.9 20.8 55.9 15.9 1.7-12.4 6.7-20.8 12.2-25.6-42.6-4.8-87.5-21.3-87.5-94.8 0-20.9 7.5-38 19.8-51.4-2-4.9-8.6-24.3 1.9-50.7 0 0 16.1-5.2 52.8 19.7 15.3-4.2 31.7-6.4 48.1-6.5 16.3.1 32.7 2.2 48.1 6.5 36.7-24.8 52.8-19.7 52.8-19.7 10.5 26.4 3.9 45.9 1.9 50.7 12.3 13.4 19.7 30.5 19.7 51.4 0 73.7-44.9 89.9-87.7 94.6 6.9 5.9 13 17.6 13 35.5 0 25.6-.2 46.3-.2 52.6 0 5.1 3.5 11.1 13.2 9.2 76.2-25.5 131.2-97.3 131.2-182 0-105.9-86-191.7-192-191.7z"/></svg>
+				<span>GitHub</span>
+			</a>
+		</div>
+
+		
+	</div>
+</div>
+</aside>
 
     </div>
     <footer class="footer">
 	<div class="container footer__container flex">
 		
 		<div class="footer__copyright">
-			&copy; 2022 guricerin.
+			&copy; 2023 guricerin.
 			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
 		</div>
 	</div>

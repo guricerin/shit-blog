@@ -12,18 +12,14 @@
   <meta property="og:title" content="AtCoder 「みんなのプロコン 2019」" />
 <meta property="og:description" content="" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://guricerin.github.io/shit-blog/post/2019/02/10-compro/" />
+<meta property="og:url" content="https://guricerin.github.io/shit-blog/post/2019/02/10-compro/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2019-02-10T17:08:21+09:00" />
 <meta property="article:modified_time" content="2019-02-10T17:08:21+09:00" />
 
   <meta itemprop="name" content="AtCoder 「みんなのプロコン 2019」">
-<meta itemprop="description" content="">
-<meta itemprop="datePublished" content="2019-02-10T17:08:21&#43;09:00" />
-<meta itemprop="dateModified" content="2019-02-10T17:08:21&#43;09:00" />
-<meta itemprop="wordCount" content="283">
-
-
-
+<meta itemprop="description" content=""><meta itemprop="datePublished" content="2019-02-10T17:08:21+09:00" />
+<meta itemprop="dateModified" content="2019-02-10T17:08:21+09:00" />
+<meta itemprop="wordCount" content="334">
 <meta itemprop="keywords" content="" />
   <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="AtCoder 「みんなのプロコン 2019」"/>
@@ -119,145 +115,145 @@ if (!doNotTrack) {
 <p>調子に乗って軽めの解説でも書こうと思う。より優れた解説記事は他にいくらでもあるので、以下の内容は競プロ初心者がどのような思考を経て回答にたどり着いたのかを眺める感じで楽しんでもらえたらなと思う。</p>
 <h3 id="a問題">A問題</h3>
 <p>差が2以上の数がどれだけあるかを愚直にforループを回して数えた。</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp"><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;iostream&gt;</span><span style="color:#75715e">
-</span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;cstdio&gt;</span><span style="color:#75715e">
-</span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;cstring&gt;</span><span style="color:#75715e">
-</span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;string&gt;</span><span style="color:#75715e">
-</span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;vector&gt;</span><span style="color:#75715e">
-</span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;iostream&gt;</span><span style="color:#75715e">
-</span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;cstdio&gt;</span><span style="color:#75715e">
-</span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;cstring&gt;</span><span style="color:#75715e">
-</span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;string&gt;</span><span style="color:#75715e">
-</span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;vector&gt;</span><span style="color:#75715e">
-</span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;algorithm&gt;</span><span style="color:#75715e">
-</span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;cmath&gt;</span><span style="color:#75715e">
-</span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;numeric&gt;</span><span style="color:#75715e">
-</span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;cassert&gt;</span><span style="color:#75715e">
-</span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;memory&gt;</span><span style="color:#75715e">
-</span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;stack&gt;</span><span style="color:#75715e">
-</span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;set&gt;</span><span style="color:#75715e">
-</span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;map&gt;</span><span style="color:#75715e">
-</span><span style="color:#75715e"></span>
-<span style="color:#75715e">#define INF 1000000000
-</span><span style="color:#75715e">#define MOD 1000000007
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">typedef</span> <span style="color:#66d9ef">long</span> <span style="color:#66d9ef">long</span> ll;
-<span style="color:#66d9ef">typedef</span> <span style="color:#66d9ef">unsigned</span> <span style="color:#66d9ef">long</span> <span style="color:#66d9ef">long</span> ull;
-<span style="color:#66d9ef">using</span> <span style="color:#66d9ef">namespace</span> std;
-
-<span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span>() {
-  cin.tie(<span style="color:#ae81ff">0</span>);
-  ios<span style="color:#f92672">::</span>sync_with_stdio(false);
-
-  <span style="color:#66d9ef">int</span> N,K; cin<span style="color:#f92672">&gt;&gt;</span>N<span style="color:#f92672">&gt;&gt;</span>K;
-  <span style="color:#66d9ef">int</span> cnt <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
-  <span style="color:#66d9ef">for</span>(<span style="color:#66d9ef">int</span> i<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>; i<span style="color:#f92672">&lt;</span>N; i <span style="color:#f92672">+=</span> <span style="color:#ae81ff">2</span>) {
-    cnt<span style="color:#f92672">++</span>;
-  }
-  string ans <span style="color:#f92672">=</span> cnt <span style="color:#f92672">&gt;=</span> K <span style="color:#f92672">?</span> <span style="color:#e6db74">&#34;YES&#34;</span> <span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;NO&#34;</span>;
-  cout <span style="color:#f92672">&lt;&lt;</span> ans <span style="color:#f92672">&lt;&lt;</span> endl;
-}
-</code></pre></div><h3 id="b問題">B問題</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;iostream&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;cstdio&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;cstring&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;string&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;vector&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;iostream&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;cstdio&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;cstring&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;string&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;vector&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;algorithm&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;cmath&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;numeric&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;cassert&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;memory&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;stack&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;set&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;map&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#define INF 1000000000
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">#define MOD 1000000007
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">typedef</span> <span style="color:#66d9ef">long</span> <span style="color:#66d9ef">long</span> ll;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">typedef</span> <span style="color:#66d9ef">unsigned</span> <span style="color:#66d9ef">long</span> <span style="color:#66d9ef">long</span> ull;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">using</span> <span style="color:#66d9ef">namespace</span> std;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span>() {
+</span></span><span style="display:flex;"><span>  cin.tie(<span style="color:#ae81ff">0</span>);
+</span></span><span style="display:flex;"><span>  ios<span style="color:#f92672">::</span>sync_with_stdio(false);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">int</span> N,K; cin<span style="color:#f92672">&gt;&gt;</span>N<span style="color:#f92672">&gt;&gt;</span>K;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">int</span> cnt <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">for</span>(<span style="color:#66d9ef">int</span> i<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>; i<span style="color:#f92672">&lt;</span>N; i <span style="color:#f92672">+=</span> <span style="color:#ae81ff">2</span>) {
+</span></span><span style="display:flex;"><span>    cnt<span style="color:#f92672">++</span>;
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>  string ans <span style="color:#f92672">=</span> cnt <span style="color:#f92672">&gt;=</span> K <span style="color:#f92672">?</span> <span style="color:#e6db74">&#34;YES&#34;</span> <span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;NO&#34;</span>;
+</span></span><span style="display:flex;"><span>  cout <span style="color:#f92672">&lt;&lt;</span> ans <span style="color:#f92672">&lt;&lt;</span> endl;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h3 id="b問題">B問題</h3>
 <p>どこを始点・終点にすべきか判断させるコードが書けなかったので、脳死で3回以上登場する番号があればNOを出力するコードを出したらACだった。うけた。<br>
 今回はこんなんでも解けたが、普通はワーシャル・フロイド法なるものを使うのがセオリーらしい。</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp"><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;iostream&gt;</span><span style="color:#75715e">
-</span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;cstdio&gt;</span><span style="color:#75715e">
-</span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;cstring&gt;</span><span style="color:#75715e">
-</span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;string&gt;</span><span style="color:#75715e">
-</span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;vector&gt;</span><span style="color:#75715e">
-</span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;iostream&gt;</span><span style="color:#75715e">
-</span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;cstdio&gt;</span><span style="color:#75715e">
-</span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;cstring&gt;</span><span style="color:#75715e">
-</span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;string&gt;</span><span style="color:#75715e">
-</span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;vector&gt;</span><span style="color:#75715e">
-</span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;algorithm&gt;</span><span style="color:#75715e">
-</span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;cmath&gt;</span><span style="color:#75715e">
-</span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;numeric&gt;</span><span style="color:#75715e">
-</span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;cassert&gt;</span><span style="color:#75715e">
-</span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;memory&gt;</span><span style="color:#75715e">
-</span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;stack&gt;</span><span style="color:#75715e">
-</span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;set&gt;</span><span style="color:#75715e">
-</span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;map&gt;</span><span style="color:#75715e">
-</span><span style="color:#75715e"></span>
-<span style="color:#75715e">#define INF 1000000000
-</span><span style="color:#75715e">#define MOD 1000000007
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">typedef</span> <span style="color:#66d9ef">long</span> <span style="color:#66d9ef">long</span> ll;
-<span style="color:#66d9ef">typedef</span> <span style="color:#66d9ef">unsigned</span> <span style="color:#66d9ef">long</span> <span style="color:#66d9ef">long</span> ull;
-<span style="color:#66d9ef">using</span> <span style="color:#66d9ef">namespace</span> std;
-
-<span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span>() {
-  cin.tie(<span style="color:#ae81ff">0</span>);
-  ios<span style="color:#f92672">::</span>sync_with_stdio(false);
-
-  map<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">int</span>, <span style="color:#66d9ef">int</span><span style="color:#f92672">&gt;</span> dict;
-  <span style="color:#66d9ef">for</span>(<span style="color:#66d9ef">int</span> i<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>; i<span style="color:#f92672">&lt;</span><span style="color:#ae81ff">3</span>; i<span style="color:#f92672">++</span>) {
-    <span style="color:#66d9ef">int</span> a,b; cin<span style="color:#f92672">&gt;&gt;</span>a<span style="color:#f92672">&gt;&gt;</span>b;
-    a<span style="color:#f92672">--</span>; b<span style="color:#f92672">--</span>;
-    dict[a]<span style="color:#f92672">++</span>;
-    dict[b]<span style="color:#f92672">++</span>;
-  }
-
-  string ans <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;YES&#34;</span>;
-  <span style="color:#66d9ef">for</span>(<span style="color:#66d9ef">auto</span> p: dict) {
-    <span style="color:#66d9ef">if</span>(p.second <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">3</span>) {
-      ans <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;NO&#34;</span>;
-    }
-  }
-  cout <span style="color:#f92672">&lt;&lt;</span> ans <span style="color:#f92672">&lt;&lt;</span> endl;
-}
-</code></pre></div><h3 id="c問題">C問題</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;iostream&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;cstdio&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;cstring&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;string&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;vector&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;iostream&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;cstdio&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;cstring&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;string&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;vector&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;algorithm&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;cmath&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;numeric&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;cassert&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;memory&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;stack&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;set&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;map&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#define INF 1000000000
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">#define MOD 1000000007
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">typedef</span> <span style="color:#66d9ef">long</span> <span style="color:#66d9ef">long</span> ll;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">typedef</span> <span style="color:#66d9ef">unsigned</span> <span style="color:#66d9ef">long</span> <span style="color:#66d9ef">long</span> ull;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">using</span> <span style="color:#66d9ef">namespace</span> std;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span>() {
+</span></span><span style="display:flex;"><span>  cin.tie(<span style="color:#ae81ff">0</span>);
+</span></span><span style="display:flex;"><span>  ios<span style="color:#f92672">::</span>sync_with_stdio(false);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  map<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">int</span>, <span style="color:#66d9ef">int</span><span style="color:#f92672">&gt;</span> dict;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">for</span>(<span style="color:#66d9ef">int</span> i<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>; i<span style="color:#f92672">&lt;</span><span style="color:#ae81ff">3</span>; i<span style="color:#f92672">++</span>) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">int</span> a,b; cin<span style="color:#f92672">&gt;&gt;</span>a<span style="color:#f92672">&gt;&gt;</span>b;
+</span></span><span style="display:flex;"><span>    a<span style="color:#f92672">--</span>; b<span style="color:#f92672">--</span>;
+</span></span><span style="display:flex;"><span>    dict[a]<span style="color:#f92672">++</span>;
+</span></span><span style="display:flex;"><span>    dict[b]<span style="color:#f92672">++</span>;
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  string ans <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;YES&#34;</span>;
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">for</span>(<span style="color:#66d9ef">auto</span> p: dict) {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span>(p.second <span style="color:#f92672">&gt;=</span> <span style="color:#ae81ff">3</span>) {
+</span></span><span style="display:flex;"><span>      ans <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;NO&#34;</span>;
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>  cout <span style="color:#f92672">&lt;&lt;</span> ans <span style="color:#f92672">&lt;&lt;</span> endl;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h3 id="c問題">C問題</h3>
 <p>なんとなく貪欲法なるものが使えそうだと思った。A &gt;= B の場合はいちいち換金する意味がないので K + 1 を出力する。<br>
 A &lt; B の場合、とりあえずA枚貯まるまでビスケットを増やしていき、溜まったら (-A+B) していく(この時、2ターン消費されることに注意する)。<br>
 でもこれだけの実装だと、入力サンプルで通らないものがあった。普通に1枚ずつ増やしていくほうがいい場合があるからだ。この入力サンプルがなければ、WA頻発で半泣きになっていたことだろう。</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-cpp" data-lang="cpp"><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;iostream&gt;</span><span style="color:#75715e">
-</span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;cstdio&gt;</span><span style="color:#75715e">
-</span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;cstring&gt;</span><span style="color:#75715e">
-</span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;string&gt;</span><span style="color:#75715e">
-</span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;vector&gt;</span><span style="color:#75715e">
-</span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;iostream&gt;</span><span style="color:#75715e">
-</span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;cstdio&gt;</span><span style="color:#75715e">
-</span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;cstring&gt;</span><span style="color:#75715e">
-</span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;string&gt;</span><span style="color:#75715e">
-</span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;vector&gt;</span><span style="color:#75715e">
-</span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;algorithm&gt;</span><span style="color:#75715e">
-</span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;cmath&gt;</span><span style="color:#75715e">
-</span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;numeric&gt;</span><span style="color:#75715e">
-</span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;cassert&gt;</span><span style="color:#75715e">
-</span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;memory&gt;</span><span style="color:#75715e">
-</span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;stack&gt;</span><span style="color:#75715e">
-</span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;set&gt;</span><span style="color:#75715e">
-</span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;map&gt;</span><span style="color:#75715e">
-</span><span style="color:#75715e"></span>
-<span style="color:#75715e">#define INF 1000000000
-</span><span style="color:#75715e">#define MOD 1000000007
-</span><span style="color:#75715e"></span><span style="color:#66d9ef">typedef</span> <span style="color:#66d9ef">long</span> <span style="color:#66d9ef">long</span> ll;
-<span style="color:#66d9ef">typedef</span> <span style="color:#66d9ef">unsigned</span> <span style="color:#66d9ef">long</span> <span style="color:#66d9ef">long</span> ull;
-<span style="color:#66d9ef">using</span> <span style="color:#66d9ef">namespace</span> std;
-
-<span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span>() {
-  cin.tie(<span style="color:#ae81ff">0</span>);
-  ios<span style="color:#f92672">::</span>sync_with_stdio(false);
-
-  ull K,A,B; cin<span style="color:#f92672">&gt;&gt;</span>K<span style="color:#f92672">&gt;&gt;</span>A<span style="color:#f92672">&gt;&gt;</span>B;
-  ull have <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>;
-
-  <span style="color:#66d9ef">if</span>(A <span style="color:#f92672">&gt;=</span> B) {
-    have <span style="color:#f92672">+=</span> K;
-  } <span style="color:#66d9ef">else</span> {
-    <span style="color:#66d9ef">for</span>(ull i<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>; i<span style="color:#f92672">&lt;</span>K; i<span style="color:#f92672">++</span>) {
-      <span style="color:#66d9ef">if</span>(have <span style="color:#f92672">&gt;=</span> A <span style="color:#f92672">&amp;&amp;</span> i <span style="color:#f92672">!=</span> K <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>) {
-        have <span style="color:#f92672">-=</span> A;
-        have <span style="color:#f92672">+=</span> B;
-        i<span style="color:#f92672">++</span>;
-      } <span style="color:#66d9ef">else</span> {
-        have <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>;
-      }
-    }
-    have <span style="color:#f92672">=</span> max(have, <span style="color:#ae81ff">1</span><span style="color:#f92672">+</span>K);
-  }
-
-  cout <span style="color:#f92672">&lt;&lt;</span> have <span style="color:#f92672">&lt;&lt;</span> endl;
-}
-</code></pre></div><h3 id="d問題">D問題</h3>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;iostream&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;cstdio&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;cstring&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;string&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;vector&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;iostream&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;cstdio&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;cstring&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;string&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;vector&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;algorithm&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;cmath&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;numeric&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;cassert&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;memory&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;stack&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;set&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;map&gt;</span><span style="color:#75715e">
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e">#define INF 1000000000
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e">#define MOD 1000000007
+</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">typedef</span> <span style="color:#66d9ef">long</span> <span style="color:#66d9ef">long</span> ll;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">typedef</span> <span style="color:#66d9ef">unsigned</span> <span style="color:#66d9ef">long</span> <span style="color:#66d9ef">long</span> ull;
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">using</span> <span style="color:#66d9ef">namespace</span> std;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#66d9ef">int</span> <span style="color:#a6e22e">main</span>() {
+</span></span><span style="display:flex;"><span>  cin.tie(<span style="color:#ae81ff">0</span>);
+</span></span><span style="display:flex;"><span>  ios<span style="color:#f92672">::</span>sync_with_stdio(false);
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  ull K,A,B; cin<span style="color:#f92672">&gt;&gt;</span>K<span style="color:#f92672">&gt;&gt;</span>A<span style="color:#f92672">&gt;&gt;</span>B;
+</span></span><span style="display:flex;"><span>  ull have <span style="color:#f92672">=</span> <span style="color:#ae81ff">1</span>;
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">if</span>(A <span style="color:#f92672">&gt;=</span> B) {
+</span></span><span style="display:flex;"><span>    have <span style="color:#f92672">+=</span> K;
+</span></span><span style="display:flex;"><span>  } <span style="color:#66d9ef">else</span> {
+</span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span>(ull i<span style="color:#f92672">=</span><span style="color:#ae81ff">0</span>; i<span style="color:#f92672">&lt;</span>K; i<span style="color:#f92672">++</span>) {
+</span></span><span style="display:flex;"><span>      <span style="color:#66d9ef">if</span>(have <span style="color:#f92672">&gt;=</span> A <span style="color:#f92672">&amp;&amp;</span> i <span style="color:#f92672">!=</span> K <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>) {
+</span></span><span style="display:flex;"><span>        have <span style="color:#f92672">-=</span> A;
+</span></span><span style="display:flex;"><span>        have <span style="color:#f92672">+=</span> B;
+</span></span><span style="display:flex;"><span>        i<span style="color:#f92672">++</span>;
+</span></span><span style="display:flex;"><span>      } <span style="color:#66d9ef">else</span> {
+</span></span><span style="display:flex;"><span>        have <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>;
+</span></span><span style="display:flex;"><span>      }
+</span></span><span style="display:flex;"><span>    }
+</span></span><span style="display:flex;"><span>    have <span style="color:#f92672">=</span> max(have, <span style="color:#ae81ff">1</span><span style="color:#f92672">+</span>K);
+</span></span><span style="display:flex;"><span>  }
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>  cout <span style="color:#f92672">&lt;&lt;</span> have <span style="color:#f92672">&lt;&lt;</span> endl;
+</span></span><span style="display:flex;"><span>}
+</span></span></code></pre></div><h3 id="d問題">D問題</h3>
 <p>調子こいて挑んでみた。意味不明で泣きそうになった。問題文のストーリーもホラーだ。なんや耳を植えて石を詰めていくって。新手のスタンド使いかなにかか？</p>
 <p>見てもらえればわかる通り、おれの思考過程は論理的でなくあまり褒められたものではない。解説も非常に雑だ。これが現時点での能力のすべてである。まあこのへんは競プロやってたらおいおい身につくやろみたいな気分ではいる。<br>
 今後については、C問題を安定して解けるようになることを目指す。これができるようになれば緑も夢ではないだろう。逆にできなければ茶のまま停滞するか、最悪の場合灰に逆戻りする羽目になるかもしれない。<br>
@@ -318,14 +314,252 @@ A &lt; B の場合、とりあえずA枚貯まるまでビスケットを増や�
 
 
       </div>
-      
+      <aside class="sidebar">
+<div class="widget-recent widget">
+	<h4 class="widget__title">Recent Posts</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="https://guricerin.github.io/shit-blog/post/2023/05/13_annoying-text/">うるさい文字列</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://guricerin.github.io/shit-blog/post/2022/12/02_google-domains-and-gh-pages/">Google Domainsで取得したドメインをGitHub Pagesでホストしたサイトに割り当てる</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://guricerin.github.io/shit-blog/post/2022/10/31_zakuzakuactors/">ざくざくアクターズ Ver1.82 クリア</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://guricerin.github.io/shit-blog/post/2022/09/11/mal/">Deno(v1.25.0)でMake a Lispした</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://guricerin.github.io/shit-blog/post/2022/07/30_low-class/">「昔はやんちゃでした」とかいう人</a></li>
+		</ul>
+	</div>
+</div>
+<div class="widget-categories widget">
+	<h4 class="widget__title">Categories</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item">
+				<a class="widget__link" href="https://guricerin.github.io/shit-blog/categories/bash/">bash</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">2</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="https://guricerin.github.io/shit-blog/categories/bz/">B&#39;z</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">38</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="https://guricerin.github.io/shit-blog/categories/csharp/">CSharp</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">1</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="https://guricerin.github.io/shit-blog/categories/fsharp/">FSharp</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">4</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="https://guricerin.github.io/shit-blog/categories/gcp/">GCP</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">1</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="https://guricerin.github.io/shit-blog/categories/go/">Go</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">2</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="https://guricerin.github.io/shit-blog/categories/it%E3%82%A4%E3%83%B3%E3%83%95%E3%83%A9/">ITインフラ</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">2</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="https://guricerin.github.io/shit-blog/categories/lisp/">Lisp</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">1</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="https://guricerin.github.io/shit-blog/categories/mint/">Mint</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">1</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="https://guricerin.github.io/shit-blog/categories/ruby/">Ruby</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">2</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="https://guricerin.github.io/shit-blog/categories/rust/">Rust</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">5</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="https://guricerin.github.io/shit-blog/categories/scheme/">Scheme</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">1</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="https://guricerin.github.io/shit-blog/categories/typescript/">TypeScript</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">1</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="https://guricerin.github.io/shit-blog/categories/windows/">Windows</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">2</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="https://guricerin.github.io/shit-blog/categories/%E3%82%AF%E3%82%BD%E3%83%96%E3%83%AD%E3%82%B0/">クソブログ</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">11</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="https://guricerin.github.io/shit-blog/categories/%E3%82%B2%E3%83%BC%E3%83%A0/">ゲーム</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">3</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="https://guricerin.github.io/shit-blog/categories/%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF/">ネットワーク</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">5</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="https://guricerin.github.io/shit-blog/categories/%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0/">プログラミング</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">22</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="https://guricerin.github.io/shit-blog/categories/%E4%B8%83%E5%B0%BE%E9%A6%99/">七尾香</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">1</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="https://guricerin.github.io/shit-blog/categories/%E5%87%8B%E5%8F%B6%E6%A3%95/">凋叶棕</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">3</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="https://guricerin.github.io/shit-blog/categories/%E5%AD%A6%E5%95%8F/">学問</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">2</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="https://guricerin.github.io/shit-blog/categories/%E5%B0%8F%E8%AA%AC/">小説</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">1</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="https://guricerin.github.io/shit-blog/categories/%E6%83%85%E5%A0%B1%E3%82%BB%E3%82%AD%E3%83%A5%E3%83%AA%E3%83%86%E3%82%A3/">情報セキュリティ</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">18</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="https://guricerin.github.io/shit-blog/categories/%E6%95%B0%E5%AD%A6/">数学</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">2</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="https://guricerin.github.io/shit-blog/categories/%E6%9A%81records/">暁Records</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">1</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="https://guricerin.github.io/shit-blog/categories/%E6%9B%B8%E7%89%A9/">書物</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">16</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="https://guricerin.github.io/shit-blog/categories/%E6%9D%B1%E6%96%B9/">東方</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">5</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="https://guricerin.github.io/shit-blog/categories/%E6%BC%AB%E7%94%BB/">漫画</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">2</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="https://guricerin.github.io/shit-blog/categories/%E7%A5%9E%E6%9E%97%E9%95%B7%E5%B9%B3/">神林長平</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">2</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="https://guricerin.github.io/shit-blog/categories/%E7%AB%B6%E6%8A%80%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0/">競技プログラミング</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">25</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="https://guricerin.github.io/shit-blog/categories/%E9%9F%B3%E6%A5%BD/">音楽</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">40</span>
+				</li>
+		</ul>
+	</div>
+</div>
+<div class="widget-archives widget">
+    <h4 class="widget__title">ARCHIVES</h4>
+    <div class="widget__content">
+        <ul>
+            
+            <li><a href="https://guricerin.github.io/shit-blog/archives/2023-05">2023-05 (1)</a></li>
+            
+            <li><a href="https://guricerin.github.io/shit-blog/archives/2022-12">2022-12 (1)</a></li>
+            
+            <li><a href="https://guricerin.github.io/shit-blog/archives/2022-10">2022-10 (1)</a></li>
+            
+            <li><a href="https://guricerin.github.io/shit-blog/archives/2022-09">2022-09 (1)</a></li>
+            
+            <li><a href="https://guricerin.github.io/shit-blog/archives/2022-07">2022-07 (2)</a></li>
+            
+            <li><a href="https://guricerin.github.io/shit-blog/archives/2022-03">2022-03 (2)</a></li>
+            
+            <li><a href="https://guricerin.github.io/shit-blog/archives/2022-02">2022-02 (1)</a></li>
+            
+            <li><a href="https://guricerin.github.io/shit-blog/archives/2021-12">2021-12 (2)</a></li>
+            
+            <li><a href="https://guricerin.github.io/shit-blog/archives/2021-11">2021-11 (3)</a></li>
+            
+            <li><a href="https://guricerin.github.io/shit-blog/archives/2021-10">2021-10 (2)</a></li>
+            
+            <li><a href="https://guricerin.github.io/shit-blog/archives/2021-09">2021-09 (5)</a></li>
+            
+            <li><a href="https://guricerin.github.io/shit-blog/archives/2021-07">2021-07 (1)</a></li>
+            
+            <li><a href="https://guricerin.github.io/shit-blog/archives/2021-06">2021-06 (2)</a></li>
+            
+            <li><a href="https://guricerin.github.io/shit-blog/archives/2021-01">2021-01 (1)</a></li>
+            
+            <li><a href="https://guricerin.github.io/shit-blog/archives/2020-11">2020-11 (4)</a></li>
+            
+            <li><a href="https://guricerin.github.io/shit-blog/archives/2020-10">2020-10 (1)</a></li>
+            
+            <li><a href="https://guricerin.github.io/shit-blog/archives/2020-09">2020-09 (21)</a></li>
+            
+            <li><a href="https://guricerin.github.io/shit-blog/archives/2020-08">2020-08 (2)</a></li>
+            
+            <li><a href="https://guricerin.github.io/shit-blog/archives/2020-05">2020-05 (1)</a></li>
+            
+            <li><a href="https://guricerin.github.io/shit-blog/archives/2020-03">2020-03 (2)</a></li>
+            
+            <li><a href="https://guricerin.github.io/shit-blog/archives/2020-02">2020-02 (1)</a></li>
+            
+            <li><a href="https://guricerin.github.io/shit-blog/archives/2019-12">2019-12 (1)</a></li>
+            
+            <li><a href="https://guricerin.github.io/shit-blog/archives/2019-08">2019-08 (1)</a></li>
+            
+            <li><a href="https://guricerin.github.io/shit-blog/archives/2019-03">2019-03 (19)</a></li>
+            
+            <li><a href="https://guricerin.github.io/shit-blog/archives/2019-02">2019-02 (5)</a></li>
+            
+            <li><a href="https://guricerin.github.io/shit-blog/archives/2019-01">2019-01 (3)</a></li>
+            
+            <li><a href="https://guricerin.github.io/shit-blog/archives/2018-12">2018-12 (2)</a></li>
+            
+            <li><a href="https://guricerin.github.io/shit-blog/archives/2018-11">2018-11 (1)</a></li>
+            
+            <li><a href="https://guricerin.github.io/shit-blog/archives/2018-09">2018-09 (1)</a></li>
+            
+            <li><a href="https://guricerin.github.io/shit-blog/archives/2018-06">2018-06 (1)</a></li>
+            
+            <li><a href="https://guricerin.github.io/shit-blog/archives/2018-05">2018-05 (1)</a></li>
+            
+            <li><a href="https://guricerin.github.io/shit-blog/archives/2018-02">2018-02 (1)</a></li>
+            
+            <li><a href="https://guricerin.github.io/shit-blog/archives/2018-01">2018-01 (4)</a></li>
+            
+            <li><a href="https://guricerin.github.io/shit-blog/archives/2017-12">2017-12 (3)</a></li>
+            
+            <li><a href="https://guricerin.github.io/shit-blog/archives/2017-11">2017-11 (12)</a></li>
+            
+            <li><a href="https://guricerin.github.io/shit-blog/archives/2017-10">2017-10 (17)</a></li>
+            
+        </ul>
+    </div>
+</div>
+
+<div class="widget-social widget">
+	<h4 class="widget-social__title widget__title">Social</h4>
+	<div class="widget-social__content widget__content">
+		<div class="widget-social__item widget__item">
+			<a class="widget-social__link widget__link btn" title="GitHub" rel="noopener noreferrer" href="https://github.com/guricerin" target="_blank">
+				<svg class="widget-social__link-icon icon icon-github" width="24" height="24" viewBox="0 0 384 374"><path d="m192 0c-106.1 0-192 85.8-192 191.7 0 84.7 55 156.6 131.3 181.9 9.6 1.8 13.1-4.2 13.1-9.2 0-4.6-.2-16.6-.3-32.6-53.4 11.6-64.7-25.7-64.7-25.7-8.7-22.1-21.3-28-21.3-28-17.4-11.9 1.3-11.6 1.3-11.6 19.3 1.4 29.4 19.8 29.4 19.8 17.1 29.3 44.9 20.8 55.9 15.9 1.7-12.4 6.7-20.8 12.2-25.6-42.6-4.8-87.5-21.3-87.5-94.8 0-20.9 7.5-38 19.8-51.4-2-4.9-8.6-24.3 1.9-50.7 0 0 16.1-5.2 52.8 19.7 15.3-4.2 31.7-6.4 48.1-6.5 16.3.1 32.7 2.2 48.1 6.5 36.7-24.8 52.8-19.7 52.8-19.7 10.5 26.4 3.9 45.9 1.9 50.7 12.3 13.4 19.7 30.5 19.7 51.4 0 73.7-44.9 89.9-87.7 94.6 6.9 5.9 13 17.6 13 35.5 0 25.6-.2 46.3-.2 52.6 0 5.1 3.5 11.1 13.2 9.2 76.2-25.5 131.2-97.3 131.2-182 0-105.9-86-191.7-192-191.7z"/></svg>
+				<span>GitHub</span>
+			</a>
+		</div>
+
+		
+	</div>
+</div>
+</aside>
 
     </div>
     <footer class="footer">
 	<div class="container footer__container flex">
 		
 		<div class="footer__copyright">
-			&copy; 2022 guricerin.
+			&copy; 2023 guricerin.
 			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
 		</div>
 	</div>

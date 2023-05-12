@@ -12,18 +12,14 @@
   <meta property="og:title" content="WebGoat-5: Crypto Basics" />
 <meta property="og:description" content="主要な暗号手法を学ぶレッスン。" />
 <meta property="og:type" content="article" />
-<meta property="og:url" content="https://guricerin.github.io/shit-blog/post/2020/09/18-crypto-basics/" />
+<meta property="og:url" content="https://guricerin.github.io/shit-blog/post/2020/09/18-crypto-basics/" /><meta property="article:section" content="post" />
 <meta property="article:published_time" content="2020-09-18T18:16:30+09:00" />
 <meta property="article:modified_time" content="2020-09-18T18:16:30+09:00" />
 
   <meta itemprop="name" content="WebGoat-5: Crypto Basics">
-<meta itemprop="description" content="主要な暗号手法を学ぶレッスン。">
-<meta itemprop="datePublished" content="2020-09-18T18:16:30&#43;09:00" />
-<meta itemprop="dateModified" content="2020-09-18T18:16:30&#43;09:00" />
+<meta itemprop="description" content="主要な暗号手法を学ぶレッスン。"><meta itemprop="datePublished" content="2020-09-18T18:16:30+09:00" />
+<meta itemprop="dateModified" content="2020-09-18T18:16:30+09:00" />
 <meta itemprop="wordCount" content="414">
-
-
-
 <meta itemprop="keywords" content="" />
   <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="WebGoat-5: Crypto Basics"/>
@@ -120,12 +116,12 @@ if (!doNotTrack) {
 <p>Base64はあらゆる種類のバイナリデータを64（+ 1）種類の英数字記号に符号化する手法。<br>
 復号は簡単なので、パスワードなど秘匿性の高いデータをこれで符号化したものはTLSやHTTPSでやり取りする必要がある。</p>
 <h5 id="符号">符号</h5>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">$ echo -n <span style="color:#e6db74">&#34;myuser:mypassword&#34;</span> | base64
-bXl1c2VyOm15cGFzc3dvcmQ<span style="color:#f92672">=</span>
-</code></pre></div><h5 id="復号">復号</h5>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">$ echo -n <span style="color:#e6db74">&#34;bXl1c2VyOm15cGFzc3dvcmQ=&#34;</span> | base64 -d <span style="color:#75715e"># -d, --decodeオプションで復号</span>
-myuser:mypassword
-</code></pre></div><p>上記の復号オプションを使って問題クリア。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>$ echo -n <span style="color:#e6db74">&#34;myuser:mypassword&#34;</span> | base64
+</span></span><span style="display:flex;"><span>bXl1c2VyOm15cGFzc3dvcmQ<span style="color:#f92672">=</span>
+</span></span></code></pre></div><h5 id="復号">復号</h5>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>$ echo -n <span style="color:#e6db74">&#34;bXl1c2VyOm15cGFzc3dvcmQ=&#34;</span> | base64 -d <span style="color:#75715e"># -d, --decodeオプションで復号</span>
+</span></span><span style="display:flex;"><span>myuser:mypassword
+</span></span></code></pre></div><p>上記の復号オプションを使って問題クリア。</p>
 <h4 id="page-3">Page 3</h4>
 <p>XOR演算は群としての性質をもっている。</p>
 <ul>
@@ -135,14 +131,14 @@ myuser:mypassword
 </ul>
 <p>たとえ文字列データでも、それを文字列エンコード（ASKIIなりUTF-8なり）した数値として扱えばXOR演算を適用できる。<br>
 ここで、aを平文、bを鍵、cを暗号文とすると、</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">a xor b <span style="color:#f92672">=</span> c
-</code></pre></div><p>と表せる。<br>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>a xor b <span style="color:#f92672">=</span> c
+</span></span></code></pre></div><p>と表せる。<br>
 また、上記の性質より、</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">a xor b <span style="color:#f92672">=</span> c
-a xor b xor b <span style="color:#f92672">=</span> c xor b  <span style="color:#75715e"># 両辺に xor b</span>
-a xor 0 <span style="color:#f92672">=</span> c xor b  <span style="color:#75715e"># 左辺の b xor b は打ち消し合う</span>
-a <span style="color:#f92672">=</span> c xor b  <span style="color:#75715e"># 0 は単位元なので左辺は a のまま</span>
-</code></pre></div><p>となる。結果的には、元の式の b を右辺に移項したということになる。<br>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>a xor b <span style="color:#f92672">=</span> c
+</span></span><span style="display:flex;"><span>a xor b xor b <span style="color:#f92672">=</span> c xor b  <span style="color:#75715e"># 両辺に xor b</span>
+</span></span><span style="display:flex;"><span>a xor 0 <span style="color:#f92672">=</span> c xor b  <span style="color:#75715e"># 左辺の b xor b は打ち消し合う</span>
+</span></span><span style="display:flex;"><span>a <span style="color:#f92672">=</span> c xor b  <span style="color:#75715e"># 0 は単位元なので左辺は a のまま</span>
+</span></span></code></pre></div><p>となる。結果的には、元の式の b を右辺に移項したということになる。<br>
 長々と書いたが、つまり鍵さえわかれば復号ができる。ただ、その鍵が全然わからない。<br>
 ここはヒント通りにおとなしくwebサービスを使わせて頂く。</p>
 <p><a href="http://www.poweredbywebsphere.com/decoder.html">http://www.poweredbywebsphere.com/decoder.html</a></p>
@@ -156,84 +152,84 @@ a <span style="color:#f92672">=</span> c xor b  <span style="color:#75715e"># 0 
 <h4 id="page-6">Page 6</h4>
 <p>opensslなんもわからんのでヒント見まくった。<br>
 まず提示されている秘密鍵を<code>private.pem</code>にコピペ。そのファイルを使って公開鍵を生成（てか秘密鍵さえあれば公開鍵を復元できるのはじめて知った）。</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">$ openssl rsa -in private.pem -pubout &gt; public.pem
-</code></pre></div><p>復元した公開鍵をもとにRSAモジュラスを生成。</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">$ openssl rsa -in public.pem -pubin -modulus -noout &gt; modulus
-</code></pre></div><p><code>Modulus=</code>以降の文字列がRSAモジュラスにあてはまるので、これをコピペして１つ目のテキストボックスに入力。<br>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>$ openssl rsa -in private.pem -pubout &gt; public.pem
+</span></span></code></pre></div><p>復元した公開鍵をもとにRSAモジュラスを生成。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>$ openssl rsa -in public.pem -pubin -modulus -noout &gt; modulus
+</span></span></code></pre></div><p><code>Modulus=</code>以降の文字列がRSAモジュラスにあてはまるので、これをコピペして１つ目のテキストボックスに入力。<br>
 ほんでRSAモジュラスをもとに電子署名を発行。Base64エンコードを忘れずに、出力された文字列を２つ目のテキストボックスに入力で問題クリア。</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">$ cat modulus
-Modulus<span style="color:#f92672">=</span>（省略）
-$ echo -n <span style="color:#e6db74">&#34;（ここにRSAモジュラスをペースト）&#34;</span> | openssl dgst -sign private.pem -sha256 | base64
-</code></pre></div><h4 id="page-8">Page 8</h4>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>$ cat modulus
+</span></span><span style="display:flex;"><span>Modulus<span style="color:#f92672">=</span>（省略）
+</span></span><span style="display:flex;"><span>$ echo -n <span style="color:#e6db74">&#34;（ここにRSAモジュラスをペースト）&#34;</span> | openssl dgst -sign private.pem -sha256 | base64
+</span></span></code></pre></div><h4 id="page-8">Page 8</h4>
 <p>パスワードファイルを配置したまんまのdockerコンテナに入りそれを使ってメッセージを解読せよ、とのこと。<br>
 まずはdockerコンテナを実行・内部に入る。</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">&gt; docker run -d --name ass webgoat/assignments:findthesecret
-&gt; docker exec -it ass /bin/bash
-</code></pre></div><p>パスワードファイルは<code>/root</code>ディレクトリにあるらしいが、ログインユーザは<code>webgoat</code>なので当然ながら権限がない。</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">webgoat:$ cd /root
-webgoat:$ bash: cd: /root: Permission denied
-</code></pre></div><p>ヒントを見たら、root権限を奪取せよ、とあるではないか。こんな序盤でやらせる問題か？<br>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>&gt; docker run -d --name ass webgoat/assignments:findthesecret
+</span></span><span style="display:flex;"><span>&gt; docker exec -it ass /bin/bash
+</span></span></code></pre></div><p>パスワードファイルは<code>/root</code>ディレクトリにあるらしいが、ログインユーザは<code>webgoat</code>なので当然ながら権限がない。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>webgoat:$ cd /root
+</span></span><span style="display:flex;"><span>webgoat:$ bash: cd: /root: Permission denied
+</span></span></code></pre></div><p>ヒントを見たら、root権限を奪取せよ、とあるではないか。こんな序盤でやらせる問題か？<br>
 さらにヒントを見ると、<code>/etc/shadow</code>ファイルにユーザの情報が記述されているから<code>docker cp</code>でホストOSにもってきてパスワードを改変せよ、とある。</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">（WSL2-ubuntuのターミナルで作業する。Pythonがあるならwindowsでも可。）
-ubuntu:$ docker cp ass:/etc/shadow .
-ubuntu:$ cat shadow
-root:*:17918:0:99999:7:::
-daemon:*:17918:0:99999:7:::
-（省略）
-</code></pre></div><p>各ユーザの情報フィールドは<code>:</code>で区切られており、第一フィールドがユーザ名、第二フィールドがハッシュ化されたパスワードらしい。つまり、任意のパスワードをそのまま挿入すればよいわけでなく、ハッシュ化しなければならない。ちなみにパスワードが<code>*</code>の場合は設定されておらず、そのユーザでログインすることは不可能。<br>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>（WSL2-ubuntuのターミナルで作業する。Pythonがあるならwindowsでも可。）
+</span></span><span style="display:flex;"><span>ubuntu:$ docker cp ass:/etc/shadow .
+</span></span><span style="display:flex;"><span>ubuntu:$ cat shadow
+</span></span><span style="display:flex;"><span>root:*:17918:0:99999:7:::
+</span></span><span style="display:flex;"><span>daemon:*:17918:0:99999:7:::
+</span></span><span style="display:flex;"><span>（省略）
+</span></span></code></pre></div><p>各ユーザの情報フィールドは<code>:</code>で区切られており、第一フィールドがユーザ名、第二フィールドがハッシュ化されたパスワードらしい。つまり、任意のパスワードをそのまま挿入すればよいわけでなく、ハッシュ化しなければならない。ちなみにパスワードが<code>*</code>の場合は設定されておらず、そのユーザでログインすることは不可能。<br>
 ではハッシュ方式はどうすればよいのかで詰まった。ここで大いに参考にしまくったのが以下の記事。</p>
 <p><a href="https://blog.amedama.jp/entry/linux-shadow-passwd">https://blog.amedama.jp/entry/linux-shadow-passwd</a></p>
 <p>まずwebgoatコンテナのglibcがどのハッシュ方式に対応しているか確認。</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">webgoat:$ /lib/x86_64-linux-gnu/libc.so.6
-GNU C Library <span style="color:#f92672">(</span>Debian GLIBC 2.24-11+deb9u3<span style="color:#f92672">)</span> stable release version 2.24, by Roland McGrath et al.
-Copyright <span style="color:#f92672">(</span>C<span style="color:#f92672">)</span> <span style="color:#ae81ff">2016</span> Free Software Foundation, Inc.
-This is free software; see the source <span style="color:#66d9ef">for</span> copying conditions.
-There is NO warranty; not even <span style="color:#66d9ef">for</span> MERCHANTABILITY or FITNESS FOR A
-PARTICULAR PURPOSE.
-Compiled by GNU CC version 6.3.0 20170516.
-Available extensions:
-        crypt add-on version 2.1 by Michael Glad and others
-        GNU Libidn by Simon Josefsson
-        Native POSIX Threads Library by Ulrich Drepper et al
-        BIND-8.2.3-T5B
-libc ABIs: UNIQUE IFUNC
-For bug reporting instructions, please see:
-&lt;http://www.debian.org/Bugs/&gt;.
-</code></pre></div><p>glibcのバージョンが2.7未満なので、sha256やsha512には対応していない。適当にmd5でハッシュ化することにする。<br>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>webgoat:$ /lib/x86_64-linux-gnu/libc.so.6
+</span></span><span style="display:flex;"><span>GNU C Library <span style="color:#f92672">(</span>Debian GLIBC 2.24-11+deb9u3<span style="color:#f92672">)</span> stable release version 2.24, by Roland McGrath et al.
+</span></span><span style="display:flex;"><span>Copyright <span style="color:#f92672">(</span>C<span style="color:#f92672">)</span> <span style="color:#ae81ff">2016</span> Free Software Foundation, Inc.
+</span></span><span style="display:flex;"><span>This is free software; see the source <span style="color:#66d9ef">for</span> copying conditions.
+</span></span><span style="display:flex;"><span>There is NO warranty; not even <span style="color:#66d9ef">for</span> MERCHANTABILITY or FITNESS FOR A
+</span></span><span style="display:flex;"><span>PARTICULAR PURPOSE.
+</span></span><span style="display:flex;"><span>Compiled by GNU CC version 6.3.0 20170516.
+</span></span><span style="display:flex;"><span>Available extensions:
+</span></span><span style="display:flex;"><span>        crypt add-on version 2.1 by Michael Glad and others
+</span></span><span style="display:flex;"><span>        GNU Libidn by Simon Josefsson
+</span></span><span style="display:flex;"><span>        Native POSIX Threads Library by Ulrich Drepper et al
+</span></span><span style="display:flex;"><span>        BIND-8.2.3-T5B
+</span></span><span style="display:flex;"><span>libc ABIs: UNIQUE IFUNC
+</span></span><span style="display:flex;"><span>For bug reporting instructions, please see:
+</span></span><span style="display:flex;"><span>&lt;http://www.debian.org/Bugs/&gt;.
+</span></span></code></pre></div><p>glibcのバージョンが2.7未満なので、sha256やsha512には対応していない。適当にmd5でハッシュ化することにする。<br>
 ではパスワードをハッシュ化しよう。Pythonを使うのが手軽らしい。競プロとかだけでなくこういう分野でも人気な言語なのか？</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e">#!/usr/bin/env python3</span>
-<span style="color:#f92672">import</span> crypt
-
-<span style="color:#75715e"># 第一引数はハッシュ化したいパスワード</span>
-<span style="color:#75715e"># 第二引数の $1 はmd5方式を、$aho は適当なソルトを表す</span>
-hash <span style="color:#f92672">=</span> crypt<span style="color:#f92672">.</span>crypt(<span style="color:#e6db74">&#34;root&#34;</span>, <span style="color:#e6db74">&#34;$1$aho&#34;</span>)
-<span style="color:#66d9ef">print</span>(hash)
-</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">ubuntu:$ python3 -V
-Python 3.8.2
-ubuntu:$ python3 hash.py
-$1$aho$JPoqGQ8t9GcaqO5tBeyw1/
-</code></pre></div><p>表示された文字列を<code>shadow</code>ファイルの該当箇所にペーストし、dockerコンテナ内に戻す。</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">ubuntu:$ docker cp shadow ass:/etc/shadow
-</code></pre></div><p>ではrootユーザに切り替えよう。</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">webgoat:$ su -
-Password: （root を入力）
-root:# 
-</code></pre></div><p>ここでおれの脳汁が噴射した。人生初のroot権限奪取である。<br>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-python" data-lang="python"><span style="display:flex;"><span><span style="color:#75715e">#!/usr/bin/env python3</span>
+</span></span><span style="display:flex;"><span><span style="color:#f92672">import</span> crypt
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 第一引数はハッシュ化したいパスワード</span>
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># 第二引数の $1 はmd5方式を、$aho は適当なソルトを表す</span>
+</span></span><span style="display:flex;"><span>hash <span style="color:#f92672">=</span> crypt<span style="color:#f92672">.</span>crypt(<span style="color:#e6db74">&#34;root&#34;</span>, <span style="color:#e6db74">&#34;$1$aho&#34;</span>)
+</span></span><span style="display:flex;"><span>print(hash)
+</span></span></code></pre></div><div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>ubuntu:$ python3 -V
+</span></span><span style="display:flex;"><span>Python 3.8.2
+</span></span><span style="display:flex;"><span>ubuntu:$ python3 hash.py
+</span></span><span style="display:flex;"><span>$1$aho$JPoqGQ8t9GcaqO5tBeyw1/
+</span></span></code></pre></div><p>表示された文字列を<code>shadow</code>ファイルの該当箇所にペーストし、dockerコンテナ内に戻す。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>ubuntu:$ docker cp shadow ass:/etc/shadow
+</span></span></code></pre></div><p>ではrootユーザに切り替えよう。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>webgoat:$ su -
+</span></span><span style="display:flex;"><span>Password: （root を入力）
+</span></span><span style="display:flex;"><span>root:# 
+</span></span></code></pre></div><p>ここでおれの脳汁が噴射した。人生初のroot権限奪取である。<br>
 パスワードファイルは<code>/root</code>ディレクトリにあるらしいので探してみる。</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">root:# cd /root
-root:# ls -alF
-total <span style="color:#ae81ff">20</span>
-drwx------ <span style="color:#ae81ff">1</span> root root <span style="color:#ae81ff">4096</span> Nov <span style="color:#ae81ff">21</span>  <span style="color:#ae81ff">2019</span> ./
-drwxr-xr-x <span style="color:#ae81ff">1</span> root root <span style="color:#ae81ff">4096</span> Sep <span style="color:#ae81ff">18</span> 01:53 ../
--rw-r--r-- <span style="color:#ae81ff">1</span> root root  <span style="color:#ae81ff">570</span> Jan <span style="color:#ae81ff">31</span>  <span style="color:#ae81ff">2010</span> .bashrc
--rw-r--r-- <span style="color:#ae81ff">1</span> root root  <span style="color:#ae81ff">148</span> Aug <span style="color:#ae81ff">17</span>  <span style="color:#ae81ff">2015</span> .profile
--rw-rw-r-- <span style="color:#ae81ff">1</span> root root   <span style="color:#ae81ff">29</span> Nov <span style="color:#ae81ff">20</span>  <span style="color:#ae81ff">2019</span> default_secret  <span style="color:#75715e"># ← すげえそれっぽい</span>
-root:# cat default_secret
-ThisIsMySecretPassw0rdF0rY0u
-</code></pre></div><p>このパスワードファイルを鍵に指定して、問題文に示されているコマンドで暗号化されたメッセージを復号する。</p>
-<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-sh" data-lang="sh">root:# echo <span style="color:#e6db74">&#34;（省略）&#34;</span> | openssl enc -aes-256-cbc -d -a -kfile /root/default_secret
-Leaving passwords in docker images is not so secureroot:#
-</code></pre></div><p>改行されていないのでやや分かりづらいが、<code>Leaving passwords in docker images is not so secure</code>が元のメッセージであり、これを一つ目のテキストボックスに入力。<br>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>root:# cd /root
+</span></span><span style="display:flex;"><span>root:# ls -alF
+</span></span><span style="display:flex;"><span>total <span style="color:#ae81ff">20</span>
+</span></span><span style="display:flex;"><span>drwx------ <span style="color:#ae81ff">1</span> root root <span style="color:#ae81ff">4096</span> Nov <span style="color:#ae81ff">21</span>  <span style="color:#ae81ff">2019</span> ./
+</span></span><span style="display:flex;"><span>drwxr-xr-x <span style="color:#ae81ff">1</span> root root <span style="color:#ae81ff">4096</span> Sep <span style="color:#ae81ff">18</span> 01:53 ../
+</span></span><span style="display:flex;"><span>-rw-r--r-- <span style="color:#ae81ff">1</span> root root  <span style="color:#ae81ff">570</span> Jan <span style="color:#ae81ff">31</span>  <span style="color:#ae81ff">2010</span> .bashrc
+</span></span><span style="display:flex;"><span>-rw-r--r-- <span style="color:#ae81ff">1</span> root root  <span style="color:#ae81ff">148</span> Aug <span style="color:#ae81ff">17</span>  <span style="color:#ae81ff">2015</span> .profile
+</span></span><span style="display:flex;"><span>-rw-rw-r-- <span style="color:#ae81ff">1</span> root root   <span style="color:#ae81ff">29</span> Nov <span style="color:#ae81ff">20</span>  <span style="color:#ae81ff">2019</span> default_secret  <span style="color:#75715e"># ← すげえそれっぽい</span>
+</span></span><span style="display:flex;"><span>root:# cat default_secret
+</span></span><span style="display:flex;"><span>ThisIsMySecretPassw0rdF0rY0u
+</span></span></code></pre></div><p>このパスワードファイルを鍵に指定して、問題文に示されているコマンドで暗号化されたメッセージを復号する。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>root:# echo <span style="color:#e6db74">&#34;（省略）&#34;</span> | openssl enc -aes-256-cbc -d -a -kfile /root/default_secret
+</span></span><span style="display:flex;"><span>Leaving passwords in docker images is not so secureroot:#
+</span></span></code></pre></div><p>改行されていないのでやや分かりづらいが、<code>Leaving passwords in docker images is not so secure</code>が元のメッセージであり、これを一つ目のテキストボックスに入力。<br>
 パスワードが記載されていたファイル名<code>default_secret</code>を二つ目のテキストボックスに入力して問題クリア。<br>
 この問題を通してわかったのは、おれだからこそ回答に至るまで長い時間がかかったが、ふりかえってみるとdockerコンテナのroot権限奪取なんていともたやすいということだ。</p>
 <p>ちなみに次のレッスンの<code>Writing new lesson</code>はWebGoatのコントリビュータ向けの内容なのでスルー。</p>
@@ -293,14 +289,252 @@ Leaving passwords in docker images is not so secureroot:#
 
 
       </div>
-      
+      <aside class="sidebar">
+<div class="widget-recent widget">
+	<h4 class="widget__title">Recent Posts</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="https://guricerin.github.io/shit-blog/post/2023/05/13_annoying-text/">うるさい文字列</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://guricerin.github.io/shit-blog/post/2022/12/02_google-domains-and-gh-pages/">Google Domainsで取得したドメインをGitHub Pagesでホストしたサイトに割り当てる</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://guricerin.github.io/shit-blog/post/2022/10/31_zakuzakuactors/">ざくざくアクターズ Ver1.82 クリア</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://guricerin.github.io/shit-blog/post/2022/09/11/mal/">Deno(v1.25.0)でMake a Lispした</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://guricerin.github.io/shit-blog/post/2022/07/30_low-class/">「昔はやんちゃでした」とかいう人</a></li>
+		</ul>
+	</div>
+</div>
+<div class="widget-categories widget">
+	<h4 class="widget__title">Categories</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item">
+				<a class="widget__link" href="https://guricerin.github.io/shit-blog/categories/bash/">bash</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">2</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="https://guricerin.github.io/shit-blog/categories/bz/">B&#39;z</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">38</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="https://guricerin.github.io/shit-blog/categories/csharp/">CSharp</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">1</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="https://guricerin.github.io/shit-blog/categories/fsharp/">FSharp</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">4</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="https://guricerin.github.io/shit-blog/categories/gcp/">GCP</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">1</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="https://guricerin.github.io/shit-blog/categories/go/">Go</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">2</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="https://guricerin.github.io/shit-blog/categories/it%E3%82%A4%E3%83%B3%E3%83%95%E3%83%A9/">ITインフラ</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">2</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="https://guricerin.github.io/shit-blog/categories/lisp/">Lisp</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">1</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="https://guricerin.github.io/shit-blog/categories/mint/">Mint</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">1</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="https://guricerin.github.io/shit-blog/categories/ruby/">Ruby</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">2</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="https://guricerin.github.io/shit-blog/categories/rust/">Rust</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">5</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="https://guricerin.github.io/shit-blog/categories/scheme/">Scheme</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">1</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="https://guricerin.github.io/shit-blog/categories/typescript/">TypeScript</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">1</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="https://guricerin.github.io/shit-blog/categories/windows/">Windows</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">2</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="https://guricerin.github.io/shit-blog/categories/%E3%82%AF%E3%82%BD%E3%83%96%E3%83%AD%E3%82%B0/">クソブログ</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">11</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="https://guricerin.github.io/shit-blog/categories/%E3%82%B2%E3%83%BC%E3%83%A0/">ゲーム</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">3</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="https://guricerin.github.io/shit-blog/categories/%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF/">ネットワーク</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">5</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="https://guricerin.github.io/shit-blog/categories/%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0/">プログラミング</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">22</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="https://guricerin.github.io/shit-blog/categories/%E4%B8%83%E5%B0%BE%E9%A6%99/">七尾香</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">1</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="https://guricerin.github.io/shit-blog/categories/%E5%87%8B%E5%8F%B6%E6%A3%95/">凋叶棕</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">3</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="https://guricerin.github.io/shit-blog/categories/%E5%AD%A6%E5%95%8F/">学問</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">2</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="https://guricerin.github.io/shit-blog/categories/%E5%B0%8F%E8%AA%AC/">小説</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">1</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="https://guricerin.github.io/shit-blog/categories/%E6%83%85%E5%A0%B1%E3%82%BB%E3%82%AD%E3%83%A5%E3%83%AA%E3%83%86%E3%82%A3/">情報セキュリティ</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">18</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="https://guricerin.github.io/shit-blog/categories/%E6%95%B0%E5%AD%A6/">数学</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">2</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="https://guricerin.github.io/shit-blog/categories/%E6%9A%81records/">暁Records</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">1</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="https://guricerin.github.io/shit-blog/categories/%E6%9B%B8%E7%89%A9/">書物</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">16</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="https://guricerin.github.io/shit-blog/categories/%E6%9D%B1%E6%96%B9/">東方</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">5</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="https://guricerin.github.io/shit-blog/categories/%E6%BC%AB%E7%94%BB/">漫画</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">2</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="https://guricerin.github.io/shit-blog/categories/%E7%A5%9E%E6%9E%97%E9%95%B7%E5%B9%B3/">神林長平</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">2</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="https://guricerin.github.io/shit-blog/categories/%E7%AB%B6%E6%8A%80%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0/">競技プログラミング</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">25</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="https://guricerin.github.io/shit-blog/categories/%E9%9F%B3%E6%A5%BD/">音楽</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">40</span>
+				</li>
+		</ul>
+	</div>
+</div>
+<div class="widget-archives widget">
+    <h4 class="widget__title">ARCHIVES</h4>
+    <div class="widget__content">
+        <ul>
+            
+            <li><a href="https://guricerin.github.io/shit-blog/archives/2023-05">2023-05 (1)</a></li>
+            
+            <li><a href="https://guricerin.github.io/shit-blog/archives/2022-12">2022-12 (1)</a></li>
+            
+            <li><a href="https://guricerin.github.io/shit-blog/archives/2022-10">2022-10 (1)</a></li>
+            
+            <li><a href="https://guricerin.github.io/shit-blog/archives/2022-09">2022-09 (1)</a></li>
+            
+            <li><a href="https://guricerin.github.io/shit-blog/archives/2022-07">2022-07 (2)</a></li>
+            
+            <li><a href="https://guricerin.github.io/shit-blog/archives/2022-03">2022-03 (2)</a></li>
+            
+            <li><a href="https://guricerin.github.io/shit-blog/archives/2022-02">2022-02 (1)</a></li>
+            
+            <li><a href="https://guricerin.github.io/shit-blog/archives/2021-12">2021-12 (2)</a></li>
+            
+            <li><a href="https://guricerin.github.io/shit-blog/archives/2021-11">2021-11 (3)</a></li>
+            
+            <li><a href="https://guricerin.github.io/shit-blog/archives/2021-10">2021-10 (2)</a></li>
+            
+            <li><a href="https://guricerin.github.io/shit-blog/archives/2021-09">2021-09 (5)</a></li>
+            
+            <li><a href="https://guricerin.github.io/shit-blog/archives/2021-07">2021-07 (1)</a></li>
+            
+            <li><a href="https://guricerin.github.io/shit-blog/archives/2021-06">2021-06 (2)</a></li>
+            
+            <li><a href="https://guricerin.github.io/shit-blog/archives/2021-01">2021-01 (1)</a></li>
+            
+            <li><a href="https://guricerin.github.io/shit-blog/archives/2020-11">2020-11 (4)</a></li>
+            
+            <li><a href="https://guricerin.github.io/shit-blog/archives/2020-10">2020-10 (1)</a></li>
+            
+            <li><a href="https://guricerin.github.io/shit-blog/archives/2020-09">2020-09 (21)</a></li>
+            
+            <li><a href="https://guricerin.github.io/shit-blog/archives/2020-08">2020-08 (2)</a></li>
+            
+            <li><a href="https://guricerin.github.io/shit-blog/archives/2020-05">2020-05 (1)</a></li>
+            
+            <li><a href="https://guricerin.github.io/shit-blog/archives/2020-03">2020-03 (2)</a></li>
+            
+            <li><a href="https://guricerin.github.io/shit-blog/archives/2020-02">2020-02 (1)</a></li>
+            
+            <li><a href="https://guricerin.github.io/shit-blog/archives/2019-12">2019-12 (1)</a></li>
+            
+            <li><a href="https://guricerin.github.io/shit-blog/archives/2019-08">2019-08 (1)</a></li>
+            
+            <li><a href="https://guricerin.github.io/shit-blog/archives/2019-03">2019-03 (19)</a></li>
+            
+            <li><a href="https://guricerin.github.io/shit-blog/archives/2019-02">2019-02 (5)</a></li>
+            
+            <li><a href="https://guricerin.github.io/shit-blog/archives/2019-01">2019-01 (3)</a></li>
+            
+            <li><a href="https://guricerin.github.io/shit-blog/archives/2018-12">2018-12 (2)</a></li>
+            
+            <li><a href="https://guricerin.github.io/shit-blog/archives/2018-11">2018-11 (1)</a></li>
+            
+            <li><a href="https://guricerin.github.io/shit-blog/archives/2018-09">2018-09 (1)</a></li>
+            
+            <li><a href="https://guricerin.github.io/shit-blog/archives/2018-06">2018-06 (1)</a></li>
+            
+            <li><a href="https://guricerin.github.io/shit-blog/archives/2018-05">2018-05 (1)</a></li>
+            
+            <li><a href="https://guricerin.github.io/shit-blog/archives/2018-02">2018-02 (1)</a></li>
+            
+            <li><a href="https://guricerin.github.io/shit-blog/archives/2018-01">2018-01 (4)</a></li>
+            
+            <li><a href="https://guricerin.github.io/shit-blog/archives/2017-12">2017-12 (3)</a></li>
+            
+            <li><a href="https://guricerin.github.io/shit-blog/archives/2017-11">2017-11 (12)</a></li>
+            
+            <li><a href="https://guricerin.github.io/shit-blog/archives/2017-10">2017-10 (17)</a></li>
+            
+        </ul>
+    </div>
+</div>
+
+<div class="widget-social widget">
+	<h4 class="widget-social__title widget__title">Social</h4>
+	<div class="widget-social__content widget__content">
+		<div class="widget-social__item widget__item">
+			<a class="widget-social__link widget__link btn" title="GitHub" rel="noopener noreferrer" href="https://github.com/guricerin" target="_blank">
+				<svg class="widget-social__link-icon icon icon-github" width="24" height="24" viewBox="0 0 384 374"><path d="m192 0c-106.1 0-192 85.8-192 191.7 0 84.7 55 156.6 131.3 181.9 9.6 1.8 13.1-4.2 13.1-9.2 0-4.6-.2-16.6-.3-32.6-53.4 11.6-64.7-25.7-64.7-25.7-8.7-22.1-21.3-28-21.3-28-17.4-11.9 1.3-11.6 1.3-11.6 19.3 1.4 29.4 19.8 29.4 19.8 17.1 29.3 44.9 20.8 55.9 15.9 1.7-12.4 6.7-20.8 12.2-25.6-42.6-4.8-87.5-21.3-87.5-94.8 0-20.9 7.5-38 19.8-51.4-2-4.9-8.6-24.3 1.9-50.7 0 0 16.1-5.2 52.8 19.7 15.3-4.2 31.7-6.4 48.1-6.5 16.3.1 32.7 2.2 48.1 6.5 36.7-24.8 52.8-19.7 52.8-19.7 10.5 26.4 3.9 45.9 1.9 50.7 12.3 13.4 19.7 30.5 19.7 51.4 0 73.7-44.9 89.9-87.7 94.6 6.9 5.9 13 17.6 13 35.5 0 25.6-.2 46.3-.2 52.6 0 5.1 3.5 11.1 13.2 9.2 76.2-25.5 131.2-97.3 131.2-182 0-105.9-86-191.7-192-191.7z"/></svg>
+				<span>GitHub</span>
+			</a>
+		</div>
+
+		
+	</div>
+</div>
+</aside>
 
     </div>
     <footer class="footer">
 	<div class="container footer__container flex">
 		
 		<div class="footer__copyright">
-			&copy; 2022 guricerin.
+			&copy; 2023 guricerin.
 			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
 		</div>
 	</div>
