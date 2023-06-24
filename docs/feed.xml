@@ -6,7 +6,16 @@
     <description>Recent content on グリのクソブログ</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Sat, 13 May 2023 00:02:29 +0900</lastBuildDate><atom:link href="https://guricerin.github.io/shit-blog/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 24 Jun 2023 03:42:26 +0900</lastBuildDate><atom:link href="https://guricerin.github.io/shit-blog/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>GitHubリポジトリの運用方針</title>
+      <link>https://guricerin.github.io/shit-blog/post/2023/06/24_github-op/</link>
+      <pubDate>Sat, 24 Jun 2023 03:42:26 +0900</pubDate>
+      
+      <guid>https://guricerin.github.io/shit-blog/post/2023/06/24_github-op/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;https://docs.github.com/ja/get-started/quickstart/github-flow&#34;&gt;GitHubフロー&lt;/a&gt;をアレンジしたもの。ここではWebアプリを想定しているが、他のシステム形態にも適用できるかも。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>うるさい文字列</title>
       <link>https://guricerin.github.io/shit-blog/post/2023/05/13_annoying-text/</link>
