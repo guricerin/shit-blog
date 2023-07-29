@@ -6,7 +6,16 @@
     <description>Recent content in Posts on グリのクソブログ</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Sat, 24 Jun 2023 03:42:26 +0900</lastBuildDate><atom:link href="https://guricerin.github.io/shit-blog/post/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 29 Jul 2023 09:18:32 +0900</lastBuildDate><atom:link href="https://guricerin.github.io/shit-blog/post/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>『言語の本質』 読んだ</title>
+      <link>https://guricerin.github.io/shit-blog/post/2023/07/29_essence-of-lang/</link>
+      <pubDate>Sat, 29 Jul 2023 09:18:32 +0900</pubDate>
+      
+      <guid>https://guricerin.github.io/shit-blog/post/2023/07/29_essence-of-lang/</guid>
+      <description>&lt;p&gt;神林長平などの影響で言語学とか好き（知識はド素人レベル）だし、おれ自身プログラマとしてエディタ上に記号をゴリゴリ打ち込むという仕事をしているからか、タイトルに惹かれて買った。&lt;/p&gt;</description>
+    </item>
+    
     <item>
       <title>GitHubリポジトリの運用方針</title>
       <link>https://guricerin.github.io/shit-blog/post/2023/06/24_github-op/</link>
