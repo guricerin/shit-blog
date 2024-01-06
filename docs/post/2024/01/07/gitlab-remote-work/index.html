@@ -1,0 +1,700 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>『GitLabに学ぶ 世界最先端のリモート組織のつくりかた』 読んだ - グリのクソブログ</title>
+  <script>(function (d, e) { d[e] = d[e].replace("no-js", "js"); })(document.documentElement, "className");</script>
+  <meta name="description"
+    content="">
+  <meta property="og:title" content="『GitLabに学ぶ 世界最先端のリモート組織のつくりかた』 読んだ" />
+<meta property="og:description" content="Webに公開されてるほうは3000ページもあるってまじ？
+https://handbook.gitlab.com/" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://guricerin.github.io/shit-blog/post/2024/01/07/gitlab-remote-work/" /><meta property="article:section" content="post" />
+<meta property="article:published_time" content="2024-01-07T01:39:13+09:00" />
+<meta property="article:modified_time" content="2024-01-07T01:39:13+09:00" />
+
+  <meta itemprop="name" content="『GitLabに学ぶ 世界最先端のリモート組織のつくりかた』 読んだ">
+<meta itemprop="description" content="Webに公開されてるほうは3000ページもあるってまじ？
+https://handbook.gitlab.com/"><meta itemprop="datePublished" content="2024-01-07T01:39:13+09:00" />
+<meta itemprop="dateModified" content="2024-01-07T01:39:13+09:00" />
+<meta itemprop="wordCount" content="187">
+<meta itemprop="keywords" content="" />
+  <meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="『GitLabに学ぶ 世界最先端のリモート組織のつくりかた』 読んだ"/>
+<meta name="twitter:description" content="Webに公開されてるほうは3000ページもあるってまじ？
+https://handbook.gitlab.com/"/>
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="dns-prefetch" href="//fonts.googleapis.com">
+  <link rel="dns-prefetch" href="//fonts.gstatic.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700" >
+
+  <link rel="stylesheet" href="https://guricerin.github.io/shit-blog/css/style.css">
+  <link rel="stylesheet" href="https://guricerin.github.io/shit-blog/css/custom.css">
+
+  <link rel="shortcut icon" href="https://guricerin.github.io/shit-blog/favicon.ico">
+  
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-T30BDM828S"></script>
+<script>
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+	gtag('config', 'G-T30BDM828S', { 'anonymize_ip': false });
+}
+</script>
+
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <link rel="stylesheet" href="https://guricerin.github.io/shit-blog/css/share.css">
+</head>
+
+<body class="body">
+  <div class="container container--outer">
+    <header class="header">
+	<div class="container header__container">
+		
+	<div class="logo logo--mixed">
+		<a class="logo__link" href="https://guricerin.github.io/shit-blog/" title="グリのクソブログ" rel="home">
+			<div class="logo__item logo__imagebox">
+					<img class="logo__img" src="https://guricerin.github.io/shit-blog/img/icon.jpg">
+				</div><div class="logo__item logo__text">
+					<div class="logo__title">グリのクソブログ</div>
+					<div class="logo__tagline">主にB&#39;z</div>
+				</div>
+		</a>
+	</div>
+		
+<nav class="menu">
+	<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
+		<span class="menu__btn-title" tabindex="-1">Menu</span>
+	</button>
+	<ul class="menu__list">
+		<li class="menu__item">
+			<a class="menu__link" href="https://guricerin.github.io/shit-blog/">
+				
+				<span class="menu__text">HOME</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="https://guricerin.github.io/shit-blog/privacy-policy">
+				
+				<span class="menu__text">PRIVACY POLICY</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="https://guricerin.github.io/shit-blog/feed.xml">
+				
+				<span class="menu__text">RSS</span>
+				
+			</a>
+		</li>
+	</ul>
+</nav>
+
+	</div>
+</header>
+    <div class="wrapper flex">
+      <div class="primary">
+        
+<main class="main" role="main">
+    <article class="post">
+        <header class="post__header">
+            <h1 class="post__title">『GitLabに学ぶ 世界最先端のリモート組織のつくりかた』 読んだ</h1>
+            <div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2024-01-07T01:39:13&#43;09:00">2024-01-07</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="https://guricerin.github.io/shit-blog/categories/%E6%9B%B8%E7%89%A9/" rel="category">書物</a>
+	</span>
+</div></div>
+        </header>
+        <div class="content post__content clearfix">
+            <p>Webに公開されてるほうは3000ページもあるってまじ？<br>
+<a href="https://handbook.gitlab.com/">https://handbook.gitlab.com/</a></p>
+<p>出版社のページ : <a href="https://www.shoeisha.co.jp/book/detail/9784798179421">https://www.shoeisha.co.jp/book/detail/9784798179421</a></p>
+<p>読んだ理由 :</p>
+<ul>
+<li>おれ個人としてはリモートワークで問題なく働けている（と勝手に考えている）が、他の社員がどう思っているかはわからない
+<ul>
+<li>とくに上司が本心ではおれをどう評価しているのかわからない</li>
+</ul>
+</li>
+<li>リモートワークがなぜうまく機能しているか（していないか）の要因をよくわかっていない</li>
+<li>転職するとして、もうリモートワークでしか働けない身体になっちまった
+<ul>
+<li>通勤時間て労働時間ではないだろうか</li>
+<li>人が多くて臭い電車に乗りたくない</li>
+<li>オフィスだと全然集中できない
+<ul>
+<li>他人が黙っていても息遣い、足音、衣擦れ音などあらゆる音が思考を遮断してくる</li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h2 id="第1章-世界最大のリモート組織gitlab">第1章 世界最大のリモート組織「GitLab」</h2>
+<blockquote>
+<p>関係者であれば誰もがアクセスでき、情報同士の関連性が可視化されている一元管理された（その情報が他の場所に存在しない）揮発性の低い情報源に情報を集約するようにしています。</p>
+</blockquote>
+<blockquote>
+<p>最新の正確な情報が1ヵ所にしか存在しないのはドキュメント文化を発展させる上で非常に重要な概念です。</p>
+</blockquote>
+<p>おれがいま勤務している会社ではAtlassian社のConfluenceで社内wikiを構築することでドキュメント文化が醸成されている。<br>
+ただ、そうした中でも動画像など大容量データや機密性の高いデータはGoogle Driveに保存されるし、作業ログなどはConfluenceだけでなくJiraチケットやらSlackのスレッドやらに散らばって記載されがちである。<br>
+情報のある程度の分散は仕方ないと捉えるかどうか。サービスによって日本語の検索能力にバラつきがあるのも影響するかもしれない。</p>
+<h2 id="第2章-リモート組織によって得られるメリット">第2章 リモート組織によって得られるメリット</h2>
+<blockquote>
+<p>愛社精神がパフォーマンスを向上させる、という古くから日本の経営者が信じてきた考え方はいまやグローバルスタンダードになりつつあります。</p>
+</blockquote>
+<p>え、まじで？聞いたことねえや。外資に勤めたことないけど。</p>
+<blockquote>
+<p>従来の企業ではハイパフォーマーの特性を分析し、その傾向がある人材を厳選して採用することでパフォーマンスを発揮させようと取り組んできました。しかし、世の中の価値観が多様化し、働く時間や場所、国籍など状況が異なる人材を活用しなければならなくなっている昨今、多様な人材の能力を最大限に引き出し、あらゆるメンバーのパフォーマンスを発揮させることは重要な経営のテーマです。</p>
+</blockquote>
+<p>ひねくれた見方をすれば、例えば日本なら少子高齢化やコロナといった外部要因が改善されちゃうと、従来のような「普通の」人材しか必要とされなくなるという揺り戻しが起きそうだな。<br>
+旧体制の革新のためには社会がちょっとくらい危機的なほうが都合が良いかもしれない。</p>
+<blockquote>
+<p>「我々らしくないから」という理由で採用を見送ったり低い評価を付けたりすることは、組織としての改善のチャンスを逃し、将来的なパフォーマンスの低下につながります。</p>
+</blockquote>
+<p>いやあ、さすがに倫理観の終わってる人間とかとは一緒に仕事したくないけど。「そんな極端な例は題材にしていないしお前には言われたくない」って？</p>
+<blockquote>
+<p>そうした目に見える成果を公正に評価するために、パフォーマンスを計測する必要性が出てきます。パフォーマンスが可視化されることによって、「何も成果を残せなかった」状況を避けるために、従業員は成果にフォーカスした行動を取るようになります。</p>
+</blockquote>
+<p>プログラマなら「今月のプルリクエスト作成数」とかで集計すれば簡単だろうけど、その他の職種はどうするんだろうか。キーエンスみたいにガチガチの監視するとか？んなわけないか。</p>
+<blockquote>
+<p>リモートワークの中では誰がどんな役割を担い、どのプロジェクトを誰が担当しているのかが明確になるため、組織が行っている事業活動の可視化が進みます。</p>
+</blockquote>
+<p>すげえどうでもいいけど、「可視化」じゃなくて「見える化」って表現してる文章、くそ気色悪いと思うのおれだけ？この本は「可視化」と書いているというだけで信頼できる。</p>
+<blockquote>
+<p>もし、何かを生み出す創造的な業務（たとえば、ソフトウェア開発・デザイン・経営など）を担当している人の予定が会議で埋まっていたら要注意です。</p>
+</blockquote>
+<p>あ、おれんとこのマネージャー陣はこれだ。いろんなプロジェクトに関わっていていろんな会議で忙殺されている。<br>
+そんな中でもプルリクエストのレビューを依頼するとその日のうちには的確な指摘をしてくれるバケモンみてえな上司がいるが、あれは下っ端から見ても体調面が気になる。</p>
+<blockquote>
+<p>オフィス賃料以外にも交通費、通勤時間、従業員数の増大によるオフィス移転など、事業とは直接関係のないコストも抑えられるようになります。</p>
+</blockquote>
+<p>「持ち家は負債」って言葉もあるしな。</p>
+<h2 id="第3章-リモート組織を構築するためのプロセス">第3章 リモート組織を構築するためのプロセス</h2>
+<blockquote>
+<p>オフィスワークの補完的要素としてリモートワークを捉えてしまうと、たとえ経営者がリモートワークを推進したいと考えていたとしても、なし崩し的に「オフィスワーカーが主流派」、「リモートワーカーが非主流派」という流れが自然とできてしまいます。</p>
+</blockquote>
+<blockquote>
+<p>DRIとは、「誰が最終的な責任者なのか」を明確にするものですが、それにあわせて必要な「意思決定権」も与えられます。効果的なリモート組織を実現するためには、リモート責任者をDRIとして任命し、十分な責任と権限を持たせなくてはなりません。</p>
+</blockquote>
+<p>おれんとこの会社、実はハイブリッドワークだし専任のリモート責任者はいないけど、なぜかうまく回ってるように見える。おれが混乱期を経験してないだけか？</p>
+<blockquote>
+<p>Suddenly Remote Handbook というハンドブック作成のためのテンプレートも用意されているので、こちらを活用するとスムーズに始められるかもしれません。</p>
+</blockquote>
+<p><a href="https://handbook.brownfield.dev/">https://handbook.brownfield.dev/</a> というのが公開されている。たぶん<a href="https://themes.gohugo.io/themes/hugo-book/">hugoのBookテーマ</a>製。</p>
+<blockquote>
+<p>なお、ハンドブックをWikiで作成することは将来的に構造を大きく変更することが困難であるため推奨されていません。</p>
+</blockquote>
+<p>おっとまずい。会社だとオンボーディング資料含めてなんでもかんでもConfluenceに記載しちゃってる。お察しの通り、資料の構造はカオス気味。<br>
+こういうのもソフトウェア開発と同じくプルリクエスト -&gt; レビュー -&gt; マージ形式にしたほうがええんかね。それこそ<a href="https://gitlab.com/gitlab-com/content-sites/handbook">GitLabがやってるように</a>。<br>
+でもこれってGitLabの全従業員が少なくともgitを使えるってことか？ソフトウェア開発者以外も？</p>
+<blockquote>
+<p>こうしたガイドラインで説明されていることは特別なことではありません。自分を大切にするように相手も尊重することや謙虚に自分を省みるような当たり前のことです。しかし、こうした敬意を持ったコミュニケーションがさまざまな価値観の人たちとわかり合える土台になります。</p>
+</blockquote>
+<p>なんというか、「他者を傷つけたら言い訳するんじゃなくてまず謝る」とか小学校の道徳の授業で終えていてくれみたいな話が強調されていると、人類全体の倫理観に対して悲しくなってくる。<br>
+この本やGitLabハンドブックに記載されていることを実践できてないってことは、そいつが小卒未満てことだもんよ。義務教育の比較的充実してる日本人が言うのはフェアじゃないかもしれんけど。</p>
+<blockquote>
+<p>利用するツールが多岐にわたることでそのツールを導入していないメンバーがアクセスできないといったコラボレーションを阻害する要因になったり、利用方法を学習するためのオンボーディングの手間が増えたりしてしまいます。</p>
+</blockquote>
+<p>わかる。オンボーディングがめちゃくちゃ大変なわりに頭に全然残らないがち。<br>
+そのうえ環境構築に手間取ったので「入社して即クビになるんじゃねえか」とビクつくことになった。まあ新人や業務委託なら必ずぶちあたる光景だったようだが（それはそれで大問題なので少しずつ改善されていってる）。</p>
+<blockquote>
+<p>経営者や上級管理職をまず強制的にリモート化することです。</p>
+</blockquote>
+<blockquote>
+<p>経営陣がリモート環境で意思決定を行うために、必要な情報を収集する過程でツールやプロセスに存在している問題に気が付くことができます。</p>
+</blockquote>
+<p>鶴の一声ってやつですかね。まあこの本やGitLabハンドブックを手に取ってる時点でリモートワーク導入する気満々なのにそれをしないリーダー陣というなら、社員はどんどん抜けていく気がする。「結局どうしたいねん」って感じで。</p>
+<blockquote>
+<p>パソコン、ネットワーク、カメラ、マイクロホン、イヤホン、モニターなど、必要な備品をオンライン会議中に違和感を抱かない標準的な水準で用意します。</p>
+</blockquote>
+<p>ハーマンミラーは経費で買いたかったなーおれもなー（そんな会社あんのか？）。</p>
+<blockquote>
+<p>チームメイトやチームリーダーから見てパフォーマンスを発揮している新入社員に対しては「社会的交換関係」が影響していることがわかっています。社会的交換関係とは、人間が社会の中で「金銭」などの有形のものや、「尊敬」「愛情」「承認」「共感」「愉快」などの無形の資源を交換し合っている関係を指しています。</p>
+</blockquote>
+<p>おれは単純だから給料良かったらいっぱいがんばっちゃうぜぐへへ。</p>
+<blockquote>
+<p>インフォーマルコミュニケーションが大事であるからといって、従業員の気持ちも考えずにイベントをやればいいわけではなく、</p>
+</blockquote>
+<p>あ、釘さしてら。おれは酒が飲めずたばこしか吸わねえつってんのに、前職ではわけわかんねえパーティに誘われがちだった。もちろん途中から不参加。</p>
+<h2 id="第4章-リモートワークで発生する問題と対策">第4章 リモートワークで発生する問題と対策</h2>
+<blockquote>
+<p>日本では書類管理や印鑑、郵送物など物理的な制約も多くあるためオフィスはなくせないといった事情もあるかもしれません。</p>
+</blockquote>
+<p>これほんまきついな。都会のクソ高い家賃を払ってまでオフィス構えたくないし、かといってド田舎だと下手したら社長が一人ですべての書類をさばく羽目になるし。</p>
+<blockquote>
+<p>リモートワークでは、仕事以外の雑談が自然発生することが少ないため、気が付いたらまったく雑談をすることなく１日が終わってしまうことがあります。</p>
+</blockquote>
+<p>リモートワークじゃない前職の時点で雑談皆無の日とか普通にあったぞ。あ、おれが疎まれてただけか。</p>
+<blockquote>
+<p>「いつ・どこで」「具体的に何があったか」「それがどんな影響を与えたか」を、事実をベースに伝えることで誤解を生まずにコミュニケーションを取る</p>
+</blockquote>
+<p>これ意外とむずい。正確な文章を書こうとするほど単純に時間かかるし。ああ、非同期コミュニケーション前提なら時間かかってもいいのか。</p>
+<blockquote>
+<p>チャットツールのダイレクトメッセージは原則避け、業務に関係するダイレクトメッセージであった場合には、オープンなチャンネルに誘導するようにしましょう。</p>
+</blockquote>
+<p>確かに、うちでもDMは個人情報にまつわるやり取りのみに限られてる。</p>
+<h2 id="第5章-カルチャーはバリューによって醸成される">第5章 カルチャーはバリューによって醸成される</h2>
+<blockquote>
+<p>GitLab Valueはとことん実務的であるために、「世界を変える」といったような派手な言葉は用いられていません。</p>
+</blockquote>
+<p>目標が抽象的なままだとそれにいたる道筋もフワフワするしな。</p>
+<blockquote>
+<p>カルチャーマッチで採用していた時代には、組織カルチャーに近い性格や行動パターンの人物しか採用できませんでした。一方、バリューマッチであれば、明示的なパターンを守るつもりがあるすべての人達を採用対象者として見ることが可能になります。</p>
+</blockquote>
+<p>遵法意識に近いかな。組織に対して愛着がないと育まれないイメージがある。待遇がよくなかったり嫌がらせしてたら、退職際にやべえしっぺ返しを社員から喰らうはめになる。</p>
+<blockquote>
+<p>具体的にどんな成果を実現するのか合意しつつ、1 ~ 2週間単位でパフォーマンスのフィードバックを行いましょう。</p>
+</blockquote>
+<p>月一の1on1でしかやってねえ。てか参加するプロジェクト毎にやり方がばらついてんねんな。これは良くないのかも。</p>
+<blockquote>
+<p>自分が解決できないかもしれないと感じたときには、すぐに関係者に知らせて助けを求めましょう。</p>
+</blockquote>
+<p>やってる。「ひぃぃ！助けてくださいぃぃぃぃ！」みたいな感じで。</p>
+<blockquote>
+<p>Slackなどでたくさんの人に向けて周知するときには、短いメッセージにすることが重要です。文章が長すぎる、整理されていない、明瞭でない、専門用語が多い、不正確であるなどの要素があると、多くの人がしっかりと文章の意味を理解しようとはしなくなってしまいます。</p>
+</blockquote>
+<p>うちのリーダー陣は長すぎる文章をやらかしがちですねえ&hellip;&hellip;。リーダー陣は週報を書くことになってるが、私生活の近況から入って、本題がだいぶ後ろのほうからスタートしてる。雑談専用チャンネルがあるのだから前半部はそっちで書き込めばいいのにと思う。今度それとなく指摘してみようかな。</p>
+<blockquote>
+<p>新しくGitLabに加わったメンバーは、最初のうちは決断のスピードの速さや、誰もが周囲に相談することなく物事が決まっていく様子を見て戸惑うことがあるようです。</p>
+</blockquote>
+<p>このことや1 ~ 2週間のリリースサイクルを設けているGitLabの基準からすると、うちはアジャイルではない。いやまあこの本読む前からウォーターフォールと思ってるけど。こんなこと書いてたら給料減らされるかな。</p>
+<blockquote>
+<p>イテレーションにおいて、変更前に戻すことは問題ではなく、ポジティブな意味を持つことを理解しましょう。</p>
+</blockquote>
+<p>「手戻り」って単語に嫌悪感を覚えちまったおれに、はたしてできるのか。</p>
+<blockquote>
+<p>会議でレビューをもらう際には、他の参加者が効果的な改善案を提案できるように、解決したい本質的な課題のディティールと現状のコンテクストを丁寧に説明するようにしましょう。</p>
+</blockquote>
+<p>上司がバカ忙しいために必然的にこうなってるというかこうせざるをえないというか。そもそも会議までいかずにSlack上の相談で解決することのほうが多い（とくに開発者同士の場合）。</p>
+<blockquote>
+<p>UXなどは長期の視点で計画を立てます。実際の改善は小さな変更の積み重ねですが、ユーザーに対して長期のロードマップを説明しておくことで、徐々に大きなものに成長していく過程を共通認識として持てるようになります。</p>
+</blockquote>
+<p>あ、ここらへん勘違いしてた。恥ずかし。</p>
+<h2 id="第6章-コミュニケーションのルール">第6章 コミュニケーションのルール</h2>
+<blockquote>
+<p>まったく違う国で育った10歳の子供にも正確な意図が伝わるようなコミュニケーションをすることで、誰もがコラボレーションができるようになります。</p>
+</blockquote>
+<p>うちは外国人採用を積極的にやってるわりには、日本限定の言い回しやネットスラングをたびたび見かけるので「あれ？」と思うことがある。<br>
+あと横文字がやたらと多いな。「アジェンダ」「ASAP」「クロージング」など。ここまできたら英語でよくないか？まあおれだって「プルリク」「PR」って使っちゃってるけど。最近だと、外国人も参加してる読書会で「逸般の誤家庭」って発言しちゃった。</p>
+<blockquote>
+<p>Zoomの録画機能を用いてGoogleドライブに保存するよりも、Youtubeのほうが再生品質、字幕、サムネイル、特定再生時間帯へのリンク、コメント機能など動画を活用する上で優れている点が多く存在します。</p>
+</blockquote>
+<p>これはおま環かもだが、Googleドライブだと通信速度も遅く、結果として録画動画はスルーしがち。うちもYoutube使ってほしいけど、セキュリティ的に駄目なのかな？</p>
+<h2 id="第7章-リモート組織におけるオンボーディングの重要性">第7章 リモート組織におけるオンボーディングの重要性</h2>
+<blockquote>
+<p>GitLabでは入社前から入社後4週間にわたる具体的なスケジュールをオンボーディングプロセスとしてテンプレート化しており、</p>
+</blockquote>
+<p>なっが。うちでもせいぜい1週間ぐらいのはず。</p>
+<blockquote>
+<p>即戦力採用を行っている企業では、採用した中途社員を重要なポジションにアサインすることがあります。そうした企業では、お手並み拝見とばかりに独力で活動することを期待する様子が見られることがありますが、重要なポジションであるからこそパフォーマンスを発揮させるためには周囲の支援が必要なのです。</p>
+</blockquote>
+<p>まじか、これは全然知らなかった。</p>
+<h2 id="第8章-心理的安全性の醸成">第8章 心理的安全性の醸成</h2>
+<blockquote>
+<p>本来は必要なコンフリクトを行うために心理的安全性が必要になります。心理的安全性があれば、どちらが正しいかどうかは関係なくなり、チーム共通の目的のために何が妥当なのかを健全に考えられるようになります。</p>
+</blockquote>
+<p>ゼミの担当教授の言葉を思い出す。「子供に健全な衝突をさせるため、小学校教師はイベントを企画させるのが大好き」ってやつ。</p>
+<blockquote>
+<p>大前提として必要なことは、ネガティブなフィードバックを送る前に日常的にポジティブなフィードバックや人間味のあるコミュニケーションを行って良い関係性を構築しておくことです。</p>
+</blockquote>
+<p>意外なことに、マネージャー陣からネガティブなフィードバックを受けた記憶がない。でも給料はしっかり低い（たぶん社内ワースト1位）ので、マネージャー側も面と向かって発言したり、（おれも閲覧できる）評価シートに記載するのに抵抗があるのかもしれない。</p>
+<blockquote>
+<p>会社によっては3ヵ月に一度の評価タイミングでフィードバックを行っているかもしれませんが、それでは遅すぎます。</p>
+</blockquote>
+<p>さいですか&hellip;&hellip;。うちは1ヵ月に一度だが、これでもまだGitLabから見たらトロいのかも。</p>
+<blockquote>
+<p>組織がコラボレーションや心理的安全性を高めるためには、定められたルールがしっかりと遵守されることが重要です。それに加えて、フリーライダーが存在しているのであれば、しっかりと対処しなくてはなりません。</p>
+</blockquote>
+<p>とくに指摘を喰らったことはないが、自分がフリーライドしてるんじゃないかと不安に思ったりはする。</p>
+<h2 id="第9章-個人のパフォーマンスを引き出す">第9章 個人のパフォーマンスを引き出す</h2>
+<blockquote>
+<p>人間関係から生じる問題に関しては、GitLabではチームメンバー・リレーションズ・スペシャリストという専門のグループが対応します。</p>
+</blockquote>
+<blockquote>
+<p>日本でも人事がこうした人間関係のトラブルに対処することはありますが、その目的は会社の法的リスクをいかに回避するかに焦点が当たっていることが多いように思います。</p>
+</blockquote>
+<p>すごいけど、リソースが慢性的に不足してるベンチャー企業にはハードル高くない？言い訳になるかな？</p>
+<blockquote>
+<p>GitLabの場合は、毎年ルールやプロセスに無駄がないか見直す時期を設定しています。</p>
+</blockquote>
+<p>こういう定期的な棚卸しイベント設けるの良いな。</p>
+<h2 id="第10章-gitlab-valueに基づいた人事制度">第10章 GitLab Valueに基づいた人事制度</h2>
+<blockquote>
+<p>GitLabに在籍することが本人にとって最良でない場合にも高すぎる報酬額はGitLabに縛り付けてしまうことにもなってしまうため、健全でない関係性を避ける意味でも重要です。</p>
+</blockquote>
+<p>雇用者目線でも被雇用者目線でも、給料は高いほど良いと雑に考えてた。</p>
+<blockquote>
+<p>基本的に報酬額を下げることはありません。報酬額を下げることでモチベーションは下がることはあっても上がることはありません。</p>
+</blockquote>
+<p>IT業界で給料下げたら即バックれられちゃうイメージあるな。いや、もう時代的に業界は関係ないか。</p>
+<h2 id="第11章-マネージャーの役割とマネジメントを支援するためのしくみ">第11章 マネージャーの役割とマネジメントを支援するためのしくみ</h2>
+<blockquote>
+<p>GitLabでは、メンバーをどれだけつなぎ留められているかという在職率をマネージャーの定量的な数値目標として管理しており、マネージャーはメンバーをつなぎ留める責任を負わされています。</p>
+</blockquote>
+<p>うへえ、おれにはマネージャー職は無理そうだな。「会社辞めたい？おう、達者でな」で終わるし。</p>
+<h2 id="第12章-コンディショニングを実現する">第12章 コンディショニングを実現する</h2>
+<blockquote>
+<p>リモートワークでは直接会うことが少ないため、支援を必要としているメンバーに気付けない場合があります。</p>
+</blockquote>
+<p>たとえオフィスワークでも気づけない場合のほうが多くないか？気づいてて放置してるだけかもしれんけど。あ、おれが前職までしょぼい企業にしか勤めてないだけか。</p>
+<blockquote>
+<p>休みの日にスマートフォンやパソコンでつい仕事の連絡を見てしまっているのであれば、休暇の間は完全に仕事から離れて徹底してリフレッシュするべきです。</p>
+</blockquote>
+<p>これなあ。やめたいけどついSlack見ちゃうわ。</p>
+<blockquote>
+<p>毎日20 ~ 30分程度のウォーキング（早足での散歩）を続けることでうつ病を防ぐ効果があることがわかっています。</p>
+</blockquote>
+<p>うつ病じゃなくて不眠症の解消目的で、週に3 ~ 4回早足ではない散歩してる（最近不眠症がぶり返してるけど）。</p>
+<h2 id="第13章-ldを活用してパフォーマンスとエンゲージメントを向上させる">第13章 L&amp;Dを活用してパフォーマンスとエンゲージメントを向上させる</h2>
+<blockquote>
+<p>個人が暗中模索しながら時間をかけて解決策を見いだすよりも、すでに先人が整理した知識を活用することで汎用化されている部分までは早期にキャッチアップできるようになります。</p>
+</blockquote>
+<p>よく言われる「巨人の肩に乗る」ってやつか。たしかTwitterでみかけたけど「巨人の肩によじ登ることすら難しくないか？」って投稿あった気がする。</p>
+<p>検索したら見つけた。こういうの。</p>
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">学部4年は世界の見渡し方を学ぶだけで終わった感があって、修士課程は巨人の肩の上によじ登るための筋トレをするだけで終わる感がある。</p>&mdash; ぱろすけ (@parosky0) <a href="https://twitter.com/parosky0/status/291740586988408832?ref_src=twsrc%5Etfw">January 17, 2013</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+<blockquote class="twitter-tweet"><p lang="ja" dir="ltr">周りの優秀な方々、子どもの頃から学習環境が整っている雰囲気。20世紀までは「天才はどんな劣悪な環境からでも生まれる」が通用してきたけど、現代の科学数学人文学は、この1000年間の学問体系をどれだけ子どもの頃から叩き込めるかにかかっている気がする。現代は巨人の肩によじ登るだけでも大変だ。</p>&mdash; ゆうな (@kawauSOgood) <a href="https://twitter.com/kawauSOgood/status/1018698955037667328?ref_src=twsrc%5Etfw">July 16, 2018</a></blockquote>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+
+
+<blockquote>
+<p>研修は受講することが目的ではなく、研修によって得られた概念を積極的実践として活用し、スキルとして定着させていくことが目的です。多くの研修では定着まで追跡せず、座学で終わらせてしまっているので意味がないのです。</p>
+</blockquote>
+<p>うーむ、耳が痛い。役に立った研修なんて人生でない気がする。</p>
+<h2 id="雑な感想">雑な感想</h2>
+<ul>
+<li>スキル以前に性格が終わってるから、おれはGitLabには採用されないと思いました。</li>
+<li>組織運営って大変すね。</li>
+</ul>
+        </div>
+    </article>
+</main>
+
+<br/>
+<div class="sns-share">
+    <ul>
+        <li>
+            <a class="sns-share-btn sns-share-btn-fb"
+                href="https://www.facebook.com/sharer/sharer.php?u=https%3a%2f%2fguricerin.github.io%2fshit-blog%2fpost%2f2024%2f01%2f07%2fgitlab-remote-work%2f&t=%e3%80%8eGitLab%e3%81%ab%e5%ad%a6%e3%81%b6%20%e4%b8%96%e7%95%8c%e6%9c%80%e5%85%88%e7%ab%af%e3%81%ae%e3%83%aa%e3%83%a2%e3%83%bc%e3%83%88%e7%b5%84%e7%b9%94%e3%81%ae%e3%81%a4%e3%81%8f%e3%82%8a%e3%81%8b%e3%81%9f%e3%80%8f%20%e8%aa%ad%e3%82%93%e3%81%a0 - グリのクソブログ" target="_blank"
+                title="Facebook" rel="nofollow"><i class="fab fa-facebook-f"></i></a>
+        </li>
+        <li>
+            <a class="sns-share-btn sns-share-btn-tw"
+                href="https://twitter.com/intent/tweet?url=https%3a%2f%2fguricerin.github.io%2fshit-blog%2fpost%2f2024%2f01%2f07%2fgitlab-remote-work%2f&text=%e3%80%8eGitLab%e3%81%ab%e5%ad%a6%e3%81%b6%20%e4%b8%96%e7%95%8c%e6%9c%80%e5%85%88%e7%ab%af%e3%81%ae%e3%83%aa%e3%83%a2%e3%83%bc%e3%83%88%e7%b5%84%e7%b9%94%e3%81%ae%e3%81%a4%e3%81%8f%e3%82%8a%e3%81%8b%e3%81%9f%e3%80%8f%20%e8%aa%ad%e3%82%93%e3%81%a0 - グリのクソブログ" target="_blank"
+                title="Twitter" rel="nofollow"><i class="fab fa-twitter"></i></a>
+        </li>
+        
+        <li>
+            <a class="sns-share-btn sns-share-btn-hb"
+                href="https://b.hatena.ne.jp/add?mode=confirm&url=https%3a%2f%2fguricerin.github.io%2fshit-blog%2fpost%2f2024%2f01%2f07%2fgitlab-remote-work%2f&title=%e3%80%8eGitLab%e3%81%ab%e5%ad%a6%e3%81%b6%20%e4%b8%96%e7%95%8c%e6%9c%80%e5%85%88%e7%ab%af%e3%81%ae%e3%83%aa%e3%83%a2%e3%83%bc%e3%83%88%e7%b5%84%e7%b9%94%e3%81%ae%e3%81%a4%e3%81%8f%e3%82%8a%e3%81%8b%e3%81%9f%e3%80%8f%20%e8%aa%ad%e3%82%93%e3%81%a0 - グリのクソブログ" target="_blank"
+                title="hatena" rel="nofollow">B!</a>
+        </li>
+        <li>
+            <a class="sns-share-btn sns-share-btn-po"
+                href="https://getpocket.com/edit?url=https%3a%2f%2fguricerin.github.io%2fshit-blog%2fpost%2f2024%2f01%2f07%2fgitlab-remote-work%2f&title=%e3%80%8eGitLab%e3%81%ab%e5%ad%a6%e3%81%b6%20%e4%b8%96%e7%95%8c%e6%9c%80%e5%85%88%e7%ab%af%e3%81%ae%e3%83%aa%e3%83%a2%e3%83%bc%e3%83%88%e7%b5%84%e7%b9%94%e3%81%ae%e3%81%a4%e3%81%8f%e3%82%8a%e3%81%8b%e3%81%9f%e3%80%8f%20%e8%aa%ad%e3%82%93%e3%81%a0 - グリのクソブログ" target="_blank" title="pocket"
+                rel="nofollow"><i class="fab fa-get-pocket"></i></a>
+        </li>
+    </ul>
+</div>
+
+
+
+
+<nav class="pager flex">
+	<div class="pager__item pager__item--prev">
+		<a class="pager__link" href="https://guricerin.github.io/shit-blog/post/2023/12/16/review-it-books/" rel="prev">
+			<span class="pager__subtitle">«&thinsp;Previous</span>
+			<p class="pager__title">今まで読んできたIT関係の本</p>
+		</a>
+	</div>
+</nav>
+
+
+<script src="https://utteranc.es/client.js" repo="guricerin/shit-blog" issue-term="pathname" label="[By Utterances]"
+    theme="github-light" crossorigin="anonymous" async>
+    </script>
+
+
+      </div>
+      <aside class="sidebar">
+<div class="widget-recent widget">
+	<h4 class="widget__title">Recent Posts</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="https://guricerin.github.io/shit-blog/post/2024/01/07/gitlab-remote-work/">『GitLabに学ぶ 世界最先端のリモート組織のつくりかた』 読んだ</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://guricerin.github.io/shit-blog/post/2023/12/16/review-it-books/">今まで読んできたIT関係の本</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://guricerin.github.io/shit-blog/post/2023/10/21/poor-economics/">『貧乏人の経済学』 読んだ</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://guricerin.github.io/shit-blog/post/2023/10/09/finance-robin-hood/">『金融義賊』観た</a></li>
+			<li class="widget__item"><a class="widget__link" href="https://guricerin.github.io/shit-blog/post/2023/10/01_enbody-chair/">ハーマンミラーのゲーミングエンボディチェア買った</a></li>
+		</ul>
+	</div>
+</div>
+<div class="widget-categories widget">
+	<h4 class="widget__title">Categories</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item">
+				<a class="widget__link" href="https://guricerin.github.io/shit-blog/categories/bash/">bash</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">2</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="https://guricerin.github.io/shit-blog/categories/bz/">B&#39;z</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">38</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="https://guricerin.github.io/shit-blog/categories/csharp/">CSharp</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">1</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="https://guricerin.github.io/shit-blog/categories/fsharp/">FSharp</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">4</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="https://guricerin.github.io/shit-blog/categories/gcp/">GCP</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">1</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="https://guricerin.github.io/shit-blog/categories/github/">GitHub</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">1</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="https://guricerin.github.io/shit-blog/categories/go/">Go</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">2</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="https://guricerin.github.io/shit-blog/categories/it%E3%82%A4%E3%83%B3%E3%83%95%E3%83%A9/">ITインフラ</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">2</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="https://guricerin.github.io/shit-blog/categories/lisp/">Lisp</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">1</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="https://guricerin.github.io/shit-blog/categories/mint/">Mint</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">1</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="https://guricerin.github.io/shit-blog/categories/ruby/">Ruby</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">2</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="https://guricerin.github.io/shit-blog/categories/rust/">Rust</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">5</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="https://guricerin.github.io/shit-blog/categories/scheme/">Scheme</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">1</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="https://guricerin.github.io/shit-blog/categories/typescript/">TypeScript</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">1</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="https://guricerin.github.io/shit-blog/categories/windows/">Windows</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">2</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="https://guricerin.github.io/shit-blog/categories/%E3%82%AF%E3%82%BD%E3%83%96%E3%83%AD%E3%82%B0/">クソブログ</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">13</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="https://guricerin.github.io/shit-blog/categories/%E3%82%B2%E3%83%BC%E3%83%A0/">ゲーム</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">3</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="https://guricerin.github.io/shit-blog/categories/%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF/">ネットワーク</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">5</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="https://guricerin.github.io/shit-blog/categories/%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0/">プログラミング</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">23</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="https://guricerin.github.io/shit-blog/categories/%E4%B8%83%E5%B0%BE%E9%A6%99/">七尾香</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">1</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="https://guricerin.github.io/shit-blog/categories/%E5%87%8B%E5%8F%B6%E6%A3%95/">凋叶棕</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">3</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="https://guricerin.github.io/shit-blog/categories/%E5%AD%A6%E5%95%8F/">学問</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">3</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="https://guricerin.github.io/shit-blog/categories/%E5%B0%8F%E8%AA%AC/">小説</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">1</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="https://guricerin.github.io/shit-blog/categories/%E6%83%85%E5%A0%B1%E3%82%BB%E3%82%AD%E3%83%A5%E3%83%AA%E3%83%86%E3%82%A3/">情報セキュリティ</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">18</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="https://guricerin.github.io/shit-blog/categories/%E6%95%B0%E5%AD%A6/">数学</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">2</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="https://guricerin.github.io/shit-blog/categories/%E6%9A%81records/">暁Records</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">1</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="https://guricerin.github.io/shit-blog/categories/%E6%9B%B8%E7%89%A9/">書物</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">20</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="https://guricerin.github.io/shit-blog/categories/%E6%9D%B1%E6%96%B9/">東方</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">5</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="https://guricerin.github.io/shit-blog/categories/%E6%BC%AB%E7%94%BB/">漫画</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">2</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="https://guricerin.github.io/shit-blog/categories/%E7%A5%9E%E6%9E%97%E9%95%B7%E5%B9%B3/">神林長平</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">2</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="https://guricerin.github.io/shit-blog/categories/%E7%AB%B6%E6%8A%80%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0/">競技プログラミング</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">25</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="https://guricerin.github.io/shit-blog/categories/%E9%9F%B3%E6%A5%BD/">音楽</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">40</span>
+				</li>
+		</ul>
+	</div>
+</div>
+<div class="widget-archives widget">
+    <h4 class="widget__title">ARCHIVES</h4>
+    <div class="widget__content">
+        <ul>
+            
+            <li><a href="https://guricerin.github.io/shit-blog/archives/2024-01">2024-01 (1)</a></li>
+            
+            <li><a href="https://guricerin.github.io/shit-blog/archives/2023-12">2023-12 (1)</a></li>
+            
+            <li><a href="https://guricerin.github.io/shit-blog/archives/2023-10">2023-10 (3)</a></li>
+            
+            <li><a href="https://guricerin.github.io/shit-blog/archives/2023-07">2023-07 (1)</a></li>
+            
+            <li><a href="https://guricerin.github.io/shit-blog/archives/2023-06">2023-06 (1)</a></li>
+            
+            <li><a href="https://guricerin.github.io/shit-blog/archives/2023-05">2023-05 (1)</a></li>
+            
+            <li><a href="https://guricerin.github.io/shit-blog/archives/2022-12">2022-12 (1)</a></li>
+            
+            <li><a href="https://guricerin.github.io/shit-blog/archives/2022-10">2022-10 (1)</a></li>
+            
+            <li><a href="https://guricerin.github.io/shit-blog/archives/2022-09">2022-09 (1)</a></li>
+            
+            <li><a href="https://guricerin.github.io/shit-blog/archives/2022-07">2022-07 (2)</a></li>
+            
+            <li><a href="https://guricerin.github.io/shit-blog/archives/2022-03">2022-03 (2)</a></li>
+            
+            <li><a href="https://guricerin.github.io/shit-blog/archives/2022-02">2022-02 (1)</a></li>
+            
+            <li><a href="https://guricerin.github.io/shit-blog/archives/2021-12">2021-12 (2)</a></li>
+            
+            <li><a href="https://guricerin.github.io/shit-blog/archives/2021-11">2021-11 (3)</a></li>
+            
+            <li><a href="https://guricerin.github.io/shit-blog/archives/2021-10">2021-10 (2)</a></li>
+            
+            <li><a href="https://guricerin.github.io/shit-blog/archives/2021-09">2021-09 (5)</a></li>
+            
+            <li><a href="https://guricerin.github.io/shit-blog/archives/2021-07">2021-07 (1)</a></li>
+            
+            <li><a href="https://guricerin.github.io/shit-blog/archives/2021-06">2021-06 (2)</a></li>
+            
+            <li><a href="https://guricerin.github.io/shit-blog/archives/2021-01">2021-01 (1)</a></li>
+            
+            <li><a href="https://guricerin.github.io/shit-blog/archives/2020-11">2020-11 (4)</a></li>
+            
+            <li><a href="https://guricerin.github.io/shit-blog/archives/2020-10">2020-10 (1)</a></li>
+            
+            <li><a href="https://guricerin.github.io/shit-blog/archives/2020-09">2020-09 (21)</a></li>
+            
+            <li><a href="https://guricerin.github.io/shit-blog/archives/2020-08">2020-08 (2)</a></li>
+            
+            <li><a href="https://guricerin.github.io/shit-blog/archives/2020-05">2020-05 (1)</a></li>
+            
+            <li><a href="https://guricerin.github.io/shit-blog/archives/2020-03">2020-03 (2)</a></li>
+            
+            <li><a href="https://guricerin.github.io/shit-blog/archives/2020-02">2020-02 (1)</a></li>
+            
+            <li><a href="https://guricerin.github.io/shit-blog/archives/2019-12">2019-12 (1)</a></li>
+            
+            <li><a href="https://guricerin.github.io/shit-blog/archives/2019-08">2019-08 (1)</a></li>
+            
+            <li><a href="https://guricerin.github.io/shit-blog/archives/2019-03">2019-03 (19)</a></li>
+            
+            <li><a href="https://guricerin.github.io/shit-blog/archives/2019-02">2019-02 (5)</a></li>
+            
+            <li><a href="https://guricerin.github.io/shit-blog/archives/2019-01">2019-01 (3)</a></li>
+            
+            <li><a href="https://guricerin.github.io/shit-blog/archives/2018-12">2018-12 (2)</a></li>
+            
+            <li><a href="https://guricerin.github.io/shit-blog/archives/2018-11">2018-11 (1)</a></li>
+            
+            <li><a href="https://guricerin.github.io/shit-blog/archives/2018-09">2018-09 (1)</a></li>
+            
+            <li><a href="https://guricerin.github.io/shit-blog/archives/2018-06">2018-06 (1)</a></li>
+            
+            <li><a href="https://guricerin.github.io/shit-blog/archives/2018-05">2018-05 (1)</a></li>
+            
+            <li><a href="https://guricerin.github.io/shit-blog/archives/2018-02">2018-02 (1)</a></li>
+            
+            <li><a href="https://guricerin.github.io/shit-blog/archives/2018-01">2018-01 (4)</a></li>
+            
+            <li><a href="https://guricerin.github.io/shit-blog/archives/2017-12">2017-12 (3)</a></li>
+            
+            <li><a href="https://guricerin.github.io/shit-blog/archives/2017-11">2017-11 (12)</a></li>
+            
+            <li><a href="https://guricerin.github.io/shit-blog/archives/2017-10">2017-10 (17)</a></li>
+            
+        </ul>
+    </div>
+</div>
+
+<div class="widget-social widget">
+	<h4 class="widget-social__title widget__title">Social</h4>
+	<div class="widget-social__content widget__content">
+		<div class="widget-social__item widget__item">
+			<a class="widget-social__link widget__link btn" title="GitHub" rel="noopener noreferrer" href="https://github.com/guricerin" target="_blank">
+				<svg class="widget-social__link-icon icon icon-github" width="24" height="24" viewBox="0 0 384 374"><path d="m192 0c-106.1 0-192 85.8-192 191.7 0 84.7 55 156.6 131.3 181.9 9.6 1.8 13.1-4.2 13.1-9.2 0-4.6-.2-16.6-.3-32.6-53.4 11.6-64.7-25.7-64.7-25.7-8.7-22.1-21.3-28-21.3-28-17.4-11.9 1.3-11.6 1.3-11.6 19.3 1.4 29.4 19.8 29.4 19.8 17.1 29.3 44.9 20.8 55.9 15.9 1.7-12.4 6.7-20.8 12.2-25.6-42.6-4.8-87.5-21.3-87.5-94.8 0-20.9 7.5-38 19.8-51.4-2-4.9-8.6-24.3 1.9-50.7 0 0 16.1-5.2 52.8 19.7 15.3-4.2 31.7-6.4 48.1-6.5 16.3.1 32.7 2.2 48.1 6.5 36.7-24.8 52.8-19.7 52.8-19.7 10.5 26.4 3.9 45.9 1.9 50.7 12.3 13.4 19.7 30.5 19.7 51.4 0 73.7-44.9 89.9-87.7 94.6 6.9 5.9 13 17.6 13 35.5 0 25.6-.2 46.3-.2 52.6 0 5.1 3.5 11.1 13.2 9.2 76.2-25.5 131.2-97.3 131.2-182 0-105.9-86-191.7-192-191.7z"/></svg>
+				<span>GitHub</span>
+			</a>
+		</div>
+
+		
+	</div>
+</div>
+</aside>
+
+    </div>
+    <footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2024 guricerin.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+</footer>
+  </div>
+  <script async defer src="https://guricerin.github.io/shit-blog/%20js/menu.js"></script>
+  <script src="https://guricerin.github.io/shit-blog/js/custom.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js?config=TeX-AMS-MML_HTMLorMML" async></script>
+</body>
+
+</html>
