@@ -6,53 +6,42 @@
     <description>Recent content in ネットワーク on グリのクソブログ</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Fri, 02 Dec 2022 00:00:00 +0900</lastBuildDate><atom:link href="https://guricerin.github.io/shit-blog/categories/%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Fri, 02 Dec 2022 00:00:00 +0900</lastBuildDate>
+    <atom:link href="https://guricerin.github.io/shit-blog/categories/%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Google Domainsで取得したドメインをGitHub Pagesでホストしたサイトに割り当てる</title>
       <link>https://guricerin.github.io/shit-blog/post/2022/12/02_google-domains-and-gh-pages/</link>
       <pubDate>Fri, 02 Dec 2022 00:00:00 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2022/12/02_google-domains-and-gh-pages/</guid>
-      <description>&lt;h3 id=&#34;はじめに&#34;&gt;はじめに&lt;/h3&gt;
-&lt;p&gt;タイトル通りのことをやります。&lt;/p&gt;</description>
+      <description>&lt;h3 id=&#34;はじめに&#34;&gt;はじめに&lt;/h3&gt;&#xA;&lt;p&gt;タイトル通りのことをやります。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>『インフラエンジニアの教科書2』読んだ</title>
       <link>https://guricerin.github.io/shit-blog/post/2021/11/23-infra-engineer-text2/</link>
       <pubDate>Tue, 23 Nov 2021 07:34:34 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2021/11/23-infra-engineer-text2/</guid>
-      <description>&lt;p&gt;インフラなんも知らんので購入。&lt;br&gt;
-おれのインフラ経験といえば、VMware vSphereで管理された仮想サーバの1つにRedmineをセットアップしたりプラグインを適用した程度。&lt;/p&gt;</description>
+      <description>&lt;p&gt;インフラなんも知らんので購入。&lt;br&gt;&#xA;おれのインフラ経験といえば、VMware vSphereで管理された仮想サーバの1つにRedmineをセットアップしたりプラグインを適用した程度。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>『Rustで始めるネットワークプログラミング』読んだ</title>
       <link>https://guricerin.github.io/shit-blog/post/2021/11/20211108-rust-net/</link>
       <pubDate>Mon, 08 Nov 2021 09:12:07 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2021/11/20211108-rust-net/</guid>
       <description>&lt;p&gt;ネットワークをもっと理解したかったし、500円と安かったので購入。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>『Linuxで動かしながら学ぶTCP/IPネットワーク入門』読んだ</title>
       <link>https://guricerin.github.io/shit-blog/post/2021/06/26-linux-tcpip/</link>
       <pubDate>Sat, 26 Jun 2021 09:57:13 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2021/06/26-linux-tcpip/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://guricerin.github.io/shit-blog/post/2021/06/20210618-mikanos/&#34;&gt;前回読んだ&lt;/a&gt;みかん本で解説されていない、かつ、よくわかっていない分野と言われてぱっと思いつくのは、最も身近な存在のネットワークである。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>WindowsのpwshからsshでWSL2に接続</title>
       <link>https://guricerin.github.io/shit-blog/post/2020/09/20200914-windows-to-wsl2-ssh/</link>
       <pubDate>Tue, 15 Sep 2020 10:28:44 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2020/09/20200914-windows-to-wsl2-ssh/</guid>
       <description></description>
     </item>
-    
   </channel>
 </rss>

@@ -6,25 +6,21 @@
     <description>Recent content in Windows on グリのクソブログ</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Thu, 01 Oct 2020 11:29:20 +0900</lastBuildDate><atom:link href="https://guricerin.github.io/shit-blog/categories/windows/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Thu, 01 Oct 2020 11:29:20 +0900</lastBuildDate>
+    <atom:link href="https://guricerin.github.io/shit-blog/categories/windows/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>Windows環境で便利なツール</title>
       <link>https://guricerin.github.io/shit-blog/post/2020/10/20201001-windows-tool/</link>
       <pubDate>Thu, 01 Oct 2020 11:29:20 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2020/10/20201001-windows-tool/</guid>
-      <description>&lt;p&gt;自分用メモ。完全にn番煎じ。いまのところフリーのソフトだけ。&lt;br&gt;
-他にも良いのが見つかれば追記していく予定。&lt;/p&gt;</description>
+      <description>&lt;p&gt;自分用メモ。完全にn番煎じ。いまのところフリーのソフトだけ。&lt;br&gt;&#xA;他にも良いのが見つかれば追記していく予定。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>WindowsのpwshからsshでWSL2に接続</title>
       <link>https://guricerin.github.io/shit-blog/post/2020/09/20200914-windows-to-wsl2-ssh/</link>
       <pubDate>Tue, 15 Sep 2020 10:28:44 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2020/09/20200914-windows-to-wsl2-ssh/</guid>
       <description></description>
     </item>
-    
   </channel>
 </rss>

@@ -6,191 +6,147 @@
     <description>Recent content in 書物 on グリのクソブログ</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Sun, 07 Jan 2024 01:39:13 +0900</lastBuildDate><atom:link href="https://guricerin.github.io/shit-blog/categories/%E6%9B%B8%E7%89%A9/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 07 Jan 2024 01:39:13 +0900</lastBuildDate>
+    <atom:link href="https://guricerin.github.io/shit-blog/categories/%E6%9B%B8%E7%89%A9/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>『GitLabに学ぶ 世界最先端のリモート組織のつくりかた』 読んだ</title>
       <link>https://guricerin.github.io/shit-blog/post/2024/01/07/gitlab-remote-work/</link>
       <pubDate>Sun, 07 Jan 2024 01:39:13 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2024/01/07/gitlab-remote-work/</guid>
-      <description>&lt;p&gt;Webに公開されてるほうは3000ページもあるってまじ？&lt;br&gt;
-&lt;a href=&#34;https://handbook.gitlab.com/&#34;&gt;https://handbook.gitlab.com/&lt;/a&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;Webに公開されてるほうは3000ページもあるってまじ？&lt;br&gt;&#xA;&lt;a href=&#34;https://handbook.gitlab.com/&#34;&gt;https://handbook.gitlab.com/&lt;/a&gt;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>今まで読んできたIT関係の本</title>
       <link>https://guricerin.github.io/shit-blog/post/2023/12/16/review-it-books/</link>
       <pubDate>Sat, 16 Dec 2023 00:11:48 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2023/12/16/review-it-books/</guid>
-      <description>&lt;p&gt;誰向けでもない、個人的な振り返り。思い出せる限りにおいて読んだ順に箇条書きしていく。&lt;br&gt;
-数えてみたら33冊だった。もっと読んでた気はするが、まあええか。&lt;/p&gt;</description>
+      <description>&lt;p&gt;誰向けでもない、個人的な振り返り。思い出せる限りにおいて読んだ順に箇条書きしていく。&lt;br&gt;&#xA;数えてみたら33冊だった。もっと読んでた気はするが、まあええか。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>『貧乏人の経済学』 読んだ</title>
       <link>https://guricerin.github.io/shit-blog/post/2023/10/21/poor-economics/</link>
       <pubDate>Sat, 21 Oct 2023 02:02:49 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2023/10/21/poor-economics/</guid>
       <description>&lt;p&gt;貧困層の経済行動を分析した本だが、心当たりがありすぎて笑えない。おれは自分で思っている以上に貧乏人なのかもしれない。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>『言語の本質』 読んだ</title>
       <link>https://guricerin.github.io/shit-blog/post/2023/07/29_essence-of-lang/</link>
       <pubDate>Sat, 29 Jul 2023 09:18:32 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2023/07/29_essence-of-lang/</guid>
       <description>&lt;p&gt;神林長平などの影響で言語学とか好き（知識はド素人レベル）だし、おれ自身プログラマとしてエディタ上に記号をゴリゴリ打ち込むという仕事をしているからか、タイトルに惹かれて買った。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>『テスト駆動開発』をRustで写経した</title>
       <link>https://guricerin.github.io/shit-blog/post/2022/03/30-tdd-rs/</link>
       <pubDate>Wed, 30 Mar 2022 00:37:32 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2022/03/30-tdd-rs/</guid>
       <description>&lt;p&gt;テストコード書けないので購入。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>『ゼロからはじめるLinuxサーバー構築・運用ガイド』読んだ</title>
       <link>https://guricerin.github.io/shit-blog/post/2021/12/08-operation-linux-server/</link>
       <pubDate>Wed, 08 Dec 2021 12:21:38 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2021/12/08-operation-linux-server/</guid>
       <description>&lt;p&gt;インフラ運用なんも知らんしKindleのセールで半額だったから購入。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>『体系的に学ぶ 安全なWebアプリケーションの作り方 第2版』読んだ</title>
       <link>https://guricerin.github.io/shit-blog/post/2021/12/05-wasbook/</link>
       <pubDate>Sun, 05 Dec 2021 16:10:50 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2021/12/05-wasbook/</guid>
       <description>&lt;p&gt;セキュリティなんも知らんので購入。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>『インフラエンジニアの教科書2』読んだ</title>
       <link>https://guricerin.github.io/shit-blog/post/2021/11/23-infra-engineer-text2/</link>
       <pubDate>Tue, 23 Nov 2021 07:34:34 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2021/11/23-infra-engineer-text2/</guid>
-      <description>&lt;p&gt;インフラなんも知らんので購入。&lt;br&gt;
-おれのインフラ経験といえば、VMware vSphereで管理された仮想サーバの1つにRedmineをセットアップしたりプラグインを適用した程度。&lt;/p&gt;</description>
+      <description>&lt;p&gt;インフラなんも知らんので購入。&lt;br&gt;&#xA;おれのインフラ経験といえば、VMware vSphereで管理された仮想サーバの1つにRedmineをセットアップしたりプラグインを適用した程度。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>『コンパイラ ー 原理と構造』をF#に翻訳した</title>
       <link>https://guricerin.github.io/shit-blog/post/2021/11/20211113-compiler-text-fs/</link>
       <pubDate>Sat, 13 Nov 2021 22:00:33 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2021/11/20211113-compiler-text-fs/</guid>
       <description>&lt;p&gt;型推論などの実装を学べるらしいと聞いたので購入。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>『Clean Architecture 達人に学ぶソフトウェアの構造と設計』読んだ</title>
       <link>https://guricerin.github.io/shit-blog/post/2021/09/16-clean-arch/</link>
       <pubDate>Thu, 16 Sep 2021 09:37:18 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2021/09/16-clean-arch/</guid>
       <description>&lt;p&gt;ソフトウェア設計なんも知らんので購入。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>『ふつうのLinuxプログラミング 第2版』読んだ</title>
       <link>https://guricerin.github.io/shit-blog/post/2021/09/06-std-linux/</link>
       <pubDate>Mon, 06 Sep 2021 09:44:38 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2021/09/06-std-linux/</guid>
       <description>&lt;p&gt;Linuxのことなんもわかってないので購入。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>『Rubyで作る奇妙なプログラミング言語』をRustで作った</title>
       <link>https://guricerin.github.io/shit-blog/post/2021/07/20210709-ruby-esolang-by-rust/</link>
       <pubDate>Fri, 09 Jul 2021 09:53:28 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2021/07/20210709-ruby-esolang-by-rust/</guid>
       <description>&lt;p&gt;タイトル見て即購入。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>『Linuxで動かしながら学ぶTCP/IPネットワーク入門』読んだ</title>
       <link>https://guricerin.github.io/shit-blog/post/2021/06/26-linux-tcpip/</link>
       <pubDate>Sat, 26 Jun 2021 09:57:13 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2021/06/26-linux-tcpip/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://guricerin.github.io/shit-blog/post/2021/06/20210618-mikanos/&#34;&gt;前回読んだ&lt;/a&gt;みかん本で解説されていない、かつ、よくわかっていない分野と言われてぱっと思いつくのは、最も身近な存在のネットワークである。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>『ゼロからのOS自作入門』写経した</title>
       <link>https://guricerin.github.io/shit-blog/post/2021/06/20210618-mikanos/</link>
       <pubDate>Fri, 18 Jun 2021 10:03:26 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2021/06/20210618-mikanos/</guid>
       <description>&lt;p&gt;通称『みかん本』。やったことは&lt;a href=&#34;https://github.com/uchan-nos/mikanos&#34;&gt;このリポジトリ&lt;/a&gt;のコミットタグをはじめから辿ってひたすら写経しただけ。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Rustで『コンピュータシステムの理論と実装』を演習した</title>
       <link>https://guricerin.github.io/shit-blog/post/2021/01/20210103-nand2tetris-rust/</link>
       <pubDate>Sun, 03 Jan 2021 10:23:28 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2021/01/20210103-nand2tetris-rust/</guid>
       <description>&lt;p&gt;n番煎じ。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>『最短経路の本 レナのふしぎな数学の旅』メモ</title>
       <link>https://guricerin.github.io/shit-blog/post/2020/09/20200912-lena/</link>
       <pubDate>Sat, 12 Sep 2020 10:33:28 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2020/09/20200912-lena/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>F#で『アンダースタンディング コンピュテーション』をやる</title>
       <link>https://guricerin.github.io/shit-blog/post/2020/03/20200327-understanding-computation-fs/</link>
       <pubDate>Fri, 27 Mar 2020 14:49:10 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2020/03/20200327-understanding-computation-fs/</guid>
-      <description>&lt;p&gt;リポジトリはこれ。&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://github.com/guricerin/understanding-computation&#34;&gt;https://github.com/guricerin/understanding-computation&lt;/a&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;リポジトリはこれ。&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/guricerin/understanding-computation&#34;&gt;https://github.com/guricerin/understanding-computation&lt;/a&gt;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>『プログラミングの基礎』をF#で解いた</title>
       <link>https://guricerin.github.io/shit-blog/post/2019/08/20190810-basic-programming/</link>
       <pubDate>Sat, 10 Aug 2019 15:06:54 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2019/08/20190810-basic-programming/</guid>
-      <description>&lt;p&gt;リポジトリはこれ。&lt;br&gt;
-&lt;a href=&#34;https://github.com/guricerin/basic-of-programing&#34;&gt;https://github.com/guricerin/basic-of-programing&lt;/a&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;リポジトリはこれ。&lt;br&gt;&#xA;&lt;a href=&#34;https://github.com/guricerin/basic-of-programing&#34;&gt;https://github.com/guricerin/basic-of-programing&lt;/a&gt;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>『RubyでつくるRuby』</title>
       <link>https://guricerin.github.io/shit-blog/post/2018/12/02-ruby-by-ruby/</link>
       <pubDate>Sun, 02 Dec 2018 20:35:07 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2018/12/02-ruby-by-ruby/</guid>
       <description>&lt;p&gt;「超ライトなsicp」という噂を聞いたので読んだ。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>『Scheme手習い』</title>
       <link>https://guricerin.github.io/shit-blog/post/2018/09/16-scheme-practice/</link>
       <pubDate>Thu, 13 Sep 2018 20:54:25 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2018/09/16-scheme-practice/</guid>
       <description>&lt;p&gt;『7つの言語 7つの世界』を見事に積読することに成功したが、どうしてもLispへの興味が衰えないので、『Scheme手習い』をだらだら読んでいた。&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

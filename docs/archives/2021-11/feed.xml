@@ -6,34 +6,28 @@
     <description>Recent content in 2021-11 on グリのクソブログ</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Tue, 23 Nov 2021 07:34:34 +0900</lastBuildDate><atom:link href="https://guricerin.github.io/shit-blog/archives/2021-11/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Tue, 23 Nov 2021 07:34:34 +0900</lastBuildDate>
+    <atom:link href="https://guricerin.github.io/shit-blog/archives/2021-11/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>『インフラエンジニアの教科書2』読んだ</title>
       <link>https://guricerin.github.io/shit-blog/post/2021/11/23-infra-engineer-text2/</link>
       <pubDate>Tue, 23 Nov 2021 07:34:34 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2021/11/23-infra-engineer-text2/</guid>
-      <description>&lt;p&gt;インフラなんも知らんので購入。&lt;br&gt;
-おれのインフラ経験といえば、VMware vSphereで管理された仮想サーバの1つにRedmineをセットアップしたりプラグインを適用した程度。&lt;/p&gt;</description>
+      <description>&lt;p&gt;インフラなんも知らんので購入。&lt;br&gt;&#xA;おれのインフラ経験といえば、VMware vSphereで管理された仮想サーバの1つにRedmineをセットアップしたりプラグインを適用した程度。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>『コンパイラ ー 原理と構造』をF#に翻訳した</title>
       <link>https://guricerin.github.io/shit-blog/post/2021/11/20211113-compiler-text-fs/</link>
       <pubDate>Sat, 13 Nov 2021 22:00:33 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2021/11/20211113-compiler-text-fs/</guid>
       <description>&lt;p&gt;型推論などの実装を学べるらしいと聞いたので購入。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>『Rustで始めるネットワークプログラミング』読んだ</title>
       <link>https://guricerin.github.io/shit-blog/post/2021/11/20211108-rust-net/</link>
       <pubDate>Mon, 08 Nov 2021 09:12:07 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2021/11/20211108-rust-net/</guid>
       <description>&lt;p&gt;ネットワークをもっと理解したかったし、500円と安かったので購入。&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

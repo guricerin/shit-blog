@@ -6,25 +6,21 @@
     <description>Recent content in 2020-03 on グリのクソブログ</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Sat, 28 Mar 2020 14:42:42 +0900</lastBuildDate><atom:link href="https://guricerin.github.io/shit-blog/archives/2020-03/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sat, 28 Mar 2020 14:42:42 +0900</lastBuildDate>
+    <atom:link href="https://guricerin.github.io/shit-blog/archives/2020-03/feed.xml" rel="self" type="application/rss+xml" />
     <item>
       <title>勝手にレビュー37：稲葉浩志の4thシングル『Okay』</title>
       <link>https://guricerin.github.io/shit-blog/post/2020/03/20200328-okay/</link>
       <pubDate>Sat, 28 Mar 2020 14:42:42 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2020/03/20200328-okay/</guid>
       <description>&lt;p&gt;1年ですか。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>F#で『アンダースタンディング コンピュテーション』をやる</title>
       <link>https://guricerin.github.io/shit-blog/post/2020/03/20200327-understanding-computation-fs/</link>
       <pubDate>Fri, 27 Mar 2020 14:49:10 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2020/03/20200327-understanding-computation-fs/</guid>
-      <description>&lt;p&gt;リポジトリはこれ。&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://github.com/guricerin/understanding-computation&#34;&gt;https://github.com/guricerin/understanding-computation&lt;/a&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;リポジトリはこれ。&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/guricerin/understanding-computation&#34;&gt;https://github.com/guricerin/understanding-computation&lt;/a&gt;&lt;/p&gt;</description>
     </item>
-    
   </channel>
 </rss>

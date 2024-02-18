@@ -6,51 +6,49 @@
     <description>Recent content in Rust on グリのクソブログ</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Wed, 30 Mar 2022 00:37:32 +0900</lastBuildDate><atom:link href="https://guricerin.github.io/shit-blog/categories/rust/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 18 Feb 2024 17:11:15 +0900</lastBuildDate>
+    <atom:link href="https://guricerin.github.io/shit-blog/categories/rust/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>自作のRustクレートをcrates.ioに公開する</title>
+      <link>https://guricerin.github.io/shit-blog/post/2024/02/18/publish-my-crate/</link>
+      <pubDate>Sun, 18 Feb 2024 17:11:15 +0900</pubDate>
+      <guid>https://guricerin.github.io/shit-blog/post/2024/02/18/publish-my-crate/</guid>
+      <description>&lt;p&gt;公開したのは大昔に書いた&lt;a href=&#34;https://guricerin.github.io/shit-blog/content/post/2020/11/20201123-bf-tool/index.md&#34;&gt;brainfuck方言生成器&lt;/a&gt;。&lt;/p&gt;</description>
+    </item>
     <item>
       <title>『テスト駆動開発』をRustで写経した</title>
       <link>https://guricerin.github.io/shit-blog/post/2022/03/30-tdd-rs/</link>
       <pubDate>Wed, 30 Mar 2022 00:37:32 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2022/03/30-tdd-rs/</guid>
       <description>&lt;p&gt;テストコード書けないので購入。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>『Rustで始めるネットワークプログラミング』読んだ</title>
       <link>https://guricerin.github.io/shit-blog/post/2021/11/20211108-rust-net/</link>
       <pubDate>Mon, 08 Nov 2021 09:12:07 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2021/11/20211108-rust-net/</guid>
       <description>&lt;p&gt;ネットワークをもっと理解したかったし、500円と安かったので購入。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>『Rubyで作る奇妙なプログラミング言語』をRustで作った</title>
       <link>https://guricerin.github.io/shit-blog/post/2021/07/20210709-ruby-esolang-by-rust/</link>
       <pubDate>Fri, 09 Jul 2021 09:53:28 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2021/07/20210709-ruby-esolang-by-rust/</guid>
       <description>&lt;p&gt;タイトル見て即購入。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Rustで『コンピュータシステムの理論と実装』を演習した</title>
       <link>https://guricerin.github.io/shit-blog/post/2021/01/20210103-nand2tetris-rust/</link>
       <pubDate>Sun, 03 Jan 2021 10:23:28 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2021/01/20210103-nand2tetris-rust/</guid>
       <description>&lt;p&gt;n番煎じ。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Rustでbrainfuck方言生成器つくった</title>
       <link>https://guricerin.github.io/shit-blog/post/2020/11/20201123-bf-tool/</link>
       <pubDate>Mon, 23 Nov 2020 08:15:39 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2020/11/20201123-bf-tool/</guid>
       <description></description>
     </item>
-    
   </channel>
 </rss>

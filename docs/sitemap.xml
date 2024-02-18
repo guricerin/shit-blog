@@ -2,22 +2,31 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
+    <loc>https://guricerin.github.io/shit-blog/archives/2024-02/</loc>
+    <lastmod>2024-02-18T17:11:15+09:00</lastmod>
+  </url><url>
+    <loc>https://guricerin.github.io/shit-blog/archives/</loc>
+    <lastmod>2024-02-18T17:11:15+09:00</lastmod>
+  </url><url>
+    <loc>https://guricerin.github.io/shit-blog/categories/</loc>
+    <lastmod>2024-02-18T17:11:15+09:00</lastmod>
+  </url><url>
+    <loc>https://guricerin.github.io/shit-blog/post/</loc>
+    <lastmod>2024-02-18T17:11:15+09:00</lastmod>
+  </url><url>
+    <loc>https://guricerin.github.io/shit-blog/categories/rust/</loc>
+    <lastmod>2024-02-18T17:11:15+09:00</lastmod>
+  </url><url>
+    <loc>https://guricerin.github.io/shit-blog/</loc>
+    <lastmod>2024-02-18T17:11:15+09:00</lastmod>
+  </url><url>
+    <loc>https://guricerin.github.io/shit-blog/post/2024/02/18/publish-my-crate/</loc>
+    <lastmod>2024-02-18T17:11:15+09:00</lastmod>
+  </url><url>
     <loc>https://guricerin.github.io/shit-blog/post/2024/01/07/gitlab-remote-work/</loc>
     <lastmod>2024-01-07T01:39:13+09:00</lastmod>
   </url><url>
     <loc>https://guricerin.github.io/shit-blog/archives/2024-01/</loc>
-    <lastmod>2024-01-07T01:39:13+09:00</lastmod>
-  </url><url>
-    <loc>https://guricerin.github.io/shit-blog/archives/</loc>
-    <lastmod>2024-01-07T01:39:13+09:00</lastmod>
-  </url><url>
-    <loc>https://guricerin.github.io/shit-blog/categories/</loc>
-    <lastmod>2024-01-07T01:39:13+09:00</lastmod>
-  </url><url>
-    <loc>https://guricerin.github.io/shit-blog/post/</loc>
-    <lastmod>2024-01-07T01:39:13+09:00</lastmod>
-  </url><url>
-    <loc>https://guricerin.github.io/shit-blog/</loc>
     <lastmod>2024-01-07T01:39:13+09:00</lastmod>
   </url><url>
     <loc>https://guricerin.github.io/shit-blog/categories/%E6%9B%B8%E7%89%A9/</loc>
@@ -114,9 +123,6 @@
     <lastmod>2022-03-30T00:37:32+09:00</lastmod>
   </url><url>
     <loc>https://guricerin.github.io/shit-blog/archives/2022-03/</loc>
-    <lastmod>2022-03-30T00:37:32+09:00</lastmod>
-  </url><url>
-    <loc>https://guricerin.github.io/shit-blog/categories/rust/</loc>
     <lastmod>2022-03-30T00:37:32+09:00</lastmod>
   </url><url>
     <loc>https://guricerin.github.io/shit-blog/categories/gcp/</loc>

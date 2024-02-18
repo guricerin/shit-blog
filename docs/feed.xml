@@ -6,1278 +6,973 @@
     <description>Recent content on グリのクソブログ</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Sun, 07 Jan 2024 01:39:13 +0900</lastBuildDate><atom:link href="https://guricerin.github.io/shit-blog/feed.xml" rel="self" type="application/rss+xml" />
+    <lastBuildDate>Sun, 18 Feb 2024 17:11:15 +0900</lastBuildDate>
+    <atom:link href="https://guricerin.github.io/shit-blog/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>自作のRustクレートをcrates.ioに公開する</title>
+      <link>https://guricerin.github.io/shit-blog/post/2024/02/18/publish-my-crate/</link>
+      <pubDate>Sun, 18 Feb 2024 17:11:15 +0900</pubDate>
+      <guid>https://guricerin.github.io/shit-blog/post/2024/02/18/publish-my-crate/</guid>
+      <description>&lt;p&gt;公開したのは大昔に書いた&lt;a href=&#34;https://guricerin.github.io/shit-blog/content/post/2020/11/20201123-bf-tool/index.md&#34;&gt;brainfuck方言生成器&lt;/a&gt;。&lt;/p&gt;</description>
+    </item>
     <item>
       <title>『GitLabに学ぶ 世界最先端のリモート組織のつくりかた』 読んだ</title>
       <link>https://guricerin.github.io/shit-blog/post/2024/01/07/gitlab-remote-work/</link>
       <pubDate>Sun, 07 Jan 2024 01:39:13 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2024/01/07/gitlab-remote-work/</guid>
-      <description>&lt;p&gt;Webに公開されてるほうは3000ページもあるってまじ？&lt;br&gt;
-&lt;a href=&#34;https://handbook.gitlab.com/&#34;&gt;https://handbook.gitlab.com/&lt;/a&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;Webに公開されてるほうは3000ページもあるってまじ？&lt;br&gt;&#xA;&lt;a href=&#34;https://handbook.gitlab.com/&#34;&gt;https://handbook.gitlab.com/&lt;/a&gt;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>今まで読んできたIT関係の本</title>
       <link>https://guricerin.github.io/shit-blog/post/2023/12/16/review-it-books/</link>
       <pubDate>Sat, 16 Dec 2023 00:11:48 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2023/12/16/review-it-books/</guid>
-      <description>&lt;p&gt;誰向けでもない、個人的な振り返り。思い出せる限りにおいて読んだ順に箇条書きしていく。&lt;br&gt;
-数えてみたら33冊だった。もっと読んでた気はするが、まあええか。&lt;/p&gt;</description>
+      <description>&lt;p&gt;誰向けでもない、個人的な振り返り。思い出せる限りにおいて読んだ順に箇条書きしていく。&lt;br&gt;&#xA;数えてみたら33冊だった。もっと読んでた気はするが、まあええか。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>『貧乏人の経済学』 読んだ</title>
       <link>https://guricerin.github.io/shit-blog/post/2023/10/21/poor-economics/</link>
       <pubDate>Sat, 21 Oct 2023 02:02:49 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2023/10/21/poor-economics/</guid>
       <description>&lt;p&gt;貧困層の経済行動を分析した本だが、心当たりがありすぎて笑えない。おれは自分で思っている以上に貧乏人なのかもしれない。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>『金融義賊』観た</title>
       <link>https://guricerin.github.io/shit-blog/post/2023/10/09/finance-robin-hood/</link>
       <pubDate>Mon, 09 Oct 2023 16:24:47 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2023/10/09/finance-robin-hood/</guid>
       <description>&lt;p&gt;えぐすぎてイッキ観しちゃった。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>ハーマンミラーのゲーミングエンボディチェア買った</title>
       <link>https://guricerin.github.io/shit-blog/post/2023/10/01_enbody-chair/</link>
       <pubDate>Sun, 01 Oct 2023 01:36:30 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2023/10/01_enbody-chair/</guid>
       <description>&lt;p&gt;セールだかなんだかで24万円。バカ高え。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>『言語の本質』 読んだ</title>
       <link>https://guricerin.github.io/shit-blog/post/2023/07/29_essence-of-lang/</link>
       <pubDate>Sat, 29 Jul 2023 09:18:32 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2023/07/29_essence-of-lang/</guid>
       <description>&lt;p&gt;神林長平などの影響で言語学とか好き（知識はド素人レベル）だし、おれ自身プログラマとしてエディタ上に記号をゴリゴリ打ち込むという仕事をしているからか、タイトルに惹かれて買った。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>GitHubリポジトリの運用方針</title>
       <link>https://guricerin.github.io/shit-blog/post/2023/06/24_github-op/</link>
       <pubDate>Sat, 24 Jun 2023 03:42:26 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2023/06/24_github-op/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://docs.github.com/ja/get-started/quickstart/github-flow&#34;&gt;GitHubフロー&lt;/a&gt;をアレンジしたもの。ここではWebアプリを想定しているが、他のシステム形態にも適用できるかも。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>うるさい文字列</title>
       <link>https://guricerin.github.io/shit-blog/post/2023/05/13_annoying-text/</link>
       <pubDate>Sat, 13 May 2023 00:02:29 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2023/05/13_annoying-text/</guid>
-      <description>&lt;p&gt;『ライトジーンの遺産』というSF小説にこんな一節がある。&lt;/p&gt;
-&lt;blockquote&gt;
-&lt;p&gt;いろいろな番組が流されている。視聴者参加のバラエティから、ソープオペラ、宗教番組などなど。もちろんニュース専門局もある。おれはニュース以外はほとんど観ない。楽しみは、本棚に並んでいる活字から得る。本はうるさくなくていい。&lt;/p&gt;
-&lt;/blockquote&gt;</description>
+      <description>&lt;p&gt;『ライトジーンの遺産』というSF小説にこんな一節がある。&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;いろいろな番組が流されている。視聴者参加のバラエティから、ソープオペラ、宗教番組などなど。もちろんニュース専門局もある。おれはニュース以外はほとんど観ない。楽しみは、本棚に並んでいる活字から得る。本はうるさくなくていい。&lt;/p&gt;&#xA;&lt;/blockquote&gt;</description>
     </item>
-    
     <item>
       <title>Google Domainsで取得したドメインをGitHub Pagesでホストしたサイトに割り当てる</title>
       <link>https://guricerin.github.io/shit-blog/post/2022/12/02_google-domains-and-gh-pages/</link>
       <pubDate>Fri, 02 Dec 2022 00:00:00 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2022/12/02_google-domains-and-gh-pages/</guid>
-      <description>&lt;h3 id=&#34;はじめに&#34;&gt;はじめに&lt;/h3&gt;
-&lt;p&gt;タイトル通りのことをやります。&lt;/p&gt;</description>
+      <description>&lt;h3 id=&#34;はじめに&#34;&gt;はじめに&lt;/h3&gt;&#xA;&lt;p&gt;タイトル通りのことをやります。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>ざくざくアクターズ Ver1.82 クリア</title>
       <link>https://guricerin.github.io/shit-blog/post/2022/10/31_zakuzakuactors/</link>
       <pubDate>Mon, 31 Oct 2022 13:25:29 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2022/10/31_zakuzakuactors/</guid>
       <description>&lt;p&gt;Exレインと修羅姫に勝てたので最終パーティを公開。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Deno(v1.25.0)でMake a Lispした</title>
       <link>https://guricerin.github.io/shit-blog/post/2022/09/11/mal/</link>
       <pubDate>Sun, 11 Sep 2022 13:12:55 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2022/09/11/mal/</guid>
       <description>&lt;p&gt;過去2回ぐらい挫折していた&lt;a href=&#34;https://github.com/kanaka/mal&#34;&gt;Make a Lisp&lt;/a&gt;をカンニングも辞さない勢いでやりきった。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>「昔はやんちゃでした」とかいう人</title>
       <link>https://guricerin.github.io/shit-blog/post/2022/07/30_low-class/</link>
       <pubDate>Sat, 30 Jul 2022 05:23:07 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2022/07/30_low-class/</guid>
       <description>&lt;p&gt;なにがやんちゃやねん。可愛げのある言い方してお前が犯してきた罪をごまかすな気色悪い。チンピラで十分じゃボケ。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>1年3ヶ月にわたるニート期間を終え、株式会社Sに入社した</title>
       <link>https://guricerin.github.io/shit-blog/post/2022/07/13_quit-neet/</link>
       <pubDate>Wed, 13 Jul 2022 19:31:03 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2022/07/13_quit-neet/</guid>
       <description>&lt;p&gt;戦力外通告を受けないようがんばります。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>『テスト駆動開発』をRustで写経した</title>
       <link>https://guricerin.github.io/shit-blog/post/2022/03/30-tdd-rs/</link>
       <pubDate>Wed, 30 Mar 2022 00:37:32 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2022/03/30-tdd-rs/</guid>
       <description>&lt;p&gt;テストコード書けないので購入。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Go &#43; Mint &#43; GCPでTwitterクローンを開発した</title>
       <link>https://guricerin.github.io/shit-blog/post/2022/03/24-grumbler/</link>
       <pubDate>Thu, 24 Mar 2022 00:11:35 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2022/03/24-grumbler/</guid>
       <description>&lt;p&gt;以前 &lt;a href=&#34;https://twitter.com/chokudai&#34;&gt;@chokudai&lt;/a&gt; 氏が以下のことをつぶやいていた。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>自動キーワードリンク機能付きのメモアプリを作った</title>
       <link>https://guricerin.github.io/shit-blog/post/2022/02/15-keywordlinkmemo/</link>
       <pubDate>Tue, 15 Feb 2022 09:53:20 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2022/02/15-keywordlinkmemo/</guid>
       <description>&lt;p&gt;類似アプリが（たぶん）なかったので自作。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>『ゼロからはじめるLinuxサーバー構築・運用ガイド』読んだ</title>
       <link>https://guricerin.github.io/shit-blog/post/2021/12/08-operation-linux-server/</link>
       <pubDate>Wed, 08 Dec 2021 12:21:38 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2021/12/08-operation-linux-server/</guid>
       <description>&lt;p&gt;インフラ運用なんも知らんしKindleのセールで半額だったから購入。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>『体系的に学ぶ 安全なWebアプリケーションの作り方 第2版』読んだ</title>
       <link>https://guricerin.github.io/shit-blog/post/2021/12/05-wasbook/</link>
       <pubDate>Sun, 05 Dec 2021 16:10:50 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2021/12/05-wasbook/</guid>
       <description>&lt;p&gt;セキュリティなんも知らんので購入。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>『インフラエンジニアの教科書2』読んだ</title>
       <link>https://guricerin.github.io/shit-blog/post/2021/11/23-infra-engineer-text2/</link>
       <pubDate>Tue, 23 Nov 2021 07:34:34 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2021/11/23-infra-engineer-text2/</guid>
-      <description>&lt;p&gt;インフラなんも知らんので購入。&lt;br&gt;
-おれのインフラ経験といえば、VMware vSphereで管理された仮想サーバの1つにRedmineをセットアップしたりプラグインを適用した程度。&lt;/p&gt;</description>
+      <description>&lt;p&gt;インフラなんも知らんので購入。&lt;br&gt;&#xA;おれのインフラ経験といえば、VMware vSphereで管理された仮想サーバの1つにRedmineをセットアップしたりプラグインを適用した程度。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>『コンパイラ ー 原理と構造』をF#に翻訳した</title>
       <link>https://guricerin.github.io/shit-blog/post/2021/11/20211113-compiler-text-fs/</link>
       <pubDate>Sat, 13 Nov 2021 22:00:33 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2021/11/20211113-compiler-text-fs/</guid>
       <description>&lt;p&gt;型推論などの実装を学べるらしいと聞いたので購入。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>『Rustで始めるネットワークプログラミング』読んだ</title>
       <link>https://guricerin.github.io/shit-blog/post/2021/11/20211108-rust-net/</link>
       <pubDate>Mon, 08 Nov 2021 09:12:07 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2021/11/20211108-rust-net/</guid>
       <description>&lt;p&gt;ネットワークをもっと理解したかったし、500円と安かったので購入。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>喫煙本数を監視しあうSNSをGoで作った</title>
       <link>https://guricerin.github.io/shit-blog/post/2021/10/20211023-sns/</link>
       <pubDate>Sat, 23 Oct 2021 23:36:02 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2021/10/20211023-sns/</guid>
-      <description>&lt;p&gt;Webアプリというにはだいぶ簡素。リポジトリはこれ。&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://github.com/guricerin/stop-now-smoking&#34;&gt;https://github.com/guricerin/stop-now-smoking&lt;/a&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;Webアプリというにはだいぶ簡素。リポジトリはこれ。&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/guricerin/stop-now-smoking&#34;&gt;https://github.com/guricerin/stop-now-smoking&lt;/a&gt;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>ここ1年半でプレイしたフリーゲーム</title>
       <link>https://guricerin.github.io/shit-blog/post/2021/10/20211011-freegame/</link>
       <pubDate>Mon, 11 Oct 2021 09:15:50 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2021/10/20211011-freegame/</guid>
-      <description>&lt;p&gt;微ネタバレ注意。順番はてきとー。&lt;/p&gt;
-&lt;h3 id=&#34;目次&#34;&gt;目次&lt;/h3&gt;
-&lt;ol&gt;
-&lt;li&gt;&lt;a href=&#34;#a0&#34;&gt;イストワール&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#a1&#34;&gt;魔王物語物語&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#a2&#34;&gt;Sky[Rain]&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#a3&#34;&gt;夜明けの口笛吹き&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#a4&#34;&gt;SCE2&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#a5&#34;&gt;探し屋トーコ&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#a6&#34;&gt;新約・帽子世界&lt;/a&gt;&lt;/li&gt;
-&lt;li&gt;&lt;a href=&#34;#a7&#34;&gt;世界を破壊する魔法&lt;/a&gt;&lt;/li&gt;
-&lt;/ol&gt;</description>
+      <description>&lt;p&gt;微ネタバレ注意。順番はてきとー。&lt;/p&gt;&#xA;&lt;h3 id=&#34;目次&#34;&gt;目次&lt;/h3&gt;&#xA;&lt;ol&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#a0&#34;&gt;イストワール&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#a1&#34;&gt;魔王物語物語&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#a2&#34;&gt;Sky[Rain]&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#a3&#34;&gt;夜明けの口笛吹き&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#a4&#34;&gt;SCE2&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#a5&#34;&gt;探し屋トーコ&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#a6&#34;&gt;新約・帽子世界&lt;/a&gt;&lt;/li&gt;&#xA;&lt;li&gt;&lt;a href=&#34;#a7&#34;&gt;世界を破壊する魔法&lt;/a&gt;&lt;/li&gt;&#xA;&lt;/ol&gt;</description>
     </item>
-    
     <item>
       <title>勝手にレビュー40：凋叶棕の32thアルバム『報』</title>
       <link>https://guricerin.github.io/shit-blog/post/2021/09/20210923-mukui/</link>
       <pubDate>Thu, 23 Sep 2021 22:44:32 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2021/09/20210923-mukui/</guid>
       <description>&lt;p&gt;エクラ ドゥ アルページュってありますよね&amp;hellip;&amp;hellip;あれ&amp;hellip;..初めて嗅いだとき&amp;hellip;&amp;hellip;なんていうか&amp;hellip;&amp;hellip;その&amp;hellip;下品なんですが&amp;hellip;フフ&amp;hellip;&amp;hellip;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>オタク</title>
       <link>https://guricerin.github.io/shit-blog/post/2021/09/20210917-otaku/</link>
       <pubDate>Fri, 17 Sep 2021 08:30:19 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2021/09/20210917-otaku/</guid>
       <description>&lt;p&gt;美男美女がオタクアピールをしていると反吐が出る。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>『Clean Architecture 達人に学ぶソフトウェアの構造と設計』読んだ</title>
       <link>https://guricerin.github.io/shit-blog/post/2021/09/16-clean-arch/</link>
       <pubDate>Thu, 16 Sep 2021 09:37:18 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2021/09/16-clean-arch/</guid>
       <description>&lt;p&gt;ソフトウェア設計なんも知らんので購入。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>『ふつうのLinuxプログラミング 第2版』読んだ</title>
       <link>https://guricerin.github.io/shit-blog/post/2021/09/06-std-linux/</link>
       <pubDate>Mon, 06 Sep 2021 09:44:38 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2021/09/06-std-linux/</guid>
       <description>&lt;p&gt;Linuxのことなんもわかってないので購入。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>美醜</title>
       <link>https://guricerin.github.io/shit-blog/post/2021/09/20210905-beauty/</link>
       <pubDate>Sun, 05 Sep 2021 09:48:56 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2021/09/20210905-beauty/</guid>
       <description>&lt;p&gt;他人の容姿を平気でおちょくるような言動を見ると心がざわつく。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>『Rubyで作る奇妙なプログラミング言語』をRustで作った</title>
       <link>https://guricerin.github.io/shit-blog/post/2021/07/20210709-ruby-esolang-by-rust/</link>
       <pubDate>Fri, 09 Jul 2021 09:53:28 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2021/07/20210709-ruby-esolang-by-rust/</guid>
       <description>&lt;p&gt;タイトル見て即購入。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>『Linuxで動かしながら学ぶTCP/IPネットワーク入門』読んだ</title>
       <link>https://guricerin.github.io/shit-blog/post/2021/06/26-linux-tcpip/</link>
       <pubDate>Sat, 26 Jun 2021 09:57:13 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2021/06/26-linux-tcpip/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://guricerin.github.io/shit-blog/post/2021/06/20210618-mikanos/&#34;&gt;前回読んだ&lt;/a&gt;みかん本で解説されていない、かつ、よくわかっていない分野と言われてぱっと思いつくのは、最も身近な存在のネットワークである。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>『ゼロからのOS自作入門』写経した</title>
       <link>https://guricerin.github.io/shit-blog/post/2021/06/20210618-mikanos/</link>
       <pubDate>Fri, 18 Jun 2021 10:03:26 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2021/06/20210618-mikanos/</guid>
       <description>&lt;p&gt;通称『みかん本』。やったことは&lt;a href=&#34;https://github.com/uchan-nos/mikanos&#34;&gt;このリポジトリ&lt;/a&gt;のコミットタグをはじめから辿ってひたすら写経しただけ。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Rustで『コンピュータシステムの理論と実装』を演習した</title>
       <link>https://guricerin.github.io/shit-blog/post/2021/01/20210103-nand2tetris-rust/</link>
       <pubDate>Sun, 03 Jan 2021 10:23:28 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2021/01/20210103-nand2tetris-rust/</guid>
       <description>&lt;p&gt;n番煎じ。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>XORの性質</title>
       <link>https://guricerin.github.io/shit-blog/post/2020/11/20201130-xor/</link>
       <pubDate>Mon, 30 Nov 2020 11:21:22 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2020/11/20201130-xor/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>bashでコマンドライン引数を扱う</title>
       <link>https://guricerin.github.io/shit-blog/post/2020/11/20201126-bash-cmdline-arg/</link>
       <pubDate>Thu, 26 Nov 2020 11:23:55 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2020/11/20201126-bash-cmdline-arg/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>brainfuck方言のB&#39;z言語を作った</title>
       <link>https://guricerin.github.io/shit-blog/post/2020/11/20201124-bz-lang/</link>
       <pubDate>Tue, 24 Nov 2020 08:09:30 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2020/11/20201124-bz-lang/</guid>
       <description>&lt;p&gt;レビューさぼって何書いてんだおれは。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Rustでbrainfuck方言生成器つくった</title>
       <link>https://guricerin.github.io/shit-blog/post/2020/11/20201123-bf-tool/</link>
       <pubDate>Mon, 23 Nov 2020 08:15:39 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2020/11/20201123-bf-tool/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>Windows環境で便利なツール</title>
       <link>https://guricerin.github.io/shit-blog/post/2020/10/20201001-windows-tool/</link>
       <pubDate>Thu, 01 Oct 2020 11:29:20 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2020/10/20201001-windows-tool/</guid>
-      <description>&lt;p&gt;自分用メモ。完全にn番煎じ。いまのところフリーのソフトだけ。&lt;br&gt;
-他にも良いのが見つかれば追記していく予定。&lt;/p&gt;</description>
+      <description>&lt;p&gt;自分用メモ。完全にn番煎じ。いまのところフリーのソフトだけ。&lt;br&gt;&#xA;他にも良いのが見つかれば追記していく予定。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>bashの定数・ローカル変数宣言</title>
       <link>https://guricerin.github.io/shit-blog/post/2020/09/20200930-bash-local-var/</link>
       <pubDate>Wed, 30 Sep 2020 14:18:15 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2020/09/20200930-bash-local-var/</guid>
       <description>&lt;p&gt;つい先日知った機能。これには驚いた。こんな初歩的なことも知らなかったのはなぜだろう。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>WebGoat-15: XXE</title>
       <link>https://guricerin.github.io/shit-blog/post/2020/09/27-xxe/</link>
       <pubDate>Sun, 27 Sep 2020 18:17:30 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2020/09/27-xxe/</guid>
       <description>&lt;p&gt;XXE (Xml eXternal Entity attack) とは、XMLの外部参照機能を悪用する攻撃。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>WebGoat-14: Insecure Login</title>
       <link>https://guricerin.github.io/shit-blog/post/2020/09/26-insecure-login/</link>
       <pubDate>Sat, 26 Sep 2020 18:17:30 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2020/09/26-insecure-login/</guid>
       <description>&lt;p&gt;機密データを送信する前に暗号化しましょうねという課題。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>WebGoat-13: Secure Passwords</title>
       <link>https://guricerin.github.io/shit-blog/post/2020/09/25-secure-passwords/</link>
       <pubDate>Fri, 25 Sep 2020 18:17:30 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2020/09/25-secure-passwords/</guid>
       <description>&lt;p&gt;堅牢なパスワードの生成と保管方法を学ぶ。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>WebGoat-12: Password reset</title>
       <link>https://guricerin.github.io/shit-blog/post/2020/09/24-password-reset/</link>
       <pubDate>Thu, 24 Sep 2020 18:17:30 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2020/09/24-password-reset/</guid>
       <description>&lt;p&gt;パスワードリセット機能の脆弱性について学ぶ。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>WebGoat-11: JWT tokens</title>
       <link>https://guricerin.github.io/shit-blog/post/2020/09/23-jwt-tokens/</link>
       <pubDate>Wed, 23 Sep 2020 18:17:30 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2020/09/23-jwt-tokens/</guid>
       <description>&lt;p&gt;JWT（Json Web Token）とは、JSONデータに電子署名や暗号化方式を格納したもの。これを使ってサーバとクライアントは認証しあうわけだが、やはりこれにも脆弱性が存在する。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>WebGoat-10: Authentication Bypasses</title>
       <link>https://guricerin.github.io/shit-blog/post/2020/09/22-auth-bypasses/</link>
       <pubDate>Tue, 22 Sep 2020 18:17:30 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2020/09/22-auth-bypasses/</guid>
       <description>&lt;p&gt;二段階認証にも脆弱性は存在する。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>WebGoat-9: Path traversal</title>
       <link>https://guricerin.github.io/shit-blog/post/2020/09/21-path-traversal/</link>
       <pubDate>Mon, 21 Sep 2020 18:17:30 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2020/09/21-path-traversal/</guid>
       <description>&lt;p&gt;&lt;code&gt;../&lt;/code&gt;はURLエンコーディングにおいては&lt;code&gt;%2e%2e%2f&lt;/code&gt;となる。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>WebGoat-8: SQL Injection (mitigation)</title>
       <link>https://guricerin.github.io/shit-blog/post/2020/09/20-sql-injection-mitigration/</link>
       <pubDate>Sun, 20 Sep 2020 18:17:30 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2020/09/20-sql-injection-mitigration/</guid>
       <description>&lt;p&gt;ストアド・プロシージャやパラメータ化クエリを学ぶ。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>WebGoat-7: SQL Injection (advanced)</title>
       <link>https://guricerin.github.io/shit-blog/post/2020/09/19-sql-injection-advanced/</link>
       <pubDate>Sat, 19 Sep 2020 18:17:30 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2020/09/19-sql-injection-advanced/</guid>
       <description>&lt;p&gt;ねむい。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>WebGoat-6: SQL Injection (intro)</title>
       <link>https://guricerin.github.io/shit-blog/post/2020/09/18-sql-injection-intro/</link>
       <pubDate>Fri, 18 Sep 2020 18:17:30 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2020/09/18-sql-injection-intro/</guid>
       <description>&lt;p&gt;SQLとSQLインジェクションの基本を学ぶレッスン。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>WebGoat-5: Crypto Basics</title>
       <link>https://guricerin.github.io/shit-blog/post/2020/09/18-crypto-basics/</link>
       <pubDate>Fri, 18 Sep 2020 18:16:30 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2020/09/18-crypto-basics/</guid>
       <description>&lt;p&gt;主要な暗号手法を学ぶレッスン。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>WebGoat-4: CIA Triad</title>
       <link>https://guricerin.github.io/shit-blog/post/2020/09/16-cia-triad/</link>
       <pubDate>Wed, 16 Sep 2020 18:16:30 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2020/09/16-cia-triad/</guid>
-      <description>情報セキュリティを構成する三要素についての座学。演習問題は、基本情報の試験に出てきそうなマークシート形式。
-これもとくにメモしておくようなことはない。</description>
+      <description>情報セキュリティを構成する三要素についての座学。演習問題は、基本情報の試験に出てきそうなマークシート形式。&#xA;これもとくにメモしておくようなことはない。</description>
     </item>
-    
     <item>
       <title>WebGoat-3: Developer Tools</title>
       <link>https://guricerin.github.io/shit-blog/post/2020/09/16-webgoat-dev-tools/</link>
       <pubDate>Wed, 16 Sep 2020 18:15:30 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2020/09/16-webgoat-dev-tools/</guid>
-      <description>Chromeのデベロッパー・ツールの使い方を学ぶ回。
-コンソールからWebGoatのAPIを呼び出したり、POSTメソッドのリクエスト・ボディに格納されている値を取得してテキストボックスに打ち込む問題。
-とても簡単なので、これ以上書くことがない。</description>
+      <description>Chromeのデベロッパー・ツールの使い方を学ぶ回。&#xA;コンソールからWebGoatのAPIを呼び出したり、POSTメソッドのリクエスト・ボディに格納されている値を取得してテキストボックスに打ち込む問題。&#xA;とても簡単なので、これ以上書くことがない。</description>
     </item>
-    
     <item>
       <title>WebGoat-2: HTTP Proxies</title>
       <link>https://guricerin.github.io/shit-blog/post/2020/09/16-webgoat-http-proxies/</link>
       <pubDate>Wed, 16 Sep 2020 18:14:30 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2020/09/16-webgoat-http-proxies/</guid>
       <description>&lt;p&gt;この演習は主にZAPの使い方を学ぶ感じ。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>WebGoat-1: HTTP Basics再び（ついでにdocker）</title>
       <link>https://guricerin.github.io/shit-blog/post/2020/09/15-webgoat-httpbasic/</link>
       <pubDate>Tue, 15 Sep 2020 18:14:30 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2020/09/15-webgoat-httpbasic/</guid>
-      <description>&lt;p&gt;iOSアプリの開発案件が入ってきたのとどうせならWSL2入れたかったので仮想化プラットフォームを有効化したら、案の定VirtualBoxで仮想マシンが起動しなくなった。&lt;br&gt;
-なのでこの間セットアップしたOWASP BWAを捨て、dockerでWebGoatを立ち上げることにした。dockerなんもわからん。&lt;/p&gt;</description>
+      <description>&lt;p&gt;iOSアプリの開発案件が入ってきたのとどうせならWSL2入れたかったので仮想化プラットフォームを有効化したら、案の定VirtualBoxで仮想マシンが起動しなくなった。&lt;br&gt;&#xA;なのでこの間セットアップしたOWASP BWAを捨て、dockerでWebGoatを立ち上げることにした。dockerなんもわからん。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>WindowsのpwshからsshでWSL2に接続</title>
       <link>https://guricerin.github.io/shit-blog/post/2020/09/20200914-windows-to-wsl2-ssh/</link>
       <pubDate>Tue, 15 Sep 2020 10:28:44 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2020/09/20200914-windows-to-wsl2-ssh/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>OWASP BWA の WebGoat ~ Http Basic ~</title>
       <link>https://guricerin.github.io/shit-blog/post/2020/09/13-webgoat-httpbasic/</link>
       <pubDate>Sun, 13 Sep 2020 18:04:49 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2020/09/13-webgoat-httpbasic/</guid>
       <description>&lt;p&gt;前回立ち上げたOWASP BWAに搭載されているWebアプリのうち、WebGoatを使う。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>OWASP BWAのセットアップ</title>
       <link>https://guricerin.github.io/shit-blog/post/2020/09/13-owasp-bwa-setup/</link>
       <pubDate>Sun, 13 Sep 2020 17:59:52 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2020/09/13-owasp-bwa-setup/</guid>
       <description>&lt;p&gt;OWASP BWA（Broken Web Applications）は、脆弱性を抱えたWebアプリを取り揃えているUbuntuベースの仮想マシンイメージ。情報セキュリティの学習に用いられる。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>『最短経路の本 レナのふしぎな数学の旅』メモ</title>
       <link>https://guricerin.github.io/shit-blog/post/2020/09/20200912-lena/</link>
       <pubDate>Sat, 12 Sep 2020 10:33:28 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2020/09/20200912-lena/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>夏の終わり？</title>
       <link>https://guricerin.github.io/shit-blog/post/2020/09/20200902-summer-end/</link>
       <pubDate>Wed, 02 Sep 2020 10:35:19 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2020/09/20200902-summer-end/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>勝手にレビュー39：稲葉浩志の5thアルバム『Singing Bird』</title>
       <link>https://guricerin.github.io/shit-blog/post/2020/08/20200815-singing-bird/</link>
       <pubDate>Sat, 15 Aug 2020 10:57:42 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2020/08/20200815-singing-bird/</guid>
       <description>&lt;p&gt;この時期のジョギングには、出かける直前に食塩をぶちまけた一杯の水を必ず飲むこと。クエン酸でも可。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>勝手にレビュー38：B&#39;zの18thアルバム『C&#39;mon』</title>
       <link>https://guricerin.github.io/shit-blog/post/2020/08/20200810-cmon/</link>
       <pubDate>Mon, 10 Aug 2020 14:22:58 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2020/08/20200810-cmon/</guid>
       <description>&lt;p&gt;好きなシーシャはブルーベリー味。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>ルフランの地下迷宮と魔女ノ旅団</title>
       <link>https://guricerin.github.io/shit-blog/post/2020/05/20200528-refrain/</link>
       <pubDate>Thu, 28 May 2020 14:39:33 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2020/05/20200528-refrain/</guid>
-      <description>&lt;p&gt;3年ぶりにゲームをプレイした。ニーアとホライゾンゼロ以来のホコリまみれのPS4をきれいにして。&lt;br&gt;
-ジャンルはダンジョンRPG。このジャンルはソウルハッカーズでしか経験していない程度には初心者。&lt;/p&gt;</description>
+      <description>&lt;p&gt;3年ぶりにゲームをプレイした。ニーアとホライゾンゼロ以来のホコリまみれのPS4をきれいにして。&lt;br&gt;&#xA;ジャンルはダンジョンRPG。このジャンルはソウルハッカーズでしか経験していない程度には初心者。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>勝手にレビュー37：稲葉浩志の4thシングル『Okay』</title>
       <link>https://guricerin.github.io/shit-blog/post/2020/03/20200328-okay/</link>
       <pubDate>Sat, 28 Mar 2020 14:42:42 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2020/03/20200328-okay/</guid>
       <description>&lt;p&gt;1年ですか。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>F#で『アンダースタンディング コンピュテーション』をやる</title>
       <link>https://guricerin.github.io/shit-blog/post/2020/03/20200327-understanding-computation-fs/</link>
       <pubDate>Fri, 27 Mar 2020 14:49:10 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2020/03/20200327-understanding-computation-fs/</guid>
-      <description>&lt;p&gt;リポジトリはこれ。&lt;/p&gt;
-&lt;p&gt;&lt;a href=&#34;https://github.com/guricerin/understanding-computation&#34;&gt;https://github.com/guricerin/understanding-computation&lt;/a&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;リポジトリはこれ。&lt;/p&gt;&#xA;&lt;p&gt;&lt;a href=&#34;https://github.com/guricerin/understanding-computation&#34;&gt;https://github.com/guricerin/understanding-computation&lt;/a&gt;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>F#で『Write Yourself a Scheme in 48 Hours』をやる</title>
       <link>https://guricerin.github.io/shit-blog/post/2020/02/20200218-scheme-fs/</link>
       <pubDate>Tue, 18 Feb 2020 14:56:10 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2020/02/20200218-scheme-fs/</guid>
-      <description>&lt;p&gt;リポジトリはこれ。&lt;br&gt;
-&lt;a href=&#34;https://github.com/guricerin/FSharp.Scheme&#34;&gt;https://github.com/guricerin/FSharp.Scheme&lt;/a&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;リポジトリはこれ。&lt;br&gt;&#xA;&lt;a href=&#34;https://github.com/guricerin/FSharp.Scheme&#34;&gt;https://github.com/guricerin/FSharp.Scheme&lt;/a&gt;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>東方x神林長平トリビュート 感想</title>
       <link>https://guricerin.github.io/shit-blog/post/2019/12/20191221-toho-kanbayashi/</link>
       <pubDate>Wed, 18 Dec 2019 15:00:42 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2019/12/20191221-toho-kanbayashi/</guid>
       <description>&lt;p&gt;半年前にTwitterでつぶやいた感想文を再喝。つまりは手抜き記事。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>『プログラミングの基礎』をF#で解いた</title>
       <link>https://guricerin.github.io/shit-blog/post/2019/08/20190810-basic-programming/</link>
       <pubDate>Sat, 10 Aug 2019 15:06:54 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2019/08/20190810-basic-programming/</guid>
-      <description>&lt;p&gt;リポジトリはこれ。&lt;br&gt;
-&lt;a href=&#34;https://github.com/guricerin/basic-of-programing&#34;&gt;https://github.com/guricerin/basic-of-programing&lt;/a&gt;&lt;/p&gt;</description>
+      <description>&lt;p&gt;リポジトリはこれ。&lt;br&gt;&#xA;&lt;a href=&#34;https://github.com/guricerin/basic-of-programing&#34;&gt;https://github.com/guricerin/basic-of-programing&lt;/a&gt;&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>AtCoder ABC122</title>
       <link>https://guricerin.github.io/shit-blog/post/2019/03/20190325-compro/</link>
       <pubDate>Mon, 25 Mar 2019 15:18:41 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2019/03/20190325-compro/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>yukicoder 星1.5〜2をランダムに解いた</title>
       <link>https://guricerin.github.io/shit-blog/post/2019/03/20190324-compro/</link>
       <pubDate>Sun, 24 Mar 2019 15:23:12 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2019/03/20190324-compro/</guid>
       <description>&lt;p&gt;題名通り、ジャンル・時系列バラバラ。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>ABC070 C:Multiple Clocks</title>
       <link>https://guricerin.github.io/shit-blog/post/2019/03/20190321-compro/</link>
       <pubDate>Thu, 21 Mar 2019 15:30:50 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2019/03/20190321-compro/</guid>
       <description>&lt;p&gt;思わぬ罠。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>ABC076 C:Dubious Document 2</title>
       <link>https://guricerin.github.io/shit-blog/post/2019/03/20190320-compro/</link>
       <pubDate>Wed, 20 Mar 2019 15:32:41 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2019/03/20190320-compro/</guid>
       <description>&lt;p&gt;苦手な文字列をどうにかしないと&amp;hellip;って苦手な分野しかねえわ。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>ABC005 C:おいしいたこ焼きの売り方</title>
       <link>https://guricerin.github.io/shit-blog/post/2019/03/20190318-compro/</link>
       <pubDate>Mon, 18 Mar 2019 15:35:43 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2019/03/20190318-compro/</guid>
       <description>&lt;p&gt;人生ではじめてgoto文を使ってしまった。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>ABC088 D:Grid Repainting</title>
       <link>https://guricerin.github.io/shit-blog/post/2019/03/20190317-compro/</link>
       <pubDate>Sun, 17 Mar 2019 15:37:30 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2019/03/20190317-compro/</guid>
       <description>&lt;p&gt;&lt;a href=&#34;https://qiita.com/drken/items/e77685614f3c6bf86f44&#34;&gt;drkenさんによると&lt;/a&gt;、「予め盤面をいじるタイプの問題は今後よく出て」くるとのこと。頑張ろう。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>第10回日本情報オリンピック 予選 C:チーズ</title>
       <link>https://guricerin.github.io/shit-blog/post/2019/03/20190317-compro-2/</link>
       <pubDate>Sun, 17 Mar 2019 15:27:30 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2019/03/20190317-compro-2/</guid>
       <description>&lt;p&gt;自力ACならず。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>ARC031 B:埋め立て</title>
       <link>https://guricerin.github.io/shit-blog/post/2019/03/20190316-compro-3/</link>
       <pubDate>Sat, 16 Mar 2019 15:53:10 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2019/03/20190316-compro-3/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>AOJ 1160:島はいくつある？</title>
       <link>https://guricerin.github.io/shit-blog/post/2019/03/20190316-compro-2/</link>
       <pubDate>Sat, 16 Mar 2019 15:43:10 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2019/03/20190316-compro-2/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>ARC037 B:バウムテスト</title>
       <link>https://guricerin.github.io/shit-blog/post/2019/03/20190316-compro/</link>
       <pubDate>Sat, 16 Mar 2019 15:23:10 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2019/03/20190316-compro/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>ABC002 D:派閥</title>
       <link>https://guricerin.github.io/shit-blog/post/2019/03/20190315-compro/</link>
       <pubDate>Fri, 15 Mar 2019 15:54:37 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2019/03/20190315-compro/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>ABC016 C:友達の友達</title>
       <link>https://guricerin.github.io/shit-blog/post/2019/03/20190314-compro/</link>
       <pubDate>Thu, 14 Mar 2019 15:54:37 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2019/03/20190314-compro/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>AtCoder 早稲田大学プログラミングコンテスト2019</title>
       <link>https://guricerin.github.io/shit-blog/post/2019/03/20190310-compro/</link>
       <pubDate>Sun, 10 Mar 2019 15:54:37 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2019/03/20190310-compro/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>AtCoder ABC121</title>
       <link>https://guricerin.github.io/shit-blog/post/2019/03/20190309-compro/</link>
       <pubDate>Sat, 09 Mar 2019 15:54:37 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2019/03/20190309-compro/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>ABC095 C:Half and Half</title>
       <link>https://guricerin.github.io/shit-blog/post/2019/03/20190309-compro-2/</link>
       <pubDate>Sat, 09 Mar 2019 15:24:37 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2019/03/20190309-compro-2/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>ABC088 C:Takahashi&#39;s Information</title>
       <link>https://guricerin.github.io/shit-blog/post/2019/03/20190308-compro/</link>
       <pubDate>Fri, 08 Mar 2019 15:24:37 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2019/03/20190308-compro/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>ARC042 A:掲示板</title>
       <link>https://guricerin.github.io/shit-blog/post/2019/03/20190306-compro/</link>
       <pubDate>Wed, 06 Mar 2019 15:24:37 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2019/03/20190306-compro/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>ABC062 A:Grouping</title>
       <link>https://guricerin.github.io/shit-blog/post/2019/03/20190305-compro/</link>
       <pubDate>Tue, 05 Mar 2019 15:24:37 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2019/03/20190305-compro/</guid>
       <description>&lt;p&gt;これは戒めの記録である。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>AtCoder ABC120</title>
       <link>https://guricerin.github.io/shit-blog/post/2019/03/20190303-compro/</link>
       <pubDate>Sun, 03 Mar 2019 15:24:37 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2019/03/20190303-compro/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>AtCoder 119</title>
       <link>https://guricerin.github.io/shit-blog/post/2019/02/24-compro/</link>
       <pubDate>Sun, 24 Feb 2019 17:08:21 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2019/02/24-compro/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>AtCoder ABC118</title>
       <link>https://guricerin.github.io/shit-blog/post/2019/02/16-compro/</link>
       <pubDate>Sat, 16 Feb 2019 17:08:21 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2019/02/16-compro/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>勝手にレビュー36：稲葉浩志の4thアルバム『Hadou』</title>
       <link>https://guricerin.github.io/shit-blog/post/2019/02/12-hadou/</link>
       <pubDate>Tue, 12 Feb 2019 17:35:20 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2019/02/12-hadou/</guid>
       <description>&lt;p&gt;個人的神アルバム。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>AtCoder 「みんなのプロコン 2019」</title>
       <link>https://guricerin.github.io/shit-blog/post/2019/02/10-compro/</link>
       <pubDate>Sun, 10 Feb 2019 17:08:21 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2019/02/10-compro/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>勝手にレビュー35：B&#39;zの17thアルバム『MAGIC』</title>
       <link>https://guricerin.github.io/shit-blog/post/2019/02/03-magic/</link>
       <pubDate>Sun, 03 Feb 2019 17:35:20 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2019/02/03-magic/</guid>
       <description>&lt;p&gt;10年前のアルバムという事実がマジック。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Atcoder用ディレクトリ作成スクリプト（C&#43;&#43;/CMake）</title>
       <link>https://guricerin.github.io/shit-blog/post/2019/01/01-compro/</link>
       <pubDate>Fri, 01 Feb 2019 17:08:21 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2019/01/01-compro/</guid>
       <description>&lt;p&gt;を作成した。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>AtCoder3戦目</title>
       <link>https://guricerin.github.io/shit-blog/post/2019/01/13-compro/</link>
       <pubDate>Sun, 13 Jan 2019 17:08:21 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2019/01/13-compro/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>勝手にレビュー34：凋叶棕の28thアルバム『娶』</title>
       <link>https://guricerin.github.io/shit-blog/post/2019/01/03-metori/</link>
       <pubDate>Thu, 03 Jan 2019 20:08:05 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2019/01/03-metori/</guid>
       <description>&lt;p&gt;テーマは異類婚姻譚。読みは &lt;em&gt;めとり&lt;/em&gt; 。やべえアルバム。ネタバレ注意。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>AtCoder初参戦</title>
       <link>https://guricerin.github.io/shit-blog/post/2018/12/23-compro/</link>
       <pubDate>Sun, 23 Dec 2018 20:31:22 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2018/12/23-compro/</guid>
       <description>&lt;p&gt;した。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>『RubyでつくるRuby』</title>
       <link>https://guricerin.github.io/shit-blog/post/2018/12/02-ruby-by-ruby/</link>
       <pubDate>Sun, 02 Dec 2018 20:35:07 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2018/12/02-ruby-by-ruby/</guid>
       <description>&lt;p&gt;「超ライトなsicp」という噂を聞いたので読んだ。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>勝手にレビュー33：凋叶棕の24thアルバム『随』</title>
       <link>https://guricerin.github.io/shit-blog/post/2018/11/25-manima/</link>
       <pubDate>Sun, 25 Nov 2018 20:08:05 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2018/11/25-manima/</guid>
       <description>&lt;p&gt;凋叶棕（ティアオイエツォン）：東方の同人音楽サークル。キャラクターの描写を深く掘り下げた、意味深な歌詞が多い。歌詞、メロディだけでなく、CDジャケットや歌詞カードやホームページなどにも毎回ギミックを仕込んであるのが特徴。要は、考察厨ホイホイなサークル。考察用のwikiが作られているほどだ。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>『Scheme手習い』</title>
       <link>https://guricerin.github.io/shit-blog/post/2018/09/16-scheme-practice/</link>
       <pubDate>Thu, 13 Sep 2018 20:54:25 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2018/09/16-scheme-practice/</guid>
       <description>&lt;p&gt;『7つの言語 7つの世界』を見事に積読することに成功したが、どうしてもLispへの興味が衰えないので、『Scheme手習い』をだらだら読んでいた。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>勝手にレビュー32 : B&#39;zの16thアルバム『ACTION』</title>
       <link>https://guricerin.github.io/shit-blog/post/2018/06/24-action/</link>
       <pubDate>Sun, 24 Jun 2018 21:04:57 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2018/06/24-action/</guid>
       <description>&lt;p&gt;何故おれはコードじゃなくてワードを書いているのか。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>勝手にレビュー31：B&#39;zの15thアルバム『MONSTER』</title>
       <link>https://guricerin.github.io/shit-blog/post/2018/05/13-monster/</link>
       <pubDate>Sun, 13 May 2018 21:04:57 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2018/05/13-monster/</guid>
       <description>&lt;p&gt;(cons &amp;lsquo;inaba &amp;lsquo;matsumoto)&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>好きな漫画</title>
       <link>https://guricerin.github.io/shit-blog/post/2018/02/27-fav-comic/</link>
       <pubDate>Tue, 27 Feb 2018 21:16:04 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2018/02/27-fav-comic/</guid>
-      <description>&lt;p&gt;誰向けかは知らんが、紹介。全部で17作品。&lt;br&gt;
-ネタバレっぽい記述があるかもしれないけど、ネットやってるクセにネタバレがどうのこうのとか抜かすタワケはおらんよな？&lt;/p&gt;</description>
+      <description>&lt;p&gt;誰向けかは知らんが、紹介。全部で17作品。&lt;br&gt;&#xA;ネタバレっぽい記述があるかもしれないけど、ネットやってるクセにネタバレがどうのこうのとか抜かすタワケはおらんよな？&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>B&#39;zと無敵看板娘と失われし20年</title>
       <link>https://guricerin.github.io/shit-blog/post/2018/01/30-mutekan-bz/</link>
       <pubDate>Tue, 30 Jan 2018 21:23:41 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2018/01/30-mutekan-bz/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>政治学の偉人たち</title>
       <link>https://guricerin.github.io/shit-blog/post/2018/01/27-politics/</link>
       <pubDate>Sat, 27 Jan 2018 21:26:44 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2018/01/27-politics/</guid>
       <description>&lt;p&gt;政治学と情報工学。これらの単語チョイスには、SFオタクである貴様らの胸に何かしら熱いものが込み上げてくるのではないでしょうか。え、そんなことはない？そうすか。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>情報理論の偉人たち</title>
       <link>https://guricerin.github.io/shit-blog/post/2018/01/23-infomatics/</link>
       <pubDate>Tue, 23 Jan 2018 21:31:06 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2018/01/23-infomatics/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>PCにLinuxを入れた</title>
       <link>https://guricerin.github.io/shit-blog/post/2018/01/13-linux/</link>
       <pubDate>Sat, 13 Jan 2018 21:32:54 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2018/01/13-linux/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>勝手にレビュー30：B&#39;zの14thアルバム『THE CIRCLE』</title>
       <link>https://guricerin.github.io/shit-blog/post/2017/12/18-circle/</link>
       <pubDate>Mon, 18 Dec 2017 05:50:38 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2017/12/18-circle/</guid>
       <description>&lt;p&gt;クソ寒いっすね。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>勝手にレビュー29：暁Recordsの11thアルバム『Sci-Fi ROMANCE TRAVELER』</title>
       <link>https://guricerin.github.io/shit-blog/post/2017/12/06-sci-fi/</link>
       <pubDate>Wed, 06 Dec 2017 06:08:14 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2017/12/06-sci-fi/</guid>
-      <description>&lt;p&gt;「おい、B&amp;rsquo;zのクソレビューはどうした」ですって？&lt;br&gt;
-まあそんなに慌てなくてもええやないですか。最近、稲葉ソロのレビューにばかり力が入っている気がするんで、たまには違うジャンルの文章書いてリフレッシュしないと。&lt;/p&gt;</description>
+      <description>&lt;p&gt;「おい、B&amp;rsquo;zのクソレビューはどうした」ですって？&lt;br&gt;&#xA;まあそんなに慌てなくてもええやないですか。最近、稲葉ソロのレビューにばかり力が入っている気がするんで、たまには違うジャンルの文章書いてリフレッシュしないと。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>勝手にレビュー28：稲葉浩志の3rdアルバム『Peace Of Mind』</title>
       <link>https://guricerin.github.io/shit-blog/post/2017/12/02-peace-of-mind/</link>
       <pubDate>Sat, 02 Dec 2017 05:50:38 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2017/12/02-peace-of-mind/</guid>
       <description>&lt;p&gt;新作が発売されたにもかかわらず、13年前の作品をレビューするクソブログが始まります。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>勝手にレビュー27 : 松本孝弘の6thアルバム『THE HIT PARADE』</title>
       <link>https://guricerin.github.io/shit-blog/post/2017/11/29-the-hit-parade/</link>
       <pubDate>Wed, 29 Nov 2017 05:50:38 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2017/11/29-the-hit-parade/</guid>
-      <description>&lt;p&gt;昭和時代のヒット曲のカバー集アルバムです。&lt;br&gt;
-松本は全曲アレンジ＆ギター演奏。ボーカルにはビーイング系列のアーティストを引っ張ってきています。&lt;br&gt;
-全体として、打ち込み＋ハードロック調の、ややダークなアレンジをかましています。&lt;/p&gt;</description>
+      <description>&lt;p&gt;昭和時代のヒット曲のカバー集アルバムです。&lt;br&gt;&#xA;松本は全曲アレンジ＆ギター演奏。ボーカルにはビーイング系列のアーティストを引っ張ってきています。&lt;br&gt;&#xA;全体として、打ち込み＋ハードロック調の、ややダークなアレンジをかましています。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>勝手にレビュー26 : B&#39;zの13thアルバム『BIG MACHINE』</title>
       <link>https://guricerin.github.io/shit-blog/post/2017/11/26-big-machine/</link>
       <pubDate>Sun, 26 Nov 2017 05:50:38 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2017/11/26-big-machine/</guid>
       <description>&lt;p&gt;最近、思うところがあり、「自己分析」なるものに手を染めています。「学生でもないのに血迷ったか」という声が聞こえてきますが、学生のうちにするべきことをしてなかったのが、今になって響いてきているのです。学生の方は僕みたいにサボらないようにしましょう。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>勝手にレビュー25 : 稲葉浩志の2ndシングル『KI』</title>
       <link>https://guricerin.github.io/shit-blog/post/2017/11/24-ki/</link>
       <pubDate>Fri, 24 Nov 2017 05:50:38 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2017/11/24-ki/</guid>
       <description>&lt;p&gt;好きなSCPは、SCP-268-JP『終わりなき英雄譚』です。某ニコ動の某秘封倶楽部動画で知りました。僕の人格が疑われてもしょうがないですね。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>文系人間が使う「構造」と、理系人間が使う「構造」</title>
       <link>https://guricerin.github.io/shit-blog/post/2017/11/22-structure/</link>
       <pubDate>Wed, 22 Nov 2017 07:31:09 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2017/11/22-structure/</guid>
       <description>&lt;p&gt;ニコニコ大百科で神林長平の項目の掲示板見てたら、興味深い話題があったので引用します。文系人間と理系人間の、「構造」という言葉の使い方の違いについてです。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>勝手にレビュー24 : 稲葉浩志の2ndアルバム『志庵』</title>
       <link>https://guricerin.github.io/shit-blog/post/2017/11/20-shian/</link>
       <pubDate>Mon, 20 Nov 2017 05:50:38 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2017/11/20-shian/</guid>
-      <description>&lt;p&gt;今年の春あたりから『SCP財団』なるものにハマっています。&lt;br&gt;
-SCP財団とは、Secure（確保）、Contain（収容）、Protect（保護）の頭文字を取った世界規模の組織で、超常的な生物や物体、現象などを管理し、一般の社会から隔離しようと努めています。&lt;/p&gt;</description>
+      <description>&lt;p&gt;今年の春あたりから『SCP財団』なるものにハマっています。&lt;br&gt;&#xA;SCP財団とは、Secure（確保）、Contain（収容）、Protect（保護）の頭文字を取った世界規模の組織で、超常的な生物や物体、現象などを管理し、一般の社会から隔離しようと努めています。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>勝手にレビュー23 : B&#39;zの12thアルバム『GREEN』</title>
       <link>https://guricerin.github.io/shit-blog/post/2017/11/17-green/</link>
       <pubDate>Fri, 17 Nov 2017 05:50:38 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2017/11/17-green/</guid>
       <description>&lt;p&gt;ここ数日、ゼミの同期や自分自身の卒業論文をチラチラ見返していたのですが、「あいつ嫌な奴だったけど、文章だけは好感もてるな」とか「俺の論文書き直してえ。あの話とかこの話とか今ならポンポン思いつくのに」とか考える次第です。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>勝手にレビュー22 : B&#39;zの11thアルバム『ELEVEN』</title>
       <link>https://guricerin.github.io/shit-blog/post/2017/11/11-eleven/</link>
       <pubDate>Sat, 11 Nov 2017 05:50:38 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2017/11/11-eleven/</guid>
       <description>&lt;p&gt;小学生の頃は算数が得意だったのに、中学生の数学になって急に苦手になった人は、僕以外にもそう少なくないでしょう。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>勝手にレビュー21 : B&#39;zの3rdベストアルバム『B&#39;z The &#34;Mixture&#34;』</title>
       <link>https://guricerin.github.io/shit-blog/post/2017/11/07-mixture/</link>
       <pubDate>Tue, 07 Nov 2017 05:50:38 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2017/11/07-mixture/</guid>
       <description>&lt;p&gt;来たる11月29日にB&amp;rsquo;zの最新アルバム『DINOSAUR』が発売される。果たして、それまでにB&amp;rsquo;zと稲葉浩志の全アルバムのレビューを書き終えることはできるのか。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>勝手にレビュー20 : B&#39;zの10thアルバム『Brotherhood』</title>
       <link>https://guricerin.github.io/shit-blog/post/2017/11/05-brotherhood/</link>
       <pubDate>Sun, 05 Nov 2017 05:50:38 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2017/11/05-brotherhood/</guid>
       <description>&lt;p&gt;コンピュータの世界があまりに広大で、飲み込まれそうな今日この頃。中学生の頃の自称コンピュータオタクのプライドはどこへやら。まあそんな時は、『デビルサマナー　ソウルハッカーズ』やら『serial experiments lain』などのSF世界からパワーをいただきましょう。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>勝手にレビュー19 : 稲葉浩志の1stシングル『遠くまで』</title>
       <link>https://guricerin.github.io/shit-blog/post/2017/11/04-tokumade/</link>
       <pubDate>Sat, 04 Nov 2017 05:50:38 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2017/11/04-tokumade/</guid>
       <description>&lt;p&gt;B&amp;rsquo;zのシングルは数が多すぎるので個々のレビューはしませんが、稲葉ソロのは①数が少ない、②アルバム収録されていないものが多い、という理由からレビューしていきます。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>勝手にレビュー18 : B&#39;zの2ndベストアルバム『B&#39;z The Best &#34;Treasure&#34;』</title>
       <link>https://guricerin.github.io/shit-blog/post/2017/11/03-treasure/</link>
       <pubDate>Fri, 03 Nov 2017 09:24:57 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2017/11/03-treasure/</guid>
       <description>&lt;p&gt;僕はゆとり世代のくせに、音源データや電子書籍には目もくれず、CDや紙の本などといった無駄に空間を占領するアナログ物体の購入を優先しています。コレクター気質な人間なので正直非常に邪魔なのですが、それでもやはり心の奥底の「デジタルデータはいざという時に消失してしまう」という怖れから抜けきれず、本日も宝のゴミ達に囲まれながらブログをせっせと書きます。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>勝手にレビュー17 : B&#39;zの1stベストアルバム『B&#39;z The Best &#34;Pleasure&#34;』</title>
       <link>https://guricerin.github.io/shit-blog/post/2017/11/02-pleasure/</link>
       <pubDate>Thu, 02 Nov 2017 09:24:57 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2017/11/02-pleasure/</guid>
-      <description>&lt;p&gt;そういえば、パナマ文書ってどうなったんでしょうか。&lt;br&gt;
-ネット上ではたまに話題になっていますが、リアルの日常生活ではこれっぽっちも耳に入ってきません。ま、ネットの影響力ってしょせんそんなものでしょうね。あ、僕のリアルコミュニティが貧弱なだけでした。&lt;/p&gt;</description>
+      <description>&lt;p&gt;そういえば、パナマ文書ってどうなったんでしょうか。&lt;br&gt;&#xA;ネット上ではたまに話題になっていますが、リアルの日常生活ではこれっぽっちも耳に入ってきません。ま、ネットの影響力ってしょせんそんなものでしょうね。あ、僕のリアルコミュニティが貧弱なだけでした。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>勝手にレビュー16：七緒香の1stアルバム『七音』</title>
       <link>https://guricerin.github.io/shit-blog/post/2017/10/29-nanao/</link>
       <pubDate>Sun, 29 Oct 2017 23:45:54 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2017/10/29-nanao/</guid>
       <description>&lt;p&gt;「七緒香ってだれよ？」ってな話ですが、1997年〜2000年まで活動していた女性シンガーで、実はデビューから約1年間、松本孝弘がプロデュースしており、B&amp;rsquo;zと関連性の深いアーティストの一人なのです。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>勝手にレビュー15 : B&#39;zの9thアルバム『SURVIVE』</title>
       <link>https://guricerin.github.io/shit-blog/post/2017/10/28-survive/</link>
       <pubDate>Sat, 28 Oct 2017 23:45:54 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2017/10/28-survive/</guid>
-      <description>&lt;p&gt;90年代の音楽を聴いていると90年代に生み出された商品を連想してしまいます。そこで改めて思ったのですが、プレステ1には神ゲーが多いですね。
-サガフロンティア、聖剣伝説LOM、クロノ・クロス&amp;hellip;&amp;hellip;って、スクウェア作品ばかりになってしまった。&lt;/p&gt;</description>
+      <description>&lt;p&gt;90年代の音楽を聴いていると90年代に生み出された商品を連想してしまいます。そこで改めて思ったのですが、プレステ1には神ゲーが多いですね。&#xA;サガフロンティア、聖剣伝説LOM、クロノ・クロス&amp;hellip;&amp;hellip;って、スクウェア作品ばかりになってしまった。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>勝手にレビュー14：稲葉浩志の1stアルバム『マグマ』</title>
       <link>https://guricerin.github.io/shit-blog/post/2017/10/26-maguma/</link>
       <pubDate>Thu, 26 Oct 2017 23:45:54 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2017/10/26-maguma/</guid>
       <description>&lt;p&gt;B&amp;rsquo;zの時にもちょくちょく見え隠れしていた稲葉の本性が一気に噴火する問題作、稲葉ソロの初代オリジナルアルバムです。作詞・作曲、全部イナバ。それゆえB&amp;rsquo;zや後の稲葉ソロのような洗練さはなく荒い部分が目立ちますが、逆にそれが良い味を出しており、歌詞も一番暗いので、今作が稲葉ソロの最高傑作であると主張するB&amp;rsquo;zマニアは多いです（次 点で4thの『Hadou』が挙げられやすいかな？僕は4thのほうが好きです）。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>勝手にレビュー13 : B&#39;zの5thミニアルバム『FRIENDS II』</title>
       <link>https://guricerin.github.io/shit-blog/post/2017/10/24-friends2/</link>
       <pubDate>Tue, 24 Oct 2017 23:45:54 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2017/10/24-friends2/</guid>
       <description>&lt;p&gt;台風が去り、選挙が終わり、日本が落ち着き始めた頃合いですかね。ここ最近は友人とも会わず、かといってドライブにも行かずプライベートは部屋に引きこもってばかりなので、いよいよといった感じです。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>勝手にレビュー12 : B&#39;zの8thアルバム『LOOSE』</title>
       <link>https://guricerin.github.io/shit-blog/post/2017/10/23-loose/</link>
       <pubDate>Mon, 23 Oct 2017 23:45:54 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2017/10/23-loose/</guid>
       <description>&lt;p&gt;今作は前作のジャジーな面影を残しつつ、『IN THE LIFE』ぶりの売れ線ポップで派手なメロディへと回帰したアルバムです。その反動もあってか、売上はB&amp;rsquo;z史上一位のトリプルミリオン。J-POPの黄金期とともに乗りに乗りまくっていた時代の作品です。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>勝手にレビュー11 : B&#39;zの7thアルバム『The 7th Blues』</title>
       <link>https://guricerin.github.io/shit-blog/post/2017/10/22-the-7th-blues/</link>
       <pubDate>Sun, 22 Oct 2017 23:45:54 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2017/10/22-the-7th-blues/</guid>
       <description>&lt;p&gt;今作はB&amp;rsquo;z史上初の、そして2017年現在唯一の2枚組オリジナルアルバムです。収録曲は20曲と、当然のことながら歴代最多という力の入れよう。しかし、B&amp;rsquo;zマニアからは「暗黒時代」と揶揄されることの多いアルバムです。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>勝手にレビュー10 : B&#39;zの4thミニアルバム『FRIENDS』</title>
       <link>https://guricerin.github.io/shit-blog/post/2017/10/21-friends/</link>
       <pubDate>Sat, 21 Oct 2017 23:45:54 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2017/10/21-friends/</guid>
       <description>&lt;p&gt;これからの寒い季節にぴったりなミニアルバムです。今作はアルバム全体を通してストーリー性を持ったつくりになっており、曲順＝ストーリーの時系列順という具合になっています。松本のギターも稲葉の歌声もやたらとしっとりして、ムーディな雰囲気作りに成功しています。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>勝手にレビュー9 : B&#39;zの6thアルバム『RUN』</title>
       <link>https://guricerin.github.io/shit-blog/post/2017/10/20-run/</link>
       <pubDate>Fri, 20 Oct 2017 23:45:54 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2017/10/20-run/</guid>
       <description>&lt;p&gt;数字と英語に苦しまされる日々。ああ、中学生時代にまで戻って理系としての道を歩みたい…。小学生までは国語や社会より、算数と理科のほうが得意だったというのに。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>勝手にレビュー8 : B&#39;zの5thアルバム『IN THE LIFE』</title>
       <link>https://guricerin.github.io/shit-blog/post/2017/10/18-in-the-life/</link>
       <pubDate>Wed, 18 Oct 2017 23:45:54 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2017/10/18-in-the-life/</guid>
       <description>&lt;p&gt;今作からバックの演奏がより豪華絢爛になります。また、稲葉の歌詞が以前までの「子供が背伸びしたかのような作られた大人っぽさ」ではなく「本物の大人の喜怒哀楽」を帯びてきます。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>勝手にレビュー7 : B&#39;zの3rdミニアルバム『MARS』</title>
       <link>https://guricerin.github.io/shit-blog/post/2017/10/16-mars/</link>
       <pubDate>Mon, 16 Oct 2017 23:45:54 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2017/10/16-mars/</guid>
       <description></description>
     </item>
-    
     <item>
       <title>勝手にレビュー6 : B&#39;zの4thアルバム『RISKY』</title>
       <link>https://guricerin.github.io/shit-blog/post/2017/10/15-risky/</link>
       <pubDate>Sun, 15 Oct 2017 23:45:54 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2017/10/15-risky/</guid>
       <description>&lt;p&gt;前回の記事にも書いた通り、B&amp;rsquo;zは今作から従来のデジタルサウンド路線を抜け出し、イケイケロッケンロールな方角へと舵を切っていくことになります。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>勝手にレビュー5 : B&#39;zの2ndミニアルバム『WICKED BEAT』</title>
       <link>https://guricerin.github.io/shit-blog/post/2017/10/14-wicked-beat/</link>
       <pubDate>Sat, 14 Oct 2017 23:45:54 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2017/10/14-wicked-beat/</guid>
       <description>&lt;p&gt;今作は完全新曲一切なし、全曲英詞という攻めた内容です。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>勝手にレビュー4 : B&#39;zの3rdアルバム『BREAK THROUGH』</title>
       <link>https://guricerin.github.io/shit-blog/post/2017/10/13-break-through/</link>
       <pubDate>Fri, 13 Oct 2017 23:45:54 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2017/10/13-break-through/</guid>
-      <description>&lt;p&gt;派手なメロディが増え、前作よりさらに稲葉と松本の楽曲制作がこなれてきた印象を受けます。&lt;br&gt;
-皮肉を効かせた見方をすれば、より売れ線を意識したアルバムになっております。&lt;/p&gt;</description>
+      <description>&lt;p&gt;派手なメロディが増え、前作よりさらに稲葉と松本の楽曲制作がこなれてきた印象を受けます。&lt;br&gt;&#xA;皮肉を効かせた見方をすれば、より売れ線を意識したアルバムになっております。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>獲り合い悟り愛</title>
       <link>https://guricerin.github.io/shit-blog/post/2017/10/12-tori/</link>
       <pubDate>Thu, 12 Oct 2017 23:45:54 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2017/10/12-tori/</guid>
       <description>&lt;p&gt;それは去年の冬の出来事でした。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>勝手にレビュー3 : B&#39;zの1stミニアルバム『BAD COMMUNICATION』</title>
       <link>https://guricerin.github.io/shit-blog/post/2017/10/11-bad-communication/</link>
       <pubDate>Wed, 11 Oct 2017 23:45:54 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2017/10/11-bad-communication/</guid>
-      <description>&lt;p&gt;ミニアルバムという体裁ですが収録曲は3曲のみ。しかし、3曲とも長さが7分以上の盛り込みっぷり。&lt;br&gt;
-こんな奇抜なスタイルなのに、当時なぜかロングランヒットし、B&amp;rsquo;zが大物アーティストへと辿る礎を築いた作品です。&lt;/p&gt;</description>
+      <description>&lt;p&gt;ミニアルバムという体裁ですが収録曲は3曲のみ。しかし、3曲とも長さが7分以上の盛り込みっぷり。&lt;br&gt;&#xA;こんな奇抜なスタイルなのに、当時なぜかロングランヒットし、B&amp;rsquo;zが大物アーティストへと辿る礎を築いた作品です。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>勝手にレビュー2 : B&#39;zの2ndアルバム『OFF THE LOCK』</title>
       <link>https://guricerin.github.io/shit-blog/post/2017/10/10-off-the-lock/</link>
       <pubDate>Tue, 10 Oct 2017 23:45:54 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2017/10/10-off-the-lock/</guid>
       <description>&lt;p&gt;今作から、稲葉の作詞能力と松本のメロディセンスが爆発していきます。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>勝手にレビュー1：B&#39;zの1stアルバム『B&#39;z』</title>
       <link>https://guricerin.github.io/shit-blog/post/2017/10/09-bz/</link>
       <pubDate>Mon, 09 Oct 2017 23:45:54 +0900</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/post/2017/10/09-bz/</guid>
       <description>&lt;p&gt;B&amp;rsquo;z大好きなので、&lt;del&gt;2chのアルバム全曲レビュースレをパクって&lt;/del&gt;上から目線で彼らのアルバムを批評していきます。&lt;/p&gt;</description>
     </item>
-    
     <item>
       <title>Privacy Policy</title>
       <link>https://guricerin.github.io/shit-blog/privacy-policy/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
       <guid>https://guricerin.github.io/shit-blog/privacy-policy/</guid>
-      <description>アクセス解析ツールについて 当サイトでは、アクセス解析ツール「Google Analytics」を利用しています。「Google Analytics」はトラフィックデータの収集のためにCookieを使用しています。このトラフィックデータは匿名で収集されており、個人を特定するものではありません。
-Googleアナリティクスのデータ収集、処理の仕組みについては、「ユーザーがGoogleパートナーのサイトやアプリを使用する際のGoogleによるデータ使用」のページを参照してください。
-この機能はCookieを無効にすることで収集を拒否することができますので、ご利用のブラウザ設定をご確認のうえ、拒否設定を行ってください。ブラウザ用の Google Analyticsオプトアウトアドオンの利用についてはこちらを参照してください。</description>
+      <description>アクセス解析ツールについて 当サイトでは、アクセス解析ツール「Google Analytics」を利用しています。「Google Analytics」はトラフィックデータの収集のためにCookieを使用しています。このトラフィックデータは匿名で収集されており、個人を特定するものではありません。&#xA;Googleアナリティクスのデータ収集、処理の仕組みについては、「ユーザーがGoogleパートナーのサイトやアプリを使用する際のGoogleによるデータ使用」のページを参照してください。&#xA;この機能はCookieを無効にすることで収集を拒否することができますので、ご利用のブラウザ設定をご確認のうえ、拒否設定を行ってください。ブラウザ用の Google Analyticsオプトアウトアドオンの利用についてはこちらを参照してください。</description>
     </item>
-    
   </channel>
 </rss>
