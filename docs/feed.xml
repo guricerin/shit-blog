@@ -6,8 +6,15 @@
     <description>Recent content on グリのクソブログ</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Sun, 18 Feb 2024 17:11:15 +0900</lastBuildDate>
+    <lastBuildDate>Mon, 09 Sep 2024 21:40:06 +0900</lastBuildDate>
     <atom:link href="https://guricerin.github.io/shit-blog/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>大都会 東京に引っ越した</title>
+      <link>https://guricerin.github.io/shit-blog/post/2024/09/09/move/</link>
+      <pubDate>Mon, 09 Sep 2024 21:40:06 +0900</pubDate>
+      <guid>https://guricerin.github.io/shit-blog/post/2024/09/09/move/</guid>
+      <description>&lt;p&gt;なんやねんこのド田舎は。おれの地元と大して変わらんやんけ。&lt;/p&gt;</description>
+    </item>
     <item>
       <title>自作のRustクレートをcrates.ioに公開する</title>
       <link>https://guricerin.github.io/shit-blog/post/2024/02/18/publish-my-crate/</link>
