@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>セキュリティ on グリのクソブログ</title>
+    <link>http://localhost:1313/shit-blog/categories/%E3%82%BB%E3%82%AD%E3%83%A5%E3%83%AA%E3%83%86%E3%82%A3/</link>
+    <description>Recent content in セキュリティ on グリのクソブログ</description>
+    <generator>Hugo</generator>
+    <language>ja</language>
+    <lastBuildDate>Mon, 12 Feb 2024 17:41:06 +0900</lastBuildDate>
+    <atom:link href="http://localhost:1313/shit-blog/categories/%E3%82%BB%E3%82%AD%E3%83%A5%E3%83%AA%E3%83%86%E3%82%A3/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>『Webブラウザセキュリティ ― Webアプリケーションの安全性を支える仕組みを整理する』 読んだ</title>
+      <link>http://localhost:1313/shit-blog/post/2024/02/12/web-browser-security/</link>
+      <pubDate>Mon, 12 Feb 2024 17:41:06 +0900</pubDate>
+      <guid>http://localhost:1313/shit-blog/post/2024/02/12/web-browser-security/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

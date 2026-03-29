@@ -1,0 +1,898 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head><script src="/shit-blog/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=shit-blog/livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>『並行プラグラミング入門』個人メモ - グリのクソブログ</title>
+  <script>(function (d, e) { d[e] = d[e].replace("no-js", "js"); })(document.documentElement, "className");</script>
+  <meta name="description"
+    content="">
+  <meta property="og:url" content="http://localhost:1313/shit-blog/post/private-memo/20220407-concurrent-programming-intro/">
+  <meta property="og:site_name" content="グリのクソブログ">
+  <meta property="og:title" content="『並行プラグラミング入門』個人メモ">
+  <meta property="og:description" content="主にB&#39;z">
+  <meta property="og:locale" content="ja">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="post">
+    <meta property="article:published_time" content="2022-04-07T09:19:16+09:00">
+    <meta property="article:modified_time" content="2022-04-07T09:19:16+09:00">
+
+  
+  <meta itemprop="name" content="『並行プラグラミング入門』個人メモ">
+  <meta itemprop="description" content="主にB&#39;z">
+  <meta itemprop="datePublished" content="2022-04-07T09:19:16+09:00">
+  <meta itemprop="dateModified" content="2022-04-07T09:19:16+09:00">
+  <meta itemprop="wordCount" content="403">
+  <meta itemprop="keywords" content="2022-04,個人メモ">
+  
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="『並行プラグラミング入門』個人メモ">
+  <meta name="twitter:description" content="主にB&#39;z">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="dns-prefetch" href="//fonts.googleapis.com">
+  <link rel="dns-prefetch" href="//fonts.gstatic.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700" >
+
+  <link rel="stylesheet" href="http://localhost:1313/shit-blog/css/style.css">
+  <link rel="stylesheet" href="http://localhost:1313/shit-blog/css/custom.css">
+
+  <link rel="shortcut icon" href="http://localhost:1313/shit-blog/favicon.ico">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <link rel="stylesheet" href="http://localhost:1313/shit-blog/css/share.css">
+</head>
+
+<body class="body">
+  <div class="container container--outer">
+    <header class="header">
+	<div class="container header__container">
+		
+	<div class="logo logo--mixed">
+		<a class="logo__link" href="http://localhost:1313/shit-blog/" title="グリのクソブログ" rel="home">
+			<div class="logo__item logo__imagebox">
+					<img class="logo__img" src="http://localhost:1313/shit-blog/img/icon.jpg">
+				</div><div class="logo__item logo__text">
+					<div class="logo__title">グリのクソブログ</div>
+					<div class="logo__tagline">主にB&#39;z</div>
+				</div>
+		</a>
+	</div>
+		
+<nav class="menu">
+	<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
+		<span class="menu__btn-title" tabindex="-1">Menu</span>
+	</button>
+	<ul class="menu__list">
+		<li class="menu__item">
+			<a class="menu__link" href="http://localhost:1313/shit-blog/">
+				
+				<span class="menu__text">HOME</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="http://localhost:1313/shit-blog/privacy-policy">
+				
+				<span class="menu__text">PRIVACY POLICY</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="http://localhost:1313/shit-blog/feed.xml">
+				
+				<span class="menu__text">RSS</span>
+				
+			</a>
+		</li>
+	</ul>
+</nav>
+
+	</div>
+</header>
+    <div class="wrapper flex">
+      <div class="primary">
+        
+<main class="main" role="main">
+    <article class="post">
+        <header class="post__header">
+            <h1 class="post__title">『並行プラグラミング入門』個人メモ</h1>
+            <div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2022-04-07T09:19:16&#43;09:00">2022-04-07</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="http://localhost:1313/shit-blog/categories/%E5%80%8B%E4%BA%BA%E3%83%A1%E3%83%A2/" rel="category">個人メモ</a>
+	</span>
+</div></div>
+        </header>
+        
+<div class="post__toc toc">
+	<div class="toc__title">Page content</div>
+	<div class="toc__menu">
+		<nav id="TableOfContents">
+  <ul>
+    <li><a href="#1章-並行性と並列性">1章 並行性と並列性</a>
+      <ul>
+        <li><a href="#11-プロセス">1.1 プロセス</a></li>
+        <li><a href="#12-並行性">1.2 並行性</a></li>
+        <li><a href="#13-並列性">1.3 並列性</a></li>
+        <li><a href="#14-並行と並列処理の必要性">1.4 並行と並列処理の必要性</a></li>
+      </ul>
+    </li>
+    <li><a href="#2章-プログラミングの基本">2章 プログラミングの基本</a>
+      <ul>
+        <li><a href="#21-アセンブリ言語">2.1 アセンブリ言語</a></li>
+        <li><a href="#22-c言語">2.2 C言語</a></li>
+        <li><a href="#23-rust">2.3 Rust</a></li>
+      </ul>
+    </li>
+    <li><a href="#3章-同期処理1">3章 同期処理1</a>
+      <ul>
+        <li><a href="#31-レースコンディション">3.1 レースコンディション</a></li>
+        <li><a href="#32-アトミック処理">3.2 アトミック処理</a></li>
+        <li><a href="#33-ミューテックス">3.3 ミューテックス</a></li>
+        <li><a href="#34-セマフォ">3.4 セマフォ</a></li>
+        <li><a href="#35-条件変数">3.5 条件変数</a></li>
+        <li><a href="#36-バリア同期">3.6 バリア同期</a></li>
+        <li><a href="#37-readers-writerロック">3.7 Readers-Writerロック</a></li>
+        <li><a href="#38-rustの同期処理ライブラリ">3.8 Rustの同期処理ライブラリ</a></li>
+        <li><a href="#39-パン屋のアルゴリズム">3.9 パン屋のアルゴリズム</a></li>
+      </ul>
+    </li>
+    <li><a href="#4章-並行プログラミング特有のバグと問題点">4章 並行プログラミング特有のバグと問題点</a>
+      <ul>
+        <li><a href="#41-デッドロック">4.1 デッドロック</a></li>
+        <li><a href="#42-ライブロックと飢餓">4.2 ライブロックと飢餓</a></li>
+        <li><a href="#43-銀行家のアルゴリズム">4.3 銀行家のアルゴリズム</a></li>
+        <li><a href="#44-再帰ロック">4.4 再帰ロック</a></li>
+        <li><a href="#45-疑似覚醒">4.5 疑似覚醒</a></li>
+        <li><a href="#46-シグナル">4.6 シグナル</a></li>
+        <li><a href="#47-メモリバリア">4.7 メモリバリア</a></li>
+      </ul>
+    </li>
+    <li><a href="#5章-非同期プログラミング">5章 非同期プログラミング</a></li>
+    <li><a href="#6章-マルチタスク">6章 マルチタスク</a></li>
+    <li><a href="#7章-同期処理2">7章 同期処理2</a></li>
+    <li><a href="#8章-並行計算モデル">8章 並行計算モデル</a></li>
+  </ul>
+</nav>
+	</div>
+</div><div class="content post__content clearfix">
+            <hr>
+<h2 id="1章-並行性と並列性">1章 並行性と並列性</h2>
+<ul>
+<li>モノ : ある特定の時間で全体が存在する。</li>
+<li>プロセス : 特定の時間では部分しか存在しない。</li>
+</ul>
+<h3 id="11-プロセス">1.1 プロセス</h3>
+<p>計算を実行する主体。</p>
+<ol>
+<li>実行前状態</li>
+<li>実行状態</li>
+<li>待機状態</li>
+<li>終了状態</li>
+</ol>
+<ul>
+<li>待機状態が必要な理由
+<ul>
+<li>データの到着を待つ。</li>
+<li>計算リソースの空きを待つ。</li>
+<li>自発的に待機状態になり、計算リソースの占有を防ぐ。</li>
+</ul>
+</li>
+</ul>
+<h3 id="12-並行性">1.2 並行性</h3>
+<p>2つ以上のプロセスが同時に計算を進めている状態。<br>
+時刻tにおいて、ある複数のプロセス p1, &hellip;, pn が計算途中状態（実行状態 or 待機状態）にある。</p>
+<ul>
+<li>OSプロセス : カーネルから見たプロセス。独立した仮想メモリ空間を割り当てられる。</li>
+<li>スレッド : OSプロセス内に内包されるプロセス。所属するOSプロセスのリソースをスレッド間で共有する。</li>
+</ul>
+<h3 id="13-並列性">1.3 並列性</h3>
+<p>同じ時刻で複数のプロセスが同時に計算を実行している状態。<br>
+時刻tにおいて、ある複数のプロセス p1, &hellip;, pn が実行状態にある。</p>
+<h4 id="タスク並列性">タスク並列性</h4>
+<p>複数のタスク（プロセス）を複数のCPU上で同時に実行すること。スレッド並列性とも。<br>
+マルチコアCPUやメニコアCPUの登場により、ソフトウェア側でも意識しなければならなくなった。</p>
+<h4 id="データ並列性">データ並列性</h4>
+<p>複数に分割したデータに対して並列に処理を行うこと。<br>
+ex. ベクトル演算</p>
+<h5 id="応答速度とスループット">応答速度とスループット</h5>
+<ul>
+<li>応答速度
+<ul>
+<li>計算開始から終了までの期間。</li>
+<li>消費CPUクロック数 / CPU動作クロック周波数 などで算出した時間で表す。</li>
+</ul>
+</li>
+<li>スループット
+<ul>
+<li>単位時間あたりに実行可能な計算量。</li>
+<li>MIPS : 1秒間に何百万回のCPUインストラクションが実行可能かを表す単位。</li>
+<li>FLOPS : 1秒間に何回の浮動小数点演算が実行可能かを表す単位。</li>
+</ul>
+</li>
+</ul>
+<h5 id="アムダールの法則">アムダールの法則</h5>
+<ul>
+<li>並列化可能な処理の実行時間とオーバヘッドの比に応じて実行速度が変わること</li>
+<li>並列化することでどの程度応答速度が向上するか
+<ul>
+<li>並列化可能な部分の処理と不可能な処理の部分（前処理、後処理）との割合</li>
+<li>並列化に伴うオーバーヘッド（スレッド生成や同期処理）</li>
+</ul>
+</li>
+<li>割合によっては、並列化するほうが遅くなることも。</li>
+</ul>
+<h4 id="インストラクション並列性">インストラクション並列性</h4>
+<p>インストラクション（CPUの命令語）レベルで並列化を行う手法。<br>
+主にハードウェアやコンパイラが暗黙的に行う。プログラマが行うことはほぼない。</p>
+<ul>
+<li>インストラクションを以下のように分割し、複数のインストラクションがバケツリレーのように並列に実行可能とする。
+<ul>
+<li>命令読み込み</li>
+<li>命令解釈</li>
+<li>実行</li>
+<li>メモリアクセス</li>
+<li>レジスタ書き込み</li>
+</ul>
+</li>
+</ul>
+<h3 id="14-並行と並列処理の必要性">1.4 並行と並列処理の必要性</h3>
+<h4 id="並列処理と性能向上">並列処理と性能向上</h4>
+<ul>
+<li>半導体素子の微細化により
+<ul>
+<li>シリコンウェハー上に作成可能な回路数が増え、面積あたりに多くの回路が作成可能。</li>
+<li>ウェハーあたりに作成可能なダイ（CPUのチップなど）が増える。</li>
+<li>ダイの製造単価が下がる。</li>
+<li>半導体で作成されたトランジスタのオンオフが高速化。</li>
+</ul>
+</li>
+<li>ただし、
+<ul>
+<li>CPUの動作周波数を上げると消費電力と発熱が多くなる。</li>
+<li>半導体素子の劣化が激しくなり、動作が不安定となる。</li>
+<li>電圧を下げることで、消費電力と発熱に対処。</li>
+<li>が、微細化が進み過ぎたことで半導体トランジスタにおけるリーク電流が問題となる。</li>
+<li>これは量子トンネル効果が原因なので、対処するには半導体素子を大きくするか電圧を上げる必要あり。本末転倒。</li>
+<li>諸問題がどれも限界に達した結果、マルチコアやメニコアCPUへと進化（2000年代中頃）。ソフトウェア側で並列性を意識せざるを得ない。</li>
+</ul>
+</li>
+</ul>
+<h4 id="並行処理の必要性と計算パス数爆発">並行処理の必要性と計算パス数爆発</h4>
+<p>プロセスがn個あった場合、実際にとりうる実行順（計算パス）はn!となる。<br>
+もしn!のうち数パターンだけにバグが存在する場合、きわめて再現性の低い厄介なバグとなる。<br>
+そのため、並列プログラミングの技術のみで並行プログラミングを行うことは良くない。</p>
+<hr>
+<h2 id="2章-プログラミングの基本">2章 プログラミングの基本</h2>
+<h3 id="21-アセンブリ言語">2.1 アセンブリ言語</h3>
+<ul>
+<li>AArch64 : Armの64ビットCPUアーキテクチャ。</li>
+<li>x86-64 : AMDとIntel CPUのCPUアーキテクチャ。</li>
+</ul>
+<h3 id="22-c言語">2.2 C言語</h3>
+<h4 id="pthreads">Pthreads</h4>
+<p>POSIX標準のインターフェイスを備えるスレッドライブラリの総称。</p>
+<h4 id="volatile修飾子">volatile修飾子</h4>
+<ul>
+<li>コンパイラは遅いメモリアクセスを抑制するためにレジスタにいったんコピーしてから値を利用する。</li>
+<li>この最適化は、メモリ上の値を監視したりするときに障害になるので、最適化を抑制するvolatile修飾子が有用となる。</li>
+<li>複数のプロセスから同一メモリにアクセスしたい場合に、コンパイラの最適化によりメモリアクセスが行われなくなると問題が起きる。</li>
+</ul>
+<h3 id="23-rust">2.3 Rust</h3>
+<h4 id="所有権">所有権</h4>
+<ul>
+<li>古典的論理
+<ul>
+<li>A, A -&gt; B, A -&gt; C |&gt; B &amp; C</li>
+<li>「Aである」, 「AならばBである」、「AならばC」が成り立つとき、BかつCであると推論可能。</li>
+</ul>
+</li>
+<li>線形論理
+<ul>
+<li>リソースの利用（ここではA）に制限を持たせることのできる論理体系。</li>
+<li>A, A -o B, A -o C |&gt; B</li>
+<li>or</li>
+<li>A, A -o B, A -o C |&gt; C</li>
+<li>「Aである」, 「AならばBである」、「AならばC」が成り立つとき、BまたはCであると推論可能。</li>
+<li>線形型はこの線形論理を元にしており、線形型の姉妹分であるアフィン型を適用したRustでは所有権の移動に活用されている。</li>
+</ul>
+</li>
+</ul>
+<h4 id="ライフタイム">ライフタイム</h4>
+<ul>
+<li>Rustのライフタイムは型の一種。</li>
+<li>異なるライフタイムでも、範囲が狭い（寿命が短い）ほうに合わせる。これは部分型付けで実現している。</li>
+</ul>
+<hr>
+<h2 id="3章-同期処理1">3章 同期処理1</h2>
+<ul>
+<li>同期処理 : 並行処理において、タイミングの同期やデータ更新などを複数プロセス間で協調的に行うこと。</li>
+<li>Rustの同期処理ライブラリは裏側でPthreadsを使用している。</li>
+</ul>
+<h3 id="31-レースコンディション">3.1 レースコンディション</h3>
+<ul>
+<li>レースコンディション : 複数プロセスが並行して共有リソースにアクセスした結果引き起こされる、予期しない異常な状態。</li>
+<li>クリティカルセクション : レースコンディションを引き起こすコード部分。</li>
+</ul>
+<p>ex.<br>
+共有変数vを読み込み、インクリメントする2つのプロセス。<br>
+インクリメントするタイミングが重なると、正しくインクリメントされない（後からインクリメントした処理がなかったことになる）。</p>
+<h3 id="32-アトミック処理">3.2 アトミック処理</h3>
+<p>不可分操作。それ以上は分割不可能な処理。</p>
+<ul>
+<li>その処理の途中状態はシステム的に観測できず、かつ、もしその処理が失敗した場合は処理前の状態に復元される。</li>
+<li>最近のCPUではアトミック処理用の命令がサポートされており、現代の同期処理のほとんどはこれらに依存している。</li>
+</ul>
+<h4 id="compare-and-swap-cas">Compare and Swap (CAS)</h4>
+<p>アトミック処理の一種。セマフォ、ロックフリー、ウェイトフリーなデータ構造を実装するために利用される。<br>
+書き込みしたいデータのアドレス A、元のデータ B、新たなデータ Cを渡し、*A == B の場合のみ *A = C とする処理。</p>
+<h4 id="test-and-set-tas">Test and Set (TAS)</h4>
+<p>アトミック処理の一種。スピンロックなどを実装するために利用される。<br>
+bool型のポインタ p を渡し、<code>*p = true</code>ならなにもせず<code>true</code>を返す。<code>*p = false</code> なら、<code>*p = true</code>にして<code>false</code>を返す。</p>
+<h4 id="load-link--store-conditional-llsc">Load-Link / Store-Conditional (LL/SC)</h4>
+<ul>
+<li>lock命令プリフィックス : x86, x86-64のCPUアーキテクチャにおけるメモリアクセスの排他処理のための命令。</li>
+<li>LL/SC : ARM, RISC-V, POWER, MIPSなどのCPUにおけるアトミック処理のための命令。
+<ul>
+<li>LL : 読み込み。</li>
+<li>SC : 他のCPUによって書き込みされていない場合のみ書き込み成功。</li>
+<li>lock命令プリフィックスとは違って、他のCPUからの書き込みがあったかどうかを検知可能。</li>
+</ul>
+</li>
+</ul>
+<h3 id="33-ミューテックス">3.3 ミューテックス</h3>
+<p>MUTtual EXclusion (mutex)。排他実行。 <br>
+クリティカルセクションを実行可能なプロセス数を1つに制限するような同期処理。<br>
+TASを用いることでlock変数からの読み込みと書き込みが同時に行えるようにしている。</p>
+<h4 id="スピンロック">スピンロック</h4>
+<p>リソースの空きをポーリングして確認するようなロックの獲得方法。<br>
+典型的には、スピンロック用のAPIはロック獲得用とロック解放用の関数の二つが提供される。</p>
+<ul>
+<li>TTAS : 検査をしてからTASを呼び出すことで、重いアトミック命令の回数を減らす。</li>
+</ul>
+<h4 id="pthreadsでのミューテックス">Pthreadsでのミューテックス</h4>
+<p>リソースを消費しがちなので、スピンロック単体での使用は推奨されない。Pthreadsや言語ライブラリで提供されるミューテックスか、スピンロックとこれらでの組み合わせを利用すべき。</p>
+<h3 id="34-セマフォ">3.4 セマフォ</h3>
+<p>semaphore。<br>
+ロック獲得可能なプロセス数は最大1個のミューテックスに対して、セマフォでは最大n個のプロセスが同時にロック獲得可能。<br>
+つまり、ミューテックスはセマフォの特殊なケース。<br>
+ミューテックスとは違って、レースコンディションは防げない。</p>
+<h4 id="posixセマフォ">POSIXセマフォ</h4>
+<p>セマフォの標準的実装。</p>
+<ul>
+<li>名前付きセマフォ
+<ul>
+<li>ファイルで共有リソースを指定可能。</li>
+<li>メモリを共有しないリソースでも用意にセマフォを実現可能。</li>
+</ul>
+</li>
+<li>名前なしセマフォ
+<ul>
+<li>共有メモリ領域が必要となる。</li>
+</ul>
+</li>
+</ul>
+<h3 id="35-条件変数">3.5 条件変数</h3>
+<p>ある条件が満たされない間はプロセスを待機しておき、条件が満たされた場合に待機中のプロセスを実行する手法。<br>
+Pthreadでは<code>pthread_cond_t</code>型と関数を利用する。</p>
+<ul>
+<li>重要な点
+<ul>
+<li>条件変数へのアクセスは必ずロック獲得後に行わなければならない。</li>
+<li><code>pthread_cond_t</code>型の条件変数以外にも、実行可能かを表す条件変数を用意しなければならない。</li>
+</ul>
+</li>
+</ul>
+<h3 id="36-バリア同期">3.6 バリア同期</h3>
+<p>すべてのスレッドが揃ってから、処理の続きを実行といった同期手法。</p>
+<h4 id="スピンロックベースのバリア同期">スピンロックベースのバリア同期</h4>
+<p>待機中にもループ処理を行うため、無駄にCPUリソースを消費してしまう。</p>
+<h4 id="pthreadsを用いたバリア同期">Pthreadsを用いたバリア同期</h4>
+<p>Pthreadsの条件変数を用いる。</p>
+<h3 id="37-readers-writerロック">3.7 Readers-Writerロック</h3>
+<p>読み込みのみを行うプロセス（Reader）と読み書きのみを行うプロセス（Writer）に分類し、以下の制約を満たすように排他制御を行う。</p>
+<ul>
+<li>ロック獲得中のReaderが同時刻に複数（0以上）存在可能。</li>
+<li>ロック獲得中のWriterは同時刻に最大1つのみ存在可能。</li>
+<li>ReaderとWriterが同時刻にロック獲得状態にならない。</li>
+</ul>
+<h4 id="スピンロックベースのrwロック">スピンロックベースのRWロック</h4>
+<p>RWロックは書き込みはほとんど行わない場合に向いている。書き込みが頻繁に起きるならミューテックスのほうが実行速度と安全性の面からよい。</p>
+<h4 id="pthreadsのrwロック">PthreadsのRWロック</h4>
+<h3 id="38-rustの同期処理ライブラリ">3.8 Rustの同期処理ライブラリ</h3>
+<p>Rustの同期処理ライブラリは、クリティカルセクション外での保護対象オブジェクトのアクセスと、ロック解除忘れを型システムによって防ぐようになっている。</p>
+<h4 id="ミューテックス">ミューテックス</h4>
+<p><code>std::sync::Mutex</code>型。<code>std::sync::Arc</code>などのスレッドセーフなスマートポインタに包む。</p>
+<h4 id="条件変数">条件変数</h4>
+<p><code>std::sync::Condvar</code>型。<code>std::sync::Arc</code>などのスレッドセーフなスマートポインタに包む。</p>
+<h4 id="rwロック">RWロック</h4>
+<p><code>std::sync::RwLock</code>型。</p>
+<h4 id="バリア同期">バリア同期</h4>
+<p><code>std::sync::Barrier</code>型。<code>std::sync::Arc</code>などのスレッドセーフなスマートポインタに包む。</p>
+<h4 id="セマフォ">セマフォ</h4>
+<p>Rustにおいて標準では用意されていないが、ミューテックスと条件変数を用いて実装可能。<br>
+セマフォを用いると、キューのサイズが有限なチャネルを実装可能。</p>
+<ul>
+<li>チャネル
+<ul>
+<li>プロセス間でメッセージ交換を行うための抽象的な通信路。</li>
+<li>Rustでは、チャネルは送信端と受信端に分かれている。</li>
+<li><code>Send</code>トレイとを実装している型のみがチャネルを介して送受信可能。</li>
+<li><code>Send</code>トレイトを実装していない型 : <code>Rc</code>型（非スレッドセーフな参照カウントのスマートポインタ）</li>
+</ul>
+</li>
+</ul>
+<h3 id="39-パン屋のアルゴリズム">3.9 パン屋のアルゴリズム</h3>
+<p>CPUが提供するアトミック命令を利用しない同期処理手法。<br>
+他にはデッカーのアルゴリズム、ピーターソンのアルゴリズムなど。<br>
+パン屋というよりは病院や役所、レストランなどでの整理券のメタファー。</p>
+<hr>
+<h2 id="4章-並行プログラミング特有のバグと問題点">4章 並行プログラミング特有のバグと問題点</h2>
+<h3 id="41-デッドロック">4.1 デッドロック</h3>
+<ul>
+<li>
+<p>デッドロック</p>
+<ul>
+<li>お互いにリソースの空きを待ち、処理が進まない状態。</li>
+</ul>
+</li>
+<li>
+<p>食事する哲学者問題</p>
+<ul>
+<li>円卓に哲学者が座っており、哲学者の前には食事が、哲学者の間には箸が1本ずつ置かれているとする。</li>
+<li>哲学者は箸を2本取り上げた際に食事を行った後、箸を元の位置に戻す。</li>
+<li>タイミングによっては箸を1本ずつ持った哲学者が互いにもう一本の箸を待つ状態になる。</li>
+</ul>
+</li>
+<li>
+<p>デッドロックとなる状態機械</p>
+<ul>
+<li>状態機械がデッドロックする可能性がある &lt;-&gt; 初期状態から到達可能かつ次の遷移先がないような状態を持つ</li>
+</ul>
+</li>
+</ul>
+<h3 id="42-ライブロックと飢餓">4.2 ライブロックと飢餓</h3>
+<ul>
+<li>
+<p>食事する哲学者問題の改良版</p>
+<ul>
+<li>まず左の箸の空きを待ち、空いたら取り上げる。</li>
+<li>右の箸の空きを待つ。しばらくしても空かなかったら左の箸を元に戻し、はじめに戻る。</li>
+<li>こうしても、タイミングによっては2人の哲学者が同時に左の箸を取り（相手視点では右側の箸）、デッドロックが発生する。</li>
+</ul>
+</li>
+<li>
+<p>ライブロック</p>
+<ul>
+<li>リソース獲得の処理は行われるが、リソースが獲得できずに次の処理が行われない状態。</li>
+</ul>
+</li>
+<li>
+<p>ライブロックとなる状態機械</p>
+<ul>
+<li>状態機械がライブロックする可能性がある &lt;-&gt; 常にいずれかのリソース獲得状態へ到達可能だが、それら状態へは決して到達しないような無限の遷移列が存在する</li>
+</ul>
+</li>
+<li>
+<p>飢餓</p>
+<ul>
+<li>特定のプロセスのみがリソース獲得状態へ遷移しないような状態。</li>
+</ul>
+</li>
+<li>
+<p>飢餓を引き起こす状態機械</p>
+<ul>
+<li>状態機械が飢餓を引き起こす可能性がある &lt;-&gt; あるプロセスが存在して、常にそのプロセスのリソース獲得状態へ到達可能だが、その状態へは決して到達しないような無限の遷移列が存在するか、デッドロックとなる状態機械である</li>
+</ul>
+</li>
+</ul>
+<h3 id="43-銀行家のアルゴリズム">4.3 銀行家のアルゴリズム</h3>
+<ul>
+<li>銀行家のアルゴリズム
+<ul>
+<li>by ダイクストラ</li>
+<li>リソース割り当ておよびデッドロック回避のアルゴリズム。</li>
+<li>デッドロックとなる状態に遷移するかをシミュレーションにより判定してからリソース割り当てを行う（あるいは行わない）。</li>
+<li>欠点 : 動作するスレッド数と、各スレッドが必要なリソースの最大値を事前に把握しておく必要あり。</li>
+</ul>
+</li>
+</ul>
+<h3 id="44-再帰ロック">4.4 再帰ロック</h3>
+<ul>
+<li>再帰ロック
+<ul>
+<li>ロックを獲得中のプロセスが、そのロックを解放前に、再度そのロックを獲得すること。</li>
+<li>再入可能 : 再帰ロックを行っても処理が続行可能であること。
+<ul>
+<li>単純なミューテックスに対して再帰ロックを行うとデッドロックが起きる。</li>
+</ul>
+</li>
+<li>Rustの再帰ロックは未定義動作。</li>
+<li>RustのArcは、他のスレッドに共有リソースを渡す場合にのみcloneし、同一スレッド内ではcloneして利用しない、ということを守ればよい。</li>
+</ul>
+</li>
+</ul>
+<h3 id="45-疑似覚醒">4.5 疑似覚醒</h3>
+<ul>
+<li>疑似覚醒
+<ul>
+<li>ある状態が満たされるまで待機中のプロセスが、条件が満たされていないにもかかわらず実行状態へ移行すること。</li>
+<li>典型例 : wait中のシグナルによる割り込みが原因で発生する。</li>
+<li>環境依存の動作のため、waitする際は自前の条件チェックを行うほうがよい。</li>
+</ul>
+</li>
+</ul>
+<h3 id="46-シグナル">4.6 シグナル</h3>
+<ul>
+<li>シグナルとマルチスレッドは相性が悪い。
+<ul>
+<li>どのタイミングでシグナルハンドラが呼び出せるかわからないため。</li>
+<li>シグナルハンドラの中に（メインスレッドと同じミューテックスの）ロックを獲得する処理を入れると、デッドロックしがち。</li>
+</ul>
+</li>
+<li>シグナル受信専用のスレッドを用いることで、上記の状況を回避する。</li>
+</ul>
+<h3 id="47-メモリバリア">4.7 メモリバリア</h3>
+<ul>
+<li>アウトオブオーダ実行
+<ul>
+<li>現代的なCPUでは必ずしも機械語の命令順に処理は行うわけではない。</li>
+<li>理由 : パイプライン処理時にIPS（instruction per second, 単位時間あたりの実行命令数）を向上させるため。</li>
+</ul>
+</li>
+<li>メモリバリア（メモリフェンス）</li>
+<li>アウトオブオーダによって引き起こされる問題から保護するための処理。</li>
+<li>問題 : 共有変数に対するread命令がロック獲得処理より前に実行されることによるレースコンディション。</li>
+<li>機械語には、メモリバリアが組み込まれたメモリ読み書き命令がある。</li>
+</ul>
+<hr>
+<h2 id="5章-非同期プログラミング">5章 非同期プログラミング</h2>
+<hr>
+<h2 id="6章-マルチタスク">6章 マルチタスク</h2>
+<hr>
+<h2 id="7章-同期処理2">7章 同期処理2</h2>
+<hr>
+<h2 id="8章-並行計算モデル">8章 並行計算モデル</h2>
+        </div>
+    </article>
+</main>
+
+
+
+
+
+
+<nav class="pager flex">
+	<div class="pager__item pager__item--prev">
+		<a class="pager__link" href="http://localhost:1313/shit-blog/post/2022/03/30-tdd-rs/" rel="prev">
+			<span class="pager__subtitle">«&thinsp;Previous</span>
+			<p class="pager__title">『テスト駆動開発』をRustで写経した</p>
+		</a>
+	</div>
+	<div class="pager__item pager__item--next">
+		<a class="pager__link" href="http://localhost:1313/shit-blog/post/2022/07/13_quit-neet/" rel="next">
+			<span class="pager__subtitle">Next&thinsp;»</span>
+			<p class="pager__title">1年3ヶ月にわたるニート期間を終え、株式会社Sに入社した</p>
+		</a>
+	</div>
+</nav>
+
+
+<script src="https://utteranc.es/client.js" repo="guricerin/shit-blog" issue-term="pathname" label="[By Utterances]"
+    theme="github-light" crossorigin="anonymous" async>
+    </script>
+
+
+      </div>
+      <aside class="sidebar">
+<div class="widget-recent widget">
+	<h4 class="widget__title">Recent Posts</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="http://localhost:1313/shit-blog/post/2026/03/29/workout/">ジムに行き始めて約5ヶ月</a></li>
+			<li class="widget__item"><a class="widget__link" href="http://localhost:1313/shit-blog/post/2025/06/29/philosophy-east/">『史上最強の哲学入門　東洋の哲人たち』読んだ</a></li>
+			<li class="widget__item"><a class="widget__link" href="http://localhost:1313/shit-blog/post/2025/06/29/philosophy-west/">『史上最強の哲学入門』読んだ</a></li>
+			<li class="widget__item"><a class="widget__link" href="http://localhost:1313/shit-blog/post/2025/05/16/poor-girl-piketty/">『高学歴貧困女子が読み解くピケティ』読んだ</a></li>
+			<li class="widget__item"><a class="widget__link" href="http://localhost:1313/shit-blog/post/2025/05/06/cant-read-books/">『なぜ働いていると本が読めなくなるのか』読んだ</a></li>
+		</ul>
+	</div>
+</div>
+<div class="widget-categories widget">
+	<h4 class="widget__title">Categories</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item">
+				<a class="widget__link" href="http://localhost:1313/shit-blog/categories/bz/">B&#39;z</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">40</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="http://localhost:1313/shit-blog/categories/bash/">Bash</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">2</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="http://localhost:1313/shit-blog/categories/csharp/">CSharp</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">1</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="http://localhost:1313/shit-blog/categories/fsharp/">FSharp</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">4</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="http://localhost:1313/shit-blog/categories/gcp/">GCP</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">1</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="http://localhost:1313/shit-blog/categories/github/">GitHub</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">1</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="http://localhost:1313/shit-blog/categories/go/">Go</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">2</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="http://localhost:1313/shit-blog/categories/it%E3%82%A4%E3%83%B3%E3%83%95%E3%83%A9/">ITインフラ</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">4</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="http://localhost:1313/shit-blog/categories/lisp/">Lisp</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">1</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="http://localhost:1313/shit-blog/categories/mint/">Mint</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">1</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="http://localhost:1313/shit-blog/categories/ruby/">Ruby</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">2</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="http://localhost:1313/shit-blog/categories/rust/">Rust</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">7</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="http://localhost:1313/shit-blog/categories/scheme/">Scheme</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">1</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="http://localhost:1313/shit-blog/categories/typescript/">TypeScript</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">1</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="http://localhost:1313/shit-blog/categories/windows/">Windows</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">2</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="http://localhost:1313/shit-blog/categories/%E3%82%AF%E3%82%BD%E3%83%96%E3%83%AD%E3%82%B0/">クソブログ</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">17</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="http://localhost:1313/shit-blog/categories/%E3%82%B2%E3%83%BC%E3%83%A0/">ゲーム</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">3</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="http://localhost:1313/shit-blog/categories/%E3%82%BB%E3%82%AD%E3%83%A5%E3%83%AA%E3%83%86%E3%82%A3/">セキュリティ</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">1</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="http://localhost:1313/shit-blog/categories/%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF/">ネットワーク</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">9</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="http://localhost:1313/shit-blog/categories/%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0/">プログラミング</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">27</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="http://localhost:1313/shit-blog/categories/%E4%B8%83%E5%B0%BE%E9%A6%99/">七尾香</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">1</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="http://localhost:1313/shit-blog/categories/%E5%80%8B%E4%BA%BA%E3%83%A1%E3%83%A2/">個人メモ</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">9</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="http://localhost:1313/shit-blog/categories/%E5%87%8B%E5%8F%B6%E6%A3%95/">凋叶棕</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">4</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="http://localhost:1313/shit-blog/categories/%E5%AD%A6%E5%95%8F/">学問</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">4</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="http://localhost:1313/shit-blog/categories/%E5%B0%8F%E8%AA%AC/">小説</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">1</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="http://localhost:1313/shit-blog/categories/%E6%80%9D%E6%83%B3/">思想</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">2</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="http://localhost:1313/shit-blog/categories/%E6%83%85%E5%A0%B1%E3%82%BB%E3%82%AD%E3%83%A5%E3%83%AA%E3%83%86%E3%82%A3/">情報セキュリティ</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">19</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="http://localhost:1313/shit-blog/categories/%E6%95%B0%E5%AD%A6/">数学</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">2</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="http://localhost:1313/shit-blog/categories/%E6%9A%81records/">暁Records</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">1</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="http://localhost:1313/shit-blog/categories/%E6%9B%B8%E7%89%A9/">書物</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">39</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="http://localhost:1313/shit-blog/categories/%E6%9D%B1%E6%96%B9/">東方</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">6</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="http://localhost:1313/shit-blog/categories/%E6%BC%AB%E7%94%BB/">漫画</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">3</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="http://localhost:1313/shit-blog/categories/%E7%A5%9E%E6%9E%97%E9%95%B7%E5%B9%B3/">神林長平</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">2</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="http://localhost:1313/shit-blog/categories/%E7%AB%B6%E6%8A%80%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0/">競技プログラミング</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">25</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="http://localhost:1313/shit-blog/categories/%E9%9F%B3%E6%A5%BD/">音楽</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">43</span>
+				</li>
+		</ul>
+	</div>
+</div>
+<div class="widget-archives widget">
+    <h4 class="widget__title">ARCHIVES</h4>
+    <div class="widget__content">
+        <ul>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2026-02">2026-02 (1)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2025-06">2025-06 (2)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2025-05">2025-05 (2)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2025-01">2025-01 (1)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2024-12">2024-12 (2)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2024-11">2024-11 (1)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2024-10">2024-10 (1)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2024-09">2024-09 (1)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2024-02">2024-02 (2)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2024-01">2024-01 (3)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2023-12">2023-12 (1)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2023-11">2023-11 (2)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2023-10">2023-10 (5)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2023-07">2023-07 (1)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2023-06">2023-06 (1)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2023-05">2023-05 (1)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2023-03">2023-03 (1)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2023-02">2023-02 (1)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2023-01">2023-01 (1)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2022-12">2022-12 (2)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2022-10">2022-10 (1)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2022-09">2022-09 (1)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2022-07">2022-07 (2)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2022-04">2022-04 (1)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2022-03">2022-03 (4)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2022-02">2022-02 (1)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2021-12">2021-12 (3)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2021-11">2021-11 (7)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2021-10">2021-10 (2)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2021-09">2021-09 (7)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2021-07">2021-07 (1)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2021-06">2021-06 (3)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2021-01">2021-01 (1)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2020-11">2020-11 (4)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2020-10">2020-10 (1)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2020-09">2020-09 (21)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2020-08">2020-08 (2)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2020-05">2020-05 (1)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2020-03">2020-03 (2)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2020-02">2020-02 (1)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2019-12">2019-12 (1)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2019-08">2019-08 (1)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2019-03">2019-03 (19)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2019-02">2019-02 (5)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2019-01">2019-01 (3)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2018-12">2018-12 (2)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2018-11">2018-11 (1)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2018-09">2018-09 (1)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2018-06">2018-06 (1)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2018-05">2018-05 (1)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2018-02">2018-02 (1)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2018-01">2018-01 (4)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2017-12">2017-12 (3)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2017-11">2017-11 (12)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2017-10">2017-10 (17)</a></li>
+            
+        </ul>
+    </div>
+</div>
+
+<div class="widget-social widget">
+	<h4 class="widget-social__title widget__title">Social</h4>
+	<div class="widget-social__content widget__content">
+		<div class="widget-social__item widget__item">
+			<a class="widget-social__link widget__link btn" title="GitHub" rel="noopener noreferrer" href="https://github.com/guricerin" target="_blank">
+				<svg class="widget-social__link-icon icon icon-github" width="24" height="24" viewBox="0 0 384 374"><path d="m192 0c-106.1 0-192 85.8-192 191.7 0 84.7 55 156.6 131.3 181.9 9.6 1.8 13.1-4.2 13.1-9.2 0-4.6-.2-16.6-.3-32.6-53.4 11.6-64.7-25.7-64.7-25.7-8.7-22.1-21.3-28-21.3-28-17.4-11.9 1.3-11.6 1.3-11.6 19.3 1.4 29.4 19.8 29.4 19.8 17.1 29.3 44.9 20.8 55.9 15.9 1.7-12.4 6.7-20.8 12.2-25.6-42.6-4.8-87.5-21.3-87.5-94.8 0-20.9 7.5-38 19.8-51.4-2-4.9-8.6-24.3 1.9-50.7 0 0 16.1-5.2 52.8 19.7 15.3-4.2 31.7-6.4 48.1-6.5 16.3.1 32.7 2.2 48.1 6.5 36.7-24.8 52.8-19.7 52.8-19.7 10.5 26.4 3.9 45.9 1.9 50.7 12.3 13.4 19.7 30.5 19.7 51.4 0 73.7-44.9 89.9-87.7 94.6 6.9 5.9 13 17.6 13 35.5 0 25.6-.2 46.3-.2 52.6 0 5.1 3.5 11.1 13.2 9.2 76.2-25.5 131.2-97.3 131.2-182 0-105.9-86-191.7-192-191.7z"/></svg>
+				<span>GitHub</span>
+			</a>
+		</div>
+
+		
+	</div>
+</div>
+</aside>
+
+    </div>
+    <footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2026 guricerin.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+</footer>
+  </div>
+  <script async defer src="http://localhost:1313/shit-blog/%20js/menu.js"></script>
+  <script src="http://localhost:1313/shit-blog/js/custom.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js?config=TeX-AMS-MML_HTMLorMML" async></script>
+</body>
+
+</html>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>2022-04 on グリのクソブログ</title>
+    <link>http://localhost:1313/shit-blog/archives/2022-04/</link>
+    <description>Recent content in 2022-04 on グリのクソブログ</description>
+    <generator>Hugo</generator>
+    <language>ja</language>
+    <lastBuildDate>Thu, 07 Apr 2022 09:19:16 +0900</lastBuildDate>
+    <atom:link href="http://localhost:1313/shit-blog/archives/2022-04/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>『並行プラグラミング入門』個人メモ</title>
+      <link>http://localhost:1313/shit-blog/post/private-memo/20220407-concurrent-programming-intro/</link>
+      <pubDate>Thu, 07 Apr 2022 09:19:16 +0900</pubDate>
+      <guid>http://localhost:1313/shit-blog/post/private-memo/20220407-concurrent-programming-intro/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

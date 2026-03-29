@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>2023-11 on グリのクソブログ</title>
+    <link>http://localhost:1313/shit-blog/archives/2023-11/</link>
+    <description>Recent content in 2023-11 on グリのクソブログ</description>
+    <generator>Hugo</generator>
+    <language>ja</language>
+    <lastBuildDate>Thu, 09 Nov 2023 09:08:41 +0900</lastBuildDate>
+    <atom:link href="http://localhost:1313/shit-blog/archives/2023-11/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>『Kubernetesで実践するクラウドネイティブDevOps』 読んだ</title>
+      <link>http://localhost:1313/shit-blog/post/2023/11/30/kube-cloud-native-devops/</link>
+      <pubDate>Thu, 09 Nov 2023 09:08:41 +0900</pubDate>
+      <guid>http://localhost:1313/shit-blog/post/2023/11/30/kube-cloud-native-devops/</guid>
+      <description>&lt;p&gt;読んだ理由 : DevOpsの思想と実践方法を身につけたい。あといい加減Kubernetesと友達になりたい。&lt;/p&gt;&#xA;&lt;p&gt;オライリーのページ : &lt;a href=&#34;https://www.oreilly.co.jp/books/9784873119014/&#34;&gt;https://www.oreilly.co.jp/books/9784873119014/&lt;/a&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>自宅鯖でマインクラフトを動かす</title>
+      <link>http://localhost:1313/shit-blog/post/2023/11/05/minecraft-jitakusaba/</link>
+      <pubDate>Sun, 05 Nov 2023 17:22:13 +0900</pubDate>
+      <guid>http://localhost:1313/shit-blog/post/2023/11/05/minecraft-jitakusaba/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

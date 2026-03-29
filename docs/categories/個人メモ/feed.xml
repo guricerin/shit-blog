@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>個人メモ on グリのクソブログ</title>
+    <link>http://localhost:1313/shit-blog/categories/%E5%80%8B%E4%BA%BA%E3%83%A1%E3%83%A2/</link>
+    <description>Recent content in 個人メモ on グリのクソブログ</description>
+    <generator>Hugo</generator>
+    <language>ja</language>
+    <lastBuildDate>Sun, 22 Oct 2023 02:02:49 +0900</lastBuildDate>
+    <atom:link href="http://localhost:1313/shit-blog/categories/%E5%80%8B%E4%BA%BA%E3%83%A1%E3%83%A2/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>『投資の大原則 第2版』個人メモ</title>
+      <link>http://localhost:1313/shit-blog/post/private-memo/20231022_the-elements-of-investing/</link>
+      <pubDate>Sun, 22 Oct 2023 02:02:49 +0900</pubDate>
+      <guid>http://localhost:1313/shit-blog/post/private-memo/20231022_the-elements-of-investing/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>『貧乏人の経済学』個人メモ</title>
+      <link>http://localhost:1313/shit-blog/post/private-memo/20231021-poor-economics/</link>
+      <pubDate>Sat, 21 Oct 2023 02:02:49 +0900</pubDate>
+      <guid>http://localhost:1313/shit-blog/post/private-memo/20231021-poor-economics/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>『並行プラグラミング入門』個人メモ</title>
+      <link>http://localhost:1313/shit-blog/post/private-memo/20220407-concurrent-programming-intro/</link>
+      <pubDate>Thu, 07 Apr 2022 09:19:16 +0900</pubDate>
+      <guid>http://localhost:1313/shit-blog/post/private-memo/20220407-concurrent-programming-intro/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>『テスト駆動開発』: 個人用メモ</title>
+      <link>http://localhost:1313/shit-blog/post/private-memo/20220330_tdd/</link>
+      <pubDate>Thu, 24 Mar 2022 17:37:32 +0900</pubDate>
+      <guid>http://localhost:1313/shit-blog/post/private-memo/20220330_tdd/</guid>
+      <description></description>
+    </item>
+    <item>
+      <title>『体系的に学ぶ 安全なWebアプリケーションの作り方 第2版』個人メモ</title>
+      <link>http://localhost:1313/shit-blog/post/private-memo/20211123-wasbook/</link>
+      <pubDate>Tue, 23 Nov 2021 18:53:50 +0900</pubDate>
+      <guid>http://localhost:1313/shit-blog/post/private-memo/20211123-wasbook/</guid>
+      <description>&lt;p&gt;セキュリティなんも知らんので購入。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>『インフラエンジニアの教科書2』の個人メモ</title>
+      <link>http://localhost:1313/shit-blog/post/private-memo/infra-engineer-text2/</link>
+      <pubDate>Thu, 18 Nov 2021 09:31:34 +0900</pubDate>
+      <guid>http://localhost:1313/shit-blog/post/private-memo/infra-engineer-text2/</guid>
+      <description>&lt;p&gt;インフラなんも知らんので購入。&lt;br&gt;&#xA;おれのインフラ経験といえば、&lt;code&gt;VMware vSphere&lt;/code&gt;で管理された仮想サーバの1つに Redmine をセットアップしたりプラグインを適用した程度。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>『Clean Architecture 達人に学ぶソフトウェアの構造と設計』個人メモ</title>
+      <link>http://localhost:1313/shit-blog/post/private-memo/20210916-clean-arch/</link>
+      <pubDate>Thu, 16 Sep 2021 09:37:18 +0900</pubDate>
+      <guid>http://localhost:1313/shit-blog/post/private-memo/20210916-clean-arch/</guid>
+      <description>&lt;p&gt;本の内容をまとめただけになったので、著作権的にまずい場合、まとめ部分を削除するかこの記事丸ごと削除します。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>『ふつうのLinuxプログラミング 第2版』個人メモ</title>
+      <link>http://localhost:1313/shit-blog/post/private-memo/20210906-std-linux/</link>
+      <pubDate>Mon, 06 Sep 2021 09:44:38 +0900</pubDate>
+      <guid>http://localhost:1313/shit-blog/post/private-memo/20210906-std-linux/</guid>
+      <description>&lt;p&gt;Linuxのことなんもわかってないので購入。本書はC言語プログラムを書くことを通してLinuxの仕組みを大雑把に学ぶという感じ。&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>『Linuxで動かしながら学ぶTCP/IPネットワーク入門』個人メモ</title>
+      <link>http://localhost:1313/shit-blog/post/private-memo/20210626-linux-tcpip/</link>
+      <pubDate>Sat, 26 Jun 2021 09:57:13 +0900</pubDate>
+      <guid>http://localhost:1313/shit-blog/post/private-memo/20210626-linux-tcpip/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://localhost:1313/shit-blog/post/2021/06/20210618-mikanos/&#34;&gt;前回読んだ&lt;/a&gt;みかん本で解説されていない、かつ、よくわかっていない分野と言われてぱっと思いつくのは、最も身近な存在のネットワークである。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,912 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head><script src="/shit-blog/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=shit-blog/livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>『Real World HTTP 第2版』 読んだ - グリのクソブログ</title>
+  <script>(function (d, e) { d[e] = d[e].replace("no-js", "js"); })(document.documentElement, "className");</script>
+  <meta name="description"
+    content="">
+  <meta property="og:url" content="http://localhost:1313/shit-blog/post/2023/03/31_real-world-http/">
+  <meta property="og:site_name" content="グリのクソブログ">
+  <meta property="og:title" content="『Real World HTTP 第2版』 読んだ">
+  <meta property="og:description" content="普段の業務でフロントエンドとバックエンドの両方を書いており、HTTPをわかったつもりになってしまっているので購入。
+ちょくちょくMDNも参照しながら読んだ。">
+  <meta property="og:locale" content="ja">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="post">
+    <meta property="article:published_time" content="2023-02-12T05:21:12+09:00">
+    <meta property="article:modified_time" content="2023-02-12T05:21:12+09:00">
+
+  
+  <meta itemprop="name" content="『Real World HTTP 第2版』 読んだ">
+  <meta itemprop="description" content="普段の業務でフロントエンドとバックエンドの両方を書いており、HTTPをわかったつもりになってしまっているので購入。
+ちょくちょくMDNも参照しながら読んだ。">
+  <meta itemprop="datePublished" content="2023-02-12T05:21:12+09:00">
+  <meta itemprop="dateModified" content="2023-02-12T05:21:12+09:00">
+  <meta itemprop="wordCount" content="359">
+  <meta itemprop="keywords" content="2023-02,書物">
+  
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="『Real World HTTP 第2版』 読んだ">
+  <meta name="twitter:description" content="普段の業務でフロントエンドとバックエンドの両方を書いており、HTTPをわかったつもりになってしまっているので購入。
+ちょくちょくMDNも参照しながら読んだ。">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="dns-prefetch" href="//fonts.googleapis.com">
+  <link rel="dns-prefetch" href="//fonts.gstatic.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700" >
+
+  <link rel="stylesheet" href="http://localhost:1313/shit-blog/css/style.css">
+  <link rel="stylesheet" href="http://localhost:1313/shit-blog/css/custom.css">
+
+  <link rel="shortcut icon" href="http://localhost:1313/shit-blog/favicon.ico">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <link rel="stylesheet" href="http://localhost:1313/shit-blog/css/share.css">
+</head>
+
+<body class="body">
+  <div class="container container--outer">
+    <header class="header">
+	<div class="container header__container">
+		
+	<div class="logo logo--mixed">
+		<a class="logo__link" href="http://localhost:1313/shit-blog/" title="グリのクソブログ" rel="home">
+			<div class="logo__item logo__imagebox">
+					<img class="logo__img" src="http://localhost:1313/shit-blog/img/icon.jpg">
+				</div><div class="logo__item logo__text">
+					<div class="logo__title">グリのクソブログ</div>
+					<div class="logo__tagline">主にB&#39;z</div>
+				</div>
+		</a>
+	</div>
+		
+<nav class="menu">
+	<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
+		<span class="menu__btn-title" tabindex="-1">Menu</span>
+	</button>
+	<ul class="menu__list">
+		<li class="menu__item">
+			<a class="menu__link" href="http://localhost:1313/shit-blog/">
+				
+				<span class="menu__text">HOME</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="http://localhost:1313/shit-blog/privacy-policy">
+				
+				<span class="menu__text">PRIVACY POLICY</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="http://localhost:1313/shit-blog/feed.xml">
+				
+				<span class="menu__text">RSS</span>
+				
+			</a>
+		</li>
+	</ul>
+</nav>
+
+	</div>
+</header>
+    <div class="wrapper flex">
+      <div class="primary">
+        
+<main class="main" role="main">
+    <article class="post">
+        <header class="post__header">
+            <h1 class="post__title">『Real World HTTP 第2版』 読んだ</h1>
+            <div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2023-02-12T05:21:12&#43;09:00">2023-02-12</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="http://localhost:1313/shit-blog/categories/%E6%9B%B8%E7%89%A9/" rel="category">書物</a>
+	</span>
+</div></div>
+        </header>
+        
+<div class="post__toc toc">
+	<div class="toc__title">Page content</div>
+	<div class="toc__menu">
+		<nav id="TableOfContents">
+  <ul>
+    <li><a href="#real-world-http-第2版">『Real World HTTP 第2版』</a></li>
+    <li><a href="#1章-http10の世界--基本となる4つの要素">1章 HTTP/1.0の世界 : 基本となる4つの要素</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#2章-http10のセマンティクス--ブラウザの基本機能の裏側">2章 HTTP/1.0のセマンティクス : ブラウザの基本機能の裏側</a>
+      <ul>
+        <li></li>
+      </ul>
+    </li>
+    <li><a href="#3章-go言語によるhttp10クライアントの実装">3章 Go言語によるHTTP/1.0クライアントの実装</a></li>
+    <li><a href="#4章-http11のシンタックス--高速化と安全性を求めた拡張">4章 HTTP/1.1のシンタックス : 高速化と安全性を求めた拡張</a></li>
+    <li><a href="#5章-http11のセマンティクス--広がるhttpの用途">5章 HTTP/1.1のセマンティクス : 広がるHTTPの用途</a></li>
+    <li><a href="#6章-go言語によるhttp11クライアントの実装">6章 Go言語によるHTTP1.1クライアントの実装</a></li>
+    <li><a href="#7章-http2-http3のシンタックス--プロトコルの再定義">7章 HTTP/2, HTTP/3のシンタックス : プロトコルの再定義</a></li>
+    <li><a href="#8章-http2のセマンティクス--新しいユースケース">8章 HTTP/2のセマンティクス : 新しいユースケース</a></li>
+    <li><a href="#9章-go言語によるhttp2-html-5のプロトコルの実装">9章 Go言語によるHTTP/2, HTML 5のプロトコルの実装</a></li>
+    <li><a href="#10章-クライアント視点で見るrestful-api">10章 クライアント視点で見るRESTful API</a></li>
+    <li><a href="#11章-javascriptによるブラウザからの動的なhttpリクエスト">11章 JavaScriptによるブラウザからの動的なHTTPリクエスト</a></li>
+    <li><a href="#12章-ウェブアプリケーションの基礎">12章 ウェブアプリケーションの基礎</a></li>
+    <li><a href="#13章-クラウド時代のhttp--ウェブを強くするさまざまな技術">13章 クラウド時代のHTTP : ウェブを強くするさまざまな技術</a></li>
+    <li><a href="#14章-セキュリティ--ブラウザを守るhttpの機能">14章 セキュリティ : ブラウザを守るHTTPの機能</a></li>
+  </ul>
+</nav>
+	</div>
+</div><div class="content post__content clearfix">
+            <p>普段の業務でフロントエンドとバックエンドの両方を書いており、HTTPをわかったつもりになってしまっているので購入。<br>
+ちょくちょく<a href="https://developer.mozilla.org/ja/">MDN</a>も参照しながら読んだ。</p>
+<h2 id="real-world-http-第2版">『Real World HTTP 第2版』</h2>
+<h2 id="1章-http10の世界--基本となる4つの要素">1章 HTTP/1.0の世界 : 基本となる4つの要素</h2>
+<p>HTTPの成り立ちを解説。</p>
+<h4 id="http">HTTP</h4>
+<ul>
+<li>Hyper Text Transfer Protocol</li>
+<li>元々はWebブラウザとWebサーバー間の通信プロトコル。
+<ul>
+<li>リクエストを受け付け、適切なドキュメントを返すだけ。</li>
+</ul>
+</li>
+<li>現在はその用途に限定されず、インターネットの基盤。</li>
+<li>メソッドとパス</li>
+<li>ヘッダー</li>
+<li>ボディ</li>
+<li>ステータス</li>
+</ul>
+<h4 id="rfc">RFC</h4>
+<ul>
+<li>様々なプロトコルの定義書。</li>
+<li>Request For Commentの由来
+<ul>
+<li>ネットワークはもともとアメリカの国防予算で作られたため、仕様を外部に公開できなかった。</li>
+<li>「品質向上のための意見を世界中から集める」という名目で仕様を公開することにした名残。</li>
+</ul>
+</li>
+</ul>
+<h4 id="ヘッダー">ヘッダー</h4>
+<ul>
+<li>format
+<ul>
+<li><code>field: value</code></li>
+</ul>
+</li>
+<li>電子メールのプロトコルからパクられた。</li>
+<li>filed名は大文字小文字の区別をしない。</li>
+<li><code>X-</code>からはじまるヘッダーは各アプリが自由に使用してよい。
+<ul>
+<li>最近はRFCをなるべく発行して登録済みheaderを周知し、<code>X-</code>なしのヘッダーを普及させるような動きがある。</li>
+</ul>
+</li>
+<li>正規化の方法はフレームワークによって異なる。
+<ul>
+<li>同名ヘッダーのvalueを<code>,</code>区切りでひとつに連結した文字列にしたり、文字列の配列にしたり、単語の先頭を大文字にしたり。</li>
+</ul>
+</li>
+</ul>
+<h4 id="mimeタイプ">MIMEタイプ</h4>
+<ul>
+<li>ファイル形式の識別子。
+<ul>
+<li><code>{大項目}/{詳細}</code></li>
+</ul>
+</li>
+<li>HTTPでは<code>Content-Type</code>ヘッダーに格納される。</li>
+</ul>
+<h5 id="content-sniffing">Content Sniffing</h5>
+<ul>
+<li>（ブラウザが）MIMEタイプではなく中身を見てファイルの種類を推測すること。</li>
+<li>実はセキュリティホール。
+<ul>
+<li>本来は<code>text/plain</code>で表示されるだけのJSコードが実行されたり。</li>
+</ul>
+</li>
+</ul>
+<h4 id="status-code">Status Code</h4>
+<ul>
+<li>サーバからの応答を示す3桁の数字。</li>
+<li>100番台: 処理中の情報の伝達。</li>
+<li>200番台: 成功時の応答。</li>
+<li>300番台: サーバからクライアントへの命令。リダイレクトやキャッシュ利用の指示など。
+<ul>
+<li>リダイレクトさせるには、サーバから<code>Location</code>ヘッダーを返す。</li>
+<li>301: ドメイン移転、HTTPS化。</li>
+<li>302: 一時メンテナンス。</li>
+<li>303: ログイン後のページ遷移。</li>
+</ul>
+</li>
+<li>400番台: リクエストに不正がある場合の応答。</li>
+<li>500番台: サーバ内部でエラーが発生したときの応答。</li>
+</ul>
+<h4 id="url">URL</h4>
+<ul>
+<li>Uniform Resource Locators</li>
+<li>構造:
+<ul>
+<li><code>{スキーム}://{ホスト名}/{パス}</code></li>
+<li><code>{スキーム}://{ユーザ}:{パスワード}@{ホスト名}:{ポート}/{パス}?{クエリー}#{フラグメント}</code></li>
+</ul>
+</li>
+<li>ホスト名は大文字小文字の区別なし。</li>
+<li>HTTPの仕様上URLの長さに制限はないが、ブラウザによってはあるのでだいたい2000文字までにしておくとよい。</li>
+</ul>
+<h4 id="ボディ">ボディ</h4>
+<ul>
+<li>ヘッダーとの間に空行を挟んだ以降がすべてボディとなる。</li>
+<li>GETメソッド時にリクエストボディを含めても、サーバ側がボディを解釈しなければ意味はない。</li>
+</ul>
+<h2 id="2章-http10のセマンティクス--ブラウザの基本機能の裏側">2章 HTTP/1.0のセマンティクス : ブラウザの基本機能の裏側</h2>
+<h4 id="urlエンコーディング">URLエンコーディング</h4>
+<ul>
+<li>RFC1866
+<ul>
+<li>ブラウザが使用。</li>
+<li><code>[a-zA-Z0-9]</code>, <code>*</code>, <code>-</code>, <code>,</code>, <code>_</code>以外をエスケープする。</li>
+<li><code> </code>は<code>+</code>になる。</li>
+</ul>
+</li>
+<li>RFC3986
+<ul>
+<li>パーセントエンコーディングとも。</li>
+<li><code>curl --data-urlencode</code>が使用。</li>
+<li><code> </code>は<code>%20</code>になる。</li>
+</ul>
+</li>
+</ul>
+<h4 id="マルチパートフォーム形式">マルチパートフォーム形式</h4>
+<ul>
+<li>1度のリクエストで複数のファイルを送信。</li>
+<li>リクエストボディが以下のようなブロックで構成。
+<ul>
+<li>boundary</li>
+<li>header</li>
+<li>content</li>
+</ul>
+</li>
+</ul>
+<h4 id="コンテントネゴシエーション">コンテントネゴシエーション</h4>
+<ul>
+<li>1つのリクエストの中でクライアントとサーバが互いに妥協可能な内でベストな設定を共有する。</li>
+</ul>
+<table>
+  <thead>
+      <tr>
+          <th>リクエストヘッダー</th>
+          <th>レスポンス</th>
+          <th>対象</th>
+      </tr>
+  </thead>
+  <tbody>
+      <tr>
+          <td>Accept</td>
+          <td>Content-Type</td>
+          <td>MIMEタイプ</td>
+      </tr>
+      <tr>
+          <td>Accept-Language</td>
+          <td>Content-Language / HTMLタグ</td>
+          <td>表示言語</td>
+      </tr>
+      <tr>
+          <td>Accept-Charset</td>
+          <td>Content-Type</td>
+          <td>文字のキャラクターセット</td>
+      </tr>
+      <tr>
+          <td>Accept-Encoding</td>
+          <td>Content-Encoding</td>
+          <td>ボディの圧縮形式</td>
+      </tr>
+  </tbody>
+</table>
+<h4 id="クッキー">クッキー</h4>
+<ul>
+<li>ウェブサイトの情報をブラウザ側に保存する。</li>
+<li>サーバがクライアントにクッキーの保存を指示する。</li>
+<li>ヘッダーを使う。
+<ul>
+<li>サーバ : <code>Set-Cookie: {name}:{value}</code></li>
+<li>ブラウザ : <code>Cookie: {name}:{value}</code></li>
+</ul>
+</li>
+<li>目安の最大容量は4KB。</li>
+</ul>
+<h5 id="分類">分類</h5>
+<ul>
+<li>発行元
+<ul>
+<li>ファーストパーティ : ユーザが訪れたサイト</li>
+<li>サードパーティ : それ以外のサイト</li>
+</ul>
+</li>
+<li>使用期間
+<ul>
+<li>セッションクッキー : ブラウザを閉じたら消える</li>
+<li>永続クッキー : 期限が設定されていてブラウザを閉じても残る</li>
+</ul>
+</li>
+<li>目的
+<ul>
+<li>厳密に必要なクッキー : ECサイトの買い物かごなど</li>
+<li>環境設定クッキー : 言語、ユーザ名、パスワードなど</li>
+<li>統計クッキー : アクセスしたページやクリックしたリンク</li>
+<li>マーケティングクッキー : ユーザの行動を追跡する</li>
+</ul>
+</li>
+</ul>
+<h5 id="属性">属性</h5>
+<ul>
+<li>Expires
+<ul>
+<li>クッキーの寿命。指定した年月日時分秒で無効化される。</li>
+</ul>
+</li>
+<li>Max-Age
+<ul>
+<li>クッキーの寿命。現在時刻から指定された秒数を足した時間に無効化される。</li>
+</ul>
+</li>
+<li>Domain
+<ul>
+<li>クライアントからクッキーを送信するサーバ。</li>
+</ul>
+</li>
+<li>Path
+<ul>
+<li>クライアントからクッキーを送信するサーバのパス。</li>
+</ul>
+</li>
+<li>Secure
+<ul>
+<li>HTTPS以外の接続時には、クライアントからクッキーを送信しない。</li>
+</ul>
+</li>
+<li>HttpOnly
+<ul>
+<li>JavaScriptからクッキーにアクセスできなくなる。</li>
+</ul>
+</li>
+<li>SameSite
+<ul>
+<li>同じオリジンのドメインに対してクライアントからクッキーを送信。</li>
+<li>Strict : 異なるオリジンには送信しない。</li>
+<li>Lax : POSTメソッドによる遷移やリソース読み込み時には送信しない。</li>
+<li>None : 特に制約なく、異なるオリジンにも送信する。</li>
+</ul>
+</li>
+</ul>
+<h4 id="オリジン">オリジン</h4>
+<ul>
+<li>同一のオリジン（サイト）
+<ul>
+<li>スキーム、ドメイン（ホスト名）、ポートの3つが同じであること。</li>
+<li>ファイルパスは異なってもよい。</li>
+<li>ex. <a href="http://example.com">http://example.com</a> と <a href="http://www.example.com">http://www.example.com</a> は異なるオリジン。</li>
+</ul>
+</li>
+</ul>
+<h4 id="認証">認証</h4>
+<ul>
+<li>だれだテメー</li>
+</ul>
+<h4 id="認可">認可</h4>
+<ul>
+<li>なにしてんだテメー</li>
+</ul>
+<h5 id="basic認証">BASIC認証</h5>
+<ul>
+<li><code>base64({ユーザ名}:{パスワード})</code></li>
+<li>SSL/TSL通信でないと簡単に漏洩する。</li>
+</ul>
+<h5 id="digest認証">Digest認証</h5>
+<ul>
+<li>realm, nonce, algorithm, qopとかのアレ。</li>
+<li>計算量多い。</li>
+</ul>
+<h5 id="クッキーを使ったセッション管理">クッキーを使ったセッション管理</h5>
+<ul>
+<li>現在最もポピュラー。</li>
+<li>クライアントはフォームでIDとパスワードを送信。
+<ul>
+<li>平文なのでSSL/TLS必須。</li>
+</ul>
+</li>
+<li>サーバはセッショントークンを発行。トークンをDBなどに保存。</li>
+<li>トークンをクッキーとしてクライアントに返す。</li>
+<li>2度目以降のアクセスからはクッキーを再送させ、ログイン済みか確認。</li>
+</ul>
+<h4 id="プロキシ">プロキシ</h4>
+<ul>
+<li>HTTPなどの通信を中継。</li>
+<li>必要に応じてコンテンツを改変したり、サーバの代わりに応答する。</li>
+<li>リクエストの開始行
+<ul>
+<li>通常 : <code>{メソッド名} {パス形式}</code></li>
+<li>プロキシを設定 : <code>{メソッド名} {URL形式}</code></li>
+</ul>
+</li>
+<li><code>X-Forwarded-For</code>, <code>Forwarded</code>リクエストヘッダー
+<ul>
+<li>送信元IPアドレスの履歴</li>
+<li><code>X-Forwarded-For: {client}, {proxy1}, {proxy2}</code></li>
+</ul>
+</li>
+</ul>
+<h4 id="ゲートウェイ">ゲートウェイ</h4>
+<ul>
+<li>通信内容はそのまま転送する。</li>
+<li>クライアントからはその存在に気づかれてはならない。</li>
+</ul>
+<h4 id="キャッシュ">キャッシュ</h4>
+<ul>
+<li>クライアント側にすでにダウンロード済みで内容に変化がないコンテンツの、余計なダウンロードを抑制。</li>
+<li>ブラウザ、プロキシ、CDNなどで保存される。</li>
+</ul>
+<h5 id="更新日時によるキャッシュ">更新日時によるキャッシュ</h5>
+<ul>
+<li>サーバ -&gt; クライアント
+<ul>
+<li><code>Last-Modified</code>ヘッダー</li>
+</ul>
+</li>
+<li>クライアント -&gt; サーバ
+<ul>
+<li><code>If-Modified-Since</code>ヘッダー</li>
+</ul>
+</li>
+<li>サーバ -&gt; クライアント
+<ul>
+<li>更新あり : 200 OK。更新後のコンテンツをボディに含める。</li>
+<li>更新なし : 304 Not Modified。ボディなし。</li>
+</ul>
+</li>
+</ul>
+<h5 id="expiresヘッダー"><code>Expires</code>ヘッダー</h5>
+<ul>
+<li>レスポンスのヘッダー。日時が格納される。</li>
+<li>現在日時がこの期限内であれば、クライアントは強制的にキャッシュを利用し、リクエストを送信しなくなる。</li>
+</ul>
+<h5 id="pragma-no-cache"><code>Pragma: no-cache</code></h5>
+<ul>
+<li>リクエストヘッダー。</li>
+<li>リクエストしたコンテンツがプロキシにキャッシュされていても、サーバにリクエストを送信させる。</li>
+<li>HTTP1.1で<code>Cache-Control</code>ヘッダーに統合。</li>
+</ul>
+<h5 id="確実にキャッシュしない条件">確実にキャッシュしない条件</h5>
+<ul>
+<li>GET, HEAD以外のメソッド。</li>
+<li><code>Cache-Control: private</code></li>
+<li><code>Cache-Control: no-store</code></li>
+<li><code>Authorization</code>ヘッダーはあるが、<code>Cache-Control</code>ヘッダーに<code>public</code>がない。</li>
+</ul>
+<h5 id="cache-controlヘッダー"><code>Cache-Control</code>ヘッダー</h5>
+<ul>
+<li>レスポンスヘッダー。<code>Expires</code>ヘッダーよりも優先される。</li>
+<li>あくまでリロードを抑制するためで、プライバシー保護には使えない。</li>
+<li>public
+<ul>
+<li>同一コンピュータの複数ユーザ間でキャッシュを再利用するのを許可。</li>
+</ul>
+</li>
+<li>private
+<ul>
+<li>同一コンピュータの別ユーザ間でキャッシュを再利用させない。</li>
+</ul>
+</li>
+<li>max-age={n}
+<ul>
+<li>キャッシュの鮮度を秒数で指定。</li>
+</ul>
+</li>
+<li>no-cache
+<ul>
+<li>キャッシュが有効かどうか毎回サーバに問い合わさせる。max-age=0とほぼ同じ。</li>
+</ul>
+</li>
+<li>no-store
+<ul>
+<li>キャッシュしない。</li>
+</ul>
+</li>
+<li>immutable
+<ul>
+<li>コンテンツが決して変化しないことを伝える。</li>
+</ul>
+</li>
+</ul>
+<h5 id="varyヘッダー"><code>Vary</code>ヘッダー</h5>
+<ul>
+<li>レスポンスヘッダー。</li>
+<li>同じURLでもクライアントによってレスポンスが異なることを示す。</li>
+<li>ex. <code>Vary: User-Agent, Accept_language</code></li>
+<li>キャッシュを間違えて使わせないようにする。</li>
+</ul>
+<h4 id="refererヘッダー"><code>Referer</code>ヘッダー</h4>
+<ul>
+<li>リクエストヘッダー。</li>
+<li>リンク先のサイトにリンク元のURLを知らせる。</li>
+<li>Webサービスの設計者は、プライバシー情報がGETパラメータとして表示されるような仕様を作成してはいけない。
+<ul>
+<li>Refererを通じて外部サービスに送信されるため。</li>
+</ul>
+</li>
+</ul>
+<h4 id="検索エンジンクローラー向けのコンテンツのアクセス制御">検索エンジン（クローラー）向けのコンテンツのアクセス制御</h4>
+<h5 id="robotstxt"><code>robots.txt</code></h5>
+<ul>
+<li>クローラーに対してアクセスの許可・不許可を伝えるプロトコル。</li>
+<li>HTMLのmetaタグや、HTTPの<code>X-Robots-Tag</code>でより細かい制御も可能。</li>
+<li>これらを無視するクローラーを作成して実行しちゃったら、裁判にかけられるかも。</li>
+</ul>
+<h5 id="サイトマップ">サイトマップ</h5>
+<ul>
+<li>サイトに含まれるページ一覧とそのメタデータを提供するxmlファイル。</li>
+<li>JSで作られた動的ページからのリンクにも対応。</li>
+</ul>
+<h4 id="ユーザーエージェント">ユーザーエージェント</h4>
+<ul>
+<li>通信を代行するプログラム。
+<ul>
+<li>ブラウザ、curl、HTTPクライアントライブラリなど。</li>
+</ul>
+</li>
+</ul>
+<h2 id="3章-go言語によるhttp10クライアントの実装">3章 Go言語によるHTTP/1.0クライアントの実装</h2>
+<h2 id="4章-http11のシンタックス--高速化と安全性を求めた拡張">4章 HTTP/1.1のシンタックス : 高速化と安全性を求めた拡張</h2>
+<h2 id="5章-http11のセマンティクス--広がるhttpの用途">5章 HTTP/1.1のセマンティクス : 広がるHTTPの用途</h2>
+<h2 id="6章-go言語によるhttp11クライアントの実装">6章 Go言語によるHTTP1.1クライアントの実装</h2>
+<h2 id="7章-http2-http3のシンタックス--プロトコルの再定義">7章 HTTP/2, HTTP/3のシンタックス : プロトコルの再定義</h2>
+<h2 id="8章-http2のセマンティクス--新しいユースケース">8章 HTTP/2のセマンティクス : 新しいユースケース</h2>
+<h2 id="9章-go言語によるhttp2-html-5のプロトコルの実装">9章 Go言語によるHTTP/2, HTML 5のプロトコルの実装</h2>
+<h2 id="10章-クライアント視点で見るrestful-api">10章 クライアント視点で見るRESTful API</h2>
+<h2 id="11章-javascriptによるブラウザからの動的なhttpリクエスト">11章 JavaScriptによるブラウザからの動的なHTTPリクエスト</h2>
+<h2 id="12章-ウェブアプリケーションの基礎">12章 ウェブアプリケーションの基礎</h2>
+<h2 id="13章-クラウド時代のhttp--ウェブを強くするさまざまな技術">13章 クラウド時代のHTTP : ウェブを強くするさまざまな技術</h2>
+<h2 id="14章-セキュリティ--ブラウザを守るhttpの機能">14章 セキュリティ : ブラウザを守るHTTPの機能</h2>
+        </div>
+    </article>
+</main>
+
+
+
+
+
+
+<nav class="pager flex">
+	<div class="pager__item pager__item--prev">
+		<a class="pager__link" href="http://localhost:1313/shit-blog/post/2023/01/31_escape-from-freedom/" rel="prev">
+			<span class="pager__subtitle">«&thinsp;Previous</span>
+			<p class="pager__title">『自由からの逃走』 読書メモ</p>
+		</a>
+	</div>
+	<div class="pager__item pager__item--next">
+		<a class="pager__link" href="http://localhost:1313/shit-blog/post/2023/03/10_digital-minimalist/" rel="next">
+			<span class="pager__subtitle">Next&thinsp;»</span>
+			<p class="pager__title">『デジタル・ミニマリスト』雑なメモ</p>
+		</a>
+	</div>
+</nav>
+
+
+<script src="https://utteranc.es/client.js" repo="guricerin/shit-blog" issue-term="pathname" label="[By Utterances]"
+    theme="github-light" crossorigin="anonymous" async>
+    </script>
+
+
+      </div>
+      <aside class="sidebar">
+<div class="widget-recent widget">
+	<h4 class="widget__title">Recent Posts</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="http://localhost:1313/shit-blog/post/2026/03/29/workout/">ジムに行き始めて約5ヶ月</a></li>
+			<li class="widget__item"><a class="widget__link" href="http://localhost:1313/shit-blog/post/2025/06/29/philosophy-east/">『史上最強の哲学入門　東洋の哲人たち』読んだ</a></li>
+			<li class="widget__item"><a class="widget__link" href="http://localhost:1313/shit-blog/post/2025/06/29/philosophy-west/">『史上最強の哲学入門』読んだ</a></li>
+			<li class="widget__item"><a class="widget__link" href="http://localhost:1313/shit-blog/post/2025/05/16/poor-girl-piketty/">『高学歴貧困女子が読み解くピケティ』読んだ</a></li>
+			<li class="widget__item"><a class="widget__link" href="http://localhost:1313/shit-blog/post/2025/05/06/cant-read-books/">『なぜ働いていると本が読めなくなるのか』読んだ</a></li>
+		</ul>
+	</div>
+</div>
+<div class="widget-categories widget">
+	<h4 class="widget__title">Categories</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item">
+				<a class="widget__link" href="http://localhost:1313/shit-blog/categories/bz/">B&#39;z</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">40</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="http://localhost:1313/shit-blog/categories/bash/">Bash</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">2</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="http://localhost:1313/shit-blog/categories/csharp/">CSharp</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">1</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="http://localhost:1313/shit-blog/categories/fsharp/">FSharp</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">4</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="http://localhost:1313/shit-blog/categories/gcp/">GCP</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">1</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="http://localhost:1313/shit-blog/categories/github/">GitHub</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">1</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="http://localhost:1313/shit-blog/categories/go/">Go</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">2</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="http://localhost:1313/shit-blog/categories/it%E3%82%A4%E3%83%B3%E3%83%95%E3%83%A9/">ITインフラ</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">4</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="http://localhost:1313/shit-blog/categories/lisp/">Lisp</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">1</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="http://localhost:1313/shit-blog/categories/mint/">Mint</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">1</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="http://localhost:1313/shit-blog/categories/ruby/">Ruby</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">2</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="http://localhost:1313/shit-blog/categories/rust/">Rust</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">7</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="http://localhost:1313/shit-blog/categories/scheme/">Scheme</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">1</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="http://localhost:1313/shit-blog/categories/typescript/">TypeScript</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">1</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="http://localhost:1313/shit-blog/categories/windows/">Windows</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">2</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="http://localhost:1313/shit-blog/categories/%E3%82%AF%E3%82%BD%E3%83%96%E3%83%AD%E3%82%B0/">クソブログ</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">17</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="http://localhost:1313/shit-blog/categories/%E3%82%B2%E3%83%BC%E3%83%A0/">ゲーム</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">3</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="http://localhost:1313/shit-blog/categories/%E3%82%BB%E3%82%AD%E3%83%A5%E3%83%AA%E3%83%86%E3%82%A3/">セキュリティ</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">1</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="http://localhost:1313/shit-blog/categories/%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF/">ネットワーク</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">9</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="http://localhost:1313/shit-blog/categories/%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0/">プログラミング</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">27</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="http://localhost:1313/shit-blog/categories/%E4%B8%83%E5%B0%BE%E9%A6%99/">七尾香</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">1</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="http://localhost:1313/shit-blog/categories/%E5%80%8B%E4%BA%BA%E3%83%A1%E3%83%A2/">個人メモ</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">9</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="http://localhost:1313/shit-blog/categories/%E5%87%8B%E5%8F%B6%E6%A3%95/">凋叶棕</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">4</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="http://localhost:1313/shit-blog/categories/%E5%AD%A6%E5%95%8F/">学問</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">4</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="http://localhost:1313/shit-blog/categories/%E5%B0%8F%E8%AA%AC/">小説</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">1</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="http://localhost:1313/shit-blog/categories/%E6%80%9D%E6%83%B3/">思想</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">2</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="http://localhost:1313/shit-blog/categories/%E6%83%85%E5%A0%B1%E3%82%BB%E3%82%AD%E3%83%A5%E3%83%AA%E3%83%86%E3%82%A3/">情報セキュリティ</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">19</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="http://localhost:1313/shit-blog/categories/%E6%95%B0%E5%AD%A6/">数学</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">2</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="http://localhost:1313/shit-blog/categories/%E6%9A%81records/">暁Records</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">1</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="http://localhost:1313/shit-blog/categories/%E6%9B%B8%E7%89%A9/">書物</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">39</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="http://localhost:1313/shit-blog/categories/%E6%9D%B1%E6%96%B9/">東方</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">6</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="http://localhost:1313/shit-blog/categories/%E6%BC%AB%E7%94%BB/">漫画</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">3</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="http://localhost:1313/shit-blog/categories/%E7%A5%9E%E6%9E%97%E9%95%B7%E5%B9%B3/">神林長平</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">2</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="http://localhost:1313/shit-blog/categories/%E7%AB%B6%E6%8A%80%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0/">競技プログラミング</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">25</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="http://localhost:1313/shit-blog/categories/%E9%9F%B3%E6%A5%BD/">音楽</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">43</span>
+				</li>
+		</ul>
+	</div>
+</div>
+<div class="widget-archives widget">
+    <h4 class="widget__title">ARCHIVES</h4>
+    <div class="widget__content">
+        <ul>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2026-02">2026-02 (1)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2025-06">2025-06 (2)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2025-05">2025-05 (2)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2025-01">2025-01 (1)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2024-12">2024-12 (2)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2024-11">2024-11 (1)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2024-10">2024-10 (1)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2024-09">2024-09 (1)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2024-02">2024-02 (2)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2024-01">2024-01 (3)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2023-12">2023-12 (1)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2023-11">2023-11 (2)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2023-10">2023-10 (5)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2023-07">2023-07 (1)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2023-06">2023-06 (1)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2023-05">2023-05 (1)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2023-03">2023-03 (1)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2023-02">2023-02 (1)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2023-01">2023-01 (1)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2022-12">2022-12 (2)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2022-10">2022-10 (1)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2022-09">2022-09 (1)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2022-07">2022-07 (2)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2022-04">2022-04 (1)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2022-03">2022-03 (4)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2022-02">2022-02 (1)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2021-12">2021-12 (3)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2021-11">2021-11 (7)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2021-10">2021-10 (2)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2021-09">2021-09 (7)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2021-07">2021-07 (1)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2021-06">2021-06 (3)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2021-01">2021-01 (1)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2020-11">2020-11 (4)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2020-10">2020-10 (1)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2020-09">2020-09 (21)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2020-08">2020-08 (2)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2020-05">2020-05 (1)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2020-03">2020-03 (2)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2020-02">2020-02 (1)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2019-12">2019-12 (1)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2019-08">2019-08 (1)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2019-03">2019-03 (19)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2019-02">2019-02 (5)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2019-01">2019-01 (3)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2018-12">2018-12 (2)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2018-11">2018-11 (1)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2018-09">2018-09 (1)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2018-06">2018-06 (1)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2018-05">2018-05 (1)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2018-02">2018-02 (1)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2018-01">2018-01 (4)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2017-12">2017-12 (3)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2017-11">2017-11 (12)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2017-10">2017-10 (17)</a></li>
+            
+        </ul>
+    </div>
+</div>
+
+<div class="widget-social widget">
+	<h4 class="widget-social__title widget__title">Social</h4>
+	<div class="widget-social__content widget__content">
+		<div class="widget-social__item widget__item">
+			<a class="widget-social__link widget__link btn" title="GitHub" rel="noopener noreferrer" href="https://github.com/guricerin" target="_blank">
+				<svg class="widget-social__link-icon icon icon-github" width="24" height="24" viewBox="0 0 384 374"><path d="m192 0c-106.1 0-192 85.8-192 191.7 0 84.7 55 156.6 131.3 181.9 9.6 1.8 13.1-4.2 13.1-9.2 0-4.6-.2-16.6-.3-32.6-53.4 11.6-64.7-25.7-64.7-25.7-8.7-22.1-21.3-28-21.3-28-17.4-11.9 1.3-11.6 1.3-11.6 19.3 1.4 29.4 19.8 29.4 19.8 17.1 29.3 44.9 20.8 55.9 15.9 1.7-12.4 6.7-20.8 12.2-25.6-42.6-4.8-87.5-21.3-87.5-94.8 0-20.9 7.5-38 19.8-51.4-2-4.9-8.6-24.3 1.9-50.7 0 0 16.1-5.2 52.8 19.7 15.3-4.2 31.7-6.4 48.1-6.5 16.3.1 32.7 2.2 48.1 6.5 36.7-24.8 52.8-19.7 52.8-19.7 10.5 26.4 3.9 45.9 1.9 50.7 12.3 13.4 19.7 30.5 19.7 51.4 0 73.7-44.9 89.9-87.7 94.6 6.9 5.9 13 17.6 13 35.5 0 25.6-.2 46.3-.2 52.6 0 5.1 3.5 11.1 13.2 9.2 76.2-25.5 131.2-97.3 131.2-182 0-105.9-86-191.7-192-191.7z"/></svg>
+				<span>GitHub</span>
+			</a>
+		</div>
+
+		
+	</div>
+</div>
+</aside>
+
+    </div>
+    <footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2026 guricerin.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+</footer>
+  </div>
+  <script async defer src="http://localhost:1313/shit-blog/%20js/menu.js"></script>
+  <script src="http://localhost:1313/shit-blog/js/custom.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js?config=TeX-AMS-MML_HTMLorMML" async></script>
+</body>
+
+</html>

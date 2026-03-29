@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>2023-02 on グリのクソブログ</title>
+    <link>http://localhost:1313/shit-blog/archives/2023-02/</link>
+    <description>Recent content in 2023-02 on グリのクソブログ</description>
+    <generator>Hugo</generator>
+    <language>ja</language>
+    <lastBuildDate>Sun, 12 Feb 2023 05:21:12 +0900</lastBuildDate>
+    <atom:link href="http://localhost:1313/shit-blog/archives/2023-02/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>『Real World HTTP 第2版』 読んだ</title>
+      <link>http://localhost:1313/shit-blog/post/2023/03/31_real-world-http/</link>
+      <pubDate>Sun, 12 Feb 2023 05:21:12 +0900</pubDate>
+      <guid>http://localhost:1313/shit-blog/post/2023/03/31_real-world-http/</guid>
+      <description>&lt;p&gt;普段の業務でフロントエンドとバックエンドの両方を書いており、HTTPをわかったつもりになってしまっているので購入。&lt;br&gt;&#xA;ちょくちょく&lt;a href=&#34;https://developer.mozilla.org/ja/&#34;&gt;MDN&lt;/a&gt;も参照しながら読んだ。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>2023-03 on グリのクソブログ</title>
+    <link>http://localhost:1313/shit-blog/archives/2023-03/</link>
+    <description>Recent content in 2023-03 on グリのクソブログ</description>
+    <generator>Hugo</generator>
+    <language>ja</language>
+    <lastBuildDate>Fri, 03 Mar 2023 00:24:22 +0900</lastBuildDate>
+    <atom:link href="http://localhost:1313/shit-blog/archives/2023-03/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>『デジタル・ミニマリスト』雑なメモ</title>
+      <link>http://localhost:1313/shit-blog/post/2023/03/10_digital-minimalist/</link>
+      <pubDate>Fri, 03 Mar 2023 00:24:22 +0900</pubDate>
+      <guid>http://localhost:1313/shit-blog/post/2023/03/10_digital-minimalist/</guid>
+      <description></description>
+    </item>
+  </channel>
+</rss>

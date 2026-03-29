@@ -4,7 +4,7 @@
     <title>情報セキュリティ on グリのクソブログ</title>
     <link>https://guricerin.github.io/shit-blog/categories/%E6%83%85%E5%A0%B1%E3%82%BB%E3%82%AD%E3%83%A5%E3%83%AA%E3%83%86%E3%82%A3/</link>
     <description>Recent content in 情報セキュリティ on グリのクソブログ</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>ja</language>
     <lastBuildDate>Sun, 05 Dec 2021 16:10:50 +0900</lastBuildDate>
     <atom:link href="https://guricerin.github.io/shit-blog/categories/%E6%83%85%E5%A0%B1%E3%82%BB%E3%82%AD%E3%83%A5%E3%83%AA%E3%83%86%E3%82%A3/feed.xml" rel="self" type="application/rss+xml" />
@@ -97,14 +97,14 @@
       <link>https://guricerin.github.io/shit-blog/post/2020/09/16-cia-triad/</link>
       <pubDate>Wed, 16 Sep 2020 18:16:30 +0900</pubDate>
       <guid>https://guricerin.github.io/shit-blog/post/2020/09/16-cia-triad/</guid>
-      <description>情報セキュリティを構成する三要素についての座学。演習問題は、基本情報の試験に出てきそうなマークシート形式。&#xA;これもとくにメモしておくようなことはない。</description>
+      <description>&lt;p&gt;情報セキュリティを構成する三要素についての座学。演習問題は、基本情報の試験に出てきそうなマークシート形式。&lt;br&gt;&#xA;これもとくにメモしておくようなことはない。&lt;/p&gt;</description>
     </item>
     <item>
       <title>WebGoat-3: Developer Tools</title>
       <link>https://guricerin.github.io/shit-blog/post/2020/09/16-webgoat-dev-tools/</link>
       <pubDate>Wed, 16 Sep 2020 18:15:30 +0900</pubDate>
       <guid>https://guricerin.github.io/shit-blog/post/2020/09/16-webgoat-dev-tools/</guid>
-      <description>Chromeのデベロッパー・ツールの使い方を学ぶ回。&#xA;コンソールからWebGoatのAPIを呼び出したり、POSTメソッドのリクエスト・ボディに格納されている値を取得してテキストボックスに打ち込む問題。&#xA;とても簡単なので、これ以上書くことがない。</description>
+      <description>&lt;p&gt;Chromeのデベロッパー・ツールの使い方を学ぶ回。&lt;br&gt;&#xA;コンソールからWebGoatのAPIを呼び出したり、POSTメソッドのリクエスト・ボディに格納されている値を取得してテキストボックスに打ち込む問題。&lt;br&gt;&#xA;とても簡単なので、これ以上書くことがない。&lt;/p&gt;</description>
     </item>
     <item>
       <title>WebGoat-2: HTTP Proxies</title>

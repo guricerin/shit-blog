@@ -4,10 +4,17 @@
     <title>グリのクソブログ</title>
     <link>https://guricerin.github.io/shit-blog/</link>
     <description>Recent content on グリのクソブログ</description>
-    <generator>Hugo -- gohugo.io</generator>
+    <generator>Hugo</generator>
     <language>ja</language>
-    <lastBuildDate>Sun, 29 Jun 2025 02:39:44 +0900</lastBuildDate>
+    <lastBuildDate>Sun, 29 Mar 2026 02:46:40 +0900</lastBuildDate>
     <atom:link href="https://guricerin.github.io/shit-blog/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>ジムに行き始めて約5ヶ月</title>
+      <link>https://guricerin.github.io/shit-blog/post/2026/03/29/workout/</link>
+      <pubDate>Sun, 29 Mar 2026 02:46:40 +0900</pubDate>
+      <guid>https://guricerin.github.io/shit-blog/post/2026/03/29/workout/</guid>
+      <description>&lt;p&gt;30歳を超えてから明らかに身体がポンコツになっている。&lt;/p&gt;</description>
+    </item>
     <item>
       <title>『史上最強の哲学入門　東洋の哲人たち』読んだ</title>
       <link>https://guricerin.github.io/shit-blog/post/2025/06/29/philosophy-east/</link>
@@ -181,7 +188,7 @@
       <link>https://guricerin.github.io/shit-blog/post/2022/03/24-grumbler/</link>
       <pubDate>Thu, 24 Mar 2022 00:11:35 +0900</pubDate>
       <guid>https://guricerin.github.io/shit-blog/post/2022/03/24-grumbler/</guid>
-      <description>&lt;p&gt;以前 &lt;a href=&#34;https://twitter.com/chokudai&#34;&gt;@chokudai&lt;/a&gt; 氏が以下のことをつぶやいていた。&lt;/p&gt;</description>
+      <description>&lt;p&gt;以前 &lt;a href=&#34;https://twitter.com/chokudai&#34;&gt;@chokudai&lt;/a&gt; 氏がつぶやいていたことに触発された。&lt;/p&gt;</description>
     </item>
     <item>
       <title>自動キーワードリンク機能付きのメモアプリを作った</title>
@@ -426,14 +433,14 @@
       <link>https://guricerin.github.io/shit-blog/post/2020/09/16-cia-triad/</link>
       <pubDate>Wed, 16 Sep 2020 18:16:30 +0900</pubDate>
       <guid>https://guricerin.github.io/shit-blog/post/2020/09/16-cia-triad/</guid>
-      <description>情報セキュリティを構成する三要素についての座学。演習問題は、基本情報の試験に出てきそうなマークシート形式。&#xA;これもとくにメモしておくようなことはない。</description>
+      <description>&lt;p&gt;情報セキュリティを構成する三要素についての座学。演習問題は、基本情報の試験に出てきそうなマークシート形式。&lt;br&gt;&#xA;これもとくにメモしておくようなことはない。&lt;/p&gt;</description>
     </item>
     <item>
       <title>WebGoat-3: Developer Tools</title>
       <link>https://guricerin.github.io/shit-blog/post/2020/09/16-webgoat-dev-tools/</link>
       <pubDate>Wed, 16 Sep 2020 18:15:30 +0900</pubDate>
       <guid>https://guricerin.github.io/shit-blog/post/2020/09/16-webgoat-dev-tools/</guid>
-      <description>Chromeのデベロッパー・ツールの使い方を学ぶ回。&#xA;コンソールからWebGoatのAPIを呼び出したり、POSTメソッドのリクエスト・ボディに格納されている値を取得してテキストボックスに打ち込む問題。&#xA;とても簡単なので、これ以上書くことがない。</description>
+      <description>&lt;p&gt;Chromeのデベロッパー・ツールの使い方を学ぶ回。&lt;br&gt;&#xA;コンソールからWebGoatのAPIを呼び出したり、POSTメソッドのリクエスト・ボディに格納されている値を取得してテキストボックスに打ち込む問題。&lt;br&gt;&#xA;とても簡単なので、これ以上書くことがない。&lt;/p&gt;</description>
     </item>
     <item>
       <title>WebGoat-2: HTTP Proxies</title>
@@ -1035,7 +1042,7 @@
       <link>https://guricerin.github.io/shit-blog/privacy-policy/</link>
       <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
       <guid>https://guricerin.github.io/shit-blog/privacy-policy/</guid>
-      <description>アクセス解析ツールについて 当サイトでは、アクセス解析ツール「Google Analytics」を利用しています。「Google Analytics」はトラフィックデータの収集のためにCookieを使用しています。このトラフィックデータは匿名で収集されており、個人を特定するものではありません。&#xA;Googleアナリティクスのデータ収集、処理の仕組みについては、「ユーザーがGoogleパートナーのサイトやアプリを使用する際のGoogleによるデータ使用」のページを参照してください。&#xA;この機能はCookieを無効にすることで収集を拒否することができますので、ご利用のブラウザ設定をご確認のうえ、拒否設定を行ってください。ブラウザ用の Google Analyticsオプトアウトアドオンの利用についてはこちらを参照してください。</description>
+      <description>&lt;h3 id=&#34;アクセス解析ツールについて&#34;&gt;アクセス解析ツールについて&lt;/h3&gt;&#xA;&lt;p&gt;当サイトでは、アクセス解析ツール「Google Analytics」を利用しています。「Google Analytics」はトラフィックデータの収集のためにCookieを使用しています。このトラフィックデータは匿名で収集されており、個人を特定するものではありません。&lt;/p&gt;&#xA;&lt;p&gt;Googleアナリティクスのデータ収集、処理の仕組みについては、&lt;a href=&#34;https://policies.google.com/technologies/partner-sites?hl=ja&#34;&gt;「ユーザーがGoogleパートナーのサイトやアプリを使用する際のGoogleによるデータ使用」のページ&lt;/a&gt;を参照してください。&lt;/p&gt;&#xA;&lt;p&gt;この機能はCookieを無効にすることで収集を拒否することができますので、ご利用のブラウザ設定をご確認のうえ、拒否設定を行ってください。ブラウザ用の Google Analyticsオプトアウトアドオンの利用については&lt;a href=&#34;https://tools.google.com/dlpage/gaoptout/&#34;&gt;こちら&lt;/a&gt;を参照してください。&lt;/p&gt;</description>
     </item>
   </channel>
 </rss>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>2023-01 on グリのクソブログ</title>
+    <link>http://localhost:1313/shit-blog/archives/2023-01/</link>
+    <description>Recent content in 2023-01 on グリのクソブログ</description>
+    <generator>Hugo</generator>
+    <language>ja</language>
+    <lastBuildDate>Tue, 10 Jan 2023 14:24:44 +0900</lastBuildDate>
+    <atom:link href="http://localhost:1313/shit-blog/archives/2023-01/feed.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>『自由からの逃走』 読書メモ</title>
+      <link>http://localhost:1313/shit-blog/post/2023/01/31_escape-from-freedom/</link>
+      <pubDate>Tue, 10 Jan 2023 14:24:44 +0900</pubDate>
+      <guid>http://localhost:1313/shit-blog/post/2023/01/31_escape-from-freedom/</guid>
+      <description>&lt;p&gt;大学生時代に教授から「とっとと読め」と言われていたものを今更読んだ。&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

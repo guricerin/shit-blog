@@ -1,0 +1,746 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en">
+
+<head><script src="/shit-blog/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=shit-blog/livereload" data-no-instant defer></script>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>『Kubernetesで実践するクラウドネイティブDevOps』 読んだ - グリのクソブログ</title>
+  <script>(function (d, e) { d[e] = d[e].replace("no-js", "js"); })(document.documentElement, "className");</script>
+  <meta name="description"
+    content="">
+  <meta property="og:url" content="http://localhost:1313/shit-blog/post/2023/11/30/kube-cloud-native-devops/">
+  <meta property="og:site_name" content="グリのクソブログ">
+  <meta property="og:title" content="『Kubernetesで実践するクラウドネイティブDevOps』 読んだ">
+  <meta property="og:description" content="読んだ理由 : DevOpsの思想と実践方法を身につけたい。あといい加減Kubernetesと友達になりたい。
+オライリーのページ : https://www.oreilly.co.jp/books/9784873119014/">
+  <meta property="og:locale" content="ja">
+  <meta property="og:type" content="article">
+    <meta property="article:section" content="post">
+    <meta property="article:published_time" content="2023-11-09T09:08:41+09:00">
+    <meta property="article:modified_time" content="2023-11-09T09:08:41+09:00">
+
+  
+  <meta itemprop="name" content="『Kubernetesで実践するクラウドネイティブDevOps』 読んだ">
+  <meta itemprop="description" content="読んだ理由 : DevOpsの思想と実践方法を身につけたい。あといい加減Kubernetesと友達になりたい。
+オライリーのページ : https://www.oreilly.co.jp/books/9784873119014/">
+  <meta itemprop="datePublished" content="2023-11-09T09:08:41+09:00">
+  <meta itemprop="dateModified" content="2023-11-09T09:08:41+09:00">
+  <meta itemprop="wordCount" content="765">
+  <meta itemprop="keywords" content="2023-11,ITインフラ,ネットワーク,書物">
+  
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="『Kubernetesで実践するクラウドネイティブDevOps』 読んだ">
+  <meta name="twitter:description" content="読んだ理由 : DevOpsの思想と実践方法を身につけたい。あといい加減Kubernetesと友達になりたい。
+オライリーのページ : https://www.oreilly.co.jp/books/9784873119014/">
+
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="dns-prefetch" href="//fonts.googleapis.com">
+  <link rel="dns-prefetch" href="//fonts.gstatic.com">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,400i,700" >
+
+  <link rel="stylesheet" href="http://localhost:1313/shit-blog/css/style.css">
+  <link rel="stylesheet" href="http://localhost:1313/shit-blog/css/custom.css">
+
+  <link rel="shortcut icon" href="http://localhost:1313/shit-blog/favicon.ico">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
+  <link rel="stylesheet" href="http://localhost:1313/shit-blog/css/share.css">
+</head>
+
+<body class="body">
+  <div class="container container--outer">
+    <header class="header">
+	<div class="container header__container">
+		
+	<div class="logo logo--mixed">
+		<a class="logo__link" href="http://localhost:1313/shit-blog/" title="グリのクソブログ" rel="home">
+			<div class="logo__item logo__imagebox">
+					<img class="logo__img" src="http://localhost:1313/shit-blog/img/icon.jpg">
+				</div><div class="logo__item logo__text">
+					<div class="logo__title">グリのクソブログ</div>
+					<div class="logo__tagline">主にB&#39;z</div>
+				</div>
+		</a>
+	</div>
+		
+<nav class="menu">
+	<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
+		<span class="menu__btn-title" tabindex="-1">Menu</span>
+	</button>
+	<ul class="menu__list">
+		<li class="menu__item">
+			<a class="menu__link" href="http://localhost:1313/shit-blog/">
+				
+				<span class="menu__text">HOME</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="http://localhost:1313/shit-blog/privacy-policy">
+				
+				<span class="menu__text">PRIVACY POLICY</span>
+				
+			</a>
+		</li>
+		<li class="menu__item">
+			<a class="menu__link" href="http://localhost:1313/shit-blog/feed.xml">
+				
+				<span class="menu__text">RSS</span>
+				
+			</a>
+		</li>
+	</ul>
+</nav>
+
+	</div>
+</header>
+    <div class="wrapper flex">
+      <div class="primary">
+        
+<main class="main" role="main">
+    <article class="post">
+        <header class="post__header">
+            <h1 class="post__title">『Kubernetesで実践するクラウドネイティブDevOps』 読んだ</h1>
+            <div class="post__meta meta">
+<div class="meta__item-datetime meta__item">
+	<svg class="meta__icon icon icon-time" width="16" height="14" viewBox="0 0 30 28"><path d="M15 0C7 0 1 6 1 14s6 14 14 14 14-6 14-14S23 0 15 0zm0 25C9 25 4 20 4 14S9 3 15 3s11 5 11 11-5 11-11 11zm1-18h-2v8.4l6.8 4.4L22 18l-6-3.8V7z"/></svg><time class="meta__text" datetime="2023-11-09T09:08:41&#43;09:00">2023-11-09</time></div><div class="meta__item-categories meta__item"><svg class="meta__icon icon icon-category" width="16" height="16" viewBox="0 0 16 16"><path d="m7 2l1 2h8v11h-16v-13z"/></svg><span class="meta__text"><a class="meta__link" href="http://localhost:1313/shit-blog/categories/it%E3%82%A4%E3%83%B3%E3%83%95%E3%83%A9/" rel="category">ITインフラ</a>, <a class="meta__link" href="http://localhost:1313/shit-blog/categories/%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF/" rel="category">ネットワーク</a>, <a class="meta__link" href="http://localhost:1313/shit-blog/categories/%E6%9B%B8%E7%89%A9/" rel="category">書物</a>
+	</span>
+</div></div>
+        </header>
+        <div class="content post__content clearfix">
+            <p>読んだ理由 : DevOpsの思想と実践方法を身につけたい。あといい加減Kubernetesと友達になりたい。</p>
+<p>オライリーのページ : <a href="https://www.oreilly.co.jp/books/9784873119014/">https://www.oreilly.co.jp/books/9784873119014/</a></p>
+<h2 id="1章-クラウドでの革命">1章 クラウドでの革命</h2>
+<p>クラウドコンピューティング、DevOps、Docker、Kubernetesの歴史的経緯を記述している。</p>
+<blockquote>
+<p>「システム」はもはや、自分のソフトウェアだけでは成り立ちません。自社開発のソフトウェアに加え、クラウドサービス、ネットワークリソース、ロードバランサ、監視、コンテンツ配信ネットワーク、ファイアウォール、DNS など幅広い要素で構成される上、これらすべてが緊密に相互接続され、相互に依存し合っています。ソフトウェアを書く者はシステム全体との関連性を理解しなければならず、システムを運用する者はソフトウェアが機能する仕組みや機能しない理由を理解しなければなりません</p>
+</blockquote>
+<p>こういう文章はプログラマなりたてのころから見ているが、Webアプリ開発業務に携わりだして身をもって実感するようになった。</p>
+<blockquote>
+<p>DevOps を導入するためには、ビジネスの文化を根本的に変革する必要があり、まずは経営幹部による戦略的なレベルから取り組みを始め、組織のあらゆる部分へと徐々に広めていくことが求められます。</p>
+</blockquote>
+<p>まじ？弊社ではどうなってるんだっけ&hellip;&hellip;。DevOpsの仕組み自体は存在するけど、文化面については考えたこともなかった。<br>
+てかサービス基盤チームがすごすぎて（アプリもゴリゴリに書ける）、インフラに関してはその人達に頼りっきりになっちまってる。頼り切りは言い過ぎかもしれんが、少なくともインフラ領域のスキルにおいて雲泥の差ではある。</p>
+<blockquote>
+<p>Kubernetes の将来は、主としてマネージドサービスの領域にこそあると考えられます。例えば仮想化は、かつては熱狂的に迎えられた最新テクノロジでしたが、現在では単にユーティリティとなっています。ほとんどのユーザが、vSphere や Hyper-V などの仮想化プラットフォームを独自に実行するのではなく、クラウドプロバイダから仮想マシンをレンタルしています。</p>
+</blockquote>
+<p>Azure Container Appsなどのように、その片鱗は現れてきている。</p>
+<blockquote>
+<p>CNCF 傘下の最も知名度が高いプロジェクトは Kubernetes そのものですが、CNCF では Prometheus、Envoy、Helm、Fluentd、gRPC をはじめとして、クラウドネイティブエコシステムにおける他の重要なコンポーネントも数多く生み出し、推進しています。</p>
+</blockquote>
+<p>知らなんだ。このうちPrometheusとEnvoyはお世話になってるのに。gPRCは触ったことないけど、JSONと違って型の不整合が起きにくそうで気になる。</p>
+<h2 id="2章-kubernetes最初の一歩">2章 Kubernetes最初の一歩</h2>
+<p>DockerとKubernetesのハンズオン。</p>
+<p>おれはWSL2 ubuntu22.04上にDocker Desktop for Windowsを使わないでdocker, k8s, minikubeを構築した（確かだいたい<a href="https://qiita.com/trtrbohz/items/f7357d44b2b3d08d9c24">この記事</a>みたいなことをやったはず）。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>minikube start
+</span></span><span style="display:flex;"><span><span style="color:#75715e"># kubectlでクラスタとやり取り可能になる</span>
+</span></span></code></pre></div><p>バージョン情報 :</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>❯ docker --version
+</span></span><span style="display:flex;"><span>Docker version 23.0.3, build 3e7cbfd
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>❯ minikube version
+</span></span><span style="display:flex;"><span>minikube version: v1.30.1
+</span></span><span style="display:flex;"><span>commit: 08896fd1dc362c097c925146c4a0d0dac715ace0
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>❯ kubectl version --short
+</span></span><span style="display:flex;"><span>Flag --short has been deprecated, and will be removed in the future. The --short output will become the default.
+</span></span><span style="display:flex;"><span>Client Version: v1.27.1
+</span></span><span style="display:flex;"><span>Kustomize Version: v5.0.1
+</span></span><span style="display:flex;"><span>Server Version: v1.26.3
+</span></span></code></pre></div><p>P.33の<code>kubectl port-forward</code>は以下で実行できた（<code>deploy/demo</code>じゃなくて単に<code>demo</code>でよい）。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>kubectl port-forward demo 9999:8888
+</span></span></code></pre></div><h2 id="3章-kubernetes環境の選択">3章 Kubernetes環境の選択</h2>
+<p>Kubernetes環境の構築はセルフホスティングで行うのかクラウドのマネージドサービスで行うのか。まあ当然マネージドサービスを使うべき（弊社はAKS）。</p>
+<blockquote>
+<p>Kubernetes が複数のサーバを接続して 1 つのクラスタとすることは言うまでもないと思いますが</p>
+</blockquote>
+<p>いやぁそれすら存じませんでした（あれ、今のおれにはこの本は時期尚早か？）。</p>
+<blockquote>
+<p>何もない状態からKubernetes を本番の設定で運用し始めるためには、エンジニアの給与で約 100 万ドルが必要になると推定（https://twitter.com/copyconstruct/status/1020880388464377856 ）しています（「それでも目的を達成できないかもしれません」）。技術部門の責任者が Kubernetes のセルフホスティングを検討する際には、この数字が 1 つの判断基準となるでしょう。</p>
+</blockquote>
+<p>セットアップで考慮すべき項目が大量に紹介されており、いくら金積んでもひとりじゃ無理ゲーなレベル。</p>
+<blockquote>
+<p>Netflix が提供している Chaos Monkey のような自動化された回復力テストツールは、時折ランダムにノードや Pod を強制終了したり、ネットワーク接続を切断してくれるため、こうした取り組みに役立ちます。</p>
+</blockquote>
+<p><a href="https://github.com/Netflix/chaosmonkey">そんなのあるのかよ</a>。こういう分散システムの対障害性をテストすることをカオスエンジニアリングというらしい。</p>
+<blockquote>
+<p>Kubernetes クラスタのセットアップと設定を支援するツールは数限りなく存在しており、そのほとんどが多かれ少なかれ、マウスによるクリック操作で、何の苦労もなく、すぐに使用できるソリューションであると謳っています。しかし残念ながら、著者らの見解では、こうしたツールの大半が解決するのは簡単な問題だけであり、難しい問題は無視するのが実情です。</p>
+</blockquote>
+<p>Kubernetesに限った話じゃねーけどな。</p>
+<blockquote>
+<p>EKS は他のクラスタインフラに加え、マスタノードにも課金します。そのため、クラスタの規模が同じ場合、Google や Microsoft のマネージド Kubernetes サービスより割高になります。</p>
+</blockquote>
+<p>へえ意外。</p>
+<blockquote>
+<p>「実行するソフトウェアを減らす」という哲学には 3 本の柱があり、いずれも時間をうまく使って競争相手に打ち勝つために役立ちます。</p>
+<ol>
+<li>標準のテクノロジを選ぶ</li>
+<li>差別化につながらない面倒な作業はアウトソーシングする</li>
+<li>長続きする競争優位性を生み出す
+―― Rich Archbold</li>
+</ol>
+</blockquote>
+<p>この哲学は知らなかったけど内容は完全同意。</p>
+<blockquote>
+<p>Kubernetes は標準プラットフォームであるため、例えば Google Kubernetes Engine で実行するために構築するアプリケーションやサービスは、他のいかなる認定 Kubernetes プロバイダのシステム上でも機能します。そもそも Kubernetes を使用すること自体が、ベンダロックインの回避に向けた大きな 1 歩となるのです。</p>
+</blockquote>
+<p>てことはKubernetesを習得しとけば、知らんクラウド使ってる企業への転職ハードルが低くなるな。</p>
+<h2 id="4章-kubernetesオブジェクトの基本操作">4章 Kubernetesオブジェクトの基本操作</h2>
+<p>DeploymentはReplicaSetを管理し、ReplicaSetはPodを管理し、Podは1つ以上のコンテナを管理するみたいな話。</p>
+<p>おれの環境だと<code>kubectl get deployments</code>がエラーになった。podは生きているみたいだが。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>❯ k get deployments
+</span></span><span style="display:flex;"><span>No resources found in default namespace.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>❯ k get pod
+</span></span><span style="display:flex;"><span>NAME                           READY   STATUS      RESTARTS      AGE
+</span></span><span style="display:flex;"><span>demo                           1/1     Running     <span style="color:#ae81ff">1</span> <span style="color:#f92672">(</span>74m ago<span style="color:#f92672">)</span>   21h
+</span></span><span style="display:flex;"><span>node-debugger-minikube-kr6t2   0/1     Completed   <span style="color:#ae81ff">0</span>             209d
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>❯ k describe deployments/demo
+</span></span><span style="display:flex;"><span>Error from server <span style="color:#f92672">(</span>NotFound<span style="color:#f92672">)</span>: deployments.apps <span style="color:#e6db74">&#34;demo&#34;</span> not found
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>❯ k describe pod/demo
+</span></span><span style="display:flex;"><span>Name:             demo
+</span></span><span style="display:flex;"><span>Namespace:        default
+</span></span><span style="display:flex;"><span>Priority:         <span style="color:#ae81ff">0</span>
+</span></span><span style="display:flex;"><span>Service Account:  default
+</span></span><span style="display:flex;"><span>Node:             minikube/192.168.49.2
+</span></span><span style="display:flex;"><span>Start Time:       Sat, <span style="color:#ae81ff">11</span> Nov <span style="color:#ae81ff">2023</span> 16:08:16 +0900
+</span></span><span style="display:flex;"><span>Labels:           app<span style="color:#f92672">=</span>demo
+</span></span><span style="display:flex;"><span>Annotations:      &lt;none&gt;
+</span></span><span style="display:flex;"><span>Status:           Running
+</span></span><span style="display:flex;"><span>IP:               10.244.0.28
+</span></span><span style="display:flex;"><span>IPs:
+</span></span><span style="display:flex;"><span>  IP:  10.244.0.28
+</span></span><span style="display:flex;"><span>Containers:
+</span></span><span style="display:flex;"><span>  demo:
+</span></span><span style="display:flex;"><span>    Container ID:   docker://ce199aaaf63f16f271eb0e988e9ba4dbdb06985d9de6f785bf9b2e458c71c142
+</span></span><span style="display:flex;"><span>    Image:          guri6cerin/myhello
+</span></span><span style="display:flex;"><span>    Image ID:       docker-pullable://guri6cerin/myhello@sha256:a394d03e1532dac62da40f270d904966981505c7accc69e34bc90efaffa8d4bc
+</span></span><span style="display:flex;"><span>    Port:           8888/TCP
+</span></span><span style="display:flex;"><span>    Host Port:      0/TCP
+</span></span><span style="display:flex;"><span>    State:          Running
+</span></span><span style="display:flex;"><span>      Started:      Sun, <span style="color:#ae81ff">12</span> Nov <span style="color:#ae81ff">2023</span> 12:09:59 +0900
+</span></span><span style="display:flex;"><span>    Last State:     Terminated
+</span></span><span style="display:flex;"><span>      Reason:       Error
+</span></span><span style="display:flex;"><span>      Exit Code:    <span style="color:#ae81ff">255</span>
+</span></span><span style="display:flex;"><span>      Started:      Sat, <span style="color:#ae81ff">11</span> Nov <span style="color:#ae81ff">2023</span> 16:08:22 +0900
+</span></span><span style="display:flex;"><span>      Finished:     Sun, <span style="color:#ae81ff">12</span> Nov <span style="color:#ae81ff">2023</span> 12:09:31 +0900
+</span></span><span style="display:flex;"><span>    Ready:          True
+</span></span><span style="display:flex;"><span>    Restart Count:  <span style="color:#ae81ff">1</span>
+</span></span><span style="display:flex;"><span>    Environment:    &lt;none&gt;
+</span></span><span style="display:flex;"><span>    Mounts:
+</span></span><span style="display:flex;"><span>      /var/run/secrets/kubernetes.io/serviceaccount from kube-api-access-m25br <span style="color:#f92672">(</span>ro<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>Conditions:
+</span></span><span style="display:flex;"><span>  Type              Status
+</span></span><span style="display:flex;"><span>  Initialized       True
+</span></span><span style="display:flex;"><span>  Ready             True
+</span></span><span style="display:flex;"><span>  ContainersReady   True
+</span></span><span style="display:flex;"><span>  PodScheduled      True
+</span></span><span style="display:flex;"><span>Volumes:
+</span></span><span style="display:flex;"><span>  kube-api-access-m25br:
+</span></span><span style="display:flex;"><span>    Type:                    Projected <span style="color:#f92672">(</span>a volume that contains injected data from multiple sources<span style="color:#f92672">)</span>
+</span></span><span style="display:flex;"><span>    TokenExpirationSeconds:  <span style="color:#ae81ff">3607</span>
+</span></span><span style="display:flex;"><span>    ConfigMapName:           kube-root-ca.crt
+</span></span><span style="display:flex;"><span>    ConfigMapOptional:       &lt;nil&gt;
+</span></span><span style="display:flex;"><span>    DownwardAPI:             true
+</span></span><span style="display:flex;"><span>QoS Class:                   BestEffort
+</span></span><span style="display:flex;"><span>Node-Selectors:              &lt;none&gt;
+</span></span><span style="display:flex;"><span>Tolerations:                 node.kubernetes.io/not-ready:NoExecute op<span style="color:#f92672">=</span>Exists <span style="color:#66d9ef">for</span> 300s
+</span></span><span style="display:flex;"><span>                             node.kubernetes.io/unreachable:NoExecute op<span style="color:#f92672">=</span>Exists <span style="color:#66d9ef">for</span> 300s
+</span></span><span style="display:flex;"><span>Events:                      &lt;none&gt;
+</span></span></code></pre></div><p>もしかして2章でdocker hubに登録させられたカスタムイメージ使ってるからか？<br>
+podを削除してみる。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>❯ k delete pod demo
+</span></span><span style="display:flex;"><span>pod <span style="color:#e6db74">&#34;demo&#34;</span> deleted
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>❯ k get pod
+</span></span><span style="display:flex;"><span>NAME                           READY   STATUS      RESTARTS   AGE
+</span></span><span style="display:flex;"><span>node-debugger-minikube-kr6t2   0/1     Completed   <span style="color:#ae81ff">0</span>          209d
+</span></span></code></pre></div><p>立ち上げ直し。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>❯ k run demo --image<span style="color:#f92672">=</span>cloudnatived/demo:hello --port<span style="color:#f92672">=</span><span style="color:#ae81ff">8888</span> --labels app<span style="color:#f92672">=</span>demo
+</span></span><span style="display:flex;"><span>pod/demo created
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>❯ k get deployments
+</span></span><span style="display:flex;"><span>No resources found in default namespace.
+</span></span></code></pre></div><p>関係なかったわ。まあええか。</p>
+<blockquote>
+<p>kubectl run コマンドは実際には Pod を直接作成したわけではなく、その代わりに Deployment を作成しました。これを受けて、Deployment が Pod を起動したのです。</p>
+</blockquote>
+<p>help見る限りだと<code>kubectl run</code>は直接podを生成してるように思える。上のほうでdeleteしても復活しなかったし。よくわからんが、仕様が変わったのかもしれない。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>❯ k run --help
+</span></span><span style="display:flex;"><span>Create and run a particular image in a pod.
+</span></span><span style="display:flex;"><span>...
+</span></span></code></pre></div><blockquote>
+<p>ユーザが Deployment を更新する際には、新しい ReplicaSet が作成されて新しい Pod を管理し、更新が完了した時点で、古い ReplicaSet とその Pod は終了されます。</p>
+</blockquote>
+<p>こういう仕組みでServerStarterみたいなことをやってくれるわけか。</p>
+<blockquote>
+<p>スケジューラの仕事は、スケジューリングされていない Pod のキューを監視し、そこから次のPod を取り出して、実行場所となるノードを見つけることです。</p>
+</blockquote>
+<p>そういえばノードのことまだ理解できてない。</p>
+<blockquote>
+<p>Service は Web プロキシやロードバランサのようなものと考えることができ、バックエンドである Pod のグループにリクエストを転送します（図4-2）。とはいえ、これは Web ポートに限定されません。Service では、スペックの ports 部分で定義される詳細にしたがって、任意のポートから他の任意のポートへトラフィックを転送できます。</p>
+</blockquote>
+<p>前から思ってたが、Service以外にもっとましな名称あっただろ。</p>
+<blockquote>
+<p>宣言的な YAML マニフェストを使用してアプリケーションを Kubernetes クラスタにデプロイする方法については、これで必要なことをすべて説明しました。しかし、こうしたファイルには多くの繰り返しがあります。例えば、名前の demo、Label セレクタの app: demo、ポートの 8888 は何度も出現します。</p>
+</blockquote>
+<p>こうしたボイラープレートを排除するためにhelmの出番とのこと。<br>
+helmはバージョン2を使えと書かれており、バージョン管理が面倒なので<a href="https://asdf-vm.com/">asdf</a>を導入。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>brew install asdf
+</span></span><span style="display:flex;"><span>echo -e <span style="color:#e6db74">&#34;\n. </span><span style="color:#66d9ef">$(</span>brew --prefix asdf<span style="color:#66d9ef">)</span><span style="color:#e6db74">/libexec/asdf.sh&#34;</span> &gt;&gt; <span style="color:#e6db74">${</span>ZDOTDIR<span style="color:#66d9ef">:-</span>~<span style="color:#e6db74">}</span>/.zshrc
+</span></span><span style="display:flex;"><span>source ~/.zshrc
+</span></span></code></pre></div><p>ちゃんとhelmあるな。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>❯ asdf plugin list all | grep <span style="color:#e6db74">&#39;helm&#39;</span>
+</span></span><span style="display:flex;"><span>helm                          https://github.com/Antiarchitect/asdf-helm.git
+</span></span><span style="display:flex;"><span>helm-cr                       https://github.com/Antiarchitect/asdf-helm-cr.git
+</span></span><span style="display:flex;"><span>helm-ct                       https://github.com/tablexi/asdf-helm-ct.git
+</span></span><span style="display:flex;"><span>helm-diff                     https://github.com/dex4er/asdf-helm-diff.git
+</span></span><span style="display:flex;"><span>helm-docs                     https://github.com/sudermanjr/asdf-helm-docs.git
+</span></span><span style="display:flex;"><span>helmfile                      https://github.com/feniix/asdf-helmfile.git
+</span></span><span style="display:flex;"><span>helmsman                      https://github.com/luisdavim/asdf-helmsman
+</span></span></code></pre></div><p>helmプラグインを追加。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>asdf plugin add helm
+</span></span></code></pre></div><p>インストール可能なバージョンを調べる。いっぱい出てきた。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>❯ asdf list all helm
+</span></span><span style="display:flex;"><span>2.15.1
+</span></span><span style="display:flex;"><span>2.15.2
+</span></span><span style="display:flex;"><span>...
+</span></span><span style="display:flex;"><span>2.17.0-rc.1
+</span></span><span style="display:flex;"><span>2.17.0
+</span></span><span style="display:flex;"><span>3.0.0
+</span></span><span style="display:flex;"><span>...
+</span></span><span style="display:flex;"><span>3.13.0-rc.1
+</span></span><span style="display:flex;"><span>3.13.0
+</span></span><span style="display:flex;"><span>3.13.1
+</span></span><span style="display:flex;"><span>3.13.2
+</span></span></code></pre></div><p>2系の最新版をインストール。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>❯ asdf install helm 2.17.0
+</span></span><span style="display:flex;"><span>Downloading helm from https://get.helm.sh/helm-v2.17.0-linux-amd64.tar.gz to /tmp/helm_93BIJb/helm-v2.17.0-linux-amd64.tar.gz
+</span></span><span style="display:flex;"><span>  % Total    % Received % Xferd  Average Speed   Time    Time     Time  Current
+</span></span><span style="display:flex;"><span>                                 Dload  Upload   Total   Spent    Left  Speed
+</span></span><span style="display:flex;"><span><span style="color:#ae81ff">100</span> 23.9M  <span style="color:#ae81ff">100</span> 23.9M    <span style="color:#ae81ff">0</span>     <span style="color:#ae81ff">0</span>  16.8M      <span style="color:#ae81ff">0</span>  0:00:01  0:00:01 --:--:-- 16.8M
+</span></span><span style="display:flex;"><span>Creating bin directory
+</span></span><span style="display:flex;"><span>Cleaning previous binaries
+</span></span><span style="display:flex;"><span>Copying binary
+</span></span></code></pre></div><p>pwdで使用するツールのバージョンを固定。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>asdf local helm 2.17.0
+</span></span></code></pre></div><p>動作確認。helmは動くが、<code>tiller</code>というのがないらしい。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>❯ helm version
+</span></span><span style="display:flex;"><span>Client: &amp;version.Version<span style="color:#f92672">{</span>SemVer:<span style="color:#e6db74">&#34;v2.17.0&#34;</span>, GitCommit:<span style="color:#e6db74">&#34;a690bad98af45b015bd3da1a41f6218b1a451dbe&#34;</span>, GitTreeState:<span style="color:#e6db74">&#34;clean&#34;</span><span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>Error: could not find tiller
+</span></span></code></pre></div><p>おれがいま使ってるk8sだと<a href="https://stackoverflow.com/a/58101218">helmのバージョンと噛み合わない</a>らしいので、k8sをダウングレードさせる。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>minikube delete
+</span></span><span style="display:flex;"><span>minikube start --kubernetes-version 1.16.0
+</span></span></code></pre></div><p>うまくいったぜ。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>❯ k apply -f helm-auth.yaml
+</span></span><span style="display:flex;"><span>serviceaccount/tiller created
+</span></span><span style="display:flex;"><span>clusterrolebinding.rbac.authorization.k8s.io/tiller created
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>❯ helm init --service-account tiller
+</span></span><span style="display:flex;"><span>Creating /home/guri/.helm
+</span></span><span style="display:flex;"><span>Creating /home/guri/.helm/repository
+</span></span><span style="display:flex;"><span>Creating /home/guri/.helm/repository/cache
+</span></span><span style="display:flex;"><span>Creating /home/guri/.helm/repository/local
+</span></span><span style="display:flex;"><span>Creating /home/guri/.helm/plugins
+</span></span><span style="display:flex;"><span>Creating /home/guri/.helm/starters
+</span></span><span style="display:flex;"><span>Creating /home/guri/.helm/cache/archive
+</span></span><span style="display:flex;"><span>Creating /home/guri/.helm/repository/repositories.yaml
+</span></span><span style="display:flex;"><span>Adding stable repo with URL: https://charts.helm.sh/stable
+</span></span><span style="display:flex;"><span>Adding local repo with URL: http://127.0.0.1:8879/charts
+</span></span><span style="display:flex;"><span>$HELM_HOME has been configured at /home/guri/.helm.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Tiller <span style="color:#f92672">(</span>the Helm server-side component<span style="color:#f92672">)</span> has been installed into your Kubernetes Cluster.
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>Please note: by default, Tiller is deployed with an insecure <span style="color:#e6db74">&#39;allow unauthenticated users&#39;</span> policy.
+</span></span><span style="display:flex;"><span>To prevent this, run <span style="color:#e6db74">`</span>helm init<span style="color:#e6db74">`</span> with the --tiller-tls-verify flag.
+</span></span><span style="display:flex;"><span>For more information on securing your installation see: https://v2.helm.sh/docs/securing_installation/
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span>❯ helm version
+</span></span><span style="display:flex;"><span>Client: &amp;version.Version<span style="color:#f92672">{</span>SemVer:<span style="color:#e6db74">&#34;v2.17.0&#34;</span>, GitCommit:<span style="color:#e6db74">&#34;a690bad98af45b015bd3da1a41f6218b1a451dbe&#34;</span>, GitTreeState:<span style="color:#e6db74">&#34;clean&#34;</span><span style="color:#f92672">}</span>
+</span></span><span style="display:flex;"><span>Server: &amp;version.Version<span style="color:#f92672">{</span>SemVer:<span style="color:#e6db74">&#34;v2.17.0&#34;</span>, GitCommit:<span style="color:#e6db74">&#34;a690bad98af45b015bd3da1a41f6218b1a451dbe&#34;</span>, GitTreeState:<span style="color:#e6db74">&#34;clean&#34;</span><span style="color:#f92672">}</span>
+</span></span></code></pre></div><p>あとかたづけ。</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-sh" data-lang="sh"><span style="display:flex;"><span>helm delete demo
+</span></span></code></pre></div><h1 id="5章-リソースの管理">5章 リソースの管理</h1>
+<blockquote>
+<p>十分なリソース量を確保できるノードが存在しない場合、条件に合致するノードを利用できるようになるまで、Pod は pending（待機）状態のままとなります。</p>
+</blockquote>
+<p>おれみたいなアホがハマりそうなトラブルだ。</p>
+<p><code>spec.containers.resources.requests</code>がリソースの下限、<code>spec.containers.resources.limits</code>が上限と考えていいのかな。</p>
+<blockquote>
+<p>ヘルスチェックに関する特定のエンドポイントがアプリケーションに用意されていない場合には、/または任意の有効な URL をアプリケーション用に使用できます。とはいえ、この目的のためには/healthz というエンドポイントを作成するのが一般的な慣行となっています（最後に z を付けるのは、例えば健康情報に関するページなど、health がよく使われる既存のパスと競合するのを避けるためです）。</p>
+</blockquote>
+<p>ほー<code>livenessProbe</code>便利。弊社のk8sマニフェスト見たらこれを設定しているプロダクト少ない。悲しい。</p>
+<blockquote>
+<p>コンテナに Readiness probe が設定されている場合、Kubernetes はこのプローブの結果が成功となるまでは、リクエストを送信せずに待機します。これは準備のできていないコンテナからユーザにエラーが返される事態を回避するためです。この動作が特に重要となるのはゼロダウンタイムアップグレードの場合です</p>
+</blockquote>
+<p><code>readinessProbe</code>のほうは弊社では結構な箇所で使われている。なぜだ。</p>
+<p><code>minAvailabe</code>で生存させるpodの最小数を決めたり、<code>maxUnavailable</code>でk8sがノードから退去させられるpodの総数を決めたり。</p>
+<blockquote>
+<p>Namespace は関連するリソースをグループ化して、それらを使った作業を簡素化します。ただしフォルダと異なり、Namespace をネストさせることはできません。</p>
+</blockquote>
+<p>残念なことなのかそうでもないのかよくわからない。</p>
+<blockquote>
+<p>Namespace を削除すると、その中にあるリソースもすべて削除されます。削除コマンドの実行対象とする Namespace を間違えるのは、絶対に避けたい事態です</p>
+</blockquote>
+<p>本書でフォルダのメタファを持ち出してたけど、削除にもあてはまるのか。</p>
+<blockquote>
+<p>例えば prodNamespace の demo Service と通信したい場合には、次のように指定できます。
+demo.prod</p>
+</blockquote>
+<p>namespaceがトップドメイン、serviceがApexドメインみたいな扱いか。</p>
+<blockquote>
+<p>Namespace 内の Pod について CPU とメモリの総使用量を制限することもできますが、著者らは推奨しません。こうした総量の設定が低すぎると、ワークロードが制限値に近づいた場合、想定外で特定困難な問題に直面する可能性が高くなります。逆に設定が高すぎると、そもそも制限する意味が薄れてしまいます。</p>
+</blockquote>
+<p>逆にnamespace内のpod数には制限をかけるべきとしている。</p>
+<blockquote>
+<p>LimitRange は、コンテナの所有者がリソース要求またはリソース制限を指定し忘れた場合に発生しうる問題を防止するための、最後の砦としてのみ使用するようにします。</p>
+</blockquote>
+<p>オブジェクト指向プログラミングでよくあるハマりパターン。</p>
+<blockquote>
+<p>Job オブジェクトは Kubernetes データベースに存在したままとなるため、完了した Job が相当な数に達すると、API の処理能力に悪影響を及ぼす可能性があります。</p>
+</blockquote>
+<p>え、知らなかった。今のk8sバージョンだとどうなってるんだろう。</p>
+        </div>
+    </article>
+</main>
+
+
+
+
+
+
+<nav class="pager flex">
+	<div class="pager__item pager__item--prev">
+		<a class="pager__link" href="http://localhost:1313/shit-blog/post/2023/11/05/minecraft-jitakusaba/" rel="prev">
+			<span class="pager__subtitle">«&thinsp;Previous</span>
+			<p class="pager__title">自宅鯖でマインクラフトを動かす</p>
+		</a>
+	</div>
+	<div class="pager__item pager__item--next">
+		<a class="pager__link" href="http://localhost:1313/shit-blog/post/2023/12/16/review-it-books/" rel="next">
+			<span class="pager__subtitle">Next&thinsp;»</span>
+			<p class="pager__title">今まで読んできたIT関係の本</p>
+		</a>
+	</div>
+</nav>
+
+
+<script src="https://utteranc.es/client.js" repo="guricerin/shit-blog" issue-term="pathname" label="[By Utterances]"
+    theme="github-light" crossorigin="anonymous" async>
+    </script>
+
+
+      </div>
+      <aside class="sidebar">
+<div class="widget-recent widget">
+	<h4 class="widget__title">Recent Posts</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item"><a class="widget__link" href="http://localhost:1313/shit-blog/post/2026/03/29/workout/">ジムに行き始めて約5ヶ月</a></li>
+			<li class="widget__item"><a class="widget__link" href="http://localhost:1313/shit-blog/post/2025/06/29/philosophy-east/">『史上最強の哲学入門　東洋の哲人たち』読んだ</a></li>
+			<li class="widget__item"><a class="widget__link" href="http://localhost:1313/shit-blog/post/2025/06/29/philosophy-west/">『史上最強の哲学入門』読んだ</a></li>
+			<li class="widget__item"><a class="widget__link" href="http://localhost:1313/shit-blog/post/2025/05/16/poor-girl-piketty/">『高学歴貧困女子が読み解くピケティ』読んだ</a></li>
+			<li class="widget__item"><a class="widget__link" href="http://localhost:1313/shit-blog/post/2025/05/06/cant-read-books/">『なぜ働いていると本が読めなくなるのか』読んだ</a></li>
+		</ul>
+	</div>
+</div>
+<div class="widget-categories widget">
+	<h4 class="widget__title">Categories</h4>
+	<div class="widget__content">
+		<ul class="widget__list">
+			<li class="widget__item">
+				<a class="widget__link" href="http://localhost:1313/shit-blog/categories/bz/">B&#39;z</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">40</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="http://localhost:1313/shit-blog/categories/bash/">Bash</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">2</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="http://localhost:1313/shit-blog/categories/csharp/">CSharp</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">1</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="http://localhost:1313/shit-blog/categories/fsharp/">FSharp</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">4</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="http://localhost:1313/shit-blog/categories/gcp/">GCP</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">1</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="http://localhost:1313/shit-blog/categories/github/">GitHub</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">1</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="http://localhost:1313/shit-blog/categories/go/">Go</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">2</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="http://localhost:1313/shit-blog/categories/it%E3%82%A4%E3%83%B3%E3%83%95%E3%83%A9/">ITインフラ</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">4</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="http://localhost:1313/shit-blog/categories/lisp/">Lisp</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">1</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="http://localhost:1313/shit-blog/categories/mint/">Mint</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">1</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="http://localhost:1313/shit-blog/categories/ruby/">Ruby</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">2</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="http://localhost:1313/shit-blog/categories/rust/">Rust</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">7</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="http://localhost:1313/shit-blog/categories/scheme/">Scheme</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">1</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="http://localhost:1313/shit-blog/categories/typescript/">TypeScript</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">1</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="http://localhost:1313/shit-blog/categories/windows/">Windows</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">2</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="http://localhost:1313/shit-blog/categories/%E3%82%AF%E3%82%BD%E3%83%96%E3%83%AD%E3%82%B0/">クソブログ</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">17</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="http://localhost:1313/shit-blog/categories/%E3%82%B2%E3%83%BC%E3%83%A0/">ゲーム</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">3</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="http://localhost:1313/shit-blog/categories/%E3%82%BB%E3%82%AD%E3%83%A5%E3%83%AA%E3%83%86%E3%82%A3/">セキュリティ</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">1</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="http://localhost:1313/shit-blog/categories/%E3%83%8D%E3%83%83%E3%83%88%E3%83%AF%E3%83%BC%E3%82%AF/">ネットワーク</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">9</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="http://localhost:1313/shit-blog/categories/%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0/">プログラミング</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">27</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="http://localhost:1313/shit-blog/categories/%E4%B8%83%E5%B0%BE%E9%A6%99/">七尾香</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">1</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="http://localhost:1313/shit-blog/categories/%E5%80%8B%E4%BA%BA%E3%83%A1%E3%83%A2/">個人メモ</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">9</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="http://localhost:1313/shit-blog/categories/%E5%87%8B%E5%8F%B6%E6%A3%95/">凋叶棕</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">4</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="http://localhost:1313/shit-blog/categories/%E5%AD%A6%E5%95%8F/">学問</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">4</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="http://localhost:1313/shit-blog/categories/%E5%B0%8F%E8%AA%AC/">小説</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">1</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="http://localhost:1313/shit-blog/categories/%E6%80%9D%E6%83%B3/">思想</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">2</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="http://localhost:1313/shit-blog/categories/%E6%83%85%E5%A0%B1%E3%82%BB%E3%82%AD%E3%83%A5%E3%83%AA%E3%83%86%E3%82%A3/">情報セキュリティ</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">19</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="http://localhost:1313/shit-blog/categories/%E6%95%B0%E5%AD%A6/">数学</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">2</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="http://localhost:1313/shit-blog/categories/%E6%9A%81records/">暁Records</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">1</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="http://localhost:1313/shit-blog/categories/%E6%9B%B8%E7%89%A9/">書物</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">39</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="http://localhost:1313/shit-blog/categories/%E6%9D%B1%E6%96%B9/">東方</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">6</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="http://localhost:1313/shit-blog/categories/%E6%BC%AB%E7%94%BB/">漫画</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">3</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="http://localhost:1313/shit-blog/categories/%E7%A5%9E%E6%9E%97%E9%95%B7%E5%B9%B3/">神林長平</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">2</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="http://localhost:1313/shit-blog/categories/%E7%AB%B6%E6%8A%80%E3%83%97%E3%83%AD%E3%82%B0%E3%83%A9%E3%83%9F%E3%83%B3%E3%82%B0/">競技プログラミング</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">25</span>
+				</li>
+			<li class="widget__item">
+				<a class="widget__link" href="http://localhost:1313/shit-blog/categories/%E9%9F%B3%E6%A5%BD/">音楽</a>&nbsp;
+				<span class="widget__counter widget__counter--bubble">43</span>
+				</li>
+		</ul>
+	</div>
+</div>
+<div class="widget-archives widget">
+    <h4 class="widget__title">ARCHIVES</h4>
+    <div class="widget__content">
+        <ul>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2026-02">2026-02 (1)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2025-06">2025-06 (2)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2025-05">2025-05 (2)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2025-01">2025-01 (1)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2024-12">2024-12 (2)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2024-11">2024-11 (1)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2024-10">2024-10 (1)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2024-09">2024-09 (1)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2024-02">2024-02 (2)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2024-01">2024-01 (3)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2023-12">2023-12 (1)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2023-11">2023-11 (2)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2023-10">2023-10 (5)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2023-07">2023-07 (1)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2023-06">2023-06 (1)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2023-05">2023-05 (1)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2023-03">2023-03 (1)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2023-02">2023-02 (1)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2023-01">2023-01 (1)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2022-12">2022-12 (2)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2022-10">2022-10 (1)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2022-09">2022-09 (1)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2022-07">2022-07 (2)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2022-04">2022-04 (1)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2022-03">2022-03 (4)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2022-02">2022-02 (1)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2021-12">2021-12 (3)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2021-11">2021-11 (7)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2021-10">2021-10 (2)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2021-09">2021-09 (7)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2021-07">2021-07 (1)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2021-06">2021-06 (3)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2021-01">2021-01 (1)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2020-11">2020-11 (4)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2020-10">2020-10 (1)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2020-09">2020-09 (21)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2020-08">2020-08 (2)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2020-05">2020-05 (1)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2020-03">2020-03 (2)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2020-02">2020-02 (1)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2019-12">2019-12 (1)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2019-08">2019-08 (1)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2019-03">2019-03 (19)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2019-02">2019-02 (5)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2019-01">2019-01 (3)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2018-12">2018-12 (2)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2018-11">2018-11 (1)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2018-09">2018-09 (1)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2018-06">2018-06 (1)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2018-05">2018-05 (1)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2018-02">2018-02 (1)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2018-01">2018-01 (4)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2017-12">2017-12 (3)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2017-11">2017-11 (12)</a></li>
+            
+            <li><a href="http://localhost:1313/shit-blog/archives/2017-10">2017-10 (17)</a></li>
+            
+        </ul>
+    </div>
+</div>
+
+<div class="widget-social widget">
+	<h4 class="widget-social__title widget__title">Social</h4>
+	<div class="widget-social__content widget__content">
+		<div class="widget-social__item widget__item">
+			<a class="widget-social__link widget__link btn" title="GitHub" rel="noopener noreferrer" href="https://github.com/guricerin" target="_blank">
+				<svg class="widget-social__link-icon icon icon-github" width="24" height="24" viewBox="0 0 384 374"><path d="m192 0c-106.1 0-192 85.8-192 191.7 0 84.7 55 156.6 131.3 181.9 9.6 1.8 13.1-4.2 13.1-9.2 0-4.6-.2-16.6-.3-32.6-53.4 11.6-64.7-25.7-64.7-25.7-8.7-22.1-21.3-28-21.3-28-17.4-11.9 1.3-11.6 1.3-11.6 19.3 1.4 29.4 19.8 29.4 19.8 17.1 29.3 44.9 20.8 55.9 15.9 1.7-12.4 6.7-20.8 12.2-25.6-42.6-4.8-87.5-21.3-87.5-94.8 0-20.9 7.5-38 19.8-51.4-2-4.9-8.6-24.3 1.9-50.7 0 0 16.1-5.2 52.8 19.7 15.3-4.2 31.7-6.4 48.1-6.5 16.3.1 32.7 2.2 48.1 6.5 36.7-24.8 52.8-19.7 52.8-19.7 10.5 26.4 3.9 45.9 1.9 50.7 12.3 13.4 19.7 30.5 19.7 51.4 0 73.7-44.9 89.9-87.7 94.6 6.9 5.9 13 17.6 13 35.5 0 25.6-.2 46.3-.2 52.6 0 5.1 3.5 11.1 13.2 9.2 76.2-25.5 131.2-97.3 131.2-182 0-105.9-86-191.7-192-191.7z"/></svg>
+				<span>GitHub</span>
+			</a>
+		</div>
+
+		
+	</div>
+</div>
+</aside>
+
+    </div>
+    <footer class="footer">
+	<div class="container footer__container flex">
+		
+		<div class="footer__copyright">
+			&copy; 2026 guricerin.
+			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+		</div>
+	</div>
+</footer>
+  </div>
+  <script async defer src="http://localhost:1313/shit-blog/%20js/menu.js"></script>
+  <script src="http://localhost:1313/shit-blog/js/custom.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.6/MathJax.js?config=TeX-AMS-MML_HTMLorMML" async></script>
+</body>
+
+</html>
