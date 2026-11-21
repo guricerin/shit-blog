@@ -10,26 +10,26 @@
   <meta name="description"
     content="">
   <meta property="og:url" content="https://guricerin.github.io/shit-blog/post/2019/03/20190324-compro/">
-  <meta property="og:site_name" content="グリのクソブログ">
-  <meta property="og:title" content="yukicoder 星1.5〜2をランダムに解いた">
-  <meta property="og:description" content="題名通り、ジャンル・時系列バラバラ。">
-  <meta property="og:locale" content="ja">
-  <meta property="og:type" content="article">
-    <meta property="article:section" content="post">
-    <meta property="article:published_time" content="2019-03-24T15:23:12+09:00">
-    <meta property="article:modified_time" content="2019-03-24T15:23:12+09:00">
+	<meta property="og:site_name" content="グリのクソブログ">
+	<meta property="og:title" content="yukicoder 星1.5〜2をランダムに解いた">
+	<meta property="og:description" content="題名通り、ジャンル・時系列バラバラ。">
+	<meta property="og:locale" content="ja">
+	<meta property="og:type" content="article">
+		<meta property="article:section" content="post">
+		<meta property="article:published_time" content="2019-03-24T15:23:12+09:00">
+		<meta property="article:modified_time" content="2019-03-24T15:23:12+09:00">
 
   
-  <meta itemprop="name" content="yukicoder 星1.5〜2をランダムに解いた">
-  <meta itemprop="description" content="題名通り、ジャンル・時系列バラバラ。">
-  <meta itemprop="datePublished" content="2019-03-24T15:23:12+09:00">
-  <meta itemprop="dateModified" content="2019-03-24T15:23:12+09:00">
-  <meta itemprop="wordCount" content="472">
-  <meta itemprop="keywords" content="2019-03,競技プログラミング">
+	<meta itemprop="name" content="yukicoder 星1.5〜2をランダムに解いた">
+	<meta itemprop="description" content="題名通り、ジャンル・時系列バラバラ。">
+	<meta itemprop="datePublished" content="2019-03-24T15:23:12+09:00">
+	<meta itemprop="dateModified" content="2019-03-24T15:23:12+09:00">
+	<meta itemprop="wordCount" content="472">
+	<meta itemprop="keywords" content="2019-03,競技プログラミング">
   
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="yukicoder 星1.5〜2をランダムに解いた">
-  <meta name="twitter:description" content="題名通り、ジャンル・時系列バラバラ。">
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:title" content="yukicoder 星1.5〜2をランダムに解いた">
+	<meta name="twitter:description" content="題名通り、ジャンル・時系列バラバラ。">
 
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="dns-prefetch" href="//fonts.googleapis.com">
@@ -44,7 +44,7 @@
       <script async src="https://www.googletagmanager.com/gtag/js?id=G-T30BDM828S"></script>
       <script>
         var doNotTrack = false;
-        if ( false ) {
+        if ( true ) {
           var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
           var doNotTrack = (dnt == "1" || dnt == "yes");
         }
@@ -77,7 +77,7 @@
 		
 <nav class="menu">
 	<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
-		<span class="menu__btn-title" tabindex="-1">Menu</span>
+		<span class="menu__btn-title" tabindex="-1">メニュー</span>
 	</button>
 	<ul class="menu__list">
 		<li class="menu__item">
@@ -135,7 +135,7 @@
 </ul>
 <h3 id="no8-n言っちゃダメゲーム">No.8 N言っちゃダメゲーム</h3>
 <p>コメントを見てもらえればいいと思う。外側のifブロックはたぶんいらない。</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#66d9ef">signed</span> <span style="color:#a6e22e">main</span>() {
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#66d9ef">signed</span> <span style="color:#a6e22e">main</span>() {
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">int</span> n;
 </span></span><span style="display:flex;"><span>    cin <span style="color:#f92672">&gt;&gt;</span> n;
 </span></span><span style="display:flex;"><span>    rep(i, <span style="color:#ae81ff">0</span>, n) {
@@ -146,18 +146,18 @@
 </span></span><span style="display:flex;"><span>            ans <span style="color:#f92672">=</span> <span style="color:#e6db74">&#34;Win&#34;</span>;
 </span></span><span style="display:flex;"><span>        } <span style="color:#66d9ef">else</span> {
 </span></span><span style="display:flex;"><span>            <span style="color:#75715e">// ゲーム開始前、後攻は0を宣言しているものとする。
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>            <span style="color:#75715e">// 相手に負けさせるには、n-1を宣言したい。
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>            <span style="color:#75715e">// offset：k+1
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>            <span style="color:#75715e">// そのためにはn-1-offsetを宣言したい。そのためには...宣言したい数字が0以下になるまでループ。
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>            <span style="color:#75715e">// 0未満になったら先行が勝者。0ちょうどなら後攻が勝者。
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>            ans <span style="color:#f92672">=</span> ((n <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>) <span style="color:#f92672">%</span> (k <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>) <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span> <span style="color:#f92672">?</span> <span style="color:#e6db74">&#34;Lose&#34;</span> <span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Win&#34;</span>);
+</span></span></span><span style="display:flex;"><span>            <span style="color:#75715e">// 相手に負けさせるには、n-1を宣言したい。
+</span></span></span><span style="display:flex;"><span>            <span style="color:#75715e">// offset：k+1
+</span></span></span><span style="display:flex;"><span>            <span style="color:#75715e">// そのためにはn-1-offsetを宣言したい。そのためには...宣言したい数字が0以下になるまでループ。
+</span></span></span><span style="display:flex;"><span>            <span style="color:#75715e">// 0未満になったら先行が勝者。0ちょうどなら後攻が勝者。
+</span></span></span><span style="display:flex;"><span>            ans <span style="color:#f92672">=</span> ((n <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span>) <span style="color:#f92672">%</span> (k <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>) <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span> <span style="color:#f92672">?</span> <span style="color:#e6db74">&#34;Lose&#34;</span> <span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;Win&#34;</span>);
 </span></span><span style="display:flex;"><span>        }
 </span></span><span style="display:flex;"><span>        cout <span style="color:#f92672">&lt;&lt;</span> ans <span style="color:#f92672">&lt;&lt;</span> endl;
 </span></span><span style="display:flex;"><span>    }
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><h3 id="no47-ポケットを叩くとビスケットが2倍">No.47 ポケットを叩くとビスケットが2倍</h3>
 <p>叩く回数をT回だとすると、2 ^ (T-1) 〜 2 ^ T の範囲内にあるビスケットを生み出せる。ポケットの中身から任意の枚数取り出して、2倍する元手を好きなように制御できるからだ。</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#66d9ef">signed</span> <span style="color:#a6e22e">main</span>() {
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#66d9ef">signed</span> <span style="color:#a6e22e">main</span>() {
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">int</span> n;
 </span></span><span style="display:flex;"><span>    cin <span style="color:#f92672">&gt;&gt;</span> n;
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">if</span> (n <span style="color:#f92672">==</span> <span style="color:#ae81ff">1</span>) {
@@ -173,7 +173,7 @@
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><h3 id="no51-やる気の問題">No.51 やる気の問題</h3>
 <p>愚直にシミュレーション。</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#66d9ef">signed</span> <span style="color:#a6e22e">main</span>() {
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#66d9ef">signed</span> <span style="color:#a6e22e">main</span>() {
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">int</span> w, d;
 </span></span><span style="display:flex;"><span>    cin <span style="color:#f92672">&gt;&gt;</span> w <span style="color:#f92672">&gt;&gt;</span> d;
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">int</span> i <span style="color:#f92672">=</span> d; i <span style="color:#f92672">&gt;</span> <span style="color:#ae81ff">0</span>; i<span style="color:#f92672">--</span>) {
@@ -185,14 +185,14 @@
 </span></span></code></pre></div><h3 id="no57-ミリオンダイス">No.57 ミリオンダイス</h3>
 <p>サンプルからなんとなく 3.5 * N かなと思ったが通ってしまった。<br>
 こういうのを期待値の線型性というらしい。期待値計算は苦手だ。</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#66d9ef">signed</span> <span style="color:#a6e22e">main</span>() {
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#66d9ef">signed</span> <span style="color:#a6e22e">main</span>() {
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">double</span> n;
 </span></span><span style="display:flex;"><span>    cin <span style="color:#f92672">&gt;&gt;</span> n;
 </span></span><span style="display:flex;"><span>    cout <span style="color:#f92672">&lt;&lt;</span> <span style="color:#ae81ff">3.5</span> <span style="color:#f92672">*</span> n <span style="color:#f92672">&lt;&lt;</span> endl;
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><h3 id="no88-次はどっちだ">No.88 次はどっちだ</h3>
 <p>駒の色は関係ない。総数を見ることで次の手番が誰なのかがわかる。</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#66d9ef">signed</span> <span style="color:#a6e22e">main</span>() {
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#66d9ef">signed</span> <span style="color:#a6e22e">main</span>() {
 </span></span><span style="display:flex;"><span>    string first;
 </span></span><span style="display:flex;"><span>    cin <span style="color:#f92672">&gt;&gt;</span> first;
 </span></span><span style="display:flex;"><span>    string second <span style="color:#f92672">=</span> (first <span style="color:#f92672">==</span> <span style="color:#e6db74">&#34;oda&#34;</span> <span style="color:#f92672">?</span> <span style="color:#e6db74">&#34;yukiko&#34;</span> <span style="color:#f92672">:</span> <span style="color:#e6db74">&#34;oda&#34;</span>);
@@ -208,7 +208,7 @@
 </span></span></code></pre></div><h3 id="no83-最大マッチング">No.83 最大マッチング</h3>
 <p>タイトル詐欺。これをめっちゃ難しくした類題は <a href="https://atcoder.jp/contests/abc118/tasks/abc118_d">https://atcoder.jp/contests/abc118/tasks/abc118_d</a> 。<br>
 桁数を最大化すればそれだけ数字をデカくできるから、コストの一番低い1を並べていく。ただし、マッチの総数が奇数の場合は1本余ることになるので、3本で作れる7を先頭の1と取り替える。</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#66d9ef">signed</span> <span style="color:#a6e22e">main</span>() {
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#66d9ef">signed</span> <span style="color:#a6e22e">main</span>() {
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">int</span> n;
 </span></span><span style="display:flex;"><span>    cin <span style="color:#f92672">&gt;&gt;</span> n;
 </span></span><span style="display:flex;"><span>    string ans;
@@ -225,7 +225,7 @@
 </span></span></code></pre></div><h3 id="no149-碁石の移動">No.149 碁石の移動</h3>
 <p>AからBに移動させる石にはすべての黒を含めるようにし、それでも補填しきれない場合に限り白を含める。同様に、BからAに移動させる石にはできるだけの白を含める。
 簡単な問題のはずなのに延々とバグらせていた。何やってんだか。</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#66d9ef">signed</span> <span style="color:#a6e22e">main</span>() {
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#66d9ef">signed</span> <span style="color:#a6e22e">main</span>() {
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">int</span> aw, ab, bw, bb;
 </span></span><span style="display:flex;"><span>    cin <span style="color:#f92672">&gt;&gt;</span> aw <span style="color:#f92672">&gt;&gt;</span> ab <span style="color:#f92672">&gt;&gt;</span> bw <span style="color:#f92672">&gt;&gt;</span> bb;
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">int</span> c, d;
@@ -240,14 +240,14 @@
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><h3 id="no477-mvp">No.477 MVP</h3>
 <p>これもサンプルを見て直感的に通した。注意すべきは確実にK位以内に入るために+1余計にダメージを与えること&hellip;って見りゃわかるか。</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#66d9ef">signed</span> <span style="color:#a6e22e">main</span>() {
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#66d9ef">signed</span> <span style="color:#a6e22e">main</span>() {
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">int</span> n, k;
 </span></span><span style="display:flex;"><span>    cin <span style="color:#f92672">&gt;&gt;</span> n <span style="color:#f92672">&gt;&gt;</span> k;
 </span></span><span style="display:flex;"><span>    cout <span style="color:#f92672">&lt;&lt;</span> n <span style="color:#f92672">/</span> (k <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>) <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span> <span style="color:#f92672">&lt;&lt;</span> endl;
 </span></span><span style="display:flex;"><span>}
 </span></span></code></pre></div><h3 id="no657-テトラナッチ数列-easy">No.657 テトラナッチ数列 Easy</h3>
 <p>漸化式をメモ化再帰してからクエリに高速に答える。この発想を難易度の高い問題にもすぐに応用できたら、もっとましな成績になるのだろうが。</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span>vector<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">int</span><span style="color:#f92672">&gt;</span> tetra(<span style="color:#ae81ff">1000100</span>, <span style="color:#ae81ff">0</span>);
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span>vector<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">int</span><span style="color:#f92672">&gt;</span> tetra(<span style="color:#ae81ff">1000100</span>, <span style="color:#ae81ff">0</span>);
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">void</span> <span style="color:#a6e22e">init</span>() {
 </span></span><span style="display:flex;"><span>    tetra[<span style="color:#ae81ff">0</span>] <span style="color:#f92672">=</span> tetra[<span style="color:#ae81ff">1</span>] <span style="color:#f92672">=</span> tetra[<span style="color:#ae81ff">2</span>] <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
@@ -284,13 +284,13 @@
 <nav class="pager flex">
 	<div class="pager__item pager__item--prev">
 		<a class="pager__link" href="https://guricerin.github.io/shit-blog/post/2019/03/20190321-compro/" rel="prev">
-			<span class="pager__subtitle">«&thinsp;Previous</span>
+			<span class="pager__subtitle">«&thinsp;前の投稿</span>
 			<p class="pager__title">ABC070 C:Multiple Clocks</p>
 		</a>
 	</div>
 	<div class="pager__item pager__item--next">
 		<a class="pager__link" href="https://guricerin.github.io/shit-blog/post/2019/03/20190325-compro/" rel="next">
-			<span class="pager__subtitle">Next&thinsp;»</span>
+			<span class="pager__subtitle">次の投稿&thinsp;»</span>
 			<p class="pager__title">AtCoder ABC122</p>
 		</a>
 	</div>
@@ -305,7 +305,7 @@
       </div>
       <aside class="sidebar">
 <div class="widget-recent widget">
-	<h4 class="widget__title">Recent Posts</h4>
+	<h4 class="widget__title">最近の投稿</h4>
 	<div class="widget__content">
 		<ul class="widget__list">
 			<li class="widget__item"><a class="widget__link" href="https://guricerin.github.io/shit-blog/post/2026/09/23/recently-game/">最近プレイしたゲーム：Ruina、Elin、ウイポ、ほの暮しの庭</a></li>
@@ -317,7 +317,7 @@
 	</div>
 </div>
 <div class="widget-categories widget">
-	<h4 class="widget__title">Categories</h4>
+	<h4 class="widget__title">カテゴリー</h4>
 	<div class="widget__content">
 		<ul class="widget__list">
 			<li class="widget__item">
@@ -569,7 +569,7 @@
 </div>
 
 <div class="widget-social widget">
-	<h4 class="widget-social__title widget__title">Social</h4>
+	<h4 class="widget-social__title widget__title">ソーシャル</h4>
 	<div class="widget-social__content widget__content">
 		<div class="widget-social__item widget__item">
 			<a class="widget-social__link widget__link btn" title="GitHub" rel="noopener noreferrer" href="https://github.com/guricerin" target="_blank">
@@ -589,7 +589,7 @@
 		
 		<div class="footer__copyright">
 			&copy; 2026 guricerin.
-			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+			<span class="footer__copyright-credits">このサイトは <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> と <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> テーマで生成されています。</span>
 		</div>
 	</div>
 </footer>

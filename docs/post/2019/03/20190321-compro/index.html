@@ -10,26 +10,26 @@
   <meta name="description"
     content="">
   <meta property="og:url" content="https://guricerin.github.io/shit-blog/post/2019/03/20190321-compro/">
-  <meta property="og:site_name" content="グリのクソブログ">
-  <meta property="og:title" content="ABC070 C:Multiple Clocks">
-  <meta property="og:description" content="思わぬ罠。">
-  <meta property="og:locale" content="ja">
-  <meta property="og:type" content="article">
-    <meta property="article:section" content="post">
-    <meta property="article:published_time" content="2019-03-21T15:30:50+09:00">
-    <meta property="article:modified_time" content="2019-03-21T15:30:50+09:00">
+	<meta property="og:site_name" content="グリのクソブログ">
+	<meta property="og:title" content="ABC070 C:Multiple Clocks">
+	<meta property="og:description" content="思わぬ罠。">
+	<meta property="og:locale" content="ja">
+	<meta property="og:type" content="article">
+		<meta property="article:section" content="post">
+		<meta property="article:published_time" content="2019-03-21T15:30:50+09:00">
+		<meta property="article:modified_time" content="2019-03-21T15:30:50+09:00">
 
   
-  <meta itemprop="name" content="ABC070 C:Multiple Clocks">
-  <meta itemprop="description" content="思わぬ罠。">
-  <meta itemprop="datePublished" content="2019-03-21T15:30:50+09:00">
-  <meta itemprop="dateModified" content="2019-03-21T15:30:50+09:00">
-  <meta itemprop="wordCount" content="93">
-  <meta itemprop="keywords" content="2019-03,競技プログラミング">
+	<meta itemprop="name" content="ABC070 C:Multiple Clocks">
+	<meta itemprop="description" content="思わぬ罠。">
+	<meta itemprop="datePublished" content="2019-03-21T15:30:50+09:00">
+	<meta itemprop="dateModified" content="2019-03-21T15:30:50+09:00">
+	<meta itemprop="wordCount" content="93">
+	<meta itemprop="keywords" content="2019-03,競技プログラミング">
   
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="ABC070 C:Multiple Clocks">
-  <meta name="twitter:description" content="思わぬ罠。">
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:title" content="ABC070 C:Multiple Clocks">
+	<meta name="twitter:description" content="思わぬ罠。">
 
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="dns-prefetch" href="//fonts.googleapis.com">
@@ -44,7 +44,7 @@
       <script async src="https://www.googletagmanager.com/gtag/js?id=G-T30BDM828S"></script>
       <script>
         var doNotTrack = false;
-        if ( false ) {
+        if ( true ) {
           var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
           var doNotTrack = (dnt == "1" || dnt == "yes");
         }
@@ -77,7 +77,7 @@
 		
 <nav class="menu">
 	<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
-		<span class="menu__btn-title" tabindex="-1">Menu</span>
+		<span class="menu__btn-title" tabindex="-1">メニュー</span>
 	</button>
 	<ul class="menu__list">
 		<li class="menu__item">
@@ -125,8 +125,8 @@
 <p>答えはすべての Ti における最小公倍数だというのはすぐにわかる。</p>
 <p>だがオーバーフローを考慮していないライブラリを使ってしまったため、あえなくWA。</p>
 <p>まあ過去問でライブラリの不備を見つけることができたので良しとする。</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#75715e">#define int long long
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#75715e">#define int long long
+</span></span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">template</span> <span style="color:#f92672">&lt;</span><span style="color:#66d9ef">typename</span> T<span style="color:#f92672">&gt;</span>
 </span></span><span style="display:flex;"><span>T gcd(T a, T b) {
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> b <span style="color:#f92672">?</span> gcd(b, a <span style="color:#f92672">%</span> b) <span style="color:#f92672">:</span> a;
@@ -135,7 +135,7 @@
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">template</span> <span style="color:#f92672">&lt;</span><span style="color:#66d9ef">typename</span> T<span style="color:#f92672">&gt;</span>
 </span></span><span style="display:flex;"><span>T lcm(T a, T b) {
 </span></span><span style="display:flex;"><span>    <span style="color:#75715e">// return (a * b) / gcd(a, b); // overflow!
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    T g <span style="color:#f92672">=</span> gcd(a, b);
+</span></span></span><span style="display:flex;"><span>    T g <span style="color:#f92672">=</span> gcd(a, b);
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">return</span> a <span style="color:#f92672">/</span> g <span style="color:#f92672">*</span> b;
 </span></span><span style="display:flex;"><span>}
 </span></span><span style="display:flex;"><span>
@@ -163,13 +163,13 @@
 <nav class="pager flex">
 	<div class="pager__item pager__item--prev">
 		<a class="pager__link" href="https://guricerin.github.io/shit-blog/post/2019/03/20190320-compro/" rel="prev">
-			<span class="pager__subtitle">«&thinsp;Previous</span>
+			<span class="pager__subtitle">«&thinsp;前の投稿</span>
 			<p class="pager__title">ABC076 C:Dubious Document 2</p>
 		</a>
 	</div>
 	<div class="pager__item pager__item--next">
 		<a class="pager__link" href="https://guricerin.github.io/shit-blog/post/2019/03/20190324-compro/" rel="next">
-			<span class="pager__subtitle">Next&thinsp;»</span>
+			<span class="pager__subtitle">次の投稿&thinsp;»</span>
 			<p class="pager__title">yukicoder 星1.5〜2をランダムに解いた</p>
 		</a>
 	</div>
@@ -184,7 +184,7 @@
       </div>
       <aside class="sidebar">
 <div class="widget-recent widget">
-	<h4 class="widget__title">Recent Posts</h4>
+	<h4 class="widget__title">最近の投稿</h4>
 	<div class="widget__content">
 		<ul class="widget__list">
 			<li class="widget__item"><a class="widget__link" href="https://guricerin.github.io/shit-blog/post/2026/09/23/recently-game/">最近プレイしたゲーム：Ruina、Elin、ウイポ、ほの暮しの庭</a></li>
@@ -196,7 +196,7 @@
 	</div>
 </div>
 <div class="widget-categories widget">
-	<h4 class="widget__title">Categories</h4>
+	<h4 class="widget__title">カテゴリー</h4>
 	<div class="widget__content">
 		<ul class="widget__list">
 			<li class="widget__item">
@@ -448,7 +448,7 @@
 </div>
 
 <div class="widget-social widget">
-	<h4 class="widget-social__title widget__title">Social</h4>
+	<h4 class="widget-social__title widget__title">ソーシャル</h4>
 	<div class="widget-social__content widget__content">
 		<div class="widget-social__item widget__item">
 			<a class="widget-social__link widget__link btn" title="GitHub" rel="noopener noreferrer" href="https://github.com/guricerin" target="_blank">
@@ -468,7 +468,7 @@
 		
 		<div class="footer__copyright">
 			&copy; 2026 guricerin.
-			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+			<span class="footer__copyright-credits">このサイトは <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> と <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> テーマで生成されています。</span>
 		</div>
 	</div>
 </footer>

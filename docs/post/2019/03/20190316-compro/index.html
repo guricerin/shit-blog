@@ -10,26 +10,26 @@
   <meta name="description"
     content="">
   <meta property="og:url" content="https://guricerin.github.io/shit-blog/post/2019/03/20190316-compro/">
-  <meta property="og:site_name" content="グリのクソブログ">
-  <meta property="og:title" content="ARC037 B:バウムテスト">
-  <meta property="og:description" content="主にB&#39;z">
-  <meta property="og:locale" content="ja">
-  <meta property="og:type" content="article">
-    <meta property="article:section" content="post">
-    <meta property="article:published_time" content="2019-03-16T15:23:10+09:00">
-    <meta property="article:modified_time" content="2019-03-16T15:23:10+09:00">
+	<meta property="og:site_name" content="グリのクソブログ">
+	<meta property="og:title" content="ARC037 B:バウムテスト">
+	<meta property="og:description" content="主にB&#39;z">
+	<meta property="og:locale" content="ja">
+	<meta property="og:type" content="article">
+		<meta property="article:section" content="post">
+		<meta property="article:published_time" content="2019-03-16T15:23:10+09:00">
+		<meta property="article:modified_time" content="2019-03-16T15:23:10+09:00">
 
   
-  <meta itemprop="name" content="ARC037 B:バウムテスト">
-  <meta itemprop="description" content="主にB&#39;z">
-  <meta itemprop="datePublished" content="2019-03-16T15:23:10+09:00">
-  <meta itemprop="dateModified" content="2019-03-16T15:23:10+09:00">
-  <meta itemprop="wordCount" content="214">
-  <meta itemprop="keywords" content="2019-03,競技プログラミング">
+	<meta itemprop="name" content="ARC037 B:バウムテスト">
+	<meta itemprop="description" content="主にB&#39;z">
+	<meta itemprop="datePublished" content="2019-03-16T15:23:10+09:00">
+	<meta itemprop="dateModified" content="2019-03-16T15:23:10+09:00">
+	<meta itemprop="wordCount" content="214">
+	<meta itemprop="keywords" content="2019-03,競技プログラミング">
   
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="ARC037 B:バウムテスト">
-  <meta name="twitter:description" content="主にB&#39;z">
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:title" content="ARC037 B:バウムテスト">
+	<meta name="twitter:description" content="主にB&#39;z">
 
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="dns-prefetch" href="//fonts.googleapis.com">
@@ -44,7 +44,7 @@
       <script async src="https://www.googletagmanager.com/gtag/js?id=G-T30BDM828S"></script>
       <script>
         var doNotTrack = false;
-        if ( false ) {
+        if ( true ) {
           var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
           var doNotTrack = (dnt == "1" || dnt == "yes");
         }
@@ -77,7 +77,7 @@
 		
 <nav class="menu">
 	<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
-		<span class="menu__btn-title" tabindex="-1">Menu</span>
+		<span class="menu__btn-title" tabindex="-1">メニュー</span>
 	</button>
 	<ul class="menu__list">
 		<li class="menu__item">
@@ -128,47 +128,47 @@
 <p>だがUnionFindだと連結グラフが閉路を持つかどうかがわからない。併合の際に辺を付け替えてしまうからだ。</p>
 <p>蟻本を見たところ、辺の数がグラフの頂点数 - 1 と等しいなら、それは木であると判定できるらしい。辺の数を管理する変数を追加すれば解けそうか？</p>
 <p>まあここまでやっといて結局自力（？）ACできなかったわけだが。他の人の回答をがっつりパクりつつひいひい言いながら書き上げたのが以下のコード。</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">UnionFindTree</span> {
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">UnionFindTree</span> {
 </span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">private</span><span style="color:#f92672">:</span>
 </span></span><span style="display:flex;"><span>    vector<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">int</span><span style="color:#f92672">&gt;</span> m_parent; <span style="color:#75715e">// 親ノードの番号を格納。-1なら自分自身が親(root)
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>  <span style="color:#66d9ef">public</span><span style="color:#f92672">:</span>
 </span></span><span style="display:flex;"><span>    <span style="color:#75715e">// 頂点数で初期化。最初は全てのノードが非連結。
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    UnionFindTree(<span style="color:#66d9ef">int</span> x) <span style="color:#f92672">:</span> m_parent(x, <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>) {}
+</span></span></span><span style="display:flex;"><span>    UnionFindTree(<span style="color:#66d9ef">int</span> x) <span style="color:#f92672">:</span> m_parent(x, <span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>) {}
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>    <span style="color:#75715e">// xがどのグループに属しているかを調べる。
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">int</span> <span style="color:#a6e22e">root</span>(<span style="color:#66d9ef">int</span> x) {
+</span></span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">int</span> <span style="color:#a6e22e">root</span>(<span style="color:#66d9ef">int</span> x) {
 </span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> (m_parent[x] <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">0</span>) {
 </span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">return</span> x;
 </span></span><span style="display:flex;"><span>        }
 </span></span><span style="display:flex;"><span>        m_parent[x] <span style="color:#f92672">=</span> root(m_parent[x]); <span style="color:#75715e">// 高速化のため、親を根に繋ぎかておく。
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        <span style="color:#66d9ef">return</span> m_parent[x];
+</span></span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> m_parent[x];
 </span></span><span style="display:flex;"><span>    }
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>    <span style="color:#75715e">// xの属するグループの頂点数を調べる。
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">int</span> <span style="color:#a6e22e">size</span>(<span style="color:#66d9ef">int</span> x) { <span style="color:#66d9ef">return</span> <span style="color:#f92672">-</span>m_parent[root(x)]; }
+</span></span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">int</span> <span style="color:#a6e22e">size</span>(<span style="color:#66d9ef">int</span> x) { <span style="color:#66d9ef">return</span> <span style="color:#f92672">-</span>m_parent[root(x)]; }
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>    <span style="color:#75715e">// xが属する集合とyが属する集合を連結する。
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">bool</span> <span style="color:#a6e22e">unite</span>(<span style="color:#66d9ef">int</span> x, <span style="color:#66d9ef">int</span> y) {
+</span></span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">bool</span> <span style="color:#a6e22e">unite</span>(<span style="color:#66d9ef">int</span> x, <span style="color:#66d9ef">int</span> y) {
 </span></span><span style="display:flex;"><span>        x <span style="color:#f92672">=</span> root(x);
 </span></span><span style="display:flex;"><span>        y <span style="color:#f92672">=</span> root(y);
 </span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> (x <span style="color:#f92672">==</span> y) {
 </span></span><span style="display:flex;"><span>            <span style="color:#66d9ef">return</span> false; <span style="color:#75715e">// すでにくっついているからくっつけない。
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        }
+</span></span></span><span style="display:flex;"><span>        }
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>        <span style="color:#75715e">// ノード番号の大きい方(x)に小さい方(y)をくっつけたい。
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        <span style="color:#66d9ef">if</span> (size(x) <span style="color:#f92672">&lt;</span> size(y))
+</span></span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> (size(x) <span style="color:#f92672">&lt;</span> size(y))
 </span></span><span style="display:flex;"><span>            swap(x, y);
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>        <span style="color:#75715e">// xのサイズを更新。
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        m_parent[x] <span style="color:#f92672">+=</span> m_parent[y];
+</span></span></span><span style="display:flex;"><span>        m_parent[x] <span style="color:#f92672">+=</span> m_parent[y];
 </span></span><span style="display:flex;"><span>        <span style="color:#75715e">// yの親をxにする。
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        m_parent[y] <span style="color:#f92672">=</span> x;
+</span></span></span><span style="display:flex;"><span>        m_parent[y] <span style="color:#f92672">=</span> x;
 </span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">return</span> true;
 </span></span><span style="display:flex;"><span>    }
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>    <span style="color:#75715e">// 同じグループか？
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    <span style="color:#66d9ef">bool</span> <span style="color:#a6e22e">is_same_group</span>(<span style="color:#66d9ef">int</span> x, <span style="color:#66d9ef">int</span> y) { <span style="color:#66d9ef">return</span> root(x) <span style="color:#f92672">==</span> root(y); }
+</span></span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">bool</span> <span style="color:#a6e22e">is_same_group</span>(<span style="color:#66d9ef">int</span> x, <span style="color:#66d9ef">int</span> y) { <span style="color:#66d9ef">return</span> root(x) <span style="color:#f92672">==</span> root(y); }
 </span></span><span style="display:flex;"><span>};
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">signed</span> <span style="color:#a6e22e">main</span>() {
@@ -185,7 +185,7 @@
 </span></span><span style="display:flex;"><span>    }
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span>    <span style="color:#75715e">// 各集合における辺数。根以外のインデックスには0が格納される。
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>    vector<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">int</span><span style="color:#f92672">&gt;</span> edges(n, <span style="color:#ae81ff">0</span>);
+</span></span></span><span style="display:flex;"><span>    vector<span style="color:#f92672">&lt;</span><span style="color:#66d9ef">int</span><span style="color:#f92672">&gt;</span> edges(n, <span style="color:#ae81ff">0</span>);
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">int</span> i <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; i <span style="color:#f92672">&lt;</span> m; i<span style="color:#f92672">++</span>) {
 </span></span><span style="display:flex;"><span>        edges[uf.root(nodes[i])] <span style="color:#f92672">+=</span> <span style="color:#ae81ff">1</span>;
 </span></span><span style="display:flex;"><span>    }
@@ -193,7 +193,7 @@
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">int</span> ans <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>;
 </span></span><span style="display:flex;"><span>    <span style="color:#66d9ef">for</span> (<span style="color:#66d9ef">int</span> i <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>; i <span style="color:#f92672">&lt;</span> n; i<span style="color:#f92672">++</span>) {
 </span></span><span style="display:flex;"><span>        <span style="color:#75715e">// グラフの木判定：頂点数 - 1 == 辺数
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>        <span style="color:#66d9ef">if</span> (uf.size(i) <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span> <span style="color:#f92672">==</span> edges[i]) {
+</span></span></span><span style="display:flex;"><span>        <span style="color:#66d9ef">if</span> (uf.size(i) <span style="color:#f92672">-</span> <span style="color:#ae81ff">1</span> <span style="color:#f92672">==</span> edges[i]) {
 </span></span><span style="display:flex;"><span>            ans<span style="color:#f92672">++</span>;
 </span></span><span style="display:flex;"><span>        }
 </span></span><span style="display:flex;"><span>    }
@@ -212,13 +212,13 @@
 <nav class="pager flex">
 	<div class="pager__item pager__item--prev">
 		<a class="pager__link" href="https://guricerin.github.io/shit-blog/post/2019/03/20190315-compro/" rel="prev">
-			<span class="pager__subtitle">«&thinsp;Previous</span>
+			<span class="pager__subtitle">«&thinsp;前の投稿</span>
 			<p class="pager__title">ABC002 D:派閥</p>
 		</a>
 	</div>
 	<div class="pager__item pager__item--next">
 		<a class="pager__link" href="https://guricerin.github.io/shit-blog/post/2019/03/20190316-compro-2/" rel="next">
-			<span class="pager__subtitle">Next&thinsp;»</span>
+			<span class="pager__subtitle">次の投稿&thinsp;»</span>
 			<p class="pager__title">AOJ 1160:島はいくつある？</p>
 		</a>
 	</div>
@@ -233,7 +233,7 @@
       </div>
       <aside class="sidebar">
 <div class="widget-recent widget">
-	<h4 class="widget__title">Recent Posts</h4>
+	<h4 class="widget__title">最近の投稿</h4>
 	<div class="widget__content">
 		<ul class="widget__list">
 			<li class="widget__item"><a class="widget__link" href="https://guricerin.github.io/shit-blog/post/2026/09/23/recently-game/">最近プレイしたゲーム：Ruina、Elin、ウイポ、ほの暮しの庭</a></li>
@@ -245,7 +245,7 @@
 	</div>
 </div>
 <div class="widget-categories widget">
-	<h4 class="widget__title">Categories</h4>
+	<h4 class="widget__title">カテゴリー</h4>
 	<div class="widget__content">
 		<ul class="widget__list">
 			<li class="widget__item">
@@ -497,7 +497,7 @@
 </div>
 
 <div class="widget-social widget">
-	<h4 class="widget-social__title widget__title">Social</h4>
+	<h4 class="widget-social__title widget__title">ソーシャル</h4>
 	<div class="widget-social__content widget__content">
 		<div class="widget-social__item widget__item">
 			<a class="widget-social__link widget__link btn" title="GitHub" rel="noopener noreferrer" href="https://github.com/guricerin" target="_blank">
@@ -517,7 +517,7 @@
 		
 		<div class="footer__copyright">
 			&copy; 2026 guricerin.
-			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+			<span class="footer__copyright-credits">このサイトは <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> と <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> テーマで生成されています。</span>
 		</div>
 	</div>
 </footer>

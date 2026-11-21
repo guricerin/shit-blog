@@ -1,19 +1,24 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>2024-02 on グリのクソブログ</title>
-    <link>https://guricerin.github.io/shit-blog/archives/2024-02/</link>
-    <description>Recent content in 2024-02 on グリのクソブログ</description>
-    <generator>Hugo</generator>
-    <language>ja</language>
-    <lastBuildDate>Sun, 18 Feb 2024 17:11:15 +0900</lastBuildDate>
-    <atom:link href="https://guricerin.github.io/shit-blog/archives/2024-02/feed.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>自作のRustクレートをcrates.ioに公開する</title>
-      <link>https://guricerin.github.io/shit-blog/post/2024/02/18/publish-my-crate/</link>
-      <pubDate>Sun, 18 Feb 2024 17:11:15 +0900</pubDate>
-      <guid>https://guricerin.github.io/shit-blog/post/2024/02/18/publish-my-crate/</guid>
-      <description>&lt;p&gt;公開したのは大昔に書いたbrainfuck方言生成器。&lt;/p&gt;</description>
-    </item>
-  </channel>
+	<channel>
+		<title>2024-02 on グリのクソブログ</title>
+		<link>https://guricerin.github.io/shit-blog/archives/2024-02/</link>
+		<description>Recent content in 2024-02 on グリのクソブログ</description>
+		<generator>Hugo</generator>
+		<language>ja</language>
+		
+		
+		
+		
+			<lastBuildDate>Sun, 18 Feb 2024 17:11:15 +0900</lastBuildDate>
+		
+			<atom:link href="https://guricerin.github.io/shit-blog/archives/2024-02/feed.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>自作のRustクレートをcrates.ioに公開する</title>
+				<link>https://guricerin.github.io/shit-blog/post/2024/02/18/publish-my-crate/</link>
+				<pubDate>Sun, 18 Feb 2024 17:11:15 +0900</pubDate>
+				<guid>https://guricerin.github.io/shit-blog/post/2024/02/18/publish-my-crate/</guid>
+				<description>&lt;p&gt;公開したのは大昔に書いたbrainfuck方言生成器。&lt;/p&gt;</description>
+			</item>
+	</channel>
 </rss>

@@ -1,33 +1,38 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
-  <channel>
-    <title>漫画 on グリのクソブログ</title>
-    <link>https://guricerin.github.io/shit-blog/categories/%E6%BC%AB%E7%94%BB/</link>
-    <description>Recent content in 漫画 on グリのクソブログ</description>
-    <generator>Hugo</generator>
-    <language>ja</language>
-    <lastBuildDate>Thu, 31 Oct 2024 01:23:35 +0900</lastBuildDate>
-    <atom:link href="https://guricerin.github.io/shit-blog/categories/%E6%BC%AB%E7%94%BB/feed.xml" rel="self" type="application/rss+xml" />
-    <item>
-      <title>『風雲児たち』読んだ</title>
-      <link>https://guricerin.github.io/shit-blog/post/2024/10/31/fuuunjitachi/</link>
-      <pubDate>Thu, 31 Oct 2024 01:23:35 +0900</pubDate>
-      <guid>https://guricerin.github.io/shit-blog/post/2024/10/31/fuuunjitachi/</guid>
-      <description>&lt;p&gt;1868年に明治政府が成立した因果を、1600年の関ケ原の戦いから描いた漫画。なお、連載途中で作者が死亡したことにより、1863年の英国公使館焼き討ち事件直前までとなっちゃった。&lt;br&gt;&#xA;それでもワイド版20巻 + 幕末編34巻。長かった。&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>好きな漫画</title>
-      <link>https://guricerin.github.io/shit-blog/post/2018/02/27-fav-comic/</link>
-      <pubDate>Tue, 27 Feb 2018 21:16:04 +0900</pubDate>
-      <guid>https://guricerin.github.io/shit-blog/post/2018/02/27-fav-comic/</guid>
-      <description>&lt;p&gt;誰向けかは知らんが、紹介。全部で17作品。&lt;br&gt;&#xA;ネタバレっぽい記述があるかもしれないけど、ネットやってるクセにネタバレがどうのこうのとか抜かすタワケはおらんよな？&lt;/p&gt;</description>
-    </item>
-    <item>
-      <title>B&#39;zと無敵看板娘と失われし20年</title>
-      <link>https://guricerin.github.io/shit-blog/post/2018/01/30-mutekan-bz/</link>
-      <pubDate>Tue, 30 Jan 2018 21:23:41 +0900</pubDate>
-      <guid>https://guricerin.github.io/shit-blog/post/2018/01/30-mutekan-bz/</guid>
-      <description></description>
-    </item>
-  </channel>
+	<channel>
+		<title>漫画 on グリのクソブログ</title>
+		<link>https://guricerin.github.io/shit-blog/categories/%E6%BC%AB%E7%94%BB/</link>
+		<description>Recent content in 漫画 on グリのクソブログ</description>
+		<generator>Hugo</generator>
+		<language>ja</language>
+		
+		
+		
+		
+			<lastBuildDate>Thu, 31 Oct 2024 01:23:35 +0900</lastBuildDate>
+		
+			<atom:link href="https://guricerin.github.io/shit-blog/categories/%E6%BC%AB%E7%94%BB/feed.xml" rel="self" type="application/rss+xml" />
+			<item>
+				<title>『風雲児たち』読んだ</title>
+				<link>https://guricerin.github.io/shit-blog/post/2024/10/31/fuuunjitachi/</link>
+				<pubDate>Thu, 31 Oct 2024 01:23:35 +0900</pubDate>
+				<guid>https://guricerin.github.io/shit-blog/post/2024/10/31/fuuunjitachi/</guid>
+				<description>&lt;p&gt;1868年に明治政府が成立した因果を、1600年の関ケ原の戦いから描いた漫画。なお、連載途中で作者が死亡したことにより、1863年の英国公使館焼き討ち事件直前までとなっちゃった。&lt;br&gt;&#xA;それでもワイド版20巻 + 幕末編34巻。長かった。&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>好きな漫画</title>
+				<link>https://guricerin.github.io/shit-blog/post/2018/02/27-fav-comic/</link>
+				<pubDate>Tue, 27 Feb 2018 21:16:04 +0900</pubDate>
+				<guid>https://guricerin.github.io/shit-blog/post/2018/02/27-fav-comic/</guid>
+				<description>&lt;p&gt;誰向けかは知らんが、紹介。全部で17作品。&lt;br&gt;&#xA;ネタバレっぽい記述があるかもしれないけど、ネットやってるクセにネタバレがどうのこうのとか抜かすタワケはおらんよな？&lt;/p&gt;</description>
+			</item>
+			<item>
+				<title>B&#39;zと無敵看板娘と失われし20年</title>
+				<link>https://guricerin.github.io/shit-blog/post/2018/01/30-mutekan-bz/</link>
+				<pubDate>Tue, 30 Jan 2018 21:23:41 +0900</pubDate>
+				<guid>https://guricerin.github.io/shit-blog/post/2018/01/30-mutekan-bz/</guid>
+				<description></description>
+			</item>
+	</channel>
 </rss>

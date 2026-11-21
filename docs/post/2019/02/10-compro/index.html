@@ -10,26 +10,26 @@
   <meta name="description"
     content="">
   <meta property="og:url" content="https://guricerin.github.io/shit-blog/post/2019/02/10-compro/">
-  <meta property="og:site_name" content="グリのクソブログ">
-  <meta property="og:title" content="AtCoder 「みんなのプロコン 2019」">
-  <meta property="og:description" content="主にB&#39;z">
-  <meta property="og:locale" content="ja">
-  <meta property="og:type" content="article">
-    <meta property="article:section" content="post">
-    <meta property="article:published_time" content="2019-02-10T17:08:21+09:00">
-    <meta property="article:modified_time" content="2019-02-10T17:08:21+09:00">
+	<meta property="og:site_name" content="グリのクソブログ">
+	<meta property="og:title" content="AtCoder 「みんなのプロコン 2019」">
+	<meta property="og:description" content="主にB&#39;z">
+	<meta property="og:locale" content="ja">
+	<meta property="og:type" content="article">
+		<meta property="article:section" content="post">
+		<meta property="article:published_time" content="2019-02-10T17:08:21+09:00">
+		<meta property="article:modified_time" content="2019-02-10T17:08:21+09:00">
 
   
-  <meta itemprop="name" content="AtCoder 「みんなのプロコン 2019」">
-  <meta itemprop="description" content="主にB&#39;z">
-  <meta itemprop="datePublished" content="2019-02-10T17:08:21+09:00">
-  <meta itemprop="dateModified" content="2019-02-10T17:08:21+09:00">
-  <meta itemprop="wordCount" content="334">
-  <meta itemprop="keywords" content="2019-02,競技プログラミング">
+	<meta itemprop="name" content="AtCoder 「みんなのプロコン 2019」">
+	<meta itemprop="description" content="主にB&#39;z">
+	<meta itemprop="datePublished" content="2019-02-10T17:08:21+09:00">
+	<meta itemprop="dateModified" content="2019-02-10T17:08:21+09:00">
+	<meta itemprop="wordCount" content="334">
+	<meta itemprop="keywords" content="2019-02,競技プログラミング">
   
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="AtCoder 「みんなのプロコン 2019」">
-  <meta name="twitter:description" content="主にB&#39;z">
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:title" content="AtCoder 「みんなのプロコン 2019」">
+	<meta name="twitter:description" content="主にB&#39;z">
 
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="dns-prefetch" href="//fonts.googleapis.com">
@@ -44,7 +44,7 @@
       <script async src="https://www.googletagmanager.com/gtag/js?id=G-T30BDM828S"></script>
       <script>
         var doNotTrack = false;
-        if ( false ) {
+        if ( true ) {
           var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
           var doNotTrack = (dnt == "1" || dnt == "yes");
         }
@@ -77,7 +77,7 @@
 		
 <nav class="menu">
 	<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
-		<span class="menu__btn-title" tabindex="-1">Menu</span>
+		<span class="menu__btn-title" tabindex="-1">メニュー</span>
 	</button>
 	<ul class="menu__list">
 		<li class="menu__item">
@@ -124,7 +124,7 @@
 <p>調子に乗って軽めの解説でも書こうと思う。より優れた解説記事は他にいくらでもあるので、以下の内容は競プロ初心者がどのような思考を経て回答にたどり着いたのかを眺める感じで楽しんでもらえたらなと思う。</p>
 <h3 id="a問題">A問題</h3>
 <p>差が2以上の数がどれだけあるかを愚直にforループを回して数えた。</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;iostream&gt;</span><span style="color:#75715e">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;iostream&gt;</span><span style="color:#75715e">
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;cstdio&gt;</span><span style="color:#75715e">
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;cstring&gt;</span><span style="color:#75715e">
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;string&gt;</span><span style="color:#75715e">
@@ -142,10 +142,10 @@
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;stack&gt;</span><span style="color:#75715e">
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;set&gt;</span><span style="color:#75715e">
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;map&gt;</span><span style="color:#75715e">
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e">#define INF 1000000000
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e">#define MOD 1000000007
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">typedef</span> <span style="color:#66d9ef">long</span> <span style="color:#66d9ef">long</span> ll;
+</span></span></span><span style="display:flex;"><span><span style="color:#66d9ef">typedef</span> <span style="color:#66d9ef">long</span> <span style="color:#66d9ef">long</span> ll;
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">typedef</span> <span style="color:#66d9ef">unsigned</span> <span style="color:#66d9ef">long</span> <span style="color:#66d9ef">long</span> ull;
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">using</span> <span style="color:#66d9ef">namespace</span> std;
 </span></span><span style="display:flex;"><span>
@@ -164,7 +164,7 @@
 </span></span></code></pre></div><h3 id="b問題">B問題</h3>
 <p>どこを始点・終点にすべきか判断させるコードが書けなかったので、脳死で3回以上登場する番号があればNOを出力するコードを出したらACだった。うけた。<br>
 今回はこんなんでも解けたが、普通はワーシャル・フロイド法なるものを使うのがセオリーらしい。</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;iostream&gt;</span><span style="color:#75715e">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;iostream&gt;</span><span style="color:#75715e">
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;cstdio&gt;</span><span style="color:#75715e">
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;cstring&gt;</span><span style="color:#75715e">
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;string&gt;</span><span style="color:#75715e">
@@ -182,10 +182,10 @@
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;stack&gt;</span><span style="color:#75715e">
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;set&gt;</span><span style="color:#75715e">
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;map&gt;</span><span style="color:#75715e">
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e">#define INF 1000000000
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e">#define MOD 1000000007
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">typedef</span> <span style="color:#66d9ef">long</span> <span style="color:#66d9ef">long</span> ll;
+</span></span></span><span style="display:flex;"><span><span style="color:#66d9ef">typedef</span> <span style="color:#66d9ef">long</span> <span style="color:#66d9ef">long</span> ll;
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">typedef</span> <span style="color:#66d9ef">unsigned</span> <span style="color:#66d9ef">long</span> <span style="color:#66d9ef">long</span> ull;
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">using</span> <span style="color:#66d9ef">namespace</span> std;
 </span></span><span style="display:flex;"><span>
@@ -213,7 +213,7 @@
 <p>なんとなく貪欲法なるものが使えそうだと思った。A &gt;= B の場合はいちいち換金する意味がないので K + 1 を出力する。<br>
 A &lt; B の場合、とりあえずA枚貯まるまでビスケットを増やしていき、溜まったら (-A+B) していく(この時、2ターン消費されることに注意する)。<br>
 でもこれだけの実装だと、入力サンプルで通らないものがあった。普通に1枚ずつ増やしていくほうがいい場合があるからだ。この入力サンプルがなければ、WA頻発で半泣きになっていたことだろう。</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;iostream&gt;</span><span style="color:#75715e">
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-cpp" data-lang="cpp"><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;iostream&gt;</span><span style="color:#75715e">
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;cstdio&gt;</span><span style="color:#75715e">
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;cstring&gt;</span><span style="color:#75715e">
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;string&gt;</span><span style="color:#75715e">
@@ -231,10 +231,10 @@ A &lt; B の場合、とりあえずA枚貯まるまでビスケットを増や�
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;stack&gt;</span><span style="color:#75715e">
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;set&gt;</span><span style="color:#75715e">
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e">#include</span> <span style="color:#75715e">&lt;map&gt;</span><span style="color:#75715e">
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span>
+</span></span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#75715e">#define INF 1000000000
 </span></span></span><span style="display:flex;"><span><span style="color:#75715e">#define MOD 1000000007
-</span></span></span><span style="display:flex;"><span><span style="color:#75715e"></span><span style="color:#66d9ef">typedef</span> <span style="color:#66d9ef">long</span> <span style="color:#66d9ef">long</span> ll;
+</span></span></span><span style="display:flex;"><span><span style="color:#66d9ef">typedef</span> <span style="color:#66d9ef">long</span> <span style="color:#66d9ef">long</span> ll;
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">typedef</span> <span style="color:#66d9ef">unsigned</span> <span style="color:#66d9ef">long</span> <span style="color:#66d9ef">long</span> ull;
 </span></span><span style="display:flex;"><span><span style="color:#66d9ef">using</span> <span style="color:#66d9ef">namespace</span> std;
 </span></span><span style="display:flex;"><span>
@@ -279,13 +279,13 @@ A &lt; B の場合、とりあえずA枚貯まるまでビスケットを増や�
 <nav class="pager flex">
 	<div class="pager__item pager__item--prev">
 		<a class="pager__link" href="https://guricerin.github.io/shit-blog/post/2019/02/03-magic/" rel="prev">
-			<span class="pager__subtitle">«&thinsp;Previous</span>
+			<span class="pager__subtitle">«&thinsp;前の投稿</span>
 			<p class="pager__title">勝手にレビュー35：B&#39;zの17thアルバム『MAGIC』</p>
 		</a>
 	</div>
 	<div class="pager__item pager__item--next">
 		<a class="pager__link" href="https://guricerin.github.io/shit-blog/post/2019/02/12-hadou/" rel="next">
-			<span class="pager__subtitle">Next&thinsp;»</span>
+			<span class="pager__subtitle">次の投稿&thinsp;»</span>
 			<p class="pager__title">勝手にレビュー36：稲葉浩志の4thアルバム『Hadou』</p>
 		</a>
 	</div>
@@ -300,7 +300,7 @@ A &lt; B の場合、とりあえずA枚貯まるまでビスケットを増や�
       </div>
       <aside class="sidebar">
 <div class="widget-recent widget">
-	<h4 class="widget__title">Recent Posts</h4>
+	<h4 class="widget__title">最近の投稿</h4>
 	<div class="widget__content">
 		<ul class="widget__list">
 			<li class="widget__item"><a class="widget__link" href="https://guricerin.github.io/shit-blog/post/2026/09/23/recently-game/">最近プレイしたゲーム：Ruina、Elin、ウイポ、ほの暮しの庭</a></li>
@@ -312,7 +312,7 @@ A &lt; B の場合、とりあえずA枚貯まるまでビスケットを増や�
 	</div>
 </div>
 <div class="widget-categories widget">
-	<h4 class="widget__title">Categories</h4>
+	<h4 class="widget__title">カテゴリー</h4>
 	<div class="widget__content">
 		<ul class="widget__list">
 			<li class="widget__item">
@@ -564,7 +564,7 @@ A &lt; B の場合、とりあえずA枚貯まるまでビスケットを増や�
 </div>
 
 <div class="widget-social widget">
-	<h4 class="widget-social__title widget__title">Social</h4>
+	<h4 class="widget-social__title widget__title">ソーシャル</h4>
 	<div class="widget-social__content widget__content">
 		<div class="widget-social__item widget__item">
 			<a class="widget-social__link widget__link btn" title="GitHub" rel="noopener noreferrer" href="https://github.com/guricerin" target="_blank">
@@ -584,7 +584,7 @@ A &lt; B の場合、とりあえずA枚貯まるまでビスケットを増や�
 		
 		<div class="footer__copyright">
 			&copy; 2026 guricerin.
-			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+			<span class="footer__copyright-credits">このサイトは <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> と <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> テーマで生成されています。</span>
 		</div>
 	</div>
 </footer>

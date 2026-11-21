@@ -10,26 +10,26 @@
   <meta name="description"
     content="">
   <meta property="og:url" content="https://guricerin.github.io/shit-blog/post/2021/07/20210709-ruby-esolang-by-rust/">
-  <meta property="og:site_name" content="グリのクソブログ">
-  <meta property="og:title" content="『Rubyで作る奇妙なプログラミング言語』をRustで作った">
-  <meta property="og:description" content="タイトル見て即購入。">
-  <meta property="og:locale" content="ja">
-  <meta property="og:type" content="article">
-    <meta property="article:section" content="post">
-    <meta property="article:published_time" content="2021-07-09T09:53:28+09:00">
-    <meta property="article:modified_time" content="2021-07-09T09:53:28+09:00">
+	<meta property="og:site_name" content="グリのクソブログ">
+	<meta property="og:title" content="『Rubyで作る奇妙なプログラミング言語』をRustで作った">
+	<meta property="og:description" content="タイトル見て即購入。">
+	<meta property="og:locale" content="ja">
+	<meta property="og:type" content="article">
+		<meta property="article:section" content="post">
+		<meta property="article:published_time" content="2021-07-09T09:53:28+09:00">
+		<meta property="article:modified_time" content="2021-07-09T09:53:28+09:00">
 
   
-  <meta itemprop="name" content="『Rubyで作る奇妙なプログラミング言語』をRustで作った">
-  <meta itemprop="description" content="タイトル見て即購入。">
-  <meta itemprop="datePublished" content="2021-07-09T09:53:28+09:00">
-  <meta itemprop="dateModified" content="2021-07-09T09:53:28+09:00">
-  <meta itemprop="wordCount" content="201">
-  <meta itemprop="keywords" content="2021-07,プログラミング,Rust,書物">
+	<meta itemprop="name" content="『Rubyで作る奇妙なプログラミング言語』をRustで作った">
+	<meta itemprop="description" content="タイトル見て即購入。">
+	<meta itemprop="datePublished" content="2021-07-09T09:53:28+09:00">
+	<meta itemprop="dateModified" content="2021-07-09T09:53:28+09:00">
+	<meta itemprop="wordCount" content="201">
+	<meta itemprop="keywords" content="2021-07,プログラミング,Rust,書物">
   
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="『Rubyで作る奇妙なプログラミング言語』をRustで作った">
-  <meta name="twitter:description" content="タイトル見て即購入。">
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:title" content="『Rubyで作る奇妙なプログラミング言語』をRustで作った">
+	<meta name="twitter:description" content="タイトル見て即購入。">
 
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="dns-prefetch" href="//fonts.googleapis.com">
@@ -44,7 +44,7 @@
       <script async src="https://www.googletagmanager.com/gtag/js?id=G-T30BDM828S"></script>
       <script>
         var doNotTrack = false;
-        if ( false ) {
+        if ( true ) {
           var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
           var doNotTrack = (dnt == "1" || dnt == "yes");
         }
@@ -77,7 +77,7 @@
 		
 <nav class="menu">
 	<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
-		<span class="menu__btn-title" tabindex="-1">Menu</span>
+		<span class="menu__btn-title" tabindex="-1">メニュー</span>
 	</button>
 	<ul class="menu__list">
 		<li class="menu__item">
@@ -150,11 +150,11 @@ Whitespaceプログラムは、まずアセンブリに似た中間言語にコ�
 標準入力と標準出力は共にターミナル上に表示されるので同一視してしまいがちだが、実際はファイルディスクリプタで区別されている。<br>
 んなの当たり前だろと思われるかもしれないが、おれはこのことを理解しているようでまったく理解していなかった。<br>
 何が言いたいのかというと、例えばWhitespaceプログラムで標準出力に<code>Enter a number: </code>と出力したとき、当然ターミナルには</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Enter a number: 
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Enter a number: 
 </span></span></code></pre></div><p>と表示される。これに対してユーザが<code>42</code>を入力したとしよう。</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Enter a number: <span style="color:#ae81ff">42</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>Enter a number: <span style="color:#ae81ff">42</span>
 </span></span></code></pre></div><p>入力は標準入力に流し込まれるので、Whitespace処理系のRustプログラムのほうで</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-rust" data-lang="rust"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#66d9ef">mut</span> buf <span style="color:#f92672">=</span> String::new();
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-rust" data-lang="rust"><span style="display:flex;"><span><span style="color:#66d9ef">let</span> <span style="color:#66d9ef">mut</span> buf <span style="color:#f92672">=</span> String::new();
 </span></span><span style="display:flex;"><span>std::io::stdin().read_line(<span style="color:#f92672">&amp;</span><span style="color:#66d9ef">mut</span> buf).unwrap();
 </span></span></code></pre></div><p>と読み取りたいわけだが、あほなことに、この処理が終わった後の<code>buf</code>の中身を<code>Enter a number: 42\n</code>だと勘違いしてしまい（実際は<code>42\n</code>）、延々と唸ってしまっていた。<br>
 標準入出力がそれぞれ別物だときちんとわかっていたらこんな間違いは犯さないだろう。戒めのためにメモっておく。</p>
@@ -220,13 +220,13 @@ Whitespaceプログラムは、まずアセンブリに似た中間言語にコ�
 <nav class="pager flex">
 	<div class="pager__item pager__item--prev">
 		<a class="pager__link" href="https://guricerin.github.io/shit-blog/post/2021/06/26-linux-tcpip/" rel="prev">
-			<span class="pager__subtitle">«&thinsp;Previous</span>
+			<span class="pager__subtitle">«&thinsp;前の投稿</span>
 			<p class="pager__title">『Linuxで動かしながら学ぶTCP/IPネットワーク入門』読んだ</p>
 		</a>
 	</div>
 	<div class="pager__item pager__item--next">
 		<a class="pager__link" href="https://guricerin.github.io/shit-blog/post/2021/09/20210905-beauty/" rel="next">
-			<span class="pager__subtitle">Next&thinsp;»</span>
+			<span class="pager__subtitle">次の投稿&thinsp;»</span>
 			<p class="pager__title">美醜</p>
 		</a>
 	</div>
@@ -241,7 +241,7 @@ Whitespaceプログラムは、まずアセンブリに似た中間言語にコ�
       </div>
       <aside class="sidebar">
 <div class="widget-recent widget">
-	<h4 class="widget__title">Recent Posts</h4>
+	<h4 class="widget__title">最近の投稿</h4>
 	<div class="widget__content">
 		<ul class="widget__list">
 			<li class="widget__item"><a class="widget__link" href="https://guricerin.github.io/shit-blog/post/2026/09/23/recently-game/">最近プレイしたゲーム：Ruina、Elin、ウイポ、ほの暮しの庭</a></li>
@@ -253,7 +253,7 @@ Whitespaceプログラムは、まずアセンブリに似た中間言語にコ�
 	</div>
 </div>
 <div class="widget-categories widget">
-	<h4 class="widget__title">Categories</h4>
+	<h4 class="widget__title">カテゴリー</h4>
 	<div class="widget__content">
 		<ul class="widget__list">
 			<li class="widget__item">
@@ -505,7 +505,7 @@ Whitespaceプログラムは、まずアセンブリに似た中間言語にコ�
 </div>
 
 <div class="widget-social widget">
-	<h4 class="widget-social__title widget__title">Social</h4>
+	<h4 class="widget-social__title widget__title">ソーシャル</h4>
 	<div class="widget-social__content widget__content">
 		<div class="widget-social__item widget__item">
 			<a class="widget-social__link widget__link btn" title="GitHub" rel="noopener noreferrer" href="https://github.com/guricerin" target="_blank">
@@ -525,7 +525,7 @@ Whitespaceプログラムは、まずアセンブリに似た中間言語にコ�
 		
 		<div class="footer__copyright">
 			&copy; 2026 guricerin.
-			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+			<span class="footer__copyright-credits">このサイトは <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> と <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> テーマで生成されています。</span>
 		</div>
 	</div>
 </footer>

@@ -10,26 +10,26 @@
   <meta name="description"
     content="">
   <meta property="og:url" content="https://guricerin.github.io/shit-blog/post/2021/12/05-wasbook/">
-  <meta property="og:site_name" content="グリのクソブログ">
-  <meta property="og:title" content="『体系的に学ぶ 安全なWebアプリケーションの作り方 第2版』読んだ">
-  <meta property="og:description" content="セキュリティなんも知らんので購入。">
-  <meta property="og:locale" content="ja">
-  <meta property="og:type" content="article">
-    <meta property="article:section" content="post">
-    <meta property="article:published_time" content="2021-12-05T16:10:50+09:00">
-    <meta property="article:modified_time" content="2021-12-05T16:10:50+09:00">
+	<meta property="og:site_name" content="グリのクソブログ">
+	<meta property="og:title" content="『体系的に学ぶ 安全なWebアプリケーションの作り方 第2版』読んだ">
+	<meta property="og:description" content="セキュリティなんも知らんので購入。">
+	<meta property="og:locale" content="ja">
+	<meta property="og:type" content="article">
+		<meta property="article:section" content="post">
+		<meta property="article:published_time" content="2021-12-05T16:10:50+09:00">
+		<meta property="article:modified_time" content="2021-12-05T16:10:50+09:00">
 
   
-  <meta itemprop="name" content="『体系的に学ぶ 安全なWebアプリケーションの作り方 第2版』読んだ">
-  <meta itemprop="description" content="セキュリティなんも知らんので購入。">
-  <meta itemprop="datePublished" content="2021-12-05T16:10:50+09:00">
-  <meta itemprop="dateModified" content="2021-12-05T16:10:50+09:00">
-  <meta itemprop="wordCount" content="491">
-  <meta itemprop="keywords" content="2021-12,書物,情報セキュリティ">
+	<meta itemprop="name" content="『体系的に学ぶ 安全なWebアプリケーションの作り方 第2版』読んだ">
+	<meta itemprop="description" content="セキュリティなんも知らんので購入。">
+	<meta itemprop="datePublished" content="2021-12-05T16:10:50+09:00">
+	<meta itemprop="dateModified" content="2021-12-05T16:10:50+09:00">
+	<meta itemprop="wordCount" content="491">
+	<meta itemprop="keywords" content="2021-12,書物,情報セキュリティ">
   
-  <meta name="twitter:card" content="summary">
-  <meta name="twitter:title" content="『体系的に学ぶ 安全なWebアプリケーションの作り方 第2版』読んだ">
-  <meta name="twitter:description" content="セキュリティなんも知らんので購入。">
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:title" content="『体系的に学ぶ 安全なWebアプリケーションの作り方 第2版』読んだ">
+	<meta name="twitter:description" content="セキュリティなんも知らんので購入。">
 
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link rel="dns-prefetch" href="//fonts.googleapis.com">
@@ -44,7 +44,7 @@
       <script async src="https://www.googletagmanager.com/gtag/js?id=G-T30BDM828S"></script>
       <script>
         var doNotTrack = false;
-        if ( false ) {
+        if ( true ) {
           var dnt = (navigator.doNotTrack || window.doNotTrack || navigator.msDoNotTrack);
           var doNotTrack = (dnt == "1" || dnt == "yes");
         }
@@ -77,7 +77,7 @@
 		
 <nav class="menu">
 	<button class="menu__btn" aria-haspopup="true" aria-expanded="false" tabindex="0">
-		<span class="menu__btn-title" tabindex="-1">Menu</span>
+		<span class="menu__btn-title" tabindex="-1">メニュー</span>
 	</button>
 	<ul class="menu__list">
 		<li class="menu__item">
@@ -121,7 +121,7 @@
         </header>
         
 <div class="post__toc toc">
-	<div class="toc__title">Page content</div>
+	<div class="toc__title">目次</div>
 	<div class="toc__menu">
 		<nav id="TableOfContents">
   <ul>
@@ -193,17 +193,17 @@
 <h3 id="us配列キーボードを使用している場合の設定">US配列キーボードを使用している場合の設定</h3>
 <p>仮想OS（wasbook）がこちらのキーボードを日本語配列として認識しているっぽいので、設定を変更する。</p>
 <p>現在のロケール設定を確認。</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ localectl
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ localectl
 </span></span><span style="display:flex;"><span>  System Locale: LANG<span style="color:#f92672">=</span>en_US.UTF-8
 </span></span><span style="display:flex;"><span>                 LANGUAGE<span style="color:#f92672">=</span>en_US:en
 </span></span><span style="display:flex;"><span>    VC Keymap: n/a
 </span></span><span style="display:flex;"><span>    X11 Layout: jp
 </span></span><span style="display:flex;"><span>    X11 Model: pc101
 </span></span></code></pre></div><p>キーマップをUS配列に変更。</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># /etc/default/keyboard</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># /etc/default/keyboard</span>
 </span></span><span style="display:flex;"><span>XKBLAYOUT<span style="color:#f92672">=</span><span style="color:#e6db74">&#34;us&#34;</span>
 </span></span></code></pre></div><p>設定のリロード。</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ sudo service keyboard-setup restart
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ sudo service keyboard-setup restart
 </span></span></code></pre></div><p>再度<code>localectl</code>を実行して<code>X11 Lauout</code>が<code>us</code>になってたらOK。</p>
 <h5 id="参考リンク">参考リンク</h5>
 <ul>
@@ -238,7 +238,7 @@
 <p><img src="./5.png" alt="a"></p>
 <p>さて、ついでなので公開鍵方式でssh接続するよう設定する。<br>
 ホストOS側で公開鍵・秘密鍵を生成。</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ ssh-keygen -t ecdsa
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ ssh-keygen -t ecdsa
 </span></span><span style="display:flex;"><span>Generating public/private ecdsa key pair.
 </span></span><span style="display:flex;"><span>Enter file in which to save the key <span style="color:#f92672">(</span>C:<span style="color:#ae81ff">\U</span>sers<span style="color:#ae81ff">\g</span>uriz/.ssh/id_ecdsa<span style="color:#f92672">)</span>:
 </span></span><span style="display:flex;"><span>Enter passphrase <span style="color:#f92672">(</span>empty <span style="color:#66d9ef">for</span> no passphrase<span style="color:#f92672">)</span>:
@@ -250,21 +250,21 @@
 </span></span><span style="display:flex;"><span>The key<span style="color:#960050;background-color:#1e0010">&#39;</span>s randomart image is:
 </span></span><span style="display:flex;"><span>（省略）
 </span></span></code></pre></div><p>ゲストOSに公開鍵をコピー。</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ cd $HOME/.ssh
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ cd $HOME/.ssh
 </span></span><span style="display:flex;"><span>$ scp id_ecdsa.pub wasbook@192.168.56.101:.ssh/
 </span></span><span style="display:flex;"><span>wasbook@192.168.56.101<span style="color:#960050;background-color:#1e0010">&#39;</span>s password:
 </span></span><span style="display:flex;"><span>id_ecdsa.pub                                                                          100%  <span style="color:#ae81ff">174</span>    87.1KB/s   00:00
 </span></span></code></pre></div><p>ゲストOSでホストOSの公開鍵を登録。</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ cd $HOME/.ssh
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ cd $HOME/.ssh
 </span></span><span style="display:flex;"><span>$ cat id_ecdsa.pub &gt;&gt; authorized_keys
 </span></span></code></pre></div><p>公開鍵認証に切り替えるため、<code>sshd_config</code>を以下のように書き換える。</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># /etc/ssh/sshd_config</span>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span><span style="color:#75715e"># /etc/ssh/sshd_config</span>
 </span></span><span style="display:flex;"><span>PubkeyAuthentication yes
 </span></span><span style="display:flex;"><span>PasswordAuthntication no
 </span></span></code></pre></div><p>設定ファイルを書き換えたので、sshdを再起動。</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ sudo systemctl restart sshd
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ sudo systemctl restart sshd
 </span></span></code></pre></div><p>再度、ホストOSからssh接続してみる。</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ cd $HOME/.ssh
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;-webkit-text-size-adjust:none;"><code class="language-bash" data-lang="bash"><span style="display:flex;"><span>$ cd $HOME/.ssh
 </span></span><span style="display:flex;"><span>$ ssh wasbook@192.168.56.101 -i id_ecdsa
 </span></span><span style="display:flex;"><span>Linux wasbook 4.9.0-4-686 <span style="color:#75715e">#1 SMP Debian 4.9.65-3+deb9u1 (2017-12-23) i686</span>
 </span></span><span style="display:flex;"><span>
@@ -652,13 +652,13 @@
 <nav class="pager flex">
 	<div class="pager__item pager__item--prev">
 		<a class="pager__link" href="https://guricerin.github.io/shit-blog/post/2021/11/23-infra-engineer-text2/" rel="prev">
-			<span class="pager__subtitle">«&thinsp;Previous</span>
+			<span class="pager__subtitle">«&thinsp;前の投稿</span>
 			<p class="pager__title">『インフラエンジニアの教科書2』読んだ</p>
 		</a>
 	</div>
 	<div class="pager__item pager__item--next">
 		<a class="pager__link" href="https://guricerin.github.io/shit-blog/post/2021/12/08-operation-linux-server/" rel="next">
-			<span class="pager__subtitle">Next&thinsp;»</span>
+			<span class="pager__subtitle">次の投稿&thinsp;»</span>
 			<p class="pager__title">『ゼロからはじめるLinuxサーバー構築・運用ガイド』読んだ</p>
 		</a>
 	</div>
@@ -673,7 +673,7 @@
       </div>
       <aside class="sidebar">
 <div class="widget-recent widget">
-	<h4 class="widget__title">Recent Posts</h4>
+	<h4 class="widget__title">最近の投稿</h4>
 	<div class="widget__content">
 		<ul class="widget__list">
 			<li class="widget__item"><a class="widget__link" href="https://guricerin.github.io/shit-blog/post/2026/09/23/recently-game/">最近プレイしたゲーム：Ruina、Elin、ウイポ、ほの暮しの庭</a></li>
@@ -685,7 +685,7 @@
 	</div>
 </div>
 <div class="widget-categories widget">
-	<h4 class="widget__title">Categories</h4>
+	<h4 class="widget__title">カテゴリー</h4>
 	<div class="widget__content">
 		<ul class="widget__list">
 			<li class="widget__item">
@@ -937,7 +937,7 @@
 </div>
 
 <div class="widget-social widget">
-	<h4 class="widget-social__title widget__title">Social</h4>
+	<h4 class="widget-social__title widget__title">ソーシャル</h4>
 	<div class="widget-social__content widget__content">
 		<div class="widget-social__item widget__item">
 			<a class="widget-social__link widget__link btn" title="GitHub" rel="noopener noreferrer" href="https://github.com/guricerin" target="_blank">
@@ -957,7 +957,7 @@
 		
 		<div class="footer__copyright">
 			&copy; 2026 guricerin.
-			<span class="footer__copyright-credits">Generated with <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> and <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> theme.</span>
+			<span class="footer__copyright-credits">このサイトは <a href="https://gohugo.io/" rel="nofollow noopener" target="_blank">Hugo</a> と <a href="https://github.com/Vimux/Mainroad/" rel="nofollow noopener" target="_blank">Mainroad</a> テーマで生成されています。</span>
 		</div>
 	</div>
 </footer>
